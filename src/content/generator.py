@@ -1,4 +1,4 @@
-"""Claude API 기반 블로그 콘텐츠 생성 엔진."""
+"""Google Gemini API 기반 블로그 콘텐츠 생성 엔진."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ import json
 import os
 from dataclasses import dataclass, field
 
-import anthropic
+from google import genai
 
 from src.core.config import ContentConfig
 from src.core.logger import setup_logger
@@ -62,22 +62,26 @@ class ContentRequest:
     product_names: list[str] = field(default_factory=list)
 
 
-def generate_blog_content(request: ContentRequest, config: ContentConfig) -> GeneratedContent:
-    """Claude API를 사용하여 블로그 콘텐츠를 생성한다."""
-    client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+def generate_blog_content(
+    request: ContentRequest, config: ContentConfig
+) -> GeneratedContent:
+    """Google Gemini API를 사용하여 블로그 콘텐츠를 생성한다."""
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
     user_prompt = _build_prompt(request)
+    full_prompt = SYSTEM_PROMPT + "\n\n---\n\n" + user_prompt
 
-    logger.info("콘텐츠 생성 시작: 키워드='%s', 카테고리='%s'", request.keyword, request.category)
-
-    message = client.messages.create(
-        model=config.model,
-        max_tokens=config.max_tokens,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_prompt}],
+    logger.info(
+        "콘텐츠 생성 시작: 키워드='%s', 카테고리='%s'",
+        request.keyword, request.category,
     )
 
-    response_text = message.content[0].text
+    response = client.models.generate_content(
+        model=config.model,
+        contents=full_prompt,
+    )
+
+    response_text = response.text
     content = _parse_response(response_text, request.keyword)
 
     logger.info(
@@ -88,18 +92,23 @@ def generate_blog_content(request: ContentRequest, config: ContentConfig) -> Gen
 
 
 def _build_prompt(request: ContentRequest) -> str:
-    """Claude에게 보낼 프롬프트를 생성한다."""
+    """Gemini에게 보낼 프롬프트를 생성한다."""
     product_context = ""
     if request.product_names:
+        products_list = "\n".join(
+            f"- {name}" for name in request.product_names
+        )
         product_context = f"""
 
 ## 쿠팡 추천 상품 (자연스럽게 언급)
-{chr(10).join(f'- {name}' for name in request.product_names)}
+{products_list}
 이 상품들을 본문에서 자연스럽게 추천해주세요. (2번째, 4번째 섹션 뒤에 배치 예정)"""
 
     secondary = ""
     if request.secondary_keywords:
-        secondary = f"\n보조 키워드: {', '.join(request.secondary_keywords)}"
+        secondary = (
+            f"\n보조 키워드: {', '.join(request.secondary_keywords)}"
+        )
 
     return f"""다음 주제로 블로그 포스트를 작성해주세요.
 
@@ -127,8 +136,7 @@ JSON 코드블록만 출력하세요. 다른 텍스트는 포함하지 마세요
 
 
 def _parse_response(response: str, keyword: str) -> GeneratedContent:
-    """Claude 응답을 파싱하여 GeneratedContent를 생성한다."""
-    # JSON 블록 추출
+    """AI 응답을 파싱하여 GeneratedContent를 생성한다."""
     json_str = response
     if "```json" in response:
         json_str = response.split("```json")[1].split("```")[0]
@@ -141,13 +149,17 @@ def _parse_response(response: str, keyword: str) -> GeneratedContent:
         logger.warning("JSON 파싱 실패, 기본 구조로 대체")
         data = {
             "title": f"{keyword} - 건강온도사가 알려드리는 꿀팁",
-            "meta_description": f"{keyword}에 대해 건강온도사가 쉽고 정확하게 알려드립니다.",
+            "meta_description": (
+                f"{keyword}에 대해 건강온도사가 쉽고 정확하게 알려드립니다."
+            ),
             "sections": [{"heading": keyword, "content": response}],
             "tags": [keyword],
             "focus_keyword": keyword,
         }
 
-    total_text = " ".join(s.get("content", "") for s in data.get("sections", []))
+    total_text = " ".join(
+        s.get("content", "") for s in data.get("sections", [])
+    )
     word_count = len(total_text)
 
     return GeneratedContent(

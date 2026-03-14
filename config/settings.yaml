@@ -11,7 +11,7 @@ blog:
     - 정부지원/복지
 
 content:
-  model: "claude-sonnet-4-6"
+  model: "gemini-2.5-flash"
   max_tokens: 4096
   min_word_count: 1500
   max_word_count: 3000

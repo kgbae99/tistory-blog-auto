@@ -32,7 +32,7 @@
 ## 파일 구조 참조 (필요시 읽기)
 - `src/coupang/` — 쿠팡 파트너스 API 연동 (HMAC 인증)
 - `src/tistory/` — Playwright 기반 티스토리 자동 발행
-- `src/content/` — Claude API 콘텐츠 생성 엔진
+- `src/content/` — Google Gemini API 콘텐츠 생성 엔진
 - `src/adsense/` — 애드센스 광고 자동 삽입
 - `src/scheduler/` — APScheduler 기반 발행 스케줄러
 - `templates/` — Jinja2 HTML 블로그 포스트 템플릿

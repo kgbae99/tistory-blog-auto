@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.humanlayer.dev)",
+      "WebFetch(domain:kgbae2369.tistory.com)",
+      "Bash(git init:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(python -m ruff check src/ tests/ scripts/)",
+      "Bash(python -m ruff check --fix src/ tests/ scripts/)",
+      "Bash(python -m ruff check src/ scripts/)",
+      "Bash(playwright install:*)",
+      "WebFetch(domain:developers.coupangcorp.com)",
+      "WebFetch(domain:jongjineee.github.io)",
+      "Bash(python -m pytest tests/ -q)",
+      "Bash(python -c \":*)",
+      "Bash(pip show:*)"
+    ]
+  }
+}
