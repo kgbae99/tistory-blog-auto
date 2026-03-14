@@ -1,0 +1,32 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash(git commit*)",
+        "command": "cd c:/Users/CleanAdmin/Desktop/claude/blog && python -m ruff check src/",
+        "description": "커밋 전 ruff 린트 검사"
+      },
+      {
+        "matcher": "Write(*.py)",
+        "command": "echo 'Reminder: .env 파일에 API 키가 하드코딩되지 않았는지 확인'",
+        "description": "Python 파일 작성 시 보안 체크 리마인더"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write(src/**/*.py)",
+        "command": "cd c:/Users/CleanAdmin/Desktop/claude/blog && python -m ruff check --fix src/",
+        "description": "Python 소스 작성 후 자동 린트 수정"
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch"
+    ]
+  }
+}

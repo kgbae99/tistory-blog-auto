@@ -1,0 +1,79 @@
+{% autoescape false %}
+<article class="blog-post">
+
+  <!-- 도입부 -->
+  {% if sections and sections|length > 0 %}
+  <div class="intro">
+    {{ sections[0].content }}
+  </div>
+  {% endif %}
+
+  <!-- 본문 섹션 -->
+  {% for section in sections %}
+  {% if loop.index0 > 0 %}
+  <h2>{{ section.heading }}</h2>
+  <div class="section-content">
+    {{ section.content }}
+  </div>
+
+  <!-- 첫 번째 H2 뒤 광고 -->
+  {% if loop.index0 == 1 and ad_slots|length > 0 %}
+  {{ ad_slots[0] }}
+  {% endif %}
+
+  <!-- 두 번째 H2 뒤 쿠팡 상품 -->
+  {% if loop.index0 == 2 and product_widgets|length > 0 %}
+  {{ product_widgets[0] }}
+  {% endif %}
+
+  <!-- 세 번째 H2 뒤 광고 -->
+  {% if loop.index0 == 3 and ad_slots|length > 1 %}
+  {{ ad_slots[1] }}
+  {% endif %}
+
+  <!-- 네 번째 H2 뒤 쿠팡 상품 -->
+  {% if loop.index0 == 4 and product_widgets|length > 1 %}
+  {{ product_widgets[1] }}
+  {% endif %}
+
+  <!-- 여섯 번째 H2 뒤 쿠팡 상품 -->
+  {% if loop.index0 == 6 and product_widgets|length > 2 %}
+  {{ product_widgets[2] }}
+  {% endif %}
+
+  {% endif %}
+  {% endfor %}
+
+  <!-- 결론 전 광고 -->
+  {% if ad_slots|length > 2 %}
+  {{ ad_slots[2] }}
+  {% endif %}
+
+  <!-- 결론 -->
+  {% if sections|length > 1 %}
+  <h2>마치며</h2>
+  <div class="conclusion">
+    <p>오늘 알려드린 내용이 도움이 되셨길 바랍니다. 건강온도사는 앞으로도 여러분의 건강한 생활을 위한 유용한 정보를 계속 전해드리겠습니다.</p>
+    <p>궁금한 점이나 더 알고 싶은 주제가 있다면 댓글로 남겨주세요!</p>
+  </div>
+  {% endif %}
+
+  <!-- 쿠팡 파트너스 고지문 -->
+  {{ disclaimer }}
+
+  <!-- 건강 정보 면책 -->
+  <p style="font-size: 12px; color: #999; margin-top: 10px;">
+    본 콘텐츠는 정보 제공 목적이며, 의학적 조언을 대체하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.
+  </p>
+
+  <!-- 태그 -->
+  {% if tags %}
+  <div class="post-tags" style="margin-top: 20px;">
+    {% for tag in tags %}
+    <span class="tag" style="display: inline-block; margin: 3px; padding: 4px 10px; background: #f0f0f0; border-radius: 3px; font-size: 13px;">#{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</article>
+{% endautoescape %}

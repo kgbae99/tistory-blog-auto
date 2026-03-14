@@ -1,0 +1,59 @@
+{% autoescape false %}
+<article class="product-review">
+
+  <!-- 도입 -->
+  <div class="intro">
+    {{ intro }}
+  </div>
+
+  <!-- 상품 리뷰 목록 -->
+  {% for product in products %}
+  <h2>{{ loop.index }}. {{ product.name }}</h2>
+  <div class="product-detail">
+    {{ product.description }}
+
+    {% if product.widget_html %}
+    {{ product.widget_html }}
+    {% endif %}
+
+    {% if product.pros %}
+    <h3>장점</h3>
+    <ul>
+      {% for pro in product.pros %}
+      <li>{{ pro }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if product.cons %}
+    <h3>단점</h3>
+    <ul>
+      {% for con in product.cons %}
+      <li>{{ con }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+
+  <!-- 광고 삽입 (첫 번째, 세 번째 상품 뒤) -->
+  {% if loop.index in [1, 3] and ad_slots|length > loop.index0 %}
+  {{ ad_slots[loop.index0] }}
+  {% endif %}
+
+  {% endfor %}
+
+  <!-- 결론 -->
+  <h2>총평</h2>
+  <div class="conclusion">
+    {{ conclusion }}
+  </div>
+
+  <!-- 고지문 -->
+  {{ disclaimer }}
+
+  <p style="font-size: 12px; color: #999; margin-top: 10px;">
+    본 콘텐츠는 정보 제공 목적이며, 의학적 조언을 대체하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.
+  </p>
+
+</article>
+{% endautoescape %}

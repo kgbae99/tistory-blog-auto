@@ -1,0 +1,78 @@
+# 블로그 자동화 설정
+blog:
+  name: "건강온도사(행복++)"
+  url: "https://kgbae2369.tistory.com"
+  blog_name: "kgbae2369"
+  categories:
+    - 건강정보
+    - 생활꿀팁
+    - 뷰티/스킨케어
+    - 식품/영양
+    - 정부지원/복지
+
+content:
+  model: "claude-sonnet-4-6"
+  max_tokens: 4096
+  min_word_count: 1500
+  max_word_count: 3000
+  language: "ko"
+  tone: "친근하고 전문적인"
+  target_audience: "건강과 생활에 관심 있는 20~60대"
+
+seo:
+  min_headings: 5
+  max_headings: 10
+  meta_description_length: 155
+  focus_keywords_per_post: 3
+  internal_links_per_post: 3  # 기존 2 → 3으로 강화
+  use_h3_subheadings: true    # H3 계층 구조 도입
+  schema_types:
+    - Article
+    - FAQPage
+    - HowTo
+    - BreadcrumbList
+
+coupang:
+  products_per_post: 3
+  categories:
+    - 건강식품
+    - 뷰티
+    - 생활용품
+    - 주방용품
+    - 운동용품
+    - 스킨케어     # 2026 트렌드 추가
+    - 뷰티디바이스  # AI 스킨케어 기기
+    - 미세먼지대비  # 봄 시즌
+
+# 2026년 3월 봄 시즌 트렌드 키워드
+trending_keywords:
+  immediate:
+    - "꽃가루 알레르기 예방법"
+    - "춘곤증 극복 방법"
+    - "봄철 미세먼지 건강관리"
+    - "자외선 차단제 추천 2026"
+    - "봄나물 효능"
+  beauty_2026:
+    - "고기능 미니멀리즘 스킨케어"
+    - "AI 맞춤 스킨케어"
+    - "배리어 크림 추천"
+    - "피부장벽 강화"
+    - "하이브리드 스킨케어 메이크업"
+  evergreen:
+    - "비타민D 효능"
+    - "면역력 높이는 음식"
+    - "다이어트 식단"
+    - "프로바이오틱스 추천"
+
+adsense:
+  gtag_id: "G-SD7PEXH5NK"
+  ad_positions:
+    - after_first_h2
+    - after_third_h2
+    - before_conclusion
+  ad_format: "responsive"
+
+scheduler:
+  publish_time: "09:00"
+  posts_per_day: 1
+  timezone: "Asia/Seoul"

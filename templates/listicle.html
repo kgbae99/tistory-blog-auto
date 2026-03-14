@@ -1,0 +1,48 @@
+{% autoescape false %}
+<article class="listicle">
+
+  <!-- 도입 -->
+  <div class="intro">
+    {{ intro }}
+  </div>
+
+  <!-- 목록 아이템 -->
+  {% for item in items %}
+  <h2>{{ loop.index }}. {{ item.title }}</h2>
+  <div class="list-item-content">
+    {{ item.content }}
+
+    {% if item.tip %}
+    <div style="margin: 10px 0; padding: 12px; background: #f8f9fa; border-left: 3px solid #4CAF50; border-radius: 4px;">
+      <strong>건강온도사 TIP:</strong> {{ item.tip }}
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- 쿠팡 상품 위젯 (3번째, 5번째 아이템 뒤) -->
+  {% if loop.index in [3, 5] and product_widgets|length > 0 %}
+  {{ product_widgets[loop.index0 // 2] if loop.index0 // 2 < product_widgets|length else "" }}
+  {% endif %}
+
+  <!-- 광고 (2번째, 4번째 아이템 뒤) -->
+  {% if loop.index in [2, 4] and ad_slots|length > loop.index0 // 2 %}
+  {{ ad_slots[loop.index0 // 2] }}
+  {% endif %}
+
+  {% endfor %}
+
+  <!-- 결론 -->
+  <h2>마치며</h2>
+  <div class="conclusion">
+    {{ conclusion }}
+  </div>
+
+  <!-- 고지문 -->
+  {{ disclaimer }}
+
+  <p style="font-size: 12px; color: #999; margin-top: 10px;">
+    본 콘텐츠는 정보 제공 목적이며, 의학적 조언을 대체하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.
+  </p>
+
+</article>
+{% endautoescape %}
