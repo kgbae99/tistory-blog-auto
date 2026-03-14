@@ -1,0 +1,51 @@
+name: Daily Blog Posts Generation
+
+on:
+  schedule:
+    # 매일 오전 7시 KST (UTC 22:00 전날)
+    - cron: '0 22 * * *'
+  workflow_dispatch: # 수동 실행 가능
+
+jobs:
+  generate-posts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install google-genai requests python-dotenv pyyaml jinja2
+
+      - name: Create .env file
+        run: |
+          cat > config/.env << EOF
+          GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
+          COUPANG_ACCESS_KEY=${{ secrets.COUPANG_ACCESS_KEY }}
+          COUPANG_SECRET_KEY=${{ secrets.COUPANG_SECRET_KEY }}
+          TISTORY_BLOG_NAME=kgbae2369
+          TISTORY_BLOG_URL=https://kgbae2369.tistory.com
+          ADSENSE_GTAG_ID=G-SD7PEXH5NK
+          EOF
+
+      - name: Generate 3 daily posts
+        run: python scripts/generate_daily_posts.py
+        env:
+          TZ: Asia/Seoul
+
+      - name: Commit and push generated posts
+        run: |
+          git config user.name "kgbae99"
+          git config user.email "kgbae99@gmail.com"
+          git add output/posts/
+          DATE=$(date +%Y-%m-%d -d "+9 hours")
+          git commit -m "posts: ${DATE} 일일 블로그 포스트 3개 자동 생성" || echo "No changes"
+          git push

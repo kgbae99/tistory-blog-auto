@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>밤새 뒤척이세요? 꿀잠 부르는 수면 루틴 공개!</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">밤새 뒤척이세요? 꿀잠 부르는 수면 루틴 공개!</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">수면질높이는방법, 꿀잠, 불면증개선, 건강수면, 수면루틴, 멜라토닌, 건강온도사</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.</div>
+<div id="blog-html"><div style="background-color: #fff5f6; border: 1px solid #FFB6C1; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;">
+<p style="color: #555; font-size: 14px; line-height: 1.7; margin: 0;">📌 <strong>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong><br />본 글은 건강 정보를 요약한 것이며, 특정 제품의 효능을 보장하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.</p>
+</div>
+
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?w=486&h=315&fit=crop" alt="밤새 뒤척이세요? 꿀잠 부르는 수면 루틴 공개!" width="486" height="315" /></p>
+
+<p>&nbsp;</p>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">밤새 뒤척이세요? 꿀잠 부르는 수면 루틴 공개!</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="toc" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border: 1px solid #FFB6C1; margin-bottom: 30px;">
+<h2 style="color: #e91e63; font-size: 24px; margin-top: 0; margin-bottom: 15px;">글의 순서</h2>
+<ul style="list-style: none; padding: 0; margin: 0;">
+<li style="margin-bottom: 10px;"><a href="#section1" style="color: #555; text-decoration: none; font-weight: bold;">1. 수면 질이 중요한 이유</a></li>
+<li style="margin-bottom: 10px;"><a href="#section2" style="color: #555; text-decoration: none; font-weight: bold;">2. 나만의 수면 환경 조성</a></li>
+<li style="margin-bottom: 10px;"><a href="#section3" style="color: #555; text-decoration: none; font-weight: bold;">3. 규칙적인 수면 습관 만들기</a></li>
+<li style="margin-bottom: 10px;"><a href="#section4" style="color: #555; text-decoration: none; font-weight: bold;">4. 숙면을 돕는 식단 관리</a></li>
+<li style="margin-bottom: 10px;"><a href="#section5" style="color: #555; text-decoration: none; font-weight: bold;">5. 잠들기 전 피해야 할 것들</a></li>
+<li style="margin-bottom: 10px;"><a href="#section6" style="color: #555; text-decoration: none; font-weight: bold;">6. 수면 보조제 현명하게 활용하기</a></li>
+<li style="margin-bottom: 0;"><a href="#section7" style="color: #555; text-decoration: none; font-weight: bold;">7. 마무리</a></li>
+</ul>
+</div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. <h2 id="section1">수면 질이 중요한 이유</h2></a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. <h2 id="section2">나만의 수면 환경 조성</h2></a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. <h2 id="section3">규칙적인 수면 습관 만들기</h2></a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. <h2 id="section4">숙면을 돕는 식단 관리</h2></a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec5">5. <h2 id="section5">잠들기 전 피해야 할 것들</h2></a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec6">6. <h2 id="section6">수면 보조제 현명하게 활용하기</h2></a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec7">7. <h2 id="section7">마무리</h2></a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;"><h2 id="section1">수면 질이 중요한 이유</h2></h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=486&h=315&fit=crop" alt="<h2 id="section1">수면 질이 중요한 이유</h2>" width="486" height="315" /></p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">수면은 단순히 휴식을 넘어 우리 몸의 회복과 재생에 필수적인 과정입니다. 충분하고 질 좋은 수면은 면역력 강화, 스트레스 감소, 인지 기능 향상 등 전반적인 건강과 행복에 지대한 영향을 미칩니다. 잠을 제대로 자지 못하면 낮 동안의 집중력이 떨어지고, 감정 조절이 어려워지며, 장기적으로는 만성 질환의 위험까지 높아질 수 있습니다. 건강온도사(행복++)는 여러분의 수면 온도를 높여 더욱 행복한 삶을 응원합니다.</p>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">신체적 영향</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">정신적 영향</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">장기적 위험</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">피로, 면역력 저하</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">집중력 저하, 짜증 증가</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">고혈압, 당뇨, 비만 위험 상승</td></tr>
+</tbody></table></div>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;"><h2 id="section2">나만의 수면 환경 조성</h2></h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=486&h=315&fit=crop" alt="<h2 id="section2">나만의 수면 환경 조성</h2>" width="486" height="315" /></p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">편안한 잠자리는 숙면의 첫걸음입니다. 침실은 어둡고 조용하며 시원하게 유지하는 것이 중요합니다. 적정 실내 온도는 18~22도 사이를 추천하며, 두꺼운 암막 커튼이나 귀마개 등을 활용해 외부 소음과 빛을 차단해주세요. 또한, 침대는 잠자는 용도로만 사용하고, 침실에서는 스마트폰이나 TV 시청을 자제하는 습관을 들이는 것이 좋습니다. 아늑하고 편안한 나만의 공간에서 깊은 잠을 경험해보세요.</p>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">온도</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">밝기</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">소음</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">18~22°C</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">완벽한 암막</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">최대한 조용하게</td></tr>
+</tbody></table></div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;"><h2 id="section3">규칙적인 수면 습관 만들기</h2></h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=486&h=315&fit=crop" alt="<h2 id="section3">규칙적인 수면 습관 만들기</h2>" width="486" height="315" /></p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">우리 몸에는 생체 시계가 있어 규칙적인 생활 리듬에 익숙해져 있습니다. 매일 비슷한 시간에 잠자리에 들고 일어나는 습관은 이 생체 시계를 안정화시켜 수면의 질을 향상시킵니다. 주말에도 평일과 큰 차이 없이 일정한 수면 패턴을 유지하는 것이 중요하며, 낮잠은 가급적 피하거나 20분 이내의 짧은 낮잠으로 제한하는 것이 좋습니다. 꾸준함이 꿀잠의 비결입니다. 혹시 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a> 정보도 함께 보시면 전반적인 건강관리에 도움이 될 것입니다.</p>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">기상 시간</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">취침 시간</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">낮잠</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일 일정하게</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일 일정하게</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">20분 이내로 제한</td></tr>
+</tbody></table></div>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;"><h2 id="section4">숙면을 돕는 식단 관리</h2></h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=486&h=315&fit=crop" alt="<h2 id="section4">숙면을 돕는 식단 관리</h2>" width="486" height="315" /></p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">우리가 먹는 음식은 수면에 직접적인 영향을 미칩니다. 잠들기 3~4시간 전에는 과식이나 고지방 음식 섭취를 피하고, 소화가 잘 되는 가벼운 음식을 선택하는 것이 좋습니다. 트립토판이 풍부한 음식(우유, 바나나, 견과류)은 멜라토닌 생성에 도움을 주어 숙면에 긍정적인 영향을 줍니다. 카페인과 알코올 섭취는 저녁 시간 이후로는 자제하는 것이 좋으며, 충분한 수분 섭취도 중요합니다. <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>를 참고하시면 건강한 식단 관리에 더욱 유용할 것입니다.</p>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">긍정적 식품</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">피해야 할 식품</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천 시간</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">우유, 바나나, 견과류</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">카페인, 알코올, 매운 음식</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">취침 3~4시간 전까지</td></tr>
+</tbody></table></div>
+</div>
+
+<div id="sec5" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;"><h2 id="section5">잠들기 전 피해야 할 것들</h2></h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=486&h=315&fit=crop" alt="<h2 id="section5">잠들기 전 피해야 할 것들</h2>" width="486" height="315" /></p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">잠자리에 들기 전 습관은 수면의 질을 결정하는 중요한 요소입니다. 격렬한 운동은 신체 온도를 높여 각성을 유도하므로, 취침 2~3시간 전에는 마무리하는 것이 좋습니다. 또한, 스마트폰, 태블릿, 컴퓨터 등에서 나오는 블루라이트는 멜라토닌 분비를 억제하여 수면을 방해합니다. 잠들기 한 시간 전부터는 모든 전자기기 사용을 중단하고, 따뜻한 물로 샤워하거나 책을 읽는 등 이완 활동에 집중해 보세요.</p>
+<ul style="color: #333; line-height: 1.8; padding-left: 20px; list-style-type: disc;">
+<li>취침 2~3시간 전 격렬한 운동 피하기</li>
+<li>잠들기 1시간 전 모든 전자기기 사용 중단</li>
+<li>블루라이트 차단 모드 활용 또는 독서, 명상으로 대체</li>
+</ul>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">금지 행동</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">이유</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">대안</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">격렬한 운동</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">신체 각성 유도</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가벼운 스트레칭</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">전자기기 사용</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">블루라이트 멜라토닌 억제</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">독서, 따뜻한 샤워</td></tr>
+</tbody></table></div>
+</div>
+
+<div id="sec6" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;"><h2 id="section6">수면 보조제 현명하게 활용하기</h2></h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop" alt="<h2 id="section6">수면 보조제 현명하게 활용하기</h2>" width="486" height="315" /></p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">모든 노력을 기울였음에도 수면이 어렵다면, 수면 보조제의 도움을 고려해볼 수 있습니다. 하지만 이는 임시방편임을 기억하고 전문가와 상담 후 신중하게 선택해야 합니다. 최근에는 식물성 멜라토닌 제품들이 각광받고 있습니다. 예를 들어, 식약청에서 인증받은 <strong>식물성 멜라토닌 식약청인증 2mg 멜라체리</strong>는 부담 없이 시작하기 좋은 제품이며, 좀 더 고함량의 <strong>식물성 멜라토닌 5mg 고함량 미국 트립토판 식약처인증</strong> 제품도 있습니다. 또한, <strong>피지스랩 식물성 멜라토닌 함유 트루멜라 2mg</strong>도 좋은 선택지가 될 수 있습니다. 이러한 제품들은 멜라토닌 분비를 돕거나 긴장을 완화하여 숙면을 유도하는 데 도움을 줄 수 있습니다.</p>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">유형</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주요 성분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주의사항</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">멜라토닌 보조제</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">멜라토닌, 트립토판</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">전문가 상담, 권장량 준수</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">허브 추출물</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">발레리안, 카모마일</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알레르기 유무 확인</td></tr>
+</tbody></table></div>
+</div>
+
+<div id="sec7" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;"><h2 id="section7">마무리</h2></h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=486&h=315&fit=crop" alt="<h2 id="section7">마무리</h2>" width="486" height="315" /></p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">오늘은 수면의 질을 높여 우리 삶의 행복도를 끌어올릴 수 있는 다양한 방법에 대해 알아보았습니다. 건강온도사(행복++)는 여러분이 매일 밤 꿀잠을 자고 활기찬 하루를 시작할 수 있도록 항상 유용한 정보를 제공할 것입니다. 오늘 소개해드린 방법들을 하나씩 실천하며 여러분의 수면 온도를 높여보세요. 꾸준한 노력이 여러분을 숙면의 세계로 이끌어 줄 것입니다. 건강한 수면으로 매일매일 행복이 가득하시길 바랍니다!</p>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">목표</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">규칙적인 생활</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">숙면 통한 행복 증진</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오늘부터 시작하세요!</td></tr>
+</tbody></table></div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">규칙적인 수면 습관으로 생체 리듬을 맞춰요.</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">침실은 어둡고 시원하게, 오직 잠자는 공간으로!</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">자기 전 카페인, 알코올, 전자기기는 멀리하세요.</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">트립토판 풍부한 음식으로 숙면을 유도해요.</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">필요하다면 식물성 멜라토닌 보조제를 고려해 보세요.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">낮잠을 자도 수면에 방해가 되지 않나요?</h3>
+<p style="margin: 0; padding: 8px 0;">20분 이내의 짧은 낮잠은 괜찮지만, 너무 길거나 늦은 낮잠은 밤 수면을 방해할 수 있습니다. 가급적 피하거나, 필요시 짧게 끝내는 것이 좋습니다.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">운동은 수면에 어떤 영향을 주나요?</h3>
+<p style="margin: 0; padding: 8px 0;">규칙적인 운동은 전반적인 수면의 질을 높이지만, 잠들기 2~3시간 전의 격렬한 운동은 신체를 각성시켜 숙면을 방해할 수 있으니 주의하세요.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">수면 보조제는 매일 복용해도 괜찮을까요?</h3>
+<p style="margin: 0; padding: 8px 0;">수면 보조제는 임시적인 도움을 주는 것으로, 장기적인 의존은 바람직하지 않습니다. 복용 전 반드시 전문가와 상담하고, 권장량과 복용법을 지켜야 합니다.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=9066296270&itemId=26633018322&vendorItemId=93944343742&traceid=V0-153-eb18525f0ece50d3&requestid=20260315011744578251777996&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/V4bQvK-ejnM7kCNvV099kKKaOBHzWn6ZneP9s-BVkejA4wmfQmKZL9F4ZtD54EERJ3lb0HfyVePM7kze8GuAkxtHRC_g9CDFPVwMD9zBrbXD9-NSUljn7f1mQNnvqsdcgyO4pfj0THivYPinGUERfMmGS2MclakKHI9YiuTML93UR8MdNZRTVmY8StSLiF23h-W6npUSEJKHos91zhY6L7ivRMT28-hsVZ2s5QfFlqO-bRb51pYQo_JlHU3GuitCqbjA5nbAw_R6Q3_n0vDLlyIxiZ7ViDZlJI9ATtgfMP4zCrs7RIdZNb8NScG5GH2dYkAwEDc=" alt="식물성 멜라토닌 식약청인증 2mg 멜라체리" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">식물성 멜라토닌 식약청인증 2mg 멜라체리</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">14,970원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8901827731&itemId=26277035806&vendorItemId=93255106150&traceid=V0-153-fb03ac94270511d0&clickBeacon=55599740-1fc1-11f1-b3db-e2979eafaf3d%7E3&requestid=20260315011744578251777996&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/IiuIFUO2P3_GnYaOIjDVJvp24Be-4tP2CPDeF60bhZsfZiJWRmSTU6t7jC46pTaPYd2kBLS3pbiy-VMCHC3ZzjQ9q4CkXFH5J-AeH1kInfWnVyHq0ncA_c5FaePbzkw0lSLg5k5wKE3l-URyhk1x5iOXRGvKfKRCVEwz4-69c6RxiiDK4kQ-XJmSbfftnOZ-nW_In3PKzwBf0CtiFHO1TODjWnLJC_H2x9M0_jlK_rYdzlYqtk0YCdkBmVAZAV6wXGvVpTgKv_SP0UpWtLYJfS1ft73szd1Uaxtx-v9MbD1gU1WvwnRu" alt="식물성 멜라토닌 5mg 고함량 미국 트립토판 식약처인증 HACCP 1일 바른본질, 4개, 30정" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">식물성 멜라토닌 5mg 고함량 미국 트립토판 식약처인증 HACCP 1일 바른본질, 4개, 30정</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">69,990원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8479522418&itemId=24537167007&vendorItemId=94332430996&traceid=V0-153-2d2d82d14642cfe9&requestid=20260315011744578251777996&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/3BjXfg-NdaroXzLe3JYhSY1GSrcC2CXyEv1kkCudWrbNsswH250TXG9_pTsIKojeku-HDMOLSs6P1Bjw2UesmtPn5Ji9cM_H3RHLwL3O7Av6e3iMBc7pOmeuD6-7hJXjOzFs384IJO3Nvwzd5V2kNNl1fsKe_HpSzNlhI4TKwpxBD-6W-4yi6-h72STDIIbqEfPQBZIqLya09iCy-6KXyKI0mD6SRey_Vi01k2dP6NPvctU2x_T8pQSiPfRZxbKLRKvVoF67FDuzGdI5xNuDWTeF6SD65G-HAifeOWs6Ihdjf59L5Xp42hHpnOAfM0FOygA9zL0=" alt="피지스랩 식물성 멜라토닌 함유 트루멜라 2mg" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">피지스랩 식물성 멜라토닌 함유 트루멜라 2mg</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">84,900원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; text-align: center;">📌 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>수면질높이는방법, 꿀잠, 불면증개선, 건강수면, 수면루틴, 멜라토닌, 건강온도사</p></div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
