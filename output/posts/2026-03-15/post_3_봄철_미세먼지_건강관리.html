@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>봄철 미세먼지, 건강 지킴이 되는 비법 대공개!</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">봄철 미세먼지, 건강 지킴이 되는 비법 대공개!</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">봄철건강관리, 미세먼지, 호흡기건강, 면역력강화, 황사, 건강온도사, 건강정보</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.</div>
+<div id="blog-html"><div style="background-color: #fff5f6; border: 1px solid #FFB6C1; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;">
+<p style="color: #555; font-size: 14px; line-height: 1.7; margin: 0;">📌 <strong>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong><br />본 글은 건강 정보를 요약한 것이며, 특정 제품의 효능을 보장하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.</p>
+</div>
+
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop" alt="봄철 미세먼지, 건강 지킴이 되는 비법 대공개!" width="486" height="315" /></p>
+
+<p>&nbsp;</p>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">봄철 미세먼지, 건강 지킴이 되는 비법 대공개!</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="toc" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+    <h3 style="color: #FF69B4; margin-top: 0;">목차</h3>
+    <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 8px;"><a href="#봄철-미세먼지-왜-더-신경-써야-할까요" style="color: #333; text-decoration: none;">1. 봄철 미세먼지, 왜 더 신경 써야 할까요?</a></li>
+        <li style="margin-bottom: 8px;"><a href="#내-몸-속-미세먼지-어떤-영향을-미칠까요" style="color: #333; text-decoration: none;">2. 내 몸 속 미세먼지, 어떤 영향을 미칠까요?</a></li>
+        <li style="margin-bottom: 8px;"><a href="#생활-속-미세먼지-차단-필수템-완벽-가이드" style="color: #333; text-decoration: none;">3. 생활 속 미세먼지 차단! 필수템 완벽 가이드</a></li>
+        <li style="margin-bottom: 8px;"><a href="#면역력-쑥쑥-미세먼지-이기는-해독-식단" style="color: #333; text-decoration: none;">4. 면역력 쑥쑥! 미세먼지 이기는 해독 식단</a></li>
+        <li style="margin-bottom: 8px;"><a href="#미세먼지에도-끄떡없는-생활-습관-만들기" style="color: #333; text-decoration: none;">5. 미세먼지에도 끄떡없는 생활 습관 만들기</a></li>
+        <li style="margin-bottom: 8px;"><a href="#호흡기-방어막-강화-코와-목-관리의-중요성" style="color: #333; text-decoration: none;">6. 호흡기 방어막 강화! 코와 목 관리의 중요성</a></li>
+        <li style="margin-bottom: 8px;"><a href="#마무리" style="color: #333; text-decoration: none;">7. 마무리</a></li>
+    </ul>
+</div>
+
+<div class="summary-cards" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 15px; margin-bottom: 30px;">
+  <div style="flex: 1 1 calc(33% - 15px); min-width: 250px; background-color: #fff0f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+    <h4 style="color: #FF69B4; margin-top: 0;">미세먼지 위험성 인지</h4>
+    <p style="color: #333; font-size: 14px;">봄철 황사와 결합해 더 치명적입니다.</p>
+  </div>
+  <div style="flex: 1 1 calc(33% - 15px); min-width: 250px; background-color: #fff0f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+    <h4 style="color: #FF69B4; margin-top: 0;">필수 예방템 준비</h4>
+    <p style="color: #333; font-size: 14px;">마스크, 공기청정기는 선택이 아닌 필수입니다.</p>
+  </div>
+  <div style="flex: 1 1 calc(33% - 15px); min-width: 250px; background-color: #fff0f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+    <h4 style="color: #FF69B4; margin-top: 0;">면역력 강화 식단</h4>
+    <p style="color: #333; font-size: 14px;">해독 식품으로 몸 속 유해물질을 배출하세요.</p>
+  </div>
+  <div style="flex: 1 1 calc(33% - 15px); min-width: 250px; background-color: #fff0f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+    <h4 style="color: #FF69B4; margin-top: 0;">생활 습관 개선</h4>
+    <p style="color: #333; font-size: 14px;">외출 후 손 씻기, 충분한 수분 섭취는 기본입니다.</p>
+  </div>
+  <div style="flex: 1 1 calc(33% - 15px); min-width: 250px; background-color: #fff0f5; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+    <h4 style="color: #FF69B4; margin-top: 0;">호흡기 집중 관리</h4>
+    <p style="color: #333; font-size: 14px;">코와 목 건강을 위한 영양제도 고려해보세요.</p>
+  </div>
+</div>
+
+<a name="봄철-미세먼지-왜-더-신경-써야-할까요"></a>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">계절</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">특징</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">건강 영향</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">봄</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">황사, 꽃가루와 결합</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알레르기, 호흡기 질환 심화</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">봄철 미세먼지는 단순한 먼지를 넘어섭니다. 건조한 날씨로 인해 발생하는 황사, 그리고 꽃가루까지 미세먼지와 복합적으로 작용하여 우리 호흡기에 더욱 치명적인 영향을 미치기 때문입니다. 이 시기에는 평소보다 더 세심한 건강관리가 필요합니다.</p>
+<p style="color: #333; line-height: 1.8;">특히 환절기에는 우리 몸의 면역력이 약해지기 쉬워 미세먼지 공격에 더욱 취약해집니다. 따라서 봄철 미세먼지로부터 건강을 보호하기 위한 적극적인 대처가 정말 중요합니다.</p>
+</div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 내 몸 속 미세먼지, 어떤 영향을 미칠까요?</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 생활 속 미세먼지 차단! 필수템 완벽 가이드</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 면역력 쑥쑥! 미세먼지 이기는 해독 식단</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 미세먼지에도 끄떡없는 생활 습관 만들기</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec5">5. 호흡기 방어막 강화! 코와 목 관리의 중요성</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">내 몸 속 미세먼지, 어떤 영향을 미칠까요?</h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=486&h=315&fit=crop" alt="내 몸 속 미세먼지, 어떤 영향을 미칠까요?" width="486" height="315" /></p>
+<a name="내-몸-속-미세먼지-어떤-영향을-미칠까요"></a>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">영향 부위</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주요 증상</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주의 질환</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">호흡기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">기침, 가래, 목 통증</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">천식, 기관지염</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">심혈관</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가슴 통증, 호흡 곤란</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">협심증, 뇌졸중</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">피부/눈</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가려움, 따가움</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알레르기성 결막염</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">미세먼지는 단순히 호흡기에만 영향을 주는 것이 아닙니다. 우리 몸속 깊숙이 침투하여 혈관을 타고 전신으로 퍼져나가며 다양한 건강 문제를 일으킬 수 있습니다. 특히 초미세먼지는 폐포를 통과하여 혈액으로 직접 유입될 수 있어 더욱 위험합니다.</p>
+<p style="color: #333; line-height: 1.8;">심혈관 질환이나 호흡기 질환을 앓고 계신 분들에게는 증상을 악화시킬 수 있으며, 건강한 사람도 장기적으로 노출되면 만성 질환의 위험이 커질 수 있습니다. 따라서 미세먼지의 위협을 가볍게 여겨서는 안 됩니다.</p>
+</div>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">생활 속 미세먼지 차단! 필수템 완벽 가이드</h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=486&h=315&fit=crop" alt="생활 속 미세먼지 차단! 필수템 완벽 가이드" width="486" height="315" /></p>
+<a name="생활-속-미세먼지-차단-필수템-완벽-가이드"></a>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">필수템</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">기능</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">선택 팁</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">KF94/80 마스크</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">미세먼지 94/80% 차단</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">식약처 인증, 얼굴 밀착형</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">공기청정기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">실내 미세먼지 제거</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">헤파필터, 사용 면적 고려</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가습기/빨래</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">실내 습도 유지, 먼지 흡착</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">젖은 빨래 널기, 적정 습도(50~60%)</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">미세먼지로부터 우리를 보호하는 가장 기본적인 방법은 바로 필수템을 적극적으로 활용하는 것입니다. 외출 시에는 반드시 KF94 또는 KF80 등급의 보건용 마스크를 착용하고, 실내에서는 공기청정기를 가동하여 쾌적한 환경을 유지해주세요. 마스크는 코와 입을 완전히 덮도록 올바르게 착용하는 것이 중요합니다.</p>
+<p style="color: #333; line-height: 1.8;">또한, 실내 습도를 적정하게 유지하는 것도 미세먼지 저감에 도움이 됩니다. 가습기를 사용하거나 젖은 빨래를 널어두는 것도 좋은 방법입니다. 이러한 생활 속 작은 습관들이 모여 미세먼지로부터 우리 가족의 건강을 지키는 든든한 방어막이 됩니다.</p>
+</div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">면역력 쑥쑥! 미세먼지 이기는 해독 식단</h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=486&h=315&fit=crop" alt="면역력 쑥쑥! 미세먼지 이기는 해독 식단" width="486" height="315" /></p>
+<a name="면역력-쑥쑥-미세먼지-이기는-해독-식단"></a>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">식품군</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">대표 식품</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효능</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">녹황색 채소</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">미나리, 브로콜리, <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">두릅</a></td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항산화, 면역력 증진</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수분 함유 식품</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">배, 수박, 물</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">체내 독소 배출</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오메가-3 식품</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">등푸른생선, 견과류</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">염증 완화, 혈액순환 개선</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">미세먼지로부터 몸을 지키는 가장 강력한 무기 중 하나는 바로 건강한 식단입니다. 특히 해독과 면역력 증진에 좋은 식품들을 충분히 섭취하여 몸속 노폐물 배출을 돕고 염증 반응을 줄여주세요. 봄철 별미인 두릅은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a>에도 포함될 만큼 영양가가 풍부하며, 몸속 미세먼지 배출에도 효과적입니다. 가정에서 <a href="#" target="_blank" rel="noopener" style="color: #FF69B4; text-decoration: underline;">두릅나무 묘목 참두릅 민두릅나무 묘목 1-3년생</a>을 직접 키워 싱싱하게 드셔보는 것도 좋은 방법입니다.</p>
+<p style="color: #333; line-height: 1.8;">또한, 충분한 수분 섭취는 기관지 점막을 촉촉하게 유지하고 미세먼지를 씻어내는 데 필수적입니다. 물 외에도 따뜻한 차나 국물 요리를 즐겨 드시면 좋습니다. <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>처럼 건강한 식단을 꾸준히 유지하는 것이 미세먼지로부터 건강을 지키는 지름길입니다.</p>
+</div>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">미세먼지에도 끄떡없는 생활 습관 만들기</h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=486&h=315&fit=crop" alt="미세먼지에도 끄떡없는 생활 습관 만들기" width="486" height="315" /></p>
+<a name="미세먼지에도-끄떡없는-생활-습관-만들기"></a>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">생활 습관</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">세부 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">기대 효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">외출 후 세안/샤워</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">옷 털고, 손발 얼굴 씻기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">피부 흡착 미세먼지 제거</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">환기 요령</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">미세먼지 보통 이하 시 짧게</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">실내 공기 질 관리</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">적절한 운동</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">실내 위주, 너무 격렬하지 않게</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">면역력 및 폐 기능 강화</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">미세먼지가 심한 날에도 건강한 생활을 유지하기 위한 습관을 만들어 보세요. 외출 후에는 옷에 묻은 먼지를 털고, 반드시 손과 얼굴을 깨끗이 씻는 것이 중요합니다. 가능하다면 바로 샤워를 해서 몸에 남아있는 미세먼지를 제거하는 것이 좋습니다. <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>처럼 일상 속 작은 변화가 큰 건강을 만듭니다.</p>
+<p style="color: #333; line-height: 1.8;">환기는 미세먼지 농도가 '보통' 이하일 때 짧게 하는 것이 좋으며, 미세먼지 농도가 매우 나쁜 날에는 창문을 닫고 공기청정기를 가동하는 것이 더 효과적입니다. 규칙적인 운동은 면역력 강화에 필수적이지만, 미세먼지 농도를 확인하고 실내에서 가볍게 하는 것을 추천합니다. <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a> 같은 건강 정보도 함께 참고하여 전반적인 건강 관리에 힘써주세요.</p>
+</div>
+</div>
+
+<div id="sec5" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">호흡기 방어막 강화! 코와 목 관리의 중요성</h2>
+<p style="text-align: center;"><img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=486&h=315&fit=crop" alt="호흡기 방어막 강화! 코와 목 관리의 중요성" width="486" height="315" /></p>
+<a name="호흡기-방어막-강화-코와-목-관리의-중요성"></a>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">관리 부위</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">관리법</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천 제품</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">코</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">코 세척, 비강 보습</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;"><a href="#" target="_blank" rel="noopener" style="color: #FF69B4; text-decoration: underline;">안국건강 코박사 에스</a></td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">목</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가글, 목 보호 영양제</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;"><a href="#" target="_blank" rel="noopener" style="color: #FF69B4; text-decoration: underline;">유비무환 정화 목 관리 인동 맥문동 약도라지 구기자 녹</a></td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">기관지</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">도라지 등 차 섭취</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">따뜻한 생강차, 도라지차</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">코와 목은 외부 미세먼지가 우리 몸으로 들어오는 첫 관문이자 중요한 방어막입니다. 이 부분을 잘 관리하는 것만으로도 미세먼지의 영향을 크게 줄일 수 있습니다. 특히 코 세척은 코 점막에 붙은 미세먼지를 제거하는 데 효과적이며, <a href="#" target="_blank" rel="noopener" style="color: #FF69B4; text-decoration: underline;">안국건강 코박사 에스</a>와 같은 코 건강에 도움을 주는 제품을 활용하는 것도 좋은 방법입니다.</p>
+<p style="color: #333; line-height: 1.8;">목 건강을 위해서는 평소 미지근한 물을 자주 마시고, 가글을 통해 목 점막을 청결하게 유지하는 것이 좋습니다. 또한 <a href="#" target="_blank" rel="noopener" style="color: #FF69B4; text-decoration: underline;">유비무환 정화 목 관리 인동 맥문동 약도라지 구기자 녹</a>처럼 목 관리에 특화된 건강식품을 섭취하여 호흡기 면역력을 강화하는 것도 고려해볼 만합니다. 이렇게 꾸준히 관리하면 미세먼지로부터 우리 호흡기를 더욱 튼튼하게 보호할 수 있습니다.</p>
+</div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">봄철 미세먼지는 황사, 꽃가루와 결합하여 더욱 치명적입니다.</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">호흡기뿐 아니라 심혈관, 피부 등 전신 건강에 악영향을 줍니다.</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">KF 마스크, 공기청정기 등 필수템으로 외부와 실내 미세먼지를 차단하세요.</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">두릅, 미나리, 물 등 해독 식품으로 면역력을 높이고 몸속 노폐물을 배출하세요.</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">외출 후 세안, 코 목 관리 등 건강한 생활 습관으로 호흡기 방어력을 강화하세요.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">미세먼지가 심한 날, 창문은 아예 열지 않아야 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">미세먼지 농도가 '매우 나쁨'일 때는 창문을 닫는 것이 좋습니다. 하지만 '보통' 수준일 때는 5~10분 정도 짧게 환기하고, 공기청정기를 가동하는 것이 실내 공기 질 관리에 도움이 됩니다. 환기 후에는 물걸레로 바닥을 닦아 남아있는 먼지를 제거해주세요.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">미세먼지에 좋은 음식은 어떤 것이 있나요?</h3>
+<p style="margin: 0; padding: 8px 0;">해독 작용을 돕는 미나리, 브로콜리, 두릅과 같은 녹황색 채소, 기관지 보호에 좋은 배, 도라지, 그리고 면역력 증진에 효과적인 비타민C와 오메가-3가 풍부한 식품들을 섭취하는 것이 좋습니다. 물을 충분히 마시는 것도 중요합니다.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">마스크는 KF 등급이 높을수록 좋은가요?</h3>
+<p style="margin: 0; padding: 8px 0;">KF 등급이 높을수록 미세먼지 차단율은 높지만, 호흡이 불편할 수 있습니다. 개인의 호흡기 상태와 활동량에 맞춰 KF80, KF94 등을 선택하는 것이 좋습니다. 가장 중요한 것은 얼굴에 빈틈없이 밀착하여 올바르게 착용하는 것입니다.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<a name="마무리"></a>
+<div class="faq-section" style="margin: 30px 0; background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+    <h3 style="color: #FF69B4; margin-top: 0; margin-bottom: 20px;">자주 묻는 질문 (FAQ)</h3>
+    <div style="margin-bottom: 15px;">
+        <h4 style="color: #2c3e50; margin-bottom: 5px;">Q1: 미세먼지가 심한 날, 창문은 아예 열지 않아야 하나요?</h4>
+        <p style="color: #333;">A1: 미세먼지 농도가 '매우 나쁨'일 때는 창문을 닫는 것이 좋습니다. 하지만 '보통' 수준일 때는 5~10분 정도 짧게 환기하고, 공기청정기를 가동하는 것이 실내 공기 질 관리에 도움이 됩니다. 환기 후에는 물걸레로 바닥을 닦아 남아있는 먼지를 제거해주세요.</p>
+    </div>
+    <div style="margin-bottom: 15px;">
+        <h4 style="color: #2c3e50; margin-bottom: 5px;">Q2: 미세먼지에 좋은 음식은 어떤 것이 있나요?</h4>
+        <p style="color: #333;">A2: 해독 작용을 돕는 미나리, 브로콜리, 두릅과 같은 녹황색 채소, 기관지 보호에 좋은 배, 도라지, 그리고 면역력 증진에 효과적인 비타민C와 오메가-3가 풍부한 식품들을 섭취하는 것이 좋습니다. 물을 충분히 마시는 것도 중요합니다.</p>
+    </div>
+    <div style="margin-bottom: 15px;">
+        <h4 style="color: #2c3e50; margin-bottom: 5px;">Q3: 마스크는 KF 등급이 높을수록 좋은가요?</h4>
+        <p style="color: #333;">A3: KF 등급이 높을수록 미세먼지 차단율은 높지만, 호흡이 불편할 수 있습니다. 개인의 호흡기 상태와 활동량에 맞춰 KF80, KF94 등을 선택하는 것이 좋습니다. 가장 중요한 것은 얼굴에 빈틈없이 밀착하여 올바르게 착용하는 것입니다.</p>
+    </div>
+</div>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천 가이드</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">기대 효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">정보의 힘</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">미세먼지 예보 확인 습관화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">상황별 현명한 대처</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">꾸준한 실천</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">작은 습관이 큰 변화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장기적인 건강 증진</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">지금까지 봄철 미세먼지로부터 우리의 건강을 지키는 다양한 방법을 알아보았습니다. 미세먼지는 피할 수 없는 현실이지만, 제대로 알고 현명하게 대처한다면 충분히 그 영향을 줄일 수 있습니다. 오늘 알려드린 정보들을 바탕으로 여러분의 건강온도를 더욱 행복하게 유지하시길 바랍니다.</p>
+<p style="color: #333; line-height: 1.8;">작은 습관 하나하나가 모여 우리 몸의 방어력을 높이고, 미세먼지로부터 안전한 봄을 맞이할 수 있게 할 것입니다. 건강한 습관으로 매일매일 행복한 봄날을 보내세요! 감사합니다.</p>
+</div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7734003087&itemId=20789974202&vendorItemId=87756373978&traceid=V0-153-0afb1e090b5013ca&requestid=20260315012325578006932568&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/lQPFevXAJm4r-DRIlR3tJ5HW51QCsx4FZg2WgI7_SaUvKNekTD0nz8fSvpiCakx56TbcIQDyqjNRSdbrfeR5q7hwhQCgzk3ljd737q_Zkdnwc5B3k-6nAz2s35iVDgAWxOvxoMqeLx0C9DuyxZulIoPxYs0yM6M-3cilh4H4pTaMsUUCOwDF4lzHi6IDcAAjstQAOfnRWhNTNo5aKSSPfDm2NVd_2OPA3jx6p7bL48maSKQr0kTIJf4_WjghfLQh9IPBuiRasdnSuElFcPDF8hL0a-MN32OQEOTNT25KVy4HQCi8JX1wTX4t3ND-qN-zdIOO_c6g" alt="두릅나무 묘목 참두릅 민두릅나무 묘목 1-3년생" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">두릅나무 묘목 참두릅 민두릅나무 묘목 1-3년생</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">4,480원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=1278348131&itemId=2285618069&vendorItemId=70282701460&traceid=V0-153-1745dce75bad1f10&requestid=20260315012325578006932568&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/fAafJ7Fr5SE8Hx5dfP0HhrHF0zdHINAUaqxuTdf30HscDHDziY2rfufI7DYvpWkir63xhf_fCxoZv0RJq2FZV2cZXTN9aLbu0CkiNA_lwNyZUjk19m0T7Gzmud2dHD4-dW-mfPDMP8GMQgEtOyq_xnA8q7ipFJtuZ_fQMBoi-uF6c0XrIGMffC-wgOctNIh4Ff6zb9ZQa4aPfksmQrnZeUzVS5UWvQJINn1Czl10wZs_LuRQJJ-RSXRFh_kPYPXER6vyJxJuov_Ya06QA9DkUqKkpQWpsglzTlJ-Rpq7KV-BuUUFQB7ivHV9Qks1pkOiwVdomw==" alt="안국건강 코박사 에스" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">안국건강 코박사 에스</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">48,000원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7818583299&itemId=25050605551&vendorItemId=81642781695&traceid=V0-153-8f7f944468439e8c&clickBeacon=2098b030-1fc2-11f1-aa08-7af9f3d5790c%7E3&requestid=20260315012325578006932568&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/ukwG0m4M3JszHrYKuuo2Kb9FcwoJd96wZoqmC6XtP4VtA7sqUtZql_pcSWvKL60uIwbgJ9i9jHBtCpXB-1JxEHma_wvhA5vTVeaUYQooECnO0Fed8NLU-W-BCWc3IgjcLn14dbUyPe6nK9R4Qx40yz56axvzb5Wx1TJKatnxFFBmZesm0TUzSy8aSImnKYnt6lqOqFArOJnHnrQObvce4ZgRRUy_m1qBBbwMMSO8UOHOFzGvWA4kxNhiqJV0PKmChywklQHpHYleelJx5K-cgrKL1fb6BFJlHZGOGACN7tqoJs693oXyL7Ea" alt="유비무환 정화 목 관리 인동 맥문동 약도라지 구기자 녹차 전통원료 환, 75g, 4개" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">유비무환 정화 목 관리 인동 맥문동 약도라지 구기자 녹차 전통원료 환, 75g, 4개</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">170,000원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; text-align: center;">📌 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>봄철건강관리, 미세먼지, 호흡기건강, 면역력강화, 황사, 건강온도사, 건강정보</p></div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
