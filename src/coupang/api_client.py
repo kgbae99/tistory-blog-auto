@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import hmac
+import os
 import time
 from typing import Any
 from urllib.parse import urlencode
@@ -26,12 +27,19 @@ class CoupangAPIClient:
         self.secret_key = config.secret_key
         self.session = requests.Session()
 
-    def _generate_hmac(self, method: str, url_path: str) -> str:
-        """HMAC-SHA256 서명을 생성한다."""
+    def _generate_hmac(
+        self, method: str, path: str, query: str = ""
+    ) -> str:
+        """HMAC-SHA256 서명을 생성한다.
+
+        쿠팡 공식 문서 기준:
+        message = datetime + method + path + query (? 없이 연결)
+        """
+        os.environ["TZ"] = "GMT+0"
         datetime_str = time.strftime("%y%m%dT%H%M%SZ", time.gmtime())
-        message = datetime_str + method + url_path
+        message = datetime_str + method + path + query
         signature = hmac.new(
-            self.secret_key.encode("utf-8"),
+            bytes(self.secret_key, "utf-8"),
             message.encode("utf-8"),
             hashlib.sha256,
         ).hexdigest()
@@ -40,38 +48,55 @@ class CoupangAPIClient:
             f"signed-date={datetime_str}, signature={signature}"
         )
 
-    def _request(self, method: str, path: str, params: dict | None = None,
-                 json_body: dict | None = None) -> dict[str, Any]:
+    def _request(
+        self, method: str, path: str, params: dict | None = None,
+        json_body: dict | None = None,
+    ) -> dict[str, Any]:
         """API 요청을 수행한다."""
         if params:
             query = urlencode(params)
-            url_path = f"{path}?{query}"
+            authorization = self._generate_hmac(method, path, query)
+            url = f"{API_BASE}{path}?{query}"
         else:
-            url_path = path
+            authorization = self._generate_hmac(method, path)
+            url = f"{API_BASE}{path}"
 
-        authorization = self._generate_hmac(method, url_path)
-        headers = {"Authorization": authorization, "Content-Type": "application/json"}
-        url = f"{API_BASE}{url_path}"
+        headers = {
+            "Authorization": authorization,
+            "Content-Type": "application/json",
+        }
 
         try:
             if method == "GET":
                 resp = self.session.get(url, headers=headers, timeout=10)
             else:
-                resp = self.session.post(url, headers=headers, json=json_body, timeout=10)
+                resp = self.session.post(
+                    url, headers=headers, json=json_body, timeout=10
+                )
             resp.raise_for_status()
             return resp.json()
         except requests.RequestException as e:
-            logger.error("쿠팡 API 요청 실패: %s %s — %s", method, path, e)
+            logger.error(
+                "쿠팡 API 요청 실패: %s %s - %s", method, path, e
+            )
             raise
 
-    def search_products(self, keyword: str, limit: int = 10,
-                        sub_id: str = "blog") -> list[dict[str, Any]]:
+    def search_products(
+        self, keyword: str, limit: int = 10, sub_id: str = "blog"
+    ) -> list[dict[str, Any]]:
         """키워드로 쿠팡 상품을 검색한다."""
         path = "/v2/providers/affiliate_open_api/apis/openapi/products/search"
         params = {"keyword": keyword, "limit": limit, "subId": sub_id}
         result = self._request("GET", path, params=params)
-        products = result.get("data", [])
-        logger.info("쿠팡 검색 '%s': %d개 상품 발견", keyword, len(products))
+        data = result.get("data", {})
+        # 응답 구조: data.productData 배열에 상품 목록
+        if isinstance(data, dict):
+            products = data.get("productData", [])
+        else:
+            products = data if isinstance(data, list) else []
+        logger.info(
+            "쿠팡 검색 '%s': %d개 상품 발견", keyword, len(products)
+        )
         return products
 
     def get_deeplink(self, coupang_urls: list[str],

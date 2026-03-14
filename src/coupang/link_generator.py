@@ -43,32 +43,31 @@ def _rating_to_stars(rating: float) -> str:
 def generate_affiliate_links(
     client: CoupangAPIClient, products: list[Product]
 ) -> list[tuple[Product, str]]:
-    """상품 목록에서 수익 딥링크를 생성한다."""
+    """상품 목록에서 수익 링크를 추출한다.
+
+    쿠팡 검색 API 응답의 productUrl이 이미 수익 추적 링크이므로
+    별도의 deeplink API 호출 없이 바로 사용한다.
+    """
     if not products:
         return []
 
-    urls = [p.product_url for p in products]
-    deeplinks = client.get_deeplink(urls)
-
-    results = []
-    for product, link_data in zip(products, deeplinks):
-        fallback = link_data.get("landingUrl", product.product_url)
-        affiliate_url = link_data.get("shortenUrl", fallback)
-        results.append((product, affiliate_url))
-
+    results = [(p, p.product_url) for p in products]
     logger.info("%d개 수익 링크 생성 완료", len(results))
     return results
 
 
 def generate_product_html(product: Product, affiliate_url: str) -> str:
     """상품 HTML 위젯을 생성한다."""
+    rocket_badge = "🚀 로켓배송" if product.is_rocket else ""
+    shipping = "무료배송" if product.is_free_shipping else ""
+    badge = " | ".join(filter(None, [rocket_badge, shipping]))
     return PRODUCT_WIDGET_TEMPLATE.format(
         affiliate_url=affiliate_url,
         image_url=product.product_image,
         product_name=product.product_name,
         price=_format_price(product.product_price),
-        stars=_rating_to_stars(product.rating),
-        review_count=f"{product.review_count:,}",
+        stars=badge if badge else product.category_name,
+        review_count=product.category_name,
     )
 
 

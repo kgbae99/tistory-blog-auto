@@ -10,7 +10,7 @@ from src.core.config import CoupangConfig
 from src.coupang.api_client import CoupangAPIClient
 from src.coupang.link_generator import (
     _format_price,
-    _rating_to_stars,
+    generate_affiliate_links,
     generate_disclaimer,
     generate_product_html,
 )
@@ -34,11 +34,12 @@ def sample_product() -> Product:
         product_name="비타민D 3000IU 고함량",
         product_price=15900,
         product_image="https://example.com/image.jpg",
-        product_url="https://www.coupang.com/vp/products/12345",
-        review_count=1234,
-        rating=4.7,
+        product_url="https://link.coupang.com/re/AFFSDP?lptag=test&pageKey=12345",
         is_rocket=True,
+        is_free_shipping=False,
         category_name="건강식품",
+        keyword="비타민D",
+        rank=1,
     )
 
 
@@ -49,10 +50,13 @@ class TestHMACGeneration:
         assert "access-key=test_key" in auth
         assert "signature=" in auth
 
+    def test_hmac_with_query(self, client: CoupangAPIClient) -> None:
+        auth = client._generate_hmac("GET", "/test/path", "keyword=test&limit=5")
+        assert "HmacSHA256" in auth
+
     def test_hmac_different_methods(self, client: CoupangAPIClient) -> None:
         get_auth = client._generate_hmac("GET", "/path")
         post_auth = client._generate_hmac("POST", "/path")
-        # 같은 시간대면 method가 달라 signature도 다름
         assert "HmacSHA256" in get_auth
         assert "HmacSHA256" in post_auth
 
@@ -65,11 +69,12 @@ class TestProductSearch:
                 "productName": f"테스트 상품 {i}",
                 "productPrice": 10000 * (i + 1),
                 "productImage": f"https://img.coupang.com/{i}.jpg",
-                "productUrl": f"https://www.coupang.com/vp/products/{i}",
-                "reviewCount": 100 + i * 50,
-                "rating": 4.0 + i * 0.1,
+                "productUrl": f"https://link.coupang.com/re/AFFSDP?pageKey={i}",
                 "isRocket": i % 2 == 0,
+                "isFreeShipping": i == 0,
                 "categoryName": "건강식품",
+                "keyword": "비타민",
+                "rank": i + 1,
             }
             for i in range(5)
         ]
@@ -81,20 +86,22 @@ class TestProductSearch:
 
     def test_product_from_api_response(self) -> None:
         data = {
-            "productId": "999",
+            "productId": 999,
             "productName": "테스트",
             "productPrice": 5000,
             "productImage": "https://img.com/test.jpg",
-            "productUrl": "https://coupang.com/vp/products/999",
-            "reviewCount": 200,
-            "rating": 4.5,
+            "productUrl": "https://link.coupang.com/re/AFFSDP?pageKey=999",
             "isRocket": True,
+            "isFreeShipping": True,
             "categoryName": "뷰티",
+            "keyword": "테스트",
+            "rank": 1,
         }
         product = Product.from_api_response(data)
         assert product.product_id == "999"
         assert product.product_price == 5000
         assert product.is_rocket is True
+        assert product.is_free_shipping is True
 
 
 class TestLinkGenerator:
@@ -103,16 +110,19 @@ class TestLinkGenerator:
         assert _format_price(1000000) == "1,000,000"
         assert _format_price(500) == "500"
 
-    def test_rating_to_stars(self) -> None:
-        assert "★★★★" in _rating_to_stars(4.7)
-        assert "★★★★★" == _rating_to_stars(5.0)
-
     def test_generate_product_html(self, sample_product: Product) -> None:
         html = generate_product_html(sample_product, "https://link.coupang.com/aff")
         assert "비타민D 3000IU 고함량" in html
         assert "15,900" in html
         assert "https://link.coupang.com/aff" in html
         assert "coupang-recommend" in html
+
+    def test_generate_affiliate_links(self, client: CoupangAPIClient, sample_product: Product) -> None:
+        results = generate_affiliate_links(client, [sample_product])
+        assert len(results) == 1
+        product, url = results[0]
+        assert product.product_name == "비타민D 3000IU 고함량"
+        assert "link.coupang.com" in url
 
     def test_generate_disclaimer(self) -> None:
         disclaimer = generate_disclaimer()
