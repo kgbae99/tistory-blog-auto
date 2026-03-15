@@ -34,6 +34,10 @@ jobs:
           TISTORY_BLOG_NAME=kgbae2369
           TISTORY_BLOG_URL=https://kgbae2369.tistory.com
           ADSENSE_GTAG_ID=G-SD7PEXH5NK
+          ADSENSE_PUB_ID=${{ secrets.ADSENSE_PUB_ID }}
+          ADSENSE_SLOT_TOP=${{ secrets.ADSENSE_SLOT_TOP }}
+          ADSENSE_SLOT_MID=${{ secrets.ADSENSE_SLOT_MID }}
+          ADSENSE_SLOT_BOTTOM=${{ secrets.ADSENSE_SLOT_BOTTOM }}
           EOF
 
       - name: Generate 3 daily posts

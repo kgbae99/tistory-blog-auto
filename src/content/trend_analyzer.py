@@ -152,24 +152,45 @@ def load_trending_keywords_from_config() -> dict[str, list[str]]:
     return data.get("trending_keywords", {})
 
 
-def get_best_keyword_for_today() -> str:
-    """오늘 발행에 최적인 키워드를 선택한다."""
+def get_best_keyword_for_today(exclude: list[str] | None = None) -> str:
+    """오늘 발행에 최적인 키워드를 선택한다.
+
+    Args:
+        exclude: 제외할 키워드 리스트 (같은 날 중복 방지)
+    """
+    if exclude is None:
+        exclude = []
+
+    # 모든 키워드 풀 구성
+    all_keywords: list[str] = []
+
     # 1. settings.yaml 트렌드 키워드 우선
     trending = load_trending_keywords_from_config()
-    immediate = trending.get("immediate", [])
-    if immediate:
-        # 날짜 기반으로 순환 선택
-        day_of_year = datetime.now().timetuple().tm_yday
-        return immediate[day_of_year % len(immediate)]
+    for group in ["immediate", "beauty_2026", "evergreen"]:
+        all_keywords.extend(trending.get(group, []))
 
-    # 2. 시즌 키워드 폴백
+    # 2. 시즌 키워드 추가
     seasonal = get_seasonal_keywords()
-    all_keywords = []
     for cat_keywords in seasonal.values():
         all_keywords.extend(cat_keywords)
 
-    if all_keywords:
-        day_of_year = datetime.now().timetuple().tm_yday
-        return all_keywords[day_of_year % len(all_keywords)]
+    # 중복 제거 (순서 유지)
+    seen: set[str] = set()
+    unique_keywords = []
+    for kw in all_keywords:
+        if kw not in seen:
+            seen.add(kw)
+            unique_keywords.append(kw)
 
-    return "건강 관리 팁"
+    # 이미 선택된 키워드 제외
+    available = [kw for kw in unique_keywords if kw not in exclude]
+    if not available:
+        available = unique_keywords
+
+    # 날짜 + exclude 길이 기반으로 다른 키워드 선택
+    day_of_year = datetime.now().timetuple().tm_yday
+    idx = (day_of_year + len(exclude)) % len(available)
+    selected = available[idx]
+
+    logger.info("키워드 선택: '%s' (풀: %d개, 제외: %d개)", selected, len(available), len(exclude))
+    return selected

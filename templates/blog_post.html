@@ -1,79 +1,127 @@
 {% autoescape false %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - 건강온도사(행복++)</title>
+  {% if meta_description %}
+  <meta name="description" content="{{ meta_description }}">
+  {% endif %}
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ meta_description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="건강온도사(행복++)">
+  <meta property="og:url" content="https://kgbae2369.tistory.com">
+  {% if tags %}
+  <meta name="keywords" content="{{ tags | join(', ') }}">
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "description": "{{ meta_description }}",
+    "author": {
+      "@type": "Person",
+      "name": "건강온도사"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "건강온도사(행복++)",
+      "url": "https://kgbae2369.tistory.com"
+    },
+    "datePublished": "{{ publish_date | default('') }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    }
+  }
+  </script>
+  {% if faq_items %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for item in faq_items %}
+      {
+        "@type": "Question",
+        "name": "{{ item.q }}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{ item.a }}"
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+  <style>
+    img { max-width: 100%; height: auto; }
+    table { overflow-x: auto; display: block; }
+    .content-section, .topic-section { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; }
+  </style>
+</head>
+<body>
+
 <article class="blog-post">
 
-  <!-- 도입부 -->
-  {% if sections and sections|length > 0 %}
-  <div class="intro">
-    {{ sections[0].content }}
+  <!-- 쿠팡 파트너스 고지문 (상단) -->
+  <div style="background-color:#fff5f6; padding:12px 16px; border-radius:8px; border-left:4px solid #FFB6C1; margin-bottom:20px; font-size:13px; color:#666;">
+    📌 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
   </div>
+
+  <!-- 도입부 (첫 번째 섹션) -->
+  {% if sections and sections|length > 0 %}
+  {{ sections[0].content }}
   {% endif %}
 
   <!-- 본문 섹션 -->
   {% for section in sections %}
   {% if loop.index0 > 0 %}
-  <h2>{{ section.heading }}</h2>
-  <div class="section-content">
-    {{ section.content }}
-  </div>
 
-  <!-- 첫 번째 H2 뒤 광고 -->
-  {% if loop.index0 == 1 and ad_slots|length > 0 %}
-  {{ ad_slots[0] }}
-  {% endif %}
+  {{ section.content }}
 
-  <!-- 두 번째 H2 뒤 쿠팡 상품 -->
+  <!-- 쿠팡 상품 분산 배치 -->
   {% if loop.index0 == 2 and product_widgets|length > 0 %}
   {{ product_widgets[0] }}
   {% endif %}
 
-  <!-- 세 번째 H2 뒤 광고 -->
-  {% if loop.index0 == 3 and ad_slots|length > 1 %}
-  {{ ad_slots[1] }}
-  {% endif %}
-
-  <!-- 네 번째 H2 뒤 쿠팡 상품 -->
   {% if loop.index0 == 4 and product_widgets|length > 1 %}
   {{ product_widgets[1] }}
-  {% endif %}
-
-  <!-- 여섯 번째 H2 뒤 쿠팡 상품 -->
-  {% if loop.index0 == 6 and product_widgets|length > 2 %}
-  {{ product_widgets[2] }}
   {% endif %}
 
   {% endif %}
   {% endfor %}
 
-  <!-- 결론 전 광고 -->
-  {% if ad_slots|length > 2 %}
-  {{ ad_slots[2] }}
-  {% endif %}
-
-  <!-- 결론 -->
-  {% if sections|length > 1 %}
-  <h2>마치며</h2>
-  <div class="conclusion">
-    <p>오늘 알려드린 내용이 도움이 되셨길 바랍니다. 건강온도사는 앞으로도 여러분의 건강한 생활을 위한 유용한 정보를 계속 전해드리겠습니다.</p>
-    <p>궁금한 점이나 더 알고 싶은 주제가 있다면 댓글로 남겨주세요!</p>
+  <!-- 하단 쿠팡 상품 전체 -->
+  {% if product_widgets|length > 2 %}
+  <div style="background-color:#ffffff; border-radius:8px; padding:20px; margin-bottom:30px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+    <h2 style="color:#2c3e50; border-bottom:2px solid #FFE4E8; padding-bottom:10px;">추천 상품</h2>
+    {{ product_widgets[2] }}
   </div>
   {% endif %}
 
-  <!-- 쿠팡 파트너스 고지문 -->
-  {{ disclaimer }}
-
   <!-- 건강 정보 면책 -->
-  <p style="font-size: 12px; color: #999; margin-top: 10px;">
-    본 콘텐츠는 정보 제공 목적이며, 의학적 조언을 대체하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.
-  </p>
+  <div style="margin-top:20px; padding:15px; background-color:#f9f9f9; border-radius:8px; font-size:13px; color:#888;">
+    <p style="margin:0;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다. 건강 관련 결정은 반드시 전문의와 상담하세요.</p>
+  </div>
+
+  <!-- 쿠팡 파트너스 고지문 (하단) -->
+  {{ disclaimer }}
 
   <!-- 태그 -->
   {% if tags %}
-  <div class="post-tags" style="margin-top: 20px;">
+  <div class="post-tags" style="margin-top:20px;">
     {% for tag in tags %}
-    <span class="tag" style="display: inline-block; margin: 3px; padding: 4px 10px; background: #f0f0f0; border-radius: 3px; font-size: 13px;">#{{ tag }}</span>
+    <span style="display:inline-block; margin:3px; padding:4px 10px; background:#fff5f6; border:1px solid #FFE4E8; border-radius:15px; font-size:13px; color:#e87a8a;">#{{ tag }}</span>
     {% endfor %}
   </div>
   {% endif %}
 
 </article>
+
+</body>
+</html>
 {% endautoescape %}

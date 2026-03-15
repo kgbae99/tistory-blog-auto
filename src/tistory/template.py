@@ -29,6 +29,8 @@ def render_blog_post(
     disclaimer: str,
     meta_description: str = "",
     tags: list[str] | None = None,
+    publish_date: str = "",
+    faq_items: list[dict[str, str]] | None = None,
 ) -> str:
     """블로그 포스트 HTML을 렌더링한다."""
     env = _create_env()
@@ -41,6 +43,8 @@ def render_blog_post(
         disclaimer=disclaimer,
         meta_description=meta_description,
         tags=tags or [],
+        publish_date=publish_date,
+        faq_items=faq_items or [],
     )
 
 

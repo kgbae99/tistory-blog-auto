@@ -13,31 +13,63 @@ from src.core.logger import setup_logger
 
 logger = setup_logger("content_generator")
 
-SYSTEM_PROMPT = """당신은 "건강온도사(행복++)" 블로그의 전문 콘텐츠 작가입니다.
+SYSTEM_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로그의 전문 콘텐츠 작가입니다.
 
-## 작성 규칙
-- 대상 독자: 건강과 생활에 관심 있는 20~60대 한국인
-- 톤: 친근하고 전문적인 (존댓말 사용)
-- 브랜딩: "건강온도사"로서 신뢰감 있는 정보 전달
-- 건강 정보는 근거 기반으로 작성, 과장/허위 금지
-- 의학적 조언 대신 정보 제공 목적임을 명시
+## 기존 글 스타일 (반드시 따라야 함)
 
-## 콘텐츠 구조
-1. 도입부: 독자 공감 + 글의 가치 소개 (200~300자)
-2. 본문: H2 5~8개, 각 H2 아래 H3 1~2개로 세분화, 각 섹션 300~500자
-3. 결론: 핵심 요약 + 행동 촉구 + "함께 읽으면 좋은 글" 추천 (200~300자)
+### 실제 블로그 글 예시
+- 제목: "아침 공복에 좋은 음식, 따로 있습니다"
+- 제목: "뼈가 약해졌다면 지금 꼭 챙기세요"
+- 제목: "간을 망치는 음식, 혹시 매일 드시나요?"
+- 제목: "1일 1식단, 이걸로 건강 지켜냅니다"
 
-## SEO 규칙
-- 포커스 키워드를 제목 앞부분, 도입부 첫 문단, H2 1개 이상에 포함
-- 메타 설명 155자 이내, CTA 포함
-- 키워드 밀도 1~2% 유지
-- 제목은 40~60자, 숫자/리스트형 선호 ("~하는 5가지 방법")
-- 각 H2 섹션에 불릿 포인트 또는 번호 리스트 최소 1개 포함
-- 건강 정보는 구체적 수치와 근거 제시 (예: "1일 권장량 1000IU")
+### HTML 구조 (정확히 이 형식으로 작성)
+
+각 섹션은 아래 HTML 구조를 사용:
+- 섹션 박스: background-color:#ffffff, border-radius:8px, padding:20px, margin-bottom:30px, box-shadow:0 2px 4px rgba(0,0,0,0.1)
+- H2 스타일: color:#2c3e50, border-bottom:2px solid #FFE4E8, padding-bottom:10px
+- 본문 박스: background-color:#fff5f6, padding:20px, border-radius:8px, border-left:4px solid #FFB6C1
+- 테이블: width:100%, border-collapse:collapse, 헤더 배경:#ffe4e8, 테두리:#FFB6C1
+- 텍스트: color:#333, line-height:1.8
+
+### 도입부 구조
+첫 번째 섹션은 반드시:
+1. H1 제목 (color:#2c3e50, border-bottom:2px solid #FFE4E8)
+2. 독자 공감 짧은 문장 (1~2문장, "혹시 이런 적 있으시죠?" 스타일)
+3. 상세 도입부 박스 (핑크 배경, 200~300자)
+4. 목차 박스 (핑크 배경, 각 섹션 앵커 링크)
+
+### 본문 섹션 구조
+각 H2 섹션은:
+1. H2 제목 (핑크 하단 보더)
+2. 표(table) 또는 리스트로 핵심 정보 요약
+3. 본문 박스 (핑크 배경, 150~300자)
+
+### 핵심 요약 카드
+- 5개 카드를 flexbox로 배치
+- 각 카드: 다른 파스텔 색상 (ffebee, fce4ec, f3e5f5, e1f5fe, e8f5e9)
+- H3 제목 + 한 줄 설명
+
+### FAQ 섹션
+- 3개 질문/답변 카드
+- 각 카드: 핑크 그라데이션 배경 (FAE3E3, FDE2E2, FCE5E5)
+
+### 마무리 섹션
+- 핵심 요약 + 행동 촉구
+- 태그 목록 (6~7개)
+
+## 글쓰기 규칙
+1. 제목: 짧고 강렬한 호기심 유발형 (15~30자)
+2. H2 섹션 6~7개
+3. 각 섹션 150~300자, 짧은 문단
+4. 문체: ~합니다/~요 존댓말, 친근하고 실용적
+5. 건강 정보는 구체적 수치와 근거 제시
+6. 과장/허위 금지, 정보 제공 목적
+7. 쿠팡 상품 추천 시 자연스러운 전환문 사용
 
 ## 수익화 통합
 - 쿠팡 상품 추천 시 자연스러운 전환문 사용 ("이런 분들에게 도움이 될 수 있어요")
-- 과도한 상업적 표현 지양, 정보 제공 중심"""
+- 과도한 상업적 표현 지양"""
 
 
 @dataclass
@@ -46,7 +78,7 @@ class GeneratedContent:
 
     title: str
     meta_description: str
-    sections: list[dict[str, str]]  # [{"heading": "H2 제목", "content": "본문"}]
+    sections: list[dict[str, str]]
     tags: list[str]
     focus_keyword: str
     word_count: int
@@ -102,7 +134,7 @@ def _build_prompt(request: ContentRequest) -> str:
 
 ## 쿠팡 추천 상품 (자연스럽게 언급)
 {products_list}
-이 상품들을 본문에서 자연스럽게 추천해주세요. (2번째, 4번째 섹션 뒤에 배치 예정)"""
+이 상품들을 본문에서 자연스럽게 추천해주세요."""
 
     secondary = ""
     if request.secondary_keywords:
@@ -118,16 +150,31 @@ def _build_prompt(request: ContentRequest) -> str:
 - 목표 분량: 1,500~3,000자
 {product_context}
 
-## 출력 형식 (반드시 JSON으로)
+## 내부 링크 (본문 중간에 자연스럽게 2개 삽입)
+- <a href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a>
+- <a href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>
+
+## 출력 형식 (반드시 JSON)
+
+sections 배열의 각 항목은 인라인 CSS가 포함된 완전한 HTML이어야 합니다.
+첫 번째 섹션은 도입부(H1 제목 + 공감문 + 상세소개 + 목차)입니다.
+나머지 섹션은 H2 본문 섹션입니다.
+핵심요약 카드 섹션과 FAQ 섹션도 포함해주세요.
+마지막 섹션은 마무리입니다.
+
 ```json
 {{
-  "title": "포스트 제목 (40~60자, 키워드 포함)",
-  "meta_description": "메타 설명 (155자 이내)",
+  "title": "제목 (15~30자, 호기심 유발형)",
+  "meta_description": "메타 설명 (155자 이내, CTA 포함)",
   "sections": [
-    {{"heading": "H2 섹션 제목", "content": "섹션 본문 (HTML 태그 사용 가능)"}},
-    ...
+    {{"heading": "도입부", "content": "<div id='section1' class='content-section' style='...'>H1 제목 + 공감문 + 소개 + 목차 HTML</div>"}},
+    {{"heading": "섹션제목1", "content": "<div id='sec1' class='topic-section' style='...'>H2 + 테이블 + 본문박스 HTML</div>"}},
+    {{"heading": "섹션제목2", "content": "..."}},
+    {{"heading": "핵심 요약", "content": "<div style='...'>5개 카드 flexbox HTML</div>"}},
+    {{"heading": "자주 묻는 질문", "content": "<div style='...'>FAQ 3개 카드 HTML</div>"}},
+    {{"heading": "마무리", "content": "<div style='...'>결론 + 태그 HTML</div>"}}
   ],
-  "tags": ["태그1", "태그2", ...],
+  "tags": ["태그1", "태그2", ...6~7개],
   "focus_keyword": "{request.keyword}"
 }}
 ```

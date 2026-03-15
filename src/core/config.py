@@ -46,7 +46,7 @@ class TistoryConfig:
 
 @dataclass
 class ContentConfig:
-    model: str = "claude-sonnet-4-6"
+    model: str = "gemini-2.5-flash"
     max_tokens: int = 4096
     min_word_count: int = 1500
     max_word_count: int = 3000
@@ -58,6 +58,13 @@ class ContentConfig:
 class AdsenseConfig:
     gtag_id: str = field(default_factory=lambda: os.getenv("ADSENSE_GTAG_ID", "G-SD7PEXH5NK"))
     pub_id: str = field(default_factory=lambda: os.getenv("ADSENSE_PUB_ID", ""))
+    ad_slots: list[str] = field(
+        default_factory=lambda: [
+            os.getenv("ADSENSE_SLOT_TOP", ""),
+            os.getenv("ADSENSE_SLOT_MID", ""),
+            os.getenv("ADSENSE_SLOT_BOTTOM", ""),
+        ]
+    )
     ad_positions: list[str] = field(
         default_factory=lambda: ["after_first_h2", "after_third_h2", "before_conclusion"]
     )

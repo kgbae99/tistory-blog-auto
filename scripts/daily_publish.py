@@ -1,4 +1,4 @@
-"""일일 자동 발행 스크립트 - 전체 파이프라인 실행."""
+"""일일 자동 발행 스크립트 - 매일 3개 포스트 생성 파이프라인."""
 
 from __future__ import annotations
 
@@ -7,7 +7,6 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-# 프로젝트 루트를 sys.path에 추가
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.adsense.ad_inserter import generate_ad_code, insert_ads_into_html
@@ -30,105 +29,188 @@ from src.tistory.template import render_blog_post
 logger = setup_logger("daily_publish")
 
 
-async def run_daily_publish(keyword: str | None = None, dry_run: bool = False) -> str | None:
+async def generate_single_post(
+    keyword: str,
+    post_index: int,
+    config: object,
+    coupang_client: CoupangAPIClient,
+    dry_run: bool = False,
+) -> dict:
+    """단일 포스트를 생성한다.
+
+    Returns:
+        {"keyword": str, "title": str, "html": str, "tags": list, "success": bool}
+    """
+    logger.info("--- 포스트 #%d 생성 시작: '%s' ---", post_index, keyword)
+
+    try:
+        # 1. 쿠팡 상품 검색
+        products = search_and_filter(
+            coupang_client, keyword, count=config.coupang.products_per_post
+        )
+        product_names = [p.product_name for p in products]
+        logger.info("  [상품] %d개 검색 완료", len(products))
+
+        # 2. 콘텐츠 생성
+        content_request = ContentRequest(
+            keyword=keyword,
+            category="건강정보",
+            product_names=product_names,
+        )
+        content = generate_blog_content(content_request, config.content)
+        logger.info("  [콘텐츠] '%s' (%d자)", content.title, content.word_count)
+
+        # 3. SEO 최적화
+        content = optimize_content(content)
+        seo_score = analyze_seo(content)
+        logger.info("  [SEO] %d/100점", seo_score.total)
+
+        # 4. 쿠팡 수익 링크 + HTML 위젯
+        product_widgets = []
+        if products:
+            affiliate_links = generate_affiliate_links(coupang_client, products)
+            for product, url in affiliate_links:
+                widget_html = generate_product_html(product, url)
+                product_widgets.append(widget_html)
+
+        # 5. HTML 렌더링
+        ad_slots = [
+            generate_ad_code(config.adsense, position_index=i)
+            for i in range(3)
+        ]
+        disclaimer = generate_disclaimer()
+        today = datetime.now().strftime("%Y-%m-%d")
+
+        final_html = render_blog_post(
+            title=content.title,
+            sections=content.sections,
+            product_widgets=product_widgets,
+            ad_slots=ad_slots,
+            disclaimer=disclaimer,
+            meta_description=content.meta_description,
+            tags=content.tags,
+            publish_date=today,
+        )
+
+        # 6. 애드센스 광고 삽입
+        final_html = insert_ads_into_html(final_html, config.adsense)
+
+        logger.info("  [완료] HTML %d자, 상품 %d개, 광고 삽입 완료", len(final_html), len(product_widgets))
+
+        return {
+            "keyword": keyword,
+            "title": content.title,
+            "html": final_html,
+            "tags": content.tags,
+            "meta_description": content.meta_description,
+            "success": True,
+        }
+
+    except Exception as e:
+        logger.error("  [실패] 포스트 #%d '%s': %s", post_index, keyword, e)
+        return {"keyword": keyword, "title": "", "html": "", "tags": [], "success": False}
+
+
+async def run_daily_publish(
+    keyword: str | None = None,
+    dry_run: bool = False,
+    post_count: int = 3,
+) -> list[str | None]:
     """전체 블로그 자동 발행 파이프라인을 실행한다.
 
     Args:
         keyword: 특정 키워드 지정 (None이면 자동 선택)
         dry_run: True이면 발행 없이 미리보기만
+        post_count: 생성할 포스트 수 (기본 3)
 
     Returns:
-        발행된 포스트 URL 또는 None
+        발행된 포스트 URL 리스트
     """
     config = load_config()
-    logger.info("=== 일일 자동 발행 시작 (%s) ===", datetime.now().strftime("%Y-%m-%d %H:%M"))
+    now = datetime.now()
+    logger.info(
+        "=== 일일 자동 발행 시작 (%s) — %d개 포스트 ===",
+        now.strftime("%Y-%m-%d %H:%M"), post_count,
+    )
 
-    # 1. 키워드 선정 (트렌드 + 시즌 자동 선택)
-    if keyword is None:
-        keyword = get_best_keyword_for_today()
-    logger.info("[1/7] 키워드 선정: '%s'", keyword)
+    # 키워드 선정
+    if keyword:
+        keywords = [keyword]
+    else:
+        keywords = []
+        for i in range(post_count):
+            kw = get_best_keyword_for_today(exclude=keywords)
+            keywords.append(kw)
+    logger.info("선정 키워드: %s", keywords)
 
-    # 2. 쿠팡 상품 검색
-    logger.info("[2/7] 쿠팡 상품 검색 중...")
     coupang_client = CoupangAPIClient(config.coupang)
-    products = search_and_filter(coupang_client, keyword, count=config.coupang.products_per_post)
-    product_names = [p.product_name for p in products]
-    logger.info("  → %d개 상품 선택", len(products))
+    results = []
+    published_urls = []
 
-    # 3. 콘텐츠 생성
-    logger.info("[3/7] Claude API 콘텐츠 생성 중...")
-    content_request = ContentRequest(
-        keyword=keyword,
-        category="건강정보",
-        product_names=product_names,
-    )
-    content = generate_blog_content(content_request, config.content)
-    logger.info("  → '%s' (%d자)", content.title, content.word_count)
+    # 포스트 순차 생성 (API rate limit 고려)
+    for i, kw in enumerate(keywords, 1):
+        result = await generate_single_post(
+            keyword=kw,
+            post_index=i,
+            config=config,
+            coupang_client=coupang_client,
+            dry_run=dry_run,
+        )
+        results.append(result)
 
-    # 4. SEO 최적화
-    logger.info("[4/7] SEO 최적화 중...")
-    content = optimize_content(content)
-    seo_score = analyze_seo(content)
-    logger.info("  → SEO 점수: %d/100", seo_score.total)
-    if seo_score.issues:
-        for issue in seo_score.issues:
-            logger.warning("  SEO 이슈: %s", issue)
-
-    # 5. 쿠팡 수익 링크 생성 & HTML 위젯
-    logger.info("[5/7] 쿠팡 수익 링크 생성 중...")
-    product_widgets = []
-    if products:
-        affiliate_links = generate_affiliate_links(coupang_client, products)
-        for product, url in affiliate_links:
-            widget_html = generate_product_html(product, url)
-            product_widgets.append(widget_html)
-
-    # 6. HTML 렌더링
-    logger.info("[6/7] HTML 렌더링 중...")
-    ad_slots = [generate_ad_code(config.adsense) for _ in range(3)]
-    disclaimer = generate_disclaimer()
-
-    final_html = render_blog_post(
-        title=content.title,
-        sections=content.sections,
-        product_widgets=product_widgets,
-        ad_slots=ad_slots,
-        disclaimer=disclaimer,
-        meta_description=content.meta_description,
-        tags=content.tags,
-    )
-
-    # 광고 삽입 (추가 위치)
-    final_html = insert_ads_into_html(final_html, config.adsense)
+    # 저장 또는 발행
+    output_dir = Path(__file__).parent.parent / "output" / "posts" / now.strftime("%Y-%m-%d")
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     if dry_run:
-        logger.info("[DRY RUN] 발행 스킵, HTML 생성 완료 (%d자)", len(final_html))
-        output_path = Path(__file__).parent.parent / "output" / f"preview_{keyword}.html"
-        output_path.parent.mkdir(exist_ok=True)
-        output_path.write_text(final_html, encoding="utf-8")
-        logger.info("미리보기 저장: %s", output_path)
-        return None
+        for i, result in enumerate(results, 1):
+            if result["success"]:
+                filepath = output_dir / f"post_{i}_{result['keyword'][:20]}.html"
+                filepath.write_text(result["html"], encoding="utf-8")
+                logger.info("[DRY RUN] 저장: %s", filepath.name)
+                published_urls.append(None)
+        logger.info("=== DRY RUN 완료: %d개 포스트 생성 ===", sum(1 for r in results if r["success"]))
+    else:
+        # 실제 발행
+        browser, context = await create_browser_context(headless=True)
+        try:
+            for i, result in enumerate(results, 1):
+                if not result["success"]:
+                    published_urls.append(None)
+                    continue
 
-    # 7. 티스토리 발행
-    logger.info("[7/7] 티스토리 발행 중...")
-    browser, context = await create_browser_context(headless=True)
-    try:
-        post = PostData(
-            title=content.title,
-            content_html=final_html,
-            category="건강정보",
-            tags=content.tags,
-            visibility="public",
-        )
-        published_url = await publish_post(context, config.tistory, post)
-        if published_url:
-            logger.info("=== 발행 완료: %s ===", published_url)
-        else:
-            logger.error("=== 발행 실패 ===")
-        return published_url
-    finally:
-        await save_session(context)
-        await browser.close()
+                post = PostData(
+                    title=result["title"],
+                    content_html=result["html"],
+                    category="건강정보",
+                    tags=result["tags"],
+                    visibility="public",
+                )
+                url = await publish_post(context, config.tistory, post)
+                published_urls.append(url)
+                if url:
+                    logger.info("[발행 완료] #%d: %s", i, url)
+                else:
+                    logger.error("[발행 실패] #%d: %s", i, result["title"])
+
+                # 발행 간격 (티스토리 rate limit 방지)
+                if i < len(results):
+                    await asyncio.sleep(30)
+        finally:
+            await save_session(context)
+            await browser.close()
+
+        success_count = sum(1 for u in published_urls if u)
+        logger.info("=== 발행 완료: %d/%d개 성공 ===", success_count, len(results))
+
+    # HTML 파일은 항상 저장 (발행 여부 무관)
+    for i, result in enumerate(results, 1):
+        if result["success"]:
+            filepath = output_dir / f"post_{i}_{result['keyword'][:20]}.html"
+            if not filepath.exists():
+                filepath.write_text(result["html"], encoding="utf-8")
+
+    return published_urls
 
 
 def main() -> None:
@@ -138,11 +220,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="블로그 자동 발행")
     parser.add_argument("--keyword", "-k", type=str, help="발행할 키워드")
     parser.add_argument("--dry-run", action="store_true", help="발행 없이 미리보기만")
+    parser.add_argument("--count", "-n", type=int, default=3, help="생성할 포스트 수 (기본 3)")
     args = parser.parse_args()
 
-    result = asyncio.run(run_daily_publish(keyword=args.keyword, dry_run=args.dry_run))
-    if result:
-        print(f"\n발행 완료: {result}")
+    results = asyncio.run(
+        run_daily_publish(keyword=args.keyword, dry_run=args.dry_run, post_count=args.count)
+    )
+
+    success = sum(1 for r in results if r is not None)
+    if success:
+        print(f"\n발행 완료: {success}개")
     elif not args.dry_run:
         print("\n발행 실패")
         sys.exit(1)

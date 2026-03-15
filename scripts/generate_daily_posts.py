@@ -203,7 +203,7 @@ def build_full_html(data: dict, products: list, post_index: int) -> str:
 </div>""")
 
     # 대표 이미지
-    parts.append(f'<p style="text-align: center;"><img src="{header_img}" alt="{data.get("title","")}" width="486" height="315" /></p>')
+    parts.append(f'<p style="text-align: center;"><img src="{header_img}" alt="{data.get("title","")}" style="max-width:100%; height:auto;" width="486" /></p>')
     parts.append('<p>&nbsp;</p>')
 
     # H1 제목 + 도입부
@@ -231,7 +231,7 @@ def build_full_html(data: dict, products: list, post_index: int) -> str:
         img = SECTION_IMAGES[(i - 1) % len(SECTION_IMAGES)]
         parts.append(f"""<div id="sec{i}" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">{section["heading"]}</h2>
-<p style="text-align: center;"><img src="{img}" alt="{section["heading"]}" width="486" height="315" /></p>
+<p style="text-align: center;"><img src="{img}" alt="{section["heading"]}" style="max-width:100%; height:auto;" width="486" /></p>
 {section["content"]}
 </div>""")
 

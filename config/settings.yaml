@@ -4,11 +4,27 @@ blog:
   url: "https://kgbae2369.tistory.com"
   blog_name: "kgbae2369"
   categories:
-    - 건강정보
-    - 생활꿀팁
-    - 뷰티/스킨케어
-    - 식품/영양
-    - 정부지원/복지
+    - name: "건강정보"
+      subcategories:
+        - "건강식품/영양제"
+        - "다이어트/체중관리"
+        - "면역력/예방"
+    - name: "생활꿀팁"
+      subcategories:
+        - "생활용품 추천"
+        - "절약/소비"
+    - name: "뷰티/스킨케어"
+      subcategories:
+        - "스킨케어 루틴"
+        - "화장품 리뷰"
+    - name: "식품/영양"
+      subcategories:
+        - "건강 레시피"
+        - "식재료 효능"
+    - name: "정부지원/복지"
+      subcategories:
+        - "지원금/보조금"
+        - "복지 서비스"
 
 content:
   model: "gemini-2.5-flash"
@@ -21,16 +37,13 @@ content:
 
 seo:
   min_headings: 5
-  max_headings: 10
+  max_headings: 8
   meta_description_length: 155
   focus_keywords_per_post: 3
-  internal_links_per_post: 3  # 기존 2 → 3으로 강화
-  use_h3_subheadings: true    # H3 계층 구조 도입
+  internal_links_per_post: 2
   schema_types:
     - Article
     - FAQPage
-    - HowTo
-    - BreadcrumbList
 
 coupang:
   products_per_post: 3
@@ -40,9 +53,9 @@ coupang:
     - 생활용품
     - 주방용품
     - 운동용품
-    - 스킨케어     # 2026 트렌드 추가
-    - 뷰티디바이스  # AI 스킨케어 기기
-    - 미세먼지대비  # 봄 시즌
+    - 스킨케어
+    - 뷰티디바이스
+    - 미세먼지대비
 
 # 2026년 3월 봄 시즌 트렌드 키워드
 trending_keywords:
@@ -73,6 +86,6 @@ adsense:
   ad_format: "responsive"
 
 scheduler:
-  publish_time: "09:00"
-  posts_per_day: 1
+  publish_time: "07:00"
+  posts_per_day: 3
   timezone: "Asia/Seoul"
