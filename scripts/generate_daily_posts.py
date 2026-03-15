@@ -42,7 +42,7 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 ## 글쓰기 규칙
 1. 각 H2 섹션에 핑크톤 스타일 테이블 포함 (아래 HTML 형식)
 2. 각 섹션 내용은 topic-content div로 감쌈
-3. 목차(TOC) 포함
+3. 목차는 생성하지 마세요 (별도로 추가됩니다). 바로가기 링크나 이동 버튼도 넣지 마세요.
 4. 핵심 요약 카드 5개 (flexbox)
 5. FAQ 3개
 6. 내부링크: 본문 중간에 자연스럽게 2개 삽입 (아래 제공된 링크 사용)
@@ -308,7 +308,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     # H1 제목 + 도입부
     intro = sections[0]["content"] if sections else ""
     toc_items = "".join(
-        f'<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec{i}">{i}. {s["heading"]}</a></p>'
+        f'<p style="margin: 8px 0; color: #2c3e50;">{i}. {s["heading"]}</p>'
         for i, s in enumerate(sections[1:], 1) if s["heading"] != "마무리"
     )
 
@@ -398,8 +398,9 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     result = "\n\n".join(parts)
 
-    # 후처리: 모든 img alt 텍스트 제거 (이미지 아래 불필요 텍스트 방지)
-    result = re.sub(r'alt="[^"]*"', 'alt=""', result)
+    # 후처리
+    result = re.sub(r'alt="[^"]*"', 'alt=""', result)  # img alt 제거
+    result = re.sub(r'<a[^>]*href="#[^"]*"[^>]*>(.*?)</a>', r'\1', result)  # 앵커 링크 제거 (텍스트 유지)
 
     return result
 
