@@ -2,9 +2,15 @@
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 from src.core.logger import setup_logger
 
 logger = setup_logger("internal_links")
+
+DATA_DIR = Path(__file__).parent.parent.parent / "data"
+CRAWLED_INDEX = DATA_DIR / "blog_posts_index.json"
 
 # 기존 블로그 포스트 DB (URL, 제목, 관련 키워드)
 BLOG_POSTS: list[dict[str, str | list[str]]] = [
@@ -32,6 +38,33 @@ BLOG_POSTS: list[dict[str, str | list[str]]] = [
 BLOG_BASE_URL = "https://kgbae2369.tistory.com"
 
 
+def _load_crawled_posts() -> list[dict]:
+    """크롤링된 포스트 인덱스를 로드한다."""
+    if CRAWLED_INDEX.exists():
+        data = json.loads(CRAWLED_INDEX.read_text(encoding="utf-8"))
+        logger.info("크롤링 DB 로드: %d개 포스트", len(data))
+        return data
+    return []
+
+
+def _get_all_posts() -> list[dict]:
+    """크롤링 DB + 하드코딩 DB를 합쳐서 반환한다."""
+    crawled = _load_crawled_posts()
+    if crawled:
+        # 크롤링 DB가 있으면 우선 사용
+        merged = {p["url"]: p for p in BLOG_POSTS}
+        for cp in crawled:
+            url = cp.get("url", "")
+            if url not in merged:
+                merged[url] = {
+                    "url": url,
+                    "title": cp.get("title", ""),
+                    "keywords": cp.get("keywords", []),
+                }
+        return list(merged.values())
+    return BLOG_POSTS
+
+
 def find_related_posts(
     keyword: str,
     exclude_urls: list[str] | None = None,
@@ -53,9 +86,10 @@ def find_related_posts(
     keyword_lower = keyword.lower()
     keyword_parts = keyword_lower.replace(",", " ").split()
 
+    all_posts = _get_all_posts()
     scored: list[tuple[int, dict]] = []
 
-    for post in BLOG_POSTS:
+    for post in all_posts:
         if post["url"] in exclude_urls:
             continue
 
