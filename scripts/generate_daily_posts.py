@@ -173,11 +173,33 @@ def get_trending_keywords() -> list[str]:
 
 
 def search_coupang_products(keyword: str) -> list:
-    """쿠팡에서 키워드 관련 상품을 검색한다."""
+    """쿠팡에서 키워드 관련 상품을 검색한다. 스마트 매처로 검색어 최적화."""
     try:
+        from src.coupang.smart_matcher import get_search_queries
+
         config = load_config()
         client = CoupangAPIClient(config.coupang)
+
+        # 1차: 키워드 직접 검색
         products = search_and_filter(client, keyword, count=3)
+
+        # 2차: 결과 부족 시 스마트 매처 검색어로 재시도
+        if len(products) < 3:
+            queries = get_search_queries(keyword, count=3)
+            for q in queries:
+                if len(products) >= 3:
+                    break
+                extra = search_and_filter(client, q, count=3 - len(products))
+                # 기존 상품과 중복 체크
+                existing_ids = {p.product_id for p in products}
+                for p in extra:
+                    if p.product_id not in existing_ids and len(products) < 3:
+                        products.append(p)
+                        existing_ids.add(p.product_id)
+
+            if products:
+                logger.info("스마트 매처 보충: '%s' → %d개", keyword, len(products))
+
         return products
     except Exception as e:
         logger.warning("쿠팡 검색 실패 '%s': %s", keyword, e)
