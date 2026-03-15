@@ -14,6 +14,14 @@ on:
         options:
           - 'false'
           - 'true'
+      run_indexing:
+        description: '미색인 페이지 자동 색인 요청'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 jobs:
   generate-posts:
@@ -32,13 +40,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-genai requests python-dotenv pyyaml jinja2
-
-      - name: Install Playwright (발행 시에만)
-        if: ${{ github.event.inputs.publish == 'true' }}
-        run: |
-          pip install playwright
-          playwright install chromium
+          pip install google-genai requests python-dotenv pyyaml jinja2 google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
       - name: Create .env file
         run: |
@@ -48,8 +50,6 @@ jobs:
           COUPANG_SECRET_KEY=${{ secrets.COUPANG_SECRET_KEY }}
           TISTORY_BLOG_NAME=kgbae2369
           TISTORY_BLOG_URL=https://kgbae2369.tistory.com
-          KAKAO_EMAIL=${{ secrets.KAKAO_EMAIL }}
-          KAKAO_PASSWORD=${{ secrets.KAKAO_PASSWORD }}
           ADSENSE_GTAG_ID=G-SD7PEXH5NK
           ADSENSE_PUB_ID=${{ secrets.ADSENSE_PUB_ID }}
           ADSENSE_SLOT_TOP=${{ secrets.ADSENSE_SLOT_TOP }}
@@ -57,15 +57,20 @@ jobs:
           ADSENSE_SLOT_BOTTOM=${{ secrets.ADSENSE_SLOT_BOTTOM }}
           EOF
 
+      - name: Restore GSC token
+        run: |
+          echo '${{ secrets.GSC_TOKEN_JSON }}' > config/gsc_token.json
+          echo '${{ secrets.GSC_CREDENTIALS_JSON }}' > config/credentials.json
+
       - name: Generate 3 daily posts
         run: python scripts/generate_daily_posts.py
         env:
           TZ: Asia/Seoul
 
-      - name: Publish to Tistory (선택적)
-        if: ${{ github.event.inputs.publish == 'true' }}
-        run: |
-          python scripts/daily_publish.py --count 3
+      - name: Request indexing for unindexed pages
+        if: ${{ github.event.inputs.run_indexing != 'false' }}
+        run: python scripts/request_indexing.py --count 20
+        continue-on-error: true
         env:
           TZ: Asia/Seoul
 
