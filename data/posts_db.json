@@ -117,5 +117,51 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 6,
+    "title": "L자 다리 부작용, 알고 계세요?",
+    "keyword": "l 자 다리 부작용",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강",
+      "가구",
+      "생활꿀팁",
+      "제품추천",
+      "예방관리",
+      "안전"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-15 07:27",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 7,
+    "title": "L자 다리 효과, 바로 알기",
+    "keyword": "l자 다리 효과",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "L자다리",
+      "자세교정",
+      "코어운동",
+      "홈트레이닝",
+      "허리관리",
+      "생활습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-15 07:29",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
