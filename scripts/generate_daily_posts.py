@@ -308,7 +308,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     # H1 제목 + 도입부
     intro = sections[0]["content"] if sections else ""
     toc_items = "".join(
-        f'<p style="margin: 8px 0; color: #2c3e50;">{i}. {s["heading"]}</p>'
+        f'<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec{i}">{i}. {s["heading"]}</a></p>'
         for i, s in enumerate(sections[1:], 1) if s["heading"] != "마무리"
     )
 
@@ -400,7 +400,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     # 후처리
     result = re.sub(r'alt="[^"]*"', 'alt=""', result)  # img alt 제거
-    result = re.sub(r'<a[^>]*href="#[^"]*"[^>]*>(.*?)</a>', r'\1', result)  # 앵커 링크 제거
+    result = re.sub(r'<a[^>]*href="#(?!sec\d)[^"]*"[^>]*>(.*?)</a>', r'\1', result)  # GPT 앵커 제거 (시스템 #sec 유지)
 
     # GPT가 생성한 중복 목차 제거 (시스템 목차만 유지)
     # "목차" 제목을 가진 섹션 중 시스템이 만든 것(h3) 외의 것 제거
