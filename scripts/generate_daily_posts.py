@@ -15,6 +15,8 @@ load_dotenv(Path(__file__).parent.parent / "config" / ".env")
 
 from google import genai
 
+from src.content.image_search import get_header_image, get_images_for_keyword
+from src.content.internal_links import find_related_posts, generate_internal_link_html
 from src.core.config import load_config
 from src.core.logger import setup_logger
 from src.coupang.api_client import CoupangAPIClient
@@ -41,9 +43,8 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 3. 목차(TOC) 포함
 4. 핵심 요약 카드 5개 (flexbox)
 5. FAQ 3개
-6. 내부링크:
-   - <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a>
-   - <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>
+6. 내부링크: 본문 중간에 자연스럽게 2개 삽입 (아래 제공된 링크 사용)
+   {internal_links}
 
 ## 테이블 HTML 형식
 <div class="table-section" style="margin: 20px 0;">
@@ -147,7 +148,18 @@ def generate_content(keyword: str, products: list) -> dict:
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
     product_names = ", ".join(p.product_name[:30] for p in products) if products else "관련 건강제품"
-    prompt = BLOG_STYLE_PROMPT.format(keyword=keyword, products=product_names)
+
+    # 내부 링크 자동 매칭
+    related = find_related_posts(keyword, max_results=2)
+    if related:
+        link_lines = "\n   ".join(
+            f'- <a style="color: #c0392b; text-decoration: underline;" href="{r["url"]}">{r["title"]}</a>'
+            for r in related
+        )
+    else:
+        link_lines = '- <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a>\n   - <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>'
+
+    prompt = BLOG_STYLE_PROMPT.format(keyword=keyword, products=product_names, internal_links=link_lines)
 
     response = client.models.generate_content(
         model="gemini-2.5-flash",
@@ -202,9 +214,15 @@ def build_adsense_ad(slot_id: str, ad_format: str = "auto") -> str:
 </div>"""
 
 
-def build_full_html(data: dict, products: list, post_index: int) -> str:
+def build_full_html(data: dict, products: list, post_index: int, keyword: str = "") -> str:
     """전체 블로그 포스트 HTML을 조립한다."""
-    header_img = HEADER_IMAGES[post_index % len(HEADER_IMAGES)]
+    # 키워드 기반 이미지 자동 매칭
+    if keyword:
+        header_img = get_header_image(keyword)
+        section_images = get_images_for_keyword(keyword, count=7)
+    else:
+        header_img = HEADER_IMAGES[post_index % len(HEADER_IMAGES)]
+        section_images = SECTION_IMAGES
     sections = data.get("sections", [])
     tags = data.get("tags", [])
     summary_cards = data.get("summary_cards", [])
@@ -249,7 +267,7 @@ def build_full_html(data: dict, products: list, post_index: int) -> str:
     for i, section in enumerate(sections[1:], 1):
         if section["heading"] == "마무리":
             continue
-        img = SECTION_IMAGES[(i - 1) % len(SECTION_IMAGES)]
+        img = section_images[(i - 1) % len(section_images)]
         parts.append(f"""<div id="sec{i}" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">{section["heading"]}</h2>
 <p style="text-align: center;"><img src="{img}" alt="{section["heading"]}" style="max-width:100%; height:auto;" width="486" /></p>
@@ -386,7 +404,7 @@ def main():
         logger.info("  제목: %s", data.get("title", ""))
 
         # 3. 전체 HTML 조립
-        blog_html = build_full_html(data, products, i)
+        blog_html = build_full_html(data, products, i, keyword=keyword)
 
         # 4. 도구 페이지 생성
         tool_html = build_tool_page(
