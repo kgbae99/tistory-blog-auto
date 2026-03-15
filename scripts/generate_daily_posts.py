@@ -15,6 +15,7 @@ load_dotenv(Path(__file__).parent.parent / "config" / ".env")
 
 from google import genai
 
+from src.analytics.dashboard import register_post
 from src.content.image_search import get_header_image, get_images_for_keyword
 from src.content.internal_links import find_related_posts, generate_internal_link_html
 from src.core.config import load_config
@@ -419,6 +420,16 @@ def main():
         filepath = output_dir / filename
         filepath.write_text(tool_html, encoding="utf-8")
         logger.info("  저장: %s", filepath)
+
+        # 대시보드에 포스트 등록
+        register_post(
+            title=data.get("title", keyword),
+            keyword=keyword,
+            category="건강정보",
+            tags=data.get("tags", []),
+            coupang_products=len(products),
+            adsense_slots=3,
+        )
 
         results.append({
             "keyword": keyword,

@@ -4,7 +4,16 @@ on:
   schedule:
     # 매일 오전 7시 KST (UTC 22:00 전날)
     - cron: '0 22 * * *'
-  workflow_dispatch: # 수동 실행 가능
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: '티스토리에 실제 발행할지 여부'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 jobs:
   generate-posts:
@@ -25,6 +34,12 @@ jobs:
         run: |
           pip install google-genai requests python-dotenv pyyaml jinja2
 
+      - name: Install Playwright (발행 시에만)
+        if: ${{ github.event.inputs.publish == 'true' }}
+        run: |
+          pip install playwright
+          playwright install chromium
+
       - name: Create .env file
         run: |
           cat > config/.env << EOF
@@ -33,6 +48,8 @@ jobs:
           COUPANG_SECRET_KEY=${{ secrets.COUPANG_SECRET_KEY }}
           TISTORY_BLOG_NAME=kgbae2369
           TISTORY_BLOG_URL=https://kgbae2369.tistory.com
+          KAKAO_EMAIL=${{ secrets.KAKAO_EMAIL }}
+          KAKAO_PASSWORD=${{ secrets.KAKAO_PASSWORD }}
           ADSENSE_GTAG_ID=G-SD7PEXH5NK
           ADSENSE_PUB_ID=${{ secrets.ADSENSE_PUB_ID }}
           ADSENSE_SLOT_TOP=${{ secrets.ADSENSE_SLOT_TOP }}
@@ -45,11 +62,18 @@ jobs:
         env:
           TZ: Asia/Seoul
 
+      - name: Publish to Tistory (선택적)
+        if: ${{ github.event.inputs.publish == 'true' }}
+        run: |
+          python scripts/daily_publish.py --count 3
+        env:
+          TZ: Asia/Seoul
+
       - name: Commit and push generated posts
         run: |
           git config user.name "kgbae99"
           git config user.email "kgbae99@gmail.com"
-          git add output/posts/
+          git add output/ data/
           DATE=$(date +%Y-%m-%d -d "+9 hours")
           git commit -m "posts: ${DATE} 일일 블로그 포스트 3개 자동 생성" || echo "No changes"
           git push
