@@ -1,12 +1,10 @@
-"""Google Gemini API 기반 블로그 콘텐츠 생성 엔진."""
+"""블로그 콘텐츠 생성 엔진 - GPT-5 Mini / Gemini 듀얼 지원."""
 
 from __future__ import annotations
 
 import json
 import os
 from dataclasses import dataclass, field
-
-from google import genai
 
 from src.core.config import ContentConfig
 from src.core.logger import setup_logger
@@ -94,31 +92,75 @@ class ContentRequest:
     product_names: list[str] = field(default_factory=list)
 
 
+def _call_openai(model: str, system_prompt: str, user_prompt: str) -> str:
+    """OpenAI API를 호출한다."""
+    from openai import OpenAI
+
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ],
+        temperature=0.7,
+    )
+    return response.choices[0].message.content or ""
+
+
+def _call_gemini(model: str, full_prompt: str) -> str:
+    """Gemini API를 호출한다."""
+    from google import genai
+
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    response = client.models.generate_content(
+        model=model,
+        contents=full_prompt,
+    )
+    return response.text
+
+
 def generate_blog_content(
     request: ContentRequest, config: ContentConfig
 ) -> GeneratedContent:
-    """Google Gemini API를 사용하여 블로그 콘텐츠를 생성한다."""
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
+    """블로그 콘텐츠를 생성한다. GPT-5 Mini 우선, 실패 시 Gemini 폴백."""
     user_prompt = _build_prompt(request)
-    full_prompt = SYSTEM_PROMPT + "\n\n---\n\n" + user_prompt
 
     logger.info(
         "콘텐츠 생성 시작: 키워드='%s', 카테고리='%s'",
         request.keyword, request.category,
     )
 
-    response = client.models.generate_content(
-        model=config.model,
-        contents=full_prompt,
-    )
+    response_text = ""
+    used_model = ""
 
-    response_text = response.text
+    # 1차: GPT-5 Mini
+    if os.getenv("OPENAI_API_KEY"):
+        try:
+            model = config.model if "gpt" in config.model else "gpt-5-mini"
+            response_text = _call_openai(model, SYSTEM_PROMPT, user_prompt)
+            used_model = model
+            logger.info("GPT-5 Mini 생성 완료")
+        except Exception as e:
+            logger.warning("GPT-5 Mini 실패: %s → Gemini 폴백", e)
+
+    # 2차: Gemini 폴백
+    if not response_text and os.getenv("GEMINI_API_KEY"):
+        try:
+            gemini_model = "gemini-2.5-flash"
+            full_prompt = SYSTEM_PROMPT + "\n\n---\n\n" + user_prompt
+            response_text = _call_gemini(gemini_model, full_prompt)
+            used_model = gemini_model
+            logger.info("Gemini 폴백 생성 완료")
+        except Exception as e:
+            logger.error("Gemini도 실패: %s", e)
+            raise
+
     content = _parse_response(response_text, request.keyword)
 
     logger.info(
-        "콘텐츠 생성 완료: '%s' (%d자, %d섹션)",
-        content.title, content.word_count, len(content.sections),
+        "콘텐츠 생성 완료 [%s]: '%s' (%d자, %d섹션)",
+        used_model, content.title, content.word_count, len(content.sections),
     )
     return content
 

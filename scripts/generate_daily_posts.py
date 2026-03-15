@@ -13,8 +13,6 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent.parent / "config" / ".env")
 
-from google import genai
-
 from src.analytics.dashboard import register_post
 from src.content.dedup_checker import check_title_duplicate, register_published, filter_unique_keywords
 from src.content.image_downloader import download_post_images, get_unique_images
@@ -160,8 +158,6 @@ def search_coupang_products(keyword: str) -> list:
 
 def generate_content(keyword: str, products: list) -> dict:
     """Gemini로 블로그 콘텐츠를 생성한다."""
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
     product_names = ", ".join(p.product_name[:30] for p in products) if products else "관련 건강제품"
 
     # 내부 링크 자동 매칭
@@ -176,12 +172,28 @@ def generate_content(keyword: str, products: list) -> dict:
 
     prompt = BLOG_STYLE_PROMPT.format(keyword=keyword, products=product_names, internal_links=link_lines)
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt,
-    )
+    # GPT-5 Mini 우선, Gemini 폴백
+    text = ""
+    if os.getenv("OPENAI_API_KEY"):
+        try:
+            from openai import OpenAI
+            client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+            response = client.chat.completions.create(
+                model="gpt-5-mini",
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.7,
+            )
+            text = response.choices[0].message.content or ""
+            logger.info("  GPT-5 Mini 생성 완료")
+        except Exception as e:
+            logger.warning("  GPT-5 Mini 실패: %s → Gemini 폴백", e)
 
-    text = response.text
+    if not text and os.getenv("GEMINI_API_KEY"):
+        from google import genai
+        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+        text = response.text
+        logger.info("  Gemini 폴백 생성 완료")
     if "```json" in text:
         json_str = text.split("```json")[1].split("```")[0]
     elif "```" in text:

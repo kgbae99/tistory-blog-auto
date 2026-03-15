@@ -27,7 +27,7 @@ blog:
         - "복지 서비스"
 
 content:
-  model: "gemini-2.5-flash"
+  model: "gpt-5-mini"
   max_tokens: 4096
   min_word_count: 1500
   max_word_count: 3000

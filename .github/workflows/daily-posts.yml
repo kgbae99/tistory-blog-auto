@@ -40,11 +40,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-genai requests python-dotenv pyyaml jinja2 google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+          pip install openai google-genai requests python-dotenv pyyaml jinja2 google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
       - name: Create .env file
         run: |
           cat > config/.env << EOF
+          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
           COUPANG_ACCESS_KEY=${{ secrets.COUPANG_ACCESS_KEY }}
           COUPANG_SECRET_KEY=${{ secrets.COUPANG_SECRET_KEY }}
