@@ -16,6 +16,8 @@ load_dotenv(Path(__file__).parent.parent / "config" / ".env")
 from google import genai
 
 from src.analytics.dashboard import register_post
+from src.content.dedup_checker import check_title_duplicate, register_published, filter_unique_keywords
+from src.content.image_downloader import download_post_images, get_unique_images
 from src.content.image_search import get_header_image, get_images_for_keyword
 from src.content.internal_links import find_related_posts, generate_internal_link_html
 from src.core.config import load_config
@@ -105,7 +107,19 @@ FAQ_COLORS = [
 
 
 def get_trending_keywords() -> list[str]:
-    """오늘 날짜 기반 키워드 3개를 반환한다."""
+    """오늘 날짜 기반 키워드 3개를 반환한다. 유입 데이터 기반 우선 선정."""
+    # 유입 데이터 기반 추천 키워드 우선
+    try:
+        trend_file = Path(__file__).parent.parent / "data" / "trend_insights.json"
+        if trend_file.exists():
+            insights = json.loads(trend_file.read_text(encoding="utf-8"))
+            recommended = insights.get("recommended_keywords", [])
+            if recommended:
+                logger.info("유입 기반 추천 키워드: %s", recommended[:3])
+                return recommended[:3]
+    except Exception:
+        pass
+
     month = datetime.now().month
     day = datetime.now().day
 
@@ -217,10 +231,15 @@ def build_adsense_ad(slot_id: str, ad_format: str = "auto") -> str:
 
 def build_full_html(data: dict, products: list, post_index: int, keyword: str = "") -> str:
     """전체 블로그 포스트 HTML을 조립한다."""
-    # 키워드 기반 이미지 자동 매칭
+    # 키워드 기반 이미지 자동 매칭 (중복 방지 적용)
     if keyword:
-        header_img = get_header_image(keyword)
-        section_images = get_images_for_keyword(keyword, count=7)
+        section_images = get_unique_images(keyword, count=7)
+        header_img = section_images[0] if section_images else HEADER_IMAGES[0]
+        # 이미지 다운로드
+        all_urls = [header_img] + section_images
+        downloaded = download_post_images(keyword, all_urls)
+        if downloaded:
+            logger.info("  이미지 %d개 다운로드 완료", len(downloaded))
     else:
         header_img = HEADER_IMAGES[post_index % len(HEADER_IMAGES)]
         section_images = SECTION_IMAGES
@@ -387,7 +406,17 @@ def main():
     output_dir = Path(__file__).parent.parent / "output" / "posts" / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    keywords = get_trending_keywords()
+    raw_keywords = get_trending_keywords()
+    keywords = filter_unique_keywords(raw_keywords)
+    if len(keywords) < 3:
+        # 중복 제거 후 부족하면 추가 키워드 보충
+        extra = get_trending_keywords()
+        for kw in extra:
+            if kw not in keywords and not check_title_duplicate(kw, threshold=0.5):
+                keywords.append(kw)
+            if len(keywords) >= 3:
+                break
+    keywords = keywords[:3]
     logger.info("=== %s 일일 포스트 생성 시작 (키워드: %s) ===", today, keywords)
 
     results = []
@@ -420,6 +449,15 @@ def main():
         filepath = output_dir / filename
         filepath.write_text(tool_html, encoding="utf-8")
         logger.info("  저장: %s", filepath)
+
+        # 제목 중복 체크
+        title = data.get("title", keyword)
+        dup = check_title_duplicate(title)
+        if dup:
+            logger.warning("  제목 중복! '%s' (유사도: %.0f%%) → 제목 수정 필요", dup["existing_title"][:30], dup["similarity"] * 100)
+
+        # 발행 DB에 등록 (중복 추적용)
+        register_published(title=title, keyword=keyword, date=today)
 
         # 대시보드에 포스트 등록
         register_post(

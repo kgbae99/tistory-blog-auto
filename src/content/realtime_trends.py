@@ -141,15 +141,38 @@ def _expand_to_blog_keyword(keyword: str) -> str:
 
 
 def select_daily_keywords(count: int = 3) -> list[str]:
-    """오늘 포스팅할 키워드 3개를 자동 선정한다."""
-    trending = get_trending_blog_keywords(count=count * 2)
+    """오늘 포스팅할 키워드 3개를 카테고리 균형 맞춰 선정한다."""
+    # 카테고리 균형 배분 (음식 편중 방지)
+    CATEGORY_ROTATION = [
+        ["건강", "질병", "예방", "면역", "증상"],
+        ["음식", "식단", "영양", "효능", "먹"],
+        ["피부", "뷰티", "스킨케어", "운동", "다이어트", "생활", "수면", "스트레스"],
+    ]
 
-    if len(trending) >= count:
-        return [t["blog_keyword"] for t in trending[:count]]
+    from datetime import datetime
+    day = datetime.now().timetuple().tm_yday
 
-    # 트렌드가 부족하면 시즌 키워드로 보충
+    trending = get_trending_blog_keywords(count=count * 3)
+
+    result: list[str] = []
+    used_categories: set[int] = set()
+
+    # 트렌드에서 카테고리별 1개씩 선택
+    for t in trending:
+        kw = t["blog_keyword"]
+        kw_lower = kw.lower()
+        for cat_idx, cat_keywords in enumerate(CATEGORY_ROTATION):
+            if cat_idx in used_categories:
+                continue
+            if any(ck in kw_lower for ck in cat_keywords):
+                result.append(kw)
+                used_categories.add(cat_idx)
+                break
+        if len(result) >= count:
+            break
+
+    # 부족하면 시즌 키워드로 카테고리 채움
     from src.content.trend_analyzer import get_best_keyword_for_today
-    result = [t["blog_keyword"] for t in trending]
     exclude = list(result)
 
     while len(result) < count:
@@ -157,5 +180,5 @@ def select_daily_keywords(count: int = 3) -> list[str]:
         result.append(kw)
         exclude.append(kw)
 
-    logger.info("오늘의 키워드: %s", result)
+    logger.info("오늘의 키워드 (카테고리 균형): %s", result)
     return result
