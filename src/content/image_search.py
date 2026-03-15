@@ -89,44 +89,50 @@ def get_images_for_keyword(keyword: str, count: int = 8) -> list[str]:
     """
     keyword_lower = keyword.lower()
 
-    # 키워드 해시 → 시작 오프셋 (매 키워드마다 다른 위치에서 시작)
-    kw_hash = int(hashlib.md5(keyword.encode()).hexdigest(), 16)
+    # 키워드 해시 + 첫글자/길이로 분산 (비슷한 키워드도 완전히 다른 시작점)
+    salt = f"{keyword}_{len(keyword)}_{keyword[0] if keyword else 'x'}"
+    kw_hash = int(hashlib.sha256(salt.encode()).hexdigest(), 16)
     offset = kw_hash % len(_ALL_URLS)
 
-    # 관련 카테고리 찾기
+    # 전체 풀을 offset부터 순환하여 완전히 다른 이미지 세트 생성
+    shuffled: list[str] = []
+    for j in range(len(_ALL_URLS)):
+        shuffled.append(_ALL_URLS[(offset + j) % len(_ALL_URLS)])
+
+    # 관련 카테고리 이미지를 앞으로 끌어오기 (최대 2개만)
     matched_categories: list[str] = []
     for term, categories in KEYWORD_CATEGORY_MAP.items():
         if term in keyword_lower:
             matched_categories.extend(categories)
-    if not matched_categories:
-        matched_categories = ["기본"]
 
-    # 관련 카테고리에서 2개만 우선 (나머지는 전체에서)
-    related: list[str] = []
-    seen: set[str] = set()
-    for cat in matched_categories[:2]:  # 상위 2개 카테고리만
-        pool = IMAGE_POOL.get(cat, [])
-        start = offset % max(len(pool), 1)
-        picked = 0
-        for j in range(len(pool)):
-            img = pool[(start + j) % len(pool)]
-            if img not in seen:
-                seen.add(img)
-                related.append(img)
-                picked += 1
-            if picked >= 2:  # 카테고리당 2개만
+    priority: list[str] = []
+    rest: list[str] = []
+    seen_cats: set[str] = set()
+
+    for img in shuffled:
+        # 이 이미지의 카테고리 찾기
+        img_cat = ""
+        for fname, cat in _IMAGES:
+            if fname in img:
+                img_cat = cat
                 break
 
-    # 나머지는 전체 풀에서 offset부터 순환 (최대 다양성)
-    others: list[str] = []
-    for j in range(len(_ALL_URLS)):
-        img = _ALL_URLS[(offset + j) % len(_ALL_URLS)]
+        if img_cat in matched_categories and img_cat not in seen_cats and len(priority) < 2:
+            priority.append(img)
+            seen_cats.add(img_cat)
+        else:
+            rest.append(img)
+
+    all_candidates = priority + rest
+    # 중복 제거
+    seen: set[str] = set()
+    result: list[str] = []
+    for img in all_candidates:
         if img not in seen:
             seen.add(img)
-            others.append(img)
-
-    all_candidates = related + others
-    result = all_candidates[:count]
+            result.append(img)
+        if len(result) >= count:
+            break
 
     logger.info("이미지 매칭: '%s' → %d개 (풀: %d개, offset: %d)", keyword, len(result), len(_ALL_URLS), offset)
     return result

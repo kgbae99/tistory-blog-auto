@@ -232,18 +232,29 @@ def search_coupang_products(keyword: str) -> list:
             _save_cache(cache)
             return products
 
-        # 3차: 캐시 폴백 (API 실패 시)
+        # 3차: 캐시 폴백 (API 실패 시) - 키워드별 다른 캐시 사용
         cache = _load_cache()
-        # 같은 키워드 캐시
-        if keyword in cache:
-            logger.info("쿠팡 캐시 사용: '%s' → %d개", keyword, len(cache[keyword]))
-            return [Product.from_api_response(p) for p in cache[keyword]]
+        if not cache:
+            return []
 
-        # 유사 키워드 캐시
-        for cached_kw, cached_products in cache.items():
+        # 같은 키워드 캐시
+        if keyword in cache and cache[keyword]:
+            logger.info("쿠팡 캐시 사용: '%s' → %d개", keyword, len(cache[keyword]))
+            return [Product.from_api_response(p) for p in cache[keyword][:3]]
+
+        # 키워드 해시 기반으로 다른 캐시 선택 (매번 같은 키워드는 같은 상품)
+        import hashlib
+        kw_hash = int(hashlib.md5(keyword.encode()).hexdigest(), 16)
+        cache_keys = list(cache.keys())
+        if cache_keys:
+            idx = kw_hash % len(cache_keys)
+            selected_key = cache_keys[idx]
+            cached_products = cache[selected_key]
             if cached_products:
-                logger.info("쿠팡 캐시 대체: '%s' → '%s' (%d개)", keyword, cached_kw, len(cached_products))
-                return [Product.from_api_response(p) for p in cached_products[:3]]
+                logger.info("쿠팡 캐시 대체: '%s' → '%s' (%d개)", keyword, selected_key, len(cached_products))
+                # 같은 캐시에서도 다른 상품 선택 (offset)
+                offset = (kw_hash // len(cache_keys)) % max(len(cached_products) - 2, 1)
+                return [Product.from_api_response(p) for p in cached_products[offset:offset + 3]]
 
         return []
     except Exception as e:
