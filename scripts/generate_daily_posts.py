@@ -186,6 +186,22 @@ def build_coupang_html(products: list) -> str:
     return "\n".join(items)
 
 
+def build_adsense_ad(slot_id: str, ad_format: str = "auto") -> str:
+    """애드센스 광고 코드를 생성한다."""
+    pub_id = os.getenv("ADSENSE_PUB_ID", "")
+    if not pub_id or not slot_id:
+        return ""
+    if ad_format == "infeed":
+        return f"""<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="{pub_id}" data-ad-slot="{slot_id}"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+</div>"""
+    return f"""<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="{pub_id}" data-ad-slot="{slot_id}" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+</div>"""
+
+
 def build_full_html(data: dict, products: list, post_index: int) -> str:
     """전체 블로그 포스트 HTML을 조립한다."""
     header_img = HEADER_IMAGES[post_index % len(HEADER_IMAGES)]
@@ -194,6 +210,11 @@ def build_full_html(data: dict, products: list, post_index: int) -> str:
     summary_cards = data.get("summary_cards", [])
     faqs = data.get("faq", [])
     coupang_html = build_coupang_html(products)
+
+    # 애드센스 광고 슬롯
+    ad_top = build_adsense_ad(os.getenv("ADSENSE_SLOT_TOP", ""))
+    ad_mid = build_adsense_ad(os.getenv("ADSENSE_SLOT_MID", ""), "infeed")
+    ad_bottom = build_adsense_ad(os.getenv("ADSENSE_SLOT_BOTTOM", ""))
 
     parts = []
 
@@ -235,6 +256,12 @@ def build_full_html(data: dict, products: list, post_index: int) -> str:
 {section["content"]}
 </div>""")
 
+        # 광고 삽입: 1번째 H2 뒤 (상단), 3번째 H2 뒤 (중간 인피드)
+        if i == 1 and ad_top:
+            parts.append(ad_top)
+        elif i == 3 and ad_mid:
+            parts.append(ad_mid)
+
     # 핵심 요약 카드
     if summary_cards:
         cards = ""
@@ -258,6 +285,10 @@ def build_full_html(data: dict, products: list, post_index: int) -> str:
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
 <div style="padding: 10px; margin-top: 20px;">
 {faq_items}</div></div>""")
+
+    # 결론 전 광고
+    if ad_bottom:
+        parts.append(ad_bottom)
 
     # 마무리
     conclusion = ""
