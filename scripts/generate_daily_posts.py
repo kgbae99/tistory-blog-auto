@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / "config" / ".env")
 
 from src.analytics.dashboard import register_post
-from src.content.dedup_checker import check_title_duplicate, register_published, filter_unique_keywords
+from src.content.dedup_checker import check_keyword_duplicate, check_title_duplicate, register_published, filter_unique_keywords
 from src.content.image_downloader import download_post_images, get_unique_images
 from src.content.image_search import get_header_image, get_images_for_keyword
 from src.content.internal_links import find_related_posts, generate_internal_link_html
@@ -106,42 +106,69 @@ FAQ_COLORS = [
 
 
 def get_trending_keywords() -> list[str]:
-    """오늘 날짜 기반 키워드 3개를 반환한다. 유입 데이터 기반 우선 선정."""
-    # 유입 데이터 기반 추천 키워드 우선
+    """카테고리별 1개씩 3개 키워드를 반환한다. 중복 철저 방지."""
+    month = datetime.now().month
+    day = datetime.now().day
+
+    # 3개 카테고리 로테이션 (매일 다른 조합)
+    CATEGORY_POOLS = {
+        "건강/질병": [
+            "면역력 높이는 생활습관", "혈압 낮추는 방법", "당뇨 예방 식습관",
+            "간 건강에 좋은 음식", "관절 건강 지키는 방법", "눈 건강 관리법",
+            "장 건강 개선법", "수면 질 높이는 방법", "스트레스 해소법",
+            "비타민D 부족 증상", "프로바이오틱스 효능", "탈모 예방법",
+            "빈혈 증상과 예방법", "갑상선 기능 저하 관리", "골다공증 예방법",
+        ],
+        "음식/영양": [
+            "아침 공복에 좋은 음식", "피로 회복에 좋은 음식", "봄나물 효능과 종류",
+            "다이어트에 좋은 음식", "면역력 높이는 음식 BEST", "혈관에 좋은 음식",
+            "항산화 식품 추천", "단백질 풍부한 식단", "비타민 많은 과일",
+            "장 건강에 좋은 발효식품", "해독에 좋은 차", "콜레스테롤 낮추는 음식",
+            "눈에 좋은 영양소", "뼈에 좋은 음식", "간에 좋은 음식",
+        ],
+        "뷰티/생활": [
+            "봄 스킨케어 루틴", "자외선 차단제 추천", "보습 크림 고르는 법",
+            "봄철 다이어트 식단", "홈트레이닝 추천 운동", "환절기 피부 관리",
+            "꽃가루 알레르기 예방법", "미세먼지 건강관리", "춘곤증 극복 방법",
+            "체력 키우는 방법", "스트레칭 효과", "물 많이 마시면 좋은 점",
+            "아침 루틴 만드는 법", "숙면 취하는 방법", "노화 방지 습관",
+        ],
+    }
+
+    categories = list(CATEGORY_POOLS.keys())
+    # 날짜 기반 카테고리 순서 변경 (매일 다른 조합)
+    cat_offset = day % len(categories)
+    ordered_cats = categories[cat_offset:] + categories[:cat_offset]
+
+    # 유입 데이터 기반 추천 키워드 반영
+    recommended = []
     try:
         trend_file = Path(__file__).parent.parent / "data" / "trend_insights.json"
         if trend_file.exists():
             insights = json.loads(trend_file.read_text(encoding="utf-8"))
             recommended = insights.get("recommended_keywords", [])
-            if recommended:
-                logger.info("유입 기반 추천 키워드: %s", recommended[:3])
-                return recommended[:3]
     except Exception:
         pass
 
-    month = datetime.now().month
-    day = datetime.now().day
-
-    pool = {
-        3: [
-            "꽃가루 알레르기 예방법", "춘곤증 극복 방법", "봄철 미세먼지 건강관리",
-            "봄나물 효능과 종류", "자외선 차단제 추천", "환절기 면역력 높이는 법",
-            "봄철 다이어트 식단", "황사 대비 건강 수칙", "봄 스킨케어 루틴",
-            "피로 회복에 좋은 음식", "비타민D 부족 증상", "물 많이 마시면 좋은 점",
-            "아침 공복 건강 루틴", "수면 질 높이는 방법", "스트레스 해소법",
-        ],
-        4: [
-            "봄철 운동 추천", "알레르기 비염 관리법", "다이어트 식단 구성",
-            "봄 피부 관리 꿀팁", "면역력 높이는 영양제", "체력 키우는 방법",
-            "간헐적 단식 효과", "프로바이오틱스 효능", "눈 건강 관리법",
-        ],
-    }
-
-    keywords = pool.get(month, pool[3])
-    start = (day * 3) % len(keywords)
     result = []
-    for i in range(3):
-        result.append(keywords[(start + i) % len(keywords)])
+    for cat in ordered_cats:
+        pool = CATEGORY_POOLS[cat]
+
+        # 유입 추천 키워드 중 이 카테고리에 해당하는 것 우선
+        selected = None
+        for rec in recommended:
+            if rec in pool and rec not in result:
+                selected = rec
+                break
+
+        if not selected:
+            # 날짜 기반 순환 선택
+            idx = (day + len(result)) % len(pool)
+            selected = pool[idx]
+
+        result.append(selected)
+
+    logger.info("카테고리별 키워드: %s", list(zip(ordered_cats, result)))
     return result
 
 
@@ -426,12 +453,22 @@ def main():
 
     raw_keywords = get_trending_keywords()
     keywords = filter_unique_keywords(raw_keywords)
+
+    # 중복 제거 후 부족하면 같은 카테고리에서 대체 키워드 선택
     if len(keywords) < 3:
-        # 중복 제거 후 부족하면 추가 키워드 보충
-        extra = get_trending_keywords()
-        for kw in extra:
-            if kw not in keywords and not check_title_duplicate(kw, threshold=0.5):
-                keywords.append(kw)
+        all_pools = [
+            "면역력 높이는 생활습관", "혈압 낮추는 방법", "당뇨 예방 식습관",
+            "아침 공복에 좋은 음식", "피로 회복에 좋은 음식", "봄나물 효능과 종류",
+            "봄 스킨케어 루틴", "자외선 차단제 추천", "홈트레이닝 추천 운동",
+            "간 건강에 좋은 음식", "관절 건강 지키는 방법", "장 건강 개선법",
+            "항산화 식품 추천", "콜레스테롤 낮추는 음식", "해독에 좋은 차",
+            "환절기 피부 관리", "스트레칭 효과", "숙면 취하는 방법",
+        ]
+        for kw in all_pools:
+            if kw not in keywords and not check_keyword_duplicate(kw):
+                dup = check_title_duplicate(kw, threshold=0.5)
+                if not dup:
+                    keywords.append(kw)
             if len(keywords) >= 3:
                 break
     keywords = keywords[:3]
