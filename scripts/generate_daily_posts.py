@@ -181,7 +181,7 @@ def generate_content(keyword: str, products: list) -> dict:
             response = client.chat.completions.create(
                 model="gpt-5-mini",
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.7,
+                temperature=1,
             )
             text = response.choices[0].message.content or ""
             logger.info("  GPT-5 Mini 생성 완료")
