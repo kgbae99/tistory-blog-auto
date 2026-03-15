@@ -191,8 +191,9 @@ def search_coupang_products(keyword: str) -> list:
         config = load_config()
         client = CoupangAPIClient(config.coupang)
 
-        # 1차: 키워드 직접 검색
-        products = search_and_filter(client, keyword, count=3)
+        # 1차: 키워드에서 핵심 단어 1~2개로 검색 (긴 키워드 → 짧게)
+        short_keyword = " ".join(keyword.split()[:2])
+        products = search_and_filter(client, short_keyword, count=3)
 
         # 2차: 결과 부족 시 스마트 매처 검색어로 재시도
         if len(products) < 3:
