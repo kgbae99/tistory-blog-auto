@@ -374,11 +374,6 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     parts = []
 
-    # 상단 고지문
-    parts.append("""<div style="background-color: #fff5f6; border: 1px solid #FFB6C1; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;">
-<p style="color: #555; font-size: 14px; line-height: 1.7; margin: 0;">📌 <strong>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong><br />본 글은 건강 정보를 요약한 것이며, 특정 제품의 효능을 보장하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.</p>
-</div>""")
-
     # 대표 이미지
     parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
     parts.append('<p>&nbsp;</p>')
@@ -467,6 +462,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
 <p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
 {coupang_html}
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>""")
 
     # 태그
