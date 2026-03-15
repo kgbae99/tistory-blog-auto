@@ -22,7 +22,7 @@ from src.content.internal_links import find_related_posts, generate_internal_lin
 from src.core.config import load_config
 from src.core.logger import setup_logger
 from src.coupang.api_client import CoupangAPIClient
-from src.coupang.product_search import search_and_filter
+from src.coupang.product_search import Product, search_and_filter
 
 logger = setup_logger("daily_posts")
 
@@ -173,7 +173,18 @@ def get_trending_keywords() -> list[str]:
 
 
 def search_coupang_products(keyword: str) -> list:
-    """쿠팡에서 키워드 관련 상품을 검색한다. 스마트 매처로 검색어 최적화."""
+    """쿠팡에서 키워드 관련 상품을 검색한다. 스마트 매처 + 캐시 폴백."""
+    cache_file = Path(__file__).parent.parent / "data" / "coupang_cache.json"
+
+    def _load_cache() -> dict:
+        if cache_file.exists():
+            return json.loads(cache_file.read_text(encoding="utf-8"))
+        return {}
+
+    def _save_cache(cache: dict) -> None:
+        cache_file.parent.mkdir(parents=True, exist_ok=True)
+        cache_file.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
     try:
         from src.coupang.smart_matcher import get_search_queries
 
@@ -190,7 +201,6 @@ def search_coupang_products(keyword: str) -> list:
                 if len(products) >= 3:
                     break
                 extra = search_and_filter(client, q, count=3 - len(products))
-                # 기존 상품과 중복 체크
                 existing_ids = {p.product_id for p in products}
                 for p in extra:
                     if p.product_id not in existing_ids and len(products) < 3:
@@ -200,7 +210,41 @@ def search_coupang_products(keyword: str) -> list:
             if products:
                 logger.info("스마트 매처 보충: '%s' → %d개", keyword, len(products))
 
-        return products
+        # 캐시 저장 (성공 시)
+        if products:
+            cache = _load_cache()
+            cache[keyword] = [
+                {
+                    "product_id": p.product_id,
+                    "product_name": p.product_name,
+                    "product_price": p.product_price,
+                    "product_image": p.product_image,
+                    "product_url": p.product_url,
+                    "is_rocket": p.is_rocket,
+                    "is_free_shipping": p.is_free_shipping,
+                    "category_name": p.category_name,
+                    "keyword": p.keyword,
+                    "rank": p.rank,
+                }
+                for p in products
+            ]
+            _save_cache(cache)
+            return products
+
+        # 3차: 캐시 폴백 (API 실패 시)
+        cache = _load_cache()
+        # 같은 키워드 캐시
+        if keyword in cache:
+            logger.info("쿠팡 캐시 사용: '%s' → %d개", keyword, len(cache[keyword]))
+            return [Product.from_api_response(p) for p in cache[keyword]]
+
+        # 유사 키워드 캐시
+        for cached_kw, cached_products in cache.items():
+            if cached_products:
+                logger.info("쿠팡 캐시 대체: '%s' → '%s' (%d개)", keyword, cached_kw, len(cached_products))
+                return [Product.from_api_response(p) for p in cached_products[:3]]
+
+        return []
     except Exception as e:
         logger.warning("쿠팡 검색 실패 '%s': %s", keyword, e)
         return []
