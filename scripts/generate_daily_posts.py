@@ -389,7 +389,6 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
 <p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
 {coupang_html}
-<p style="color: #888; font-size: 13px; margin-top: 15px; text-align: center;">📌 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>""")
 
     # 태그
