@@ -42,7 +42,7 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 ## 글쓰기 규칙
 1. 각 H2 섹션에 핑크톤 스타일 테이블 포함 (아래 HTML 형식)
 2. 각 섹션 내용은 topic-content div로 감쌈
-3. 목차는 생성하지 마세요 (별도로 추가됩니다). 바로가기 링크나 이동 버튼도 넣지 마세요.
+3. 절대로 목차(TOC)를 생성하지 마세요. 목차, 바로가기, 이동 링크, 목차 테이블 모두 금지. 목차는 시스템이 자동으로 추가합니다.
 4. 핵심 요약 카드 5개 (flexbox)
 5. FAQ 3개
 6. 내부링크: 본문 중간에 자연스럽게 2개 삽입 (아래 제공된 링크 사용)
@@ -400,7 +400,16 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     # 후처리
     result = re.sub(r'alt="[^"]*"', 'alt=""', result)  # img alt 제거
-    result = re.sub(r'<a[^>]*href="#[^"]*"[^>]*>(.*?)</a>', r'\1', result)  # 앵커 링크 제거 (텍스트 유지)
+    result = re.sub(r'<a[^>]*href="#[^"]*"[^>]*>(.*?)</a>', r'\1', result)  # 앵커 링크 제거
+
+    # GPT가 생성한 중복 목차 제거 (시스템 목차만 유지)
+    # "목차" 제목을 가진 섹션 중 시스템이 만든 것(h3) 외의 것 제거
+    result = re.sub(
+        r'<h2[^>]*>[^<]*목차[^<]*</h2>\s*(?:<[^>]+>[\s\S]*?</(?:div|table|ul|ol)>)',
+        '',
+        result,
+        flags=re.IGNORECASE,
+    )
 
     return result
 
