@@ -231,13 +231,13 @@ def build_adsense_ad(slot_id: str, ad_format: str = "auto") -> str:
 
 def build_full_html(data: dict, products: list, post_index: int, keyword: str = "") -> str:
     """전체 블로그 포스트 HTML을 조립한다."""
-    # 키워드 기반 이미지 자동 매칭 (중복 방지 적용)
+    # 키워드 기반 이미지 자동 매칭 (중복 완전 방지)
     if keyword:
-        section_images = get_unique_images(keyword, count=7)
-        header_img = section_images[0] if section_images else HEADER_IMAGES[0]
+        all_images = get_unique_images(keyword, count=8)
+        header_img = all_images[0] if all_images else HEADER_IMAGES[0]
+        section_images = all_images[1:] if len(all_images) > 1 else all_images
         # 이미지 다운로드
-        all_urls = [header_img] + section_images
-        downloaded = download_post_images(keyword, all_urls)
+        downloaded = download_post_images(keyword, all_images)
         if downloaded:
             logger.info("  이미지 %d개 다운로드 완료", len(downloaded))
     else:
