@@ -417,6 +417,11 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     tag_str = ", ".join(tags)
     parts.append(f'<div style="margin-bottom: 30px;"><p>{tag_str}</p></div>')
 
+    # 쿠팡 배너 (최하단)
+    parts.append("""<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="" style="max-width:100%; height:auto;" /></a>
+</div>""")
+
     result = "\n\n".join(parts)
 
     # 후처리
