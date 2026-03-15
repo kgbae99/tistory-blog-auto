@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>다이어트에 좋은 음식, 이것부터</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">다이어트에 좋은 음식, 이것부터</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">다이어트, 다이어트식, 건강식, 단백질, 저칼로리, 식단관리, 쿠팡추천</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html"><div style="background-color: #fff5f6; border: 1px solid #FFB6C1; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;">
+<p style="color: #555; font-size: 14px; line-height: 1.7; margin: 0;">📌 <strong>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong><br />본 글은 건강 정보를 요약한 것이며, 특정 제품의 효능을 보장하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.</p>
+</div>
+
+<figure style="text-align: center; margin: 0 0 20px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/diet_01.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+
+<p>&nbsp;</p>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">다이어트에 좋은 음식, 이것부터</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">칼로리</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">단백질</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">섬유질</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">적정 섭취</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">근육 유지</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">포만감</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">다이어트의 핵심은 섭취 칼로리와 소비 칼로리의 균형입니다. 단백질을 충분히 섭취해 근육 손실을 막고 기초대사량을 유지하세요. 물과 채소로 포만감을 높이면 과식 확률이 줄어들어 안정적인 감량에 도움이 됩니다.</p>
+</div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 포만감 주는 음식</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 저칼로리 영양식</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 지방 연소 돕는 식품</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 간식 관리 팁</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">포만감 주는 음식</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/diet_02.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">음식</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">장점</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">섭취 팁</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">귀리·통곡물</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장시간 포만감</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">아침 추천</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">포만감이 오래 가는 음식은 다이어트 유지에 큰 힘이 됩니다. 귀리, 렌틸콩, 그릭요거트 같은 식품은 섬유질과 단백질이 풍부해 식사 사이 단식을 방지합니다. 식단을 바꾸는 데 도움이 필요하면 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/506">알레르기 완화에 좋은 음식은 따로 있다?</a> 글도 참고하세요.</p>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8208542949" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">저칼로리 영양식</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/diet_03.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">식단</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">칼로리</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">영양 포인트</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">채소 플레이트</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">낮음</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민·섬유소</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">저칼로리지만 영양 균형을 갖춘 식단이 장기적으로 유리합니다. 닭가슴살, 두부, 생선, 저지방 요구르트로 단백질을 채우고 녹색채소로 비타민과 섬유를 보충하세요. 간편 보조가 필요하면 쿠팡의 관련 건강제품(단백질 파우더, 비타민 등)을 활용해 실용적으로 준비하세요.</p>
+</div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">지방 연소 돕는 식품</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/diet_04.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">식품</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">섭취 팁</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">녹차·고추·생강</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">대사 촉진</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">운동 전후</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">대사를 조금이라도 끌어올리는 식품은 다이어트에 보탬이 됩니다. 녹차의 카테킨, 고추의 캡사이신, 생강의 진저롤 등이 그 예입니다. 규칙적 수면도 중요하니 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/504">불면증에 좋은 음식, 오늘부터 실천하세요</a> 글을 참고해 수면 개선과 함께 관리하세요.</p>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8134684468"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">간식 관리 팁</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/food_12.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">간식</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">장점</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">권장량</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">프로틴바·견과류</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">단백질 보충</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">소량</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">간식은 혈당 급상승을 막는 것이 우선입니다. 무설탕 요거트, 프로틴바, 채소스틱을 추천하고 과일은 한 번에 너무 많이 먹지 마세요. 쿠팡에서 판매되는 저칼로리 스낵이나 단백질 바를 미리 장만해두면 충동구매를 줄이는 데 도움이 됩니다.</p>
+</div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">칼로리 균형과 충분한 단백질이 기본입니다.</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">귀리·렌틸·그릭요거트로 포만감 유지하세요.</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">저칼로리지만 영양 균형 잡힌 식단을 구성하세요.</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">녹차·고추 등 대사 촉진 식품을 활용하세요.</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">간식은 프로틴바·견과류 소량으로 관리하세요.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">다이어트 중 단백질은 얼마나 먹어야 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">일반적으로 체중 1kg당 1.2~1.6g을 권장합니다. 활동량이 많거나 근육량을 유지하고 싶다면 상단 범위를 목표로 하세요.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">포만감을 주는 식단은 어떻게 구성하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">복합 탄수화물(귀리·통곡물), 단백질(닭가슴살·두부), 식이섬유가 풍부한 채소를 한 끼에 골고루 배치하면 포만감이 오래갑니다.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">간단히 시작할 수 있는 실천 팁이 있을까요?</h3>
+<p style="margin: 0; padding: 8px 0;">한 끼씩 바꾸기, 물 먼저 마시기, 간식은 미리 소분하기 등 소소한 습관을 바꾸는 것부터 시작해보세요.</p></div>
+</div></div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="9545675342" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">포인트</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">지속성</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천 팁</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">균형식</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">습관화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">소량씩 시작</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">오늘 소개한 원칙들을 하나씩 실천해보세요. 급격한 제한보다 지속 가능한 식습관이 더 큰 변화를 만듭니다. 필요하다면 쿠팡의 관련 건강제품으로 보조를 마련해 실용적으로 관리하세요. 건강한 다이어트 응원합니다.</p>
+</div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>다이어트, 다이어트식, 건강식, 단백질, 저칼로리, 식단관리, 쿠팡추천</p></div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="" style="max-width:100%; height:auto;" /></a>
+</div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
