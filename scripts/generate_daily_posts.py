@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime
@@ -274,7 +275,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 </div>""")
 
     # 대표 이미지
-    parts.append(f'<p style="text-align: center;"><img src="{header_img}" alt="{data.get("title","")}" style="max-width:100%; height:auto;" width="486" /></p>')
+    parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
     parts.append('<p>&nbsp;</p>')
 
     # H1 제목 + 도입부
@@ -302,7 +303,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
         img = section_images[(i - 1) % len(section_images)]
         parts.append(f"""<div id="sec{i}" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">{section["heading"]}</h2>
-<p style="text-align: center;"><img src="{img}" alt="{section["heading"]}" style="max-width:100%; height:auto;" width="486" /></p>
+<figure style="text-align: center; margin: 15px 0;"><img src="{img}" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
 {section["content"]}
 </div>""")
 
@@ -368,7 +369,12 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     tag_str = ", ".join(tags)
     parts.append(f'<div style="margin-bottom: 30px;"><p>{tag_str}</p></div>')
 
-    return "\n\n".join(parts)
+    result = "\n\n".join(parts)
+
+    # 후처리: 모든 img alt 텍스트 제거 (이미지 아래 불필요 텍스트 방지)
+    result = re.sub(r'alt="[^"]*"', 'alt=""', result)
+
+    return result
 
 
 def build_tool_page(title: str, tags: list, blog_html: str) -> str:
@@ -401,7 +407,7 @@ def build_tool_page(title: str, tags: list, blog_html: str) -> str:
 <div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
 </div>
 <div class="preview-area">
-<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.</div>
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
 <div id="blog-html">{blog_html}</div>
 </div>
 <script>
