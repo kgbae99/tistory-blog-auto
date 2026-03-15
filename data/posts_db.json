@@ -163,5 +163,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 8,
+    "title": "무조건 통하는 보습 크림 고르는 법",
+    "keyword": "보습 크림 고르는 법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "보습크림",
+      "스킨케어",
+      "피부관리",
+      "성분분석",
+      "초보가이드",
+      "추천제품",
+      "건강&웰빙"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-16 07:35",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 9,
+    "title": "간 건강에 좋은 음식, 오늘부터 시작",
+    "keyword": "간 건강에 좋은 음식",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "간건강",
+      "건강",
+      "음식",
+      "차",
+      "영양",
+      "생활습관",
+      "간관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-16 07:36",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 10,
+    "title": "당뇨 예방 식습관 핵심 가이드",
+    "keyword": "당뇨 예방 식습관",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "당뇨예방",
+      "식습관",
+      "혈당관리",
+      "체중관리",
+      "건강식단",
+      "생활습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-16 07:37",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
