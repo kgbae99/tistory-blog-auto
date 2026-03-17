@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>숙면의 온도: 잠 잘 자는 비밀</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">숙면의 온도: 잠 잘 자는 비밀</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">숙면, 수면법, 건강, 웰빙, 수면환경, 이완, 알레르기</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html"><figure style="text-align: center; margin: 0 0 20px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/sleep_01.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+
+<p>&nbsp;</p>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">숙면의 온도: 잠 잘 자는 비밀</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목1</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목2</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목3</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">조명</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">온도</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">소음</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">숙면의 기본은 환경입니다. 조명은 어둡게, 온도는 18~22도 권장으로 유지하세요. 작은 소음도 수면 단계를 방해하니 백색소음이나 귀마개를 활용해 보세요.</p>
+<p style="color: #333; line-height: 1.8;">알레르기 또는 외출 후 오염이 고민이라면 잠자기 전 마스크 착용이나 침구 관리가 도움이 됩니다. 예: CLA 데일리 2D 마스크(소형·5개입·50개)나 스마티 국내산 KF94 새부리형 마스크도 고려해 보세요.</p>
+</div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 잠들기 전 루틴 만들기</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 식사와 음료의 타이밍</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 몸을 이완하는 간단법</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 수면 방해 요소 관리</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">잠들기 전 루틴 만들기</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/sleep_02.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">시간</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">활동</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">60분 전</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">전자기기 줄이기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">멜라토닌 정상화</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">일관된 취침 루틴은 숙면을 돕습니다. 취침 60분 전 전자기기 사용을 줄이고 조명을 낮춰 멜라토닌 분비를 유도하세요. 가벼운 독서나 스트레칭이 효과적입니다.</p>
+<p style="color: #333; line-height: 1.8;">더 깊은 팁은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/528">아침 공복에 좋은 음식, 따로 있습니다</a> 글에서 생활 패턴을 조정하는 방법을 참고하세요.</p>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8208542949" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">식사와 음료의 타이밍</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/sleep_03.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">식사</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">음료</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">간식</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">취침 2-3시간 전</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">카페인 금지</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가벼운 단백질</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">취침 직전 과식은 소화에 부담을 줍니다. 저녁 식사는 취침 2~3시간 전에 끝내고 카페인은 오후 늦게 피하세요. 가벼운 단백질이나 바나나처럼 수면을 돕는 간식이 좋습니다.</p>
+<p style="color: #333; line-height: 1.8;">수면 패턴과 관련된 생활 정보는 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/527">건강온도사가 알려주는 건강 노하우 꿀팁</a>에서 추가로 확인하세요.</p>
+</div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">몸을 이완하는 간단법</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/rest_01.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">호흡</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">스트레칭</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">명상</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">4-7-8 호흡</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가벼운 전신</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">유도 명상 10분</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">심리적 이완은 숙면의 핵심입니다. 4-7-8 호흡법을 4회 반복하거나, 가벼운 전신 스트레칭으로 근육 긴장을 풀어보세요. 명상 앱의 유도 목소리도 큰 도움이 됩니다.</p>
+<p style="color: #333; line-height: 1.8;">짧은 루틴이라도 매일 반복하면 몸이 자연스럽게 잠들 준비를 합니다. 잠자리에서 깊이 숨을 쉬는 습관을 만들어 보세요.</p>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8134684468"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">수면 방해 요소 관리</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/tired_01.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">원인</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">해결</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">비고</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알레르기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">침구 세탁, 공기청정</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">마스크 병행 권장</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">코골이, 야간 각성, 알레르기 등은 수면 질을 낮춥니다. 침구 자주 세탁하고 공기청정기 사용을 권장합니다. 필요시 병원 상담을 받으세요.</p>
+<p style="color: #333; line-height: 1.8;">외출 후 집에 돌아오면 'KF94 숨쉬기 편한 새부리형 마스크(대·컬러)' 같은 제품을 사용해 집안 오염을 줄이는 것도 한 방법입니다. 편안한 수면을 위해 주변을 깨끗하게 관리하세요.</p>
+</div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">조명은 어둡게, 온도는 18~22도 유지</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">취침 60분 전 전자기기 줄이기</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">저녁 식사는 취침 2~3시간 전에 끝내기</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">4-7-8 호흡과 가벼운 스트레칭으로 이완</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">알레르기 관리로 수면 환경 청결 유지</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">숙면을 위해 가장 먼저 바꿀 것 한 가지는?</h3>
+<p style="margin: 0; padding: 8px 0;">수면 시간과 기상 시간을 매일 일정하게 맞추는 것입니다. 일관된 리듬이 몸의 수면 사이클을 안정시킵니다.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">자기 전 스마트폰 사용을 완전히 끊어야 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">완전 금지가 어렵다면 밝기와 블루라이트를 줄이고, 취침 60분 전부터는 사용을 줄이는 것이 현실적이고 효과적입니다.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">코골이 때문에 숙면이 안 돼요. 어떻게 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">체중 관리, 옆으로 눕기, 음주 제한을 먼저 시도해 보세요. 심한 경우 수면클리닉에서 호흡 검사와 치료를 권합니다.</p></div>
+</div></div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="9545675342" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">유지기간</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">환경+루틴</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일 같은 시간</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">3주 권장</td></tr>
+</tbody></table></div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">오늘 알려드린 방법을 하나씩 꾸준히 적용해 보세요. 환경 정비, 루틴, 식사, 이완법, 방해요소 관리를 병행하면 숙면 확률이 높아집니다. 작은 변화가 큰 차이를 만듭니다.</p>
+<p style="color: #333; line-height: 1.8;">편안한 수면을 위한 제품은 쿠팡에서 'CLA 데일리 2D 마스크'나 '스마티 KF94 새부리형 마스크'를 찾아보시면 실용적으로 적용하기 좋습니다. 숙면 잘 되세요!</p>
+</div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7465195445&itemId=24617968999&vendorItemId=91629131298&traceid=V0-153-90571f8ff5a715de&clickBeacon=64f6e920-207d-11f1-a68f-86f0d85c6dbb%7E3&requestid=20260315234356132046916442&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/GkbGRPhchDqty0y2GpbdJshLqQ4sfdrzbu8UNPaGWXv3wzI3gaRnROowAfz0HQtSX0oUII1sB5Fdz6T-vFIwvHZrIwMkOM5r08cVau5dtSfkbPtmMWUY7Fj7dndYD3l2ZFeiOV9NtR5Y9FEkaaNCVJAZfIDUvem1f2RWEd_kIjgJgj3ShbkPcWwvQbLkcS64SwySo5bwlNi0EYYz-zrdO_0C9gzzE_M4VmocSzIakVOu-QQM7pTK8y9DGLi3V_TSDw0ZYabBluMVAoYOoC99nk14zNOze996ew==" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">CLA 데일리 2D 마스크 소형, 5개입, 50개, 민트</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">150,250원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8562895882&itemId=24799539882&vendorItemId=91806878430&traceid=V0-153-4b08b0115258b372&requestid=20260315234356132046916442&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/OzYATGpVsWzC5ljiO3awjYxshDF2NfAo-mtC4vxS_56WAkT91UhVPjoNTPDvdskqT4pOCZ3R9Nc9NSnEuW4iMO0akegP3dvtDvw77TH3YorboRt8qBD2fF9oYzA7Yz_DYenU0Xfb9aFx3RE3KS2jY8On7McbmZtgBk90AuTLlHBkzyWTRu-F3t4h6ck31g-FLn8hJurm3q5DAfsIbioDAJ68lhl2L3dATSisQxWbG0a7kJh8vxVkMQOU4mwyxaXCvjDGl61WriciqAeEIMM0HYL2vhFVicg5cdN0b3d1T5Cidg8Ol9b8eapY_y7V1GUxR6g_1w==" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">스마티 국내산 KF94 숨쉬기 편한 새부리형 마스크 대형</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">7,500원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8726997795&itemId=25352971517&vendorItemId=90722277416&traceid=V0-153-cf41d1570346aeec&requestid=20260315234356132046916442&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/KrzbzIFZRcX_NN6rKsFG5Bu89rSFgXplvCzGDs8xUKck5u93XB5GvF-7s23Ldgp1_i4xE4AcKZMnOw7t_MXJPfJ_HHjcgt9KkPqfQjXk1o9ffWQRCYgM6YH4wk_LPDSLdyB0t4V1ir1Yeku-5qWMA0jQaKUNo8_eJPL8HBJIYrILTjMYW2qVpEn1SyydqZF_5y7QZKQvsqChzjsEvmsGeZh6368hO19WwAdusLKQAi_oqwn93ZsYDi2PWNZGZIhUroV3hxwYUDCP-WdqsFhhdiZR0GGG4I6Ote26PCC_bv56sNEpYBDdb0z1KCfajZsQ1eJIYQ==" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">국내산 KF94 숨쉬기 편한 새부리형  컬러 황사 방역 대형 마스크</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">6,990원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>숙면, 수면법, 건강, 웰빙, 수면환경, 이완, 알레르기</p></div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="" style="max-width:100%; height:auto;" /></a>
+</div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>

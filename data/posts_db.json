@@ -450,5 +450,53 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 20,
+    "title": "스트레칭 효과, 진짜 알려줄게",
+    "keyword": "스트레칭 효과",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "스트레칭",
+      "운동",
+      "유연성",
+      "통증완화",
+      "웰빙",
+      "건강관리",
+      "홈트"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-18 07:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 21,
+    "title": "숙면의 온도: 잠 잘 자는 비밀",
+    "keyword": "숙면 취하는 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "숙면",
+      "수면법",
+      "건강",
+      "웰빙",
+      "수면환경",
+      "이완",
+      "알레르기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-18 07:42",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
