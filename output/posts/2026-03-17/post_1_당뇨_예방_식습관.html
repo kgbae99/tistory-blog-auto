@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>당뇨 예방, 식습관으로 가능할까?</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">당뇨 예방, 식습관으로 가능할까?</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">당뇨 예방, 식습관, 혈당관리, 체중관리, 건강한간식, 생활습관, 건강&amp;웰빙</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html"><figure style="text-align: center; margin: 0 0 20px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/health_01.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+
+<p>&nbsp;</p>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">당뇨 예방, 식습관으로 가능할까?</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">포인트</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천법</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">균형 잡힌 식사</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈당 안정화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">채소 중심·단백질 추가</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">당뇨는 유전과 환경이 함께 작용하지만 식습관 변화로 발병 위험을 크게 낮출 수 있습니다. 매일의 식사 선택과 규칙적인 패턴이 장기적으로 혈당을 안정시킵니다. 작은 습관부터 차근차근 바꿔보세요.</p></div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 규칙적 체중관리와 체중계 활용</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 탄수화물, 무엇을 얼마나 먹을까?</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 식사 시간과 패턴이 미치는 영향</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 간식·음료, 당뇨 위험 낮추는 선택</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">규칙적 체중관리와 체중계 활용</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/health_02.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목1</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목2</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목3</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">정기 측정</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">추세 파악</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">주 1회 이상 권장</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">체중은 당뇨 위험과 직결됩니다. 집에서 자주 체중을 확인하면 작은 변화도 바로 잡을 수 있어요. 앳플리 디지털 LED 체중계·홈플래닛 디지털 LED 가정용 체중계·노바리빙 컬러 백라이트 사각 체중계 같은 제품이 가정용으로 편리합니다.</p></div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8208542949" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">탄수화물, 무엇을 얼마나 먹을까?</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/health_03.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">음식군</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천량</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">대체법</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">정제 탄수화물</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">적게</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">통곡물·채소로 대체</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">탄수화물은 종류와 양이 중요합니다. 흰빵·과자 대신 통곡물과 채소를 늘리고, 한 끼 탄수화물 양을 손바닥 크기 정도로 조절하세요. 자세한 식품 선택은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/485">당뇨 예방? 이 음식이 과학적으로 입증됨</a>을 참고하면 도움이 됩니다.</p></div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">식사 시간과 패턴이 미치는 영향</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/health_04.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">패턴</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">영향</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">권장</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">규칙적 식사</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈당 변동 축소</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">3끼 규칙적</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">식사 시간을 규칙적으로 유지하면 혈당 스파이크를 줄일 수 있습니다. 야식과 긴 공복을 피하고, 식사 간 간격을 일정하게 유지하세요. 식사 패턴 관련 더 구체적인 식단 팁은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/519">당뇨 걱정 줄이는 식단의 핵심은 이것</a>에서 확인하세요.</p></div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8134684468"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">간식·음료, 당뇨 위험 낮추는 선택</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/health_05.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">간식</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주의</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">견과류·과일</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">소량 권장</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가공 스낵 주의</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">간식과 음료는 의외로 큰 영향을 줍니다. 설탕 함량 높은 음료·과자는 피하고, 물·무가당 차를 우선하세요. 간식은 견과류나 통곡물 요거트처럼 천천히 흡수되는 것을 선택하면 혈당 관리에 도움이 됩니다.</p></div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">식단의 균형이 당뇨 예방의 핵심입니다.</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">정기적인 체중 체크로 작은 변화를 잡아내세요.</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">정제 탄수화물 줄이고 통곡물·채소로 대체하세요.</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">식사 시간을 규칙적으로 유지하면 혈당 변동을 줄입니다.</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">간식은 견과류·무가당 음료 위주로 선택하세요.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">당뇨 예방에 가장 중요한 한 가지는 무엇인가요?</h3>
+<p style="margin: 0; padding: 8px 0;">규칙적인 식습관과 적정 체중 유지가 가장 중요합니다. 작은 식단 변화와 꾸준한 생활습관 개선이 장기적으로 큰 효과를 냅니다.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">체중계는 얼마나 자주 사용해야 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">주 1회 이상 정기적으로 측정해 추세를 파악하세요. 매일 아침 같은 조건에서 측정하면 더욱 정확한 경향을 알 수 있습니다.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">간식으로 무엇을 선택하면 좋을까요?</h3>
+<p style="margin: 0; padding: 8px 0;">견과류 소량, 통곡물 요거트, 신선한 과일(과다 섭취 주의), 무가당 음료를 권장합니다. 가공 당이 많은 간식은 피하세요.</p></div>
+</div></div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="9545675342" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실행</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">기간</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">습관 변화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일 실천</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">몇 주~몇 달</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">당뇨 예방은 거창한 변화가 아니라 꾸준한 작은 습관에서 시작합니다. 식사 선택, 규칙적 패턴, 체중 체크와 적절한 간식이 핵심이에요. 오늘부터 한 가지씩 실천해보세요. 건강한 변화는 지속에서 옵니다.</p></div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=6417202386&itemId=13788880930&vendorItemId=81039306234&traceid=V0-153-6b4b0425db2ef1f6&requestid=20260315234401635303892109&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/51cIxPtWHQPtuNHG52CBpW_q5PFTlntPnIlWEQDsvKFR-q2ZN6qXZ1_2xjrj1pG8Qzo4vPK9vQg1JCa3xuWd0LKdcLLQnZjCaFOz2FayDRtK6F9vniG8J6d3agSl24PN-raP5jl1vuwJC7ZqMSl5EOnFENIOLH890yqA6f07SpmP6KJhxQJdanRT2jRhspb9DyGr7Oiuv2v1sRdg6Gz04KUVtCiry4Hrqe3CFlUoOhQHAPcpNEopol90x8RSt2ky-p8w9ZxyqYqkPWa9dJO-mj_J5n1wG_-KO4-EOqBFRbvub7fg" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">앳플리 디지털 LED 체중계</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">13,900원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8359676766&itemId=24158126424&vendorItemId=91176755808&traceid=V0-153-bd08c10e4eabdcc5&requestid=20260315234401635303892109&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/w6iu-craLp3eDDNYw0Ol3n8OwHO9GpWja4pCTYKJSDSZ9AzoZpdTFDgEdMWkz0E5JZeWvcp6IdfCviNVYgPoVi1agABEbjqLb81HvTGHPwRnZD8cvtZhyJSEKc-dj7R7qEDX28jC8N65ZZ3EYiwobIbPZ6QieczLqHySQUeNICa6qaSKqvNtKt1gsS1hGcWdglpUK7FjkkxSG6Sr2zVoshLzJpD_q6BqO9zJRi3Zlo9ucAtZyRG1JtCJoa8jzeflZaNiBfZIOsWfYs9m_Euk1ioGeEV-K2NNzkKhGg8kkHA_b4Km" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">홈플래닛 디지털 LED 가정용 체중계</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">8,200원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=5258756746&itemId=24530922&vendorItemId=3036145985&traceid=V0-153-dd60aad1d2acaa69&requestid=20260315234401635303892109&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/gzYzIG87RMq0HJZEg8lEekgXKBU1viTkMYHchdGWh6a01tsiQUPJWqH0p_zz4IG4mxz2_co1wy-bRfjvyHDixGC0jfmSJJ2CiNItLX89jl8GTiqmNwTn9tM9h0_-0XR6jg9OxYHl7YelqN_9OUsoN80wlr0_gJo73ItSc-9sqHc7VKDdbsB3rPUI04G2RUfbzVdNYGYwF-Pvx4GljSZi1QD1zFBZ2efgh7JnzovM7VW1UQzHNjFfAgX1UffNwPd8iLNaggD7nrWUJkmkOYFiqet0UYnhKIiObSLzuBeHMgG-cX1eUpxUg1KyZFxdkX_JkVmZynLZAtznNO1S" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">노바리빙 컬러 백라이트 사각 체중계</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">9,800원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>당뇨 예방, 식습관, 혈당관리, 체중관리, 건강한간식, 생활습관, 건강&amp;웰빙</p></div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="" style="max-width:100%; height:auto;" /></a>
+</div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
