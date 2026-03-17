@@ -172,6 +172,11 @@ def get_trending_keywords() -> list[str]:
     return result
 
 
+# 세션 내 사용된 상품 ID 추적 (포스트 간 중복 방지)
+_used_product_ids: set = set()
+_used_product_names: set = set()
+
+
 def search_coupang_products(keyword: str) -> list:
     """쿠팡에서 키워드 관련 상품을 검색한다. 스마트 매처 + 캐시 폴백."""
     cache_file = Path(__file__).parent.parent / "data" / "coupang_cache.json"
@@ -230,31 +235,72 @@ def search_coupang_products(keyword: str) -> list:
                 for p in products
             ]
             _save_cache(cache)
-            return products
+            # 세션 중복 필터 (포스트 간 동일 상품 방지)
+            unique = []
+            for p in products:
+                pid = str(p.product_id or "")
+                pname = str(p.product_name or "")
+                if pid and pid in _used_product_ids:
+                    continue
+                if pname and pname in _used_product_names:
+                    continue
+                unique.append(p)
+                if pid:
+                    _used_product_ids.add(pid)
+                if pname:
+                    _used_product_names.add(pname)
+            return unique[:3]
 
         # 3차: 캐시 폴백 (API 실패 시) - 키워드별 다른 캐시 사용
         cache = _load_cache()
         if not cache:
             return []
 
+        def _pick_from_cache(candidates: list) -> list:
+            """캐시 상품 목록에서 세션 내 중복 제거 후 반환."""
+            result = []
+            for p_data in candidates:
+                # 캐시는 camelCase, Product 객체는 snake_case
+                pid = str(p_data.get("productId") or p_data.get("product_id") or "")
+                pname = str(p_data.get("productName") or p_data.get("product_name") or "")
+                if not pid and not pname:
+                    continue
+                if pid and pid in _used_product_ids:
+                    continue
+                if pname and pname in _used_product_names:
+                    continue
+                result.append(Product.from_api_response(p_data))
+                if pid:
+                    _used_product_ids.add(pid)
+                if pname:
+                    _used_product_names.add(pname)
+                if len(result) >= 3:
+                    break
+            return result
+
         # 같은 키워드 캐시
         if keyword in cache and cache[keyword]:
             logger.info("쿠팡 캐시 사용: '%s' → %d개", keyword, len(cache[keyword]))
-            return [Product.from_api_response(p) for p in cache[keyword][:3]]
+            return _pick_from_cache(cache[keyword])
 
         # 키워드 해시 기반으로 다른 캐시 선택 (매번 같은 키워드는 같은 상품)
         import hashlib
         kw_hash = int(hashlib.md5(keyword.encode()).hexdigest(), 16)
         cache_keys = list(cache.keys())
         if cache_keys:
+            # 여러 캐시 키를 순회하며 중복 없는 상품 모으기
             idx = kw_hash % len(cache_keys)
-            selected_key = cache_keys[idx]
-            cached_products = cache[selected_key]
-            if cached_products:
-                logger.info("쿠팡 캐시 대체: '%s' → '%s' (%d개)", keyword, selected_key, len(cached_products))
-                # 같은 캐시에서도 다른 상품 선택 (offset)
-                offset = (kw_hash // len(cache_keys)) % max(len(cached_products) - 2, 1)
-                return [Product.from_api_response(p) for p in cached_products[offset:offset + 3]]
+            collected = []
+            for offset_i in range(len(cache_keys)):
+                selected_key = cache_keys[(idx + offset_i) % len(cache_keys)]
+                cached_products = cache[selected_key]
+                if cached_products:
+                    collected.extend(cached_products)
+                if len(collected) >= 9:
+                    break
+            if collected:
+                logger.info("쿠팡 캐시 대체: '%s' → %d개 후보", keyword, len(collected))
+                return _pick_from_cache(collected)
 
         return []
     except Exception as e:
