@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>혈당을 낮추는 실전 방법</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">혈당을 낮추는 실전 방법</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">혈당관리, 당뇨예방, 건강식단, 운동팁, 수면관리, 영양제</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html"><figure style="text-align: center; margin: 0 0 20px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/exercise_07.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+
+<p>&nbsp;</p>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">혈당을 낮추는 실전 방법</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목1</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목2</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목3</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">공복혈당</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">식후혈당</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">HbA1c</td></tr></tbody></table></div><div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><p style="color: #333; line-height: 1.8;">혈당은 음식에서 나온 당이 혈액에 섞여 나오는 수치입니다. 공복과 식후 수치, 장기 지표인 HbA1c를 함께 보면 관리 수준을 파악할 수 있어요.</p><p style="color: #333; line-height: 1.8;">간단한 이해부터 시작하면 식단과 생활습관을 바꿀 때 목적이 뚜렷해집니다. 작은 변화가 누적되어 큰 차이를 만듭니다.</p></div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 식단 조절의 핵심 원칙</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 운동으로 혈당 내리는 방법</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 스트레스·수면과 혈당의 연결</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 보조제와 영양제 선택 기준</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec5">5. 실전 체크리스트</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">식단 조절의 핵심 원칙</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/exercise_09.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">원칙</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">예시</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">팁</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">저당지수 선택</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">통곡물, 채소</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">단백질 포함</td></tr></tbody></table></div><div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><p style="color: #333; line-height: 1.8;">혈당 관리는 탄수화물 종류와 양을 조절하는 것이 핵심입니다. 정제 탄수 대신 통곡물과 채소, 단백질을 함께 먹으면 식후 혈당 상승을 완화해요.</p><p style="color: #333; line-height: 1.8;">간식은 견과류나 그릭요거트처럼 혈당 급등을 막는 선택이 좋습니다. 더 자세한 식단 팁은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/499">피부가 맑아지는 데 도움되는 식단</a> 글도 참고해 보세요.</p></div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8208542949" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">운동으로 혈당 내리는 방법</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/spring_01.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">운동</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">빈도</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">유산소</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">주 3~5회</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">즉시 혈당 감소</td></tr></tbody></table></div><div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><p style="color: #333; line-height: 1.8;">가벼운 걷기부터 시작해 인터벌과 근력 운동을 섞으면 혈당 조절에 더 효과적입니다. 식후 30분 이내 가벼운 걷기는 식후 혈당을 낮추는 간단한 방법이에요.</p><p style="color: #333; line-height: 1.8;">일상에서 계단 이용, 짧은 스트레칭도 누적 효과가 큽니다. 꾸준함이 더 중요하니 작은 목표부터 정해 보세요.</p></div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">스트레스·수면과 혈당의 연결</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/spring_02.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">요인</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">영향</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">관리법</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">스트레스</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈당상승</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">심호흡·휴식</td></tr></tbody></table></div><div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><p style="color: #333; line-height: 1.8;">스트레스와 수면 부족은 코르티솔을 올려 혈당을 높입니다. 명상, 심호흡, 규칙적 수면으로 호르몬 균형을 잡아주세요.</p><p style="color: #333; line-height: 1.8;">스트레스 관리법은 개인차가 큽니다. <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/508">불안과 스트레스, 이렇게 관리하면 삶이 달라집니다</a> 글에서 실용 팁을 더 확인할 수 있어요.</p></div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8134684468"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">보조제와 영양제 선택 기준</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/nature_01.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">영양제</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효능</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">권장</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">멀티비타민</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">기초영양 보충</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">식사 보완</td></tr></tbody></table></div><div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><p style="color: #333; line-height: 1.8;">혈당 관리를 위한 보조제는 보조 수단일 뿐입니다. 기본은 식단과 운동이며, 결핍이 있을 때 보완용으로 사용하세요.</p><p style="color: #333; line-height: 1.8;">예를 들어 브이팩 남성용 멀티비타민, 고려은단 비타민C 1000 + 쇼핑백, 고려은단 멀티비타민 같은 제품은 일상 영양 보충에 도움이 됩니다. 복용 전 의사와 상담을 권합니다.</p></div>
+</div>
+
+<div id="sec5" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">실전 체크리스트</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/nature_02.jpg" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">빈도</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">비고</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">식사 기록</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">포만감 체크</td></tr></tbody></table></div><div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><p style="color: #333; line-height: 1.8;">간단한 체크리스트로 습관을 점검하세요. 식사 기록, 운동 시간, 수면 시간, 스트레스 지표를 매주 점검하면 개선점이 보입니다.</p><p style="color: #333; line-height: 1.8;">또한 정기적인 혈당 측정과 주치의 상담을 병행하면 안전합니다. 꾸준한 기록이 성공의 지름길입니다.</p></div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">식사는 저당지수 음식 위주로, 단백질 함께 섭취</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">식후 30분 가벼운 걷기로 혈당 급상승을 억제</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">충분한 수면과 스트레스 관리는 혈당 안정에 도움</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">보조제는 보완 수단, 복용 전 전문가 상담 권장</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">기록과 꾸준한 점검이 혈당 관리의 핵심</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">식사만으로 혈당이 조절되나요?</h3>
+<p style="margin: 0; padding: 8px 0;">식사가 가장 큰 영향을 줍니다. 하지만 운동, 수면, 스트레스 관리가 함께해야 더 안정적으로 혈당을 유지할 수 있어요.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">혈당 관리에 좋은 음료는 무엇인가요?</h3>
+<p style="margin: 0; padding: 8px 0;">물과 무당 허브차가 안전합니다. 단 음료나 스포츠음료는 당분이 높으니 주의하세요.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">영양제는 꼭 복용해야 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">모든 사람에게 필요한 건 아닙니다. 식사로 부족한 영양을 보충할 때 유용하며, 복용 전 의사 상담을 권합니다.</p></div>
+</div></div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="9545675342" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">요약</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">다짐</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">작은 변화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일 실천</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">지속</td></tr></tbody></table></div><div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><p style="color: #333; line-height: 1.8;">혈당 관리는 복잡해 보이지만 일상 습관을 조금 바꾸는 것부터 시작하면 됩니다. 식단·운동·수면·스트레스 관리가 핵심이에요.</p><p style="color: #333; line-height: 1.8;">꾸준히 기록하고 필요하면 보조제로 보완하세요. 작은 변화가 큰 차이를 만듭니다. 건강한 하루 되세요!</p></div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7242502837&itemId=27830389203&vendorItemId=94789987486&traceid=V0-153-2b9a6780606adbec&clickBeacon=644377a0-207d-11f1-b1f8-c9ffec3ff770%7E3&requestid=20260315234355005174999933&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/S7PjCZMiOezgpWoPS8WEoAmPvl0dUKr58uAb_93aFFxnxjKhppKbtIsevsDR5-isAERNCiZCGUxnnFEFX3zIeOu6JM9JwxNKqAgxotFihtLbU6oxYRE0ugZA_CVP-i0cm6lBAidaLCl5kgsQ3MwXYA5FF10M53ueqIdvGfPrLfALdb0qBTLA-g0BVZLKCLjuhRlY7Prb7dYgR5RQyn893WRnGDgyks09m3MF4CxpPy9coezcoHuCUXFyApsT7cZoyi74McmrIf4DKzOL-AEVJ452hCihtblrZhwDcLZHnslS7JGTJ1YNzaqUtbUPlr87_R9T" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">브이팩 남성용 멀티비타민 90g, 90g, 12개</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">299,750원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=9334963084&itemId=16103278693&vendorItemId=84995746459&traceid=V0-153-637e31885f15ff31&requestid=20260315234355005174999933&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/7yYlm3a8iVmcPgSe7wIZeDdJjgKZf6Aibu5napx0GP321UAvgDqCHpQS7XuSHENHITEu9fJhIbIqM3RZp_C6sFLrBaA5HReDB9CwjOYm9K10mPL-q0aX56IqPyAqmA-dtP9u50e4rlZR-yPJROhbl6DlaB0vXFauW6rR_bgs_LlqRE68CMGsrzw7sYU25OLuUxgLiSEMHeI5-0r0U7L232pAKtkuhB0JXE2WN1uijDfVcd_nWUhj68aP-rUazE31FC8BVw0-HWGH06BZrAUrDQsgrj-cL4SyCxuebiHzSNh2Kno=" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">고려은단 비타민C 1000 + 쇼핑백</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">50,480원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=6743604050&itemId=18115015920&vendorItemId=78477362977&traceid=V0-153-eeddc1fa991cb2a2&requestid=20260315234355005174999933&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/BVy67okuSv256ziUBSJj6T3Q-05x3KiZBOLMl3pXjUgM0Yh4IH73slv863kStn1ur7csDAAv7YhYCgfwbDEb8T5LknTIb4awuoNx_ofqwhATZthTjr0-VtWE7nX1bKRjGR10nt3Y5DgojnbVSQrMkfkZ6ZzR--7pZheqIuNjrkw-nmQt5Rumj3UpBdHzEpY6FNtj9hZH0gZbO4UtmosMHnaSlLxa6YTlHaIwQ6aaVXx0V0QPDau09oildhu6jRPljFscY3R2ctkx21Pw7FTriIXQu6il44HVkIpCpbAgKK0bHr0YjMCMfZ1iRWf_-ikq0klLBNw=" alt="" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">고려은단 멀티비타민</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">22,950원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>혈당관리, 당뇨예방, 건강식단, 운동팁, 수면관리, 영양제</p></div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="" style="max-width:100%; height:auto;" /></a>
+</div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
