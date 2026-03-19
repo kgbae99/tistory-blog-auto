@@ -593,5 +593,29 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 26,
+    "title": "암보험 가입 전 체크리스트",
+    "keyword": "암보험 가입 전 체크리스트",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "암보험",
+      "보험가입",
+      "건강관리",
+      "보험체크리스트",
+      "오메가3",
+      "지원금",
+      "부모님건강"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-20 07:36",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
