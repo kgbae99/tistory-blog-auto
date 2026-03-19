@@ -51,6 +51,8 @@ jobs:
           COUPANG_SECRET_KEY=${{ secrets.COUPANG_SECRET_KEY }}
           TISTORY_BLOG_NAME=kgbae2369
           TISTORY_BLOG_URL=https://kgbae2369.tistory.com
+          TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}
           ADSENSE_GTAG_ID=G-SD7PEXH5NK
           ADSENSE_PUB_ID=${{ secrets.ADSENSE_PUB_ID }}
           ADSENSE_SLOT_TOP=${{ secrets.ADSENSE_SLOT_TOP }}

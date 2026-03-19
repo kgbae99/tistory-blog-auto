@@ -107,6 +107,14 @@ def run_auto_indexing(max_count: int = 200) -> dict:
         "failed": failed,
     }
     logger.info("색인 요청 완료: %d 성공, %d 실패, %d 남음", success, failed, result["remaining"])
+
+    # 텔레그램 알림
+    try:
+        from src.notify.telegram import notify_indexing_result
+        notify_indexing_result(result)
+    except Exception:
+        pass
+
     return result
 
 

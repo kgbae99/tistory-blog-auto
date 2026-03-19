@@ -739,6 +739,13 @@ def main():
 
     logger.info("=== 완료: %d개 포스트 생성 → %s ===", len(results), output_dir)
 
+    # 텔레그램 알림
+    try:
+        from src.notify.telegram import notify_posts_generated
+        notify_posts_generated(results)
+    except Exception as e:
+        logger.warning("텔레그램 알림 실패: %s", e)
+
     # 콘솔 출력
     print(f"\n{'='*50}")
     print(f"  {today} 블로그 포스트 {len(results)}개 생성 완료")
