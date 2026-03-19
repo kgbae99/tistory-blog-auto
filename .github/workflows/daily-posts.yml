@@ -70,7 +70,7 @@ jobs:
 
       - name: Request indexing for unindexed pages
         if: ${{ github.event.inputs.run_indexing != 'false' }}
-        run: python scripts/request_indexing.py --count 20
+        run: python scripts/request_indexing.py --count 200
         continue-on-error: true
         env:
           TZ: Asia/Seoul
