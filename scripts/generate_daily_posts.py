@@ -32,7 +32,7 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 ## 기존 글 스타일 (반드시 따르세요)
 - 제목: 짧고 강렬한 호기심 유발형 (15~30자)
 - H2 섹션 6~7개, H3 사용 안 함
-- 각 섹션 150~300자, 짧은 문단 2~3문장
+- 각 섹션 300~500자, 문단 4~6문장 (구체적 수치, 예시 포함)
 - 문체: ~합니다/~세요/~요 존댓말, 친근하고 실용적
 - 각 섹션에 테이블 또는 불릿 포인트 활용
 - 내부링크 2개 본문 중간에 삽입
@@ -48,16 +48,19 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 6. 내부링크: 본문 중간에 자연스럽게 2개 삽입 (아래 제공된 링크 사용)
    {internal_links}
 
-## 테이블 HTML 형식
+## 테이블 HTML 형식 (중요: 헤더는 반드시 주제에 맞는 실제 항목명을 사용. "항목1/항목2/항목3" 금지!)
+## 테이블 데이터는 최소 3행 이상 채울 것
 <div class="table-section" style="margin: 20px 0;">
 <table style="width: 100%; border-collapse: collapse;">
 <thead><tr>
-<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목1</th>
-<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목2</th>
-<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">항목3</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
 </tr></thead>
 <tbody>
-<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">내용</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">내용</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">내용</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항목A</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">설명</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">효과</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항목B</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">설명</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">효과</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항목C</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">설명</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">효과</td></tr>
 </tbody></table></div>
 
 ## 섹션 내용 형식
@@ -70,8 +73,13 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 - 카테고리: 건강 & 웰빙
 - 쿠팡 추천 상품 (본문에서 자연스럽게 언급): {products}
 
+## 중요 금지사항
+- 테이블 헤더에 "항목1", "항목2", "항목3" 절대 사용 금지. 반드시 주제에 맞는 실제 항목명 사용
+- 쿠팡 추천 상품 언급 시 본문 맥락과 자연스럽게 연결
+- "바꾸하고" 같은 비문 사용 금지
+
 ## 출력: 반드시 JSON만
-{{"title":"제목","meta_description":"155자이내","sections":[{{"heading":"H2제목","content":"HTML본문"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+{{"title":"제목","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(300자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
 
 # 이미지 매핑 (Unsplash 검증된 URL)
 SECTION_IMAGES = [
@@ -293,10 +301,49 @@ def search_coupang_products(keyword: str) -> list:
             logger.info("쿠팡 캐시 사용: '%s' → %d개", keyword, len(cache[keyword]))
             return _pick_from_cache(cache[keyword])
 
-        # 키워드 해시 기반으로 다른 캐시 선택 (매번 같은 키워드는 같은 상품)
+        # 키워드-캐시 카테고리 연관성 매핑 (주제에 맞는 상품 우선 선택)
+        KEYWORD_CACHE_MAP = {
+            "다이어트": ["체중계", "운동"],
+            "운동": ["운동", "체중계"],
+            "스트레칭": ["운동", "요가매트"],
+            "홈트": ["운동"],
+            "피부": ["크림"],
+            "스킨케어": ["크림"],
+            "뷰티": ["크림"],
+            "숙면": ["베개", "차"],
+            "수면": ["베개", "차"],
+            "면역": ["비타민", "영양제", "유산균"],
+            "비타민": ["비타민", "영양제"],
+            "혈압": ["오메가3", "영양제", "차"],
+            "혈당": ["영양제", "비타민", "차"],
+            "콜레스테롤": ["오메가3", "영양제", "차"],
+            "관절": ["영양제", "운동"],
+            "간": ["영양제", "비타민", "차"],
+            "해독": ["차", "유산균"],
+            "차": ["차"],
+            "알레르기": ["마스크", "비타민"],
+            "미세먼지": ["마스크"],
+            "장건강": ["유산균", "영양제"],
+            "보험": ["비타민", "영양제"],
+            "임플란트": ["비타민", "영양제"],
+        }
+
+        # 키워드에서 매칭되는 캐시 카테고리 우선 선택
+        preferred_keys = []
+        kw_lower = keyword.lower()
+        for kw_part, cache_cats in KEYWORD_CACHE_MAP.items():
+            if kw_part in kw_lower:
+                preferred_keys.extend(cache_cats)
+
         import hashlib
         kw_hash = int(hashlib.md5(keyword.encode()).hexdigest(), 16)
         cache_keys = list(cache.keys())
+
+        # 연관 카테고리를 앞에, 나머지를 뒤에 배치
+        if preferred_keys:
+            matched = [k for k in preferred_keys if k in cache_keys]
+            remaining = [k for k in cache_keys if k not in matched]
+            cache_keys = matched + remaining
         if cache_keys:
             # 여러 캐시 키를 순회하며 중복 없는 상품 모으기
             idx = kw_hash % len(cache_keys)
@@ -430,8 +477,9 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     parts = []
 
-    # 대표 이미지
-    parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
+    # 대표 이미지 (키워드 alt 삽입)
+    img_alt = keyword if keyword else data.get("title", "건강정보")
+    parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="{img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
     parts.append('<p>&nbsp;</p>')
 
     # H1 제목 + 도입부
@@ -459,7 +507,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
         img = section_images[(i - 1) % len(section_images)]
         parts.append(f"""<div id="sec{i}" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">{section["heading"]}</h2>
-<figure style="text-align: center; margin: 15px 0;"><img src="{img}" alt="" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<figure style="text-align: center; margin: 15px 0;"><img src="{img}" alt="{img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
 {section["content"]}
 </div>""")
 
@@ -532,8 +580,9 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     result = "\n\n".join(parts)
 
-    # 후처리
-    result = re.sub(r'alt="[^"]*"', 'alt=""', result)  # img alt 제거
+    # 후처리: 이미지 alt 속성에 키워드 삽입 (빈 alt → SEO 최적화)
+    alt_text = keyword if keyword else data.get("title", "건강정보")
+    result = re.sub(r'alt=""', f'alt="{alt_text}"', result)
     result = re.sub(r'<a[^>]*href="#(?!sec\d)[^"]*"[^>]*>(.*?)</a>', r'\1', result)  # GPT 앵커 제거 (시스템 #sec 유지)
 
     # GPT가 생성한 중복 목차 제거 (시스템 목차만 유지)
@@ -548,11 +597,13 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     return result
 
 
-def build_tool_page(title: str, tags: list, blog_html: str) -> str:
+def build_tool_page(title: str, tags: list, blog_html: str, meta_desc: str = "") -> str:
     """복사 도구 페이지 HTML을 생성한다."""
     tag_str = ", ".join(tags)
+    meta_tag = f'<meta name="description" content="{meta_desc}">' if meta_desc else ""
     return f"""<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+{meta_tag}
 <title>{title}</title>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}body{{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}}
@@ -640,6 +691,7 @@ def main():
             data.get("title", keyword),
             data.get("tags", [keyword]),
             blog_html,
+            meta_desc=data.get("meta_description", ""),
         )
 
         # 5. 파일 저장
