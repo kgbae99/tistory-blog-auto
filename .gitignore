@@ -37,3 +37,7 @@ Thumbs.db
 # Cache
 .pytest_cache/
 .ruff_cache/
+.claude/settings.local.json
+config/credentials.json
+config/gsc_token.json
+.playwright-session/
