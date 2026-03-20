@@ -1,0 +1,95 @@
+# IT/가젯 리뷰 블로그 설정 - uyoblog
+blog:
+  name: "테크온도(IT++)"
+  url: "https://uyoblog.tistory.com"
+  blog_name: "uyoblog"
+  categories:
+    - name: "노트북/PC"
+      subcategories:
+        - "노트북 추천"
+        - "조립PC 가이드"
+    - name: "스마트폰/태블릿"
+      subcategories:
+        - "스마트폰 비교"
+        - "태블릿 추천"
+    - name: "가젯/악세서리"
+      subcategories:
+        - "이어폰/헤드폰"
+        - "키보드/마우스"
+        - "충전기/케이블"
+    - name: "가전/생활가전"
+      subcategories:
+        - "공기청정기"
+        - "로봇청소기"
+        - "모니터"
+    - name: "IT 꿀팁"
+      subcategories:
+        - "앱 추천"
+        - "설정 가이드"
+
+content:
+  model: "gpt-5-mini"
+  max_tokens: 4096
+  min_word_count: 1500
+  max_word_count: 3000
+  language: "ko"
+  tone: "친근하고 전문적인"
+  target_audience: "IT 제품에 관심 있는 20~50대"
+
+seo:
+  min_headings: 5
+  max_headings: 8
+  meta_description_length: 155
+  focus_keywords_per_post: 3
+  internal_links_per_post: 2
+  schema_types:
+    - Article
+    - FAQPage
+    - Product
+
+coupang:
+  products_per_post: 3
+  categories:
+    - 노트북
+    - 이어폰
+    - 키보드
+    - 마우스
+    - 모니터
+    - 충전기
+    - 태블릿
+    - 스마트워치
+    - 공기청정기
+    - 로봇청소기
+
+trending_keywords:
+  gadget:
+    - "2026 가성비 노트북 추천"
+    - "무선 이어폰 추천 순위"
+    - "기계식 키보드 추천"
+    - "게이밍 마우스 비교"
+    - "4K 모니터 추천"
+    - "USB-C 충전기 추천"
+    - "아이패드 vs 갤럭시탭 비교"
+    - "스마트워치 추천 순위"
+    - "로봇청소기 추천 비교"
+    - "공기청정기 추천 2026"
+  smartphone:
+    - "갤럭시 S26 스펙 비교"
+    - "아이폰 17 달라진 점"
+    - "가성비 스마트폰 추천"
+    - "스마트폰 배터리 오래 쓰는 법"
+    - "스마트폰 카메라 비교"
+  tips:
+    - "윈도우 11 숨은 기능"
+    - "맥북 필수 앱 추천"
+    - "크롬 확장 프로그램 추천"
+    - "스마트폰 저장 공간 확보법"
+    - "와이파이 속도 높이는 법"
+    - "노트북 발열 해결법"
+    - "SSD vs HDD 차이점"
+    - "RAM 용량별 차이"
+
+scheduler:
+  publish_time: "08:00"
+  posts_per_day: 3
+  timezone: "Asia/Seoul"
