@@ -149,10 +149,47 @@ def generate_content(keyword: str, products: list) -> dict | None:
             text = resp.choices[0].message.content.strip()
             text = re.sub(r"```json\s*", "", text)
             text = re.sub(r"```\s*$", "", text)
+            text = re.sub(r"```", "", text)
             text = re.sub(r'(?<!\\)\\(?!["\\/bfnrtu])', "", text)
-            return json.loads(text)
-        except json.JSONDecodeError:
-            logger.warning("JSON 파싱 에러 (시도 %d/3)", attempt + 1)
+            # JSON 블록 추출
+            match = re.search(r'\{[\s\S]*\}', text)
+            if match:
+                text = match.group(0)
+            # 제어 문자 제거
+            text = re.sub(r'[\x00-\x1f\x7f]', ' ', text)
+            text = text.replace('\n', ' ').replace('\r', ' ')
+            try:
+                return json.loads(text)
+            except json.JSONDecodeError:
+                # HTML 내 이스케이프 안 된 따옴표 수정
+                text = re.sub(r'style="([^"]*)"', lambda m: 'style=\'' + m.group(1) + '\'', text)
+                # content 필드에서 HTML 추출 후 재조립
+                sections = []
+                for sm in re.finditer(r'"heading"\s*:\s*"([^"]*)"[^}]*"content"\s*:\s*"((?:[^"\\]|\\.)*)?"', text):
+                    sections.append({"heading": sm.group(1), "content": sm.group(2).replace('\\"', '"') if sm.group(2) else ""})
+                title_m = re.search(r'"title"\s*:\s*"([^"]*)"', text)
+                meta_m = re.search(r'"meta_description"\s*:\s*"([^"]*)"', text)
+                tags_m = re.findall(r'"tags"\s*:\s*\[(.*?)\]', text)
+                faq_list = []
+                for fm in re.finditer(r'"q"\s*:\s*"([^"]*)"[^}]*"a"\s*:\s*"([^"]*)"', text):
+                    faq_list.append({"q": fm.group(1), "a": fm.group(2)})
+                cards_m = re.search(r'"summary_cards"\s*:\s*\[(.*?)\]', text)
+
+                if title_m and sections:
+                    tags = [t.strip().strip('"') for t in tags_m[0].split(',')] if tags_m else []
+                    cards = [c.strip().strip('"') for c in cards_m.group(1).split(',')] if cards_m else []
+                    logger.info("JSON 수동 파싱 성공 (섹션 %d개)", len(sections))
+                    return {
+                        "title": title_m.group(1),
+                        "meta_description": meta_m.group(1) if meta_m else "",
+                        "sections": sections,
+                        "summary_cards": cards[:5],
+                        "faq": faq_list[:3],
+                        "tags": tags[:7],
+                    }
+                raise json.JSONDecodeError("수동 파싱도 실패", text[:100], 0)
+        except json.JSONDecodeError as e:
+            logger.warning("JSON 파싱 에러 (시도 %d/3): %s", attempt + 1, str(e)[:50])
             time.sleep(2)
         except Exception as e:
             logger.error("API 에러: %s", e)
