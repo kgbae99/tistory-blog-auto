@@ -305,6 +305,9 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str) ->
 </div></div></a></div>\n"""
         coupang_html += '<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>'
 
+    # 쿠팡 배너
+    coupang_banner = '<div style="text-align: center; margin: 20px 0 30px 0;"><a href="https://link.coupang.com/a/d4YwkD" target="_blank" rel="noopener"><img style="max-width: 100%; height: auto;" src="https://ads-partners.coupang.com/banners/882911?subId=&amp;traceId=V0-301-879dd1202e5c73b2-I882911&amp;w=728&amp;h=90" alt="" /></a></div>'
+
     # 태그
     tags_html = ""
     if tags:
@@ -348,6 +351,7 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str) ->
 {sections_html}
 {faq_html}
 {coupang_html}
+{coupang_banner}
 {tags_html}
 
 </article>
