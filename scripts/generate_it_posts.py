@@ -317,6 +317,47 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str) ->
 </html>"""
 
 
+def build_tool_page(title: str, tags: list, blog_html: str, meta_desc: str = "") -> str:
+    """IT 블로그용 복사 도구 페이지 HTML을 생성한다."""
+    tag_str = ", ".join(tags)
+    meta_tag = f'<meta name="description" content="{meta_desc}">' if meta_desc else ""
+    return f"""<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+{meta_tag}
+<title>{title}</title>
+<style>
+*{{box-sizing:border-box;margin:0;padding:0}}body{{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}}
+.tool-panel{{position:sticky;top:0;z-index:1000;background:#1a237e;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}}
+.tool-panel h2{{font-size:18px;margin-bottom:15px;color:#90CAF9}}
+.field-row{{display:flex;align-items:center;gap:10px;margin-bottom:12px}}
+.field-label{{min-width:70px;font-weight:bold;font-size:13px;color:#BBDEFB}}
+.field-value{{flex:1;background:#283593;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #3949AB;user-select:all}}
+.copy-btn{{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}}
+.btn-small{{background:#90CAF9;color:#1a237e}}.btn-small:hover{{background:#64B5F6}}
+.btn-html{{background:linear-gradient(135deg,#1565C0,#42A5F5);color:#fff;padding:12px 30px;font-size:15px}}
+.btn-row{{display:flex;gap:10px;align-items:center;margin-top:5px}}
+.copy-toast{{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}}
+.copy-toast.show{{display:inline-block}}
+.preview-area{{max-width:760px;margin:30px auto;padding:0 20px}}
+.preview-label{{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}}
+</style></head><body>
+<div class="tool-panel">
+<h2>🖥️ 테크온도 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">{title}</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">IT / 가젯</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">{tag_str}</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html">{blog_html}</div>
+</div>
+<script>
+function c(id,btn){{navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{{btn.innerText=o;btn.style.background='';btn.style.color=''}},1500)}})}}
+function ch(btn){{navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'}},2000)}})}}
+</script></body></html>"""
+
+
 def main():
     """메인 실행."""
     today = datetime.now().strftime("%Y-%m-%d")
@@ -353,6 +394,14 @@ def main():
         filepath = output_dir / f"post_{i}_{safe_name}.html"
         filepath.write_text(html, encoding="utf-8")
         logger.info("저장: %s (%d자)", filepath.name, len(html))
+
+        # 발행 도구 페이지 생성
+        blog_body = re.search(r"<article[^>]*>(.*?)</article>", html, re.DOTALL)
+        blog_html_content = blog_body.group(1) if blog_body else html
+        tool_html = build_tool_page(title, data.get("tags", []), blog_html_content, data.get("meta_description", ""))
+        tool_path = output_dir / f"tool_{i}_{safe_name}.html"
+        tool_path.write_text(tool_html, encoding="utf-8")
+        logger.info("발행 도구: %s", tool_path.name)
 
         register_published(title, keyword)
         results.append({"keyword": keyword, "title": title, "tags": data.get("tags", []), "file": str(filepath)})

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>클라우드 스토리지 완벽 비교 가이드</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#1a237e;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#90CAF9}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#BBDEFB}
+.field-value{flex:1;background:#283593;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #3949AB;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#90CAF9;color:#1a237e}.btn-small:hover{background:#64B5F6}
+.btn-html{background:linear-gradient(135deg,#1565C0,#42A5F5);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>🖥️ 테크온도 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">클라우드 스토리지 완벽 비교 가이드</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">IT / 가젯</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">클라우드스토리지, 구글드라이브, 원드라이브, 드롭박스, IT리뷰, 쿠팡추천, 데이터관리</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html">
+
+<div style="text-align: center; margin-bottom: 30px;">
+<img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=486&h=315&fit=crop" alt="클라우드 스토리지 완벽 비교 가이드" style="max-width: 100%; height: auto; border-radius: 12px;" loading="lazy" />
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0;"><div style="flex: 1; min-width: 150px; padding: 15px; background: #E3F2FD; border-radius: 10px; border-left: 4px solid #90CAF9;"><p style="margin: 0; font-size: 14px; color: #333;">클라우드 스토리지는 인터넷 기반 데이터 저장 서비스입니다.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #E1F5FE; border-radius: 10px; border-left: 4px solid #81D4FA;"><p style="margin: 0; font-size: 14px; color: #333;">구글 드라이브, 원드라이브, 드롭박스가 대표적입니다.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #E8EAF6; border-radius: 10px; border-left: 4px solid #9FA8DA;"><p style="margin: 0; font-size: 14px; color: #333;">가격과 용량은 사용자 용도에 맞게 선택하는 게 중요합니다.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #F3E5F5; border-radius: 10px; border-left: 4px solid #CE93D8;"><p style="margin: 0; font-size: 14px; color: #333;">보안과 동기화 속도는 서비스별로 차이가 있습니다.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #E0F7FA; border-radius: 10px; border-left: 4px solid #80DEEA;"><p style="margin: 0; font-size: 14px; color: #333;">쿠팡 추천 상품과 연동해 활용도를 높일 수 있습니다.</p></div></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">클라우드 스토리지란 무엇인가?</h2>
+<div style="text-align: center; margin: 15px 0;">
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=486&h=315&fit=crop" alt="클라우드 스토리지란 무엇인가?" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
+</div>
+<div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">클라우드 스토리지는 인터넷을 통해 데이터를 저장하고 관리하는 서비스입니다. 별도의 하드웨어 없이도 언제 어디서나 접근할 수 있어 많은 분들이 선호하죠. 특히 사진, 문서, 동영상 등 다양한 파일을 안전하게 백업할 수 있어 업무와 개인 용도 모두에 적합합니다. 최근에는 대용량 데이터 처리와 협업 기능이 강화되어 더욱 인기를 끌고 있습니다.</p></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">주요 클라우드 서비스 비교</h2>
+<div style="text-align: center; margin: 15px 0;">
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=486&h=315&fit=crop" alt="주요 클라우드 서비스 비교" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
+</div>
+<div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">대표적인 클라우드 스토리지로는 구글 드라이브, 원드라이브, 드롭박스가 있습니다. 각 서비스는 용량, 가격, 추가 기능에서 차이가 큽니다. 예를 들어 구글 드라이브는 15GB 무료 제공과 강력한 구글 생태계 연동이 장점입니다. 반면 드롭박스는 빠른 동기화 속도와 다양한 플랫폼 지원으로 인기가 높습니다. 원드라이브는 윈도우 사용자에게 최적화되어 있습니다.</p><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">구분</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">스펙/특징</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">추천/평가</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">구글 드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">무료 15GB, 구글 문서와 연동, 모바일/PC 지원</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">구글 생태계 사용자에게 최적</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">원드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">무료 5GB, 윈도우 OS 최적화, 오피스365 연동</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">윈도우 사용자의 필수품</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">드롭박스</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">무료 2GB, 빠른 동기화, 다양한 앱 연동</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">협업에 강한 서비스</td></tr></tbody></table></div></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">가격과 용량, 어떤 게 가성비 좋을까?</h2>
+<div style="text-align: center; margin: 15px 0;">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=486&h=315&fit=crop" alt="가격과 용량, 어떤 게 가성비 좋을까?" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
+</div>
+<div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">클라우드 스토리지 선택 시 가격과 용량은 가장 중요한 기준입니다. 구글 드라이브는 월 2,300원에 100GB, 원드라이브는 월 5,600원에 1TB를 제공합니다. 드롭박스는 기본 무료 용량이 적지만, 프로 플랜은 월 11,900원에 2TB 용량으로 고용량 사용자에게 적합합니다. 각 서비스의 추가 기능도 고려하면, 단순 용량 대비 가격뿐 아니라 사용 목적에 따라 선택이 달라질 수 있습니다.</p><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">서비스명</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">용량/가격</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">가성비 평점</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">구글 드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">100GB / 2,300원(월)</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">★★★★☆</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">원드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">1TB / 5,600원(월)</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">★★★★☆</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">드롭박스</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">2TB / 11,900원(월)</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">★★★☆☆</td></tr></tbody></table></div></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">보안과 동기화 속도 차이점</h2>
+<div style="text-align: center; margin: 15px 0;">
+<img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=486&h=315&fit=crop" alt="보안과 동기화 속도 차이점" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
+</div>
+<div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">보안은 클라우드 스토리지 선택 시 절대 간과할 수 없는 부분입니다. 구글 드라이브와 원드라이브 모두 2단계 인증을 지원하며, 데이터 암호화도 강력하게 적용합니다. 드롭박스는 업계 최고 수준의 보안 프로토콜을 자랑하며, 빠른 동기화 속도가 큰 장점입니다. 특히 협업 시 실시간 동기화가 중요한 분들에게 드롭박스가 더 적합할 수 있습니다. 그러나 구글 드라이브 역시 오프라인 접근성과 편리한 공유 기능에서 높은 점수를 받습니다.</p><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">서비스명</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">보안 특징</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">동기화 속도</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">구글 드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">2단계 인증, AES-128 암호화</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">보통</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">원드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">2단계 인증, AES-256 암호화</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">보통</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">드롭박스</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">고급 암호화, 2단계 인증 지원</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">빠름</td></tr></tbody></table></div></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">특별한 기능과 연동성 비교</h2>
+<div style="text-align: center; margin: 15px 0;">
+<img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=486&h=315&fit=crop" alt="특별한 기능과 연동성 비교" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
+</div>
+<div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">각 클라우드 서비스는 사용자의 편의를 위한 특별 기능을 제공합니다. 구글 드라이브는 구글 문서, 시트, 프레젠테이션과의 완벽한 연동이 특징입니다. 원드라이브는 오피스 365와 긴밀하게 연결되어 있어 MS 오피스 작업을 자주 하는 분께 적합합니다. 드롭박스는 다양한 서드파티 앱과의 호환성이 뛰어나 업무용으로 인기가 많습니다. 특히 하이퍼엑스 Cloud 3 게이밍 헤드셋같은 게이밍 기어나 온러닝 클라우드 몬스터 러닝화처럼 다양한 쿠팡 추천 상품을 구매 후 클라우드에 파일과 리뷰를 저장해 관리하기 좋습니다.</p><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">서비스명</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">특별 기능</th><th style="padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;">추천 사용자</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">구글 드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">구글 문서 및 앱과 완벽 연동</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">구글 생태계 이용자</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">원드라이브</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">오피스365 통합, 윈도우 자동 백업</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">MS 오피스 사용자</td></tr><tr><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">드롭박스</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">광범위한 서드파티 앱 연동</td><td style="padding: 12px; border: 1px solid #90CAF9; color: #333;">협업 및 업무용</td></tr></tbody></table></div></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">쿠팡 추천 상품과 클라우드 활용법</h2>
+<div style="text-align: center; margin: 15px 0;">
+<img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=486&h=315&fit=crop" alt="쿠팡 추천 상품과 클라우드 활용법" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
+</div>
+<div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">클라우드 스토리지는 단순 저장 외에도 다양한 라이프스타일과 연결됩니다. 예를 들어 하이퍼엑스 Cloud 3 게이밍 헤드셋과 클라우드 3 무선 Cloud III Black Wire는 게이머에게 인기인데, 게임 영상이나 설정 파일을 클라우드에 저장해 두면 언제든지 복원 가능합니다. 온러닝 클라우드 몬스터 러닝화 같은 운동화 리뷰 사진이나 기록도 클라우드에 안전하게 보관할 수 있어요. 쿠팡에서 구매 후 관련 파일을 클라우드에 연동해 효율적인 관리가 가능합니다.</p></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">마무리</h2>
+<div style="text-align: center; margin: 15px 0;">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=486&h=315&fit=crop" alt="마무리" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
+</div>
+<div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">클라우드 스토리지 선택은 용도와 환경에 따라 달라집니다. 구글 드라이브는 가성비와 편리함, 원드라이브는 윈도우 호환성, 드롭박스는 빠른 동기화와 협업에 강점이 있습니다. 쿠팡에서 판매하는 하이퍼엑스 Cloud 3 게이밍 헤드셋과 온러닝 러닝화 등 다양한 제품과 함께 활용하면 더욱 만족스러운 디지털 경험을 누릴 수 있습니다. 각자의 필요에 맞는 서비스를 선택해 스마트한 데이터 관리를 시작해 보세요.</p></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">자주 묻는 질문</h2>
+<div style="margin: 15px 0; padding: 18px; background: #E3F2FD; border-radius: 10px; border-left: 4px solid #64B5F6;">
+<p style="font-weight: bold; color: #1565C0; margin: 0 0 8px;">Q. 클라우드 스토리지는 무료 용량이 어떻게 되나요?</p>
+<p style="color: #333; margin: 0; line-height: 1.8;">A. 구글 드라이브는 15GB, 원드라이브는 5GB, 드롭박스는 2GB의 무료 용량을 제공합니다.</p>
+</div>
+<div style="margin: 15px 0; padding: 18px; background: #E1F5FE; border-radius: 10px; border-left: 4px solid #4FC3F7;">
+<p style="font-weight: bold; color: #1565C0; margin: 0 0 8px;">Q. 클라우드 스토리지에서 가장 빠른 동기화 서비스는 무엇인가요?</p>
+<p style="color: #333; margin: 0; line-height: 1.8;">A. 드롭박스가 업계에서 빠른 동기화 속도를 자랑하며 협업에 적합합니다.</p>
+</div>
+<div style="margin: 15px 0; padding: 18px; background: #E8EAF6; border-radius: 10px; border-left: 4px solid #7986CB;">
+<p style="font-weight: bold; color: #1565C0; margin: 0 0 8px;">Q. 쿠팡에서 구매한 제품과 클라우드 스토리지 연동이 가능한가요?</p>
+<p style="color: #333; margin: 0; line-height: 1.8;">A. 네, 제품 관련 사진이나 설정 파일을 클라우드에 저장해 관리할 수 있어 효율적입니다.</p>
+</div>
+<h2 style="color: #1565C0; border-bottom: 2px solid #E3F2FD; padding-bottom: 10px;">테크온도 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제와 관련된 제품을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7405894509&itemId=19178061953&vendorItemId=86296010317&traceid=V0-153-8ac09ca4d256125c&requestid=20260320131125986034214833&token=31850C%7CGM&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/t3p2HJd7qN2PY1VPtw6GKBJdbjdAOQuhtKC2z6HefbP-QrCFNXMsxJr-5ulbNLN_3Nk4z0WQ5MMdE1ktqDzsqpXFrhTq8WS01r3B7z-PaIOq0Ir-BKKI5cxcShEerUu0t1pbfAazb55ecwHYdhc4ML7k4_Q2f00sFS4Wdn3EpeBqTazA9_4cone5E8ZjagCkJ4TGiquxoEHO432BSUS2TTh60rqP9Ri8R4W6XB1sQbhMrWvMWf3vsHWqvbjs8gEk4ViVunetlp5rcHoW6BaLcqlnO48MUjm1nJg4ibcIMCQOq7qnwQ==" alt="하이퍼엑스 Cloud 3 게이밍 헤드" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #1565C0; margin: 0 0 8px 0;">하이퍼엑스 Cloud 3 게이밍 헤드셋</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">89,100원</p>
+<span style="display: inline-block; padding: 8px 24px; background: #1565C0; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7578375758&itemId=20000481746&vendorItemId=87097492027&traceid=V0-153-9da4ce46c012cad9&requestid=20260320131125986034214833&token=31850C%7CGM&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/AyCXbl2RB3hgpIPeA4qyoBzcpfEZoaYaMVj0pKHmvUs93yU-hscwrGt6pGmCbkBOWPUs896s7eRSpb8AQKoC6hFs-1AvJWsBbkSua_gyzJhLFIjQEVjxmFdKDjymJXqIDQyQsySz97Z9k8QESq91QKCJVdY0IicZMMnXCf51BeGGZz0yhjZOnxbBnw8HdlzfWHo_sI1zAKU131UQ3UbR4is0pXejC3XBP7i6nB5V2q4e5iRifbWmcNSqGtcMU6mkxmtx0t3XriqWthtd2idNEa-yYhAkfztm_H_g2ryfLArIH_NO" alt="클라우드 3 무선 Cloud III " style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #1565C0; margin: 0 0 8px 0;">클라우드 3 무선 Cloud III Black Wireless 게이밍 헤드셋</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">161,100원</p>
+<span style="display: inline-block; padding: 8px 24px; background: #1565C0; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8632289096&itemId=25044010695&vendorItemId=92048574340&traceid=V0-153-6d1d74eab84c1deb&requestid=20260320131125986034214833&token=31850C%7CGM&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/_clTnUBkfucKsicT_dGhPJSw4Zeq9I2q_NhEiDT9aqaZ-5qBo4ZK3LtRJNHb3FoBUih4TIgZ5cKB9YHcdy2_KChw6gKZLzaYniUdymsFNNHs9Spr46Z_UNXhFJeFSp90vQmEXJaBFqmyjhcefQ-mu6OZnQj8pwnH5SASUhQYkvC0uqNL3XYHZb9jsAEedyGRjzXPTfblDsjPAY7XhLeQZzHepDJKlGnOE-bjxLh5CiPeYi4LMT3y_RjejiuT6HDXN_-IRfmuJ301QxaOsOhM0Vli4NcoKL6W_VVqieM_qBrtTtWA70U_aSPvI4Vzh8gT_YFkKQ==" alt="온러닝 클라우드 몬스터 남성 여성 커" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #1565C0; margin: 0 0 8px 0;">온러닝 클라우드 몬스터 남성 여성 커플 러닝화 조깅화 cloudmonster 2</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">98,000원</p>
+<span style="display: inline-block; padding: 8px 24px; background: #1565C0; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<div style="margin: 30px 0;"><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#클라우드스토리지</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#구글드라이브</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#원드라이브</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#드롭박스</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#IT리뷰</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#쿠팡추천</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#데이터관리</span></div>
+
+</div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
