@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>티스토리 포스트 도구 - 춘곤증 극복</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Malgun Gothic', sans-serif; background: #f0f2f5; color: #333; }
+
+  /* 상단 도구 패널 */
+  .tool-panel {
+    position: sticky; top: 0; z-index: 1000;
+    background: #2c3e50; color: #fff;
+    padding: 20px 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .tool-panel h2 { font-size: 18px; margin-bottom: 15px; color: #FFB6C1; }
+
+  .field-row {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 12px;
+  }
+  .field-label {
+    min-width: 70px; font-weight: bold; font-size: 13px;
+    color: #FFE4E8;
+  }
+  .field-value {
+    flex: 1; background: #34495e; color: #fff;
+    padding: 10px 14px; border-radius: 6px; font-size: 14px;
+    border: 1px solid #4a6274; user-select: all;
+  }
+  .copy-btn {
+    padding: 8px 16px; border: none; border-radius: 6px;
+    font-size: 13px; font-weight: bold; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .copy-btn:hover { transform: scale(1.05); }
+  .copy-btn:active { transform: scale(0.95); }
+  .btn-small { background: #FFB6C1; color: #2c3e50; }
+  .btn-small:hover { background: #FF9EAE; }
+  .btn-html {
+    background: linear-gradient(135deg, #e44d26, #f16529);
+    color: #fff; padding: 12px 30px; font-size: 15px;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-html:hover { background: linear-gradient(135deg, #d4431e, #e05a22); }
+
+  .btn-row { display: flex; gap: 10px; align-items: center; margin-top: 5px; }
+  .copy-toast {
+    display: none; background: #27ae60; color: #fff;
+    padding: 6px 14px; border-radius: 4px; font-size: 13px;
+    animation: fadeIn 0.3s;
+  }
+  .copy-toast.show { display: inline-block; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  /* 미리보기 영역 */
+  .preview-area {
+    max-width: 760px; margin: 30px auto; padding: 0 20px;
+  }
+  .preview-label {
+    text-align: center; color: #999; font-size: 13px;
+    margin-bottom: 15px; padding: 8px;
+    border: 1px dashed #ccc; border-radius: 6px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 상단 도구 패널 ===== -->
+<div class="tool-panel">
+  <h2>티스토리 발행 도구</h2>
+
+  <div class="field-row">
+    <span class="field-label">제목</span>
+    <div class="field-value" id="title-text">봄만 되면 쏟아지는 졸음, 춘곤증 이렇게 이기세요</div>
+    <button class="copy-btn btn-small" onclick="copyField('title-text', this)">복사</button>
+  </div>
+
+  <div class="field-row">
+    <span class="field-label">카테고리</span>
+    <div class="field-value" id="category-text">건강 & 웰빙/영양 · 식단</div>
+    <button class="copy-btn btn-small" onclick="copyField('category-text', this)">복사</button>
+  </div>
+
+  <div class="field-row">
+    <span class="field-label">태그</span>
+    <div class="field-value" id="tag-text">춘곤증, 봄철피로, 춘곤증극복, 봄나물효능, 비타민B, 건강관리, 수면습관</div>
+    <button class="copy-btn btn-small" onclick="copyField('tag-text', this)">복사</button>
+  </div>
+
+  <div class="btn-row">
+    <button class="copy-btn btn-html" onclick="copyHTML(this)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      HTML 전체 복사 (티스토리 붙여넣기용)
+    </button>
+    <span class="copy-toast" id="toast">복사 완료!</span>
+  </div>
+</div>
+
+<!-- ===== 미리보기 ===== -->
+<div class="preview-area">
+  <div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.</div>
+
+  <!-- 블로그 본문 시작 -->
+  <div id="blog-html">
+<div style="background-color: #fff5f6; border: 1px solid #FFB6C1; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #555; font-size: 14px; line-height: 1.7; margin: 0;" data-ke-size="size16">📌 <strong>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong><br />본 글은 건강 정보를 요약한 것이며, 특정 제품의 효능을 보장하지 않습니다. 건강 관련 결정은 반드시 전문의와 상담하세요.</p>
+</div>
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=486&h=315&fit=crop" alt="봄날 벚꽃 나무 아래 따뜻한 풍경" width="486" height="315" />
+</p>
+<p data-ke-size="size16">&nbsp;</p>
+<div id="section1" class="content-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">봄만 되면 쏟아지는 졸음, 춘곤증 이렇게 이기세요</h1>
+<p style="color: #333; margin-top: 10px;" data-ke-size="size16">여러분, 혹시 이런 적 있으시죠? 따뜻한 봄바람에 점심만 먹으면 눈이 감기고, 오후 내내 하품만 나왔던 경험 말이에요.</p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">안녕하세요 여러분. 봄은 설레는 계절이지만, 많은 분들이 극심한 졸음과 피로에 시달리곤 합니다. 바로 '춘곤증' 때문인데요. 겨울 동안 움츠렸던 몸이 따뜻해진 날씨에 적응하면서 생기는 자연스러운 현상입니다. 하지만 제대로 관리하지 않으면 업무 능력 저하, 집중력 감소, 소화 장애까지 이어질 수 있습니다. 오늘은 춘곤증의 원인과 극복 방법, 그리고 활력을 되찾는 생활 습관을 함께 정리해보겠습니다.</p>
+</div>
+<div class="toc-container" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;" data-ke-size="size16" data-ke-style="style1">
+<h3 style="color: #2c3e50;" data-ke-size="size23">목차</h3>
+<p style="margin: 8px 0;" data-ke-size="size16"><a style="color: #2c3e50; text-decoration: none;" href="#topic1">1. 춘곤증이 찾아오는 이유</a></p>
+<p style="margin: 8px 0;" data-ke-size="size16"><a style="color: #2c3e50; text-decoration: none;" href="#topic2">2. 춘곤증에 좋은 음식</a></p>
+<p style="margin: 8px 0;" data-ke-size="size16"><a style="color: #2c3e50; text-decoration: none;" href="#topic3">3. 생활 속 극복 습관</a></p>
+<p style="margin: 8px 0;" data-ke-size="size16"><a style="color: #2c3e50; text-decoration: none;" href="#topic4">4. 피해야 할 습관</a></p>
+<p style="margin: 8px 0;" data-ke-size="size16"><a style="color: #2c3e50; text-decoration: none;" href="#topic5">5. 활력을 채워주는 영양제</a></p>
+<p style="margin: 8px 0;" data-ke-size="size16"><a style="color: #2c3e50; text-decoration: none;" href="#faq">6. 자주 묻는 질문</a></p>
+</div>
+</div>
+
+<div id="topic1" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">춘곤증이 찾아오는 이유</h2>
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=486&h=315&fit=crop" alt="봄철 피로 졸음 여성" width="486" height="315" />
+</p>
+<div class="table-section" style="margin: 20px 0;" data-ke-size="size16" data-ke-style="style1">
+<table style="width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px;" data-ke-size="size16" data-ke-style="style1" data-ke-align="alignLeft">
+<thead data-ke-size="size16" data-ke-style="style1">
+<tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">원인</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">설명</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">비고</th>
+</tr>
+</thead>
+<tbody data-ke-size="size16" data-ke-style="style1">
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">호르몬 변화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">멜라토닌 분비 패턴 변화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수면 리듬 교란</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈관 확장</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">기온 상승으로 말초 혈관 확장</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">뇌 혈류량 감소</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">영양소 부족</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민 B·C 소모량 증가</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">에너지 대사 저하</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">활동량 변화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">겨울 대비 활동량 급증</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">체력 소모 가속</td></tr>
+</tbody>
+</table>
+</div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">춘곤증은 질병이 아니라, 계절 변화에 몸이 적응하는 과정에서 나타나는 자연스러운 반응입니다. 겨울 동안 움츠렸던 몸이 따뜻해진 기온에 반응하면서 말초 혈관이 확장되고, 상대적으로 뇌로 가는 혈류량이 줄어들면서 졸음과 피로가 몰려오게 됩니다. 또한 낮이 길어지면서 수면 호르몬인 멜라토닌 분비 패턴이 바뀌어 숙면이 어려워질 수 있습니다.</p>
+</div>
+</div>
+
+<div id="topic2" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">춘곤증에 좋은 음식</h2>
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=486&h=315&fit=crop" alt="건강한 샐러드 채소 봄 식단" width="486" height="315" />
+</p>
+<div class="table-section" style="margin: 20px 0;" data-ke-size="size16" data-ke-style="style1">
+<table style="width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px;" data-ke-size="size16" data-ke-style="style1" data-ke-align="alignLeft">
+<thead data-ke-size="size16" data-ke-style="style1">
+<tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">음식</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주요 영양소</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th>
+</tr>
+</thead>
+<tbody data-ke-size="size16" data-ke-style="style1">
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">냉이·달래</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민 C, 칼슘</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">피로 회복, 입맛 개선</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">두릅·쑥</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민 A, 무기질</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈액순환, 독소 배출</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">현미·잡곡</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민 B군, 식이섬유</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">에너지 대사 촉진</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">계란·닭가슴살</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">단백질, 아미노산</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">근육 유지, 집중력 향상</td></tr>
+</tbody>
+</table>
+</div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">봄철에는 제철 나물을 적극 활용하는 것이 좋습니다. 냉이, 달래, 두릅, 쑥 같은 봄나물에는 비타민과 무기질이 풍부하여 춘곤증으로 지친 몸에 활력을 불어넣어 줍니다. 특히 비타민 B군이 풍부한 현미밥과 잡곡류는 탄수화물의 에너지 전환을 도와 오후 피로감을 줄이는 데 효과적입니다. 아침 식사를 거르지 않고 단백질과 함께 구성하면 혈당이 안정되어 나른함을 예방할 수 있습니다.</p>
+</div>
+</div>
+
+<div id="topic3" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">생활 속 극복 습관</h2>
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=486&h=315&fit=crop" alt="야외 산책 걷기 운동 건강" width="486" height="315" />
+</p>
+<div class="table-section" style="margin: 20px 0;" data-ke-size="size16" data-ke-style="style1">
+<table style="width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px;" data-ke-size="size16" data-ke-style="style1" data-ke-align="alignLeft">
+<thead data-ke-size="size16" data-ke-style="style1">
+<tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">습관</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">방법</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th>
+</tr>
+</thead>
+<tbody data-ke-size="size16" data-ke-style="style1">
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">규칙적 수면</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일 같은 시간 취침·기상</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">생체리듬 안정</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가벼운 운동</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">점심 후 10~15분 산책</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈액순환 촉진</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수분 섭취</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">하루 1.5~2L 물 마시기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">신진대사 활성화</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">햇볕 쬐기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오전 15~20분 야외 활동</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민 D 합성, 각성 효과</td></tr>
+</tbody>
+</table>
+</div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">춘곤증을 이기는 가장 기본적인 방법은 규칙적인 생활 리듬입니다. 매일 같은 시간에 자고 일어나면 생체시계가 안정되어 낮 동안의 졸음이 줄어들게 됩니다. 점심 식사 후에는 10~15분 정도 가볍게 산책하는 것만으로도 식곤증을 예방하고 오후 업무 능률을 높일 수 있습니다. 또한 하루에 물을 1.5~2L 충분히 마셔주는 것도 중요합니다. 수분이 부족하면 혈액이 끈끈해져 피로감이 심해질 수 있기 때문이에요.</p>
+</div>
+</div>
+
+<div id="topic4" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">피해야 할 습관</h2>
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=486&h=315&fit=crop" alt="커피 카페인 과다섭취 주의" width="486" height="315" />
+</p>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">춘곤증이 심할수록 피해야 할 습관들이 있습니다. 졸리다고 커피를 하루 3잔 이상 마시면 오히려 수면의 질이 떨어져 악순환이 반복됩니다. 점심에 밀가루 음식이나 당분이 높은 식사를 하면 혈당이 급격히 올랐다 떨어지면서 더 심한 나른함이 찾아옵니다.</p>
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">&nbsp;</p>
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">주말에 몰아서 자는 습관도 좋지 않습니다. 생체리듬이 깨지면 월요일이 더 힘들어지기 때문이에요. 평일과 주말의 수면 시간 차이는 1시간 이내로 유지하는 것이 좋습니다.</p>
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">&nbsp;</p>
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">혈당 관리가 궁금하신 분은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>도 함께 참고해 보세요. 식단 관리가 춘곤증과 혈압 모두에 도움이 됩니다.</p>
+</div>
+</div>
+
+<div id="topic5" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">활력을 채워주는 영양제</h2>
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=486&h=315&fit=crop" alt="비타민 영양제 건강 보충제" width="486" height="315" />
+</p>
+<div class="table-section" style="margin: 20px 0;" data-ke-size="size16" data-ke-style="style1">
+<table style="width: 100%; border-collapse: collapse; background-color: #ffffff; border-radius: 8px;" data-ke-size="size16" data-ke-style="style1" data-ke-align="alignLeft">
+<thead data-ke-size="size16" data-ke-style="style1">
+<tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">영양제</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">역할</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">권장 섭취</th>
+</tr>
+</thead>
+<tbody data-ke-size="size16" data-ke-style="style1">
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민 B군</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">에너지 대사, 피로 해소</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">1일 1회 식후</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민 C</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">면역력 강화, 항산화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">1일 500~1000mg</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">홍삼</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">면역 증진, 활력 회복</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">1일 1~2포</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">마그네슘</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">근육 이완, 수면 보조</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">1일 200~400mg</td></tr>
+</tbody>
+</table>
+</div>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">음식만으로 영양이 부족하다면 영양제를 고려해 볼 수 있습니다. 특히 <strong>비타민 B군</strong>은 탄수화물을 에너지로 전환하는 데 핵심적인 역할을 하여, 춘곤증 시기에 꾸준히 챙기면 피로 해소에 큰 도움이 됩니다.</p>
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">&nbsp;</p>
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">바쁜 아침에 간편하게 챙기고 싶다면 <strong>홍삼 스틱</strong>도 좋은 선택입니다. 진세노사이드 성분이 면역력과 활력 회복에 도움을 줍니다. 몸 전반의 컨디션 관리가 궁금하신 분은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a>도 참고해 보세요.</p>
+</div>
+</div>
+
+<div id="summary" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;" data-ke-size="size16" data-ke-style="style1">
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop" alt="건강한 라이프스타일 요가 명상" width="486" height="315" />
+</p>
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;" data-ke-size="size16" data-ke-style="style1">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;" data-ke-size="size16" data-ke-style="style1"><h3 data-ke-size="size23">봄나물 챙기기</h3><p data-ke-size="size16">냉이, 달래, 두릅으로 비타민 보충</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;" data-ke-size="size16" data-ke-style="style1"><h3 data-ke-size="size23">규칙적 수면</h3><p data-ke-size="size16">매일 같은 시간 취침·기상</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;" data-ke-size="size16" data-ke-style="style1"><h3 data-ke-size="size23">가벼운 산책</h3><p data-ke-size="size16">점심 후 10~15분 걷기</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;" data-ke-size="size16" data-ke-style="style1"><h3 data-ke-size="size23">수분 보충</h3><p data-ke-size="size16">하루 1.5~2L 물 마시기</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;" data-ke-size="size16" data-ke-style="style1"><h3 data-ke-size="size23">영양제 활용</h3><p data-ke-size="size16">비타민 B군, 홍삼 스틱</p></div>
+</div>
+</div>
+
+<div id="faq" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;" data-ke-size="size16" data-ke-style="style1">
+<p style="text-align: center;" data-ke-size="size16">
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=486&h=315&fit=crop" alt="건강 상담 의료 질문" width="486" height="315" />
+</p>
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;" data-ke-size="size26">자주 묻는 질문</h2>
+<div class="topic-faq" style="background-color: #ffffff; border-radius: 8px; padding: 10px; margin-top: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;"><h3 style="font-size: 17px;" data-ke-size="size23">춘곤증은 얼마나 지속되나요</h3><p style="margin: 0; padding: 8px 0;" data-ke-size="size16">보통 1~3주 정도이며, 몸이 봄 날씨에 적응하면 자연스럽게 완화됩니다</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;"><h3 style="font-size: 17px;" data-ke-size="size23">낮잠을 자도 괜찮나요</h3><p style="margin: 0; padding: 8px 0;" data-ke-size="size16">15~20분 이내 짧은 낮잠은 도움이 됩니다. 30분 이상은 오히려 역효과</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;"><h3 style="font-size: 17px;" data-ke-size="size23">커피를 끊어야 하나요</h3><p style="margin: 0; padding: 8px 0;" data-ke-size="size16">하루 1~2잔은 괜찮지만, 오후 2시 이후 카페인은 수면을 방해할 수 있습니다</p></div>
+</div>
+<style data-ke-size="size16" data-ke-style="style1">.topic-faq{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;}</style>
+</div>
+
+<div id="conclusion" class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;" data-ke-size="size16" data-ke-style="style1">
+<p style="color: #333; line-height: 1.8;" data-ke-size="size16">춘곤증은 봄이 오면 누구나 겪을 수 있는 자연스러운 현상입니다. 하지만 올바른 식습관, 규칙적인 생활 리듬, 적절한 영양소 보충만으로도 충분히 이겨낼 수 있습니다. 오늘 알려드린 방법 중 한 가지라도 생활에 적용해 보세요. 나른했던 봄날이 훨씬 활기차게 바뀔 것입니다. 건강온도사는 여러분의 건강한 봄을 응원합니다.</p>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;" data-ke-size="size16">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div class="topic-section" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" data-ke-size="size16" data-ke-style="style1">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;" data-ke-size="size26">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;" data-ke-size="size16">춘곤증 극복에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;" data-ke-size="size16" data-ke-style="style1">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7792449539&itemId=21085287605&vendorItemId=4687703323" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;" data-ke-size="size16" data-ke-style="style1">
+<img src="https://ads-partners.coupang.com/image1/tVkUjgecnQXgsbW1tY_VlS5hxdAyhVHkBtCD5rdQTGd_GpQ-7dOnTOtr6mYMSkYpOzilikhec-uLwqIf6b3J-Ih7DL_8vetZ6y8Mj2cENq74rbOkHVIvjtQF_BTO3BzSayWodP1iatL7VZpjxkn-UofThyJX2ClyZGmVRqe_BCI5E480gCVXZCRUAlnzLi_pUku1X7a58tfvLFfvAjiMUGLNdXQGZ8ZAayUT4eaSrBoKoxW6K8D3ZJPTathrYbFC0TNRmfj72Fc6MLjAzLbZW9MLIoeaGsl-XCZ8wUexRO5M6mc=" alt="뉴트리디데이 비타민B 컴플렉스" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;" data-ke-size="size16">뉴트리디데이 프리미엄 비타민B 컴플렉스 골드</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;" data-ke-size="size16">10,800원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;" data-ke-size="size16">🚀 로켓배송 | 에너지 대사에 필수적인 비타민 B군 8종 복합 영양제</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div>
+</div>
+</a>
+</div>
+
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;" data-ke-size="size16" data-ke-style="style1">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7895335455&itemId=21625226047&vendorItemId=94200197879" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;" data-ke-size="size16" data-ke-style="style1">
+<img src="https://ads-partners.coupang.com/image1/Ff0tO7_c-0q0LuTIFYxUnepP-PcmA0aauybqXM5zuUOi7f10IndJ-A-oklopeMKMZ0uabyGCgI6vV2veohL_eCpUggTIMd5yrhgx3jsiLsahq4nsgkZYsz7ZZxsqQmDTe-nVj64d7Rja26jjmx8R-bScogQIbUTsFAGGjL620NJhykkK3YjZtE7_9RAH2BocGCUFSvqbbsD3ei36tUo3om620OIzPNBtMAtqmqoyjZK-JtkamGEcgwXu5DIjulsN-7KUMiMyeDXn71lRAR3o3zRyCNki-AcysPRNbJHZKJtOEb3D" alt="풍년보감 6년근 홍삼 스틱" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;" data-ke-size="size16">풍년보감 6년근 고려홍삼정 올데이굿타임 스틱 100p</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;" data-ke-size="size16">24,420원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;" data-ke-size="size16">🚀 로켓배송 | 6년근 홍삼 진세노사이드 함유, 간편한 스틱형</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div>
+</div>
+</a>
+</div>
+
+<div style="margin-bottom: 10px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;" data-ke-size="size16" data-ke-style="style1">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=2359354854&itemId=27367044744&vendorItemId=91763479058" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;" data-ke-size="size16" data-ke-style="style1">
+<img src="https://ads-partners.coupang.com/image1/CCyNIxS2v7IophifCGEzP22T_vmDvJ8FrXYbMJFQFODNFXx-TNCbT8VrjYAzdnQQvj-V8PHdu0QTjKbPgxvI0wRpe1mth5FrXOEorLYBevXgzoqRzp_GtVE90vH1yVNJH02mUrpiyz1m7Lo0XF5JjK_iW3tITZ2B_QWrwimIBxR0_CKSDllFt_QyuM985Asq_vzCLKy7-o2QKIh-kf50_j7GSblAl2eAZGP8gjyics4E4pC-inRHwKzOb_jWj2LlxWKCqe__kapxruivQK93h7JvmJl6gU_JCAb4_h_Tyfdbgxaw96wXktkYmKMkkGBgMGYyRg==" alt="순수식품 홍삼정진액 365 스틱" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;" data-ke-size="size16">순수식품 홍삼정진액 에브리데이 365 스틱</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;" data-ke-size="size16">49,880원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;" data-ke-size="size16">🚀 로켓배송 | 매일 한 포, 진한 홍삼정 에브리데이 활력 충전</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div>
+</div>
+</a>
+</div>
+
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6; text-align: center;" data-ke-size="size16">📌 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;" data-ke-size="size16" data-ke-style="style1">
+<div class="tags" style="margin-top: 10px;" data-ke-size="size16" data-ke-style="style1">
+<p data-ke-size="size15">춘곤증, 봄철피로, 춘곤증극복, 봄나물효능, 비타민B, 건강관리, 수면습관</p>
+</div>
+</div>
+  </div>
+  <!-- 블로그 본문 끝 -->
+</div>
+
+<script>
+function copyField(id, btn) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.innerText;
+    btn.innerText = '완료!';
+    btn.style.background = '#27ae60';
+    btn.style.color = '#fff';
+    setTimeout(() => {
+      btn.innerText = orig;
+      btn.style.background = '';
+      btn.style.color = '';
+    }, 1500);
+  });
+}
+
+function copyHTML(btn) {
+  const html = document.getElementById('blog-html').innerHTML;
+  navigator.clipboard.writeText(html).then(() => {
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+    btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 복사 완료!';
+    setTimeout(() => {
+      toast.classList.remove('show');
+      btn.style.background = '';
+      btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> HTML 전체 복사 (티스토리 붙여넣기용)';
+    }, 2000);
+  });
+}
+</script>
+</body>
+</html>
