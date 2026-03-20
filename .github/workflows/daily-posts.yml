@@ -65,8 +65,13 @@ jobs:
           echo '${{ secrets.GSC_TOKEN_JSON }}' > config/gsc_token.json
           echo '${{ secrets.GSC_CREDENTIALS_JSON }}' > config/credentials.json
 
-      - name: Generate 3 daily posts
+      - name: Generate 3 daily posts (건강 블로그)
         run: python scripts/generate_daily_posts.py
+        env:
+          TZ: Asia/Seoul
+
+      - name: Generate 3 daily posts (IT 블로그)
+        run: python scripts/generate_it_posts.py
         env:
           TZ: Asia/Seoul
 
