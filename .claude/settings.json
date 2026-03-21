@@ -26,7 +26,10 @@
       "Glob",
       "Grep",
       "WebSearch",
-      "WebFetch"
+      "WebFetch",
+      "Bash(grep -o \"\"email\"\":\"\"[^\"\"]*\"\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
