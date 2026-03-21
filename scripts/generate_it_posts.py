@@ -60,7 +60,7 @@ BLOG_STYLE_PROMPT = """당신은 "테크온도(IT++)" 티스토리 블로그의 
 ## 이번 글 요청
 - 키워드: "{keyword}"
 - 카테고리: IT/가젯
-- 연도: 반드시 2025년 기준으로 작성 (2024년 절대 사용 금지)
+- 연도: 제목이나 본문에 연도를 넣지 마세요 (불필요)
 - 쿠팡 추천 상품 (본문에서 자연스럽게 언급): {products}
 
 ## 출력: 반드시 JSON만
@@ -441,7 +441,7 @@ def main():
         if not tags:
             # 태그가 비어있으면 키워드에서 자동 생성
             tags = [w.strip() for w in keyword.split() if len(w.strip()) >= 2]
-            tags.extend(["IT추천", "2025", "테크온도"])
+            tags.extend(["IT추천", "테크온도", "가성비"])
             logger.info("태그 자동 생성: %s", tags)
         tool_html = build_tool_page(title, tags, blog_html_content, data.get("meta_description", ""))
         tool_path = output_dir / f"tool_{i}_{safe_name}.html"
