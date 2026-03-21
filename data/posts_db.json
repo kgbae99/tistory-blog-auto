@@ -235,5 +235,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 11,
+    "title": "직접 해보고 알았다, 손목터널 자가치료",
+    "keyword": "손목터널증후군 자가치료",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "손목터널증후군",
+      "자가치료",
+      "스트레칭",
+      "수근관증후군",
+      "생활습관",
+      "보호대",
+      "보습관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-22 07:32",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 12,
+    "title": "한 달 봄나물 먹어보니 이렇게 달라졌다",
+    "keyword": "봄나물 효능과 종류",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "봄나물",
+      "건강",
+      "영양",
+      "레시피",
+      "손질법",
+      "면역력",
+      "알레르기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-22 07:33",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 13,
+    "title": "직접 해보고 알았다, 홈트 추천 운동?",
+    "keyword": "홈트레이닝 추천 운동",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝",
+      "운동추천",
+      "초보자운동",
+      "로잉머신",
+      "요가매트",
+      "근력운동",
+      "유산소"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-22 07:34",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
