@@ -443,7 +443,7 @@ def main():
         logger.info("저장: %s (%d자)", tool_path.name, len(tool_html))
 
         register_published(title, keyword)
-        results.append({"keyword": keyword, "title": title, "tags": data.get("tags", []), "file": str(filepath)})
+        results.append({"keyword": keyword, "title": title, "tags": data.get("tags", []), "file": str(tool_path)})
         time.sleep(2)
 
     # summary 저장
