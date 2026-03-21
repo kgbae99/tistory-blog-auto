@@ -433,17 +433,14 @@ def main():
         # HTML 생성
         html = build_full_html(data, keyword, products, today)
         safe_name = re.sub(r"[^\w가-힣]", "_", keyword)[:30]
-        filepath = output_dir / f"post_{i}_{safe_name}.html"
-        filepath.write_text(html, encoding="utf-8")
-        logger.info("저장: %s (%d자)", filepath.name, len(html))
 
-        # 발행 도구 페이지 생성
+        # 발행 도구 페이지만 생성 (post 파일은 불필요)
         blog_body = re.search(r"<article[^>]*>(.*?)</article>", html, re.DOTALL)
         blog_html_content = blog_body.group(1) if blog_body else html
         tool_html = build_tool_page(title, data.get("tags", []), blog_html_content, data.get("meta_description", ""))
         tool_path = output_dir / f"tool_{i}_{safe_name}.html"
         tool_path.write_text(tool_html, encoding="utf-8")
-        logger.info("발행 도구: %s", tool_path.name)
+        logger.info("저장: %s (%d자)", tool_path.name, len(tool_html))
 
         register_published(title, keyword)
         results.append({"keyword": keyword, "title": title, "tags": data.get("tags", []), "file": str(filepath)})
