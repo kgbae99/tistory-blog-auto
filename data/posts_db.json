@@ -163,5 +163,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 8,
+    "title": "아연, 이것만 먹으면 달라진다?",
+    "keyword": "아연 효능 총정리",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "아연",
+      "아연효능",
+      "면역력",
+      "영양제",
+      "피부회복",
+      "복용법",
+      "건강관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-21 02:44",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 9,
+    "title": "한 달 관리해보니 목주름 달라졌다",
+    "keyword": "목주름 예방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "목주름",
+      "주름예방",
+      "보습",
+      "콜라겐",
+      "비타민",
+      "스트레칭",
+      "스킨케어"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-21 02:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 10,
+    "title": "면역력 좋아지려면? 직접 해보니",
+    "keyword": "면역력 높이는 생활습관",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "생활습관",
+      "건강",
+      "영양",
+      "운동",
+      "수면",
+      "체중관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-21 02:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
