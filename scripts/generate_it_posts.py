@@ -437,7 +437,13 @@ def main():
         # 발행 도구 페이지만 생성 (post 파일은 불필요)
         blog_body = re.search(r"<article[^>]*>(.*?)</article>", html, re.DOTALL)
         blog_html_content = blog_body.group(1) if blog_body else html
-        tool_html = build_tool_page(title, data.get("tags", []), blog_html_content, data.get("meta_description", ""))
+        tags = data.get("tags", [])
+        if not tags:
+            # 태그가 비어있으면 키워드에서 자동 생성
+            tags = [w.strip() for w in keyword.split() if len(w.strip()) >= 2]
+            tags.extend(["IT추천", "2025", "테크온도"])
+            logger.info("태그 자동 생성: %s", tags)
+        tool_html = build_tool_page(title, tags, blog_html_content, data.get("meta_description", ""))
         tool_path = output_dir / f"tool_{i}_{safe_name}.html"
         tool_path.write_text(tool_html, encoding="utf-8")
         logger.info("저장: %s (%d자)", tool_path.name, len(tool_html))
