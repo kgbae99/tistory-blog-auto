@@ -426,5 +426,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 19,
+    "title": "한 달간 건강한 간식 골라보니?",
+    "keyword": "건강한 간식 선택법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강한간식",
+      "간식선택법",
+      "영양정보",
+      "다이어트팁",
+      "간편식",
+      "생활건강",
+      "구매팁"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-23 07:32",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 20,
+    "title": "직접 해보고 알았다, 발기부전 예방 식습관",
+    "keyword": "발기부전 예방을 위한 식습관",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "발기부전",
+      "남성건강",
+      "식습관",
+      "운동",
+      "영양",
+      "생활습관",
+      "건강관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-23 07:33",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 21,
+    "title": "노화 막는 비타민, 이걸로 충분할까?",
+    "keyword": "노화 방지에 좋은 비타민",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "노화",
+      "비타민",
+      "항산화",
+      "피부건강",
+      "면역력",
+      "건강식",
+      "웰빙"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-23 07:35",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
