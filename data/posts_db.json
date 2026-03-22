@@ -379,5 +379,52 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 17,
+    "title": "한 달 먹어보니 호르몬이 달라졌다",
+    "keyword": "여성 호르몬 균형을 위한 음식",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "여성건강",
+      "호르몬균형",
+      "식단",
+      "오메가3",
+      "장건강",
+      "운동"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-22 19:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 18,
+    "title": "일주일만 해보니 면역력이 달라졌다?",
+    "keyword": "면역력 회복에 좋은 스무디 레시피",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "스무디",
+      "레시피",
+      "건강식",
+      "오메가3",
+      "면역회복",
+      "홈메이드"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-22 19:49",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
