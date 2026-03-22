@@ -125,6 +125,14 @@ def main(count: int = 2, extra_exclude: list[str] | None = None):
     for r in results:
         print(f"  {r['title']} → {Path(r['file']).name}")
 
+    # 텔레그램 알림
+    try:
+        from src.notify.telegram import notify_posts_generated
+        notify_posts_generated(results)
+        logger.info("텔레그램 알림 전송 완료")
+    except Exception as e:
+        logger.warning("텔레그램 알림 실패: %s", e)
+
     return results
 
 
