@@ -104,9 +104,9 @@ def check_keyword_duplicate(keyword: str) -> bool:
     """키워드가 최근에 사용되었는지 검사한다."""
     published = _load_published_titles()
 
-    for post in published[-9:]:  # 최근 9개 (3일치)만 검사
+    for post in published[-30:]:  # 최근 30개 (약 10일치) 검사
         if _normalize(keyword) == _normalize(post.get("keyword", "")):
-            logger.warning("키워드 중복: '%s' (최근 9개 내 사용됨)", keyword)
+            logger.warning("키워드 중복: '%s' (최근 30개 내 사용됨)", keyword)
             return True
 
     return False
