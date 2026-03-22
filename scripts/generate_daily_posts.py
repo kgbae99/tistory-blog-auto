@@ -119,98 +119,122 @@ FAQ_COLORS = [
 ]
 
 
+def _load_all_used_keywords() -> list[str]:
+    """발행 DB + 블로그 인덱스에서 사용된 키워드/제목을 모두 로드한다."""
+    used = []
+    data_dir = Path(__file__).parent.parent / "data"
+
+    # 자동화 발행 DB
+    titles_file = data_dir / "published_titles.json"
+    if titles_file.exists():
+        records = json.loads(titles_file.read_text(encoding="utf-8"))
+        for r in records:
+            if r.get("keyword"):
+                used.append(r["keyword"])
+            if r.get("title"):
+                used.append(r["title"])
+
+    # 블로그 크롤링 인덱스 (기존 수동 발행 글)
+    index_file = data_dir / "blog_posts_index.json"
+    if index_file.exists():
+        posts = json.loads(index_file.read_text(encoding="utf-8"))
+        for p in posts:
+            if p.get("title"):
+                used.append(p["title"])
+
+    return list(set(used))
+
+
 def get_trending_keywords() -> list[str]:
-    """카테고리별 1개씩 3개 키워드를 반환한다. 중복 철저 방지."""
-    month = datetime.now().month
-    day = datetime.now().day
+    """GPT를 활용해 기존 발행 글과 겹치지 않는 새 키워드 3개를 생성한다."""
+    import openai
 
-    # 3개 카테고리 로테이션 (매일 다른 조합)
-    CATEGORY_POOLS = {
-        "건강/질병": [
-            "면역력 높이는 생활습관", "혈압 낮추는 방법", "당뇨 예방 식습관",
-            "간 건강에 좋은 음식", "관절 건강 지키는 방법", "눈 건강 관리법",
-            "장 건강 개선법", "수면 질 높이는 방법", "스트레스 해소법",
-            "비타민D 부족 증상", "프로바이오틱스 효능", "탈모 예방법",
-            "빈혈 증상과 예방법", "갑상선 기능 저하 관리", "골다공증 예방법",
-            "건강검진 필수 항목", "종합보험 건강 혜택", "실비보험 청구 방법",
-            "치과 임플란트 비용", "라식 라섹 비교", "건강기능식품 선택 가이드",
-            "암보험 가입 전 체크리스트", "의료실비 보장 범위",
-            "허리 디스크 예방법", "손목터널증후군 자가치료", "역류성 식도염 원인",
-            "대상포진 예방접종 시기", "통풍 원인과 관리법", "어지러움 원인 총정리",
-            "만성피로 원인과 해결법", "손발 저림 원인", "이명 원인과 치료",
-            "편두통 예방법", "과민성 대장증후군 관리", "요산 수치 낮추는 법",
-            "혈액순환 개선법", "갱년기 증상 완화법", "치질 예방과 관리법",
-            "위염 원인과 식이요법", "고지혈증 관리법", "족저근막염 치료법",
-            "어깨 오십견 운동법", "눈 피로 해소법", "입냄새 원인과 해결법",
-        ],
-        "음식/영양": [
-            "아침 공복에 좋은 음식", "피로 회복에 좋은 음식", "봄나물 효능과 종류",
-            "다이어트에 좋은 음식", "면역력 높이는 음식 BEST", "혈관에 좋은 음식",
-            "항산화 식품 추천", "단백질 풍부한 식단", "비타민 많은 과일",
-            "장 건강에 좋은 발효식품", "해독에 좋은 차", "콜레스테롤 낮추는 음식",
-            "눈에 좋은 영양소", "뼈에 좋은 음식", "간에 좋은 음식",
-            "다이어트 보조제 추천", "단백질 보충제 비교", "혈당 관리 식단",
-            "체중감량 식이요법", "키토제닉 다이어트 식단",
-            "오메가3 효능과 복용법", "마그네슘 부족 증상", "아연 효능 총정리",
-            "루테인 지아잔틴 효능", "코엔자임Q10 효능", "밀크씨슬 간건강 효과",
-            "콜라겐 보충제 효과", "비오틴 탈모 효과", "칼슘 흡수 높이는 법",
-            "철분 많은 음식 TOP10", "식이섬유 많은 음식", "저탄수화물 식단 가이드",
-            "글루텐 프리 식단", "지중해 식단 효과", "항염증 음식 TOP7",
-            "슈퍼푸드 종류와 효능", "견과류 효능 비교", "녹차 카테킨 효능",
-            "생강 효능과 부작용", "양배추즙 효능", "석류 효능과 먹는법",
-        ],
-        "뷰티/생활": [
-            "봄 스킨케어 루틴", "자외선 차단제 추천", "보습 크림 고르는 법",
-            "봄철 다이어트 식단", "홈트레이닝 추천 운동", "환절기 피부 관리",
-            "꽃가루 알레르기 예방법", "미세먼지 건강관리", "춘곤증 극복 방법",
-            "체력 키우는 방법", "스트레칭 효과", "물 많이 마시면 좋은 점",
-            "아침 루틴 만드는 법", "숙면 취하는 방법", "노화 방지 습관",
-            "피부과 시술 비교", "탈모 치료 비용", "치아 미백 방법",
-            "홈트 운동기구 추천", "공기청정기 추천",
-            "다크서클 없애는 법", "모공 줄이는 방법", "여드름 흉터 관리법",
-            "목주름 예방법", "손톱 건강 관리법", "두피 케어 방법",
-            "발 각질 제거법", "건조한 피부 관리법", "눈밑 주름 개선법",
-            "체형 교정 운동", "플랭크 올바른 자세", "스쿼트 무릎 보호법",
-            "필라테스 효과", "요가 초보 시작법", "런닝 올바른 자세",
-            "하루 만보 걷기 효과", "아침 운동 vs 저녁 운동", "점프로프 다이어트",
-        ],
-    }
+    used_keywords = _load_all_used_keywords()
+    # 최근 100개만 GPT에 전달 (토큰 절약)
+    recent_used = used_keywords[-100:] if len(used_keywords) > 100 else used_keywords
 
-    categories = list(CATEGORY_POOLS.keys())
-    # 날짜 기반 카테고리 순서 변경 (매일 다른 조합)
-    cat_offset = day % len(categories)
-    ordered_cats = categories[cat_offset:] + categories[:cat_offset]
+    prompt = f"""당신은 건강/생활/뷰티 블로그 키워드 전문가입니다.
 
-    # 유입 데이터 기반 추천 키워드 반영
-    recommended = []
+아래는 이미 발행된 블로그 글 제목/키워드 목록입니다:
+{json.dumps(recent_used, ensure_ascii=False)}
+
+위 목록과 **겹치지 않는** 새로운 블로그 포스트 키워드 5개를 추천해주세요.
+
+조건:
+- 주제: 건강/질병, 음식/영양, 뷰티/생활 중에서 골고루
+- 20~60대 관심사 (건강관리, 영양제, 생활습관, 피부, 다이어트 등)
+- 검색량이 있는 실용적인 주제
+- 이미 발행된 글과 유사하거나 겹치는 주제 절대 금지
+- 계절/트렌드 반영 가능
+
+반드시 아래 JSON 형식으로만 출력:
+{{"keywords": ["키워드1", "키워드2", "키워드3", "키워드4", "키워드5"]}}"""
+
     try:
-        trend_file = Path(__file__).parent.parent / "data" / "trend_insights.json"
-        if trend_file.exists():
-            insights = json.loads(trend_file.read_text(encoding="utf-8"))
-            recommended = insights.get("recommended_keywords", [])
-    except Exception:
-        pass
+        client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.9,
+            max_tokens=300,
+            response_format={"type": "json_object"},
+        )
+        raw = response.choices[0].message.content
+        data = json.loads(raw)
+        keywords = data.get("keywords", [])[:5]
+        logger.info("GPT 추천 키워드: %s", keywords)
+
+        # 중복 필터 후 3개 선택
+        filtered = filter_unique_keywords(keywords)
+        if len(filtered) >= 3:
+            return filtered[:3]
+
+        # GPT 결과 부족 시 추가 요청
+        logger.warning("GPT 키워드 중복 필터 후 %d개만 통과, 폴백 풀 보충", len(filtered))
+        return filtered + _fallback_keywords(3 - len(filtered))
+
+    except Exception as e:
+        logger.error("GPT 키워드 생성 실패: %s → 폴백 사용", e)
+        return _fallback_keywords(3)
+
+
+def _fallback_keywords(count: int) -> list[str]:
+    """GPT 실패 시 사용할 폴백 키워드 풀."""
+    FALLBACK_POOL = [
+        # 건강/질병
+        "혈당 스파이크 원인", "내장지방 줄이는 법", "신장 건강 지키는 법",
+        "폐 건강에 좋은 음식", "심장 건강 체크리스트", "뇌 건강 높이는 습관",
+        "췌장 건강 관리법", "전립선 건강 식품", "자궁 건강 지키는 방법",
+        "요통 원인과 자가치료", "무릎 관절염 관리법", "손가락 마디 통증 원인",
+        "목 디스크 증상", "이석증 증상과 치료", "비염 근본 치료법",
+        "아토피 성인 관리법", "건선 원인과 관리", "대상포진 후 신경통",
+        "당뇨 합병증 예방", "고혈압 약 부작용", "콜레스테롤 수치 기준",
+        # 음식/영양
+        "공복혈당 낮추는 음식", "간헐적 단식 올바른 방법", "단백질 하루 권장량",
+        "식후 혈당 낮추는 식습관", "항암 식품 종류", "뇌에 좋은 음식",
+        "나쁜 지방 vs 좋은 지방", "장내 유익균 늘리는 음식", "수분 보충에 좋은 음식",
+        "노화 방지 항산화 식품", "뼈를 약하게 하는 음식", "신장에 나쁜 음식",
+        "혈압 올리는 음식", "소화 잘 되는 음식", "염증 줄이는 식단",
+        "비타민C 많은 음식", "아연 많은 음식", "셀레늄 효능과 음식",
+        # 뷰티/생활
+        "기미 잡티 없애는 법", "탄력 피부 만드는 습관", "셀룰라이트 없애는 법",
+        "다크서클 근본 원인", "두피 지루성 피부염 관리", "머리카락 굵어지는 방법",
+        "손발이 찬 이유", "수면 무호흡증 해결법", "구부정한 자세 교정법",
+        "하체 부종 빼는 법", "소화불량 즉각 해결법", "복부팽만감 원인",
+        "스트레스성 탈모 관리", "손 거칠어지는 원인", "발뒤꿈치 갈라짐 예방",
+        "눈떨림 원인과 해결법", "잦은 방귀 원인", "딸꾹질 멈추는 방법",
+    ]
 
     result = []
-    for cat in ordered_cats:
-        pool = CATEGORY_POOLS[cat]
+    for kw in FALLBACK_POOL:
+        if not check_keyword_duplicate(kw):
+            dup = check_title_duplicate(kw, threshold=0.5)
+            if not dup:
+                result.append(kw)
+        if len(result) >= count:
+            break
 
-        # 유입 추천 키워드 중 이 카테고리에 해당하는 것 우선
-        selected = None
-        for rec in recommended:
-            if rec in pool and rec not in result:
-                selected = rec
-                break
-
-        if not selected:
-            # 날짜 기반 순환 선택
-            idx = (day + len(result)) % len(pool)
-            selected = pool[idx]
-
-        result.append(selected)
-
-    logger.info("카테고리별 키워드: %s", list(zip(ordered_cats, result)))
-    return result
+    return result[:count]
 
 
 # 세션 내 사용된 상품 ID 추적 (포스트 간 중복 방지)
@@ -669,35 +693,8 @@ def main():
     output_dir = Path(__file__).parent.parent / "output" / "posts" / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    raw_keywords = get_trending_keywords()
-    keywords = filter_unique_keywords(raw_keywords)
-
-    # 중복 제거 후 부족하면 같은 카테고리에서 대체 키워드 선택
-    if len(keywords) < 3:
-        all_pools = [
-            "허리 디스크 예방법", "고지혈증 관리법", "족저근막염 치료법",
-            "어깨 오십견 운동법", "눈 피로 해소법", "입냄새 원인과 해결법",
-            "편두통 예방법", "과민성 대장증후군 관리", "요산 수치 낮추는 법",
-            "혈액순환 개선법", "갱년기 증상 완화법", "치질 예방과 관리법",
-            "위염 원인과 식이요법", "대상포진 예방접종 시기", "통풍 원인과 관리법",
-            "어지러움 원인 총정리", "만성피로 원인과 해결법", "손발 저림 원인",
-            "오메가3 효능과 복용법", "마그네슘 부족 증상", "루테인 지아잔틴 효능",
-            "코엔자임Q10 효능", "밀크씨슬 간건강 효과", "콜라겐 보충제 효과",
-            "철분 많은 음식 TOP10", "식이섬유 많은 음식", "지중해 식단 효과",
-            "항염증 음식 TOP7", "슈퍼푸드 종류와 효능", "견과류 효능 비교",
-            "다크서클 없애는 법", "모공 줄이는 방법", "여드름 흉터 관리법",
-            "손톱 건강 관리법", "두피 케어 방법", "발 각질 제거법",
-            "건조한 피부 관리법", "눈밑 주름 개선법", "체형 교정 운동",
-            "플랭크 올바른 자세", "스쿼트 무릎 보호법", "필라테스 효과",
-        ]
-        for kw in all_pools:
-            if kw not in keywords and not check_keyword_duplicate(kw):
-                dup = check_title_duplicate(kw, threshold=0.5)
-                if not dup:
-                    keywords.append(kw)
-            if len(keywords) >= 3:
-                break
-    keywords = keywords[:3]
+    # GPT가 중복 없는 키워드 3개를 직접 생성 (폴백 포함)
+    keywords = get_trending_keywords()[:3]
     logger.info("=== %s 일일 포스트 생성 시작 (키워드: %s) ===", today, keywords)
 
     results = []
