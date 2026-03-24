@@ -87,22 +87,84 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 ## 출력: 반드시 JSON만
 {{"title":"제목","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(300자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
 
-# 이미지 매핑 (Unsplash 검증된 URL)
-SECTION_IMAGES = [
-    "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=486&h=315&fit=crop",
-    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=486&h=315&fit=crop",
+# 이미지 풀 (Unsplash 검증된 URL — 카테고리별 다양화)
+_IMAGES_HEALTH = [
     "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=486&h=315&fit=crop",
-    "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=486&h=315&fit=crop",
-    "https://images.unsplash.com/photo-1550572017-edd951b55104?w=486&h=315&fit=crop",
-    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop",
     "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1544991875-5dc1b05f1571?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=486&h=315&fit=crop",
 ]
 
-HEADER_IMAGES = [
-    "https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=486&h=315&fit=crop",
-    "https://images.unsplash.com/photo-1516575334481-f85287c2c82d?w=486&h=315&fit=crop",
-    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop",
+_IMAGES_FOOD = [
+    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1547592180-85f173990554?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=486&h=315&fit=crop",
 ]
+
+_IMAGES_BEAUTY = [
+    "https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1583241475880-083f84372725?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=486&h=315&fit=crop",
+]
+
+_IMAGES_FITNESS = [
+    "https://images.unsplash.com/photo-1550572017-edd951b55104?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1486218119243-13301b7a93a8?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=486&h=315&fit=crop",
+]
+
+_IMAGES_LIFESTYLE = [
+    "https://images.unsplash.com/photo-1516575334481-f85287c2c82d?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1484627147104-f5197bcd6651?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=486&h=315&fit=crop",
+    "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=486&h=315&fit=crop",
+]
+
+# 전체 풀 합산
+SECTION_IMAGES = _IMAGES_HEALTH + _IMAGES_FOOD + _IMAGES_FITNESS + _IMAGES_LIFESTYLE
+HEADER_IMAGES = _IMAGES_HEALTH + _IMAGES_BEAUTY + _IMAGES_LIFESTYLE
+
+
+def _pick_image(pool: list[str], seed: int) -> str:
+    """seed 기반으로 풀에서 이미지를 선택한다 (중복 최소화)."""
+    import hashlib
+    from datetime import date
+    date_str = date.today().isoformat()
+    idx = int(hashlib.md5(f"{date_str}-{seed}".encode()).hexdigest(), 16) % len(pool)
+    return pool[idx]
 
 SUMMARY_COLORS = [
     ("#ffebee", "#FFCDD2"),
@@ -509,8 +571,10 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
         if downloaded:
             logger.info("  이미지 %d개 다운로드 완료", len(downloaded))
     else:
-        header_img = HEADER_IMAGES[post_index % len(HEADER_IMAGES)]
-        section_images = SECTION_IMAGES
+        header_img = _pick_image(HEADER_IMAGES, post_index)
+        import random as _random
+        _random.seed(f"{datetime.now().date()}-{post_index}")
+        section_images = _random.sample(SECTION_IMAGES, min(8, len(SECTION_IMAGES)))
     sections = data.get("sections", [])
     tags = data.get("tags", [])
     summary_cards = data.get("summary_cards", [])
