@@ -570,5 +570,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 25,
+    "title": "한 달 해보니 피부 탱탱해졌다",
+    "keyword": "피부 탄력을 높이는 생활습관",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피부탄력",
+      "생활습관",
+      "스킨케어",
+      "수면",
+      "영양",
+      "운동",
+      "미세먼지"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-24 17:23",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 26,
+    "title": "여름철 이것만 먹으면 달라진다?",
+    "keyword": "여름철 건강 관리법: 더위에 대비하는 음식",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "여름건강",
+      "수분관리",
+      "식단팁",
+      "탈수예방",
+      "체중측정",
+      "간단레시피",
+      "전해질"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-24 17:25",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 27,
+    "title": "한 달간 건강한 간식만 먹어보니?",
+    "keyword": "건강한 간식 레시피",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강한간식",
+      "간단레시피",
+      "프로바이오틱스",
+      "장건강",
+      "그릭요거트",
+      "견과류",
+      "아침간식"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-24 17:27",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
