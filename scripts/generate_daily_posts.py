@@ -527,7 +527,6 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     # 대표 이미지 (키워드 alt 삽입)
     img_alt = keyword if keyword else data.get("title", "건강정보")
     parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="{img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
-    parts.append('<p>&nbsp;</p>')
 
     # H1 제목 + 도입부
     intro = sections[0]["content"] if sections else ""
