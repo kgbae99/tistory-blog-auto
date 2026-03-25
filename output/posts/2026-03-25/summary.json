@@ -1,44 +1,43 @@
 [
   {
-    "keyword": "면역력 강화를 위한 아침식사 레시피",
-    "title": "아침만 바꿔도 면역력이 달라진다?",
+    "keyword": "피부 노화를 예방하는 항산화 식품",
+    "title": "이 음식만 먹으면 피부가 달라질까?",
     "tags": [
-      "면역력",
-      "아침식사",
+      "피부",
+      "항산화",
+      "노화예방",
+      "건강식",
+      "뷰티",
+      "식단",
+      "수면"
+    ],
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\posts\\2026-03-25\\post_1_피부_노화를_예방하는_항산화_식품.html"
+  },
+  {
+    "keyword": "2025년 다이어트 트렌드, 간헐적 단식의 효과",
+    "title": "한 달 해보고 알았다: 단식의 진짜 효과",
+    "tags": [
+      "간헐적단식",
+      "다이어트",
+      "체중감량",
+      "혈당관리",
+      "웰빙",
+      "차추천",
+      "건강식습관"
+    ],
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\posts\\2026-03-25\\post_2_2025년_다이어트_트렌드,_간헐적_.html"
+  },
+  {
+    "keyword": "스트레스 관리에 도움이 되는 식음료",
+    "title": "한 달 해보니 스트레스가 줄었다?",
+    "tags": [
+      "스트레스관리",
+      "건강식음료",
       "오메가3",
-      "단백질",
-      "비타민",
-      "건강레시피",
-      "웰빙"
+      "수면건강",
+      "간식추천",
+      "카페인조절"
     ],
-    "file": "/home/runner/work/tistory-blog-auto/tistory-blog-auto/output/posts/2026-03-25/post_1_면역력_강화를_위한_아침식사_레시피.html"
-  },
-  {
-    "keyword": "2025년 신장 관리에 도움이 되는 식이요법",
-    "title": "직접 해보고 알았다: 신장에 진짜 도움 되는 식단 변화?",
-    "tags": [
-      "신장관리",
-      "식이요법",
-      "저염식",
-      "단백질조절",
-      "칼륨관리",
-      "영양제",
-      "건강습관"
-    ],
-    "file": "/home/runner/work/tistory-blog-auto/tistory-blog-auto/output/posts/2026-03-25/post_2_2025년_신장_관리에_도움이_되는_.html"
-  },
-  {
-    "keyword": "여름철 피부 건강을 위한 수분 보충법",
-    "title": "여름철 피부, 이 수분법만 알면 달라진다?",
-    "tags": [
-      "여름피부",
-      "수분보충",
-      "스킨케어",
-      "물섭취",
-      "마스크관리",
-      "건강웰빙",
-      "피부관리"
-    ],
-    "file": "/home/runner/work/tistory-blog-auto/tistory-blog-auto/output/posts/2026-03-25/post_3_여름철_피부_건강을_위한_수분_보충법.html"
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\posts\\2026-03-25\\post_3_스트레스_관리에_도움이_되는_식음료.html"
   }
 ]
