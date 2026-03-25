@@ -881,5 +881,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 38,
+    "title": "직접 해보고 알았다, 여름 자외선 차단법",
+    "keyword": "여름철 피부 자외선 차단 필수 팁",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "자외선차단",
+      "여름피부관리",
+      "선크림사용법",
+      "피부타입별관리",
+      "외출준비",
+      "마스크추천",
+      "건강온도사"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-25 13:43",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 39,
+    "title": "다이어트 중 이 음식, 정말 도움이 될까?",
+    "keyword": "다이어트 중 이 음식이 체중조절에 도움이 될까?",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "다이어트",
+      "체중조절",
+      "오메가3",
+      "영양",
+      "건강식",
+      "식단",
+      "보충제"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-25 13:45",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 40,
+    "title": "한 달 스무디로 면역력이 달라졌다?",
+    "keyword": "면역력 강화에 좋은 스무디 다이어트 레시피",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "스무디",
+      "다이어트",
+      "비타민",
+      "건강식",
+      "레시피"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-25 13:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
