@@ -168,13 +168,50 @@ _IMAGES_AI = [
 SECTION_IMAGES = _IMAGES_DEVICES + _IMAGES_MOBILE + _IMAGES_SOFTWARE + _IMAGES_AI
 
 
+def _load_used_images() -> set[str]:
+    """최근 사용된 이미지 URL 집합을 반환한다."""
+    path = Path(__file__).parent.parent / "data" / "used_images.json"
+    if not path.exists():
+        return set()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(data, list):
+            return {item["url"] for item in data if "url" in item}
+        return set()
+    except Exception:
+        return set()
+
+
+def _save_used_image(url: str, keyword: str) -> None:
+    """사용된 이미지를 기록한다. 90일 이상 된 항목은 삭제."""
+    from datetime import date, timedelta
+    path = Path(__file__).parent.parent / "data" / "used_images.json"
+    data = []
+    if path.exists():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(data, list):
+                data = []
+        except Exception:
+            data = []
+    cutoff = (date.today() - timedelta(days=90)).isoformat()
+    data = [item for item in data if item.get("date", "") >= cutoff]
+    data.append({"url": url, "date": date.today().isoformat(), "keyword": keyword})
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def _pick_image(keyword: str, index: int) -> str:
-    """키워드+인덱스+날짜 seed로 이미지 선택 (중복 최소화)."""
+    """최근 사용 이미지를 제외하고 이미지를 선택한다."""
     import hashlib
     from datetime import date
+    used = _load_used_images()
+    unused = [img for img in SECTION_IMAGES if img not in used]
+    candidates = unused if unused else SECTION_IMAGES
     seed = f"{date.today().isoformat()}-{keyword}-{index}"
-    idx = int(hashlib.md5(seed.encode()).hexdigest(), 16) % len(SECTION_IMAGES)
-    return SECTION_IMAGES[idx]
+    idx = int(hashlib.md5(seed.encode()).hexdigest(), 16) % len(candidates)
+    selected = candidates[idx]
+    _save_used_image(selected, keyword)
+    return selected
 
 SUMMARY_COLORS = [
     ("#E3F2FD", "#90CAF9"),

@@ -208,13 +208,53 @@ SECTION_IMAGES = _IMAGES_HEALTH + _IMAGES_FOOD + _IMAGES_FITNESS + _IMAGES_LIFES
 HEADER_IMAGES = _IMAGES_HEALTH + _IMAGES_BEAUTY + _IMAGES_LIFESTYLE
 
 
-def _pick_image(pool: list[str], seed: int) -> str:
-    """seed 기반으로 풀에서 이미지를 선택한다 (중복 최소화)."""
+def _load_used_images() -> set[str]:
+    """최근 사용된 이미지 URL 집합을 반환한다."""
+    path = Path(__file__).parent.parent / "data" / "used_images.json"
+    if not path.exists():
+        return set()
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        # [{url, date, keyword}] 형식
+        if isinstance(data, list):
+            return {item["url"] for item in data if "url" in item}
+        return set()
+    except Exception:
+        return set()
+
+
+def _save_used_image(url: str, keyword: str) -> None:
+    """사용된 이미지를 기록한다. 90일 이상 된 항목은 삭제."""
+    from datetime import date, timedelta
+    path = Path(__file__).parent.parent / "data" / "used_images.json"
+    data = []
+    if path.exists():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(data, list):
+                data = []
+        except Exception:
+            data = []
+    cutoff = (date.today() - timedelta(days=90)).isoformat()
+    data = [item for item in data if item.get("date", "") >= cutoff]
+    data.append({"url": url, "date": date.today().isoformat(), "keyword": keyword})
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def _pick_image(pool: list[str], seed: int, keyword: str = "") -> str:
+    """최근 사용 이미지를 제외하고 pool에서 이미지를 선택한다."""
     import hashlib
     from datetime import date
+    used = _load_used_images()
+    # 미사용 이미지 우선
+    unused = [img for img in pool if img not in used]
+    candidates = unused if unused else pool  # 모두 사용됐으면 전체 풀 사용
     date_str = date.today().isoformat()
-    idx = int(hashlib.md5(f"{date_str}-{seed}".encode()).hexdigest(), 16) % len(pool)
-    return pool[idx]
+    idx = int(hashlib.md5(f"{date_str}-{seed}".encode()).hexdigest(), 16) % len(candidates)
+    selected = candidates[idx]
+    if keyword:
+        _save_used_image(selected, keyword)
+    return selected
 
 SUMMARY_COLORS = [
     ("#ffebee", "#FFCDD2"),
