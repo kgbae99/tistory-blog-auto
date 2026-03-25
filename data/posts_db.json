@@ -952,5 +952,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 41,
+    "title": "한 달 아침 바꿔보니 살이 빠졌다",
+    "keyword": "체중 감량을 돕는 아침 식사 아이디어",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "체중감량",
+      "아침식사",
+      "단백질",
+      "프로바이오틱스",
+      "저탄수화물",
+      "다이어트레시피",
+      "건강습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-26 07:44",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 42,
+    "title": "피부가 민감해졌다면? 바로 써야 할 성분은",
+    "keyword": "피부 민감성 완화에 좋은 성분",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피부민감성",
+      "스킨케어",
+      "성분분석",
+      "보습",
+      "항염",
+      "저자극",
+      "피부진정"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-26 07:45",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 43,
+    "title": "한 달 마셔보니 면역력이 달라졌다?",
+    "keyword": "면역력 향상을 위한 허브 티 레시피",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "허브티",
+      "홈레시피",
+      "건강관리",
+      "비타민",
+      "웰빙"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-26 07:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
