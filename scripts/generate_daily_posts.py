@@ -651,20 +651,15 @@ def build_adsense_ad(slot_id: str, ad_format: str = "auto") -> str:
 
 def build_full_html(data: dict, products: list, post_index: int, keyword: str = "") -> str:
     """전체 블로그 포스트 HTML을 조립한다."""
-    # 키워드 기반 이미지 자동 매칭 (중복 완전 방지)
-    if keyword:
-        all_images = get_unique_images(keyword, count=8)
-        header_img = all_images[0] if all_images else HEADER_IMAGES[0]
-        section_images = all_images[1:] if len(all_images) > 1 else all_images
-        # 이미지 다운로드
-        downloaded = download_post_images(keyword, all_images)
-        if downloaded:
-            logger.info("  이미지 %d개 다운로드 완료", len(downloaded))
-    else:
-        header_img = _pick_image(HEADER_IMAGES, post_index)
-        import random as _random
-        _random.seed(f"{datetime.now().date()}-{post_index}")
-        section_images = _random.sample(SECTION_IMAGES, min(8, len(SECTION_IMAGES)))
+    # Unsplash 풀 기반 이미지 선택 (used_images.json 중복 추적)
+    header_img = _pick_image(HEADER_IMAGES, post_index, keyword=keyword)
+    import random as _random
+    _random.seed(f"{datetime.now().date()}-{post_index}-{keyword}")
+    used = _load_used_images()
+    unused_sections = [img for img in SECTION_IMAGES if img not in used and img != header_img]
+    if len(unused_sections) < 8:
+        unused_sections = [img for img in SECTION_IMAGES if img != header_img]
+    section_images = _random.sample(unused_sections, min(8, len(unused_sections)))
     sections = data.get("sections", [])
     tags = data.get("tags", [])
     summary_cards = data.get("summary_cards", [])

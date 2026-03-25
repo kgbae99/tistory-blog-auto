@@ -383,15 +383,25 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str) ->
     faq = data.get("faq", [])
     tags = data.get("tags", [])
 
-    # 헤더 이미지
+    # 헤더 이미지 (used_images 추적 포함)
     header_img = _pick_image(keyword, 0)
+
+    # 섹션 이미지 풀: 헤더 및 최근 사용 이미지 제외
+    import random as _random
+    _random.seed(f"{keyword}-{__import__('datetime').date.today().isoformat()}")
+    used_imgs = _load_used_images()
+    pool_for_sections = [img for img in SECTION_IMAGES if img not in used_imgs and img != header_img]
+    if len(pool_for_sections) < 10:
+        pool_for_sections = [img for img in SECTION_IMAGES if img != header_img]
+    _random.shuffle(pool_for_sections)
+    section_img_pool = pool_for_sections
 
     # 섹션 HTML
     sections_html = ""
     for i, sec in enumerate(sections):
         heading = sec.get("heading", "")
         content = sec.get("content", "")
-        img = _pick_image(keyword, i + 1)
+        img = section_img_pool[i % len(section_img_pool)] if section_img_pool else _pick_image(keyword, i + 1)
         sections_html += f"""
 <h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">{heading}</h2>
 <div style="text-align: center; margin: 15px 0;">
