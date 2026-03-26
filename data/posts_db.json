@@ -1023,5 +1023,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 44,
+    "title": "이것만 챙기면 달라진다? 비타민 D의 진실",
+    "keyword": "비타민 D의 중요성과 결핍 증상",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민D",
+      "영양",
+      "건강",
+      "골다공증",
+      "면역력",
+      "수면",
+      "보충제"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-27 07:37",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 45,
+    "title": "한 달 직접 마셔보니 수분 섭취가 달라진다?",
+    "keyword": "여름철 수분 보충을 위한 최적의 음료",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수분보충",
+      "여름건강",
+      "음료",
+      "탈수예방",
+      "프로바이오틱스",
+      "운동수분관리",
+      "DIY음료"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-27 07:38",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 46,
+    "title": "한 달 케어해보니 피부 탄력이 달라졌다",
+    "keyword": "피부 탄력을 위한 케어법과 추천 제품",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피부관리",
+      "탄력",
+      "오메가3",
+      "스킨케어",
+      "건강식품",
+      "홈케어",
+      "뷰티팁"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-27 07:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
