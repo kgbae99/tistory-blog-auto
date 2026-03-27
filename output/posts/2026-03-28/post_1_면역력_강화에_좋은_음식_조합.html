@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="음식 조합 하나로 면역력이 달라집니다. 항산화·단백질·프로바이오틱스·오메가3 조합과 실전 식단 팁까지 간단하게 정리한 가이드입니다.">
+<title>한 달 먹어보니 면역력이 달라졌다?</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">한 달 먹어보니 면역력이 달라졌다?</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">면역력, 음식조합, 오메가3, 프로바이오틱스, 항산화, 건강식단, 영양팁</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html"><figure style="text-align: center; margin: 0 0 20px 0;"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=486&h=315&fit=crop" alt="면역력 강화에 좋은 음식 조합" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">한 달 먹어보니 면역력이 달라졌다?</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">조합 유형</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">작동 원리</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주요 기대효과</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항산화+비타민</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">세포 손상 방지와 염증 감소</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">감염 위험 감소</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">단백질+미네랄</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항체 합성에 필수 영양 공급</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">회복력 향상</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">프로바이오틱스+섬유질</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장내 환경 개선으로 면역세포 활성화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알레르기 완화 도움</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">음식 조합은 단일 영양소보다 시너지 효과를 냅니다. 예를 들어 비타민C가 풍부한 과일과 철분이 많은 식품을 함께 먹으면 철분 흡수가 더 잘됩니다. 이런 조합은 면역세포가 제 기능을 하게 도와 감염에 대한 저항력을 높입니다. 평소 식단에서 작은 조합만 바꿔도 면역 개선이 관찰되곤 합니다.</p></div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 항산화와 단백질 조합의 힘</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 프로바이오틱스와 식이섬유의 콤보</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 오메가3와 비타민D, 왜 같이 먹어야 하나?</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 실전 식단 예시와 간단 레시피 팁</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">항산화와 단백질 조합의 힘</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?w=486&h=315&fit=crop" alt="면역력 강화에 좋은 음식 조합" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">식품 조합</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주요 영양소</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">연어 + 시금치</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오메가3, 단백질, 비타민K</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">염증 감소, 조직 회복</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">닭가슴살 + 브로콜리</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">고단백, 항산화 비타민</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">면역세포 생성 도움</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">두부 + 토마토</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">식물성 단백질, 라이코펜</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항산화 작용 강화</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">단백질은 항체 생성의 재료라서 충분히 섭취해야 합니다. 여기에 항산화 성분을 더하면 세포 손상 방지와 염증 조절이 동시에 이뤄집니다. 실제로 하루 단백질 20~30g을 주식에 포함하면 회복력이 좋아진다는 보고가 있습니다. 간단한 조합으로도 면역 체계에 큰 도움이 됩니다.</p></div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8208542949" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">프로바이오틱스와 식이섬유의 콤보</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=486&h=315&fit=crop" alt="면역력 강화에 좋은 음식 조합" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">조합</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">식품 예시</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">요거트 + 바나나</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">프로바이오틱스, 프리바이오틱스</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장 건강 개선</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">김치 + 현미</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">발효유산균, 식이섬유</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">면역 조절 도움</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">된장 + 채소</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">발효식품, 식이섬유</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">염증 완화</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">장 건강은 전신 면역의 중심입니다. 프로바이오틱스가 장내 균형을 잡아주고 식이섬유는 유익균의 먹이가 되죠. 아침에 요거트와 바나나 한 컵이면 장 기능이 개선되어 면역 세포 활동이 좋아집니다. 면역과 장 건강 관련 자세한 음식은 이 글도 참고하세요: <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/496">면역력 낮을 때 딱 좋은 음식은?</a></p></div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">오메가3와 비타민D, 왜 같이 먹어야 하나?</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://images.unsplash.com/photo-1541199249251-f713e6145474?w=486&h=315&fit=crop" alt="면역력 강화에 좋은 음식 조합" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">영양소</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">역할</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">섭취 팁</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오메가3</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">염증 감소 및 세포막 건강</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">식후에 섭취 권장</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">비타민D</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">면역세포 기능 조절</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">주 2~3회 체크 권장</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">복합섭취</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">상호보완으로 면역 강화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">의사 상담 후 용량 결정</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">오메가3는 염증을 낮추고 비타민D는 면역세포의 반응을 조절합니다. 둘을 함께하면 감염과 염증 관리에 더 효과적이라는 연구가 있습니다. 평소 오메가3 보충을 고려한다면 '더리틀스 알티지부스터 EPA DHA 알티지 오메가3 r'나 '종근당건강 프로메가 오메가3 트리플', '스포츠리서치 1040mg 오메가-3 피쉬 오일 트리플' 같은 제품을 식사 후에 섭취하면 편리합니다. 단, 약 복용 중이라면 먼저 상담하세요.</p></div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8134684468"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">실전 식단 예시와 간단 레시피 팁</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?w=486&h=315&fit=crop" alt="면역력 강화에 좋은 음식 조합" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">시간대</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">메뉴 예시</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">포인트</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">아침</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">그릭요거트+베리+아몬드</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">단백질+항산화</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">점심</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">연어샐러드+현미밥</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오메가3+섬유질</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">저녁</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">두부스테이크+채소찜</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">저지방 단백질</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">실전 팁은 준비의 간결성입니다. 주말에 채소를 손질해 밀폐 용기에 보관하면 평일에도 조합 음식을 쉽게 만들 수 있습니다. 가벼운 샐러드에 통곡물과 견과를 더하면 항산화와 단백질 조합이 완성됩니다. 알레르기 완화 관련 식품 조합은 이 글을 참고하시면 도움이 됩니다: <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/506">알레르기 완화에 좋은 음식은 따로 있다?</a></p></div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">항산화와 단백질을 함께 먹으면 면역세포 회복에 도움을 줍니다.</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">프로바이오틱스+식이섬유는 장 건강을 개선해 전체 면역을 높입니다.</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">오메가3와 비타민D 복합섭취는 염증 감소 및 면역 조절에 유리합니다.</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">간단한 식단 준비로 실천 가능: 주말에 손질하면 평일이 편합니다.</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">보충제는 보완 수단, 기존 약물과 병용 시 의사와 상담하세요.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">하루에 오메가3는 얼마나 섭취해야 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">일반적으로 EPA·DHA 합계 250~1000mg 범위가 권장됩니다. 개인 상태에 따라 다르니 의사와 상담하세요.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">프로바이오틱스는 언제 먹는 게 좋나요?</h3>
+<p style="margin: 0; padding: 8px 0;">식후나 공복 모두 가능하지만, 제품별 권장 복용법을 따르는 것이 안전합니다. 꾸준한 섭취가 중요합니다.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">음식 조합으로 당장 효과를 볼 수 있나요?</h3>
+<p style="margin: 0; padding: 8px 0;">즉각적인 면역 강화보다는 2~4주 꾸준한 섭취 후 변화가 나타나는 경우가 많습니다. 생활습관과 함께 관리하세요.</p></div>
+</div></div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="9545675342" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;"><div class="table-section" style="margin: 20px 0;"><table style="width: 100%; border-collapse: collapse;"><thead><tr><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">짧은 팁</th><th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천법</th></tr></thead><tbody><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">조합의 중요성</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">한 가지를 추가하세요</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">매일 1회 조합 실천</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">소량 꾸준함</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">과식 금지</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">일주일 계획표 작성</td></tr><tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">전문가 상담</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">복용 전 체크</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">기초검사 권장</td></tr></tbody></table></div><p style="color: #333; line-height: 1.8;">작은 식습관 변화가 면역력 차이를 만듭니다. 오늘은 한 끼에 항산화와 단백질을 함께 넣어보세요. 보충제가 필요하면 위에서 언급한 오메가3 제품을 고려하되, 식사 우선 원칙을 지키시길 바랍니다. 꾸준히 실천하면 한 달 후 변화를 느끼실 수 있습니다.</p></div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8289096943&itemId=22445360057&vendorItemId=85766656083&traceid=V0-153-7878b0b511e45263&clickBeacon=6988f460-207d-11f1-a7df-ac113db5eb71%7E3&requestid=20260315234403839146586205&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/iipQVV3KUdi3ric7ijvxUC_nUDhOkeyb9Q1kKNod3mL2OKcD83wkZV7omBDzjWMAI8zpQLe8x6I4NpSEqiDsIJlDIV_oIQ8L4H4vZYm4_9ojJWRC-KFJaLonxY3ALHYnYbC71WXSVPvN4Iz9o9ER37rx9Kl_fXK3W9CKb-CtHjDLmLGdz3DcqxWgRL024sgEWKiDZU08DYP_yF2vjVuled-Ln-TAyaWNKyko0eytgYIbQzzWxbYuZIuFGPe6-VS2V-2j9-gX00hWRDWj46ssplxYQfFuIcMO7LsVmHKQ-prQUYdWZlVUIQs=" alt="더리틀스 알티지부스터 EPA DHA 알티지 오메가3 rTG 120캡슐 3박스, 120정, 3개" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">더리틀스 알티지부스터 EPA DHA 알티지 오메가3 rTG 120캡슐 3박스, 120정, 3개</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">205,000원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=6586372374&itemId=14842723746&vendorItemId=82081965637&traceid=V0-153-dfb2e13ddc16c873&requestid=20260315234403839146586205&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/jZJV1ExfECwtakmPjVAPNOGrJsIxMhOH_45qrcSdigxxcXsGz5XU8XRh3b9NTEE9pgylohiRnXJxLCCIMHXPuB8nz-YyEw1zk1Xy3V_dyrhlB4Pxdtf3-BBIVnqi5BM0ZWHq1sFC2mlem5UWjmVlEox7EETv4R-rXMEUwf2lb6DNPQVV7ysdV28ypINhifsy3vRnCtKjGyo2HgszurROnd8l9gsQGMvPzJ1oiqLERolm_YT5UIOnutKtFiXn7cnOJOO3g8BcL7B17ZLDpVoSMpeLZk1zNCkTs70M3-IRpDcX7FlZ" alt="종근당건강 프로메가 오메가3 트리플" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">종근당건강 프로메가 오메가3 트리플</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">10,590원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=6854281548&itemId=5735615760&vendorItemId=4765824687&traceid=V0-153-eb204c859fad1f20&requestid=20260315234403839146586205&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/xDHun_UIUzDfrFcNxBUDmEWfyAKFqS5qm3VmGUwTdOYv_d4PTINaQfGN4G8uRNiPIhnUbmbYgYpRMJR8DCdi92bk50FtpsPoyRQJ4bV0x8oT29WlWYPFy9K2t8eYR_oYjkk9t1xSWZUNeFS8XSLDQc0GTtM2mKigzMp6HS7V-eE3ZeBwpwuKqKs9WDYIoVsIMZIU-qDmBmuiXut1xnXvKuiAJTXTgsiwq_hIv74DqV-h-PzfE1wU5cqC_2-_0zKOB-WLazXD7lVgY1QzI7lipenwASbuElZ6CWFN5FhaiZHXE-qhLV_p9N_tk9ByeSfQAk5OFQ==" alt="스포츠리서치 1040mg 오메가-3 피쉬 오일 트리플 스트렝스 소프트젤" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">스포츠리서치 1040mg 오메가-3 피쉬 오일 트리플 스트렝스 소프트젤</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">29,330원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">일반배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>면역력, 음식조합, 오메가3, 프로바이오틱스, 항산화, 건강식단, 영양팁</p></div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="면역력 강화에 좋은 음식 조합" style="max-width:100%; height:auto;" /></a>
+</div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
