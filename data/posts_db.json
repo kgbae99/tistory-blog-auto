@@ -1094,5 +1094,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 47,
+    "title": "이것만 챙기면 면역이 달라진다?",
+    "keyword": "비타민 D의 중요성과 보충 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민D",
+      "면역력",
+      "영양제",
+      "햇빛",
+      "뼈건강",
+      "식품"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-29 07:37",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 48,
+    "title": "한 달 해보니 달라진 여름 체중 비법?",
+    "keyword": "여름철 체중 관리를 위한 습관",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "여름체중관리",
+      "다이어트습관",
+      "수분관리",
+      "운동루틴",
+      "식단관리",
+      "피부회복",
+      "건강한생활"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-29 07:38",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 49,
+    "title": "직접 해보고 알았다, 탄력 마사지의 비밀",
+    "keyword": "피부 탄력 증진을 위한 마사지 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피부탄력",
+      "마사지",
+      "셀프케어",
+      "스킨케어",
+      "숙면",
+      "건강",
+      "홈케어"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-29 07:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
