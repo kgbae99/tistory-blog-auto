@@ -1165,5 +1165,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 50,
+    "title": "한 달 간헐적 단식, 몸이 달라졌다?",
+    "keyword": "체중 감량을 위한 간헐적 단식의 효과",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "간헐적단식",
+      "체중감량",
+      "다이어트",
+      "건강",
+      "웰빙",
+      "영양",
+      "체중관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-30 07:38",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 51,
+    "title": "여름마다 같은 고민? 자외선 관리, 이걸로 끝?",
+    "keyword": "여름철 피부 자외선 관리 필수 아이템",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "여름피부",
+      "자외선차단",
+      "스킨케어",
+      "보습",
+      "프리바이오틱스",
+      "프로바이오틱스",
+      "자외선관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-30 07:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 52,
+    "title": "직접 해보고 알았다, 소화가 달라졌다",
+    "keyword": "소화 건강을 위한 프로바이오틱스 활용법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "프로바이오틱스",
+      "장건강",
+      "소화",
+      "프리바이오틱스",
+      "식이요법",
+      "건강습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-03-30 07:41",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
