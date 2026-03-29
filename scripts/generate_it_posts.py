@@ -383,18 +383,11 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str) ->
     faq = data.get("faq", [])
     tags = data.get("tags", [])
 
-    # 헤더 이미지 (used_images 추적 포함)
-    header_img = _pick_image(keyword, 0)
-
-    # 섹션 이미지 풀: 헤더 및 최근 사용 이미지 제외
-    import random as _random
-    _random.seed(f"{keyword}-{__import__('datetime').date.today().isoformat()}")
-    used_imgs = _load_used_images()
-    pool_for_sections = [img for img in SECTION_IMAGES if img not in used_imgs and img != header_img]
-    if len(pool_for_sections) < 10:
-        pool_for_sections = [img for img in SECTION_IMAGES if img != header_img]
-    _random.shuffle(pool_for_sections)
-    section_img_pool = pool_for_sections
+    # GitHub 호스팅 이미지 사용 (136개 풀)
+    from src.content.image_search import get_images_for_keyword as _get_imgs
+    all_images = _get_imgs(keyword, count=8)
+    header_img = all_images[0] if all_images else _pick_image(keyword, 0)
+    section_img_pool = all_images[1:] if len(all_images) > 1 else all_images
 
     # 섹션 HTML
     sections_html = ""
