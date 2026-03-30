@@ -872,8 +872,9 @@ def main():
             meta_desc=data.get("meta_description", ""),
         )
 
-        # 5. 파일 저장
-        safe_name = keyword.replace(" ", "_")[:20]
+        # 5. 파일 저장 (Windows 금지 문자 제거: \ / : * ? " < > |)
+        import re as _re
+        safe_name = _re.sub(r'[\\/:*?"<>|]', '', keyword).replace(" ", "_")[:30]
         filename = f"post_{i + 1}_{safe_name}.html"
         filepath = output_dir / filename
         filepath.write_text(tool_html, encoding="utf-8")
