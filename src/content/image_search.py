@@ -248,45 +248,57 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
     salt = f"{today}_{post_index}_{keyword}"
     kw_hash = int(hashlib.sha256(salt.encode()).hexdigest(), 16)
 
-    # 관련 카테고리 이미지 우선 선별 (대소문자 무시)
-    matched_categories: list[str] = []
-    for term, categories in KEYWORD_CATEGORY_MAP.items():
-        if term.lower() in keyword_lower:
-            matched_categories.extend(categories)
-
     _IT_SUBCATS_SET = {"IT_laptop", "IT_audio", "IT_phone", "IT_keyboard", "IT_coding", "IT_monitor", "IT_ai", "IT_watch", "IT_gaming", "IT_general"}
 
-    # 1순위: 키워드에서 직접 매핑된 세부 카테고리 (IT 제외)
-    direct_cats = set(matched_categories) - {"IT"}
-    # IT 관련 키워드이면 다른 IT 세부 이미지를 2순위 폴백으로 사용
-    is_it_keyword = bool(_IT_SUBCATS_SET & direct_cats)
+    # 키워드 안에서 매칭 위치(pos) 기준으로 정렬 → 앞에 나온 단어가 주제어
+    matched_terms: list[tuple[int, list[str]]] = []
+    for term, categories in KEYWORD_CATEGORY_MAP.items():
+        pos = keyword_lower.find(term.lower())
+        if pos >= 0:
+            matched_terms.append((pos, categories))
+    matched_terms.sort(key=lambda x: x[0])  # 등장 위치 순 정렬
 
-    cat_imgs: list[str] = []       # 1순위: 직접 매핑 카테고리
-    it_fallback: list[str] = []    # 2순위: 다른 IT 이미지 (IT 키워드일 때)
-    other_imgs: list[str] = []     # 3순위: 무관 이미지
+    # 1순위: 가장 앞에 나온 매칭 term의 카테고리 (주제어 카테고리)
+    primary_cats: set[str] = set()
+    secondary_cats: set[str] = set()
+    for i, (pos, cats) in enumerate(matched_terms):
+        clean = [c for c in cats if c != "IT"]
+        if i == 0:
+            primary_cats.update(clean)
+        else:
+            secondary_cats.update(clean)
+    secondary_cats -= primary_cats  # 중복 제거
+
+    is_it_keyword = bool(_IT_SUBCATS_SET & (primary_cats | secondary_cats))
+
+    primary_imgs: list[str] = []    # 1순위: 주제어 카테고리 이미지
+    secondary_imgs: list[str] = []  # 2순위: 보조 카테고리 이미지
+    it_fallback: list[str] = []     # 3순위: 다른 IT 이미지 (IT 글 한정)
+    other_imgs: list[str] = []      # 4순위: 무관 이미지
 
     for fname, cat in _IMAGES:
         url = f"{_BASE}/{fname}"
-        if cat in direct_cats:
-            cat_imgs.append(url)
+        if cat in primary_cats:
+            primary_imgs.append(url)
+        elif cat in secondary_cats:
+            secondary_imgs.append(url)
         elif is_it_keyword and cat in _IT_SUBCATS_SET:
             it_fallback.append(url)
         else:
             other_imgs.append(url)
 
-    # 1순위 카테고리 이미지 순서 분산
-    cat_offset = kw_hash % max(len(cat_imgs), 1)
-    cat_shuffled = [cat_imgs[(cat_offset + j) % len(cat_imgs)] for j in range(len(cat_imgs))]
+    def _shuffle(imgs: list[str], seed_div: int) -> list[str]:
+        if not imgs:
+            return []
+        offset = (kw_hash // seed_div) % len(imgs)
+        return [imgs[(offset + j) % len(imgs)] for j in range(len(imgs))]
 
-    # 2순위 IT 폴백 이미지 순서 분산
-    it_offset = (kw_hash // 97) % max(len(it_fallback), 1)
-    it_shuffled = [it_fallback[(it_offset + j) % len(it_fallback)] for j in range(len(it_fallback))]
-
-    # 3순위 무관 이미지 순서 분산
-    other_offset = (kw_hash // 137) % max(len(other_imgs), 1)
-    other_shuffled = [other_imgs[(other_offset + j) % len(other_imgs)] for j in range(len(other_imgs))]
-
-    all_candidates = cat_shuffled + it_shuffled + other_shuffled
+    all_candidates = (
+        _shuffle(primary_imgs, 1)
+        + _shuffle(secondary_imgs, 97)
+        + _shuffle(it_fallback, 211)
+        + _shuffle(other_imgs, 137)
+    )
     # 중복 제거
     seen: set[str] = set()
     result: list[str] = []
@@ -297,7 +309,7 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
         if len(result) >= count:
             break
 
-    logger.info("이미지 매칭: '%s'(idx=%d) → 카테고리=%s, %d개 선택", keyword, post_index, matched_categories[:2], len(result))
+    logger.info("이미지 매칭: '%s'(idx=%d) → 주제=%s, 보조=%s, %d개 선택", keyword, post_index, list(primary_cats)[:2], list(secondary_cats)[:2], len(result))
     return result
 
 
