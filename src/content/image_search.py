@@ -237,11 +237,12 @@ KEYWORD_CATEGORY_MAP: dict[str, list[str]] = {
 def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) -> list[str]:
     """키워드에 맞는 중복 없는 이미지 URL 리스트를 반환한다.
 
-    날짜 + 키워드 + post_index 조합으로 매일, 포스트마다 다른 이미지 선택.
-    관련 카테고리 이미지를 우선 배치한다.
+    GPT가 키워드를 분석해 이미지 카테고리를 자동 분류.
+    캐시에 저장되어 동일 키워드는 API 호출 없이 즉시 처리.
+    날짜 + post_index 기반 해시로 매일/포스트마다 다른 이미지 선택.
     """
     from datetime import date
-    keyword_lower = keyword.lower()
+    from src.content.category_classifier import classify_keyword
 
     # 날짜 + 키워드 + post_index 해시 (같은 날 포스트마다 다른 이미지 보장)
     today = date.today().isoformat()
@@ -250,24 +251,10 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
 
     _IT_SUBCATS_SET = {"IT_laptop", "IT_audio", "IT_phone", "IT_keyboard", "IT_coding", "IT_monitor", "IT_ai", "IT_watch", "IT_gaming", "IT_general"}
 
-    # 키워드 안에서 매칭 위치(pos) 기준으로 정렬 → 앞에 나온 단어가 주제어
-    matched_terms: list[tuple[int, list[str]]] = []
-    for term, categories in KEYWORD_CATEGORY_MAP.items():
-        pos = keyword_lower.find(term.lower())
-        if pos >= 0:
-            matched_terms.append((pos, categories))
-    matched_terms.sort(key=lambda x: x[0])  # 등장 위치 순 정렬
-
-    # 1순위: 가장 앞에 나온 매칭 term의 카테고리 (주제어 카테고리)
-    primary_cats: set[str] = set()
-    secondary_cats: set[str] = set()
-    for i, (pos, cats) in enumerate(matched_terms):
-        clean = [c for c in cats if c != "IT"]
-        if i == 0:
-            primary_cats.update(clean)
-        else:
-            secondary_cats.update(clean)
-    secondary_cats -= primary_cats  # 중복 제거
+    # GPT로 카테고리 분류 (캐시 우선)
+    gpt_cats = classify_keyword(keyword)
+    primary_cats: set[str] = set(gpt_cats[:1])   # 1순위: GPT 첫 번째 카테고리
+    secondary_cats: set[str] = set(gpt_cats[1:])  # 2순위: GPT 두 번째 카테고리
 
     is_it_keyword = bool(_IT_SUBCATS_SET & (primary_cats | secondary_cats))
 
