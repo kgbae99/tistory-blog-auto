@@ -137,10 +137,12 @@ def get_images_for_keyword(keyword: str, count: int = 8) -> list[str]:
     키워드의 해시값으로 전체 풀에서 시작점을 결정하고,
     관련 카테고리 이미지를 우선 배치한 뒤 순차 선택한다.
     """
+    from datetime import date
     keyword_lower = keyword.lower()
 
-    # 키워드 해시 + 첫글자/길이로 분산 (비슷한 키워드도 완전히 다른 시작점)
-    salt = f"{keyword}_{len(keyword)}_{keyword[0] if keyword else 'x'}"
+    # 날짜 + 키워드 해시로 분산 (매일 다른 이미지 선택)
+    today = date.today().isoformat()
+    salt = f"{today}_{keyword}_{len(keyword)}_{keyword[0] if keyword else 'x'}"
     kw_hash = int(hashlib.sha256(salt.encode()).hexdigest(), 16)
     offset = kw_hash % len(_ALL_URLS)
 
