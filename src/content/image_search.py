@@ -66,8 +66,10 @@ _IMAGES: list[tuple[str, str]] = [
     # IT/테크 - 노트북 (5개)
     ("tech_01.jpg", "IT_laptop"), ("tech_02.jpg", "IT_laptop"), ("tech_03.jpg", "IT_laptop"),
     ("tech_12.jpg", "IT_laptop"), ("tech_13.jpg", "IT_laptop"),
-    # IT/테크 - 이어폰/헤드폰/오디오 (3개)
-    ("tech_06.jpg", "IT_audio"), ("tech_15.jpg", "IT_audio"), ("tech_22.jpg", "IT_audio"),
+    # IT/테크 - 이어폰/헤드폰/오디오 (2개, tech_15는 선글라스라 제외)
+    ("tech_06.jpg", "IT_audio"), ("tech_22.jpg", "IT_audio"),
+    # IT/테크 - 기타 (tech_15: 선글라스 이미지, IT_general로 분류)
+    ("tech_15.jpg", "IT_general"),
     # IT/테크 - 스마트폰 (2개)
     ("tech_07.jpg", "IT_phone"), ("tech_21.jpg", "IT_phone"),
     # IT/테크 - 키보드/마우스 (4개)
@@ -198,25 +200,39 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
         if term in keyword_lower:
             matched_categories.extend(categories)
 
-    # 카테고리 매칭 이미지와 나머지 분리
-    cat_imgs: list[str] = []
-    other_imgs: list[str] = []
+    _IT_SUBCATS_SET = {"IT_laptop", "IT_audio", "IT_phone", "IT_keyboard", "IT_coding", "IT_monitor", "IT_ai", "IT_watch", "IT_gaming", "IT_general"}
+
+    # 1순위: 키워드에서 직접 매핑된 세부 카테고리 (IT 제외)
+    direct_cats = set(matched_categories) - {"IT"}
+    # IT 관련 키워드이면 다른 IT 세부 이미지를 2순위 폴백으로 사용
+    is_it_keyword = bool(_IT_SUBCATS_SET & direct_cats)
+
+    cat_imgs: list[str] = []       # 1순위: 직접 매핑 카테고리
+    it_fallback: list[str] = []    # 2순위: 다른 IT 이미지 (IT 키워드일 때)
+    other_imgs: list[str] = []     # 3순위: 무관 이미지
+
     for fname, cat in _IMAGES:
         url = f"{_BASE}/{fname}"
-        if cat in matched_categories:
+        if cat in direct_cats:
             cat_imgs.append(url)
+        elif is_it_keyword and cat in _IT_SUBCATS_SET:
+            it_fallback.append(url)
         else:
             other_imgs.append(url)
 
-    # 카테고리 이미지 내에서 post_index로 시작점 분산
+    # 1순위 카테고리 이미지 순서 분산
     cat_offset = kw_hash % max(len(cat_imgs), 1)
     cat_shuffled = [cat_imgs[(cat_offset + j) % len(cat_imgs)] for j in range(len(cat_imgs))]
 
-    # 나머지 이미지도 다른 offset으로 분산
+    # 2순위 IT 폴백 이미지 순서 분산
+    it_offset = (kw_hash // 97) % max(len(it_fallback), 1)
+    it_shuffled = [it_fallback[(it_offset + j) % len(it_fallback)] for j in range(len(it_fallback))]
+
+    # 3순위 무관 이미지 순서 분산
     other_offset = (kw_hash // 137) % max(len(other_imgs), 1)
     other_shuffled = [other_imgs[(other_offset + j) % len(other_imgs)] for j in range(len(other_imgs))]
 
-    all_candidates = cat_shuffled + other_shuffled
+    all_candidates = cat_shuffled + it_shuffled + other_shuffled
     # 중복 제거
     seen: set[str] = set()
     result: list[str] = []
