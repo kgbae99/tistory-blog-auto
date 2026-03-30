@@ -654,7 +654,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     # GitHub 호스팅 이미지 사용 (136개 풀, used_images.json 중복 추적)
     if keyword:
         from src.content.image_search import get_images_for_keyword as _get_imgs
-        all_images = _get_imgs(keyword, count=8)
+        all_images = _get_imgs(keyword, count=8, post_index=post_index)
         header_img = all_images[0] if all_images else HEADER_IMAGES[0]
         section_images = all_images[1:] if len(all_images) > 1 else all_images
     else:

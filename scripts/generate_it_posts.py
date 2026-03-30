@@ -374,7 +374,7 @@ def search_coupang_products(keyword: str) -> list:
     return unique[:3]
 
 
-def build_full_html(data: dict, keyword: str, products: list, post_date: str) -> str:
+def build_full_html(data: dict, keyword: str, products: list, post_date: str, post_index: int = 0) -> str:
     """완성된 HTML 페이지를 조립한다."""
     title = data.get("title", keyword)
     meta_desc = data.get("meta_description", "")
@@ -385,7 +385,7 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str) ->
 
     # GitHub 호스팅 이미지 사용 (136개 풀)
     from src.content.image_search import get_images_for_keyword as _get_imgs
-    all_images = _get_imgs(keyword, count=8)
+    all_images = _get_imgs(keyword, count=8, post_index=post_index)
     header_img = all_images[0] if all_images else _pick_image(keyword, 0)
     section_img_pool = all_images[1:] if len(all_images) > 1 else all_images
 
@@ -570,7 +570,7 @@ def main():
         title = data.get("title", keyword)
 
         # HTML 생성
-        html = build_full_html(data, keyword, products, today)
+        html = build_full_html(data, keyword, products, today, post_index=i)
         safe_name = re.sub(r"[^\w가-힣]", "_", keyword)[:30]
 
         # 발행 도구 페이지만 생성 (post 파일은 불필요)

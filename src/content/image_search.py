@@ -131,49 +131,47 @@ KEYWORD_CATEGORY_MAP: dict[str, list[str]] = {
 }
 
 
-def get_images_for_keyword(keyword: str, count: int = 8) -> list[str]:
+def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) -> list[str]:
     """키워드에 맞는 중복 없는 이미지 URL 리스트를 반환한다.
 
-    키워드의 해시값으로 전체 풀에서 시작점을 결정하고,
-    관련 카테고리 이미지를 우선 배치한 뒤 순차 선택한다.
+    날짜 + 키워드 + post_index 조합으로 매일, 포스트마다 다른 이미지 선택.
+    관련 카테고리 이미지를 우선 배치한다.
     """
     from datetime import date
     keyword_lower = keyword.lower()
 
-    # 날짜 + 키워드 해시로 분산 (매일 다른 이미지 선택)
+    # 날짜 + 키워드 + post_index 해시 (같은 날 포스트마다 다른 이미지 보장)
     today = date.today().isoformat()
-    salt = f"{today}_{keyword}_{len(keyword)}_{keyword[0] if keyword else 'x'}"
+    salt = f"{today}_{post_index}_{keyword}"
     kw_hash = int(hashlib.sha256(salt.encode()).hexdigest(), 16)
-    offset = kw_hash % len(_ALL_URLS)
 
-    # 전체 풀을 offset부터 순환하여 완전히 다른 이미지 세트 생성
-    shuffled: list[str] = []
-    for j in range(len(_ALL_URLS)):
-        shuffled.append(_ALL_URLS[(offset + j) % len(_ALL_URLS)])
-
-    # 관련 카테고리 이미지를 앞으로 끌어오기 (최대 2개만)
+    # 관련 카테고리 이미지 우선 선별
     matched_categories: list[str] = []
     for term, categories in KEYWORD_CATEGORY_MAP.items():
         if term in keyword_lower:
             matched_categories.extend(categories)
 
+    # 카테고리 매칭 이미지와 나머지 분리
+    cat_imgs: list[str] = []
+    other_imgs: list[str] = []
+    for fname, cat in _IMAGES:
+        url = f"{_BASE}/{fname}"
+        if cat in matched_categories:
+            cat_imgs.append(url)
+        else:
+            other_imgs.append(url)
+
+    # 카테고리 이미지 내에서 post_index로 시작점 분산
+    cat_offset = kw_hash % max(len(cat_imgs), 1)
+    cat_shuffled = [cat_imgs[(cat_offset + j) % len(cat_imgs)] for j in range(len(cat_imgs))]
+
+    # 나머지 이미지도 다른 offset으로 분산
+    other_offset = (kw_hash // 137) % max(len(other_imgs), 1)
+    other_shuffled = [other_imgs[(other_offset + j) % len(other_imgs)] for j in range(len(other_imgs))]
+
+    all_candidates = cat_shuffled + other_shuffled
     priority: list[str] = []
     rest: list[str] = []
-    seen_cats: set[str] = set()
-
-    for img in shuffled:
-        # 이 이미지의 카테고리 찾기
-        img_cat = ""
-        for fname, cat in _IMAGES:
-            if fname in img:
-                img_cat = cat
-                break
-
-        if img_cat in matched_categories and img_cat not in seen_cats and len(priority) < 2:
-            priority.append(img)
-            seen_cats.add(img_cat)
-        else:
-            rest.append(img)
 
     all_candidates = priority + rest
     # 중복 제거
@@ -186,7 +184,7 @@ def get_images_for_keyword(keyword: str, count: int = 8) -> list[str]:
         if len(result) >= count:
             break
 
-    logger.info("이미지 매칭: '%s' → %d개 (풀: %d개, offset: %d)", keyword, len(result), len(_ALL_URLS), offset)
+    logger.info("이미지 매칭: '%s'(idx=%d) → 카테고리=%s, %d개 선택", keyword, post_index, matched_categories[:2], len(result))
     return result
 
 
