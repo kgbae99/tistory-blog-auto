@@ -1,43 +1,43 @@
 [
   {
-    "keyword": "체중 감량을 위한 간헐적 단식의 효과",
-    "title": "한 달 간헐적 단식, 몸이 달라졌다?",
+    "keyword": "춘곤증 예방을 위한 음식과 생활습관",
+    "title": "아침마다 피곤하다면? 춘곤증 바로잡기",
     "tags": [
-      "간헐적단식",
-      "체중감량",
+      "춘곤증",
+      "생활습관",
+      "혈당관리",
+      "간식추천",
+      "수면건강",
+      "사무실건강"
+    ],
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\posts\\2026-03-30\\post_1_춘곤증_예방을_위한_음식과_생활습관.html"
+  },
+  {
+    "keyword": "여름철 수분 보충을 위한 건강 음료 추천",
+    "title": "여름철 이것만 마시면 달라진다?",
+    "tags": [
+      "여름음료",
+      "수분보충",
+      "건강음료",
+      "전해질",
+      "허브티",
+      "비타민",
+      "저칼로리"
+    ],
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\posts\\2026-03-30\\post_2_여름철_수분_보충을_위한_건강_음료_.html"
+  },
+  {
+    "keyword": "비건 다이어트: 영양소 섭취 주의사항",
+    "title": "한 달 비건 다이어트, 뭐가 달라질까?",
+    "tags": [
+      "비건",
       "다이어트",
-      "건강",
-      "웰빙",
-      "영양",
+      "영양소",
+      "단백질",
+      "비타민B12",
+      "철분",
       "체중관리"
     ],
-    "file": "/home/runner/work/tistory-blog-auto/tistory-blog-auto/output/posts/2026-03-30/post_1_체중_감량을_위한_간헐적_단식의_효과.html"
-  },
-  {
-    "keyword": "여름철 피부 자외선 관리 필수 아이템",
-    "title": "여름마다 같은 고민? 자외선 관리, 이걸로 끝?",
-    "tags": [
-      "여름피부",
-      "자외선차단",
-      "스킨케어",
-      "보습",
-      "프리바이오틱스",
-      "프로바이오틱스",
-      "자외선관리"
-    ],
-    "file": "/home/runner/work/tistory-blog-auto/tistory-blog-auto/output/posts/2026-03-30/post_2_여름철_피부_자외선_관리_필수_아이템.html"
-  },
-  {
-    "keyword": "소화 건강을 위한 프로바이오틱스 활용법",
-    "title": "직접 해보고 알았다, 소화가 달라졌다",
-    "tags": [
-      "프로바이오틱스",
-      "장건강",
-      "소화",
-      "프리바이오틱스",
-      "식이요법",
-      "건강습관"
-    ],
-    "file": "/home/runner/work/tistory-blog-auto/tistory-blog-auto/output/posts/2026-03-30/post_3_소화_건강을_위한_프로바이오틱스_활용.html"
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\posts\\2026-03-30\\post_3_비건_다이어트:_영양소_섭취_주의사항.html"
   }
 ]
