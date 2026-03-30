@@ -170,10 +170,6 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
     other_shuffled = [other_imgs[(other_offset + j) % len(other_imgs)] for j in range(len(other_imgs))]
 
     all_candidates = cat_shuffled + other_shuffled
-    priority: list[str] = []
-    rest: list[str] = []
-
-    all_candidates = priority + rest
     # 중복 제거
     seen: set[str] = set()
     result: list[str] = []
