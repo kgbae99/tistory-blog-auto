@@ -63,17 +63,30 @@ _IMAGES: list[tuple[str, str]] = [
     ("medical_01.jpg", "의료"), ("medical_02.jpg", "의료"), ("medical_03.jpg", "의료"),
     # 금융/생활 (3개)
     ("money_02.jpg", "금융"), ("office_01.jpg", "사무"), ("office_02.jpg", "사무"),
-    # IT/테크 (29개)
-    ("tech_01.jpg", "IT"), ("tech_02.jpg", "IT"), ("tech_03.jpg", "IT"),
-    ("tech_04.jpg", "IT"), ("tech_05.jpg", "IT"), ("tech_06.jpg", "IT"),
-    ("tech_07.jpg", "IT"), ("tech_08.jpg", "IT"), ("tech_09.jpg", "IT"),
-    ("tech_10.jpg", "IT"), ("tech_11.jpg", "IT"), ("tech_12.jpg", "IT"),
-    ("tech_13.jpg", "IT"), ("tech_14.jpg", "IT"), ("tech_15.jpg", "IT"),
-    ("tech_17.jpg", "IT"), ("tech_18.jpg", "IT"), ("tech_19.jpg", "IT"),
-    ("tech_20.jpg", "IT"), ("tech_21.jpg", "IT"), ("tech_22.jpg", "IT"),
-    ("tech_23.jpg", "IT"), ("tech_24.jpg", "IT"), ("tech_25.jpg", "IT"),
-    ("tech_26.jpg", "IT"), ("tech_27.jpg", "IT"), ("tech_28.jpg", "IT"),
-    ("tech_29.jpg", "IT"), ("tech_30.jpg", "IT"),
+    # IT/테크 - 노트북 (5개)
+    ("tech_01.jpg", "IT_laptop"), ("tech_02.jpg", "IT_laptop"), ("tech_03.jpg", "IT_laptop"),
+    ("tech_12.jpg", "IT_laptop"), ("tech_13.jpg", "IT_laptop"),
+    # IT/테크 - 이어폰/헤드폰/오디오 (3개)
+    ("tech_06.jpg", "IT_audio"), ("tech_15.jpg", "IT_audio"), ("tech_22.jpg", "IT_audio"),
+    # IT/테크 - 스마트폰 (2개)
+    ("tech_07.jpg", "IT_phone"), ("tech_21.jpg", "IT_phone"),
+    # IT/테크 - 키보드/마우스 (4개)
+    ("tech_10.jpg", "IT_keyboard"), ("tech_14.jpg", "IT_keyboard"),
+    ("tech_19.jpg", "IT_keyboard"), ("tech_24.jpg", "IT_keyboard"),
+    # IT/테크 - 코딩/소프트웨어 (4개)
+    ("tech_08.jpg", "IT_coding"), ("tech_09.jpg", "IT_coding"),
+    ("tech_11.jpg", "IT_coding"), ("tech_23.jpg", "IT_coding"),
+    # IT/테크 - 모니터/셋업 (2개)
+    ("tech_17.jpg", "IT_monitor"), ("tech_18.jpg", "IT_monitor"),
+    # IT/테크 - AI/로봇 (4개)
+    ("tech_25.jpg", "IT_ai"), ("tech_26.jpg", "IT_ai"),
+    ("tech_27.jpg", "IT_ai"), ("tech_28.jpg", "IT_ai"),
+    # IT/테크 - 스마트워치 (1개)
+    ("tech_29.jpg", "IT_watch"),
+    # IT/테크 - 게이밍 (1개)
+    ("tech_20.jpg", "IT_gaming"),
+    # IT/테크 - 일반/하드웨어 (3개)
+    ("tech_04.jpg", "IT_general"), ("tech_05.jpg", "IT_general"), ("tech_30.jpg", "IT_general"),
 ]
 
 # 카테고리별 인덱스
@@ -84,6 +97,12 @@ for _fname, _cat in _IMAGES:
     _ALL_URLS.append(url)
     IMAGE_POOL.setdefault(_cat, []).append(url)
 IMAGE_POOL["기본"] = list(_ALL_URLS)
+
+# IT 세부 카테고리를 상위 "IT" 풀에도 포함
+_IT_SUBCATS = ["IT_laptop", "IT_audio", "IT_phone", "IT_keyboard", "IT_coding", "IT_monitor", "IT_ai", "IT_watch", "IT_gaming", "IT_general"]
+IMAGE_POOL["IT"] = []
+for _subcat in _IT_SUBCATS:
+    IMAGE_POOL["IT"].extend(IMAGE_POOL.get(_subcat, []))
 
 # 키워드 → 카테고리 매핑
 KEYWORD_CATEGORY_MAP: dict[str, list[str]] = {
@@ -97,7 +116,7 @@ KEYWORD_CATEGORY_MAP: dict[str, list[str]] = {
     "수면": ["수면", "피곤"], "숙면": ["수면", "피곤"],
     "음식": ["음식", "건강"], "면역": ["건강", "음식"],
     "관절": ["운동", "건강"], "혈압": ["건강", "음식"],
-    "당뇨": ["건강", "음식"], "간": ["건강", "음식"],
+    "당뇨": ["건강", "음식"], "간건강": ["건강", "음식"], "간기능": ["건강", "음식"],
     "해독": ["건강", "다이어트"], "봄": ["봄", "건강"],
     "여름": ["건강", "운동"], "피로": ["피곤", "건강"],
     "다리": ["운동", "건강"], "뼈": ["건강", "운동"],
@@ -114,20 +133,48 @@ KEYWORD_CATEGORY_MAP: dict[str, list[str]] = {
     "신청": ["정부지원", "사무"], "적금": ["금융", "사무"],
     "건강검진": ["의료", "건강"], "검진": ["의료", "건강"],
     "병원": ["의료", "건강"], "진료": ["의료", "건강"],
-    # IT/테크
-    "키보드": ["IT"], "마우스": ["IT"], "모니터": ["IT"],
-    "노트북": ["IT"], "컴퓨터": ["IT"], "PC": ["IT"],
-    "스마트폰": ["IT"], "폰": ["IT"], "아이폰": ["IT"],
-    "이어폰": ["IT"], "헤드폰": ["IT"], "블루투스": ["IT"],
-    "SSD": ["IT"], "하드": ["IT"], "저장": ["IT"],
-    "그래픽카드": ["IT"], "RAM": ["IT"], "메모리": ["IT"],
-    "배터리": ["IT"], "충전": ["IT"], "보조배터리": ["IT"],
-    "웹캠": ["IT"], "마이크": ["IT"], "스피커": ["IT"],
-    "태블릿": ["IT"], "아이패드": ["IT"], "갤럭시탭": ["IT"],
-    "소프트웨어": ["IT"], "앱": ["IT"], "프로그램": ["IT"],
-    "AI": ["IT"], "인공지능": ["IT"], "ChatGPT": ["IT"],
-    "크롬": ["IT"], "윈도우": ["IT"], "맥북": ["IT"],
-    "듀얼모니터": ["IT"], "스마트워치": ["IT"], "워치": ["IT"],
+    # IT/테크 - 이어폰/헤드폰/오디오
+    "이어폰": ["IT_audio", "IT"], "헤드폰": ["IT_audio", "IT"],
+    "노이즈캔슬링": ["IT_audio", "IT"], "무선이어폰": ["IT_audio", "IT"],
+    "TWS": ["IT_audio", "IT"], "에어팟": ["IT_audio", "IT"],
+    "갤럭시버즈": ["IT_audio", "IT"], "스피커": ["IT_audio", "IT"],
+    "블루투스": ["IT_audio", "IT_phone", "IT"],
+    # IT/테크 - 키보드/마우스
+    "키보드": ["IT_keyboard", "IT"], "마우스": ["IT_keyboard", "IT"],
+    "기계식": ["IT_keyboard", "IT"], "게이밍키보드": ["IT_keyboard", "IT"],
+    "무선키보드": ["IT_keyboard", "IT"], "트랙패드": ["IT_keyboard", "IT"],
+    # IT/테크 - 스마트폰/모바일
+    "스마트폰": ["IT_phone", "IT"], "아이폰": ["IT_phone", "IT"],
+    "갤럭시S": ["IT_phone", "IT"], "핸드폰": ["IT_phone", "IT"],
+    "휴대폰": ["IT_phone", "IT"], "배터리": ["IT_phone", "IT"],
+    "충전기": ["IT_phone", "IT"], "보조배터리": ["IT_phone", "IT"],
+    # IT/테크 - 노트북/컴퓨터
+    "노트북": ["IT_laptop", "IT"], "컴퓨터": ["IT_laptop", "IT"],
+    "PC": ["IT_laptop", "IT"], "맥북": ["IT_laptop", "IT"],
+    "데스크탑": ["IT_laptop", "IT"],
+    # IT/테크 - 모니터/디스플레이
+    "모니터": ["IT_monitor", "IT"], "듀얼모니터": ["IT_monitor", "IT"],
+    "디스플레이": ["IT_monitor", "IT"], "4K": ["IT_monitor", "IT"],
+    "웹캠": ["IT_monitor", "IT"], "화면": ["IT_monitor", "IT"],
+    # IT/테크 - 태블릿
+    "태블릿": ["IT_laptop", "IT_phone", "IT"], "아이패드": ["IT_laptop", "IT"],
+    "갤럭시탭": ["IT_laptop", "IT"],
+    # IT/테크 - 스마트워치/웨어러블
+    "스마트워치": ["IT_watch", "IT"], "워치": ["IT_watch", "IT"],
+    "애플워치": ["IT_watch", "IT"], "갤럭시워치": ["IT_watch", "IT"],
+    "웨어러블": ["IT_watch", "IT"],
+    # IT/테크 - 저장장치/하드웨어
+    "SSD": ["IT_general", "IT"], "하드디스크": ["IT_general", "IT"],
+    "외장하드": ["IT_general", "IT"], "그래픽카드": ["IT_general", "IT"],
+    "RAM": ["IT_general", "IT"], "마이크": ["IT_general", "IT"],
+    # IT/테크 - 소프트웨어/앱
+    "소프트웨어": ["IT_coding", "IT"], "앱": ["IT_coding", "IT"],
+    "프로그램": ["IT_coding", "IT"], "크롬": ["IT_coding", "IT"],
+    "윈도우": ["IT_coding", "IT"],
+    # IT/테크 - AI
+    "AI": ["IT_ai", "IT"], "인공지능": ["IT_ai", "IT"],
+    "ChatGPT": ["IT_ai", "IT"], "GPT": ["IT_ai", "IT"],
+    "챗봇": ["IT_ai", "IT"],
 }
 
 
