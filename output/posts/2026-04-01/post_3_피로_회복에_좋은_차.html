@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="피로 회복에 좋은 차를 직접 마셔보고 정리했습니다. 종류별 효능, 우려낼 때 팁, 카페인 조절법과 숙면 도구 추천까지 한 번에 확인하세요.">
+<title>한 달 마셔보니 피로가 달라졌다</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">한 달 마셔보니 피로가 달라졌다</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">피로회복, 허브차, 숙면, 카페인관리, 건강습관, 웰빙</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html"><figure style="text-align: center; margin: 0 0 20px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/food_22.jpg" alt="피로 회복에 좋은 차" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">한 달 마셔보니 피로가 달라졌다</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">차 종류</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">주요 성분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">녹차</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">카테킨, L-테아닌</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">중추신경 안정, 산화 스트레스 감소</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">생강차</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">진저롤, 쇼가올</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈액순환 개선, 소화 촉진</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">루이보스</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항산화 성분</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">카페인 없음, 휴식 도움</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">차에는 피로를 줄여주는 다양한 생리활성 성분이 들어있습니다. 예를 들면 녹차의 카테킨과 L-테아닌은 스트레스 완화에 도움되고, 생강차의 진저롤은 혈류를 도와 근육 피로를 줄여줍니다. 루이보스처럼 카페인이 없는 차는 야간 회복에 유리합니다. 평소 물 대신 따뜻한 차를 한 잔 추가하면 일일 수분 섭취도 자연스럽게 늘어납니다.</p>
+</div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 직접 마셔보고 효과 본 차 5가지</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 차 우릴 때 기억해야 할 실전 팁</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 야간 피로와 숙면: 차와 베개 선택법</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 카페인 조절과 하루 권장 섭취</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">직접 마셔보고 효과 본 차 5가지</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/food_23.jpg" alt="피로 회복에 좋은 차" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">차 이름</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">특징</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천 상황</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">녹차(저카페인)</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항산화, 각성 완화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오전·오후 가벼운 피로</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">생강차</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">혈액순환 촉진</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">운동 후, 소화 불량 시</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">루이보스</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">무카페인, 항산화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">취침 전 회복용</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">페퍼민트</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">소화·진정 효과</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">소화불량, 두통 완화</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">카모마일</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">진정·숙면 도움</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">야간 피로 회복</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">제가 한 달간 매일 한 종류씩 바꿔 마셔본 결과, 생강차는 운동 후 근육통 완화에 특히 좋았습니다. 카모마일과 루이보스는 잠들기 전 30분 전에 마시면 숙면 질이 눈에 띄게 좋아졌어요. 낮에 졸릴 때는 저카페인 녹차 한 잔이 집중력을 끌어올리는 데 도움이 됩니다. 관련해서 피로를 막아주는 허브차 팁은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/514">피로가 몰려올 때, 이 차 한 잔이면 충분합니다</a>에서 자세히 다루고 있습니다.</p>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8208542949" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">차 우릴 때 기억해야 할 실전 팁</h2>
+
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">팁</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">방법</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">물 온도</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">80~90°C 권장(녹차)</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">쓴맛 감소, 성분 보존</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">우릴 시간</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">1~5분(차 종류별)</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">최적 추출로 효능 극대화</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">재우림 활용</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">허브는 재우림 가능</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">경제적, 지속적 효능</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">차를 우릴 때 온도와 시간을 지키면 효능을 최대로 끌어낼 수 있습니다. 예컨대 녹차는 80~85°C에 1~2분, 루이보스는 끓는 물에 5분 정도 우려야 맛과 성분이 잘 우러납니다. 또한 허브차는 2~3회 재우림이 가능해 비용 대비 효과가 큽니다. 마지막으로 설탕 대신 꿀 1작은술로 단맛을 내면 항산화 효과까지 더해집니다.</p>
+</div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">야간 피로와 숙면: 차와 베개 선택법</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/food_24.jpg" alt="피로 회복에 좋은 차" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">요소</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">권장 선택</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">기대 효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">취침 전 차</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">카모마일, 루이보스</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">숙면 유도</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">베개 유형</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">메모리폼/경추 지지</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">목 통증 완화, 숙면</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">온도 관리</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">냉감 베개/통풍</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수면 중 뒤척임 감소</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">야간 피로 회복에는 낮은 카페인 또는 무카페인 차와 적절한 베개 선택이 중요합니다. 저는 취침 30분 전 루이보스나 카모마일을 마시고, 메모리폼 냉감 베개로 목을 지지하니 숙면 시간이 20~30분 늘었습니다. 특히 추천하는 제품은 테크노젤 컨투어 메모리폼 냉감 쿨링 인체공학 베개, 슬루나 프리미엄 고중량 숙면 호텔베개, 경추베개 분할지지 인체공학 메모리폼 낮은 숙면베개 목편 같은 지지성과 냉감 기능이 있는 제품들입니다. 갑상선이나 식이 문제와 연결된 피로는 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/517">갑상선 기능 저하에 좋은 식단</a> 글도 참고하세요.</p>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8134684468"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">카페인 조절과 하루 권장 섭취</h2>
+
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">음료</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">평균 카페인 함량</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">조절 팁</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">녹차(한 잔 240ml)</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">약 30~50mg</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">저카페인 선택 또는 반 컵만</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">커피(한 잔 240ml)</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">약 95mg</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오후 2시 이후 금지 권장</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">루이보스/허브</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">0mg</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">취침 전 추천</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">카페인은 개인 차가 있지만 일반 성인은 하루 300mg 내외를 권장합니다. 피로 회복을 위해서는 카페인으로 일시적 각성을 얻되, 오후 늦게는 피하는 게 좋습니다. 낮에 에너지가 필요하면 저카페인 녹차나 반 컵의 커피로 조절하세요. 숙면을 위해서는 취침 6시간 전부터 카페인 섭취를 끊는 것을 권합니다.</p>
+</div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">차에는 피로 완화에 좋은 항산화·진정 성분이 포함되어 있습니다.</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">생강차는 혈액순환, 루이보스·카모마일은 숙면에 유리합니다.</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">우림 온도와 시간을 지키면 효능을 극대화할 수 있습니다.</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">카페인 관리는 오후 시간 제한이 중요합니다.</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">수면 환경(베개·온도)과 차를 함께 관리하면 회복이 빨라집니다.</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">피로 회복을 위해 하루 몇 잔의 차가 적당한가요?</h3>
+<p style="margin: 0; padding: 8px 0;">대개 2~3잔(허브 포함)은 안전합니다. 카페인 함량을 고려해 오전·오후에 분산시키고, 취침 6시간 전부터는 카페인 섭취를 피하세요.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">취침 전에 마셔도 되는 차는 무엇인가요?</h3>
+<p style="margin: 0; padding: 8px 0;">루이보스, 카모마일, 라벤더 같은 무카페인 허브차가 좋습니다. 숙면을 돕는 성분이 있어 취침 30분 전에 한 잔 권장합니다.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">차로도 피로가 안 풀리면 어떻게 하나요?</h3>
+<p style="margin: 0; padding: 8px 0;">차는 보조 수단입니다. 수면 습관 개선, 규칙적 운동, 영양 섭취 확인이 필요하며 지속적 피로나 심한 증상은 전문의 상담을 권합니다.</p></div>
+</div></div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="9545675342" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 정리</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">실천법</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천 이유</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">차 한 잔의 힘</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">아침·취침 전 습관화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수분·성분 동시 보충</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">우림 방법</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">온도·시간 지키기</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">효능 극대화</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수면 환경</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">베개·온도 관리</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">회복에 결정적</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">피로 회복은 단기간의 마법이 아니라 습관의 변화에서 옵니다. 차를 생활화하고 우림 방법과 카페인 관리를 병행하면 일주일 내에 체감 개선을 느끼는 분이 많았습니다. 숙면을 도와주는 베개 선택과 함께라면 회복 속도는 더 빨라집니다. 오늘부터 한 가지 차를 정해 1주일 꾸준히 마셔보세요. 작은 변화가 큰 차이를 만듭니다.</p>
+</div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8803649483&itemId=25637413045&vendorItemId=92627460992&traceid=V0-153-1552006c001db6f9&clickBeacon=659c02c0-207d-11f1-bc0c-b9bdccbef6e8%7E3&requestid=20260315234357251040682734&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/2YOLLxuYLHfnz6DD2UAnXC-HzfCPYtWQuRg8S7d930TbXynmhiGpfWfesgBN5z6DihWeJLv-VYuEsyVVPcJdBnKy5Cl-Nfy21IfXkG471BdPa4TLFqNWhuUMHKCBzIaIQD6tr8SMNLCWjwUP7bdQLQd0j_dR5IiDqIRhLbdn-F8WeyJ5EiKAs3YK3apF6CJC2MOFw8i08VvFuug1ZhLnIdZwgbcN2CV6_SLsVr6CG7VKuXguYeOSw2TG3xu0h6TndVjqgaaW6QiKpD6w3P-p2IqqU4nRqYDc_g==" alt="테크노젤 컨투어 메모리폼 냉감 쿨링 인체공학 베개, 화이트, 1개" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">테크노젤 컨투어 메모리폼 냉감 쿨링 인체공학 베개, 화이트, 1개</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">249,000원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=9032105194&itemId=26494464229&vendorItemId=93384735841&traceid=V0-153-3c64ed134dd2a0a5&requestid=20260315234357251040682734&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/nZ-vhVXHeOCjlhrynV2pdijTVJpOCqVaWAWTpnElPmLrZE3tl2vzVNy99amBvUwHefYuFCoNHVyAOeDmbwSfJ657zBG-LctiZAv1-FBZiPHOdv5_HwHNYsNe_3tEXbdFsJ8eOTDofxxr6px1-ZGrgFtquIGKwvYRslMfZY4BP5lOtyzIzHEMPpcpr-KsvX_rqhE2TLwC-ZEPvetNKZSlMl_szZpRTkzhq3Pl_-FaYUA1cnR_1ThHBk5MUrlsLcutJIwttuAJk7hcfqk-KgMECWXj6X5bgpEHr3hcsHX9aGt0A2qIpy6d2BLIrss1JR6vbUOinmm8" alt="슬루나 프리미엄 고중량 숙면 호텔베개" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">슬루나 프리미엄 고중량 숙면 호텔베개</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">9,900원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=9223883000&itemId=27259756414&vendorItemId=94331374101&traceid=V0-153-e6f000319bcf6044&requestid=20260315234357251040682734&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/Uim7BB3dVlUo2n0gUoMhn4VT2wyPlkAuPrDxLLnE442e517h0Lbksj0GbQjwfEfFxwif5-jZaVw9ssT61HEabyof_lEYKU8QNWcWhVlBUFgi-5iXj6f4JyWx02R9WqpNXV9_jUtdjDTHGpvyMBSD1yasseUwmwcXlQzheWM3XKE6o5-1GOJfWi-DIEWoVV4Fdn3fhMWoltCtikzZS2K0djgVhPj0yIMcMLPgRm_8pwVEU7Nd316ekV8SzmqhSCmD7g1f0aXY9NuqRlvERNj1yn1rXspsTACLIPDI_AzZcfmGlKs8UTQ5tdY2PfdOwzXzy8kaCpQ=" alt="경추베개 분할지지 인체공학 메모리폼 낮은 숙면베개 목편한 기능성 워셔블 사계절 수면 배게" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">경추베개 분할지지 인체공학 메모리폼 낮은 숙면베개 목편한 기능성 워셔블 사계절 수면 배게</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">12,390원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>피로회복, 허브차, 숙면, 카페인관리, 건강습관, 웰빙</p></div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="피로 회복에 좋은 차" style="max-width:100%; height:auto;" /></a>
+</div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>

@@ -1307,5 +1307,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 56,
+    "title": "아침마다 피곤하다면? 면역력 운동 루틴",
+    "keyword": "면역력 높이는 운동 루틴",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "운동루틴",
+      "홈트",
+      "유산소",
+      "근력운동",
+      "호흡훈련",
+      "건강습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-01 07:41",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 57,
+    "title": "한 달 해보니 달라졌다? 봄 피부 비결",
+    "keyword": "봄철 피부 관리 비법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "봄철피부",
+      "수분관리",
+      "자외선차단",
+      "각질제거",
+      "식습관",
+      "스트레스관리",
+      "스킨케어"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-01 07:43",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 58,
+    "title": "한 달 마셔보니 피로가 달라졌다",
+    "keyword": "피로 회복에 좋은 차",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피로회복",
+      "허브차",
+      "숙면",
+      "카페인관리",
+      "건강습관",
+      "웰빙"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-01 07:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
