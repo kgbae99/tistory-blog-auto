@@ -3,25 +3,86 @@
 from __future__ import annotations
 
 import hashlib
+import json
+from datetime import date, timedelta
+from pathlib import Path
 
 from src.core.logger import setup_logger
 
 logger = setup_logger("image_search")
 
+_USED_FILE = Path(__file__).parent.parent.parent / "data" / "used_images.json"
+_USED_KEEP_DAYS = 60  # 60일 이내 사용 이미지는 중복으로 간주
+
+
+def _load_used_images() -> set[str]:
+    """최근 _USED_KEEP_DAYS일 내 사용된 이미지 파일명 집합 반환."""
+    if not _USED_FILE.exists():
+        return set()
+    try:
+        raw = json.loads(_USED_FILE.read_text(encoding="utf-8"))
+        # 구버전 리스트 형식 처리
+        if isinstance(raw, list):
+            return set(raw)
+        data: dict[str, list[str]] = raw
+        cutoff = (date.today() - timedelta(days=_USED_KEEP_DAYS)).isoformat()
+        used: set[str] = set()
+        for day, fnames in data.items():
+            if day >= cutoff:
+                used.update(fnames)
+        return used
+    except Exception:
+        return set()
+
+
+def _save_used_images(fnames: list[str]) -> None:
+    """오늘 날짜로 사용 이미지 기록. 오래된 항목은 자동 삭제."""
+    try:
+        data: dict[str, list[str]] = {}
+        if _USED_FILE.exists():
+            data = json.loads(_USED_FILE.read_text(encoding="utf-8"))
+        today = date.today().isoformat()
+        existing = set(data.get(today, []))
+        existing.update(fnames)
+        data[today] = sorted(existing)
+        # _USED_KEEP_DAYS보다 오래된 항목 삭제
+        cutoff = (date.today() - timedelta(days=_USED_KEEP_DAYS)).isoformat()
+        data = {k: v for k, v in data.items() if k >= cutoff}
+        _USED_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception as e:
+        logger.warning("used_images 저장 실패: %s", e)
+
 _BASE = "https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images"
 
 # 전체 이미지 풀 136개 (카테고리별 분류, 중복 없음)
 _IMAGES: list[tuple[str, str]] = [
-    # 건강 (25개)
-    ("health_01.jpg", "건강"), ("health_02.jpg", "건강"), ("health_03.jpg", "건강"),
-    ("health_04.jpg", "건강"), ("health_05.jpg", "건강"), ("health_06.jpg", "건강"),
-    ("health_07.jpg", "건강"), ("health_08.jpg", "건강"), ("health_09.jpg", "건강"),
-    ("health_10.jpg", "건강"), ("health_11.jpg", "건강"), ("health_12.jpg", "건강"),
-    ("health_13.jpg", "건강"), ("health_14.jpg", "건강"), ("health_15.jpg", "건강"),
-    ("health_16.jpg", "건강"), ("health_17.jpg", "건강"), ("health_18.jpg", "건강"),
-    ("health_19.jpg", "건강"), ("health_20.jpg", "건강"),
-    ("health_22.jpg", "건강"), ("health_23.jpg", "건강"), ("health_25.jpg", "건강"),
-    # 음식 (25개)
+    # 건강 - 운동/피트니스 실제 내용 기반 재분류
+    ("health_01.jpg", "운동"),   # 피트니스 코칭
+    ("health_02.jpg", "운동"),   # 요가 일몰 실루엣
+    ("health_07.jpg", "운동"),   # 달리기
+    ("health_09.jpg", "운동"),   # 헬스 덤벨
+    ("health_10.jpg", "운동"),   # 필라테스
+    ("health_11.jpg", "운동"),   # 요가 실루엣
+    # 건강 - 음식/식이 실제 내용 기반 재분류
+    ("health_03.jpg", "음식"),   # 채소 뷔페
+    ("health_04.jpg", "음식"),   # 샐러드 jar
+    ("health_06.jpg", "음식"),   # 채소 과일
+    ("health_13.jpg", "음식"),   # 채소 샐러드
+    ("health_22.jpg", "음식"),   # 감귤류 과일
+    # 건강 - 의료/의학 (건강 카테고리 유지)
+    ("health_05.jpg", "건강"),   # 의사 청진기
+    ("health_08.jpg", "건강"),   # 뇌 모형
+    ("health_12.jpg", "건강"),   # 수술실 의사들
+    ("health_14.jpg", "건강"),   # 수술실 공간
+    ("health_15.jpg", "건강"),   # 심장 모형
+    ("health_16.jpg", "건강"),   # 청진기 흑백
+    ("health_17.jpg", "건강"),   # 의사 청진기
+    ("health_18.jpg", "건강"),   # 뇌 모형
+    ("health_19.jpg", "건강"),   # 의사 스마트폰
+    ("health_20.jpg", "건강"),   # 수술실
+    ("health_23.jpg", "건강"),   # 엑스레이
+    ("health_25.jpg", "사무"),   # 컨퍼런스 청중
+    # 음식 (24개)
     ("food_01.jpg", "음식"), ("food_02.jpg", "음식"), ("food_03.jpg", "음식"),
     ("food_04.jpg", "음식"), ("food_05.jpg", "음식"), ("food_06.jpg", "음식"),
     ("food_07.jpg", "음식"), ("food_08.jpg", "음식"), ("food_09.jpg", "음식"),
@@ -286,17 +347,38 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
         + _shuffle(it_fallback, 211)
         + _shuffle(other_imgs, 137)
     )
-    # 중복 제거
+
+    # cross-post 중복 방지: 최근 사용 이미지 제외
+    recently_used = _load_used_images()
+
+    # 중복 제거 (포스트 내 중복 + cross-post 중복 방지)
     seen: set[str] = set()
     result: list[str] = []
+    fallback: list[str] = []  # 새 이미지 부족 시 최근 사용 이미지로 보충
+
     for img in all_candidates:
-        if img not in seen:
-            seen.add(img)
+        if img in seen:
+            continue
+        seen.add(img)
+        fname = img.split("/")[-1]
+        if fname not in recently_used:
             result.append(img)
+        else:
+            fallback.append(img)
         if len(result) >= count:
             break
 
-    logger.info("이미지 매칭: '%s'(idx=%d) → 주제=%s, 보조=%s, %d개 선택", keyword, post_index, list(primary_cats)[:2], list(secondary_cats)[:2], len(result))
+    # 새 이미지가 부족하면 최근 사용 이미지로 보충
+    if len(result) < count:
+        for img in fallback:
+            result.append(img)
+            if len(result) >= count:
+                break
+
+    # 선택된 이미지를 사용 기록에 저장
+    _save_used_images([img.split("/")[-1] for img in result])
+
+    logger.info("이미지 매칭: '%s'(idx=%d) → 주제=%s, %d개 선택 (재사용 %d개)", keyword, post_index, list(primary_cats), len(result), max(0, len(result) - (len(result) - len(fallback[:max(0,count-len(result))]))))
     return result
 
 

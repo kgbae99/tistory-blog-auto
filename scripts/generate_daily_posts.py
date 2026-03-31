@@ -654,7 +654,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     # GitHub 호스팅 이미지 사용 (136개 풀, used_images.json 중복 추적)
     if keyword:
         from src.content.image_search import get_images_for_keyword as _get_imgs
-        all_images = _get_imgs(keyword, count=8, post_index=post_index)
+        all_images = _get_imgs(keyword, count=4, post_index=post_index)
         header_img = all_images[0] if all_images else HEADER_IMAGES[0]
         section_images = all_images[1:] if len(all_images) > 1 else all_images
     else:
@@ -701,10 +701,14 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     for i, section in enumerate(sections[1:], 1):
         if section["heading"] == "마무리":
             continue
-        img = section_images[(i - 1) % len(section_images)]
+        # 홀수 섹션(1,3,5...)에만 이미지 삽입 → 포스트당 이미지 3장(섹션용)
+        img_html = ""
+        if i % 2 == 1 and section_images:
+            img_idx = (i // 2) % len(section_images)
+            img_html = f'<figure style="text-align: center; margin: 15px 0;"><img src="{section_images[img_idx]}" alt="{img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>'
         parts.append(f"""<div id="sec{i}" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">{section["heading"]}</h2>
-<figure style="text-align: center; margin: 15px 0;"><img src="{img}" alt="{img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+{img_html}
 {section["content"]}
 </div>""")
 

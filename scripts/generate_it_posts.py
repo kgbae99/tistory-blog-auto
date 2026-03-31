@@ -385,21 +385,24 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
 
     # GitHub 호스팅 이미지 사용 (136개 풀)
     from src.content.image_search import get_images_for_keyword as _get_imgs
-    all_images = _get_imgs(keyword, count=8, post_index=post_index)
+    all_images = _get_imgs(keyword, count=4, post_index=post_index)
     header_img = all_images[0] if all_images else _pick_image(keyword, 0)
     section_img_pool = all_images[1:] if len(all_images) > 1 else all_images
 
-    # 섹션 HTML
+    # 섹션 HTML - 홀수 섹션(1,3,5...)에만 이미지 삽입
     sections_html = ""
     for i, sec in enumerate(sections):
         heading = sec.get("heading", "")
         content = sec.get("content", "")
-        img = section_img_pool[i % len(section_img_pool)] if section_img_pool else _pick_image(keyword, i + 1)
+        # 짝수 인덱스(0,2,4) = 1,3,5번째 섹션에만 이미지
+        if i % 2 == 0 and section_img_pool:
+            img = section_img_pool[(i // 2) % len(section_img_pool)]
+            img_html = f'<div style="text-align: center; margin: 15px 0;"><img src="{img}" alt="{heading}" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" /></div>'
+        else:
+            img_html = ""
         sections_html += f"""
 <h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">{heading}</h2>
-<div style="text-align: center; margin: 15px 0;">
-<img src="{img}" alt="{heading}" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" />
-</div>
+{img_html}
 {content}
 """
 
