@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="민감하고 예민한 피부를 진정시키는 아이템과 사용법을 친절히 정리합니다. 성분별 추천, 숙면과의 연관성(베개 추천 포함), 간단 레시피까지 실용적으로 안내해 드려요.">
+<title>한 달 사용해보니 피부가 달라졌어요</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;background:#f0f2f5;color:#333}
+.tool-panel{position:sticky;top:0;z-index:1000;background:#2c3e50;color:#fff;padding:20px 30px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.tool-panel h2{font-size:18px;margin-bottom:15px;color:#FFB6C1}
+.field-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.field-label{min-width:70px;font-weight:bold;font-size:13px;color:#FFE4E8}
+.field-value{flex:1;background:#34495e;color:#fff;padding:10px 14px;border-radius:6px;font-size:14px;border:1px solid #4a6274;user-select:all}
+.copy-btn{padding:8px 16px;border:none;border-radius:6px;font-size:13px;font-weight:bold;cursor:pointer;transition:all 0.2s}
+.btn-small{background:#FFB6C1;color:#2c3e50}.btn-small:hover{background:#FF9EAE}
+.btn-html{background:linear-gradient(135deg,#e44d26,#f16529);color:#fff;padding:12px 30px;font-size:15px}
+.btn-row{display:flex;gap:10px;align-items:center;margin-top:5px}
+.copy-toast{display:none;background:#27ae60;color:#fff;padding:6px 14px;border-radius:4px;font-size:13px}
+.copy-toast.show{display:inline-block}
+.preview-area{max-width:760px;margin:30px auto;padding:0 20px}
+.preview-label{text-align:center;color:#999;font-size:13px;margin-bottom:15px;padding:8px;border:1px dashed #ccc;border-radius:6px}
+</style></head><body>
+<div class="tool-panel">
+<h2>티스토리 발행 도구</h2>
+<div class="field-row"><span class="field-label">제목</span><div class="field-value" id="t">한 달 사용해보니 피부가 달라졌어요</div><button class="copy-btn btn-small" onclick="c('t',this)">복사</button></div>
+<div class="field-row"><span class="field-label">카테고리</span><div class="field-value" id="cat">건강 &amp; 웰빙</div><button class="copy-btn btn-small" onclick="c('cat',this)">복사</button></div>
+<div class="field-row"><span class="field-label">태그</span><div class="field-value" id="tag">피부진정, 진정템, 민감성케어, 숙면, 쿨링마스크, 알로에, 세라마이드</div><button class="copy-btn btn-small" onclick="c('tag',this)">복사</button></div>
+<div class="btn-row"><button class="copy-btn btn-html" onclick="ch(this)">HTML 전체 복사 (티스토리 붙여넣기용)</button><span class="copy-toast" id="toast">복사 완료!</span></div>
+</div>
+<div class="preview-area">
+<div class="preview-label">아래는 미리보기입니다. 위 버튼으로 복사 후 티스토리 HTML 모드에 붙여넣으세요.<br/><strong>💡 이미지 교체 팁:</strong> 발행 후 각 이미지를 클릭 → 삭제 → 같은 위치에 원하는 이미지를 드래그&드롭으로 업로드하면 티스토리 첨부파일로 등록됩니다.</div>
+<div id="blog-html"><figure style="text-align: center; margin: 0 0 20px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/tech_06.jpg" alt="진정 효과 좋은 피부 진정 아이템" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h1 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">한 달 사용해보니 피부가 달라졌어요</h1>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">민감성 피부</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">외부 자극에 붉어짐과 가려움 발생</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">진정 성분 제품 우선 사용</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">트러블 후 붉음</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">회복 속도 느릴 때 진정 집중</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">재생 촉진 제품 병행</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수면 부족형 악화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">밤샘·스트레스로 피부장벽 약화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">숙면 유도 제품 추천</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">피부 진정은 단순히 붉음을 가리는 것이 아니라 피부 장벽을 회복시키고 염증을 낮추는 과정입니다. 붉음과 작열감은 장기화되면 색소침착이나 민감성 악화로 이어질 수 있어요. 따라서 자극이 있을 때는 즉시 진정 중심의 관리가 필요합니다. 다음 섹션부터는 성분별, 아이템별로 실용적인 팁을 드립니다.</p>
+<ul style="color:#333; line-height:1.8;"><li>우선 자극을 멈추는 것이 최우선</li><li>보습과 재생을 동시에 고려</li><li>생활 습관(수면, 식사)도 점검</li></ul>
+</div>
+</div>
+<div style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1; margin-top: 20px;">
+<h3 style="color: #2c3e50;">목차</h3>
+<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec1">1. 진정에 좋은 핵심 성분과 특징</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec2">2. 즉각 진정 아이템 추천과 사용 팁</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec3">3. 생활 습관으로 돕는 진정법</a></p><p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec4">4. 집에서 하는 간단 진정 레시피</a></p>
+</div>
+</div>
+
+<div id="sec1" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">진정에 좋은 핵심 성분과 특징</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/tech_22.jpg" alt="진정 효과 좋은 피부 진정 아이템" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">센텔라아시아티카(병풀)</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항염·재생 촉진에 효과적</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">트러블 후 붉음 완화 추천</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알로에베라</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수분 공급과 진정 작용</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가벼운 화상·자극에 추천</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">판테놀(비타민 B5)</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">피부 재생과 보습 유지</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장기적 진정 케어에 유용</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">진정 성분은 목적에 따라 선택해야 합니다. 즉시 붉음 완화가 목적이면 병풀·카모마일, 보습 중심이면 판테놀·세라마이드가 더 효과적입니다. 성분 표기의 함량과 함께 자극성(향료, 알코올 유무)을 확인하세요. 아침·저녁 루틴에서 가벼운 제품부터 적용해 피부 반응을 체크하는 것이 중요합니다.</p>
+<ul style="color:#333; line-height:1.8;"><li>민감하면 무향·무알콜 제품 우선</li><li>성분 순서 상단에 진정 성분이 있는지 확인</li><li>패치 테스트 권장(48시간)</li></ul>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8208542949" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec2" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">즉각 진정 아이템 추천과 사용 팁</h2>
+
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">쿨링 시트마스크</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">즉각 온도 감소로 붉음 완화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">열감 있는 피부에 유용</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">저자극 수딩젤</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수분 공급과 진정 동시 수행</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">민감 피부 일상 케어 추천</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">세라마이드 크림</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장벽 강화로 재발 방지</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장기적 관리에 효과적</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">즉각 진정은 쿨링 제품과 보습의 조합이 핵심입니다. 시트마스크는 10~15분 사용으로 열감을 빠르게 내려주고, 이후 수딩젤로 수분을 채우세요. 밤에는 장벽 회복을 위해 세라마이드 크림을 바르는 것이 좋습니다. 수면 환경도 중요하니 숙면에 도움되는 베개를 함께 고려해보세요.</p>
+<ul style="color:#333; line-height:1.8;"><li>단기 진정: 쿨링 시트마스크 10~15분</li><li>중기 보습: 판테놀·세라마이드 크림</li><li>숙면 보조: 쿨링 베개 사용 권장</li></ul>
+<p style="color:#333; line-height:1.8;">특히 수면 중 과도한 열과 땀은 피부 자극을 유발하므로 테크노젤 컨투어 메모리폼 냉감 쿨링 인체공학 베개나 슬루나 프리미엄 고중량 숙면 호텔베개, 경추베개 분할지지 인체공학 메모리폼 낮은 숙면베개 목편 같은 냉감·지지력 있는 제품이 도움이 될 수 있습니다.</p>
+</div>
+</div>
+
+<div id="sec3" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">생활 습관으로 돕는 진정법</h2>
+<figure style="text-align: center; margin: 15px 0;"><img src="https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images/tech_18.jpg" alt="진정 효과 좋은 피부 진정 아이템" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수면 패턴</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">충분한 수면은 피부 재생에 필수</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">취침 7~8시간 권장</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">식습관</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">과도한 자극성 음식은 피함</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항염 식단 도움</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">실내 환경</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">습도·온도 관리로 자극 최소화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가습기·냉방 조절 권장</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">피부 진정은 바르는 것만으로 완성되지 않습니다. 규칙적인 수면과 저자극 식단, 적절한 실내 습도 관리가 병행돼야 회복 속도가 빨라집니다. 만약 소화 불량이나 속 쓰림으로 밤에 제대로 못 주무신다면 생활 식단도 점검해 보세요. 관련 도움글은 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/515">속 쓰림 완화에 효과적인 음식은?</a>를 참고하시면 좋습니다.</p>
+<ul style="color:#333; line-height:1.8;"><li>취침 전 카페인·과음 금지</li><li>저녁에는 자극적 양념 피하기</li><li>실내 습도 40~60% 유지 권장</li></ul>
+</div>
+</div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5391209329273834" data-ad-slot="8134684468"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div id="sec4" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">집에서 하는 간단 진정 레시피</h2>
+
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알로에 수딩 팩</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">알로에 겔 1큰술 + 물 1큰술</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">즉각 수분·진정</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">오트밀 진정 팩</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">미세 오트밀 1큰술 + 미지근한 물</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">가려움 완화에 도움</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">저자극 하이드로겔</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">시판 쿨링 패치 즉시 적용</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">간편한 응급 처치</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">간단한 가정용 레시피로 즉각 진정을 도와줄 수 있습니다. 예를 들어 알로에 겔은 냉장 보관 후 10~15분 정도 팩으로 사용하면 쿨링감과 수분을 동시에 제공합니다. 오트밀은 피부 장벽에 순하게 작용해 가려움을 줄여줍니다. DIY 사용 시에는 항상 소량으로 패치 테스트를 하시고, 반응 없을 때 얼굴 전체에 적용하세요.</p>
+<ul style="color:#333; line-height:1.8;"><li>알로에는 냉장 보관해 사용</li><li>오트밀은 가루형 사용 권장</li><li>민감하면 5~10분으로 시작</li></ul>
+</div>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">핵심 요약</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+<div style="width: 250px; background-color: #ffebee; padding: 20px; border-radius: 8px; border-left: 4px solid #FFCDD2;"><p style="font-weight: bold; margin: 0;">즉각 진정은 쿨링+보습 조합이 핵심</p></div>
+<div style="width: 250px; background-color: #fce4ec; padding: 20px; border-radius: 8px; border-left: 4px solid #F8BBD0;"><p style="font-weight: bold; margin: 0;">센텔라·알로에·판테놀 성분을 우선 확인</p></div>
+<div style="width: 250px; background-color: #f3e5f5; padding: 20px; border-radius: 8px; border-left: 4px solid #E1BEE7;"><p style="font-weight: bold; margin: 0;">수면·식단·실내환경이 피부 회복에 영향</p></div>
+<div style="width: 250px; background-color: #e1f5fe; padding: 20px; border-radius: 8px; border-left: 4px solid #B3E5FC;"><p style="font-weight: bold; margin: 0;">간단 DIY 팩으로 응급 진정 가능</p></div>
+<div style="width: 250px; background-color: #e8f5e9; padding: 20px; border-radius: 8px; border-left: 4px solid #C8E6C9;"><p style="font-weight: bold; margin: 0;">냉감 베개 등 숙면 보조도 피부 진정에 도움</p></div>
+</div></div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 10px 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 8px;">자주 묻는 질문</h2>
+<div style="padding: 10px; margin-top: 20px;">
+<div style="background: #FAE3E3; padding: 15px; border-radius: 8px; border-left: 4px solid #FFB3B3; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">민감한 피부에 먼저 써봐야 할 제품은 무엇인가요?</h3>
+<p style="margin: 0; padding: 8px 0;">무향·무알콜의 저자극 수딩젤이나 판테놀, 세라마이드 함유 제품을 소량으로 패치 테스트 후 사용하세요.</p></div>
+<div style="background: #FDE2E2; padding: 15px; border-radius: 8px; border-left: 4px solid #FF9999; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">진정 효과는 얼마나 빨리 느낄 수 있나요?</h3>
+<p style="margin: 0; padding: 8px 0;">쿨링 시트마스크는 10~15분 내 즉각적 온도 감소와 붉음 완화를 느낄 수 있고, 장벽 회복은 최소 2~4주 꾸준한 관리가 필요합니다.</p></div>
+<div style="background: #FCE5E5; padding: 15px; border-radius: 8px; border-left: 4px solid #FF8080; margin-bottom: 10px;">
+<h3 style="font-size: 17px;">숙면용 베개가 피부 진정에 정말 도움이 되나요?</h3>
+<p style="margin: 0; padding: 8px 0;">네. 과도한 열과 땀이 피부 자극을 유발하므로 냉감·지지력 있는 베개 사용(예: 메모리폼 냉감 베개 등)은 간접적으로 피부 진정에 도움됩니다.</p></div>
+</div></div>
+
+<div style="margin: 25px 0; text-align: center; clear: both;">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391209329273834" data-ad-slot="9545675342" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<div class="table-section" style="margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">핵심 내용</th>
+<th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">추천/효과</th>
+</tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">즉각 진정</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">쿨링 마스크·패치로 빠른 완화</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">열감 감소</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">장기 관리</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">보습·장벽 강화 중심 루틴</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">재발 방지</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">생활 습관</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">수면·식단·실내 환경 관리</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">피부 회복 촉진</td></tr>
+</tbody></table></div>
+
+<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">피부 진정은 단기 처치와 장기 관리가 함께할 때 가장 효과적입니다. 제품 선택은 성분을 우선으로 하고, 생활 습관(수면·식사·실내환경)을 병행하면 빠른 회복을 기대할 수 있어요. 만약 갑상선이나 내과적 문제가 피부 반응에 영향을 줄 수 있다고 느끼시면 <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/517">갑상선 기능 저하에 좋은 식단</a> 같은 정보를 참고해 보세요. 궁금한 점은 댓글로 남겨주시면 답변해 드릴게요.</p>
+<ul style="color:#333; line-height:1.8;"><li>작은 변화부터 꾸준히 적용하세요</li><li>심하면 전문의 상담 권장</li><li>베개·수면 환경도 진정의 일부입니다</li></ul>
+</div>
+</div>
+<p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
+</div>
+
+<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
+<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8803649483&itemId=25637413045&vendorItemId=92627460992&traceid=V0-153-1552006c001db6f9&clickBeacon=659c02c0-207d-11f1-bc0c-b9bdccbef6e8%7E3&requestid=20260315234357251040682734&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/2YOLLxuYLHfnz6DD2UAnXC-HzfCPYtWQuRg8S7d930TbXynmhiGpfWfesgBN5z6DihWeJLv-VYuEsyVVPcJdBnKy5Cl-Nfy21IfXkG471BdPa4TLFqNWhuUMHKCBzIaIQD6tr8SMNLCWjwUP7bdQLQd0j_dR5IiDqIRhLbdn-F8WeyJ5EiKAs3YK3apF6CJC2MOFw8i08VvFuug1ZhLnIdZwgbcN2CV6_SLsVr6CG7VKuXguYeOSw2TG3xu0h6TndVjqgaaW6QiKpD6w3P-p2IqqU4nRqYDc_g==" alt="테크노젤 컨투어 메모리폼 냉감 쿨링 인체공학 베개, 화이트, 1개" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">테크노젤 컨투어 메모리폼 냉감 쿨링 인체공학 베개, 화이트, 1개</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">249,000원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=9032105194&itemId=26494464229&vendorItemId=93384735841&traceid=V0-153-3c64ed134dd2a0a5&requestid=20260315234357251040682734&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/nZ-vhVXHeOCjlhrynV2pdijTVJpOCqVaWAWTpnElPmLrZE3tl2vzVNy99amBvUwHefYuFCoNHVyAOeDmbwSfJ657zBG-LctiZAv1-FBZiPHOdv5_HwHNYsNe_3tEXbdFsJ8eOTDofxxr6px1-ZGrgFtquIGKwvYRslMfZY4BP5lOtyzIzHEMPpcpr-KsvX_rqhE2TLwC-ZEPvetNKZSlMl_szZpRTkzhq3Pl_-FaYUA1cnR_1ThHBk5MUrlsLcutJIwttuAJk7hcfqk-KgMECWXj6X5bgpEHr3hcsHX9aGt0A2qIpy6d2BLIrss1JR6vbUOinmm8" alt="슬루나 프리미엄 고중량 숙면 호텔베개" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">슬루나 프리미엄 고중량 숙면 호텔베개</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">9,900원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
+<a href="https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=9223883000&itemId=27259756414&vendorItemId=94331374101&traceid=V0-153-e6f000319bcf6044&requestid=20260315234357251040682734&token=31850C%7CMIXED&landing_exp=APP_LANDING_A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
+<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+<img src="https://ads-partners.coupang.com/image1/Uim7BB3dVlUo2n0gUoMhn4VT2wyPlkAuPrDxLLnE442e517h0Lbksj0GbQjwfEfFxwif5-jZaVw9ssT61HEabyof_lEYKU8QNWcWhVlBUFgi-5iXj6f4JyWx02R9WqpNXV9_jUtdjDTHGpvyMBSD1yasseUwmwcXlQzheWM3XKE6o5-1GOJfWi-DIEWoVV4Fdn3fhMWoltCtikzZS2K0djgVhPj0yIMcMLPgRm_8pwVEU7Nd316ekV8SzmqhSCmD7g1f0aXY9NuqRlvERNj1yn1rXspsTACLIPDI_AzZcfmGlKs8UTQ5tdY2PfdOwzXzy8kaCpQ=" alt="경추베개 분할지지 인체공학 메모리폼 낮은 숙면베개 목편한 기능성 워셔블 사계절 수면 배게" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />
+<div style="flex: 1; min-width: 200px;">
+<p style="font-size: 17px; font-weight: bold; color: #2c3e50; margin: 0 0 8px 0;">경추베개 분할지지 인체공학 메모리폼 낮은 숙면베개 목편한 기능성 워셔블 사계절 수면 배게</p>
+<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">12,390원</p>
+<p style="font-size: 13px; color: #888; margin: 0 0 10px 0;">🚀 로켓배송</p>
+<span style="display: inline-block; padding: 8px 24px; background: #e44d26; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
+</div></div></a></div>
+<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>
+
+<div style="margin-bottom: 30px;"><p>피부진정, 진정템, 민감성케어, 숙면, 쿨링마스크, 알로에, 세라마이드</p></div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;">
+<a href="https://link.coupang.com/a/d4YwkD" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/882911?subId=&traceId=V0-301-879dd1202e5c73b2-I882911&w=728&h=90" alt="진정 효과 좋은 피부 진정 아이템" style="max-width:100%; height:auto;" /></a>
+</div></div>
+</div>
+<script>
+function c(id,btn){navigator.clipboard.writeText(document.getElementById(id).innerText).then(()=>{const o=btn.innerText;btn.innerText='완료!';btn.style.background='#27ae60';btn.style.color='#fff';setTimeout(()=>{btn.innerText=o;btn.style.background='';btn.style.color=''},1500)})}
+function ch(btn){navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'},2000)})}
+</script></body></html>
