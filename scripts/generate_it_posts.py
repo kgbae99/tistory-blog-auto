@@ -514,17 +514,37 @@ def search_coupang_products(keyword: str) -> list:
     if not results:
         IT_CACHE = {
             "이어폰": [
-                {"productName": "삼성 갤럭시 버즈3 프로", "productPrice": 259000,
+                {"productName": "1MORE 피스톤 피트 인이어 이어폰", "productPrice": 29000,
                  "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog",
                  "productImage": ""},
             ],
             "키보드": [
-                {"productName": "로지텍 MX Keys S 무선 키보드", "productPrice": 139000,
+                {"productName": "앱코 K640 유선 기계식 키보드 청축", "productPrice": 39000,
                  "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog",
                  "productImage": ""},
             ],
             "노트북": [
-                {"productName": "LG 그램 17인치 2026", "productPrice": 1890000,
+                {"productName": "삼성 갤럭시북 고3 15인치 i5", "productPrice": 890000,
+                 "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog",
+                 "productImage": ""},
+            ],
+            "마우스": [
+                {"productName": "로지텍 M220 무선 마우스", "productPrice": 29000,
+                 "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog",
+                 "productImage": ""},
+            ],
+            "모니터": [
+                {"productName": "삼성 24인치 FHD 모니터 S24R350", "productPrice": 149000,
+                 "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog",
+                 "productImage": ""},
+            ],
+            "헤드셋": [
+                {"productName": "소니 WH-CH520 무선 헤드폰", "productPrice": 49000,
+                 "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog",
+                 "productImage": ""},
+            ],
+            "미니PC": [
+                {"productName": "인텔 NUC 미니PC i3", "productPrice": 99000,
                  "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog",
                  "productImage": ""},
             ],
@@ -534,9 +554,22 @@ def search_coupang_products(keyword: str) -> list:
                 return prods
         return list(IT_CACHE.values())[hash(keyword) % len(IT_CACHE)]
 
+    # 가격 상한 150,000원 필터 후 오름차순 정렬
+    MAX_IT_PRICE = 150_000
+    affordable = sorted(
+        [p for p in results if 0 < int(p.get("productPrice", 0)) <= MAX_IT_PRICE],
+        key=lambda p: int(p.get("productPrice", 0)),
+    )
+    # 상한 내 상품 없으면 전체에서 가장 저렴한 순
+    if not affordable:
+        affordable = sorted(
+            [p for p in results if int(p.get("productPrice", 0)) > 0],
+            key=lambda p: int(p.get("productPrice", 0)),
+        )
+
     seen = set()
     unique = []
-    for p in results:
+    for p in affordable:
         name = p.get("productName", "")
         if name not in seen:
             seen.add(name)

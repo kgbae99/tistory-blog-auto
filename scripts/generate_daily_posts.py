@@ -560,10 +560,23 @@ def search_coupang_products(keyword: str) -> list:
         if not cache:
             return []
 
+        MAX_CACHE_PRICE = 50_000  # 캐시 상품 가격 상한 (건강/영양제 기준)
+
         def _pick_from_cache(candidates: list) -> list:
-            """캐시 상품 목록에서 세션 내 중복 제거 후 반환."""
+            """캐시 상품 목록에서 가격 상한 + 세션 내 중복 제거 후 반환."""
+            # 가격 오름차순 정렬 후 상한 필터
+            affordable = sorted(
+                [p for p in candidates if 0 < (p.get("productPrice") or p.get("product_price") or 0) <= MAX_CACHE_PRICE],
+                key=lambda p: p.get("productPrice") or p.get("product_price") or 0,
+            )
+            # 가격 필터 통과 상품 없으면 전체에서 가장 저렴한 순으로 시도
+            if not affordable:
+                affordable = sorted(
+                    [p for p in candidates if (p.get("productPrice") or p.get("product_price") or 0) > 0],
+                    key=lambda p: p.get("productPrice") or p.get("product_price") or 0,
+                )
             result = []
-            for p_data in candidates:
+            for p_data in affordable:
                 # 캐시는 camelCase, Product 객체는 snake_case
                 pid = str(p_data.get("productId") or p_data.get("product_id") or "")
                 pname = str(p_data.get("productName") or p_data.get("product_name") or "")

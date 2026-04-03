@@ -83,36 +83,34 @@ def _is_duplicate(new_product: Product, selected: list[Product], threshold: floa
     return False
 
 
+MAX_PRICE_HEALTH = 50_000   # 건강/영양제 최대 가격
+MAX_PRICE_IT     = 150_000  # IT 제품 최대 가격
+
+
 def search_and_filter(
     client: CoupangAPIClient,
     keyword: str,
     count: int = 3,
+    max_price: int = MAX_PRICE_HEALTH,
 ) -> list[Product]:
-    """키워드로 상품을 검색하고 중복 없는 상위 상품을 반환한다."""
-    raw_products = client.search_products(keyword, limit=count * 5)
+    """키워드로 상품을 검색하고 중복 없는 저가 상품을 반환한다."""
+    raw_products = client.search_products(keyword, limit=count * 10)
 
     products = [Product.from_api_response(p) for p in raw_products]
 
-    # 로켓배송 우선, rank 순 정렬
-    products.sort(key=lambda p: (not p.is_rocket, p.rank))
+    # 가격 상한 필터 (0원 제품 제외)
+    products = [p for p in products if 0 < p.product_price <= max_price]
 
-    # 중복 제거 + 가격대 다양화
+    # 로켓배송 우선, 가격 오름차순 정렬
+    products.sort(key=lambda p: (not p.is_rocket, p.product_price))
+
+    # 중복 제거
     unique: list[Product] = []
     for p in products:
         if not _is_duplicate(p, unique):
             unique.append(p)
 
-    # 가격대 다양화: 저가/중가/고가 선택
-    if len(unique) >= count:
-        unique.sort(key=lambda p: p.product_price)
-        step = max(1, len(unique) // count)
-        selected = [
-            unique[i * step]
-            for i in range(count)
-            if i * step < len(unique)
-        ]
-    else:
-        selected = unique[:count]
+    selected = unique[:count]
 
     logger.info(
         "검색 '%s': %d개 → 중복제거 %d개 → %d개 선택",
