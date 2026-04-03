@@ -920,7 +920,13 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     for i, section in enumerate(sections[1:], 1):
         if section["heading"] == "마무리":
             continue
-        # 지정된 섹션(핵심설명/경험)에만 이미지 삽입 — URL·alt 중복 없음
+
+        # 섹션 content에서 GPT가 삽입한 이미지 전체 제거 (시스템이 _pick_section_images로 직접 삽입)
+        content = section.get("content", "")
+        content = re.sub(r'<figure[^>]*>[\s\S]*?</figure>', '', content)
+        content = re.sub(r'<img\s[^>]*/?>',  '', content)
+
+        # 지정된 섹션(핵심설명/경험)에만 시스템 이미지 삽입 — URL·alt 중복 없음
         img_html = ""
         if i in section_img_map:
             sec_img_url, sec_img_alt = section_img_map[i]
@@ -928,7 +934,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
         parts.append(f"""<div id="sec{i}" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">{section["heading"]}</h2>
 {img_html}
-{section["content"]}
+{content}
 </div>""")
 
         # 광고: 문제 인식 직후(2번째 섹션), 해결 방법 직후(4번째 섹션)
@@ -992,10 +998,10 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     result = "\n\n".join(parts)
 
-    # 후처리 1: GPT가 섹션 content 안에 삽입한 <img> 태그 제거
-    # (GitHub 호스팅 외 경로 이미지 → 이미지 규칙 위반, 깨진 경로)
+    # 후처리 1: 섹션 content 루프에서 이미 제거했으므로, 혹시 남은 외부 이미지만 제거
+    # (쿠팡 배너/광고 이미지는 ads-partners.coupang.com 도메인이므로 보존)
     result = re.sub(
-        r'<img\s[^>]*src="(?!https://raw\.githubusercontent\.com/kgbae99/tistory-blog-auto)[^"]*"[^>]*/?>',
+        r'<img\s[^>]*src="(?!https://raw\.githubusercontent\.com/kgbae99/tistory-blog-auto)(?!https://ads-partners\.coupang\.com)[^"]*"[^>]*/?>',
         '',
         result
     )
