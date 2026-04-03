@@ -785,19 +785,79 @@ def build_ad_block(adsense_html: str, product, context_type: str = "problem") ->
 </div>"""
 
 
+def _pick_section_images(keyword: str, post_index: int, sections: list) -> dict[int, tuple[str, str]]:
+    """섹션 인덱스 → (이미지URL, alt텍스트) 매핑 반환.
+
+    규칙:
+    - 최대 3개 (기본 2개: 헤더 + 핵심 설명 섹션)
+    - 삽입 위치: 헤더(도입부), 핵심 설명(2번째 섹션), 경험/사례 섹션(5번째 섹션)
+    - URL·파일명 중복 없음, alt 텍스트 모두 다르게
+    - 글 흐름 우선 → 이미지 없어도 자연스러우면 생략
+    """
+    from src.content.image_search import get_images_for_keyword as _get_imgs
+
+    # 이미지 3개 요청 → URL/파일명 중복 제거
+    raw = _get_imgs(keyword, count=3, post_index=post_index)
+    seen_urls: set[str] = set()
+    seen_fnames: set[str] = set()
+    unique: list[str] = []
+    for url in raw:
+        fname = url.split("/")[-1]
+        if url not in seen_urls and fname not in seen_fnames:
+            seen_urls.add(url)
+            seen_fnames.add(fname)
+            unique.append(url)
+        if len(unique) >= 3:
+            break
+
+    # 섹션별 alt 텍스트 생성 (섹션 제목 기반, 모두 다르게)
+    def _alt(section_heading: str, context: str) -> str:
+        return f"{keyword} — {section_heading}"[:60]
+
+    # 삽입 대상 섹션 결정: 핵심 설명(idx=2), 경험(idx=4 또는 5)
+    # sections[0] = 도입부, sections[1..] = 본문
+    body_sections = [s for s in sections[1:] if s.get("heading", "") != "마무리"]
+    img_map: dict[int, tuple[str, str]] = {}  # 섹션 i → (url, alt)
+
+    # 핵심 설명 섹션: 인덱스 2 (body_sections[1])
+    key_sec_idx = 2
+    # 경험/사례 섹션: "경험" "사례" "후기" "실제" 포함 or 인덱스 4~5
+    exp_sec_idx = None
+    for j, s in enumerate(body_sections, 1):
+        hdg = s.get("heading", "")
+        if any(kw in hdg for kw in ["경험", "사례", "후기", "실제", "써봤", "먹어봤", "직접"]):
+            exp_sec_idx = j
+            break
+    if exp_sec_idx is None:
+        exp_sec_idx = min(5, len(body_sections))  # fallback: 5번째
+
+    # URL 배정 (최대 2개 섹션 이미지; 이미지 부족 시 생략)
+    if len(unique) >= 2:
+        img_map[key_sec_idx] = (unique[1], _alt(
+            body_sections[key_sec_idx - 1]["heading"] if key_sec_idx - 1 < len(body_sections) else keyword,
+            "핵심설명"
+        ))
+    if len(unique) >= 3 and exp_sec_idx and exp_sec_idx != key_sec_idx:
+        img_map[exp_sec_idx] = (unique[2], _alt(
+            body_sections[exp_sec_idx - 1]["heading"] if exp_sec_idx - 1 < len(body_sections) else keyword,
+            "경험사례"
+        ))
+
+    return img_map, unique[0] if unique else None
+
+
 def build_full_html(data: dict, products: list, post_index: int, keyword: str = "", post_type: str = "revenue") -> str:
     """전체 블로그 포스트 HTML을 조립한다."""
-    # GitHub 호스팅 이미지 사용 (136개 풀, used_images.json 중복 추적)
+    sections = data.get("sections", [])
+
+    # 이미지 선택: URL·파일명 중복 없음, alt 모두 다르게, 최대 3개
     if keyword:
-        from src.content.image_search import get_images_for_keyword as _get_imgs
-        all_images = _get_imgs(keyword, count=4, post_index=post_index)
-        header_img = all_images[0] if all_images else HEADER_IMAGES[0]
-        section_images = all_images[1:] if len(all_images) > 1 else all_images
+        section_img_map, header_img = _pick_section_images(keyword, post_index, sections)
+        if not header_img:
+            header_img = HEADER_IMAGES[0]
     else:
         header_img = _pick_image(HEADER_IMAGES, post_index, keyword=keyword)
-        import random as _random
-        _random.seed(f"{datetime.now().date()}-{post_index}")
-        section_images = _random.sample(SECTION_IMAGES, min(8, len(SECTION_IMAGES)))
+        section_img_map = {}
     sections = data.get("sections", [])
     tags = data.get("tags", [])
     summary_cards = data.get("summary_cards", [])
@@ -816,9 +876,9 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     parts = []
 
-    # 대표 이미지 (키워드 alt 삽입)
-    img_alt = keyword if keyword else data.get("title", "건강정보")
-    parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="{img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
+    # 대표 이미지 (도입부 — alt는 제목 기반으로 구체적으로)
+    header_alt = data.get("title", keyword) or keyword
+    parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="{header_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
 
     # H1 제목 + 도입부
     intro = sections[0]["content"] if sections else ""
@@ -842,11 +902,11 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     for i, section in enumerate(sections[1:], 1):
         if section["heading"] == "마무리":
             continue
-        # 홀수 섹션(1,3,5...)에만 이미지 삽입 → 포스트당 이미지 3장(섹션용)
+        # 지정된 섹션(핵심설명/경험)에만 이미지 삽입 — URL·alt 중복 없음
         img_html = ""
-        if i % 2 == 1 and section_images:
-            img_idx = (i // 2) % len(section_images)
-            img_html = f'<figure style="text-align: center; margin: 15px 0;"><img src="{section_images[img_idx]}" alt="{img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>'
+        if i in section_img_map:
+            sec_img_url, sec_img_alt = section_img_map[i]
+            img_html = f'<figure style="text-align: center; margin: 15px 0;"><img src="{sec_img_url}" alt="{sec_img_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>'
         parts.append(f"""<div id="sec{i}" style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">{section["heading"]}</h2>
 {img_html}

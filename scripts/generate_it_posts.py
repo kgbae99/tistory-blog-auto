@@ -553,11 +553,45 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
     faq = data.get("faq", [])
     tags = data.get("tags", [])
 
-    # GitHub 호스팅 이미지 사용 (136개 풀)
+    # 이미지 선택: URL·파일명 중복 없음, alt 모두 다르게, 최대 3개
     from src.content.image_search import get_images_for_keyword as _get_imgs
-    all_images = _get_imgs(keyword, count=4, post_index=post_index)
-    header_img = all_images[0] if all_images else _pick_image(keyword, 0)
-    section_img_pool = all_images[1:] if len(all_images) > 1 else all_images
+    _raw_imgs = _get_imgs(keyword, count=3, post_index=post_index)
+    _seen_urls: set = set()
+    _seen_fnames: set = set()
+    _unique_imgs: list = []
+    for _u in _raw_imgs:
+        _fn = _u.split("/")[-1]
+        if _u not in _seen_urls and _fn not in _seen_fnames:
+            _seen_urls.add(_u)
+            _seen_fnames.add(_fn)
+            _unique_imgs.append(_u)
+        if len(_unique_imgs) >= 3:
+            break
+    header_img = _unique_imgs[0] if _unique_imgs else _pick_image(keyword, 0)
+
+    # 삽입 위치: 핵심설명(섹션 2) + 경험/사례 섹션 (최대 2개)
+    _body_secs = [s for s in sections if s.get("heading", "") != "마무리"]
+    _exp_idx = None
+    for _j, _s in enumerate(_body_secs):
+        if any(_kw in _s.get("heading", "") for _kw in ["경험", "사례", "후기", "실제", "써봤", "직접", "비교"]):
+            _exp_idx = _j
+            break
+    if _exp_idx is None:
+        _exp_idx = min(4, len(_body_secs) - 1)
+
+    # 섹션인덱스 → (url, alt) 매핑 (alt는 섹션 제목 기반, 모두 다르게)
+    _section_img_map: dict = {}
+    if len(_unique_imgs) >= 2:
+        _key_idx = min(1, len(_body_secs) - 1)
+        _section_img_map[_key_idx] = (
+            _unique_imgs[1],
+            f"{keyword} 핵심 설명 — {_body_secs[_key_idx].get('heading', '')}"[:60]
+        )
+    if len(_unique_imgs) >= 3 and _exp_idx is not None and _exp_idx not in _section_img_map:
+        _section_img_map[_exp_idx] = (
+            _unique_imgs[2],
+            f"{keyword} 직접 경험 — {_body_secs[_exp_idx].get('heading', '')}"[:60]
+        )
 
     # 정보형은 쿠팡 상품 사용 안 함
     p_list = list(products[:3]) if (products and post_type == "revenue") else []
@@ -590,15 +624,14 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
 <p style="color:#999;font-size:11px;margin:8px 0 0 0;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>"""
 
-    # 섹션 HTML - 홀수 섹션(1,3,5...)에만 이미지 삽입, 광고 전략적 배치
+    # 섹션 HTML - 지정된 섹션에만 이미지 삽입 (URL·alt 중복 없음)
     sections_html = ""
     for i, sec in enumerate(sections):
         heading = sec.get("heading", "")
         content = sec.get("content", "")
-        # 짝수 인덱스(0,2,4) = 1,3,5번째 섹션에만 이미지
-        if i % 2 == 0 and section_img_pool:
-            img = section_img_pool[(i // 2) % len(section_img_pool)]
-            img_html = f'<div style="text-align: center; margin: 15px 0;"><img src="{img}" alt="{heading}" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" /></div>'
+        if i in _section_img_map:
+            _s_url, _s_alt = _section_img_map[i]
+            img_html = f'<div style="text-align: center; margin: 15px 0;"><img src="{_s_url}" alt="{_s_alt}" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" /></div>'
         else:
             img_html = ""
         sections_html += f"""
