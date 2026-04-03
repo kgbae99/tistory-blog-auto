@@ -1,0 +1,146 @@
+name: Daily Pipeline (Step1-4)
+
+on:
+  schedule:
+    # 매일 07:00 KST (UTC 22:00 전날)
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+    inputs:
+      posts_per_day:
+        description: '하루 발행 글 수 (기본 3)'
+        required: false
+        default: '3'
+      blog:
+        description: '블로그 선택'
+        required: false
+        default: 'health'
+        type: choice
+        options:
+          - health
+          - it
+          - both
+
+jobs:
+  daily-pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install openai requests python-dotenv pyyaml jinja2 \
+                      google-auth google-auth-oauthlib google-auth-httplib2 \
+                      google-api-python-client
+
+      - name: Create .env
+        run: |
+          cat > config/.env << EOF
+          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+          COUPANG_ACCESS_KEY=${{ secrets.COUPANG_ACCESS_KEY }}
+          COUPANG_SECRET_KEY=${{ secrets.COUPANG_SECRET_KEY }}
+          TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}
+          ADSENSE_PUB_ID=${{ secrets.ADSENSE_PUB_ID }}
+          ADSENSE_SLOT_TOP=${{ secrets.ADSENSE_SLOT_TOP }}
+          ADSENSE_SLOT_MID=${{ secrets.ADSENSE_SLOT_MID }}
+          ADSENSE_SLOT_BOTTOM=${{ secrets.ADSENSE_SLOT_BOTTOM }}
+          EOF
+
+      - name: Restore GSC token
+        run: |
+          echo '${{ secrets.GSC_TOKEN_JSON }}' > config/gsc_token.json
+          echo '${{ secrets.GSC_CREDENTIALS_JSON }}' > config/credentials.json
+
+      # ── 건강 블로그 ──────────────────────────────────────────────
+
+      - name: STEP 1 — 키워드 20개 생성 (건강)
+        if: ${{ github.event.inputs.blog != 'it' }}
+        run: python scripts/step1_keywords.py --blog health --count 20
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      - name: STEP 2 — 키워드 필터링 (건강)
+        if: ${{ github.event.inputs.blog != 'it' }}
+        run: |
+          TOP=${{ github.event.inputs.posts_per_day || '3' }}
+          python scripts/step2_filter.py --blog health --top $TOP
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      - name: STEP 3 — 초안 생성 (건강)
+        if: ${{ github.event.inputs.blog != 'it' }}
+        run: python scripts/step3_generate.py --blog health
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      - name: STEP 4 — 수익형 리라이팅 + HTML 조립 (건강)
+        if: ${{ github.event.inputs.blog != 'it' }}
+        run: python scripts/step4_rewrite.py --blog health
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      # ── IT 블로그 ────────────────────────────────────────────────
+
+      - name: STEP 1 — 키워드 20개 생성 (IT)
+        if: ${{ github.event.inputs.blog != 'health' }}
+        run: python scripts/step1_keywords.py --blog it --count 20
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      - name: STEP 2 — 키워드 필터링 (IT)
+        if: ${{ github.event.inputs.blog != 'health' }}
+        run: |
+          TOP=${{ github.event.inputs.posts_per_day || '3' }}
+          python scripts/step2_filter.py --blog it --top $TOP
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      - name: STEP 3 — 초안 생성 (IT)
+        if: ${{ github.event.inputs.blog != 'health' }}
+        run: python scripts/step3_generate.py --blog it
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      - name: STEP 4 — 수익형 리라이팅 + HTML 조립 (IT)
+        if: ${{ github.event.inputs.blog != 'health' }}
+        run: python scripts/step4_rewrite.py --blog it
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      # ── 색인 요청 ────────────────────────────────────────────────
+
+      - name: GSC 색인 요청
+        run: python scripts/request_indexing.py --count 200
+        continue-on-error: true
+        env:
+          TZ: Asia/Seoul
+
+      # ── 커밋 ─────────────────────────────────────────────────────
+
+      - name: Commit & Push
+        run: |
+          git config user.name "kgbae99"
+          git config user.email "kgbae99@gmail.com"
+          git add output/ data/
+          DATE=$(date +%Y-%m-%d -d "+9 hours")
+          BLOG=${{ github.event.inputs.blog || 'health' }}
+          TOP=${{ github.event.inputs.posts_per_day || '3' }}
+          git commit -m "posts: ${DATE} ${BLOG} 블로그 ${TOP}개 자동 생성 (step1-4)" || echo "No changes"
+          git push

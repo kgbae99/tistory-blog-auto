@@ -1,0 +1,360 @@
+{
+  "date": "2026-04-03",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 10,
+  "info_cnt": 10,
+  "all_keywords": [
+    {
+      "keyword": "40대 여성 비타민D 영양제 추천 비교",
+      "type": "revenue",
+      "intent": "비타민D 영양제 선택을 위한 추천 및 비교 정보 제공"
+    },
+    {
+      "keyword": "직장인 아침 공복 운동 체지방 감소 방법",
+      "type": "info",
+      "intent": "공복 운동을 통한 체지방 감소 방법 탐색"
+    },
+    {
+      "keyword": "50대 남성 오메가3 영양제 추천 후기",
+      "type": "revenue",
+      "intent": "오메가3 영양제 선택을 위한 추천 및 후기 정보 제공"
+    },
+    {
+      "keyword": "갱년기 여성 수면 장애 원인과 해결 방법",
+      "type": "info",
+      "intent": "갱년기 여성의 수면 장애 원인과 해결책 탐색"
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 3개월 후기",
+      "type": "revenue",
+      "intent": "3개월 사용한 단백질 보충제에 대한 실제 후기 제공"
+    },
+    {
+      "keyword": "고혈압 식단 조절 방법과 추천 식품",
+      "type": "info",
+      "intent": "고혈압 관리 위한 식단 조절 방법 및 추천 식품 정보 제공"
+    },
+    {
+      "keyword": "만성피로 회복 위한 비타민B 복합체 추천",
+      "type": "revenue",
+      "intent": "비타민B 복합체를 통한 만성피로 회복 제품 추천"
+    },
+    {
+      "keyword": "저탄고지 식단 1개월 체중 감량 후기",
+      "type": "info",
+      "intent": "저탄고지 식단을 통한 1개월 체중 감량 후기 탐색"
+    },
+    {
+      "keyword": "복부지방 제거 위한 홈트레이닝 추천",
+      "type": "info",
+      "intent": "집에서 할 수 있는 복부지방 제거 운동 추천"
+    },
+    {
+      "keyword": "50대 여성 관절염 보조제 추천",
+      "type": "revenue",
+      "intent": "관절염 관리 및 통증 완화를 위한 보조제 추천"
+    },
+    {
+      "keyword": "간헐적 단식 효과적인 방법 5가지",
+      "type": "info",
+      "intent": "효과적인 간헐적 단식 방법 5가지 탐색"
+    },
+    {
+      "keyword": "철분 부족 개선 영양제 후기 비교",
+      "type": "revenue",
+      "intent": "철분 부족 개선을 위한 영양제 후기 및 비교 정보 제공"
+    },
+    {
+      "keyword": "갱년기 복부비만 원인과 해결책",
+      "type": "info",
+      "intent": "갱년기 여성의 복부비만 원인 및 해결책 탐색"
+    },
+    {
+      "keyword": "루테인 영양제 눈 건강 효과 후기",
+      "type": "revenue",
+      "intent": "눈 건강에 도움이 되는 루테인 영양제 후기 제공"
+    },
+    {
+      "keyword": "스트레스성 탈모 치료 추천 제품",
+      "type": "revenue",
+      "intent": "스트레스성 탈모 완화를 위한 추천 제품 정보 제공"
+    },
+    {
+      "keyword": "공복혈당 낮추는 생활 습관 7가지",
+      "type": "info",
+      "intent": "공복혈당 관리를 위한 생활 습관 7가지 탐색"
+    },
+    {
+      "keyword": "피부 건조 개선 위한 콜라겐 추천",
+      "type": "revenue",
+      "intent": "피부 건조 개선을 위한 콜라겐 제품 추천"
+    },
+    {
+      "keyword": "장 건강 개선 위한 유산균 복용법",
+      "type": "info",
+      "intent": "장 건강 개선을 위한 효과적인 유산균 복용법 탐색"
+    },
+    {
+      "keyword": "변비 해소 위한 식이섬유 보충제 추천",
+      "type": "revenue",
+      "intent": "변비 해소에 도움이 되는 식이섬유 보충제 추천"
+    },
+    {
+      "keyword": "허리 통증 예방 위한 스트레칭 방법",
+      "type": "info",
+      "intent": "허리 통증 예방을 위한 효과적인 스트레칭 방법 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "40대 여성 비타민D 영양제 추천 비교",
+      "post_type": "revenue",
+      "intent": "비타민D 영양제 선택을 위한 추천 및 비교 정보 제공"
+    },
+    {
+      "keyword": "저탄고지 식단 1개월 체중 감량 후기",
+      "post_type": "info",
+      "intent": "저탄고지 식단을 통한 1개월 체중 감량 후기 탐색"
+    },
+    {
+      "keyword": "50대 남성 오메가3 영양제 추천 후기",
+      "post_type": "revenue",
+      "intent": "오메가3 영양제 선택을 위한 추천 및 후기 정보 제공"
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 3개월 후기",
+      "post_type": "revenue",
+      "intent": "3개월 사용한 단백질 보충제에 대한 실제 후기 제공"
+    },
+    {
+      "keyword": "고혈압 식단 조절 방법과 추천 식품",
+      "post_type": "info",
+      "intent": "고혈압 관리 위한 식단 조절 방법 및 추천 식품 정보 제공"
+    },
+    {
+      "keyword": "50대 여성 관절염 보조제 추천",
+      "post_type": "revenue",
+      "intent": "관절염 관리 및 통증 완화를 위한 보조제 추천"
+    },
+    {
+      "keyword": "철분 부족 개선 영양제 후기 비교",
+      "post_type": "revenue",
+      "intent": "철분 부족 개선을 위한 영양제 후기 및 비교 정보 제공"
+    },
+    {
+      "keyword": "직장인 아침 공복 운동 체지방 감소 방법",
+      "post_type": "info",
+      "intent": "공복 운동을 통한 체지방 감소 방법 탐색"
+    },
+    {
+      "keyword": "피부 건조 개선 위한 콜라겐 추천",
+      "post_type": "revenue",
+      "intent": "피부 건조 개선을 위한 콜라겐 제품 추천"
+    },
+    {
+      "keyword": "갱년기 여성 수면 장애 원인과 해결 방법",
+      "post_type": "info",
+      "intent": "갱년기 여성의 수면 장애 원인과 해결책 탐색"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "40대 여성 비타민D 영양제 추천 비교",
+      "type": "revenue",
+      "intent": "비타민D 영양제 선택을 위한 추천 및 비교 정보 제공",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 남성 오메가3 영양제 추천 후기",
+      "type": "revenue",
+      "intent": "오메가3 영양제 선택을 위한 추천 및 후기 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 3개월 후기",
+      "type": "revenue",
+      "intent": "3개월 사용한 단백질 보충제에 대한 실제 후기 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "저탄고지 식단 1개월 체중 감량 후기",
+      "type": "info",
+      "intent": "저탄고지 식단을 통한 1개월 체중 감량 후기 탐색",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50대 여성 관절염 보조제 추천",
+      "type": "revenue",
+      "intent": "관절염 관리 및 통증 완화를 위한 보조제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "철분 부족 개선 영양제 후기 비교",
+      "type": "revenue",
+      "intent": "철분 부족 개선을 위한 영양제 후기 및 비교 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "고혈압 식단 조절 방법과 추천 식품",
+      "type": "info",
+      "intent": "고혈압 관리 위한 식단 조절 방법 및 추천 식품 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "피부 건조 개선 위한 콜라겐 추천",
+      "type": "revenue",
+      "intent": "피부 건조 개선을 위한 콜라겐 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "직장인 아침 공복 운동 체지방 감소 방법",
+      "type": "info",
+      "intent": "공복 운동을 통한 체지방 감소 방법 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 수면 장애 원인과 해결 방법",
+      "type": "info",
+      "intent": "갱년기 여성의 수면 장애 원인과 해결책 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "만성피로 회복 위한 비타민B 복합체 추천",
+      "type": "revenue",
+      "intent": "비타민B 복합체를 통한 만성피로 회복 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "복부지방 제거 위한 홈트레이닝 추천",
+      "type": "info",
+      "intent": "집에서 할 수 있는 복부지방 제거 운동 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "간헐적 단식 효과적인 방법 5가지",
+      "type": "info",
+      "intent": "효과적인 간헐적 단식 방법 5가지 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "갱년기 복부비만 원인과 해결책",
+      "type": "info",
+      "intent": "갱년기 여성의 복부비만 원인 및 해결책 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "루테인 영양제 눈 건강 효과 후기",
+      "type": "revenue",
+      "intent": "눈 건강에 도움이 되는 루테인 영양제 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스트레스성 탈모 치료 추천 제품",
+      "type": "revenue",
+      "intent": "스트레스성 탈모 완화를 위한 추천 제품 정보 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "공복혈당 낮추는 생활 습관 7가지",
+      "type": "info",
+      "intent": "공복혈당 관리를 위한 생활 습관 7가지 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "변비 해소 위한 식이섬유 보충제 추천",
+      "type": "revenue",
+      "intent": "변비 해소에 도움이 되는 식이섬유 보충제 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "장 건강 개선 위한 유산균 복용법",
+      "type": "info",
+      "intent": "장 건강 개선을 위한 효과적인 유산균 복용법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "허리 통증 예방 위한 스트레칭 방법",
+      "type": "info",
+      "intent": "허리 통증 예방을 위한 효과적인 스트레칭 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 10
+}
