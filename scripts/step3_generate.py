@@ -166,6 +166,10 @@ def main() -> None:
 
     today = datetime.now().strftime("%Y-%m-%d")
     draft_dir = PIPELINE_DIR / f"drafts_{today}_{args.blog}"
+    # 이전 실행 잔여 초안 제거 (누적 방지 — step4가 불필요한 파일 처리하는 문제 방지)
+    if draft_dir.exists():
+        import shutil
+        shutil.rmtree(draft_dir)
     draft_dir.mkdir(parents=True, exist_ok=True)
 
     logger.info("=== STEP 3: 초안 생성 [%s] ===", args.blog)
