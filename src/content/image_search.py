@@ -52,6 +52,25 @@ def _save_used_images(fnames: list[str]) -> None:
     except Exception as e:
         logger.warning("used_images 저장 실패: %s", e)
 
+# 세션 레벨 중복 방지: 같은 프로세스 내에서 포스트 간 이미지 재사용 차단
+_session_used_images: set[str] = set()
+
+
+def reset_session_images() -> None:
+    """새 발행 세션 시작 시 호출해 세션 캐시를 초기화한다."""
+    _session_used_images.clear()
+
+
+def get_unique_image(image_pool: list[str]) -> str | None:
+    """풀에서 세션 내 미사용 이미지를 반환. 없으면 None."""
+    for img in image_pool:
+        fname = img.split("/")[-1]
+        if fname not in _session_used_images:
+            _session_used_images.add(fname)
+            return img
+    return None
+
+
 _BASE = "https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images"
 
 # 전체 이미지 풀 136개 (카테고리별 분류, 중복 없음)
@@ -354,13 +373,13 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
         + _shuffle(other_imgs, 137)
     )
 
-    # cross-post 중복 방지: 최근 사용 이미지 제외
-    recently_used = _load_used_images()
+    # 중복 방지 우선순위: 1) 세션 레벨(메모리) → 2) 파일 레벨(60일)
+    recently_used = _load_used_images() | _session_used_images
 
-    # 중복 제거 (포스트 내 중복 + cross-post 중복 방지)
+    # 중복 제거 (포스트 내 + 세션 내 + 날짜 기반)
     seen: set[str] = set()
     result: list[str] = []
-    fallback: list[str] = []  # 새 이미지 부족 시 최근 사용 이미지로 보충
+    fallback: list[str] = []  # 새 이미지 부족 시 보충용
 
     for img in all_candidates:
         if img in seen:
@@ -374,7 +393,7 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
         if len(result) >= count:
             break
 
-    # 새 이미지가 부족하면 최근 사용 이미지로 보충 (post_index 기반 오프셋으로 포스트간 다른 이미지 선택)
+    # 새 이미지가 부족하면 보충 (post_index 기반 오프셋으로 포스트간 다른 이미지 선택)
     if len(result) < count and fallback:
         offset = post_index % len(fallback)
         rotated = [fallback[(offset + j) % len(fallback)] for j in range(len(fallback))]
@@ -384,7 +403,9 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
             if len(result) >= count:
                 break
 
-    # 선택된 이미지를 사용 기록에 저장
+    # 선택된 이미지를 세션 캐시 + 파일에 저장
+    for img in result:
+        _session_used_images.add(img.split("/")[-1])
     _save_used_images([img.split("/")[-1] for img in result])
 
     logger.info("이미지 매칭: '%s'(idx=%d) → 주제=%s, %d개 선택 (재사용 %d개)", keyword, post_index, list(primary_cats), len(result), max(0, len(result) - (len(result) - len(fallback[:max(0,count-len(result))]))))

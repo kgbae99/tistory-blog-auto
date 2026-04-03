@@ -404,6 +404,10 @@ def main() -> None:
     output_dir = Path(__file__).parent.parent / "output" / folder_name / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # 세션 이미지 중복 방지 초기화 (같은 실행 내 포스트 간 이미지 재사용 차단)
+    from src.content.image_search import reset_session_images
+    reset_session_images()
+
     # 단일 파일 모드
     if args.draft:
         draft_path = Path(args.draft)
