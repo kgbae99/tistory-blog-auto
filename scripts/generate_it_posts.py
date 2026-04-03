@@ -21,30 +21,93 @@ from src.coupang.api_client import CoupangAPIClient, CoupangConfig
 
 logger = setup_logger("it_posts")
 
-BLOG_STYLE_PROMPT = """당신은 "테크온도(IT++)" 티스토리 블로그의 IT 전문 리뷰어입니다.
+_CORE_GOALS_IT = """
+## 모든 글의 핵심 목표 (3가지 기준으로 평가)
+1. 키워드 → 유입: 롱테일 키워드 + 숫자/결과/경험 포함 제목으로 검색 유입 확보
+2. 구조 → 체류: 문제→공감→해결→경험→행동 흐름 + 차별화 관점 + 3,000자로 체류 시간 확보
+3. 클릭 → 수익: 광고 위치(문제 직후/해결 직후/결론 직전) + CTA 문맥으로 클릭 유도
+이 3가지가 모두 충족되지 않으면 좋은 글이 아닙니다.
+"""
+
+IT_REVENUE_PROMPT = """당신은 "테크온도(IT++)" 티스토리 블로그의 IT 전문 리뷰어입니다.
+""" + _CORE_GOALS_IT + """
+## 글 유형: 수익형 (상품 추천 + CTA 중심)
+- 목적: 독자의 IT 문제를 해결하면서 관련 상품 구매를 자연스럽게 유도
+- 쿠팡 추천 상품을 해결책 맥락에서 자연스럽게 언급 (억지 끼워넣기 금지)
+- 제품 배치 순서 (필수): 문제 제기 → 공감 → 해결책 설명 → 직접 사용 경험/수치 결과 → **이 시점에만** 제품 블록
+- 제품 블록 바로 위 브릿지 문장 필수: "직접 써보니 이게 없었으면 불편했을 것 같았어요. 그래서 이걸 계속 쓰게 됐습니다." 형식
+- 제품 가격 순서: 저가 → 중가 → 고가 (부담감 최소화)
+- 제품 블록 앞에 선택 구조 카드: "이런 분 → A 제품 / 저런 분 → B 제품" 2열 카드
+- 이미지: 최대 3개, alt 텍스트 모두 다르게 (중복 금지), "[키워드] [구체적 상황]" 형식
+- 박스(강조 div) 연속 2개 이상 금지 — 박스 사이에 텍스트 문단 1개 이상 삽입
+- 각 섹션 첫 100자는 순수 텍스트로 시작 (박스·리스트·표 금지)
 
 ## 글 스타일
-- 제목: 클릭을 부르는 호기심 유발형 (15~30자). 아래 패턴 중 하나를 반드시 사용:
-  * 궁금증형: "이 가격에 이 성능?", "뭐가 다를까?", "뭘 사야 후회 안 할까?"
-  * 경험형: "직접 써보고 고른", "3개 비교해봤더니"
-  * 문제해결형: "느려졌다면?", "고민된다면 이것만 보세요"
-  * 반전형: "싼 게 비지떡? 아닌 경우도 있다", "비싼 게 다 좋은 건 아닙니다"
-  * 절대 "완벽 가이드", "총정리", "TOP5" 같은 밋밋한 제목 금지
-  * 절대 연도(2024, 2025, 2026) 넣지 않기
+- 제목: 반드시 롱테일 키워드 형식 (20~35자). 아래 규칙 필수:
+  * [타겟/상황 + 숫자/결과 + 제품/주제 + 방법/이유/후기/추천/비교] 구조
+  * "방법", "이유", "후기", "추천", "비교" 중 하나 반드시 포함
+  * 숫자, 결과, 경험 중 최소 1개 반드시 포함
+    - 숫자: 가격(3만원대), 기간(1개월), 수치(배터리 30시간), 개수(3개 비교)
+    - 결과: 속도 2배, 끊김 해결, 배터리 늘어난
+    - 경험: 직접 써봤더니, 한 달 써보고, 3개 비교해봤더니
+  * ✅ 좋은 예: "3만원대 무선이어폰 한 달 써본 솔직 후기", "SSD 교체 후 부팅 속도 3배 빨라진 이유"
+  * ✅ 좋은 예: "노트북 3개 직접 비교해봤더니 이게 달랐다", "재택근무 키보드 2개월 써보고 추천하는 이유"
+  * ❌ 금지: 숫자/결과 없는 막연한 제목, "완벽 가이드", "총정리", "TOP5", 연도(2024~2026)
+- 전체 흐름: 문제 제기 → 공감 → 해결책 → 사례/경험 → 행동 촉구 순서 필수
 - H2 섹션 6~7개, H3 사용 안 함
-- 각 섹션 300~500자, 문단 4~6문장 (구체적 스펙, 가격, 비교 포함)
+- **전체 최소 3,000자 이상** (불필요한 반복 없이 실질적 내용으로만)
+- 각 섹션 400~600자, 문단 4~6문장 (구체적 스펙, 가격, 비교 포함)
+- ❌ 금지: 같은 내용 반복, "앞서 설명했듯이", "이상으로 알아봤습니다" 같은 빈 문장
+- ❌ 금지: "배터리 오래 쓰려면 절전 모드 켜세요" 같이 검색하면 바로 나오는 뻔한 내용
+- ✅ 필수: 차별화된 관점 1개 이상 포함
+  * 반직관적 사실 / 간과된 디테일 / 실패 경험 / 수치 비교 / 대부분이 모르는 설정/팁
+  * 예: "가격 비쌀수록 좋다" ❌ → "3만원대가 10만원대보다 나은 구체적인 경우" ✅
+- ✅ 기준: 문장마다 새로운 정보(수치, 스펙, 비교, 경험) 포함
 - 문체: ~합니다/~세요/~요 존댓말, 친근하고 실용적
-- 각 섹션에 테이블 또는 불릿 포인트 활용
+- 표(table)는 글 전체 최대 1~2개 (꼭 필요한 스펙 비교에만, 매 섹션마다 넣지 말 것)
+- 불릿/번호 리스트는 꼭 필요한 경우만 — 3개 이상 연속 리스트는 문단으로 풀어쓸 것
+- ❌ 금지: 본문과 같은 내용을 "요약" 박스로 반복
 - 마지막 섹션은 "마무리"
 - 태그 6~7개
 
 ## 글쓰기 규칙
-1. 각 H2 섹션에 블루톤 스타일 테이블 포함 (아래 HTML 형식)
-2. 각 섹션 내용은 topic-content div로 감쌈
-3. 절대로 목차(TOC)를 생성하지 마세요
-4. 핵심 요약 카드 5개 (flexbox)
-5. FAQ 3개
-6. 제품 비교 시 장단점 명확히
+1. **도입부 첫 3줄 안에 문제 제기 필수**
+   예: "노트북이 느려졌는데 새 제품을 사기엔 부담스럽다면, SSD 교체만으로 해결될 수 있습니다."
+2. **섹션 흐름**: 1~2번째=문제 원인, 3~4번째=해결책, 5번째=직접 사용 경험(필수)
+   - 반드시 "내가 해봤다" 서술 포함: 실패 → 개선 → 수치로 증명된 결과 흐름
+   - 반드시 구체적 수치 포함: 사용 기간, 성능 변화(속도, 배터리, ms 등), 가격 대비 만족도
+   - 예시: "처음 2주는 연결이 불안정했는데, 펌웨어 업데이트 후 끊김이 90% 줄었습니다."
+   - 예시: "3개 제품을 한 달씩 써봤더니 A제품의 노이즈 캔슬링이 압도적으로 좋았어요."
+   - ❌ 금지: "좋은 것 같아요", "추천해요" 같은 근거 없는 평가
+   - ✅ 필수: 사용 기간 + 수치/비교 + 결론 3요소 모두 포함
+3. **서식 절제 규칙**:
+   - 표: 글 전체 최대 1~2개 (스펙 비교 등 꼭 필요한 곳에만)
+   - 리스트: 연속 3개 이상은 문단으로 풀어쓸 것
+   - 요약 반복 금지: 섹션 내용을 다시 나열하는 "정리" 박스 추가 금지
+3. **CTA 필수 규칙**:
+   - **중간 CTA (1개 이상)**: 해결책 섹션 끝에 삽입. "이 방법이 어렵다면 ~" 형태 + 관련 글 링크
+   - **최종 CTA (필수)**: 마지막 섹션 끝에 삽입. 다음에 읽으면 좋은 관련 IT 글로 연결
+   - CTA HTML 형식 (중간):
+     ```html
+     <div style="background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:20px;margin:25px 0;border-left:4px solid #90CAF9;text-align:center;">
+     <p style="font-size:15px;color:#555;margin:0 0 8px 0;">이 방법이 어렵다면?</p>
+     <p style="font-size:17px;font-weight:bold;color:#1565C0;margin:0 0 15px 0;">[더 쉬운 대안 한 줄 설명]</p>
+     <a href="[내부링크URL]" style="display:inline-block;padding:12px 30px;background:#1565C0;color:white;border-radius:6px;text-decoration:none;font-weight:bold;">바로 확인하기 →</a>
+     </div>
+     ```
+   - CTA HTML 형식 (최종):
+     ```html
+     <div style="background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:25px;margin:30px 0;text-align:center;border:2px solid #90CAF9;">
+     <p style="font-size:18px;font-weight:bold;color:#1565C0;margin:0 0 10px 0;">📌 다음으로 읽으면 좋은 글</p>
+     <a href="[내부링크URL]" style="display:block;padding:15px;background:#fff;border-radius:8px;text-decoration:none;color:#1565C0;font-weight:bold;border:1px solid #90CAF9;margin-top:12px;">👉 [관련 글 제목]</a>
+     </div>
+     ```
+4. 각 H2 섹션에 블루톤 스타일 테이블 포함 (아래 HTML 형식)
+5. 각 섹션 내용은 topic-content div로 감쌈
+6. 절대로 목차(TOC)를 생성하지 마세요
+7. 핵심 요약 카드 5개 (flexbox)
+8. FAQ 3개
+9. 제품 비교 시 장단점 명확히
 
 ## 테이블 HTML 형식
 <div class="table-section" style="margin: 20px 0;">
@@ -69,8 +132,49 @@ BLOG_STYLE_PROMPT = """당신은 "테크온도(IT++)" 티스토리 블로그의 
 - 연도: 제목이나 본문에 연도를 넣지 마세요 (불필요)
 - 쿠팡 추천 상품 (본문에서 자연스럽게 언급): {products}
 
+## 내부 링크 (CTA에 반드시 활용)
+- 중간 CTA 버튼 href: https://uyoblog.tistory.com (관련 글 없을 시 블로그 메인)
+- 최종 CTA href: https://uyoblog.tistory.com
+※ 중간 CTA("이 방법이 어렵다면" 버튼)와 최종 CTA("다음으로 읽으면 좋은 글")에 각각 사용하세요.
+
 ## 출력: 반드시 JSON만
-{{"title":"제목","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(300자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+{{"title":"제목(20~35자, 숫자+결과+방법/이유/후기/추천/비교)","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(400자이상, 반복없이 실질적 내용)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+
+IT_INFO_PROMPT = """당신은 "테크온도(IT++)" 티스토리 블로그의 IT 전문 작가입니다.
+""" + _CORE_GOALS_IT + """
+## 글 유형: 정보형 (순수 IT 정보 제공, 상품 추천 없음)
+- 목적: 독자에게 깊이 있는 IT 정보를 제공하여 신뢰 구축 및 SEO 트래픽 확보
+- ❌ 절대 금지: 상품 추천, 쿠팡 링크, "이 제품 사세요", "최저가 확인" 같은 상업적 표현
+- 중간 CTA: "이 내용이 더 궁금하다면?" + 관련 IT 정보 글 링크
+  <div style="background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:20px;margin:25px 0;border-left:4px solid #90CAF9;text-align:center;"><p style="font-size:15px;color:#555;margin:0 0 8px 0;">이 내용이 더 궁금하다면?</p><a href="https://uyoblog.tistory.com" style="display:inline-block;padding:12px 30px;background:#1565C0;color:white;border-radius:6px;text-decoration:none;font-weight:bold;">관련 글 보러가기 →</a></div>
+- 최종 CTA: "📌 함께 읽으면 좋은 글" + 관련 정보 글 카드
+  <div style="background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:25px;margin:30px 0;text-align:center;border:2px solid #90CAF9;"><p style="font-size:18px;font-weight:bold;color:#1565C0;margin:0 0 10px 0;">📌 함께 읽으면 좋은 글</p><a href="https://uyoblog.tistory.com" style="display:block;padding:15px;background:#fff;border-radius:8px;text-decoration:none;color:#1565C0;font-weight:bold;border:1px solid #90CAF9;margin-top:12px;">👉 [관련 글 제목]</a></div>
+
+## 글 스타일
+- 제목: 반드시 롱테일 키워드 형식 (20~35자), 숫자·결과·경험 중 1개 이상 포함
+  * ✅ 예: "SSD vs HDD 실제 속도 차이 직접 비교해봤더니", "RAM 16GB와 32GB 차이 체감한 솔직 후기"
+  * ❌ 금지: 연도, "완벽 가이드", "총정리", "TOP5"
+- 전체 흐름: 문제 제기 → 원인 분석 → 해결책 → 직접 경험(필수) → 결론
+- 도입부 첫 3줄 안에 문제 제기 필수
+- 5번째 H2에 직접 사용 경험 필수: 실패 → 개선 → 수치 결과 (기간+수치+변화 3요소)
+- H2 섹션 6~7개, H3 사용 안 함, 목차(TOC) 생성 금지
+- 전체 최소 3,000자 이상, 각 섹션 400~600자
+- 표: 글 전체 최대 1~2개, 리스트: 3개 이상 연속이면 문단으로 풀어쓸 것
+- ❌ 금지: 반복 요약, 의미 없는 문장
+- 태그 6~7개
+- 각 섹션은 topic-content div로 감쌈:
+  <div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">내용</p></div>
+
+## 이번 글 요청
+- 키워드: "{keyword}"
+- 카테고리: IT/가젯
+- 연도 금지
+
+## 출력: 반드시 JSON만
+{{"title":"제목(20~35자, 숫자+결과+방법/이유/후기/비교)","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(400자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+
+# 하위 호환 유지
+BLOG_STYLE_PROMPT = IT_REVENUE_PROMPT
 
 # IT 이미지 (Unsplash)
 _IMAGES_DEVICES = [
@@ -228,43 +332,68 @@ FAQ_COLORS = [
 ]
 
 
-def get_it_keywords() -> list[str]:
-    """카테고리별 1개씩 3개 키워드를 반환한다."""
+def get_it_keywords() -> dict[str, list[str]]:
+    """수익형(구매 의도) 2개 + 정보형(탐색 의도) 1개 키워드를 반환한다.
+
+    Returns:
+        {"revenue": ["kw1", "kw2"], "info": ["kw3"]}
+    """
     day = datetime.now().day
 
-    CATEGORY_POOLS = {
+    # 구매 의도: 추천·비교·후기·써봤더니 포함
+    REVENUE_POOLS = {
         "가젯/악세서리": [
-            "무선 이어폰 추천 순위", "기계식 키보드 추천", "게이밍 마우스 비교",
-            "USB-C 충전기 추천", "보조배터리 추천", "블루투스 스피커 비교",
-            "노이즈캔슬링 이어폰 비교", "게이밍 헤드셋 추천", "웹캠 추천 순위",
-            "무선 충전 패드 비교", "스마트워치 추천 순위", "액션캠 추천",
+            "3만원대 무선이어폰 한 달 써본 솔직 후기",
+            "노이즈캔슬링 이어폰 2개 직접 비교해봤더니",
+            "재택근무 기계식 키보드 추천 이유",
+            "가성비 블루투스 스피커 추천 비교",
+            "게이밍 마우스 3개 써보고 추천하는 이유",
+            "보조배터리 고르는 법과 추천 모델",
+            "스마트워치 2개 비교해봤더니 이게 달랐다",
+            "웹캠 재택근무용 추천 직접 써본 후기",
+            "무선충전 패드 추천 속도 비교",
+            "게이밍 헤드셋 3만원대 vs 10만원대 비교",
         ],
-        "노트북/PC/모니터": [
-            "2026 가성비 노트북 추천", "4K 모니터 추천", "게이밍 노트북 비교",
-            "사무용 노트북 추천", "맥북 vs 윈도우 노트북 비교", "듀얼 모니터 세팅법",
-            "SSD 추천 순위", "RAM 업그레이드 가이드", "그래픽카드 비교",
-            "조립PC 견적 가이드", "미니PC 추천", "외장하드 vs 외장SSD 비교",
-        ],
-        "IT꿀팁/앱": [
-            "윈도우 11 숨은 기능", "맥북 필수 앱 추천", "크롬 확장 프로그램 추천",
-            "스마트폰 저장 공간 확보법", "와이파이 속도 높이는 법", "노트북 발열 해결법",
-            "배터리 수명 늘리는 법", "무료 PDF 편집 프로그램", "화면 녹화 프로그램 추천",
-            "VPN 추천 비교", "클라우드 스토리지 비교", "AI 생산성 도구 추천",
+        "노트북/PC": [
+            "가성비 노트북 추천 직접 써본 후기",
+            "SSD 교체 후 속도 3배 빨라진 이유와 추천",
+            "사무용 노트북 3개 비교해봤더니 이게 최고",
+            "RAM 16GB vs 32GB 실제 체감 차이 후기",
+            "4K 모니터 추천 눈 피로 줄어든 이유",
+            "외장SSD vs 외장HDD 실사용 비교",
+            "미니PC 재택근무 3개월 써본 솔직 후기",
+            "조립PC 견적 직접 맞춰봤더니 이게 나왔다",
+            "맥북 vs 윈도우 노트북 6개월 써본 비교",
+            "그래픽카드 업그레이드 전후 성능 비교 후기",
         ],
     }
 
-    categories = list(CATEGORY_POOLS.keys())
-    keywords = []
-    for i, cat in enumerate(categories):
-        pool = CATEGORY_POOLS[cat]
-        idx = (day + i * 7) % len(pool)
-        kw = pool[idx]
-        keywords.append(kw)
+    # 탐색 의도: 원인·이유·차이 포함
+    INFO_POOLS = [
+        "노트북 발열 심해지는 진짜 원인과 해결법",
+        "배터리 빨리 닳는 이유 놓치기 쉬운 원인",
+        "와이파이 느려지는 이유 설정으로 해결하는 법",
+        "SSD vs HDD 실제 속도 차이 얼마나 날까",
+        "RAM 부족 증상 PC가 보내는 신호들",
+        "스마트폰 저장 공간 부족한 진짜 이유",
+        "노트북 오래 쓰면 느려지는 이유와 원인",
+        "블루투스 연결 끊기는 원인 해결하는 법",
+        "CPU vs GPU 어느 게 성능에 더 중요한가",
+        "모니터 해상도 차이 실제로 눈에 보이는 기준",
+    ]
 
-    return keywords
+    cats = list(REVENUE_POOLS.keys())
+    revenue_kws = []
+    for i, cat in enumerate(cats[:2]):
+        pool = REVENUE_POOLS[cat]
+        revenue_kws.append(pool[(day + i * 5) % len(pool)])
+
+    info_kw = INFO_POOLS[(day * 3) % len(INFO_POOLS)]
+
+    return {"revenue": revenue_kws, "info": [info_kw]}
 
 
-def generate_content(keyword: str, products: list) -> dict | None:
+def generate_content(keyword: str, products: list, post_type: str = "revenue") -> dict | None:
     """OpenAI API로 IT 블로그 콘텐츠를 생성한다."""
     import openai
 
@@ -272,7 +401,11 @@ def generate_content(keyword: str, products: list) -> dict | None:
 
     product_names = ", ".join(p.get("productName", "")[:30] for p in products[:3]) if products else "관련 상품 없음"
 
-    prompt = BLOG_STYLE_PROMPT.format(keyword=keyword, products=product_names)
+    template = IT_INFO_PROMPT if post_type == "info" else IT_REVENUE_PROMPT
+    if post_type == "info":
+        prompt = template.format(keyword=keyword)
+    else:
+        prompt = template.format(keyword=keyword, products=product_names)
 
     for attempt in range(3):
         try:
@@ -374,7 +507,7 @@ def search_coupang_products(keyword: str) -> list:
     return unique[:3]
 
 
-def build_full_html(data: dict, keyword: str, products: list, post_date: str, post_index: int = 0) -> str:
+def build_full_html(data: dict, keyword: str, products: list, post_date: str, post_index: int = 0, post_type: str = "revenue") -> str:
     """완성된 HTML 페이지를 조립한다."""
     title = data.get("title", keyword)
     meta_desc = data.get("meta_description", "")
@@ -389,7 +522,38 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
     header_img = all_images[0] if all_images else _pick_image(keyword, 0)
     section_img_pool = all_images[1:] if len(all_images) > 1 else all_images
 
-    # 섹션 HTML - 홀수 섹션(1,3,5...)에만 이미지 삽입
+    # 정보형은 쿠팡 상품 사용 안 함
+    p_list = list(products[:3]) if (products and post_type == "revenue") else []
+
+    def _single_product_html(p: dict, context_type: str = "problem") -> str:
+        """클릭 유도 문맥 + 단일 쿠팡 상품 블록 (IT 블루톤)."""
+        _ctx = {
+            "problem": ("이런 불편함이 있으셨다면, 아래 제품이 실질적인 해결책이 될 수 있어요.", "지금 많은 분들이 찾고 있는 제품이에요. 👇"),
+            "solution": ("앞서 소개한 방법과 함께 쓰면 더 효과적인 제품입니다.", "직접 써본 후 추천하는 제품이에요. 👇"),
+            "conclusion": ("오늘 다룬 내용을 바로 실천해볼 수 있어요.", "지금 바로 확인해보세요. 빠른 배송으로 받아볼 수 있어요. 👇"),
+        }
+        lead, cta = _ctx.get(context_type, _ctx["problem"])
+        name = p.get("productName", "")
+        price = int(p.get("productPrice", 0))
+        url = p.get("productUrl", "#")
+        img = p.get("productImage", "")
+        img_tag = f'<img src="{img}" alt="{name[:20]}" style="width:130px;height:130px;object-fit:contain;border-radius:6px;background:#fff;border:1px solid #eee;" loading="lazy" />' if img else ""
+        return f"""<div style="background:#F0F7FF;border-radius:10px;padding:20px;margin:25px 0;border:1px solid #90CAF9;">
+<p style="color:#555;font-size:14px;margin:0 0 6px 0;">{lead}</p>
+<p style="color:#1565C0;font-size:13px;font-weight:bold;margin:0 0 12px 0;">{cta}</p>
+<div style="padding:18px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;">
+<a href="{url}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#333;">
+<div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+{img_tag}
+<div style="flex:1;min-width:200px;">
+<p style="font-size:17px;font-weight:bold;color:#1565C0;margin:0 0 8px 0;">{name}</p>
+<p style="font-size:20px;font-weight:bold;color:#e44d26;margin:0 0 10px 0;">{price:,}원</p>
+<span style="display:inline-block;padding:8px 24px;background:#1565C0;color:white;border-radius:4px;font-size:14px;font-weight:bold;">최저가 확인하기 →</span>
+</div></div></a></div>
+<p style="color:#999;font-size:11px;margin:8px 0 0 0;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>"""
+
+    # 섹션 HTML - 홀수 섹션(1,3,5...)에만 이미지 삽입, 광고 전략적 배치
     sections_html = ""
     for i, sec in enumerate(sections):
         heading = sec.get("heading", "")
@@ -405,6 +569,11 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
 {img_html}
 {content}
 """
+        # 광고: 문제 인식 직후(2번째 섹션), 해결 방법 직후(4번째 섹션)
+        if i == 1 and len(p_list) > 0:
+            sections_html += _single_product_html(p_list[0], "problem")
+        elif i == 3 and len(p_list) > 1:
+            sections_html += _single_product_html(p_list[1], "solution")
 
     # 요약 카드
     cards_html = '<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0;">'
@@ -425,27 +594,11 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
 <p style="color: #333; margin: 0; line-height: 1.8;">A. {f.get('a','')}</p>
 </div>"""
 
-    # 쿠팡 상품
+    # 결론 직전 광고 (3번째 쿠팡 상품)
+    conclude_ad_html = _single_product_html(p_list[2], "conclusion") if len(p_list) > 2 else ""
+
+    # 쿠팡 상품은 섹션별 분산 삽입되었으므로 별도 하단 블록 불필요
     coupang_html = ""
-    if products:
-        coupang_html = '<h2 style="color: #1565C0; border-bottom: 2px solid #E3F2FD; padding-bottom: 10px;">테크온도 추천 제품</h2>\n'
-        coupang_html += '<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제와 관련된 제품을 선별했습니다.</p>\n'
-        for p in products[:3]:
-            name = p.get("productName", "")
-            price = int(p.get("productPrice", 0))
-            url = p.get("productUrl", "#")
-            img = p.get("productImage", "")
-            img_tag = f'<img src="{img}" alt="{name[:20]}" style="width: 130px; height: 130px; object-fit: contain; border-radius: 6px; background: #fff; border: 1px solid #eee;" loading="lazy" />' if img else ""
-            coupang_html += f"""<div style="margin-bottom: 20px; padding: 18px; border: 1px solid #e0e0e0; border-radius: 8px; background: #fafafa;">
-<a href="{url}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
-<div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
-{img_tag}
-<div style="flex: 1; min-width: 200px;">
-<p style="font-size: 17px; font-weight: bold; color: #1565C0; margin: 0 0 8px 0;">{name}</p>
-<p style="font-size: 20px; font-weight: bold; color: #e44d26; margin: 0 0 6px 0;">{price:,}원</p>
-<span style="display: inline-block; padding: 8px 24px; background: #1565C0; color: white; border-radius: 4px; font-size: 14px; font-weight: bold;">최저가 확인하기</span>
-</div></div></a></div>\n"""
-        coupang_html += '<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>'
 
     # 쿠팡 배너
     coupang_banner = '<div style="text-align: center; margin: 20px 0 30px 0;"><a href="https://link.coupang.com/a/d4YwkD" target="_blank" rel="noopener"><img style="max-width: 100%; height: auto;" src="https://ads-partners.coupang.com/banners/882911?subId=&amp;traceId=V0-301-879dd1202e5c73b2-I882911&amp;w=728&amp;h=90" alt="" /></a></div>'
@@ -492,7 +645,7 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
 {cards_html}
 {sections_html}
 {faq_html}
-{coupang_html}
+{conclude_ad_html}
 {coupang_banner}
 {tags_html}
 
@@ -548,24 +701,33 @@ def main():
     output_dir = Path(f"output/it-posts/{today}")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    keywords = get_it_keywords()
-    logger.info("오늘 IT 키워드: %s", keywords)
+    kw_map = get_it_keywords()
+    revenue_kws = kw_map.get("revenue", [])
+    info_kws = kw_map.get("info", [])
+    keyword_plan = [
+        (revenue_kws[0] if len(revenue_kws) > 0 else "무선이어폰 추천", "revenue"),
+        (info_kws[0]    if len(info_kws) > 0    else "노트북 발열 원인", "info"),
+        (revenue_kws[1] if len(revenue_kws) > 1 else revenue_kws[0] if revenue_kws else "노트북 추천", "revenue"),
+    ]
+    logger.info("=== IT 포스트 생성 시작 ===")
+    logger.info("  수익형: %s", revenue_kws)
+    logger.info("  정보형: %s", info_kws)
 
     results = []
-    for i, keyword in enumerate(keywords, 1):
-        logger.info("[%d/3] 키워드: %s", i, keyword)
+    for i, (keyword, post_type) in enumerate(keyword_plan, 1):
+        logger.info("[%d/3] 키워드: %s (%s)", i, keyword, post_type)
 
         # 중복 체크
         if check_title_duplicate(keyword):
             logger.warning("중복 키워드 스킵: %s", keyword)
             continue
 
-        # 쿠팡 상품
-        products = search_coupang_products(keyword)
+        # 쿠팡 상품 (수익형만)
+        products = search_coupang_products(keyword) if post_type == "revenue" else []
         logger.info("쿠팡 상품: %d개", len(products))
 
         # 콘텐츠 생성
-        data = generate_content(keyword, products)
+        data = generate_content(keyword, products, post_type=post_type)
         if not data:
             logger.error("콘텐츠 생성 실패: %s", keyword)
             continue
@@ -573,7 +735,7 @@ def main():
         title = data.get("title", keyword)
 
         # HTML 생성
-        html = build_full_html(data, keyword, products, today, post_index=i)
+        html = build_full_html(data, keyword, products, today, post_index=i, post_type=post_type)
         safe_name = re.sub(r"[^\w가-힣]", "_", keyword)[:30]
 
         # 발행 도구 페이지만 생성 (post 파일은 불필요)

@@ -26,37 +26,17 @@ from src.coupang.product_search import Product, search_and_filter
 
 logger = setup_logger("daily_posts")
 
-# 블로그 스타일 프롬프트 템플릿
-BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로그의 전문 콘텐츠 작가입니다.
+# ── 핵심 목표 (모든 글에 공통 적용) ─────────────────────────────
+_CORE_GOALS = """
+## 모든 글의 핵심 목표 (3가지 기준으로 평가)
+1. 키워드 → 유입: 롱테일 키워드 + 검색 의도 + 숫자/결과 포함 제목으로 검색 유입 확보
+2. 구조 → 체류: 문제→공감→해결→경험→행동 흐름 + 차별화 관점 + 3,000자로 체류 시간 확보
+3. 클릭 → 수익: 광고 위치(문제 직후/해결 직후/결론 직전) + CTA 문맥으로 클릭 유도
+이 3가지가 모두 충족되지 않으면 좋은 글이 아닙니다.
+"""
 
-## 기존 글 스타일 (반드시 따르세요)
-- 제목: 클릭을 부르는 호기심 유발형 (15~30자). 아래 패턴 중 하나를 반드시 사용:
-  * 궁금증형: "이것만 먹으면 달라진다?", "왜 아무도 안 알려줄까?"
-  * 경험형: "직접 해보고 알았다", "한 달 먹어보니 이렇게 바뀌었다"
-  * 문제해결형: "아침마다 피곤하다면?", "이 증상 무시하면 큰일납니다"
-  * 반전형: "몸에 좋다던 이것, 사실은 독?"
-  * 절대 "총정리", "TOP5", "완벽 가이드" 같은 밋밋한 제목 금지
-  * 절대 연도(2024, 2025, 2026) 넣지 않기
-- H2 섹션 6~7개, H3 사용 안 함
-- 각 섹션 300~500자, 문단 4~6문장 (구체적 수치, 예시 포함)
-- 문체: ~합니다/~세요/~요 존댓말, 친근하고 실용적
-- 각 섹션에 테이블 또는 불릿 포인트 활용
-- 내부링크 2개 본문 중간에 삽입
-- 마지막 섹션은 "마무리"
-- 태그 6~7개
-
-## 글쓰기 규칙
-1. 각 H2 섹션에 핑크톤 스타일 테이블 포함 (아래 HTML 형식)
-2. 각 섹션 내용은 topic-content div로 감쌈
-3. 절대로 목차(TOC)를 생성하지 마세요. 목차, 바로가기, 이동 링크, 목차 테이블 모두 금지. 목차는 시스템이 자동으로 추가합니다.
-4. 핵심 요약 카드 5개 (flexbox)
-5. FAQ 3개
-6. 내부링크: 본문 중간에 자연스럽게 2개 삽입 (아래 제공된 링크 사용)
-   {internal_links}
-
-## 테이블 HTML 형식 (중요: 헤더는 반드시 주제에 맞는 실제 항목명을 사용. "항목1/항목2/항목3" 금지!)
-## 테이블 데이터는 최소 3행 이상 채울 것
-<div class="table-section" style="margin: 20px 0;">
+# ── 공통 HTML 형식 ──────────────────────────────────────────────
+_TABLE_HTML = """<div class="table-section" style="margin: 20px 0;">
 <table style="width: 100%; border-collapse: collapse;">
 <thead><tr>
 <th style="padding: 12px; border: 1px solid #FFB6C1; background-color: #ffe4e8; color: #2c3e50;">구분</th>
@@ -65,27 +45,89 @@ BLOG_STYLE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로
 </tr></thead>
 <tbody>
 <tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항목A</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">설명</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">효과</td></tr>
-<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항목B</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">설명</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">효과</td></tr>
-<tr><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">항목C</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">설명</td><td style="padding: 12px; border: 1px solid #FFB6C1; color: #333;">효과</td></tr>
-</tbody></table></div>
+</tbody></table></div>"""
+
+_SECTION_HTML = """<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
+<p style="color: #333; line-height: 1.8;">내용</p>
+</div>"""
+
+_COMMON_RULES = """
+## 공통 글쓰기 규칙
+- 제목: 롱테일 키워드 형식 (20~35자), [타겟+숫자/결과+주제+방법/이유/후기/추천/비교] 구조
+  * 숫자·결과·경험 중 1개 이상 필수: "3개월 5kg 감량 성공 방법", "2주 만에 무릎 통증 줄인 후기"
+  * ❌ 연도, "총정리", "완벽 가이드" 금지
+- 전체 흐름: 문제 제기 → 공감 → 해결책 → 사례/경험 → 행동 촉구
+- 도입부 첫 3줄 안에 문제 제기 필수
+- 개인 경험 섹션 필수 (5번째 H2): 실패 → 개선 → 수치 결과 (기간+수치+변화 3요소)
+- 전체 최소 3,000자 이상, 각 섹션 300~500자
+- 표: 글 전체 최대 1~2개만 (꼭 필요한 비교/수치에만)
+- 리스트: 3개 이상 연속이면 문단으로 풀어쓸 것
+- ❌ 금지: 반복 요약, "앞서 언급했듯이", "이상으로 알아봤습니다", 의미 없는 문장
+- ❌ 금지: "규칙적인 운동", "충분한 수면", "스트레스 관리" 같이 어디서나 볼 수 있는 뻔한 내용
+- ✅ 필수: 차별화된 관점 1개 이상 포함 (반직관적 사실 / 간과된 디테일 / 실패 경험 / 수치 근거 / 비교 관점)
+- H2 섹션 6~7개, H3 사용 안 함, 목차(TOC) 생성 금지
+- 태그 6~7개
+- 각 섹션 내용은 topic-content div로 감쌈
+- 내부링크 2개 본문 중간에 자연스럽게 삽입: {internal_links}
+- 이미지: 최대 3개, alt 텍스트 모두 다르게 (중복 금지), "[키워드] [구체적 상황]" 형식
+- 박스(강조 div) 연속 2개 이상 금지 — 박스 사이에 텍스트 문단 1개 이상 삽입
+- 각 섹션 첫 100자는 순수 텍스트로 시작 (박스·리스트·표 금지)
 
 ## 섹션 내용 형식
-<div class="topic-content" style="background-color: #fff5f6; padding: 20px; border-radius: 8px; border-left: 4px solid #FFB6C1;">
-<p style="color: #333; line-height: 1.8;">내용</p>
-</div>
+""" + _SECTION_HTML + """
+
+## 테이블 형식 (최대 1~2개, 헤더에 "항목1/2/3" 절대 금지, 실제 항목명 사용)
+""" + _TABLE_HTML
+
+# ── 수익형 프롬프트 (상품 추천 + CTA 포함) ──────────────────────
+REVENUE_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로그의 전문 콘텐츠 작가입니다.
+""" + _CORE_GOALS + """
+## 글 유형: 수익형 (상품 추천 + CTA 중심)
+- 목적: 독자의 문제를 해결하면서 관련 상품 구매를 자연스럽게 유도
+- 쿠팡 추천 상품을 해결책 맥락에서 자연스럽게 언급 (억지 끼워넣기 금지)
+- 제품 배치 순서 (필수): 문제 제기 → 공감 → 해결책 설명 → 개인 경험/결과 → **이 시점에만** 제품 블록
+- 제품 블록 바로 위 브릿지 문장 필수: "음식만으로는 한계가 있었어요. 그래서 저는 이걸 함께 쓰기 시작했어요." 형식
+- 제품 가격 순서: 저가 → 중가 → 고가 (부담감 최소화)
+- 제품 블록 앞에 선택 구조 카드 삽입: "이런 분 → A 제품 / 저런 분 → B 제품" 2열 카드
+- CTA 필수:
+  * 중간 CTA (해결책 섹션 끝): "이 방법이 어렵다면?" + 내부 링크 버튼
+    <div style="background:linear-gradient(135deg,#fff5f6,#ffe4e8);border-radius:10px;padding:20px;margin:25px 0;border-left:4px solid #FFB6C1;text-align:center;"><p style="font-size:15px;color:#555;margin:0 0 8px 0;">이 방법이 어렵다면?</p><p style="font-size:17px;font-weight:bold;color:#2c3e50;margin:0 0 15px 0;">[대안 설명]</p><a href="[내부링크]" style="display:inline-block;padding:12px 30px;background:#e44d26;color:white;border-radius:6px;text-decoration:none;font-weight:bold;">바로 확인하기 →</a></div>
+  * 최종 CTA (마무리 끝): 다음 관련 글 연결
+    <div style="background:linear-gradient(135deg,#fff5f6,#ffe4e8);border-radius:10px;padding:25px;margin:30px 0;text-align:center;border:2px solid #FFB6C1;"><p style="font-size:18px;font-weight:bold;color:#2c3e50;margin:0 0 10px 0;">📌 다음으로 읽으면 좋은 글</p><a href="[내부링크]" style="display:block;padding:15px;background:#fff;border-radius:8px;text-decoration:none;color:#2c3e50;font-weight:bold;border:1px solid #FFB6C1;margin-top:12px;">👉 [관련 글 제목]</a></div>
 
 ## 이번 글 요청
 - 키워드: "{keyword}"
 - 카테고리: 건강 & 웰빙
 - 쿠팡 추천 상품 (본문에서 자연스럽게 언급): {products}
-
-## 중요 금지사항
-- 테이블 헤더에 "항목1", "항목2", "항목3" 절대 사용 금지. 반드시 주제에 맞는 실제 항목명 사용
-- 쿠팡 추천 상품 언급 시 본문 맥락과 자연스럽게 연결
-- "바꾸하고" 같은 비문 사용 금지
+""" + _COMMON_RULES + """
 
 ## 출력: 반드시 JSON만
-{{"title":"제목","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(300자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+{{"title":"제목(20~35자, 숫자+결과+방법/이유/후기/추천/비교)","meta_description":"155자이내","sections":[{{"heading":"H2제목","content":"HTML본문(300자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+
+# ── 정보형 프롬프트 (순수 정보, 상품 언급 없음) ──────────────────
+INFO_PROMPT = """당신은 "건강온도사(행복++)" 티스토리 블로그의 전문 콘텐츠 작가입니다.
+""" + _CORE_GOALS + """
+## 글 유형: 정보형 (순수 정보 제공, 상품 추천 없음)
+- 목적: 독자에게 정확하고 깊이 있는 건강 정보를 제공하여 신뢰 구축 및 SEO 트래픽 확보
+- ❌ 절대 금지: 상품 추천, 쿠팡 링크 언급, "이 제품이 좋아요" 같은 상업적 표현
+- ❌ 절대 금지: "~을 구매하세요", "최저가 확인", 상품 관련 CTA
+- 중간 CTA (정보형): 관련 심층 정보 글로 연결
+  * "이 내용이 더 궁금하다면?" + 내부 링크
+    <div style="background:linear-gradient(135deg,#fff5f6,#ffe4e8);border-radius:10px;padding:20px;margin:25px 0;border-left:4px solid #FFB6C1;text-align:center;"><p style="font-size:15px;color:#555;margin:0 0 8px 0;">이 내용이 더 궁금하다면?</p><a href="[내부링크]" style="display:inline-block;padding:12px 30px;background:#e44d26;color:white;border-radius:6px;text-decoration:none;font-weight:bold;">관련 글 보러가기 →</a></div>
+- 최종 CTA (필수): 다음 관련 정보 글 연결
+  * "📌 함께 읽으면 좋은 글" 카드
+    <div style="background:linear-gradient(135deg,#fff5f6,#ffe4e8);border-radius:10px;padding:25px;margin:30px 0;text-align:center;border:2px solid #FFB6C1;"><p style="font-size:18px;font-weight:bold;color:#2c3e50;margin:0 0 10px 0;">📌 함께 읽으면 좋은 글</p><a href="[내부링크]" style="display:block;padding:15px;background:#fff;border-radius:8px;text-decoration:none;color:#2c3e50;font-weight:bold;border:1px solid #FFB6C1;margin-top:12px;">👉 [관련 글 제목]</a></div>
+
+## 이번 글 요청
+- 키워드: "{keyword}"
+- 카테고리: 건강 & 웰빙
+""" + _COMMON_RULES.replace("- 쿠팡 추천 상품 언급 시 본문 맥락과 자연스럽게 연결\n", "") + """
+
+## 출력: 반드시 JSON만
+{{"title":"제목(20~35자, 숫자+결과+방법/이유/후기/추천/비교)","meta_description":"155자이내","sections":[{{"heading":"H2제목","content":"HTML본문(300자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+
+# 하위 호환 유지
+BLOG_STYLE_PROMPT = REVENUE_PROMPT
 
 # 이미지 풀 (Unsplash 검증된 URL — 카테고리별 다양화)
 _IMAGES_HEALTH = [
@@ -297,30 +339,38 @@ def _load_all_used_keywords() -> list[str]:
     return list(set(used))
 
 
-def get_trending_keywords() -> list[str]:
-    """GPT를 활용해 기존 발행 글과 겹치지 않는 새 키워드 3개를 생성한다."""
+def get_trending_keywords() -> dict[str, list[str]]:
+    """구매 의도(수익형) 2개 + 탐색 의도(정보형) 1개 키워드를 생성한다.
+
+    Returns:
+        {"revenue": ["kw1", "kw2"], "info": ["kw3"]}
+    """
     import openai
 
     used_keywords = _load_all_used_keywords()
-    # 최근 100개만 GPT에 전달 (토큰 절약)
     recent_used = used_keywords[-100:] if len(used_keywords) > 100 else used_keywords
 
-    prompt = f"""당신은 건강/생활/뷰티 블로그 키워드 전문가입니다.
+    prompt = f"""당신은 건강/생활/뷰티 블로그 수익화 전문가입니다.
 
-아래는 이미 발행된 블로그 글 제목/키워드 목록입니다:
+이미 발행된 키워드 목록 (겹치면 절대 안 됨):
 {json.dumps(recent_used, ensure_ascii=False)}
 
-위 목록과 **겹치지 않는** 새로운 블로그 포스트 키워드 5개를 추천해주세요.
+아래 두 유형으로 키워드를 생성해주세요.
 
-조건:
-- 주제: 건강/질병, 음식/영양, 뷰티/생활 중에서 골고루
-- 20~60대 관심사 (건강관리, 영양제, 생활습관, 피부, 다이어트 등)
-- 검색량이 있는 실용적인 주제
-- 이미 발행된 글과 유사하거나 겹치는 주제 절대 금지
-- 계절/트렌드 반영 가능
+## 수익형 키워드 3개 (구매 의도 — 쿠팡 전환 목적)
+- 독자가 "이걸 사야겠다"는 결정 단계에 있는 키워드
+- 반드시 포함: 추천/비교/후기/효과/먹어봤더니/써봤더니 중 하나
+- 반드시 포함: 숫자(기간·수치·개수) 또는 구체적 대상(40대/직장인/여성 등)
+- 예: "40대 여성 마그네슘 영양제 추천 비교", "3개월 먹어봤더니 혈압 낮아진 영양제 후기"
+- 예: "50대 무릎 관절 영양제 3가지 효과 비교", "직장인 피로회복 비타민 추천 순위"
+
+## 정보형 키워드 2개 (탐색 의도 — SEO 트래픽 목적)
+- 독자가 원인·이유·방법을 찾는 단계의 키워드
+- 깊이 있는 정보를 원하는 주제, 포털에 없는 디테일 포함 가능
+- 예: "갱년기 여성 수면 장애 원인 3가지", "혈당 스파이크 식후 증상 놓치는 이유"
 
 반드시 아래 JSON 형식으로만 출력:
-{{"keywords": ["키워드1", "키워드2", "키워드3", "키워드4", "키워드5"]}}"""
+{{"revenue": ["수익형1", "수익형2", "수익형3"], "info": ["정보형1", "정보형2"]}}"""
 
     try:
         client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -328,60 +378,60 @@ def get_trending_keywords() -> list[str]:
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.9,
-            max_tokens=300,
+            max_tokens=400,
             response_format={"type": "json_object"},
         )
         raw = response.choices[0].message.content
         data = json.loads(raw)
-        keywords = data.get("keywords", [])[:5]
-        logger.info("GPT 추천 키워드: %s", keywords)
+        revenue_kws = filter_unique_keywords(data.get("revenue", []))[:2]
+        info_kws = filter_unique_keywords(data.get("info", []))[:1]
+        logger.info("수익형 키워드: %s", revenue_kws)
+        logger.info("정보형 키워드: %s", info_kws)
 
-        # 중복 필터 후 3개 선택
-        filtered = filter_unique_keywords(keywords)
-        if len(filtered) >= 3:
-            return filtered[:3]
+        # 부족분 폴백 보충
+        if len(revenue_kws) < 2:
+            revenue_kws += _fallback_keywords(2 - len(revenue_kws), kw_type="revenue")
+        if len(info_kws) < 1:
+            info_kws += _fallback_keywords(1, kw_type="info")
 
-        # GPT 결과 부족 시 추가 요청
-        logger.warning("GPT 키워드 중복 필터 후 %d개만 통과, 폴백 풀 보충", len(filtered))
-        return filtered + _fallback_keywords(3 - len(filtered))
+        return {"revenue": revenue_kws[:2], "info": info_kws[:1]}
 
     except Exception as e:
         logger.error("GPT 키워드 생성 실패: %s → 폴백 사용", e)
-        return _fallback_keywords(3)
+        return {
+            "revenue": _fallback_keywords(2, kw_type="revenue"),
+            "info": _fallback_keywords(1, kw_type="info"),
+        }
 
 
-def _fallback_keywords(count: int) -> list[str]:
-    """GPT 실패 시 사용할 폴백 키워드 풀."""
-    FALLBACK_POOL = [
-        # 건강/질병
-        "혈당 스파이크 원인", "내장지방 줄이는 법", "신장 건강 지키는 법",
-        "폐 건강에 좋은 음식", "심장 건강 체크리스트", "뇌 건강 높이는 습관",
-        "췌장 건강 관리법", "전립선 건강 식품", "자궁 건강 지키는 방법",
-        "요통 원인과 자가치료", "무릎 관절염 관리법", "손가락 마디 통증 원인",
-        "목 디스크 증상", "이석증 증상과 치료", "비염 근본 치료법",
-        "아토피 성인 관리법", "건선 원인과 관리", "대상포진 후 신경통",
-        "당뇨 합병증 예방", "고혈압 약 부작용", "콜레스테롤 수치 기준",
-        # 음식/영양
-        "공복혈당 낮추는 음식", "간헐적 단식 올바른 방법", "단백질 하루 권장량",
-        "식후 혈당 낮추는 식습관", "항암 식품 종류", "뇌에 좋은 음식",
-        "나쁜 지방 vs 좋은 지방", "장내 유익균 늘리는 음식", "수분 보충에 좋은 음식",
-        "노화 방지 항산화 식품", "뼈를 약하게 하는 음식", "신장에 나쁜 음식",
-        "혈압 올리는 음식", "소화 잘 되는 음식", "염증 줄이는 식단",
-        "비타민C 많은 음식", "아연 많은 음식", "셀레늄 효능과 음식",
-        # 뷰티/생활
-        "기미 잡티 없애는 법", "탄력 피부 만드는 습관", "셀룰라이트 없애는 법",
-        "다크서클 근본 원인", "두피 지루성 피부염 관리", "머리카락 굵어지는 방법",
-        "손발이 찬 이유", "수면 무호흡증 해결법", "구부정한 자세 교정법",
-        "하체 부종 빼는 법", "소화불량 즉각 해결법", "복부팽만감 원인",
-        "스트레스성 탈모 관리", "손 거칠어지는 원인", "발뒤꿈치 갈라짐 예방",
-        "눈떨림 원인과 해결법", "잦은 방귀 원인", "딸꾹질 멈추는 방법",
+def _fallback_keywords(count: int, kw_type: str = "revenue") -> list[str]:
+    """GPT 실패 시 사용할 폴백 키워드 풀 (수익형/정보형 분리)."""
+    REVENUE_POOL = [
+        # 구매 의도 — 영양제/제품 추천·비교·후기
+        "40대 여성 마그네슘 영양제 추천 비교", "직장인 피로회복 비타민 효과 후기",
+        "50대 무릎 관절 영양제 3가지 비교", "갱년기 여성 칼슘 영양제 추천 순위",
+        "혈압 낮추는 영양제 3개월 먹어본 후기", "당뇨 전단계 혈당 영양제 추천",
+        "탈모 영양제 6개월 써본 솔직 후기", "수면 영양제 추천 효과 있는 것만",
+        "장 건강 유산균 추천 비교 2가지", "눈 건강 루테인 영양제 추천 후기",
+        "50대 남성 전립선 영양제 추천 비교", "임산부 엽산 철분 영양제 추천",
+        "다이어트 보조제 효과 있는 것 추천", "피부 콜라겐 영양제 추천 순위",
+        "오메가3 고함량 추천 직접 비교해봤더니", "비타민D 영양제 추천 용량 기준",
+    ]
+    INFO_POOL = [
+        # 탐색 의도 — 원인·이유·방법
+        "갱년기 여성 수면 장애 원인 3가지", "혈당 스파이크 식후 증상 놓치는 이유",
+        "40대부터 근육 빠지는 이유와 예방법", "내장지방 쌓이는 진짜 원인",
+        "만성 피로 원인 혈액검사로 알 수 있는 것", "공복혈당 높아지는 원인",
+        "고혈압 약 장기 복용 부작용 알아야 할 것", "콜레스테롤 수치 기준 오해와 진실",
+        "장누수 증후군 증상 놓치기 쉬운 신호들", "수면 부족이 혈당에 미치는 영향",
+        "염증성 음식 vs 항염 음식 실제 차이", "단백질 부족 증상 나이별 다른 이유",
     ]
 
+    pool = REVENUE_POOL if kw_type == "revenue" else INFO_POOL
     result = []
-    for kw in FALLBACK_POOL:
+    for kw in pool:
         if not check_keyword_duplicate(kw):
-            dup = check_title_duplicate(kw, threshold=0.5)
-            if not dup:
+            if not check_title_duplicate(kw, threshold=0.5):
                 result.append(kw)
         if len(result) >= count:
             break
@@ -564,8 +614,8 @@ def search_coupang_products(keyword: str) -> list:
         return []
 
 
-def generate_content(keyword: str, products: list) -> dict:
-    """Gemini로 블로그 콘텐츠를 생성한다."""
+def generate_content(keyword: str, products: list, post_type: str = "revenue") -> dict:
+    """블로그 콘텐츠를 생성한다. post_type: 'revenue'(수익형) | 'info'(정보형)"""
     product_names = ", ".join(p.product_name[:30] for p in products) if products else "관련 건강제품"
 
     # 내부 링크 자동 매칭
@@ -578,7 +628,8 @@ def generate_content(keyword: str, products: list) -> dict:
     else:
         link_lines = '- <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/16">관절에 좋은 음식 BEST 7</a>\n   - <a style="color: #c0392b; text-decoration: underline;" href="https://kgbae2369.tistory.com/28">혈압 낮추는 식단 가이드</a>'
 
-    prompt = BLOG_STYLE_PROMPT.format(keyword=keyword, products=product_names, internal_links=link_lines)
+    template = INFO_PROMPT if post_type == "info" else REVENUE_PROMPT
+    prompt = template.format(keyword=keyword, products=product_names, internal_links=link_lines)
 
     # GPT-5 Mini 우선, Gemini 폴백
     text = ""
@@ -649,7 +700,55 @@ def build_adsense_ad(slot_id: str, ad_format: str = "auto") -> str:
 </div>"""
 
 
-def build_full_html(data: dict, products: list, post_index: int, keyword: str = "") -> str:
+_AD_CONTEXT = {
+    "problem": (
+        "위와 같은 문제로 고민이라면, 실질적인 도움이 될 수 있는 제품을 확인해보세요.",
+        "지금 많은 분들이 찾고 있는 제품이에요. 잠깐 살펴보시면 도움이 될 거예요. 👇",
+    ),
+    "solution": (
+        "앞서 소개한 방법을 실천할 때 함께 활용하면 더 효과적인 제품을 소개해 드릴게요.",
+        "직접 써보고 선별한 제품입니다. 가격 대비 만족도가 높아요. 👇",
+    ),
+    "conclusion": (
+        "오늘 알아본 내용, 지금 바로 시작해보실 수 있어요.",
+        "바로 아래에서 관련 제품을 확인하고 시작해보세요. 배송도 빠릅니다. 👇",
+    ),
+}
+
+
+def build_ad_block(adsense_html: str, product, context_type: str = "problem") -> str:
+    """클릭 유도 문맥 + 쿠팡 단일 상품 + 애드센스 광고를 조합한 블록."""
+    lead, cta = _AD_CONTEXT.get(context_type, _AD_CONTEXT["problem"])
+    product_html = ""
+    if product:
+        name = getattr(product, "product_name", "") or product.get("productName", "")
+        price = getattr(product, "product_price", 0) or int(product.get("productPrice", 0))
+        url = getattr(product, "product_url", "#") or product.get("productUrl", "#")
+        img = getattr(product, "product_image", "") or product.get("productImage", "")
+        is_rocket = getattr(product, "is_rocket", False)
+        img_tag = f'<img src="{img}" alt="{name[:20]}" style="width:130px;height:130px;object-fit:contain;border-radius:6px;background:#fff;border:1px solid #eee;" loading="lazy" />' if img else ""
+        rocket_badge = "🚀 로켓배송" if is_rocket else "일반배송"
+        product_html = f"""<div style="margin:10px 0 15px;padding:18px;border:1px solid #e0e0e0;border-radius:8px;background:#fafafa;">
+<a href="{url}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:#333;">
+<div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+{img_tag}
+<div style="flex:1;min-width:200px;">
+<p style="font-size:17px;font-weight:bold;color:#2c3e50;margin:0 0 8px 0;">{name}</p>
+<p style="font-size:20px;font-weight:bold;color:#e44d26;margin:0 0 6px 0;">{price:,}원</p>
+<p style="font-size:13px;color:#888;margin:0 0 10px 0;">{rocket_badge}</p>
+<span style="display:inline-block;padding:8px 24px;background:#e44d26;color:white;border-radius:4px;font-size:14px;font-weight:bold;">최저가 확인하기 →</span>
+</div></div></a></div>"""
+
+    return f"""<div style="background:#fff8f8;border-radius:10px;padding:20px;margin:25px 0;border:1px solid #FFE4E8;">
+<p style="color:#555;font-size:14px;margin:0 0 6px 0;">{lead}</p>
+<p style="color:#e44d26;font-size:13px;font-weight:bold;margin:0 0 12px 0;">{cta}</p>
+{product_html}
+{adsense_html}
+<p style="color:#999;font-size:11px;margin:8px 0 0 0;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+</div>"""
+
+
+def build_full_html(data: dict, products: list, post_index: int, keyword: str = "", post_type: str = "revenue") -> str:
     """전체 블로그 포스트 HTML을 조립한다."""
     # GitHub 호스팅 이미지 사용 (136개 풀, used_images.json 중복 추적)
     if keyword:
@@ -666,12 +765,17 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     tags = data.get("tags", [])
     summary_cards = data.get("summary_cards", [])
     faqs = data.get("faq", [])
-    coupang_html = build_coupang_html(products)
-
     # 애드센스 광고 슬롯
     ad_top = build_adsense_ad(os.getenv("ADSENSE_SLOT_TOP", ""))
     ad_mid = build_adsense_ad(os.getenv("ADSENSE_SLOT_MID", ""), "infeed")
     ad_bottom = build_adsense_ad(os.getenv("ADSENSE_SLOT_BOTTOM", ""))
+
+    # 정보형은 쿠팡 상품 사용 안 함
+    is_revenue = (post_type == "revenue")
+    p_list = list(products[:3]) if (products and is_revenue) else []
+    p_problem  = p_list[0] if len(p_list) > 0 else None  # 문제 인식 직후
+    p_solution = p_list[1] if len(p_list) > 1 else None  # 해결 방법 직후
+    p_conclude = p_list[2] if len(p_list) > 2 else None  # 결론 직전
 
     parts = []
 
@@ -712,11 +816,11 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 {section["content"]}
 </div>""")
 
-        # 광고 삽입: 1번째 H2 뒤 (상단), 3번째 H2 뒤 (중간 인피드)
-        if i == 1 and ad_top:
-            parts.append(ad_top)
-        elif i == 3 and ad_mid:
-            parts.append(ad_mid)
+        # 광고: 문제 인식 직후(2번째 섹션), 해결 방법 직후(4번째 섹션)
+        if i == 2:
+            parts.append(build_ad_block(ad_top, p_problem, "problem"))
+        elif i == 4:
+            parts.append(build_ad_block(ad_mid, p_solution, "solution"))
 
     # 핵심 요약 카드
     if summary_cards:
@@ -742,9 +846,8 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 <div style="padding: 10px; margin-top: 20px;">
 {faq_items}</div></div>""")
 
-    # 결론 전 광고
-    if ad_bottom:
-        parts.append(ad_bottom)
+    # 결론 직전 광고 (문맥 + 쿠팡 3번째 상품 + 애드센스)
+    parts.append(build_ad_block(ad_bottom, p_conclude, "conclusion"))
 
     # 마무리
     conclusion = ""
@@ -761,14 +864,7 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 <p style="color: #888; font-size: 13px; margin-top: 15px; line-height: 1.6;">※ 본 글은 건강 정보를 요약한 것이며, 질병 치료 목적이 아닙니다.</p>
 </div>""")
 
-    # 쿠팡 추천 상품
-    if coupang_html:
-        parts.append(f"""<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-<h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">건강온도사 추천 제품</h2>
-<p style="color: #666; font-size: 14px; margin-bottom: 20px;">이 글의 주제에 도움이 될 수 있는 제품들을 선별했습니다.</p>
-{coupang_html}
-<p style="color: #999; font-size: 12px; margin-top: 15px;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
-</div>""")
+    # 쿠팡 추천 상품은 각 광고 블록에 분산 삽입되었으므로 별도 섹션 불필요
 
     # 태그
     tag_str = ", ".join(tags)
@@ -847,26 +943,36 @@ def main():
     output_dir = Path(__file__).parent.parent / "output" / "posts" / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # GPT가 중복 없는 키워드 3개를 직접 생성 (폴백 포함)
-    keywords = get_trending_keywords()[:3]
-    logger.info("=== %s 일일 포스트 생성 시작 (키워드: %s) ===", today, keywords)
+    # 수익형 키워드 2개 + 정보형 키워드 1개 생성
+    kw_map = get_trending_keywords()
+    revenue_kws = kw_map.get("revenue", [])
+    info_kws = kw_map.get("info", [])
+    # 순서: 수익형 → 정보형 → 수익형
+    keyword_plan = [
+        (revenue_kws[0] if len(revenue_kws) > 0 else "건강 영양제 추천", "revenue"),
+        (info_kws[0]    if len(info_kws) > 0    else "건강 정보", "info"),
+        (revenue_kws[1] if len(revenue_kws) > 1 else revenue_kws[0] if revenue_kws else "영양제 비교", "revenue"),
+    ]
+    logger.info("=== %s 일일 포스트 생성 시작 ===", today)
+    logger.info("  수익형: %s", revenue_kws)
+    logger.info("  정보형: %s", info_kws)
 
     results = []
 
-    for i, keyword in enumerate(keywords):
-        logger.info("[%d/3] 키워드: '%s'", i + 1, keyword)
+    for i, (keyword, post_type) in enumerate(keyword_plan):
+        logger.info("[%d/3] 키워드: '%s' (%s)", i + 1, keyword, post_type)
 
-        # 1. 쿠팡 상품 검색
-        products = search_coupang_products(keyword)
+        # 1. 쿠팡 상품 검색 (수익형만)
+        products = search_coupang_products(keyword) if post_type == "revenue" else []
         logger.info("  쿠팡: %d개 상품", len(products))
 
-        # 2. Gemini 콘텐츠 생성
-        logger.info("  Gemini 생성 중...")
-        data = generate_content(keyword, products)
+        # 2. 콘텐츠 생성
+        logger.info("  콘텐츠 생성 중... [%s]", post_type)
+        data = generate_content(keyword, products, post_type=post_type)
         logger.info("  제목: %s", data.get("title", ""))
 
         # 3. 전체 HTML 조립
-        blog_html = build_full_html(data, products, i, keyword=keyword)
+        blog_html = build_full_html(data, products, i, keyword=keyword, post_type=post_type)
 
         # 4. 도구 페이지 생성
         tool_html = build_tool_page(
