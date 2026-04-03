@@ -347,12 +347,14 @@ def process_draft(draft_path: Path, blog: str, today: str, output_dir: Path) -> 
     # HTML 조립
     if blog == "health":
         blog_html = build_html_health(data, products_raw, post_index, keyword, post_type)
+        tool_html = build_tool_page_health(title, tags, blog_html, meta_desc)
     else:
         blog_html = build_html_it(data, products_raw, keyword, today, post_index, post_type)
+        tool_html = build_tool_page_it(title, tags, blog_html, meta_desc)
 
     safe_name = re.sub(r'[\\/:*?"<>|]', '', keyword).replace(" ", "_")[:30]
     filepath  = output_dir / f"post_{post_index}_{safe_name}.html"
-    filepath.write_text(blog_html, encoding="utf-8")
+    filepath.write_text(tool_html, encoding="utf-8")
     logger.info("  저장: %s", filepath)
 
     return {
