@@ -593,8 +593,11 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
             f"{keyword} 직접 경험 — {_body_secs[_exp_idx].get('heading', '')}"[:60]
         )
 
-    # 정보형은 쿠팡 상품 사용 안 함
-    p_list = list(products[:3]) if (products and post_type == "revenue") else []
+    # 정보형은 쿠팡 상품 사용 안 함 / 저가→중가→고가 순 정렬
+    if products and post_type == "revenue":
+        p_list = sorted(products[:3], key=lambda p: p.get("productPrice", 0) if isinstance(p, dict) else 0)
+    else:
+        p_list = []
 
     def _single_product_html(p: dict, context_type: str = "problem") -> str:
         """클릭 유도 문맥 + 단일 쿠팡 상품 블록 (IT 블루톤)."""
@@ -691,6 +694,16 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
         "datePublished": post_date,
         "description": meta_desc,
     }, ensure_ascii=False)
+
+    import re as _re
+    # 후처리 1: GPT가 섹션 내 삽입한 외부 <img> 제거 (GitHub 호스팅 외 경로)
+    sections_html = _re.sub(
+        r'<img\s[^>]*src="(?!https://raw\.githubusercontent\.com/kgbae99/tistory-blog-auto)[^"]*"[^>]*/?>',
+        '',
+        sections_html
+    )
+    # 후처리 2: CSS 버그 수정 (border: 1px solid: → border: 1px solid)
+    sections_html = _re.sub(r'border:\s*(\w+\s+\w+)\s*:\s*(#[0-9a-fA-F]+)', r'border: \1 \2', sections_html)
 
     return f"""<!DOCTYPE html>
 <html lang="ko">

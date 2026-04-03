@@ -869,10 +869,15 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     # 정보형은 쿠팡 상품 사용 안 함
     is_revenue = (post_type == "revenue")
-    p_list = list(products[:3]) if (products and is_revenue) else []
-    p_problem  = p_list[0] if len(p_list) > 0 else None  # 문제 인식 직후
-    p_solution = p_list[1] if len(p_list) > 1 else None  # 해결 방법 직후
-    p_conclude = p_list[2] if len(p_list) > 2 else None  # 결론 직전
+    # 저가 → 중가 → 고가 순으로 정렬
+    if products and is_revenue:
+        sorted_products = sorted(products[:3], key=lambda p: int(p.productPrice) if hasattr(p, "productPrice") else p.get("productPrice", 0) if isinstance(p, dict) else 0)
+    else:
+        sorted_products = []
+    p_list = sorted_products
+    p_problem  = p_list[0] if len(p_list) > 0 else None  # 문제 인식 직후 (저가)
+    p_solution = p_list[1] if len(p_list) > 1 else None  # 해결 방법 직후 (중가)
+    p_conclude = p_list[2] if len(p_list) > 2 else None  # 결론 직전 (고가)
 
     parts = []
 
@@ -974,10 +979,20 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     result = "\n\n".join(parts)
 
-    # 후처리: 이미지 alt 속성에 키워드 삽입 (빈 alt → SEO 최적화)
-    alt_text = keyword if keyword else data.get("title", "건강정보")
-    result = re.sub(r'alt=""', f'alt="{alt_text}"', result)
-    result = re.sub(r'<a[^>]*href="#(?!sec\d)[^"]*"[^>]*>(.*?)</a>', r'\1', result)  # GPT 앵커 제거 (시스템 #sec 유지)
+    # 후처리 1: GPT가 섹션 content 안에 삽입한 <img> 태그 제거
+    # (GitHub 호스팅 외 경로 이미지 → 이미지 규칙 위반, 깨진 경로)
+    result = re.sub(
+        r'<img\s[^>]*src="(?!https://raw\.githubusercontent\.com/kgbae99/tistory-blog-auto)[^"]*"[^>]*/?>',
+        '',
+        result
+    )
+
+    # 후처리 2: 쿠팡 광고 이미지 alt가 비어있으면 공백으로 유지 (의도적)
+    # 후처리 3: GPT가 만든 CSS 버그 수정 (border: 1px solid: → border: 1px solid)
+    result = re.sub(r'border:\s*(\w+\s+\w+)\s*:\s*(#[0-9a-fA-F]+)', r'border: \1 \2', result)
+
+    # 후처리 4: GPT 앵커 제거 (시스템 #sec 유지)
+    result = re.sub(r'<a[^>]*href="#(?!sec\d)[^"]*"[^>]*>(.*?)</a>', r'\1', result)
 
     # GPT가 생성한 중복 목차 제거 (시스템 목차만 유지)
     # "목차" 제목을 가진 섹션 중 시스템이 만든 것(h3) 외의 것 제거
