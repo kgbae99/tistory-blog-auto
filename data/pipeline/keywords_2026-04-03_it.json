@@ -1,0 +1,312 @@
+{
+  "date": "2026-04-03",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 추천 무선이어폰",
+      "type": "revenue",
+      "intent": "구매 의도, 특정 가격대의 무선이어폰을 찾는 사용자"
+    },
+    {
+      "keyword": "블루투스 스피커 2023년 베스트 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 최신 제품 검색하는 사용자"
+    },
+    {
+      "keyword": "가성비 좋은 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 가격 대비 성능 좋은 제품 찾는 사용자"
+    },
+    {
+      "keyword": "무선 마우스 오래 사용한 후기",
+      "type": "revenue",
+      "intent": "구매 의도, 제품의 내구성을 고려하는 사용자"
+    },
+    {
+      "keyword": "2023년 인기 기계식 키보드 비교",
+      "type": "revenue",
+      "intent": "구매 의도, 여러 제품 간 비교를 원하는 사용자"
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 재택근무에 적합한 제품 찾는 사용자"
+    },
+    {
+      "keyword": "미니PC 추천 10만원대 후기",
+      "type": "revenue",
+      "intent": "구매 의도, 저렴한 가격대의 미니PC를 찾는 사용자"
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도, 성능 차이를 알고 싶은 사용자"
+    },
+    {
+      "keyword": "배터리 오래 가는 보조배터리 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 배터리 지속 시간을 중요시하는 사용자"
+    },
+    {
+      "keyword": "충전기 효율 비교 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 효율성을 고려하는 사용자"
+    },
+    {
+      "keyword": "재택근무용 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도, 재택근무에 적합한 모니터를 찾는 사용자"
+    },
+    {
+      "keyword": "클라우드 서비스 비용 비교",
+      "type": "revenue",
+      "intent": "구매 의도, 가격을 비교하여 선택하려는 사용자"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "탐색 의도, 발열 문제 해결 방법을 찾는 사용자"
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 데이터 전송 속도 차이",
+      "type": "info",
+      "intent": "탐색 의도, 두 저장장치의 성능 차이를 알고 싶은 사용자"
+    },
+    {
+      "keyword": "기계식 키보드 vs 멤브레인 키보드 차이",
+      "type": "info",
+      "intent": "탐색 의도, 두 키보드 종류의 차이를 이해하려는 사용자"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도, 배터리 관리 방법을 찾는 사용자"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과와 이유",
+      "type": "info",
+      "intent": "탐색 의도, 블루라이트의 영향을 알고 싶은 사용자"
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 효율 증가 방법",
+      "type": "info",
+      "intent": "탐색 의도, AI를 통한 업무 효율화 방법 찾는 사용자"
+    },
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "탐색 의도, 컴퓨터 성능 향상 방법을 찾는 사용자"
+    },
+    {
+      "keyword": "트랙패드 사용법 및 팁",
+      "type": "info",
+      "intent": "탐색 의도, 트랙패드 사용 방법을 배우려는 사용자"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "미니PC 추천 10만원대 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도, 저렴한 가격대의 미니PC를 찾는 사용자"
+    },
+    {
+      "keyword": "2023년 인기 기계식 키보드 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도, 여러 제품 간 비교를 원하는 사용자"
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도, 성능 차이를 알고 싶은 사용자"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "미니PC 추천 10만원대 후기",
+      "type": "revenue",
+      "intent": "구매 의도, 저렴한 가격대의 미니PC를 찾는 사용자",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "2023년 인기 기계식 키보드 비교",
+      "type": "revenue",
+      "intent": "구매 의도, 여러 제품 간 비교를 원하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도, 성능 차이를 알고 싶은 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "충전기 효율 비교 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 효율성을 고려하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 비용 비교",
+      "type": "revenue",
+      "intent": "구매 의도, 가격을 비교하여 선택하려는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 추천 무선이어폰",
+      "type": "revenue",
+      "intent": "구매 의도, 특정 가격대의 무선이어폰을 찾는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 2023년 베스트 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 최신 제품 검색하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 가격 대비 성능 좋은 제품 찾는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 오래 사용한 후기",
+      "type": "revenue",
+      "intent": "구매 의도, 제품의 내구성을 고려하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 재택근무에 적합한 제품 찾는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "배터리 오래 가는 보조배터리 추천",
+      "type": "revenue",
+      "intent": "구매 의도, 배터리 지속 시간을 중요시하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도, 재택근무에 적합한 모니터를 찾는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "탐색 의도, 발열 문제 해결 방법을 찾는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 데이터 전송 속도 차이",
+      "type": "info",
+      "intent": "탐색 의도, 두 저장장치의 성능 차이를 알고 싶은 사용자",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 vs 멤브레인 키보드 차이",
+      "type": "info",
+      "intent": "탐색 의도, 두 키보드 종류의 차이를 이해하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도, 배터리 관리 방법을 찾는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과와 이유",
+      "type": "info",
+      "intent": "탐색 의도, 블루라이트의 영향을 알고 싶은 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 효율 증가 방법",
+      "type": "info",
+      "intent": "탐색 의도, AI를 통한 업무 효율화 방법 찾는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "탐색 의도, 컴퓨터 성능 향상 방법을 찾는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "트랙패드 사용법 및 팁",
+      "type": "info",
+      "intent": "탐색 의도, 트랙패드 사용 방법을 배우려는 사용자",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    }
+  ],
+  "filter_top_n": 3
+}
