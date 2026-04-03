@@ -109,8 +109,14 @@ _IMAGES: list[tuple[str, str]] = [
     ("tired_01.jpg", "피곤"), ("sleep_01.jpg", "수면"),
     ("sleep_02.jpg", "수면"), ("sleep_03.jpg", "수면"), ("rest_01.jpg", "수면"),
     ("sleep_04.jpg", "수면"), ("sleep_05.jpg", "수면"), ("sleep_06.jpg", "수면"),
-    # 영양제 (3개)
+    # 영양제 (3개) + 건강 이미지를 영양제로도 분류 (이미지 다양성 확보)
     ("vitamin_01.jpg", "영양제"), ("vitamin_02.jpg", "영양제"), ("vitamin_03.jpg", "영양제"),
+    ("health_05.jpg", "영양제"),   # 의사 청진기
+    ("health_08.jpg", "영양제"),   # 뇌 모형
+    ("health_16.jpg", "영양제"),   # 청진기 흑백
+    ("health_19.jpg", "영양제"),   # 의사 스마트폰
+    ("health_23.jpg", "영양제"),   # 엑스레이
+    ("medical_01.jpg", "영양제"), ("medical_02.jpg", "영양제"), ("medical_03.jpg", "영양제"),
     # 알레르기/미세먼지 (3개)
     ("allergy_01.jpg", "알레르기"), ("allergy_02.jpg", "알레르기"), ("dust_01.jpg", "미세먼지"),
     # 다이어트 (7개)
@@ -368,10 +374,13 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
         if len(result) >= count:
             break
 
-    # 새 이미지가 부족하면 최근 사용 이미지로 보충
-    if len(result) < count:
-        for img in fallback:
-            result.append(img)
+    # 새 이미지가 부족하면 최근 사용 이미지로 보충 (post_index 기반 오프셋으로 포스트간 다른 이미지 선택)
+    if len(result) < count and fallback:
+        offset = post_index % len(fallback)
+        rotated = [fallback[(offset + j) % len(fallback)] for j in range(len(fallback))]
+        for img in rotated:
+            if img not in result:
+                result.append(img)
             if len(result) >= count:
                 break
 
