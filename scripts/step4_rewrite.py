@@ -402,7 +402,8 @@ def main() -> None:
     args = parser.parse_args()
 
     today      = datetime.now().strftime("%Y-%m-%d")
-    output_dir = Path(__file__).parent.parent / "output" / "posts" / today / args.blog
+    folder_name = "it-posts" if args.blog == "it" else "posts"
+    output_dir = Path(__file__).parent.parent / "output" / folder_name / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # 단일 파일 모드
@@ -412,7 +413,8 @@ def main() -> None:
             print(f"파일 없음: {draft_path}")
             sys.exit(1)
         blog = json.loads(draft_path.read_text(encoding="utf-8")).get("blog", args.blog)
-        single_output_dir = Path(__file__).parent.parent / "output" / "posts" / today / blog
+        single_folder = "it-posts" if blog == "it" else "posts"
+        single_output_dir = Path(__file__).parent.parent / "output" / single_folder / today
         single_output_dir.mkdir(parents=True, exist_ok=True)
         result = process_draft(draft_path, blog, today, single_output_dir)
         if result:
