@@ -1,0 +1,311 @@
+{
+  "date": "2026-04-05",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 블루투스 이어폰 추천",
+      "type": "revenue",
+      "intent": "합리적 가격의 제품 구매를 위한 추천 목록"
+    },
+    {
+      "keyword": "2023년 최신 기계식 키보드 추천 5선",
+      "type": "revenue",
+      "intent": "최신 제품 구매를 위한 추천"
+    },
+    {
+      "keyword": "장시간 사용에도 편한 무선 마우스 리뷰",
+      "type": "revenue",
+      "intent": "장시간 사용자를 위한 제품 후기"
+    },
+    {
+      "keyword": "최대 10만원대 게이밍 헤드셋 비교",
+      "type": "revenue",
+      "intent": "가격대별 제품 비교를 통한 합리적 구매"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 필요성과 추천",
+      "type": "revenue",
+      "intent": "눈 건강을 위한 모니터 구매 추천"
+    },
+    {
+      "keyword": "학생용 50만원 이하 노트북 추천",
+      "type": "revenue",
+      "intent": "예산에 맞는 제품 추천"
+    },
+    {
+      "keyword": "20만원대 가성비 미니PC 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 제품 추천"
+    },
+    {
+      "keyword": "거실용 블루투스 스피커 추천 3가지",
+      "type": "revenue",
+      "intent": "공간 활용에 따른 제품 추천"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "배터리 수명 차이를 통한 제품 비교"
+    },
+    {
+      "keyword": "여행용 고속 충전기 추천 2023",
+      "type": "revenue",
+      "intent": "여행 시 편리한 제품 추천"
+    },
+    {
+      "keyword": "5만원 이하 무선 이어폰 솔직 후기",
+      "type": "revenue",
+      "intent": "실제 사용 후기를 기반으로 한 구매 결정"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 스탠드 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 제품 추천"
+    },
+    {
+      "keyword": "SSD가 HDD보다 속도가 빠른 이유",
+      "type": "info",
+      "intent": "저장 장치 간의 속도 차이 이해"
+    },
+    {
+      "keyword": "클라우드 스토리지 매년 갱신의 필요성",
+      "type": "info",
+      "intent": "클라우드 서비스의 갱신 필요성 탐색"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 다섯 가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결을 위한 정보 제공"
+    },
+    {
+      "keyword": "AI 도구를 이용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구 활용을 통한 업무 효율성 증대"
+    },
+    {
+      "keyword": "무선 마우스와 트랙패드의 장단점 비교",
+      "type": "info",
+      "intent": "입력 장치의 특성을 이해하기 위한 비교"
+    },
+    {
+      "keyword": "모니터 해상도에 따른 작업 효율성의 차이",
+      "type": "info",
+      "intent": "해상도가 작업 효율성에 미치는 영향 탐구"
+    },
+    {
+      "keyword": "보조배터리 용량별 충전 속도 차이",
+      "type": "info",
+      "intent": "충전기 선택 시 고려할 요소 이해"
+    },
+    {
+      "keyword": "재택근무 세팅 최적화를 위한 팁",
+      "type": "info",
+      "intent": "효율적인 재택근무 환경 구축을 위한 정보"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "최대 10만원대 게이밍 헤드셋 비교",
+      "post_type": "revenue",
+      "intent": "가격대별 제품 비교를 통한 합리적 구매"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 블루투스 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "합리적 가격의 제품 구매를 위한 추천 목록"
+    },
+    {
+      "keyword": "20만원대 가성비 미니PC 추천",
+      "post_type": "revenue",
+      "intent": "가성비 좋은 제품 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "최대 10만원대 게이밍 헤드셋 비교",
+      "type": "revenue",
+      "intent": "가격대별 제품 비교를 통한 합리적 구매",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 블루투스 이어폰 추천",
+      "type": "revenue",
+      "intent": "합리적 가격의 제품 구매를 위한 추천 목록",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "20만원대 가성비 미니PC 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "거실용 블루투스 스피커 추천 3가지",
+      "type": "revenue",
+      "intent": "공간 활용에 따른 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "배터리 수명 차이를 통한 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 무선 이어폰 솔직 후기",
+      "type": "revenue",
+      "intent": "실제 사용 후기를 기반으로 한 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "무선 마우스와 트랙패드의 장단점 비교",
+      "type": "info",
+      "intent": "입력 장치의 특성을 이해하기 위한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 기계식 키보드 추천 5선",
+      "type": "revenue",
+      "intent": "최신 제품 구매를 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 필요성과 추천",
+      "type": "revenue",
+      "intent": "눈 건강을 위한 모니터 구매 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "학생용 50만원 이하 노트북 추천",
+      "type": "revenue",
+      "intent": "예산에 맞는 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "여행용 고속 충전기 추천 2023",
+      "type": "revenue",
+      "intent": "여행 시 편리한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 노트북 스탠드 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 다섯 가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결을 위한 정보 제공",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD가 HDD보다 속도가 빠른 이유",
+      "type": "info",
+      "intent": "저장 장치 간의 속도 차이 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 이용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구 활용을 통한 업무 효율성 증대",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도에 따른 작업 효율성의 차이",
+      "type": "info",
+      "intent": "해상도가 작업 효율성에 미치는 영향 탐구",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량별 충전 속도 차이",
+      "type": "info",
+      "intent": "충전기 선택 시 고려할 요소 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "장시간 사용에도 편한 무선 마우스 리뷰",
+      "type": "revenue",
+      "intent": "장시간 사용자를 위한 제품 후기",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "클라우드 스토리지 매년 갱신의 필요성",
+      "type": "info",
+      "intent": "클라우드 서비스의 갱신 필요성 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "재택근무 세팅 최적화를 위한 팁",
+      "type": "info",
+      "intent": "효율적인 재택근무 환경 구축을 위한 정보",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
