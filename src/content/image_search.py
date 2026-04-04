@@ -73,117 +73,168 @@ def get_unique_image(image_pool: list[str]) -> str | None:
 
 _BASE = "https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images"
 
-# 전체 이미지 풀 136개 (카테고리별 분류, 중복 없음)
-_IMAGES: list[tuple[str, str]] = [
-    # 건강 - 운동/피트니스 실제 내용 기반 재분류
-    ("health_01.jpg", "운동"),   # 피트니스 코칭
-    ("health_02.jpg", "운동"),   # 요가 일몰 실루엣
-    ("health_07.jpg", "운동"),   # 달리기
-    ("health_09.jpg", "운동"),   # 헬스 덤벨
-    ("health_10.jpg", "운동"),   # 필라테스
-    ("health_11.jpg", "운동"),   # 요가 실루엣
-    # 건강 - 음식/식이 실제 내용 기반 재분류
-    ("health_03.jpg", "음식"),   # 채소 뷔페
-    ("health_04.jpg", "음식"),   # 샐러드 jar
-    ("health_06.jpg", "음식"),   # 채소 과일
-    ("health_13.jpg", "음식"),   # 채소 샐러드
-    ("health_22.jpg", "음식"),   # 감귤류 과일
-    # 건강 - 의료/의학 (건강 카테고리 유지)
-    ("health_05.jpg", "건강"),   # 의사 청진기
-    ("health_08.jpg", "건강"),   # 뇌 모형
-    ("health_12.jpg", "건강"),   # 수술실 의사들
-    ("health_14.jpg", "건강"),   # 수술실 공간
-    ("health_15.jpg", "건강"),   # 심장 모형
-    ("health_16.jpg", "건강"),   # 청진기 흑백
-    ("health_17.jpg", "건강"),   # 의사 청진기
-    ("health_18.jpg", "건강"),   # 뇌 모형
-    ("health_19.jpg", "건강"),   # 의사 스마트폰
-    ("health_20.jpg", "건강"),   # 수술실
-    ("health_23.jpg", "건강"),   # 엑스레이
-    ("health_25.jpg", "사무"),   # 컨퍼런스 청중
-    # 음식 (24개)
-    ("food_01.jpg", "음식"), ("food_02.jpg", "음식"), ("food_03.jpg", "음식"),
-    ("food_04.jpg", "음식"), ("food_05.jpg", "음식"), ("food_06.jpg", "음식"),
-    ("food_07.jpg", "음식"), ("food_08.jpg", "음식"), ("food_09.jpg", "음식"),
-    ("food_10.jpg", "음식"), ("food_11.jpg", "음식"), ("food_12.jpg", "음식"),
-    ("food_14.jpg", "음식"), ("food_15.jpg", "음식"),
-    ("food_16.jpg", "음식"), ("food_17.jpg", "음식"), ("food_18.jpg", "음식"),
-    ("food_19.jpg", "음식"), ("food_20.jpg", "음식"), ("food_21.jpg", "음식"),
-    ("food_22.jpg", "음식"), ("food_23.jpg", "음식"), ("food_24.jpg", "음식"), ("food_25.jpg", "음식"),
-    # 운동 (15개)
-    ("exercise_01.jpg", "운동"), ("exercise_02.jpg", "운동"), ("exercise_03.jpg", "운동"),
-    ("exercise_04.jpg", "운동"), ("exercise_06.jpg", "운동"), ("exercise_07.jpg", "운동"),
-    ("exercise_09.jpg", "운동"), ("exercise_10.jpg", "운동"), ("exercise_11.jpg", "운동"),
-    ("exercise_12.jpg", "운동"), ("exercise_13.jpg", "운동"), ("exercise_14.jpg", "운동"),
-    ("exercise_15.jpg", "운동"),
-    # 자연/봄 (5개)
-    ("spring_01.jpg", "봄"), ("spring_02.jpg", "봄"),
-    ("nature_01.jpg", "봄"), ("nature_02.jpg", "봄"), ("nature_03.jpg", "봄"),
-    # 피부/뷰티 (11개)
-    ("skin_01.jpg", "피부"), ("skin_02.jpg", "피부"), ("skin_03.jpg", "피부"),
-    ("skin_04.jpg", "피부"), ("skin_05.jpg", "피부"), ("skin_08.jpg", "피부"),
-    ("skin_09.jpg", "피부"), ("skin_10.jpg", "피부"), ("skin_11.jpg", "피부"),
-    ("beauty_01.jpg", "피부"), ("beauty_02.jpg", "피부"),
-    # 수면/휴식 (8개)
-    ("tired_01.jpg", "피곤"), ("sleep_01.jpg", "수면"),
-    ("sleep_02.jpg", "수면"), ("sleep_03.jpg", "수면"), ("rest_01.jpg", "수면"),
-    ("sleep_04.jpg", "수면"), ("sleep_05.jpg", "수면"), ("sleep_06.jpg", "수면"),
-    # 영양제 (3개) + 건강 이미지를 영양제로도 분류 (이미지 다양성 확보)
-    ("vitamin_01.jpg", "영양제"), ("vitamin_02.jpg", "영양제"), ("vitamin_03.jpg", "영양제"),
-    ("health_05.jpg", "영양제"),   # 의사 청진기
-    ("health_08.jpg", "영양제"),   # 뇌 모형
-    ("health_16.jpg", "영양제"),   # 청진기 흑백
-    ("health_19.jpg", "영양제"),   # 의사 스마트폰
-    ("health_23.jpg", "영양제"),   # 엑스레이
-    ("medical_01.jpg", "영양제"), ("medical_02.jpg", "영양제"), ("medical_03.jpg", "영양제"),
-    # 알레르기/미세먼지 (3개)
-    ("allergy_01.jpg", "알레르기"), ("allergy_02.jpg", "알레르기"), ("dust_01.jpg", "미세먼지"),
-    # 다이어트 (7개)
-    ("diet_01.jpg", "다이어트"), ("diet_02.jpg", "다이어트"),
-    ("diet_03.jpg", "다이어트"), ("diet_04.jpg", "다이어트"),
-    ("diet_05.jpg", "다이어트"), ("diet_06.jpg", "다이어트"), ("diet_07.jpg", "다이어트"),
-    # 정부지원/복지/금융 (4개)
-    ("gov_02.jpg", "정부지원"), ("gov_03.jpg", "정부지원"),
-    ("gov_04.jpg", "정부지원"), ("gov_06.jpg", "정부지원"),
-    # 의료/건강검진 (3개)
-    ("medical_01.jpg", "의료"), ("medical_02.jpg", "의료"), ("medical_03.jpg", "의료"),
-    # 금융/생활 (3개)
-    ("money_02.jpg", "금융"), ("office_01.jpg", "사무"), ("office_02.jpg", "사무"),
-    # IT/테크 - 노트북 (5개)
-    ("tech_01.jpg", "IT_laptop"), ("tech_02.jpg", "IT_laptop"), ("tech_03.jpg", "IT_laptop"),
-    ("tech_12.jpg", "IT_laptop"), ("tech_13.jpg", "IT_laptop"),
-    # IT/테크 - 이어폰/헤드폰/오디오 (2개, tech_15는 선글라스라 제외)
-    ("tech_06.jpg", "IT_audio"), ("tech_22.jpg", "IT_audio"),
-    # IT/테크 - 기타 (tech_15: 선글라스 이미지, IT_general로 분류)
-    ("tech_15.jpg", "IT_general"),
-    # IT/테크 - 스마트폰 (2개)
-    ("tech_07.jpg", "IT_phone"), ("tech_21.jpg", "IT_phone"),
-    # IT/테크 - 키보드/마우스 (4개)
-    ("tech_10.jpg", "IT_keyboard"), ("tech_14.jpg", "IT_keyboard"),
-    ("tech_19.jpg", "IT_keyboard"), ("tech_24.jpg", "IT_keyboard"),
-    # IT/테크 - 코딩/소프트웨어 (4개)
-    ("tech_08.jpg", "IT_coding"), ("tech_09.jpg", "IT_coding"),
-    ("tech_11.jpg", "IT_coding"), ("tech_23.jpg", "IT_coding"),
-    # IT/테크 - 모니터/셋업 (2개)
-    ("tech_17.jpg", "IT_monitor"), ("tech_18.jpg", "IT_monitor"),
-    # IT/테크 - AI/로봇 (4개)
-    ("tech_25.jpg", "IT_ai"), ("tech_26.jpg", "IT_ai"),
-    ("tech_27.jpg", "IT_ai"), ("tech_28.jpg", "IT_ai"),
-    # IT/테크 - 스마트워치 (1개)
-    ("tech_29.jpg", "IT_watch"),
-    # IT/테크 - 게이밍 (1개)
-    ("tech_20.jpg", "IT_gaming"),
-    # IT/테크 - 일반/하드웨어 (3개)
-    ("tech_04.jpg", "IT_general"), ("tech_05.jpg", "IT_general"), ("tech_30.jpg", "IT_general"),
+# ── 이미지 풀: 파일명 1개 = 1개 항목, 다중 카테고리 태그 ───────────────────
+# 형식: (파일명, [주카테고리, 보조카테고리, ...])
+# 동일 파일명 중복 등록 없음 → 중복 후보 문제 근본 해결
+_IMAGES: list[tuple[str, list[str]]] = [
+    # ── 건강/의료 ─────────────────────────────────────────────────────
+    ("health_01.jpg",  ["운동"]),                      # 피트니스 코칭
+    ("health_02.jpg",  ["운동"]),                      # 요가 일몰 실루엣
+    ("health_03.jpg",  ["음식"]),                      # 채소 뷔페
+    ("health_04.jpg",  ["음식"]),                      # 샐러드 jar
+    ("health_05.jpg",  ["건강", "영양제", "의료"]),    # 의사 청진기
+    ("health_06.jpg",  ["음식"]),                      # 채소 과일
+    ("health_07.jpg",  ["운동"]),                      # 달리기
+    ("health_08.jpg",  ["건강", "영양제", "의료"]),    # 뇌 모형
+    ("health_09.jpg",  ["운동"]),                      # 헬스 덤벨
+    ("health_10.jpg",  ["운동"]),                      # 필라테스
+    ("health_11.jpg",  ["운동"]),                      # 요가 실루엣
+    ("health_12.jpg",  ["건강", "의료"]),              # 수술실 의사들
+    ("health_13.jpg",  ["음식"]),                      # 채소 샐러드
+    ("health_14.jpg",  ["건강", "의료"]),              # 수술실 공간
+    ("health_15.jpg",  ["건강", "의료"]),              # 심장 모형
+    ("health_16.jpg",  ["건강", "영양제", "의료"]),    # 청진기 흑백
+    ("health_17.jpg",  ["건강", "의료"]),              # 의사 청진기
+    ("health_18.jpg",  ["건강", "의료"]),              # 뇌 모형
+    ("health_19.jpg",  ["건강", "영양제", "의료"]),    # 의사 스마트폰
+    ("health_20.jpg",  ["건강", "의료"]),              # 수술실
+    ("health_22.jpg",  ["음식"]),                      # 감귤류 과일
+    ("health_23.jpg",  ["건강", "영양제", "의료"]),    # 엑스레이
+    ("health_25.jpg",  ["사무"]),                      # 컨퍼런스 청중
+    # ── 음식 ──────────────────────────────────────────────────────────
+    ("food_01.jpg",    ["음식", "영양제"]),
+    ("food_02.jpg",    ["음식"]),
+    ("food_03.jpg",    ["음식"]),
+    ("food_04.jpg",    ["음식"]),
+    ("food_05.jpg",    ["음식"]),
+    ("food_06.jpg",    ["음식", "영양제"]),
+    ("food_07.jpg",    ["음식"]),
+    ("food_08.jpg",    ["음식"]),
+    ("food_09.jpg",    ["음식"]),
+    ("food_10.jpg",    ["음식", "영양제"]),
+    ("food_11.jpg",    ["음식"]),
+    ("food_12.jpg",    ["음식"]),
+    ("food_14.jpg",    ["음식", "영양제"]),
+    ("food_15.jpg",    ["음식"]),
+    ("food_16.jpg",    ["음식"]),
+    ("food_17.jpg",    ["음식"]),
+    ("food_18.jpg",    ["음식"]),
+    ("food_19.jpg",    ["음식", "영양제"]),
+    ("food_20.jpg",    ["음식"]),
+    ("food_21.jpg",    ["음식"]),
+    ("food_22.jpg",    ["음식"]),
+    ("food_23.jpg",    ["음식"]),
+    ("food_24.jpg",    ["음식"]),
+    ("food_25.jpg",    ["음식"]),
+    # ── 운동/피트니스 ─────────────────────────────────────────────────
+    ("exercise_01.jpg", ["운동", "영양제"]),
+    ("exercise_02.jpg", ["운동"]),
+    ("exercise_03.jpg", ["운동"]),
+    ("exercise_04.jpg", ["운동"]),
+    ("exercise_06.jpg", ["운동"]),
+    ("exercise_07.jpg", ["운동"]),
+    ("exercise_09.jpg", ["운동", "영양제"]),
+    ("exercise_10.jpg", ["운동"]),
+    ("exercise_11.jpg", ["운동"]),
+    ("exercise_12.jpg", ["운동"]),
+    ("exercise_13.jpg", ["운동"]),
+    ("exercise_14.jpg", ["운동"]),
+    ("exercise_15.jpg", ["운동"]),
+    # ── 자연/봄 ───────────────────────────────────────────────────────
+    ("spring_01.jpg",  ["봄", "영양제"]),
+    ("spring_02.jpg",  ["봄"]),
+    ("nature_01.jpg",  ["봄", "영양제"]),
+    ("nature_02.jpg",  ["봄"]),
+    ("nature_03.jpg",  ["봄"]),
+    # ── 피부/뷰티 ─────────────────────────────────────────────────────
+    ("skin_01.jpg",    ["피부", "영양제"]),
+    ("skin_02.jpg",    ["피부"]),
+    ("skin_03.jpg",    ["피부"]),
+    ("skin_04.jpg",    ["피부"]),
+    ("skin_05.jpg",    ["피부", "영양제"]),
+    ("skin_08.jpg",    ["피부"]),
+    ("skin_09.jpg",    ["피부"]),
+    ("skin_10.jpg",    ["피부"]),
+    ("skin_11.jpg",    ["피부"]),
+    ("beauty_01.jpg",  ["피부"]),
+    ("beauty_02.jpg",  ["피부"]),
+    # ── 수면/휴식/피로 ────────────────────────────────────────────────
+    ("tired_01.jpg",   ["피곤", "영양제"]),
+    ("sleep_01.jpg",   ["수면"]),
+    ("sleep_02.jpg",   ["수면", "영양제"]),
+    ("sleep_03.jpg",   ["수면"]),
+    ("sleep_04.jpg",   ["수면"]),
+    ("sleep_05.jpg",   ["수면"]),
+    ("sleep_06.jpg",   ["수면"]),
+    ("rest_01.jpg",    ["수면"]),
+    # ── 영양제 전용 ───────────────────────────────────────────────────
+    ("vitamin_01.jpg", ["영양제"]),
+    ("vitamin_02.jpg", ["영양제"]),
+    ("vitamin_03.jpg", ["영양제"]),
+    # ── 다이어트 ──────────────────────────────────────────────────────
+    ("diet_01.jpg",    ["다이어트", "영양제"]),
+    ("diet_02.jpg",    ["다이어트"]),
+    ("diet_03.jpg",    ["다이어트"]),
+    ("diet_04.jpg",    ["다이어트", "영양제"]),
+    ("diet_05.jpg",    ["다이어트"]),
+    ("diet_06.jpg",    ["다이어트"]),
+    ("diet_07.jpg",    ["다이어트"]),
+    # ── 알레르기/미세먼지 ────────────────────────────────────────────
+    ("allergy_01.jpg", ["알레르기"]),
+    ("allergy_02.jpg", ["알레르기"]),
+    ("dust_01.jpg",    ["미세먼지"]),
+    # ── 의료/건강검진 ────────────────────────────────────────────────
+    ("medical_01.jpg", ["의료", "영양제", "건강"]),
+    ("medical_02.jpg", ["의료", "영양제", "건강"]),
+    ("medical_03.jpg", ["의료", "영양제", "건강"]),
+    # ── 정부지원/금융/사무 ────────────────────────────────────────────
+    ("gov_02.jpg",     ["정부지원"]),
+    ("gov_03.jpg",     ["정부지원"]),
+    ("gov_04.jpg",     ["정부지원"]),
+    ("gov_06.jpg",     ["정부지원"]),
+    ("money_02.jpg",   ["금융"]),
+    ("office_01.jpg",  ["사무"]),
+    ("office_02.jpg",  ["사무"]),
+    # ── IT/테크 ───────────────────────────────────────────────────────
+    ("tech_01.jpg",    ["IT_laptop"]),
+    ("tech_02.jpg",    ["IT_laptop"]),
+    ("tech_03.jpg",    ["IT_laptop"]),
+    ("tech_04.jpg",    ["IT_general"]),
+    ("tech_05.jpg",    ["IT_general"]),
+    ("tech_06.jpg",    ["IT_audio"]),
+    ("tech_07.jpg",    ["IT_phone"]),
+    ("tech_08.jpg",    ["IT_coding"]),
+    ("tech_09.jpg",    ["IT_coding"]),
+    ("tech_10.jpg",    ["IT_keyboard"]),
+    ("tech_11.jpg",    ["IT_coding"]),
+    ("tech_12.jpg",    ["IT_laptop"]),
+    ("tech_13.jpg",    ["IT_laptop"]),
+    ("tech_14.jpg",    ["IT_keyboard"]),
+    ("tech_15.jpg",    ["IT_general"]),
+    ("tech_17.jpg",    ["IT_monitor"]),
+    ("tech_18.jpg",    ["IT_monitor"]),
+    ("tech_19.jpg",    ["IT_keyboard"]),
+    ("tech_20.jpg",    ["IT_gaming"]),
+    ("tech_21.jpg",    ["IT_phone"]),
+    ("tech_22.jpg",    ["IT_audio"]),
+    ("tech_23.jpg",    ["IT_coding"]),
+    ("tech_24.jpg",    ["IT_keyboard"]),
+    ("tech_25.jpg",    ["IT_ai"]),
+    ("tech_26.jpg",    ["IT_ai"]),
+    ("tech_27.jpg",    ["IT_ai"]),
+    ("tech_28.jpg",    ["IT_ai"]),
+    ("tech_29.jpg",    ["IT_watch"]),
+    ("tech_30.jpg",    ["IT_general"]),
 ]
 
 # 카테고리별 인덱스
 IMAGE_POOL: dict[str, list[str]] = {}
 _ALL_URLS: list[str] = []
-for _fname, _cat in _IMAGES:
+for _fname, _cats in _IMAGES:
     url = f"{_BASE}/{_fname}"
     _ALL_URLS.append(url)
-    IMAGE_POOL.setdefault(_cat, []).append(url)
+    for _cat in _cats:
+        IMAGE_POOL.setdefault(_cat, []).append(url)
 IMAGE_POOL["기본"] = list(_ALL_URLS)
 
 # IT 세부 카테고리를 상위 "IT" 풀에도 포함
@@ -349,13 +400,13 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
     it_fallback: list[str] = []     # 3순위: 다른 IT 이미지 (IT 글 한정)
     other_imgs: list[str] = []      # 4순위: 무관 이미지
 
-    for fname, cat in _IMAGES:
+    for fname, cats in _IMAGES:
         url = f"{_BASE}/{fname}"
-        if cat in primary_cats:
+        if any(c in primary_cats for c in cats):
             primary_imgs.append(url)
-        elif cat in secondary_cats:
+        elif any(c in secondary_cats for c in cats):
             secondary_imgs.append(url)
-        elif is_it_keyword and cat in _IT_SUBCATS_SET:
+        elif is_it_keyword and any(c in _IT_SUBCATS_SET for c in cats):
             it_fallback.append(url)
         else:
             other_imgs.append(url)
