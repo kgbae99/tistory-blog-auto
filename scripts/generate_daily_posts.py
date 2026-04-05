@@ -1126,20 +1126,12 @@ def main():
         # 3. 전체 HTML 조립
         blog_html = build_full_html(data, products, i, keyword=keyword, post_type=post_type)
 
-        # 4. 도구 페이지 생성
-        tool_html = build_tool_page(
-            data.get("title", keyword),
-            data.get("tags", [keyword]),
-            blog_html,
-            meta_desc=data.get("meta_description", ""),
-        )
-
-        # 5. 파일 저장 (Windows 금지 문자 제거: \ / : * ? " < > |)
+        # 4. 파일 저장 (발행 도구 UI 없이 순수 HTML)
         import re as _re
         safe_name = _re.sub(r'[\\/:*?"<>|]', '', keyword).replace(" ", "_")[:30]
         filename = f"post_{i + 1}_{safe_name}.html"
         filepath = output_dir / filename
-        filepath.write_text(tool_html, encoding="utf-8")
+        filepath.write_text(blog_html, encoding="utf-8")
         logger.info("  저장: %s", filepath)
 
         # 제목 중복 체크
