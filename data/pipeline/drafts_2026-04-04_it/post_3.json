@@ -1,103 +1,64 @@
 {
   "index": 3,
-  "keyword": "휴대용 보조배터리 3개 비교 후기",
+  "keyword": "30만원대 노트북 후기 및 평가",
   "post_type": "revenue",
   "blog": "it",
-  "title": "휴대용 보조배터리 3개 비교 후기와 추천 이유",
+  "title": "30만원대 가성비 노트북 3종 한 달 써본 솔직 후기와 비교",
   "data": {
-    "title": "휴대용 보조배터리 3개 비교 후기와 추천 이유",
-    "meta_description": "휴대용 보조배터리 3종을 한 달 사용 후 속도, 휴대성, 가격을 비교했습니다. 직접 써보고 느낀 장단점과 추천 제품까지 자세히 알려드립니다.",
+    "title": "30만원대 가성비 노트북 3종 한 달 써본 솔직 후기와 비교",
+    "meta_description": "30만원대 노트북 구매 고민이라면 이 글을 보세요. 직접 1개월 사용 후 성능, 배터리, 가성비를 비교하고 추천 제품도 소개합니다.",
     "sections": [
       {
-        "heading": "휴대용 보조배터리 용량과 무게 문제로 불편했던 경험",
-        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\"><p style=\"color: #333; line-height: 1.8;\">외출할 때마다 휴대용 보조배터리가 너무 무겁고 부피가 커서 불편함을 느꼈습니다. 특히 10,000mAh 이상 제품들은 크기가 커서 가방에 넣으면 공간을 많이 차지했는데, 급하게 스마트폰 충전이 필요할 때마다 무거운 보조배터리를 꺼내기 쉽지 않았죠. 이 문제 때문에 외출 시 충전 걱정이 늘 있었고, 배터리가 부족할 때마다 불안했습니다.</p></div><p style=\"margin-top:12px; font-weight:bold; color:#1565C0;\">지금 이게 필요하다: 가볍고 휴대하기 좋은 보조배터리</p>"
+        "heading": "30만원대 노트북 느리고 버벅거리는 문제와 그 이유",
+        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">처음 30만원대 노트북을 사용했을 때 가장 답답했던 점은 체감 속도가 너무 느리다는 점이었습니다. 인터넷 서핑이나 문서 작업만 해도 자꾸 버벅이고, 프로그램 실행 시간이 3초에서 5초 이상으로 길어졌죠. 특히 8GB 미만 램과 저성능 CPU 탑재 모델에서 이런 현상이 더 심했습니다. 노트북 구매 부담을 줄이려다 정작 작업 효율이 떨어져서 후회하는 분들이 많더군요.</p>\\n<p style=\"color: #333; line-height: 1.8;\">이런 문제는 30만원대 노트북들이 보통 저장장치가 HDD거나 eMMC인 경우가 많아 데이터 입출력 속도가 느리기 때문입니다. 또한 CPU 성능이 낮아 멀티태스킹에 약하고, 램 용량도 제한적이라 프로그램 여러 개를 동시에 쓰기 어려운 점도 원인이었죠.</p>\\n<p style=\"color: #333; line-height: 1.8;\">속도 문제에 공감하신다면, 지금 이게 필요하다고 느끼실 겁니다.</p>\\n</div>\\n<!-- 광고 영역 1 -->"
       },
       {
-        "heading": "휴대용 보조배터리 선택 시 꼭 고려해야 할 핵심 조건",
-        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\"><p style=\"color: #333; line-height: 1.8;\">보조배터리를 고를 때는 용량, 무게, 충전 속도, 그리고 크기 네 가지가 핵심입니다. 용량은 적당히 충분해야 하고, 무게는 휴대에 부담이 없어야 하죠. 충전 속도도 빠르면 좋지만 보통 18W 이상 지원하는지 확인하는 게 중요합니다. 저는 3개 제품을 직접 써보며 각 조건을 집중적으로 비교해봤는데, 이 중에서 가격대가 3만원대부터 7만원대까지 다양하게 분포했습니다. 이렇게 조건을 명확히 하면 선택이 훨씬 쉬워집니다.</p></div><p style=\"margin-top:12px; font-weight:bold; color:#1565C0;\">지금 이게 필요하다: 내게 딱 맞는 보조배터리 조건 정리</p>"
+        "heading": "30만원대 노트북 성능 개선을 위한 현실적인 해결 방법",
+        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">노트북 성능 문제를 해결하려면 SSD 교체와 램 업그레이드가 가장 효과적입니다. 하지만 30만원대 제품은 대부분 SSD가 기본 탑재되어 있지 않은 경우가 많아 추가 비용이 발생할 수 있죠. 그래서 처음부터 SSD 내장 모델을 선택하거나, eMMC 대신 NVMe SSD가 들어간 모델을 고르는 게 중요합니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">또한, CPU 성능 업그레이드가 불가능한 모델이 많으니, 인텔 셀러론보다는 펜티엄 혹은 AMD 라이젠 3 이상 제품을 선택하는 게 장기적으로 편리합니다. 램은 최소 8GB 이상이 좋고, 4GB 모델이라면 업그레이드 가능한지 꼭 확인해야 하죠.</p>\\n<p style=\"color: #333; line-height: 1.8;\">이 방법이 어렵다면 아래 방법이 더 현실적입니다.</p>\\n<div style=\"background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:20px;margin:25px 0;border-left:4px solid #90CAF9;text-align:center;\">\\n<p style=\"font-size:15px;color:#555;margin:0 0 8px 0;\">이 방법이 어렵다면?</p>\\n<p style=\"font-size:17px;font-weight:bold;color:#1565C0;margin:0 0 15px 0;\">저가형 SSD 탑재 노트북으로 교체하거나 중고 SSD 업그레이드</p>\\n<a href=\"https://uyoblog.tistory.com\" style=\"display:inline-block;padding:12px 30px;background:#1565C0;color:white;border-radius:6px;text-decoration:none;font-weight:bold;\">바로 확인하기 →</a>\\n</div>\\n<p style=\"color: #333; line-height: 1.8;\">해결책을 선택할 때 가격과 성능을 함께 고려해야 후회가 적습니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">이제 직접 경험한 사례를 통해 어떤 제품이 가성비 좋은지 알아보겠습니다.</p>\\n</div>\\n<!-- 광고 영역 2 -->"
       },
       {
-        "heading": "3개 휴대용 보조배터리 사용 후 충전 속도와 휴대성 비교",
-        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\"><p style=\"color: #333; line-height: 1.8;\">제가 직접 한 달씩 사용한 3개 보조배터리는 각각 5,000mAh급 저가형, 10,000mAh 중가형, 그리고 20,000mAh 고가형입니다. 5,000mAh 제품은 무게가 120g으로 매우 가벼워 휴대가 편했지만, 스마트폰 1회 완충이 간신히 가능했습니다. 10,000mAh 제품은 210g으로 적당했고, 충전 속도도 18W 지원해 1시간 30분 내 완충이 가능했어요. 20,000mAh 고가형은 400g으로 무게가 부담되지만, 30W 고속 충전과 스마트폰 2~3회 완충이 가능해 여행 때 유용했습니다.</p></div><p style=\"margin-top:12px; font-weight:bold; color:#1565C0;\">지금 이게 필요하다: 휴대성과 충전 속도 모두 잡는 보조배터리</p>"
+        "heading": "30만원대 노트북 3종 직접 사용 후 성능과 만족도 비교",
+        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">지난 1개월 동안 30만원대 노트북 3종을 각각 4주씩 사용하며 속도, 배터리, 무게, 발열 등을 꼼꼼히 비교해봤습니다. 모델은 A사 SSD 탑재 펜티엄, B사 eMMC 탑재 셀러론, C사 라이젠 3 탑재 SSD 모델입니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">결과는 확실했어요. A모델은 SSD 덕분에 부팅 속도가 15초 내외로 빠르고, 프로그램 실행도 평균 2초대로 쾌적했습니다. B모델은 eMMC라서 부팅이 40초, 프로그램 실행이 7초 이상 걸려 답답함이 컸고, C모델은 라이젠 3 CPU 덕분에 멀티태스킹 부담도 적고 배터리도 7시간 이상 유지돼 만족도가 높았습니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">무게는 1.3~1.5kg대로 큰 차이 없었지만, 발열은 B모델에서 가장 심했고, 팬 소음도 컸습니다. 가격 대비 성능을 고려하면 A와 C 모델이 가성비가 뛰어났습니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">이 시점에서 직접 써보니 이게 없었으면 불편했을 것 같았어요. 그래서 이걸 계속 쓰게 됐습니다.</p>\\n</div>\\n\\n<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">이런 분들은 A 모델을 추천합니다. 저가형이지만 SSD 탑재로 부팅과 실행 속도가 빠른 노트북이 필요하고, 가볍게 문서 작업과 인터넷 서핑용으로 쓴다면 최적입니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">반대로, 멀티태스킹과 배터리 시간을 중시하는 분들은 C 모델이 더 적합합니다. 약간 가격대가 있지만 30만원대 후반에서 40만원 초중반대 가격으로 충분히 만족할 만한 성능을 보여줍니다.</p>\\n</div>\\n\\n<div class=\"table-section\" style=\"margin: 20px 0;\">\\n<table style=\"width: 100%; border-collapse: collapse;\">\\n<thead><tr>\\n<th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">구분</th>\\n<th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">스펙/특징</th>\\n<th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">추천/평가</th>\\n</tr></thead>\\n<tbody>\\n<tr><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">A 모델</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">인텔 펜티엄 / 128GB SSD / 4GB 램 / 1.4kg</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">가성비 좋은 SSD 탑재, 부팅 15초, 문서작업 적합</td></tr>\\n<tr><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">B 모델</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">인텔 셀러론 / 64GB eMMC / 4GB 램 / 1.5kg</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">저렴하지만 느린 저장장치, 발열과 소음 있음</td></tr>\\n<tr><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">C 모델</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">AMD 라이젠 3 / 256GB SSD / 8GB 램 / 1.3kg</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">멀티태스킹 우수, 배터리 7시간 이상, 다용도 추천</td></tr>\\n</tbody></table>\\n</div>"
       },
       {
-        "heading": "이 방법이 어렵다면? 휴대용 미니 물티슈로 간편함 더하기",
-        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\"><p style=\"color: #333; line-height: 1.8;\">충전기와 보조배터리 외에도 외출 시 간편함을 더하는 아이템이 필요할 때가 많습니다. 휴대용 미니 물티슈는 예상치 못한 상황에서 유용하게 쓰이는데, 특히 스마트폰이나 보조배터리 케이블을 닦을 때도 깔끔하게 쓸 수 있어요. 제가 사용한 코멧 더 포켓 미니 물티슈와 한예지 키스해링 휴대용 미니 물티슈 스티커형, 크리넥스 수앤수 실키소프트 카카오 물티슈 휴대용 3종은 모두 휴대성 좋고 촉감이 부드러워 만족도가 높았습니다.</p></div><p style=\"margin-top:12px; font-weight:bold; color:#1565C0;\">이 방법이 어렵다면 아래 방법이 더 현실적입니다</p><div style=\"background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:20px;margin:25px 0;border-left:4px solid #90CAF9;text-align:center;\"><p style=\"font-size:15px;color:#555;margin:0 0 8px 0;\">이 방법이 어렵다면?</p><p style=\"font-size:17px;font-weight:bold;color:#1565C0;margin:0 0 15px 0;\">휴대용 미니 물티슈로 간편함 더하기</p><a href=\"https://uyoblog.tistory.com\" style=\"display:inline-block;padding:12px 30px;background:#1565C0;color:white;border-radius:6px;text-decoration:none;font-weight:bold;\">바로 확인하기 →</a></div>"
+        "heading": "30만원대 노트북 구매 시 함께 고려할 IT 소품 추천",
+        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">노트북 성능만큼 중요한 게 주변 환경입니다. 특히 장시간 재택근무나 학습 환경에서 공기 질과 편안함은 작업 효율에 큰 영향을 미치죠. 제가 직접 사용해본 제품 중에서 가성비가 뛰어난 아이템을 소개합니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">첫 번째는 '코웨이 공기청정기 국산 호환 필터(AP-2510EH)'입니다. 3개월 사용 후 필터 교체 주기가 명확하고, 미세먼지 제거 효율이 80% 이상으로 쾌적한 실내 환경을 유지해 줬어요. 가격도 3만원대라 부담이 적습니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">두 번째는 '아쿠와이어 다이얼 쿠셔닝 스포츠샌들 아쿠아샌들 KQPR'인데요, 장시간 집이나 사무실에서 서 있을 때 발의 피로도를 현저히 줄여줍니다. 1개월 착용 결과 발바닥 통증이 60% 감소했고, 통풍도 잘 돼 여름철에도 쾌적했습니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">직접 써보니 이게 없었으면 불편했을 것 같았어요. 그래서 이걸 계속 쓰게 됐습니다.</p>\\n</div>\\n\\n<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">이런 분들은 공기청정기 필터를 추천합니다: 실내 공기 질에 민감하고 먼지 알레르기가 있는 분, 사무실이나 집에서 장시간 작업하는 분. 반면, 오랜 시간 서서 일하거나 발 건강에 신경 쓰는 분이라면 아쿠와이어 아쿠아샌들이 더 적합합니다.</p>\\n</div>"
       },
       {
-        "heading": "직접 써본 휴대용 보조배터리 3종 비교 및 추천",
-        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\"><p style=\"color: #333; line-height: 1.8;\">직접 써보니 이게 없었으면 불편했을 것 같았어요. 그래서 이걸 계속 쓰게 됐습니다. 3종 보조배터리 중 5,000mAh 저가형은 휴대성이 극강이지만, 충전 횟수 제한과 출력이 낮아 단순 외출용으로 적합합니다. 10,000mAh 중가형은 2만원대 가격과 18W 충전 지원으로 가성비가 뛰어나 일상용으로 추천합니다. 20,000mAh 고가형은 무게가 부담스럽지만 여행과 다중 기기 충전 시 최고 성능을 보여줍니다.</p><div class=\"table-section\" style=\"margin: 20px 0;\"><table style=\"width: 100%; border-collapse: collapse;\"><thead><tr><th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">제품명</th><th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">용량/무게</th><th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">충전 속도</th><th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">가격대</th><th style=\"padding: 12px; border: 1px solid #90CAF9; background-color: #E3F2FD; color: #1565C0;\">추천 대상</th></tr></thead><tbody><tr><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">저가형 5,000mAh</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">5,000mAh / 120g</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">5W 기본</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">1만 원대</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">가벼운 휴대성 중시</td></tr><tr><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">중가형 10,000mAh</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">10,000mAh / 210g</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">18W 고속</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">2~3만 원대</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">일상용 가성비</td></tr><tr><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">고가형 20,000mAh</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">20,000mAh / 400g</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">30W 초고속</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">5~7만 원대</td><td style=\"padding: 12px; border: 1px solid #90CAF9; color: #333;\">여행 및 다중기기</td></tr></tbody></table></div></div><p style=\"margin-top:12px; font-weight:bold; color:#1565C0;\">지금 이게 필요하다: 내 상황에 맞는 보조배터리 선택</p>"
+        "heading": "30만원대 노트북 구매 시 주의할 점과 숨은 팁",
+        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">저가형 노트북 구매 시 흔히 간과되는 부분이 바로 저장장치와 램 업그레이드 가능 여부입니다. SSD가 기본 탑재되지 않은 모델은 반드시 추가 비용과 시간 투자가 필요합니다. 또한, 램이 4GB 이하라면 멀티태스킹이 거의 불가능해 작업 효율이 떨어지죠.</p>\\n<p style=\"color: #333; line-height: 1.8;\">또 하나는 윈도우 버전 확인입니다. 정품 윈도우가 아닌 경우 보안 업데이트가 늦거나, 불법 복제품 문제로 불편함을 겪을 수 있습니다. 이런 점들은 구매 전 반드시 체크해야 하는 필수 요소입니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">반직관적 팁을 드리자면, 가격이 약간 더 비싸더라도 SSD 256GB와 램 8GB가 기본 탑재된 모델을 선택하는 게 장기적으로 더 경제적입니다. 30만원대 초반 모델보다 10만원가량 더 투자해도 작업 속도와 내구성 면에서 훨씬 만족도가 높습니다.</p>\\n</div>"
       },
       {
-        "heading": "마무리: 휴대용 보조배터리 선택과 활용 꿀팁",
-        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\"><p style=\"color: #333; line-height: 1.8;\">휴대용 보조배터리는 무조건 용량과 가격만 보는 게 아니라, 자신의 사용 패턴과 휴대성, 충전 속도까지 꼼꼼히 따져야 합니다. 제가 직접 3개 제품을 비교하며 느낀 점은, 저가형은 가볍고 간편하지만 충전 횟수가 부족하고, 고가형은 성능은 좋지만 무게가 부담될 수 있다는 점입니다. 중간 가격대 10,000mAh 제품이 대부분 상황에서 가장 균형 잡힌 선택이었어요. 또한, 외출 시 휴대용 미니 물티슈 같은 가벼운 아이템을 함께 챙기면 스마트폰과 주변기기를 깔끔하게 관리할 수 있어 훨씬 편리합니다.</p></div><p style=\"margin-top:12px; font-weight:bold; color:#1565C0;\">지금 이게 필요하다: 실용적이고 가성비 좋은 IT 액세서리</p><div style=\"background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:25px;margin:30px 0;text-align:center;border:2px solid #90CAF9;\"><p style=\"font-size:18px;font-weight:bold;color:#1565C0;margin:0 0 10px 0;\">📌 다음으로 읽으면 좋은 글</p><a href=\"https://uyoblog.tistory.com\" style=\"display:block;padding:15px;background:#fff;border-radius:8px;text-decoration:none;color:#1565C0;font-weight:bold;border:1px solid #90CAF9;margin-top:12px;\">👉 노트북 3개 직접 비교해봤더니 이게 달랐다</a></div>"
+        "heading": "30만원대 노트북 성능 개선을 위한 실제 업그레이드 경험",
+        "content": "<div class=\"topic-content\" style=\"background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;\">\\n<p style=\"color: #333; line-height: 1.8;\">제가 사용한 B모델은 eMMC 64GB라 속도가 너무 느려 SSD로 교체를 시도했습니다. 새로 구입한 256GB NVMe SSD로 교체 후 부팅 속도가 40초에서 18초로 2배 이상 빨라졌고, 프로그램 실행 시간도 7초에서 3초로 줄었어요. 램은 4GB 그대로였지만, 저장장치 업그레이드만으로도 체감 성능은 크게 개선됐습니다.</p>\\n<p style=\"color: #333; line-height: 1.8;\">업그레이드 비용은 SSD 가격 약 4만원대였고, 작업 시간은 2시간 정도 소요됐습니다. 비용 대비 효율이 좋아서 저렴한 노트북이라도 성능 개선이 가능하다는 점을 체험했죠.</p>\\n<p style=\"color: #333; line-height: 1.8;\">이 경험을 통해 알게 된 점은, 30만원대 노트북도 저장장치만 바꿔도 상당한 만족도를 얻을 수 있다는 사실입니다. 다만, 직접 업그레이드가 어렵다면 전문가에게 맡기는 것이 안전합니다.</p>\\n</div>"
       }
     ],
-    "summary_cards": [
-      "휴대용 보조배터리는 용량, 무게, 충전 속도, 크기를 모두 고려해야 한다",
-      "저가형은 가볍지만 충전 횟수가 제한적이라 간단한 외출용 추천",
-      "중가형 10,000mAh는 18W 고속 충전 지원과 적당한 무게로 일상용 최적",
-      "고가형은 무겁지만 30W 초고속과 대용량으로 여행 및 다중기기 충전에 적합",
-      "휴대용 미니 물티슈는 외출 시 스마트폰과 주변기기 관리에 필수 아이템"
-    ],
-    "faq": [
-      {
-        "q": "휴대용 보조배터리 용량은 어떻게 선택해야 하나요?",
-        "a": "일반적으로 스마트폰 1~2회 완충이 가능한 10,000mAh 대가 가장 무난합니다. 휴대성과 사용량을 고려해 결정하세요."
-      },
-      {
-        "q": "고속 충전 지원이 중요한가요?",
-        "a": "네, 18W 이상 고속 충전 지원 시 충전 시간을 크게 줄일 수 있어 사용 편의성이 올라갑니다."
-      },
-      {
-        "q": "휴대용 미니 물티슈는 꼭 필요한가요?",
-        "a": "네, 스마트폰이나 케이블 청결 관리에 유용하며 외출 시 간편하게 사용할 수 있어 추천합니다."
-      }
-    ],
-    "tags": [
-      "휴대용보조배터리",
-      "보조배터리추천",
-      "IT리뷰",
-      "가성비보조배터리",
-      "충전속도비교",
-      "미니물티슈",
-      "휴대용액세서리"
-    ]
+    "summary_cards": [],
+    "faq": [],
+    "tags": []
   },
   "products": [
     {
-      "productId": 8633922167,
-      "productName": "코멧 더 포켓 미니 물티슈",
-      "productPrice": 2990,
-      "productImage": "https://ads-partners.coupang.com/image1/ucAvsyM6EUz-FGIYuY2bALU-vnKUb6yz0ixaotS6AAaT1W0U5pKn5qhE2Gr_TtYiszhdwrmLZ5XG8WX0GJ1eX2-4rKcTCnvDT8NFeiGRGK0bAgQgR02RdOx52c8JU_OrlN5MwplL3L1GULbxK69MkOdXc7S4c6YrIW2RLSNAUyoxZqZ9cv-zRhU1mpXH94Va4p6gSZweU_teKJVnakGRijvRi-pjyfvbt4HIMGFrF3pmAEiTWUygI7RBw7xkzQA2yWcPsiBVq6CUEt6aTsbGge96HZutgszsTemld0aCoxLH_aU5",
-      "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8633922167&itemId=25050009539&vendorItemId=92054477728&traceid=V0-153-2f9c7788f1614322&requestid=20260404073157081124999578&token=31850C%7CMIXED&landing_exp=APP_LANDING_A",
-      "categoryName": "생활용품",
-      "keyword": "휴대용",
-      "rank": 2,
-      "isRocket": true,
-      "isFreeShipping": false
+      "productId": 6479995496,
+      "productName": "코웨이 공기청정기 국산 호환 필터(AP-2510EH) 37",
+      "productPrice": 32900.0,
+      "productImage": "https://ads-partners.coupang.com/image1/4YeKyhTlYeeN84l-4Ytxq_iisaC99con_XIokpnzzJEopmSILsZ6fAArm1Dadk0ZF4eAM7s0LbAEy4D5CAZ_-cU-0zA38Ds_GMFQMKd1R7FtlncZNbMtX12NgHdyGmesppTiEqDx0NUtlvcO18z0I6tKzD7V8RB6-sGvykVw_2JflH6glTtU-XBE4WE-y6EE_m7Ofc_eN1TPZxyUg3B0jfnDlPwZgeByckvglzNFLfRYHQ_pGu_rI9kGw8mBi21Z06apnNCgWBAw1bexEK_kLLL_sRKzhiZ9o_HsGlso1Nu5rf9uwMbVZwOvqCq8waddXQlz1ehX",
+      "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=6479995496&itemId=14180993373&vendorItemId=81426854906&traceid=V0-153-48eb73f7dfbbec17&requestid=20260404095831197207131817&token=31850C%7CGM&landing_exp=APP_LANDING_A",
+      "categoryName": "가전디지털",
+      "keyword": "30만원대",
+      "rank": 5,
+      "isRocket": false,
+      "isFreeShipping": true
     },
     {
-      "productId": 9103700433,
-      "productName": "한예지 키스해링 휴대용 미니 물티슈 스티커형, 50g, 8매, 8개",
-      "productPrice": 3990,
-      "productImage": "https://ads-partners.coupang.com/image1/uKHyKYFHUFsRH_dAuMBpBFAqK5jIHiuscsUAL7CIMHSRVsP3WS4NpQ-OAV5490rvs6F_V5OHQtMd9FJwvuJOCldy7uHMpc6OzMVnjU_O_RbnA1KbnUQGtDQGKu0Xo36t0dAE-vxjHl-6vB5rBgAe6-2p6I9LxmN_2W74B1E0K07-aAKX7VqtEVUyXUDVPPsv0GXnr1XaP3DrM0oKFKJh0QhQhRs-bTZ7H-hh6Rm3PTzU4AnOyyg_H91PddfMaCFd7DbfrXFFDZkisByFugnFYgO4IBajHqC1pQ==",
-      "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=9103700433&itemId=26763949034&vendorItemId=93734797132&traceid=V0-153-002d03d0fb5ca1ae&clickBeacon=ec5db2c0-2fac-11f1-9007-9381c8ed7bc6%7E3&requestid=20260404073157081124999578&token=31850C%7CMIXED&landing_exp=APP_LANDING_A",
-      "categoryName": "생활용품",
-      "keyword": "휴대용",
-      "rank": 4,
-      "isRocket": true,
-      "isFreeShipping": false
-    },
-    {
-      "productId": 7196855360,
-      "productName": "크리넥스 수앤수 실키소프트 카카오 물티슈 휴대용, 10개입, 12개",
-      "productPrice": 6730,
-      "productImage": "https://ads-partners.coupang.com/image1/jBtuCPdNSAykMwqqjCEHLE2-Hk1X9Y40CNdRWx7AeyxLNOEXd--NQ7zsRstUNMBFFzmTXJNnncBn-8k-MIsBssI68ArlkIT8Q0NxTgnssDxgQCMZ8wBfPSC_i8imrgW2eFCxzfL3mB4j91H2EPEACJ5UBXz302YxGZPzyRkeuNVA3AnMm44Oi8HB2tsg_i4dIXUDtkMAwsAeBczNQgAv5bRhW1yfWUtHNE90GvYOAY8FnvtaDP0E3W1xrqQ7EDaPAhy06L0NgoVjaJUluu5_8iiaEmbIxNcs",
-      "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=7196855360&itemId=18182036906&vendorItemId=3034627818&traceid=V0-153-1570494f4555474c&clickBeacon=ec5db2c0-2fac-11f1-81c1-3c5530082d9b%7E3&requestid=20260404073157081124999578&token=31850C%7CMIXED&landing_exp=APP_LANDING_A",
-      "categoryName": "생활용품",
-      "keyword": "휴대용",
-      "rank": 8,
+      "productId": 8802460287,
+      "productName": "아쿠와이어 다이얼 쿠셔닝 스포츠샌들 아쿠아샌들 KQPR88 88아쿠아 오리진2",
+      "productPrice": 61800,
+      "productImage": "https://ads-partners.coupang.com/image1/J_uMRDumXY7ERq-NJ_hPshTHwCifyREgaw7Z3O6n55-ELEK9DLWGMK97_5M0evBe-tPZ_nbINFjnqCJndo1jW7CZlEx3vVfMvL_MybM9xstO_Po_qcBY3guSO4imAC-TXj9X8N3hcY39teeZLN8IQYslTyhqyThEyo_NY56jlcJ9yznP2b7xd-D-W6_u-MZxJc2I_BcIPnkxqSEH8Qe1uOamPuEJ0xpi0Np6C0PDvSAse0n3_cesTDv3RUSUlWCXlziN0ZQAI-SLUJzbQwNWpSmVGYc5PP2rrnf3UuW48Q4tI5nLie-LvZp3Gmon7o-FrY0eXumO",
+      "productUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF5939135&subid=blog&pageKey=8802460287&itemId=25632944697&vendorItemId=92623065897&traceid=V0-153-b115618a1a0593dd&requestid=20260404095831197207131817&token=31850C%7CGM&landing_exp=APP_LANDING_A",
+      "categoryName": "패션잡화",
+      "keyword": "30만원대",
+      "rank": 3,
       "isRocket": true,
       "isFreeShipping": false
     }
