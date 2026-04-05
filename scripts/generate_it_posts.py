@@ -925,22 +925,18 @@ def main():
         html = build_full_html(data, keyword, products, today, post_index=i, post_type=post_type)
         safe_name = re.sub(r"[^\w가-힣]", "_", keyword)[:30]
 
-        # 발행 도구 페이지만 생성 (post 파일은 불필요)
-        blog_body = re.search(r"<article[^>]*>(.*?)</article>", html, re.DOTALL)
-        blog_html_content = blog_body.group(1) if blog_body else html
+        # 순수 HTML 저장 (발행 도구 UI 없음)
         tags = data.get("tags", [])
         if not tags:
-            # 태그가 비어있으면 키워드에서 자동 생성
             tags = [w.strip() for w in keyword.split() if len(w.strip()) >= 2]
             tags.extend(["IT추천", "테크온도", "가성비"])
             logger.info("태그 자동 생성: %s", tags)
-        tool_html = build_tool_page(title, tags, blog_html_content, data.get("meta_description", ""))
-        tool_path = output_dir / f"tool_{i}_{safe_name}.html"
-        tool_path.write_text(tool_html, encoding="utf-8")
-        logger.info("저장: %s (%d자)", tool_path.name, len(tool_html))
+        post_path = output_dir / f"post_{i}_{safe_name}.html"
+        post_path.write_text(html, encoding="utf-8")
+        logger.info("저장: %s (%d자)", post_path.name, len(html))
 
         register_published(title, keyword)
-        results.append({"keyword": keyword, "title": title, "tags": data.get("tags", []), "file": str(tool_path)})
+        results.append({"keyword": keyword, "title": title, "tags": tags, "file": str(post_path)})
         time.sleep(2)
 
     # summary 저장
