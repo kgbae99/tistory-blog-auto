@@ -1092,7 +1092,8 @@ def main():
     os.environ["TZ"] = "GMT+0"
 
     today = datetime.now().strftime("%Y-%m-%d")
-    output_dir = Path(__file__).parent.parent / "output" / "posts" / today
+    output_base = Path(__file__).parent.parent / "output" / "posts"
+    output_dir = output_base / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # 수익형 키워드 1개 + 정보형 키워드 2개 생성
@@ -1171,6 +1172,13 @@ def main():
     )
 
     logger.info("=== 완료: %d개 포스트 생성 → %s ===", len(results), output_dir)
+
+    # 이전 날짜 폴더 삭제 (오늘 폴더만 유지)
+    import shutil
+    for old_dir in output_base.iterdir():
+        if old_dir.is_dir() and old_dir.name != today:
+            shutil.rmtree(old_dir)
+            logger.info("이전 포스트 삭제: %s", old_dir.name)
 
     # 텔레그램 알림
     try:

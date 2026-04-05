@@ -885,7 +885,8 @@ function ch(btn){{navigator.clipboard.writeText(document.getElementById('blog-ht
 def main():
     """메인 실행."""
     today = datetime.now().strftime("%Y-%m-%d")
-    output_dir = Path(f"output/it-posts/{today}")
+    output_base = Path(__file__).parent.parent / "output" / "it-posts"
+    output_dir = output_base / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
     kw_map = get_it_keywords()
@@ -943,6 +944,13 @@ def main():
     summary_path = output_dir / "summary.json"
     summary_path.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
     logger.info("IT 포스트 %d개 생성 완료", len(results))
+
+    # 이전 날짜 폴더 삭제 (오늘 폴더만 유지)
+    import shutil
+    for old_dir in output_base.iterdir():
+        if old_dir.is_dir() and old_dir.name != today:
+            shutil.rmtree(old_dir)
+            logger.info("이전 IT 포스트 삭제: %s", old_dir.name)
 
     # 텔레그램 알림
     try:
