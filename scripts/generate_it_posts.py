@@ -369,65 +369,131 @@ FAQ_COLORS = [
 ]
 
 
+def _load_it_used_keywords() -> list[str]:
+    """발행 DB에서 이미 사용된 키워드/제목 목록을 반환한다."""
+    used = []
+    data_dir = Path(__file__).parent.parent / "data"
+    titles_file = data_dir / "published_titles.json"
+    if titles_file.exists():
+        try:
+            records = json.loads(titles_file.read_text(encoding="utf-8"))
+            for r in records:
+                if r.get("keyword"):
+                    used.append(r["keyword"])
+                if r.get("title"):
+                    used.append(r["title"])
+        except Exception:
+            pass
+    index_file = data_dir / "blog_posts_index.json"
+    if index_file.exists():
+        try:
+            posts = json.loads(index_file.read_text(encoding="utf-8"))
+            for p in posts:
+                if p.get("title"):
+                    used.append(p["title"])
+        except Exception:
+            pass
+    return list(set(used))
+
+
 def get_it_keywords() -> dict[str, list[str]]:
-    """수익형(구매 의도) 2개 + 정보형(탐색 의도) 1개 키워드를 반환한다.
+    """요일별 IT 카테고리 로테이션으로 수익형 1개 + 정보형 2개 키워드를 GPT로 생성한다.
 
     Returns:
-        {"revenue": ["kw1", "kw2"], "info": ["kw3"]}
+        {"revenue": ["kw1"], "info": ["kw2", "kw3"]}
     """
-    day = datetime.now().day
+    import openai
+    from datetime import date
 
-    # 구매 의도: 추천·비교·후기·써봤더니 포함
-    REVENUE_POOLS = {
-        "가젯/악세서리": [
-            "3만원대 무선이어폰 한 달 써본 솔직 후기",
-            "노이즈캔슬링 이어폰 2개 직접 비교해봤더니",
-            "재택근무 기계식 키보드 추천 이유",
-            "가성비 블루투스 스피커 추천 비교",
-            "게이밍 마우스 3개 써보고 추천하는 이유",
-            "보조배터리 고르는 법과 추천 모델",
-            "스마트워치 2개 비교해봤더니 이게 달랐다",
-            "웹캠 재택근무용 추천 직접 써본 후기",
-            "무선충전 패드 추천 속도 비교",
-            "게이밍 헤드셋 3만원대 vs 10만원대 비교",
-        ],
-        "노트북/PC": [
-            "가성비 노트북 추천 직접 써본 후기",
-            "SSD 교체 후 속도 3배 빨라진 이유와 추천",
-            "사무용 노트북 3개 비교해봤더니 이게 최고",
-            "RAM 16GB vs 32GB 실제 체감 차이 후기",
-            "4K 모니터 추천 눈 피로 줄어든 이유",
-            "외장SSD vs 외장HDD 실사용 비교",
-            "미니PC 재택근무 3개월 써본 솔직 후기",
-            "조립PC 견적 직접 맞춰봤더니 이게 나왔다",
-            "맥북 vs 윈도우 노트북 6개월 써본 비교",
-            "그래픽카드 업그레이드 전후 성능 비교 후기",
-        ],
+    # 요일별 IT 카테고리 로테이션 (0=월 ~ 6=일)
+    WEEKDAY_CATEGORY = {
+        0: ("노트북/PC", "SSD 교체, RAM 업그레이드, 조립PC, 맥북 vs 윈도우, 미니PC, 가성비 노트북 등"),
+        1: ("스마트폰/태블릿", "아이폰, 갤럭시, 아이패드, 갤럭시탭, 스마트폰 비교, 폴더블폰 등"),
+        2: ("이어폰/헤드폰/오디오", "무선이어폰, 노이즈캔슬링, 블루투스 스피커, 게이밍 헤드셋, 이어폰 비교 등"),
+        3: ("키보드/마우스/모니터", "기계식 키보드, 게이밍 마우스, 4K 모니터, 웹캠, 듀얼모니터 세팅 등"),
+        4: ("AI/소프트웨어/앱", "ChatGPT 활용법, 생산성 앱, 윈도우 설정 최적화, PDF 편집 툴, 화면 녹화 등"),
+        5: ("스마트워치/웨어러블/가젯", "애플워치, 갤럭시워치, 액션캠, 보조배터리, 무선충전 패드, 스마트홈 등"),
+        6: ("저장장치/네트워크/하드웨어", "외장SSD, 외장HDD, 공유기, 그래픽카드, USB 허브, NAS 등"),
     }
+    today_weekday = date.today().weekday()
+    cat_name, cat_desc = WEEKDAY_CATEGORY[today_weekday]
 
-    # 탐색 의도: 원인·이유·차이 포함
-    INFO_POOLS = [
-        "노트북 발열 심해지는 진짜 원인과 해결법",
-        "배터리 빨리 닳는 이유 놓치기 쉬운 원인",
-        "와이파이 느려지는 이유 설정으로 해결하는 법",
-        "SSD vs HDD 실제 속도 차이 얼마나 날까",
-        "RAM 부족 증상 PC가 보내는 신호들",
-        "스마트폰 저장 공간 부족한 진짜 이유",
-        "노트북 오래 쓰면 느려지는 이유와 원인",
-        "블루투스 연결 끊기는 원인 해결하는 법",
-        "CPU vs GPU 어느 게 성능에 더 중요한가",
-        "모니터 해상도 차이 실제로 눈에 보이는 기준",
-    ]
+    used_keywords = _load_it_used_keywords()
+    recent_used = used_keywords[-100:] if len(used_keywords) > 100 else used_keywords
 
-    cats = list(REVENUE_POOLS.keys())
-    revenue_kws = []
-    for i, cat in enumerate(cats[:2]):
-        pool = REVENUE_POOLS[cat]
-        revenue_kws.append(pool[(day + i * 5) % len(pool)])
+    prompt = f"""당신은 IT/테크 블로그 수익화 전문가입니다.
 
-    info_kw = INFO_POOLS[(day * 3) % len(INFO_POOLS)]
+오늘의 주제 카테고리: **{cat_name}**
+({cat_desc})
 
-    return {"revenue": revenue_kws, "info": [info_kw]}
+이미 발행된 키워드 목록 (겹치면 절대 안 됨):
+{json.dumps(recent_used, ensure_ascii=False)}
+
+오늘 카테고리({cat_name})에 맞는 키워드만 생성해주세요.
+
+## 수익형 키워드 1개 (구매 의도 — 쿠팡 전환 목적)
+- 독자가 "이걸 사야겠다"는 결정 단계에 있는 키워드
+- 반드시 포함: 추천/비교/후기/써봤더니/직접써본 중 하나
+- 반드시 포함: 숫자(가격대·개수·기간) 또는 구체적 모델명/상황
+- 예: "5만원대 노이즈캔슬링 헤드셋 3종 직접 써본 후기", "SSD 교체 후 속도 3배 빨라진 이유"
+
+## 정보형 키워드 2개 (탐색 의도 — SEO 트래픽 목적)
+- 독자가 원인·이유·차이·해결법을 찾는 단계의 키워드
+- 포털에 없는 구체적 디테일이 있는 주제
+- 예: "노트북 발열 심해지는 진짜 원인", "블루투스 연결 끊기는 이유 해결법"
+
+반드시 아래 JSON 형식으로만 출력:
+{{"revenue": ["수익형1"], "info": ["정보형1", "정보형2"]}}"""
+
+    try:
+        client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.9,
+            max_tokens=400,
+            response_format={"type": "json_object"},
+        )
+        raw = response.choices[0].message.content
+        data = json.loads(raw)
+        revenue_kws = data.get("revenue", [])[:1]
+        info_kws = data.get("info", [])[:2]
+        logger.info("오늘 IT 카테고리: %s (요일=%d)", cat_name, today_weekday)
+        logger.info("수익형 키워드: %s", revenue_kws)
+        logger.info("정보형 키워드: %s", info_kws)
+
+        # 부족분 폴백 보충
+        REVENUE_FALLBACK = [
+            "5만원대 무선이어폰 3종 직접 써본 솔직 후기",
+            "SSD 교체 후 속도 3배 빨라진 이유와 추천",
+            "가성비 기계식 키보드 2개 비교해봤더니",
+            "재택근무 웹캠 추천 3개월 써본 후기",
+            "스마트워치 2개 비교해봤더니 이게 달랐다",
+        ]
+        INFO_FALLBACK = [
+            "노트북 발열 심해지는 진짜 원인과 해결법",
+            "배터리 빨리 닳는 이유 놓치기 쉬운 원인",
+            "와이파이 느려지는 이유 설정으로 해결하는 법",
+            "블루투스 연결 끊기는 원인 해결하는 법",
+        ]
+        if not revenue_kws:
+            revenue_kws = [REVENUE_FALLBACK[today_weekday % len(REVENUE_FALLBACK)]]
+        if len(info_kws) < 2:
+            for fb in INFO_FALLBACK:
+                if fb not in info_kws:
+                    info_kws.append(fb)
+                if len(info_kws) >= 2:
+                    break
+
+        return {"revenue": revenue_kws[:1], "info": info_kws[:2]}
+
+    except Exception as e:
+        logger.error("GPT IT 키워드 생성 실패: %s → 폴백 사용", e)
+        day = date.today().day
+        return {
+            "revenue": ["5만원대 무선이어폰 3종 직접 써본 솔직 후기"],
+            "info": ["노트북 발열 심해지는 진짜 원인과 해결법", "배터리 빨리 닳는 이유 놓치기 쉬운 원인"],
+        }
 
 
 def generate_content(keyword: str, products: list, post_type: str = "revenue") -> dict | None:
@@ -729,9 +795,14 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
     }, ensure_ascii=False)
 
     import re as _re
-    # 후처리 1: GPT가 섹션 내 삽입한 외부 <img> 제거 (GitHub 호스팅 외 경로)
+    # 후처리 1: GPT가 삽입한 figure/img만 제거 (쿠팡 상품 이미지는 보존)
     sections_html = _re.sub(
-        r'<img\s[^>]*src="(?!https://raw\.githubusercontent\.com/kgbae99/tistory-blog-auto)[^"]*"[^>]*/?>',
+        r'<figure[^>]*>[\s\S]*?</figure>',
+        '',
+        sections_html
+    )
+    sections_html = _re.sub(
+        r'<img\s[^>]*src="(?!https://ads-partners\.coupang\.com)[^"]*"[^>]*/?>',
         '',
         sections_html
     )
@@ -821,9 +892,9 @@ def main():
     revenue_kws = kw_map.get("revenue", [])
     info_kws = kw_map.get("info", [])
     keyword_plan = [
-        (revenue_kws[0] if len(revenue_kws) > 0 else "무선이어폰 추천", "revenue"),
-        (info_kws[0]    if len(info_kws) > 0    else "노트북 발열 원인", "info"),
-        (revenue_kws[1] if len(revenue_kws) > 1 else revenue_kws[0] if revenue_kws else "노트북 추천", "revenue"),
+        (revenue_kws[0] if revenue_kws else "무선이어폰 추천", "revenue"),
+        (info_kws[0] if len(info_kws) > 0 else "노트북 발열 원인", "info"),
+        (info_kws[1] if len(info_kws) > 1 else info_kws[0] if info_kws else "배터리 오래 쓰는 법", "info"),
     ]
     logger.info("=== IT 포스트 생성 시작 ===")
     logger.info("  수익형: %s", revenue_kws)

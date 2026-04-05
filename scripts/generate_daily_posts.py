@@ -377,29 +377,45 @@ def _load_all_used_keywords() -> list[str]:
 
 
 def get_trending_keywords() -> dict[str, list[str]]:
-    """구매 의도(수익형) 2개 + 탐색 의도(정보형) 1개 키워드를 생성한다.
+    """구매 의도(수익형) 1개 + 탐색 의도(정보형) 2개 키워드를 요일별 카테고리로 생성한다.
 
     Returns:
-        {"revenue": ["kw1", "kw2"], "info": ["kw3"]}
+        {"revenue": ["kw1"], "info": ["kw2", "kw3"]}
     """
     import openai
+    from datetime import date
+
+    # 요일별 카테고리 로테이션 (0=월 ~ 6=일)
+    WEEKDAY_CATEGORY = {
+        0: ("영양제/건강식품", "비타민/오메가3/마그네슘/칼슘/프로바이오틱스/루테인/콜라겐 등 영양제 및 건강식품"),
+        1: ("증상/질환 정보",   "피로/두통/관절통/소화불량/불면/혈압/혈당/콜레스테롤 등 증상과 질환"),
+        2: ("식단/음식",        "건강식단/저탄고지/지중해식/간헐적 단식/영양 균형/건강 요리 등"),
+        3: ("운동/스트레칭",    "홈트레이닝/스트레칭/유산소/근력운동/요가/필라테스 등"),
+        4: ("생활습관/수면",    "수면의 질/스트레스 관리/디지털 디톡스/생체리듬/피로 회복 등"),
+        5: ("피부/뷰티",        "피부 관리/자외선 차단/주름/탈모/두피/미백/보습 등"),
+        6: ("면역/혈관 건강",   "면역력/항산화/혈관 건강/혈액순환/장 건강/간 건강 등"),
+    }
+    today_weekday = date.today().weekday()
+    cat_name, cat_desc = WEEKDAY_CATEGORY[today_weekday]
 
     used_keywords = _load_all_used_keywords()
     recent_used = used_keywords[-100:] if len(used_keywords) > 100 else used_keywords
 
     prompt = f"""당신은 건강/생활/뷰티 블로그 수익화 전문가입니다.
 
+오늘의 주제 카테고리: **{cat_name}**
+({cat_desc})
+
 이미 발행된 키워드 목록 (겹치면 절대 안 됨):
 {json.dumps(recent_used, ensure_ascii=False)}
 
-아래 두 유형으로 키워드를 생성해주세요.
+오늘 카테고리({cat_name}) 에 맞는 키워드만 생성해주세요.
 
-## 수익형 키워드 3개 (구매 의도 — 쿠팡 전환 목적)
+## 수익형 키워드 1개 (구매 의도 — 쿠팡 전환 목적)
 - 독자가 "이걸 사야겠다"는 결정 단계에 있는 키워드
 - 반드시 포함: 추천/비교/후기/효과/먹어봤더니/써봤더니 중 하나
 - 반드시 포함: 숫자(기간·수치·개수) 또는 구체적 대상(40대/직장인/여성 등)
 - 예: "40대 여성 마그네슘 영양제 추천 비교", "3개월 먹어봤더니 혈압 낮아진 영양제 후기"
-- 예: "50대 무릎 관절 영양제 3가지 효과 비교", "직장인 피로회복 비타민 추천 순위"
 
 ## 정보형 키워드 2개 (탐색 의도 — SEO 트래픽 목적)
 - 독자가 원인·이유·방법을 찾는 단계의 키워드
@@ -407,7 +423,7 @@ def get_trending_keywords() -> dict[str, list[str]]:
 - 예: "갱년기 여성 수면 장애 원인 3가지", "혈당 스파이크 식후 증상 놓치는 이유"
 
 반드시 아래 JSON 형식으로만 출력:
-{{"revenue": ["수익형1", "수익형2", "수익형3"], "info": ["정보형1", "정보형2"]}}"""
+{{"revenue": ["수익형1"], "info": ["정보형1", "정보형2"]}}"""
 
     try:
         client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -420,24 +436,25 @@ def get_trending_keywords() -> dict[str, list[str]]:
         )
         raw = response.choices[0].message.content
         data = json.loads(raw)
-        revenue_kws = filter_unique_keywords(data.get("revenue", []))[:2]
-        info_kws = filter_unique_keywords(data.get("info", []))[:1]
+        revenue_kws = filter_unique_keywords(data.get("revenue", []))[:1]
+        info_kws = filter_unique_keywords(data.get("info", []))[:2]
+        logger.info("오늘 카테고리: %s (요일=%d)", cat_name, today_weekday)
         logger.info("수익형 키워드: %s", revenue_kws)
         logger.info("정보형 키워드: %s", info_kws)
 
         # 부족분 폴백 보충
-        if len(revenue_kws) < 2:
-            revenue_kws += _fallback_keywords(2 - len(revenue_kws), kw_type="revenue")
-        if len(info_kws) < 1:
-            info_kws += _fallback_keywords(1, kw_type="info")
+        if len(revenue_kws) < 1:
+            revenue_kws += _fallback_keywords(1, kw_type="revenue")
+        if len(info_kws) < 2:
+            info_kws += _fallback_keywords(2 - len(info_kws), kw_type="info")
 
-        return {"revenue": revenue_kws[:2], "info": info_kws[:1]}
+        return {"revenue": revenue_kws[:1], "info": info_kws[:2]}
 
     except Exception as e:
         logger.error("GPT 키워드 생성 실패: %s → 폴백 사용", e)
         return {
-            "revenue": _fallback_keywords(2, kw_type="revenue"),
-            "info": _fallback_keywords(1, kw_type="info"),
+            "revenue": _fallback_keywords(1, kw_type="revenue"),
+            "info": _fallback_keywords(2, kw_type="info"),
         }
 
 
@@ -998,10 +1015,14 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     result = "\n\n".join(parts)
 
-    # 후처리 1: 섹션 content 루프에서 이미 제거했으므로, 혹시 남은 외부 이미지만 제거
-    # (쿠팡 배너/광고 이미지는 ads-partners.coupang.com 도메인이므로 보존)
+    # 후처리 1: GPT가 삽입한 모든 <img> 제거 (쿠팡 배너는 ads-partners.coupang.com 도메인으로 보존)
     result = re.sub(
-        r'<img\s[^>]*src="(?!https://raw\.githubusercontent\.com/kgbae99/tistory-blog-auto)(?!https://ads-partners\.coupang\.com)[^"]*"[^>]*/?>',
+        r'<figure[^>]*>[\s\S]*?</figure>',
+        '',
+        result
+    )
+    result = re.sub(
+        r'<img\s[^>]*src="(?!https://ads-partners\.coupang\.com)[^"]*"[^>]*/?>',
         '',
         result
     )
@@ -1074,15 +1095,15 @@ def main():
     output_dir = Path(__file__).parent.parent / "output" / "posts" / today
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # 수익형 키워드 2개 + 정보형 키워드 1개 생성
+    # 수익형 키워드 1개 + 정보형 키워드 2개 생성
     kw_map = get_trending_keywords()
     revenue_kws = kw_map.get("revenue", [])
     info_kws = kw_map.get("info", [])
-    # 순서: 수익형 → 정보형 → 수익형
+    # 순서: 수익형 → 정보형 → 정보형
     keyword_plan = [
-        (revenue_kws[0] if len(revenue_kws) > 0 else "건강 영양제 추천", "revenue"),
-        (info_kws[0]    if len(info_kws) > 0    else "건강 정보", "info"),
-        (revenue_kws[1] if len(revenue_kws) > 1 else revenue_kws[0] if revenue_kws else "영양제 비교", "revenue"),
+        (revenue_kws[0] if revenue_kws else "건강 영양제 추천", "revenue"),
+        (info_kws[0] if len(info_kws) > 0 else "건강 정보", "info"),
+        (info_kws[1] if len(info_kws) > 1 else info_kws[0] if info_kws else "건강 생활습관", "info"),
     ]
     logger.info("=== %s 일일 포스트 생성 시작 ===", today)
     logger.info("  수익형: %s", revenue_kws)
@@ -1148,7 +1169,7 @@ def main():
         })
 
         # API 속도 제한 방지
-        if i < len(keywords) - 1:
+        if i < len(keyword_plan) - 1:
             time.sleep(3)
 
     # 결과 요약 저장

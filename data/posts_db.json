@@ -1521,5 +1521,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 65,
+    "title": "40대 직장인 면역력 3개월 개선 후기와 영양제 추천",
+    "keyword": "40대 직장인 면역력 강화에 좋은 영양제 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대",
+      "면역력",
+      "영양제추천",
+      "직장인건강",
+      "후기",
+      "홈케어"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-05 10:23",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 66,
+    "title": "면역력 저하의 원인 5가지와 바로 체크법",
+    "keyword": "면역력 저하의 원인 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "면역력 저하",
+      "자가진단",
+      "건강검진",
+      "영양",
+      "생활관리",
+      "질병예방"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-05 10:24",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 67,
+    "title": "2주 만에 혈액순환을 개선하는 방법 3가지",
+    "keyword": "혈액순환을 개선하는 방법 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈액순환",
+      "혈액순환 개선",
+      "손발 저림",
+      "온열 요법",
+      "자가 마사지",
+      "식이요법",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-05 10:25",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
