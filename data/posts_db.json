@@ -2023,5 +2023,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 86,
+    "title": "40대 여성 12주 피로 회복 영양제 추천 후기",
+    "keyword": "40대 여성 피로 회복에 좋은 영양제 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대피로",
+      "여성건강",
+      "피로회복",
+      "영양제추천",
+      "오메가3",
+      "허브티",
+      "쿠팡추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-07 07:43",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 87,
+    "title": "소화불량의 원인 5가지와 7일 대처 방법으로 개선한 후기",
+    "keyword": "소화불량의 원인 5가지와 대처 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "소화불량",
+      "위장질환",
+      "식이조절",
+      "소화불량원인",
+      "건강관리",
+      "자가진단",
+      "소화불량대처법"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-07 07:45",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 88,
+    "title": "50대 관절통을 3개월에 완화한 생활습관 7가지 후기",
+    "keyword": "관절통을 완화하는 생활습관 7가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "관절통",
+      "생활습관",
+      "무릎통증",
+      "통증완화",
+      "관절관리",
+      "건강온도사"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-07 07:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
