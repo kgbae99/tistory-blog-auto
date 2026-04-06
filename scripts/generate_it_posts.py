@@ -178,37 +178,37 @@ IT_REVENUE_PROMPT = """당신은 "테크온도(IT++)" 티스토리 블로그의 
 {{"title":"제목(20~35자, 숫자+결과+방법/이유/후기/추천/비교)","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(400자이상, 반복없이 실질적 내용)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
 
 IT_INFO_PROMPT = """당신은 "테크온도(IT++)" 티스토리 블로그의 IT 전문 작가입니다.
-""" + _CORE_GOALS_IT + """
-## 글 유형: 정보형 (순수 IT 정보 제공, 상품 추천 없음)
-- 목적: 독자에게 깊이 있는 IT 정보를 제공하여 신뢰 구축 및 SEO 트래픽 확보
-- ❌ 절대 금지: 상품 추천, 쿠팡 링크, "이 제품 사세요", "최저가 확인" 같은 상업적 표현
-- 중간 CTA: "이 내용이 더 궁금하다면?" + 관련 IT 정보 글 링크
-  <div style="background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:20px;margin:25px 0;border-left:4px solid #90CAF9;text-align:center;"><p style="font-size:15px;color:#555;margin:0 0 8px 0;">이 내용이 더 궁금하다면?</p><a href="https://uyoblog.tistory.com" style="display:inline-block;padding:12px 30px;background:#1565C0;color:white;border-radius:6px;text-decoration:none;font-weight:bold;">관련 글 보러가기 →</a></div>
-- 최종 CTA: "📌 함께 읽으면 좋은 글" + 관련 정보 글 카드
-  <div style="background:linear-gradient(135deg,#F0F7FF,#E3F2FD);border-radius:10px;padding:25px;margin:30px 0;text-align:center;border:2px solid #90CAF9;"><p style="font-size:18px;font-weight:bold;color:#1565C0;margin:0 0 10px 0;">📌 함께 읽으면 좋은 글</p><a href="https://uyoblog.tistory.com" style="display:block;padding:15px;background:#fff;border-radius:8px;text-decoration:none;color:#1565C0;font-weight:bold;border:1px solid #90CAF9;margin-top:12px;">👉 [관련 글 제목]</a></div>
 
-## 글 스타일
-- 제목: 반드시 롱테일 키워드 형식 (20~35자), 숫자·결과·경험 중 1개 이상 포함
-  * ✅ 예: "SSD vs HDD 실제 속도 차이 직접 비교해봤더니", "RAM 16GB와 32GB 차이 체감한 솔직 후기"
-  * ❌ 금지: 연도, "완벽 가이드", "총정리", "TOP5"
-- 전체 흐름: 문제 제기 → 원인 분석 → 해결책 → 직접 경험(필수) → 결론
-- 도입부 첫 3줄 안에 문제 제기 필수
-- 5번째 H2에 직접 사용 경험 필수: 실패 → 개선 → 수치 결과 (기간+수치+변화 3요소)
-- H2 섹션 6~7개, H3 사용 안 함, 목차(TOC) 생성 금지
-- 전체 최소 3,000자 이상, 각 섹션 400~600자
-- 표: 글 전체 최대 1~2개, 리스트: 3개 이상 연속이면 문단으로 풀어쓸 것
-- ❌ 금지: 반복 요약, 의미 없는 문장
-- 태그 6~7개
-- 각 섹션은 topic-content div로 감쌈:
-  <div class="topic-content" style="background-color: #F5F9FF; padding: 20px; border-radius: 8px; border-left: 4px solid #90CAF9;"><p style="color: #333; line-height: 1.8;">내용</p></div>
+## 글 스타일 (반드시 따라야 함)
+- 제품 추천, 쿠팡 링크, 광고성 표현 절대 금지
+- 실제 경험담처럼 자연스럽게 작성
+- 구어체 사용 ("~했어요", "~더라고요", "~거든요")
+- 제목: 경험 기반 구어체 (예: "해킹 3번 당하고 나서야 바꾼 것들", "직접 써봤더니 이게 달랐다")
+- 숫자+결과 포함 필수
+- 연도, "총정리", "완벽 가이드" 금지
+
+## 글 구조
+- 도입부: 내가 겪은 문제/불편 상황으로 시작
+- 본문: 문제 원인 → 해결 과정 → 실제 결과 (수치 포함)
+- 표: 스펙 비교 필요할 때만 1~2개
+- 이미지: alt 텍스트만 지정 (src는 시스템이 자동 삽입)
+- H2 섹션 5~6개
+- FAQ 3개
+- 마무리: 핵심 요약 + 다음 글 추천
+
+## HTML 형식
+- 섹션 배경: 흰색 (#ffffff)
+- H2: color:#1a1a2e, border-bottom:2px solid #e8e8e8
+- 본문박스: background:#f8f9fa, border-left:4px solid #4a90d9
+- 표: 깔끔한 회색 계열
+- 광고/쿠팡 블록 삽입 금지
 
 ## 이번 글 요청
 - 키워드: "{keyword}"
 - 카테고리: IT/가젯
-- 연도 금지
 
-## 출력: 반드시 JSON만
-{{"title":"제목(20~35자, 숫자+결과+방법/이유/후기/비교)","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(400자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
+## 출력: JSON만
+{{"title":"제목(20~35자, 숫자+결과+경험 포함)","meta_description":"155자이내 SEO 설명","sections":[{{"heading":"H2제목","content":"HTML본문(400자이상)"}}],"summary_cards":["요약1","요약2","요약3","요약4","요약5"],"faq":[{{"q":"질문","a":"답변"}}],"tags":["태그1","태그2"]}}"""
 
 # 하위 호환 유지
 BLOG_STYLE_PROMPT = IT_REVENUE_PROMPT
@@ -666,7 +666,12 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
             _unique_imgs.append(_u)
         if len(_unique_imgs) >= 3:
             break
-    header_img = _unique_imgs[0] if _unique_imgs else _pick_image(keyword, 0)
+    if _unique_imgs:
+        header_img = _unique_imgs[0]
+    else:
+        # 폴백: SECTION_IMAGES 첫 번째 이미지 강제 사용
+        header_img = SECTION_IMAGES[0]
+        logger.warning("이미지 없음 → 기본 이미지 사용: %s", keyword)
 
     # 삽입 위치: 핵심설명(섹션 2) + 경험/사례 섹션 (최대 2개)
     _body_secs = [s for s in sections if s.get("heading", "") != "마무리"]

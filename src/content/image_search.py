@@ -459,7 +459,13 @@ def get_images_for_keyword(keyword: str, count: int = 8, post_index: int = 0) ->
         _session_used_images.add(img.split("/")[-1])
     _save_used_images([img.split("/")[-1] for img in result])
 
-    logger.info("이미지 매칭: '%s'(idx=%d) → 주제=%s, %d개 선택 (재사용 %d개)", keyword, post_index, list(primary_cats), len(result), max(0, len(result) - (len(result) - len(fallback[:max(0,count-len(result))]))))
+    # 결과가 비어있으면 전체 풀에서 강제 선택
+    if not result:
+        logger.warning("이미지 매칭 실패 '%s' → 전체 풀에서 강제 선택", keyword)
+        offset = (kw_hash // 999) % len(_ALL_URLS)
+        result = [_ALL_URLS[(offset + j) % len(_ALL_URLS)] for j in range(count)]
+
+    logger.info("이미지 매칭: '%s'(idx=%d) → 주제=%s, %d개 선택", keyword, post_index, list(primary_cats), len(result))
     return result
 
 

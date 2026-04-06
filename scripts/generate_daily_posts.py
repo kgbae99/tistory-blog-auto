@@ -911,9 +911,10 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     parts = []
 
-    # 대표 이미지 (도입부 — alt는 제목 기반으로 구체적으로)
+    # 대표 이미지는 후처리 완료 후 prepend (img 제거 regex 영향 없도록)
     header_alt = data.get("title", keyword) or keyword
-    parts.append(f'<figure style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="{header_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></figure>')
+    if not header_img:
+        header_img = HEADER_IMAGES[0]  # 폴백: 첫 번째 이미지 강제 사용
 
     # H1 제목 + 도입부
     intro = sections[0]["content"] if sections else ""
@@ -1042,6 +1043,10 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
         result,
         flags=re.IGNORECASE,
     )
+
+    # 대표 이미지 prepend (후처리 완료 후 삽입 → img 제거 regex 영향 없음)
+    header_div = f'<div style="text-align: center; margin: 0 0 20px 0;"><img src="{header_img}" alt="{header_alt}" style="max-width:100%; height:auto; border-radius:8px;" width="486" /></div>'
+    result = header_div + "\n\n" + result
 
     return result
 
