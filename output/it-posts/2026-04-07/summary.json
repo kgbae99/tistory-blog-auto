@@ -1,38 +1,39 @@
 [
   {
-    "keyword": "폴더블폰 추천 3종 직접 써본 후기",
-    "title": "폴더블폰 추천 3종 직접 써본 솔직 후기와 비교 방법",
+    "keyword": "2023년 스마트폰 추천 5종 비교 후기",
+    "title": "스마트폰 추천 5종 비교 후기와 선택 이유 3가지",
+    "tags": [
+      "2023년",
+      "스마트폰",
+      "추천",
+      "5종",
+      "비교",
+      "후기",
+      "IT추천",
+      "테크온도",
+      "가성비"
+    ],
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\it-posts\\2026-04-07\\post_1_2023년_스마트폰_추천_5종_비교_후기.html"
+  },
+  {
+    "keyword": "폴더블폰의 내구성, 정말 믿을 수 있을까?",
+    "title": "폴더블폰 6개월 써보고 알게 된 내구성 변화 3가지",
     "tags": [
       "폴더블폰",
-      "스마트폰추천",
-      "갤럭시Z플립6",
-      "갤럭시Z폴드4",
-      "제품후기",
-      "IT가젯"
+      "내구성"
     ],
-    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\it-posts\\2026-04-07\\post_1_폴더블폰_추천_3종_직접_써본_후기.html"
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\it-posts\\2026-04-07\\post_2_폴더블폰의_내구성__정말_믿을_수_있을까_.html"
   },
   {
-    "keyword": "아이폰과 갤럭시의 배터리 성능 차이는 무엇인가?",
-    "title": "아이폰 vs 갤럭시 배터리, 직접 써보고 느낀 5가지 차이",
+    "keyword": "아이폰과 갤럭시 카메라의 차이, 전문가가 분석한 이유",
+    "title": "아이폰과 갤럭시 카메라, 직접 써보고 알게 된 5가지 차이",
     "tags": [
-      "아이폰",
-      "갤럭시",
-      "배터리성능",
-      "스마트폰",
-      "배터리관리"
+      "아이폰카메라",
+      "갤럭시카메라",
+      "스마트폰사진",
+      "카메라비교",
+      "IT리뷰"
     ],
-    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\it-posts\\2026-04-07\\post_2_아이폰과_갤럭시의_배터리_성능_차이는_무엇인가_.html"
-  },
-  {
-    "keyword": "스마트폰 카메라 화소 수만으로 판단하면 안 되는 이유",
-    "title": "스마트폰 카메라 화소 수만 보고 후회한 3가지 경험",
-    "tags": [
-      "스마트폰카메라",
-      "화소수",
-      "카메라성능",
-      "IT가젯"
-    ],
-    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\it-posts\\2026-04-07\\post_3_스마트폰_카메라_화소_수만으로_판단하면_안_되는_이유.html"
+    "file": "C:\\Users\\CleanAdmin\\Desktop\\claude\\blog\\output\\it-posts\\2026-04-07\\post_3_아이폰과_갤럭시_카메라의_차이__전문가가_분석한_이유.html"
   }
 ]

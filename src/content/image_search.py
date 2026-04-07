@@ -71,7 +71,7 @@ def get_unique_image(image_pool: list[str]) -> str | None:
     return None
 
 
-_BASE = "https://raw.githubusercontent.com/kgbae99/tistory-blog-auto/master/assets/images"
+_BASE = "https://cdn.jsdelivr.net/gh/kgbae99/tistory-blog-auto@master/assets/images"
 
 # ── 이미지 풀: 파일명 1개 = 1개 항목, 다중 카테고리 태그 ───────────────────
 # 형식: (파일명, [주카테고리, 보조카테고리, ...])

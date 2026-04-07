@@ -2094,5 +2094,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 89,
+    "title": "3개월 먹어봤더니 두통 70% 줄인 찬음료 후기",
+    "keyword": "3개월 먹어봤더니 두통 완화된 찬음료 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "찬음료 두통",
+      "두통 후기",
+      "생활습관 개선",
+      "홈플래닛 체중계",
+      "코멧 요가매트",
+      "노바리빙 체중계",
+      "두통 완화 팁"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-07 05:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 90,
+    "title": "소화불량 원인 5가지와 해결 방법 4주 개선 후기",
+    "keyword": "소화불량 원인 5가지와 해결 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "소화불량",
+      "소화기질환",
+      "건강관리",
+      "SIBO",
+      "위내시경",
+      "식습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-07 05:48",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 91,
+    "title": "직장인 2주 수면 개선 불면증에 좋은 생활 습관 7가지",
+    "keyword": "불면증에 좋은 생활 습관 7가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "불면증",
+      "수면습관",
+      "생활습관",
+      "숙면팁",
+      "수면개선",
+      "건강관리",
+      "직장인수면"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-07 05:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
