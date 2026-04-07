@@ -731,26 +731,17 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
 <p style="color:#999;font-size:11px;margin:8px 0 0 0;">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>"""
 
-    # 섹션 HTML - 지정된 섹션에만 이미지 삽입 (URL·alt 중복 없음)
-    sections_html = ""
+    # 섹션 HTML - content만 먼저 조립 (이미지는 후처리 후 삽입)
+    _section_parts: list[tuple[str, str, str]] = []  # (heading, content, product_html)
     for i, sec in enumerate(sections):
         heading = sec.get("heading", "")
         content = sec.get("content", "")
-        if i in _section_img_map:
-            _s_url, _s_alt = _section_img_map[i]
-            img_html = f'<div style="text-align: center; margin: 15px 0;"><img src="{_s_url}" alt="{_s_alt}" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" /></div>'
-        else:
-            img_html = ""
-        sections_html += f"""
-<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">{heading}</h2>
-{img_html}
-{content}
-"""
-        # 광고: 문제 인식 직후(2번째 섹션), 해결 방법 직후(4번째 섹션)
+        prod_html = ""
         if i == 1 and len(p_list) > 0:
-            sections_html += _single_product_html(p_list[0], "problem")
+            prod_html = _single_product_html(p_list[0], "problem")
         elif i == 3 and len(p_list) > 1:
-            sections_html += _single_product_html(p_list[1], "solution")
+            prod_html = _single_product_html(p_list[1], "solution")
+        _section_parts.append((heading, content, prod_html))
 
     # 요약 카드
     cards_html = '<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0;">'
@@ -800,19 +791,28 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
     }, ensure_ascii=False)
 
     import re as _re
-    # 후처리 1: GPT가 삽입한 figure/img만 제거 (쿠팡 상품 이미지는 보존)
-    sections_html = _re.sub(
-        r'<figure[^>]*>[\s\S]*?</figure>',
-        '',
-        sections_html
-    )
-    sections_html = _re.sub(
-        r'<img\s[^>]*src="(?!https://ads-partners\.coupang\.com)[^"]*"[^>]*/?>',
-        '',
-        sections_html
-    )
-    # 후처리 2: CSS 버그 수정 (border: 1px solid: → border: 1px solid)
-    sections_html = _re.sub(r'border:\s*(\w+\s+\w+)\s*:\s*(#[0-9a-fA-F]+)', r'border: \1 \2', sections_html)
+
+    # 후처리 1: GPT content에서 figure/img 제거 후 섹션 이미지 삽입
+    sections_html = ""
+    for i, (heading, content, prod_html) in enumerate(_section_parts):
+        # GPT가 삽입한 이미지 제거 (content에만 적용)
+        content = _re.sub(r'<figure[^>]*>[\s\S]*?</figure>', '', content)
+        content = _re.sub(r'<img\s[^>]*src="(?!https://ads-partners\.coupang\.com)[^"]*"[^>]*/?>','', content)
+        content = _re.sub(r'border:\s*(\w+\s+\w+)\s*:\s*(#[0-9a-fA-F]+)', r'border: \1 \2', content)
+
+        # 시스템 이미지 삽입 (후처리 이후 → regex 영향 없음)
+        if i in _section_img_map:
+            _s_url, _s_alt = _section_img_map[i]
+            img_html = f'<div style="text-align: center; margin: 15px 0;"><img src="{_s_url}" alt="{_s_alt}" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" /></div>'
+        else:
+            img_html = ""
+
+        sections_html += f"""
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">{heading}</h2>
+{img_html}
+{content}
+{prod_html}
+"""
 
     return f"""<!DOCTYPE html>
 <html lang="ko">
