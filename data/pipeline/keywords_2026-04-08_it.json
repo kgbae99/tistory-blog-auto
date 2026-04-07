@@ -1,0 +1,317 @@
+{
+  "date": "2026-04-08",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "저렴한 가격대의 노이즈캔슬링 헤드셋 구매 의도"
+    },
+    {
+      "keyword": "최신 무선 마우스 3개 상세 비교",
+      "type": "revenue",
+      "intent": "최신 모델의 무선 마우스를 비교하여 구매 결정"
+    },
+    {
+      "keyword": "휴대용 블루투스 스피커 후기 및 추천",
+      "type": "revenue",
+      "intent": "여행용 블루투스 스피커 구매 후기 및 추천"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 실제 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드의 타건감에 대한 구매 전 후기 탐색"
+    },
+    {
+      "keyword": "재택근무에 적합한 모니터 가격대별 추천",
+      "type": "revenue",
+      "intent": "재택근무 효율을 높이기 위한 모니터 구매"
+    },
+    {
+      "keyword": "50만원대 노트북 성능 비교 추천",
+      "type": "revenue",
+      "intent": "50만원대 가격의 노트북을 성능별로 비교하여 추천"
+    },
+    {
+      "keyword": "베스트 스마트폰 보조배터리 5종 비교",
+      "type": "revenue",
+      "intent": "스마트폰을 위한 보조배터리 구매 비교"
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 구매 후기",
+      "type": "revenue",
+      "intent": "가성비 우수한 미니PC의 구매 후 실제 후기"
+    },
+    {
+      "keyword": "AI 생산성 도구 실제 사용 후기",
+      "type": "revenue",
+      "intent": "AI 기반 생산성 도구를 사용해 본 고객 후기 탐색"
+    },
+    {
+      "keyword": "2년 보증 포함 SSD 추천 이유",
+      "type": "revenue",
+      "intent": "2년 보증이 포함된 SSD 제품의 추천 이유 탐색"
+    },
+    {
+      "keyword": "그래픽카드 가격대별 성능 비교",
+      "type": "revenue",
+      "intent": "그래픽카드를 가격대별로 성능을 비교하여 구매 결정"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 장점 비교",
+      "type": "revenue",
+      "intent": "블루라이트를 차단하는 모니터의 장점 비교 분석"
+    },
+    {
+      "keyword": "노트북 온도 상승 이유와 해결 방법",
+      "type": "info",
+      "intent": "노트북의 온도 증가 원인과 해결 방법 탐색"
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 비교",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 차이를 알아보는 탐색"
+    },
+    {
+      "keyword": "클라우드 저장소 선택 시 고려할 점",
+      "type": "info",
+      "intent": "클라우드 저장소를 선택할 때 주의할 사항들을 탐색"
+    },
+    {
+      "keyword": "무선이어폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "무선이어폰의 배터리 수명을 늘리는 방법 탐구"
+    },
+    {
+      "keyword": "높은 해상도 모니터의 필요성 이유",
+      "type": "info",
+      "intent": "고해상도 모니터가 필요한 이유에 대한 정보 탐색"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 차이점",
+      "type": "info",
+      "intent": "기계식 키보드와 멤브레인 키보드의 차이를 확인"
+    },
+    {
+      "keyword": "블루투스 스피커 장점과 단점",
+      "type": "info",
+      "intent": "블루투스 스피커의 장점과 단점에 대한 정보 탐색"
+    },
+    {
+      "keyword": "재택근무 효율 높이는 방법",
+      "type": "info",
+      "intent": "재택근무 시 생산성을 높이는 방법에 대한 정보 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "50만원대 노트북 성능 비교 추천",
+      "post_type": "revenue",
+      "intent": "50만원대 가격의 노트북을 성능별로 비교하여 추천"
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 비교",
+      "post_type": "info",
+      "intent": "SSD와 HDD의 실제 속도 차이를 알아보는 탐색"
+    },
+    {
+      "keyword": "최신 무선 마우스 3개 상세 비교",
+      "post_type": "revenue",
+      "intent": "최신 모델의 무선 마우스를 비교하여 구매 결정"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "50만원대 노트북 성능 비교 추천",
+      "type": "revenue",
+      "intent": "50만원대 가격의 노트북을 성능별로 비교하여 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 비교",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 차이를 알아보는 탐색",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "최신 무선 마우스 3개 상세 비교",
+      "type": "revenue",
+      "intent": "최신 모델의 무선 마우스를 비교하여 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 타건감 실제 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드의 타건감에 대한 구매 전 후기 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "베스트 스마트폰 보조배터리 5종 비교",
+      "type": "revenue",
+      "intent": "스마트폰을 위한 보조배터리 구매 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 생산성 도구 실제 사용 후기",
+      "type": "revenue",
+      "intent": "AI 기반 생산성 도구를 사용해 본 고객 후기 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "2년 보증 포함 SSD 추천 이유",
+      "type": "revenue",
+      "intent": "2년 보증이 포함된 SSD 제품의 추천 이유 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 가격대별 성능 비교",
+      "type": "revenue",
+      "intent": "그래픽카드를 가격대별로 성능을 비교하여 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 장점 비교",
+      "type": "revenue",
+      "intent": "블루라이트를 차단하는 모니터의 장점 비교 분석",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "저렴한 가격대의 노이즈캔슬링 헤드셋 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "휴대용 블루투스 스피커 후기 및 추천",
+      "type": "revenue",
+      "intent": "여행용 블루투스 스피커 구매 후기 및 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무에 적합한 모니터 가격대별 추천",
+      "type": "revenue",
+      "intent": "재택근무 효율을 높이기 위한 모니터 구매",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 구매 후기",
+      "type": "revenue",
+      "intent": "가성비 우수한 미니PC의 구매 후 실제 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 온도 상승 이유와 해결 방법",
+      "type": "info",
+      "intent": "노트북의 온도 증가 원인과 해결 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "무선이어폰의 배터리 수명을 늘리는 방법 탐구",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "높은 해상도 모니터의 필요성 이유",
+      "type": "info",
+      "intent": "고해상도 모니터가 필요한 이유에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 차이점",
+      "type": "info",
+      "intent": "기계식 키보드와 멤브레인 키보드의 차이를 확인",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 높이는 방법",
+      "type": "info",
+      "intent": "재택근무 시 생산성을 높이는 방법에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 선택 시 고려할 점",
+      "type": "info",
+      "intent": "클라우드 저장소를 선택할 때 주의할 사항들을 탐색",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "블루투스 스피커 장점과 단점",
+      "type": "info",
+      "intent": "블루투스 스피커의 장점과 단점에 대한 정보 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
