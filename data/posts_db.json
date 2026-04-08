@@ -2237,5 +2237,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 95,
+    "title": "직장인 30일 홈트 후기: 3kg 감량과 복근 변화 후기",
+    "keyword": "직장인을 위한 30일 홈트레이닝 프로그램 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "직장인홈트",
+      "30일도전",
+      "홈트후기",
+      "요가매트추천",
+      "복근운동",
+      "비타민C",
+      "건강습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-09 07:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 96,
+    "title": "직장인 2주 만에 피로감 40% 줄인 스트레칭 5가지 방법",
+    "keyword": "스트레칭으로 피로를 푸는 5가지 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "스트레칭으로피로해소",
+      "직장인스트레칭",
+      "피로회복루틴",
+      "근막이완",
+      "호흡연습",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-09 07:52",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 97,
+    "title": "근력운동의 효과와 주의사항 7가지: 8주 근력 20% 향상 후기",
+    "keyword": "근력운동의 효과와 주의사항 7가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "근력운동",
+      "헬스팁",
+      "홈트레이닝",
+      "근력증가",
+      "운동주의사항",
+      "트레이닝루틴",
+      "건강과웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-09 07:54",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
