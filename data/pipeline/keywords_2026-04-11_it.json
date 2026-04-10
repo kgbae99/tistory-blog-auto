@@ -1,0 +1,307 @@
+{
+  "date": "2026-04-11",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매자들에게 특정 가격대의 제품 추천"
+    },
+    {
+      "keyword": "무선 이어폰 배터리 수명 비교 2023",
+      "type": "revenue",
+      "intent": "여러 제품의 배터리 수명을 비교하여 구매 결정을 돕는 정보"
+    },
+    {
+      "keyword": "2023년 인기 블루투스 스피커 리뷰",
+      "type": "revenue",
+      "intent": "최신 인기 제품에 대한 리뷰 제공"
+    },
+    {
+      "keyword": "기계식 키보드 청축 갈축 차이점 상세 설명",
+      "type": "info",
+      "intent": "기계식 키보드의 각 축차이점에 대한 깊이 있는 정보 제공"
+    },
+    {
+      "keyword": "무선마우스 작동 안될 때 해결 방법",
+      "type": "info",
+      "intent": "무선 마우스가 작동하지 않을 때의 문제 해결 방법 제공"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "노트북의 발열을 줄이는 다양한 방법 제공"
+    },
+    {
+      "keyword": "최신 SSD와 HDD 성능 비교 결과",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 성능 차이를 설명"
+    },
+    {
+      "keyword": "3년간 사용한 보조배터리 성능 후기",
+      "type": "revenue",
+      "intent": "장기간 사용 후 성능을 검토하는 후기 제공"
+    },
+    {
+      "keyword": "UHD 모니터 vs QHD 모니터 차이와 장단점",
+      "type": "info",
+      "intent": "UHD와 QHD 모니터의 차이점을 정확히 설명"
+    },
+    {
+      "keyword": "2023년 재택근무 노트북 추천 베스트 3",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 추천"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 선택 가이드",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터 선택에 대한 가이드 제공"
+    },
+    {
+      "keyword": "트랙패드 vs 무선마우스 사용 후기",
+      "type": "revenue",
+      "intent": "트랙패드와 무선마우스를 사용해 본 후기 제공"
+    },
+    {
+      "keyword": "결국 가장 좋은 스마트폰 배터리 관리법",
+      "type": "info",
+      "intent": "스마트폰 배터리 관리에 대한 최고의 방법 제안"
+    },
+    {
+      "keyword": "AI 도구 활용해서 업무 효율 올리는 방법",
+      "type": "info",
+      "intent": "업무 효율성을 높이는 AI 도구 활용법 제공"
+    },
+    {
+      "keyword": "재택근무 시 필요한 클라우드 서비스 추천",
+      "type": "revenue",
+      "intent": "재택근무에 유용한 클라우드 서비스 추천"
+    },
+    {
+      "keyword": "6개월 사용한 미니PC 성능 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 장기간 사용 후 성능 비교 데이터 제공"
+    },
+    {
+      "keyword": "해상도 높을수록 눈 피로 줄어드는 이유",
+      "type": "info",
+      "intent": "고해상도 화면이 눈의 피로를 줄이는 원인 설명"
+    },
+    {
+      "keyword": "주목받는 최신 무선 충전기 추천",
+      "type": "revenue",
+      "intent": "무선 충전기 중 가장 주목받는 제품 추천"
+    },
+    {
+      "keyword": "그래픽카드 교체 시기 및 장점 설명",
+      "type": "info",
+      "intent": "그래픽카드 교체 타이밍 및 장점에 대한 정보 제공"
+    },
+    {
+      "keyword": "가성비 좋은 RAM 추천 및 후기",
+      "type": "revenue",
+      "intent": "가성비 좋은 RAM 제품 추천 및 후기를 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "6개월 사용한 미니PC 성능 비교",
+      "post_type": "revenue",
+      "intent": "구매를 위한 장기간 사용 후 성능 비교 데이터 제공"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "post_type": "revenue",
+      "intent": "구매자들에게 특정 가격대의 제품 추천"
+    },
+    {
+      "keyword": "무선 이어폰 배터리 수명 비교 2023",
+      "post_type": "revenue",
+      "intent": "여러 제품의 배터리 수명을 비교하여 구매 결정을 돕는 정보"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "6개월 사용한 미니PC 성능 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 장기간 사용 후 성능 비교 데이터 제공",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매자들에게 특정 가격대의 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "무선 이어폰 배터리 수명 비교 2023",
+      "type": "revenue",
+      "intent": "여러 제품의 배터리 수명을 비교하여 구매 결정을 돕는 정보",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 SSD와 HDD 성능 비교 결과",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 성능 차이를 설명",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "트랙패드 vs 무선마우스 사용 후기",
+      "type": "revenue",
+      "intent": "트랙패드와 무선마우스를 사용해 본 후기 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "노트북의 발열을 줄이는 다양한 방법 제공",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "3년간 사용한 보조배터리 성능 후기",
+      "type": "revenue",
+      "intent": "장기간 사용 후 성능을 검토하는 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 재택근무 노트북 추천 베스트 3",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 시 필요한 클라우드 서비스 추천",
+      "type": "revenue",
+      "intent": "재택근무에 유용한 클라우드 서비스 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "주목받는 최신 무선 충전기 추천",
+      "type": "revenue",
+      "intent": "무선 충전기 중 가장 주목받는 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 RAM 추천 및 후기",
+      "type": "revenue",
+      "intent": "가성비 좋은 RAM 제품 추천 및 후기를 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축 갈축 차이점 상세 설명",
+      "type": "info",
+      "intent": "기계식 키보드의 각 축차이점에 대한 깊이 있는 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선마우스 작동 안될 때 해결 방법",
+      "type": "info",
+      "intent": "무선 마우스가 작동하지 않을 때의 문제 해결 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "UHD 모니터 vs QHD 모니터 차이와 장단점",
+      "type": "info",
+      "intent": "UHD와 QHD 모니터의 차이점을 정확히 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용해서 업무 효율 올리는 방법",
+      "type": "info",
+      "intent": "업무 효율성을 높이는 AI 도구 활용법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "해상도 높을수록 눈 피로 줄어드는 이유",
+      "type": "info",
+      "intent": "고해상도 화면이 눈의 피로를 줄이는 원인 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 선택 가이드",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터 선택에 대한 가이드 제공",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "2023년 인기 블루투스 스피커 리뷰",
+      "type": "revenue",
+      "intent": "최신 인기 제품에 대한 리뷰 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "결국 가장 좋은 스마트폰 배터리 관리법",
+      "type": "info",
+      "intent": "스마트폰 배터리 관리에 대한 최고의 방법 제안",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "그래픽카드 교체 시기 및 장점 설명",
+      "type": "info",
+      "intent": "그래픽카드 교체 타이밍 및 장점에 대한 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
