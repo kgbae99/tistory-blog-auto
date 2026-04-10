@@ -2380,5 +2380,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 101,
+    "title": "40대 여성 3개월 주름 개선 크림 추천 후기",
+    "keyword": "40대 여성 주름 개선 크림 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대주름크림",
+      "주름개선후기",
+      "주름크림추천",
+      "중년피부관리",
+      "레티놀후기",
+      "피부탄력루틴",
+      "오설록삼다꿀배티"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-11 07:44",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 102,
+    "title": "자외선 차단제 선택 시 고려할 5가지 요소와 실제 방법",
+    "keyword": "자외선 차단제 선택 시 고려해야 할 5가지 요소",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "자외선차단제",
+      "선크림선택",
+      "SPFPA",
+      "피부관리",
+      "자외선대응",
+      "실전팁"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-11 07:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 103,
+    "title": "피부 보습을 위한 최적의 수분 공급 방법 3가지",
+    "keyword": "피부 보습을 위한 최적의 수분 공급 방법 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피부보습",
+      "수분공급",
+      "세라마이드",
+      "히알루론산",
+      "스킨케어루틴",
+      "건성피부",
+      "피부장벽"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-11 07:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
