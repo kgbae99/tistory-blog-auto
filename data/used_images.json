@@ -316,10 +316,17 @@
   "2026-04-12": [
     "food_01.jpg",
     "health_05.jpg",
+    "health_08.jpg",
+    "health_12.jpg",
+    "health_14.jpg",
+    "health_15.jpg",
+    "health_16.jpg",
     "health_19.jpg",
     "health_23.jpg",
     "medical_02.jpg",
     "medical_03.jpg",
+    "tech_04.jpg",
+    "tech_05.jpg",
     "tech_06.jpg",
     "tech_09.jpg",
     "tech_10.jpg",
@@ -328,6 +335,8 @@
     "tech_19.jpg",
     "tech_22.jpg",
     "tech_24.jpg",
-    "tech_25.jpg"
+    "tech_25.jpg",
+    "tech_29.jpg",
+    "tech_30.jpg"
   ]
 }

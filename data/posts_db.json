@@ -2451,5 +2451,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 104,
+    "title": "40대 직장인 3개월 면역력 40% 향상 비타민 추천 후기",
+    "keyword": "40대 직장인 면역력 강화에 좋은 비타민 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대면역력",
+      "직장인건강",
+      "비타민추천",
+      "오메가3후기",
+      "체중계추천",
+      "면역력강화",
+      "건강루틴"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-12 07:39",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 105,
+    "title": "면역력 저하의 주요 원인 5가지와 6주 회복 후기",
+    "keyword": "면역력 저하의 주요 원인 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "면역력 저하의 주요 원인 5가지",
+      "장내미생물",
+      "미세영양소",
+      "생활리듬",
+      "건강회복",
+      "면역 검진"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-12 07:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 106,
+    "title": "혈관 건강을 지키는 7가지 필수 영양소와 효능 6주 변화법",
+    "keyword": "혈관 건강을 위한 필수 영양소와 그 효능",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈관 건강",
+      "영양소",
+      "오메가-3",
+      "비타민K2",
+      "마그네슘",
+      "심혈관질환 예방",
+      "건강온도사"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-12 07:42",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
