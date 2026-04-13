@@ -1052,12 +1052,8 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
     result = re.sub(r'<!--\s*TAGS:.*?-->', '', result, flags=re.IGNORECASE)
 
     # 후처리 6: GPT가 섹션에 마무리를 넣어 중복될 때 sec 안의 마무리 제거
-    result = re.sub(
-        r'<div id="sec\d+"[^>]*>[\s\S]*?<h2[^>]*>[^<]*마무리[^<]*</h2>[\s\S]*?</div>',
-        '',
-        result,
-        flags=re.IGNORECASE,
-    )
+    # ※ 이전 regex는 너무 광범위해서 다른 섹션까지 삭제하는 버그 있었음 → 비활성화
+    # result = re.sub(...)  # 제거됨
 
     # 후처리 7: GPT가 출력한 광고 플레이스홀더 제거 (강화)
     # "지금 이게 필요하다" 문장 제거
