@@ -1,0 +1,312 @@
+{
+  "date": "2026-04-14",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "40대 여성 간헐적 단식 식단 추천",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 간헐적 단식 식단 추천 정보 제공"
+    },
+    {
+      "keyword": "50대 남성 오메가3 영양제 비교",
+      "type": "revenue",
+      "intent": "50대 남성에게 적합한 오메가3 영양제의 비교 및 추천"
+    },
+    {
+      "keyword": "직장인 다이어트 도시락 추천 5가지",
+      "type": "revenue",
+      "intent": "직장인들이 쉽게 살 수 있는 다이어트 도시락 추천"
+    },
+    {
+      "keyword": "갱년기 여성 콜라겐 보충제 후기",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 추천되는 콜라겐 보충제의 후기 제공"
+    },
+    {
+      "keyword": "당뇨 전단계 혈당 관리 영양제 추천",
+      "type": "revenue",
+      "intent": "당뇨 전단계에 있는 사람들을 위한 혈당 관리 영양제 추천"
+    },
+    {
+      "keyword": "50대 여성 무릎 통증 보조제 추천",
+      "type": "revenue",
+      "intent": "50대 여성을 위한 무릎 통증 감소 보조제 추천"
+    },
+    {
+      "keyword": "스트레스성 탈모 샴푸 추천 3개",
+      "type": "revenue",
+      "intent": "스트레스로 인한 탈모에 효과적인 샴푸 3가지 추천"
+    },
+    {
+      "keyword": "60대 관절염 개선 보조제 리뷰",
+      "type": "revenue",
+      "intent": "60대 관절염 환자를 위한 보조제 리뷰 및 추천 정보"
+    },
+    {
+      "keyword": "저탄고지 다이어트 보조제 비교",
+      "type": "revenue",
+      "intent": "저탄고지 다이어트에 적합한 보조제의 비교 정보"
+    },
+    {
+      "keyword": "50대 남성 비타민D 영양제 추천",
+      "type": "revenue",
+      "intent": "50대 남성에게 필요한 비타민D 영양제 추천"
+    },
+    {
+      "keyword": "유산균 변비 개선 후기",
+      "type": "revenue",
+      "intent": "변비 개선에 효과적인 유산균 제품 후기 제공"
+    },
+    {
+      "keyword": "공복혈당 관리 영양제 추천 3가지",
+      "type": "revenue",
+      "intent": "공복혈당 관리를 위한 영양제 3가지 추천"
+    },
+    {
+      "keyword": "갱년기 여성 복부비만 원인",
+      "type": "info",
+      "intent": "갱년기 여성에게 나타나는 복부비만의 원인 분석"
+    },
+    {
+      "keyword": "허리 통증 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "허리 통증을 줄일 수 있는 효과적인 방법 제공"
+    },
+    {
+      "keyword": "만성피로 원인과 해결책",
+      "type": "info",
+      "intent": "만성피로의 원인과 이를 해결할 수 있는 방법"
+    },
+    {
+      "keyword": "불면증 개선 자연 요법",
+      "type": "info",
+      "intent": "불면증을 개선하기 위한 자연적인 요법 소개"
+    },
+    {
+      "keyword": "장누수 증후군 원인과 치료법",
+      "type": "info",
+      "intent": "장누수 증후군의 원인과 가능한 치료법 소개"
+    },
+    {
+      "keyword": "근감소증 예방 운동 방법",
+      "type": "info",
+      "intent": "근감소증을 예방하기 위한 효과적인 운동 방법 소개"
+    },
+    {
+      "keyword": "고혈압 환자 식단 비밀",
+      "type": "info",
+      "intent": "고혈압 환자에게 적합한 식단의 비밀과 정보 제공"
+    },
+    {
+      "keyword": "피부 건조 예방 자연 요법",
+      "type": "info",
+      "intent": "피부 건조를 예방하기 위한 자연적인 요법 소개"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "직장인 다이어트 도시락 추천 5가지",
+      "post_type": "revenue",
+      "intent": "직장인들이 쉽게 살 수 있는 다이어트 도시락 추천"
+    },
+    {
+      "keyword": "50대 남성 오메가3 영양제 비교",
+      "post_type": "revenue",
+      "intent": "50대 남성에게 적합한 오메가3 영양제의 비교 및 추천"
+    },
+    {
+      "keyword": "40대 여성 간헐적 단식 식단 추천",
+      "post_type": "revenue",
+      "intent": "40대 여성을 위한 간헐적 단식 식단 추천 정보 제공"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "직장인 다이어트 도시락 추천 5가지",
+      "type": "revenue",
+      "intent": "직장인들이 쉽게 살 수 있는 다이어트 도시락 추천",
+      "score": 7,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50대 남성 오메가3 영양제 비교",
+      "type": "revenue",
+      "intent": "50대 남성에게 적합한 오메가3 영양제의 비교 및 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "40대 여성 간헐적 단식 식단 추천",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 간헐적 단식 식단 추천 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 콜라겐 보충제 후기",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 추천되는 콜라겐 보충제의 후기 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 여성 무릎 통증 보조제 추천",
+      "type": "revenue",
+      "intent": "50대 여성을 위한 무릎 통증 감소 보조제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 남성 비타민D 영양제 추천",
+      "type": "revenue",
+      "intent": "50대 남성에게 필요한 비타민D 영양제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "공복혈당 관리 영양제 추천 3가지",
+      "type": "revenue",
+      "intent": "공복혈당 관리를 위한 영양제 3가지 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "저탄고지 다이어트 보조제 비교",
+      "type": "revenue",
+      "intent": "저탄고지 다이어트에 적합한 보조제의 비교 정보",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "당뇨 전단계 혈당 관리 영양제 추천",
+      "type": "revenue",
+      "intent": "당뇨 전단계에 있는 사람들을 위한 혈당 관리 영양제 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스트레스성 탈모 샴푸 추천 3개",
+      "type": "revenue",
+      "intent": "스트레스로 인한 탈모에 효과적인 샴푸 3가지 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "60대 관절염 개선 보조제 리뷰",
+      "type": "revenue",
+      "intent": "60대 관절염 환자를 위한 보조제 리뷰 및 추천 정보",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 복부비만 원인",
+      "type": "info",
+      "intent": "갱년기 여성에게 나타나는 복부비만의 원인 분석",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "허리 통증 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "허리 통증을 줄일 수 있는 효과적인 방법 제공",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "만성피로 원인과 해결책",
+      "type": "info",
+      "intent": "만성피로의 원인과 이를 해결할 수 있는 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "장누수 증후군 원인과 치료법",
+      "type": "info",
+      "intent": "장누수 증후군의 원인과 가능한 치료법 소개",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "근감소증 예방 운동 방법",
+      "type": "info",
+      "intent": "근감소증을 예방하기 위한 효과적인 운동 방법 소개",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "유산균 변비 개선 후기",
+      "type": "revenue",
+      "intent": "변비 개선에 효과적인 유산균 제품 후기 제공",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "불면증 개선 자연 요법",
+      "type": "info",
+      "intent": "불면증을 개선하기 위한 자연적인 요법 소개",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "고혈압 환자 식단 비밀",
+      "type": "info",
+      "intent": "고혈압 환자에게 적합한 식단의 비밀과 정보 제공",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "피부 건조 예방 자연 요법",
+      "type": "info",
+      "intent": "피부 건조를 예방하기 위한 자연적인 요법 소개",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
