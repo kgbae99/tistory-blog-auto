@@ -44,11 +44,9 @@ _CORE_GOALS = """
 - 수치 포함 (기간, 변화량 등)
 
 ### 규칙 3: 수익 구조 (광고 위치)
-- 광고는 3곳에 고정:
-  1. 문제 인식 직후
-  2. 해결 방법 직후
-  3. 결론 직전
-- 각 광고 바로 위에 "지금 이게 필요하다"는 감정 연결 문장 삽입
+- 광고 배치는 시스템이 자동으로 처리합니다. content 안에 광고 플레이스홀더를 절대 삽입하지 마세요.
+- 금지: "지금 이게 필요하다", "[광고 영역]", dashed border div 등 광고 위치 표시 요소 일체
+- 대신, 각 섹션 본문 마지막 문장에 독자가 자연스럽게 다음 내용을 원하도록 감정 연결 문장을 녹여 쓰세요.
 
 ### 규칙 4: CTA
 - 중간 CTA 1개 이상: "이 방법이 어렵다면 아래 방법이 더 현실적입니다" 포함
@@ -918,6 +916,10 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     # H1 제목 + 도입부
     intro = sections[0]["content"] if sections else ""
+    # intro 안에 GPT가 삽입한 광고 플레이스홀더 제거
+    intro = re.sub(r'<p[^>]*>\s*지금 이게 필요하다\s*</p>\s*', '', intro, flags=re.IGNORECASE)
+    intro = re.sub(r'<div[^>]*dashed[^>]*>[\s\S]*?광고\s*영역[\s\S]*?</div>', '', intro, flags=re.IGNORECASE)
+    intro = re.sub(r'<div[^>]*>(?:(?!</div>)[\s\S])*?광고\s*영역\s*\([^)]*\)(?:(?!</div>)[\s\S])*?</div>', '', intro, flags=re.IGNORECASE)
     toc_items = "".join(
         f'<p style="margin: 8px 0;"><a style="color: #2c3e50; text-decoration: none;" href="#sec{i}">{i}. {s["heading"]}</a></p>'
         for i, s in enumerate(sections[1:], 1) if s["heading"] != "마무리"
@@ -943,6 +945,10 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
         content = section.get("content", "")
         content = re.sub(r'<figure[^>]*>[\s\S]*?</figure>', '', content)
         content = re.sub(r'<img\s[^>]*/?>',  '', content)
+        # 섹션 content 안의 광고 플레이스홀더 제거
+        content = re.sub(r'<p[^>]*>\s*지금 이게 필요하다\s*</p>\s*', '', content, flags=re.IGNORECASE)
+        content = re.sub(r'<div[^>]*dashed[^>]*>[\s\S]*?광고\s*영역[\s\S]*?</div>', '', content, flags=re.IGNORECASE)
+        content = re.sub(r'<div[^>]*>(?:(?!</div>)[\s\S])*?광고\s*영역\s*\([^)]*\)(?:(?!</div>)[\s\S])*?</div>', '', content, flags=re.IGNORECASE)
 
         # 지정된 섹션(핵심설명/경험)에만 시스템 이미지 삽입 — URL·alt 중복 없음
         img_html = ""
@@ -994,6 +1000,13 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
         if s["heading"] == "마무리":
             conclusion = s["content"]
             break
+    # 마무리 content 안의 광고 플레이스홀더 제거
+    conclusion = re.sub(r'<p[^>]*>\s*지금 이게 필요하다\s*</p>\s*', '', conclusion, flags=re.IGNORECASE)
+    conclusion = re.sub(r'<div[^>]*dashed[^>]*>[\s\S]*?광고\s*영역[\s\S]*?</div>', '', conclusion, flags=re.IGNORECASE)
+    conclusion = re.sub(r'<div[^>]*>(?:(?!</div>)[\s\S])*?광고\s*영역\s*\([^)]*\)(?:(?!</div>)[\s\S])*?</div>', '', conclusion, flags=re.IGNORECASE)
+    conclusion = conclusion.strip()
+    if not conclusion:
+        conclusion = f'<p style="color: #333; line-height: 1.8;">오늘 알아본 내용이 도움이 되셨으면 합니다. 건강한 생활습관을 꾸준히 실천하면 분명 변화를 느끼실 수 있어요. 궁금한 점은 댓글로 남겨주세요.</p>'
 
     parts.append(f"""<div style="background-color: #ffffff; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 <h2 style="color: #2c3e50; border-bottom: 2px solid #FFE4E8; padding-bottom: 10px;">마무리</h2>
@@ -1034,6 +1047,54 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 
     # 후처리 4: GPT 앵커 제거 (시스템 #sec 유지)
     result = re.sub(r'<a[^>]*href="#(?!sec\d)[^"]*"[^>]*>(.*?)</a>', r'\1', result)
+
+    # 후처리 5: GPT가 삽입한 TAGS 주석 제거
+    result = re.sub(r'<!--\s*TAGS:.*?-->', '', result, flags=re.IGNORECASE)
+
+    # 후처리 6: GPT가 섹션에 마무리를 넣어 중복될 때 sec 안의 마무리 제거
+    result = re.sub(
+        r'<div id="sec\d+"[^>]*>[\s\S]*?<h2[^>]*>[^<]*마무리[^<]*</h2>[\s\S]*?</div>',
+        '',
+        result,
+        flags=re.IGNORECASE,
+    )
+
+    # 후처리 7: GPT가 출력한 광고 플레이스홀더 제거 (강화)
+    # "지금 이게 필요하다" 문장 제거
+    result = re.sub(
+        r'<p[^>]*>\s*지금 이게 필요하다\s*</p>\s*',
+        '',
+        result,
+        flags=re.IGNORECASE,
+    )
+    # 점선 박스 광고 영역 플레이스홀더 제거 (dashed + 광고 영역 텍스트 포함된 div)
+    result = re.sub(
+        r'<div[^>]*dashed[^>]*>[\s\S]*?광고\s*영역[\s\S]*?</div>',
+        '',
+        result,
+        flags=re.IGNORECASE,
+    )
+    # [광고 영역 ...] 형식
+    result = re.sub(
+        r'<div[^>]*>\s*\[광고\s*영역[^\]]*\]\s*</div>',
+        '',
+        result,
+        flags=re.IGNORECASE,
+    )
+    # "광고 영역 (문제 인식 직후)" 같은 텍스트가 포함된 div 제거
+    result = re.sub(
+        r'<div[^>]*>(?:(?!</div>)[\s\S])*?광고\s*영역\s*\([^)]*\)(?:(?!</div>)[\s\S])*?</div>',
+        '',
+        result,
+        flags=re.IGNORECASE,
+    )
+    # 마무리 섹션 내 빈 topic-content div 제거 (GPT가 content를 비워서 내려보낸 경우)
+    result = re.sub(
+        r'(<div[^>]*class=["\']topic-content["\'][^>]*>)\s*</div>',
+        '',
+        result,
+        flags=re.IGNORECASE,
+    )
 
     # GPT가 생성한 중복 목차 제거 (시스템 목차만 유지)
     # "목차" 제목을 가진 섹션 중 시스템이 만든 것(h3) 외의 것 제거
