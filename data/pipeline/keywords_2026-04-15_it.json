@@ -1,0 +1,317 @@
+{
+  "date": "2026-04-15",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "3만원대 무선이어폰 직접 써본 솔직 후기",
+      "type": "revenue",
+      "intent": "제품 구매 전 사용자 후기를 통해 구매 결정 도움"
+    },
+    {
+      "keyword": "재택근무 노트북 3개 비교해봤더니",
+      "type": "revenue",
+      "intent": "재택근무용 노트북 구매 전 비교를 통해 구매 결정 도움"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 추천 2023년 최신 모델",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 전 추천 모델 확인"
+    },
+    {
+      "keyword": "5만원 이하 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 전 가격대별 추천 모델 확인"
+    },
+    {
+      "keyword": "기계식 키보드 3종 후기 및 비교",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 전 비교 및 후기 확인"
+    },
+    {
+      "keyword": "노이즈캔슬링 이어폰 사용 후기와 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매 전 사용자 후기를 통해 구매 결정 도움"
+    },
+    {
+      "keyword": "게이밍 노트북 RAM 16GB 이상 추천",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매 전 RAM 용량에 따른 추천 모델 확인"
+    },
+    {
+      "keyword": "20만원대 미니PC 추천 및 후기",
+      "type": "revenue",
+      "intent": "미니PC 구매 전 추천 모델 및 사용자 후기 확인"
+    },
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 법 5가지",
+      "type": "info",
+      "intent": "스마트폰 배터리를 오래 사용하기 위한 정보 제공"
+    },
+    {
+      "keyword": "충전기 고장 원인 및 해결 방법",
+      "type": "info",
+      "intent": "충전기 고장 시 원인 파악 및 해결 방법 정보 제공"
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 효과와 방법",
+      "type": "info",
+      "intent": "블루라이트 차단 효과와 방법에 대한 정보 제공"
+    },
+    {
+      "keyword": "클라우드 서비스 무료 체험 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 무료 체험을 위한 방법 정보 제공"
+    },
+    {
+      "keyword": "AI 도구로 생산성 높이는 법",
+      "type": "info",
+      "intent": "AI 도구를 사용하여 생산성을 높이는 방법 제공"
+    },
+    {
+      "keyword": "SSD vs HDD 실제 속도 비교",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 차이를 비교하여 정보 제공"
+    },
+    {
+      "keyword": "노트북 발열 해결책 3가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결을 위한 3가지 방법 제공"
+    },
+    {
+      "keyword": "무선 마우스 수명 늘리는 방법",
+      "type": "info",
+      "intent": "무선 마우스 수명을 늘리는 방법 정보 제공"
+    },
+    {
+      "keyword": "저가형 모니터 해상도 종합 리뷰",
+      "type": "revenue",
+      "intent": "저가형 모니터 구매 전 해상도에 따른 종합 리뷰 확인"
+    },
+    {
+      "keyword": "RAM 8GB vs 16GB 성능 차이 후기",
+      "type": "info",
+      "intent": "RAM 용량에 따른 성능 차이를 비교한 후기 제공"
+    },
+    {
+      "keyword": "그래픽카드 가격대별 추천 이유",
+      "type": "revenue",
+      "intent": "그래픽카드 구매 전 가격대별 추천 모델 및 이유 확인"
+    },
+    {
+      "keyword": "보조배터리 용량별 추천 및 후기",
+      "type": "revenue",
+      "intent": "보조배터리 구매 전 용량별 추천 및 사용자 후기 확인"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "3만원대 무선이어폰 직접 써본 솔직 후기",
+      "post_type": "revenue",
+      "intent": "제품 구매 전 사용자 후기를 통해 구매 결정 도움"
+    },
+    {
+      "keyword": "재택근무 노트북 3개 비교해봤더니",
+      "post_type": "revenue",
+      "intent": "재택근무용 노트북 구매 전 비교를 통해 구매 결정 도움"
+    },
+    {
+      "keyword": "20만원대 미니PC 추천 및 후기",
+      "post_type": "revenue",
+      "intent": "미니PC 구매 전 추천 모델 및 사용자 후기 확인"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "3만원대 무선이어폰 직접 써본 솔직 후기",
+      "type": "revenue",
+      "intent": "제품 구매 전 사용자 후기를 통해 구매 결정 도움",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "재택근무 노트북 3개 비교해봤더니",
+      "type": "revenue",
+      "intent": "재택근무용 노트북 구매 전 비교를 통해 구매 결정 도움",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "20만원대 미니PC 추천 및 후기",
+      "type": "revenue",
+      "intent": "미니PC 구매 전 추천 모델 및 사용자 후기 확인",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD vs HDD 실제 속도 비교",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 차이를 비교하여 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 전 가격대별 추천 모델 확인",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 3종 후기 및 비교",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 전 비교 및 후기 확인",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "RAM 8GB vs 16GB 성능 차이 후기",
+      "type": "info",
+      "intent": "RAM 용량에 따른 성능 차이를 비교한 후기 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 가격대별 추천 이유",
+      "type": "revenue",
+      "intent": "그래픽카드 구매 전 가격대별 추천 모델 및 이유 확인",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 추천 2023년 최신 모델",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 전 추천 모델 확인",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 이어폰 사용 후기와 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매 전 사용자 후기를 통해 구매 결정 도움",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "게이밍 노트북 RAM 16GB 이상 추천",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매 전 RAM 용량에 따른 추천 모델 확인",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 해결책 3가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결을 위한 3가지 방법 제공",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량별 추천 및 후기",
+      "type": "revenue",
+      "intent": "보조배터리 구매 전 용량별 추천 및 사용자 후기 확인",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "충전기 고장 원인 및 해결 방법",
+      "type": "info",
+      "intent": "충전기 고장 시 원인 파악 및 해결 방법 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 효과와 방법",
+      "type": "info",
+      "intent": "블루라이트 차단 효과와 방법에 대한 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 무료 체험 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 무료 체험을 위한 방법 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구로 생산성 높이는 법",
+      "type": "info",
+      "intent": "AI 도구를 사용하여 생산성을 높이는 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 수명 늘리는 방법",
+      "type": "info",
+      "intent": "무선 마우스 수명을 늘리는 방법 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 법 5가지",
+      "type": "info",
+      "intent": "스마트폰 배터리를 오래 사용하기 위한 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "저가형 모니터 해상도 종합 리뷰",
+      "type": "revenue",
+      "intent": "저가형 모니터 구매 전 해상도에 따른 종합 리뷰 확인",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
