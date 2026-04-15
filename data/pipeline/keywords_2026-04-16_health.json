@@ -1,0 +1,325 @@
+{
+  "date": "2026-04-16",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "40대 여성 간헐적 단식 3개월 체중 감량 후기",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 간헐적 단식 성공 후기 공유"
+    },
+    {
+      "keyword": "50대 남성 비타민D 영양제 비교 추천",
+      "type": "revenue",
+      "intent": "50대 남성을 위한 비타민D 영양제 추천 및 비교"
+    },
+    {
+      "keyword": "직장인 저탄고지 다이어트 2주 후기",
+      "type": "revenue",
+      "intent": "직장인들이 저탄고지 다이어트를 2주 동안 진행한 후기"
+    },
+    {
+      "keyword": "갱년기 여성 콜라겐 보충제 3가지 추천",
+      "type": "revenue",
+      "intent": "갱년기 여성을 위한 콜라겐 보충제 추천 리스트"
+    },
+    {
+      "keyword": "운동 후 단백질 보충제 5개 추천",
+      "type": "revenue",
+      "intent": "운동 후 섭취할 수 있는 단백질 보충제 추천"
+    },
+    {
+      "keyword": "50대 남성 오메가3 효과 및 후기",
+      "type": "revenue",
+      "intent": "50대 남성을 위한 오메가3 효과 및 사용 후기"
+    },
+    {
+      "keyword": "무릎 통증 완화 보조제 추천",
+      "type": "revenue",
+      "intent": "무릎 통증 완화를 위한 보조제 추천"
+    },
+    {
+      "keyword": "만성피로 비타민 영양제 4가지 비교",
+      "type": "revenue",
+      "intent": "만성피로를 위해 좋은 비타민 영양제 비교"
+    },
+    {
+      "keyword": "아연 보충제 추천 20대 여성",
+      "type": "revenue",
+      "intent": "20대 여성에게 적합한 아연 보충제 추천"
+    },
+    {
+      "keyword": "공복 혈당 낮추는 방법 5가지",
+      "type": "info",
+      "intent": "공복 혈당을 효과적으로 낮추는 방법 소개"
+    },
+    {
+      "keyword": "갱년기 수면 장애 원인과 해결책",
+      "type": "info",
+      "intent": "갱년기 여성의 수면 장애 원인 분석 및 해결책 제시"
+    },
+    {
+      "keyword": "40대 남성 근감소증 예방 운동 방법",
+      "type": "info",
+      "intent": "40대 남성을 위한 근감소증 예방 운동 방법 소개"
+    },
+    {
+      "keyword": "혈당 스파이크 식후 30분 증상 놓치는 원인",
+      "type": "info",
+      "intent": "혈당 스파이크 증상을 놓치는 주요 원인 조사"
+    },
+    {
+      "keyword": "장누수 증후군 원인과 관리 방법",
+      "type": "info",
+      "intent": "장누수 증후군의 원인 및 관리 방안을 제시"
+    },
+    {
+      "keyword": "콜라겐 부족 피부 건조 해결 방법",
+      "type": "info",
+      "intent": "콜라겐 부족으로 인한 피부 건조 해결 방법 제시"
+    },
+    {
+      "keyword": "혈당 관리 식단 2주 계획",
+      "type": "info",
+      "intent": "효과적인 혈당 관리를 위한 2주간의 식단 계획"
+    },
+    {
+      "keyword": "고혈압 예방을 위한 생활습관 추천",
+      "type": "info",
+      "intent": "고혈압 예방을 위한 건강한 생활습관 추천"
+    },
+    {
+      "keyword": "직장인 스트레스 관리 유산균 추천",
+      "type": "revenue",
+      "intent": "직장인들을 위한 스트레스 완화 유산균 보충제 추천"
+    },
+    {
+      "keyword": "수면 개선을 위한 좋은 영양제 추천",
+      "type": "revenue",
+      "intent": "수면 개선에 도움이 되는 영양제 추천"
+    },
+    {
+      "keyword": "갱년기 및 폐경기 복부 비만 원인",
+      "type": "info",
+      "intent": "갱년기 및 폐경기 여성의 복부 비만 원인 분석"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "40대 여성 간헐적 단식 3개월 체중 감량 후기",
+      "post_type": "revenue",
+      "intent": "40대 여성을 위한 간헐적 단식 성공 후기 공유"
+    },
+    {
+      "keyword": "갱년기 여성 콜라겐 보충제 3가지 추천",
+      "post_type": "revenue",
+      "intent": "갱년기 여성을 위한 콜라겐 보충제 추천 리스트"
+    },
+    {
+      "keyword": "50대 남성 비타민D 영양제 비교 추천",
+      "post_type": "revenue",
+      "intent": "50대 남성을 위한 비타민D 영양제 추천 및 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "40대 여성 간헐적 단식 3개월 체중 감량 후기",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 간헐적 단식 성공 후기 공유",
+      "score": 7,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 콜라겐 보충제 3가지 추천",
+      "type": "revenue",
+      "intent": "갱년기 여성을 위한 콜라겐 보충제 추천 리스트",
+      "score": 7,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50대 남성 비타민D 영양제 비교 추천",
+      "type": "revenue",
+      "intent": "50대 남성을 위한 비타민D 영양제 추천 및 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "만성피로 비타민 영양제 4가지 비교",
+      "type": "revenue",
+      "intent": "만성피로를 위해 좋은 비타민 영양제 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "직장인 저탄고지 다이어트 2주 후기",
+      "type": "revenue",
+      "intent": "직장인들이 저탄고지 다이어트를 2주 동안 진행한 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 남성 오메가3 효과 및 후기",
+      "type": "revenue",
+      "intent": "50대 남성을 위한 오메가3 효과 및 사용 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "아연 보충제 추천 20대 여성",
+      "type": "revenue",
+      "intent": "20대 여성에게 적합한 아연 보충제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "직장인 스트레스 관리 유산균 추천",
+      "type": "revenue",
+      "intent": "직장인들을 위한 스트레스 완화 유산균 보충제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "수면 개선을 위한 좋은 영양제 추천",
+      "type": "revenue",
+      "intent": "수면 개선에 도움이 되는 영양제 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "운동 후 단백질 보충제 5개 추천",
+      "type": "revenue",
+      "intent": "운동 후 섭취할 수 있는 단백질 보충제 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "무릎 통증 완화 보조제 추천",
+      "type": "revenue",
+      "intent": "무릎 통증 완화를 위한 보조제 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "공복 혈당 낮추는 방법 5가지",
+      "type": "info",
+      "intent": "공복 혈당을 효과적으로 낮추는 방법 소개",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "갱년기 수면 장애 원인과 해결책",
+      "type": "info",
+      "intent": "갱년기 여성의 수면 장애 원인 분석 및 해결책 제시",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "40대 남성 근감소증 예방 운동 방법",
+      "type": "info",
+      "intent": "40대 남성을 위한 근감소증 예방 운동 방법 소개",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "고혈압 예방을 위한 생활습관 추천",
+      "type": "info",
+      "intent": "고혈압 예방을 위한 건강한 생활습관 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "갱년기 및 폐경기 복부 비만 원인",
+      "type": "info",
+      "intent": "갱년기 및 폐경기 여성의 복부 비만 원인 분석",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "혈당 스파이크 식후 30분 증상 놓치는 원인",
+      "type": "info",
+      "intent": "혈당 스파이크 증상을 놓치는 주요 원인 조사",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "장누수 증후군 원인과 관리 방법",
+      "type": "info",
+      "intent": "장누수 증후군의 원인 및 관리 방안을 제시",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "콜라겐 부족 피부 건조 해결 방법",
+      "type": "info",
+      "intent": "콜라겐 부족으로 인한 피부 건조 해결 방법 제시",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "혈당 관리 식단 2주 계획",
+      "type": "info",
+      "intent": "효과적인 혈당 관리를 위한 2주간의 식단 계획",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}

@@ -1,0 +1,310 @@
+{
+  "date": "2026-04-16",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 사용자 후기",
+      "type": "revenue",
+      "intent": "제품 구매 전 사용자 후기를 통한 결정"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교 분석",
+      "type": "revenue",
+      "intent": "제품 구매 전 배터리 성능 비교"
+    },
+    {
+      "keyword": "블루투스 스피커 음질 차이 리뷰",
+      "type": "revenue",
+      "intent": "음질에 따른 구매 결정"
+    },
+    {
+      "keyword": "노트북 SSD 교체 후기 3개월 사용기",
+      "type": "revenue",
+      "intent": "SSD 업그레이드 후 성능 체감"
+    },
+    {
+      "keyword": "2023년 재택근무 필수 노트북 추천",
+      "type": "revenue",
+      "intent": "재택근무용 노트북 구매 추천"
+    },
+    {
+      "keyword": "기계식 키보드 무선 모델 추천 및 비교",
+      "type": "revenue",
+      "intent": "무선 기계식 키보드 구매 비교"
+    },
+    {
+      "keyword": "가격대별 스마트폰 보조배터리 추천",
+      "type": "revenue",
+      "intent": "예산에 맞는 보조배터리 선택"
+    },
+    {
+      "keyword": "충전기 종류별 충전 속도 비교",
+      "type": "revenue",
+      "intent": "충전기 성능 비교 후 구매"
+    },
+    {
+      "keyword": "미니PC 성능과 가격 비교 2023",
+      "type": "revenue",
+      "intent": "미니PC 구매 전 성능 비교"
+    },
+    {
+      "keyword": "4K 모니터 해상도 장단점 리뷰",
+      "type": "revenue",
+      "intent": "4K 모니터 구매 전 장단점 검토"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 후기",
+      "type": "revenue",
+      "intent": "눈 보호 효과 검증 후 구매"
+    },
+    {
+      "keyword": "AI 도구 활용 생산성 증가 사례",
+      "type": "revenue",
+      "intent": "AI 도구 구매 전 성공 사례 참고"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 탐색"
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 실험 결과",
+      "type": "info",
+      "intent": "저장장치 선택을 위한 정보 탐색"
+    },
+    {
+      "keyword": "무선 이어폰 연결 불안정 해결 방법",
+      "type": "info",
+      "intent": "무선 이어폰 문제 해결 정보 탐색"
+    },
+    {
+      "keyword": "블루투스 스피커 배터리 교체 방법",
+      "type": "info",
+      "intent": "블루투스 스피커 유지보수 정보"
+    },
+    {
+      "keyword": "그래픽카드 성능 높이는 방법",
+      "type": "info",
+      "intent": "컴퓨터 성능 향상 방법 탐색"
+    },
+    {
+      "keyword": "무선 마우스 연결 안될 때 해결법",
+      "type": "info",
+      "intent": "무선 마우스 문제 해결 정보"
+    },
+    {
+      "keyword": "트랙패드 부드럽게 사용하는 법",
+      "type": "info",
+      "intent": "트랙패드 사용법 정보 탐색"
+    },
+    {
+      "keyword": "클라우드 저장 공간 늘리는 방법",
+      "type": "info",
+      "intent": "클라우드 유용성 증대 방법 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 사용자 후기",
+      "post_type": "revenue",
+      "intent": "제품 구매 전 사용자 후기를 통한 결정"
+    },
+    {
+      "keyword": "노트북 SSD 교체 후기 3개월 사용기",
+      "post_type": "revenue",
+      "intent": "SSD 업그레이드 후 성능 체감"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교 분석",
+      "post_type": "revenue",
+      "intent": "제품 구매 전 배터리 성능 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 사용자 후기",
+      "type": "revenue",
+      "intent": "제품 구매 전 사용자 후기를 통한 결정",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "노트북 SSD 교체 후기 3개월 사용기",
+      "type": "revenue",
+      "intent": "SSD 업그레이드 후 성능 체감",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교 분석",
+      "type": "revenue",
+      "intent": "제품 구매 전 배터리 성능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 무선 모델 추천 및 비교",
+      "type": "revenue",
+      "intent": "무선 기계식 키보드 구매 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "충전기 종류별 충전 속도 비교",
+      "type": "revenue",
+      "intent": "충전기 성능 비교 후 구매",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "미니PC 성능과 가격 비교 2023",
+      "type": "revenue",
+      "intent": "미니PC 구매 전 성능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 재택근무 필수 노트북 추천",
+      "type": "revenue",
+      "intent": "재택근무용 노트북 구매 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가격대별 스마트폰 보조배터리 추천",
+      "type": "revenue",
+      "intent": "예산에 맞는 보조배터리 선택",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 후기",
+      "type": "revenue",
+      "intent": "눈 보호 효과 검증 후 구매",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 실험 결과",
+      "type": "info",
+      "intent": "저장장치 선택을 위한 정보 탐색",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 음질 차이 리뷰",
+      "type": "revenue",
+      "intent": "음질에 따른 구매 결정",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선 이어폰 연결 불안정 해결 방법",
+      "type": "info",
+      "intent": "무선 이어폰 문제 해결 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 배터리 교체 방법",
+      "type": "info",
+      "intent": "블루투스 스피커 유지보수 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능 높이는 방법",
+      "type": "info",
+      "intent": "컴퓨터 성능 향상 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 연결 안될 때 해결법",
+      "type": "info",
+      "intent": "무선 마우스 문제 해결 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장 공간 늘리는 방법",
+      "type": "info",
+      "intent": "클라우드 유용성 증대 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "4K 모니터 해상도 장단점 리뷰",
+      "type": "revenue",
+      "intent": "4K 모니터 구매 전 장단점 검토",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "AI 도구 활용 생산성 증가 사례",
+      "type": "revenue",
+      "intent": "AI 도구 구매 전 성공 사례 참고",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "트랙패드 부드럽게 사용하는 법",
+      "type": "info",
+      "intent": "트랙패드 사용법 정보 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
