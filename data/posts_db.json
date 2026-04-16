@@ -2810,5 +2810,76 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 119,
+    "title": "40대 직장인 3주 수면 질 개선 패드 추천 5가지",
+    "keyword": "40대 직장인 수면 질 개선을 위한 효과 좋은 패드 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대수면",
+      "직장인수면",
+      "수면패드추천",
+      "수면질개선",
+      "쿠팡추천",
+      "수면제품",
+      "수면후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-17 07:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 120,
+    "title": "직장인 5주 후기: 스트레스가 수면에 미치는 영향과 해결 5가지",
+    "keyword": "스트레스가 수면에 미치는 영향과 해결 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면",
+      "스트레스",
+      "불면증",
+      "인지행동치료",
+      "직장인건강",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-17 07:52",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 121,
+    "title": "30일 변화: 디지털 디톡스의 효과와 실천 방법 7가지",
+    "keyword": "디지털 디톡스의 효과와 실천 방법 7가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "디지털디톡스",
+      "웰빙",
+      "마음관리",
+      "생활습관",
+      "집중력향상",
+      "수면개선",
+      "디지털헬스"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-17 07:53",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
