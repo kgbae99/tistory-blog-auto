@@ -2881,5 +2881,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 122,
+    "title": "50대 무릎 관절 영양제 3가지 비교, 3달 후기",
+    "keyword": "50대 무릎 관절 영양제 3가지 비교",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "50대관절",
+      "무릎통증",
+      "관절영양제비교",
+      "오메가3추천",
+      "유산균관절",
+      "건강후기",
+      "쿠팡추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-18 07:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 123,
+    "title": "3개월 탄력 개선 후기: 주름을 예방하는 생활 습관 7가지",
+    "keyword": "주름을 예방하는 생활 습관 7가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "주름예방",
+      "생활습관",
+      "피부탄력",
+      "안티에이징",
+      "스킨케어팁",
+      "생활건강",
+      "40대피부"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-18 07:51",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 124,
+    "title": "갱년기 여성 수면 장애 원인 3가지와 실제 개선법",
+    "keyword": "갱년기 여성 수면 장애 원인 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "갱년기",
+      "수면장애",
+      "여성건강",
+      "에스트로겐",
+      "야간발한",
+      "불면증",
+      "수면개선"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-18 07:52",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
