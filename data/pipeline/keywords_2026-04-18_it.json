@@ -1,0 +1,315 @@
+{
+  "date": "2026-04-18",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 14,
+  "info_cnt": 6,
+  "all_keywords": [
+    {
+      "keyword": "10만원 이하 가성비 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "가격대비 좋은 블루투스 스피커를 구매하고자 하는 구매 의도"
+    },
+    {
+      "keyword": "재택근무 필수 아이템 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위한 무선 마우스 구매 의도"
+    },
+    {
+      "keyword": "게이밍용 기계식 키보드 3종 비교 리뷰",
+      "type": "revenue",
+      "intent": "게이밍에 적합한 기계식 키보드를 구매하고자 하는 구매 의도"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 3개월 사용 후기",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 전 실제 사용자 후기 탐색"
+    },
+    {
+      "keyword": "5만원 이하 유선 이어폰 추천",
+      "type": "revenue",
+      "intent": "저렴한 유선 이어폰을 찾는 구매 의도"
+    },
+    {
+      "keyword": "작업용 미니PC 5개 비교",
+      "type": "revenue",
+      "intent": "작업에 적합한 미니PC를 찾기 위한 비교 의도"
+    },
+    {
+      "keyword": "2023년 최신 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "최신 스마트폰의 배터리 성능 비교를 통한 구매 결정"
+    },
+    {
+      "keyword": "클라우드 서비스 1년 사용 후기",
+      "type": "revenue",
+      "intent": "클라우드 서비스 장기 사용 후기를 통한 구매 결정"
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높이는 방법 탐색"
+    },
+    {
+      "keyword": "SSD 추가 설치로 컴퓨터 속도 올리는 법",
+      "type": "info",
+      "intent": "SSD 설치를 통한 컴퓨터 성능 향상 방법 탐색"
+    },
+    {
+      "keyword": "모니터 해상도에 따른 눈 피로 감소 방법",
+      "type": "info",
+      "intent": "모니터 해상도가 눈 피로에 미치는 영향을 알아보기 위한 정보 탐색"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 사용 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 모니터 실제 사용 후기를 통한 구매 결정"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이점",
+      "type": "info",
+      "intent": "기계식 키보드의 청축과 적축의 차이점을 알고자 하는 정보 탐색"
+    },
+    {
+      "keyword": "노트북 그래픽카드 업그레이드 방법",
+      "type": "info",
+      "intent": "노트북의 그래픽카드를 업그레이드하는 방법 탐색"
+    },
+    {
+      "keyword": "재택근무용 노트북 스탠드 추천",
+      "type": "revenue",
+      "intent": "재택근무 편의를 위한 노트북 스탠드 구매 의도"
+    },
+    {
+      "keyword": "3년 이상 사용한 노트북 배터리 교체 후기",
+      "type": "revenue",
+      "intent": "오래된 노트북 배터리 교체 후기를 통한 구매 결정"
+    },
+    {
+      "keyword": "최신 무선 충전기 5종 비교",
+      "type": "revenue",
+      "intent": "무선 충전기를 구매하기 전 최신 제품 비교"
+    },
+    {
+      "keyword": "블루투스 스피커 충전시간 단축 방법",
+      "type": "info",
+      "intent": "블루투스 스피커의 충전시간을 단축하는 방법을 찾기 위한 정보 탐색"
+    },
+    {
+      "keyword": "RGB 기계식 키보드 실제 사용 후기",
+      "type": "revenue",
+      "intent": "RGB 기계식 키보드 구매 전 실제 사용 후기 탐색"
+    },
+    {
+      "keyword": "집에서 사용하는 최적의 트랙패드 추천",
+      "type": "revenue",
+      "intent": "집에서 사용하기 좋은 트랙패드를 찾는 구매 의도"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "작업용 미니PC 5개 비교",
+      "post_type": "revenue",
+      "intent": "작업에 적합한 미니PC를 찾기 위한 비교 의도"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 3개월 사용 후기",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 전 실제 사용자 후기 탐색"
+    },
+    {
+      "keyword": "게이밍용 기계식 키보드 3종 비교 리뷰",
+      "post_type": "revenue",
+      "intent": "게이밍에 적합한 기계식 키보드를 구매하고자 하는 구매 의도"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "작업용 미니PC 5개 비교",
+      "type": "revenue",
+      "intent": "작업에 적합한 미니PC를 찾기 위한 비교 의도",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 3개월 사용 후기",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 전 실제 사용자 후기 탐색",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "게이밍용 기계식 키보드 3종 비교 리뷰",
+      "type": "revenue",
+      "intent": "게이밍에 적합한 기계식 키보드를 구매하고자 하는 구매 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "최신 스마트폰의 배터리 성능 비교를 통한 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 무선 충전기 5종 비교",
+      "type": "revenue",
+      "intent": "무선 충전기를 구매하기 전 최신 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "RGB 기계식 키보드 실제 사용 후기",
+      "type": "revenue",
+      "intent": "RGB 기계식 키보드 구매 전 실제 사용 후기 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "10만원 이하 가성비 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "가격대비 좋은 블루투스 스피커를 구매하고자 하는 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 아이템 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위한 무선 마우스 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 유선 이어폰 추천",
+      "type": "revenue",
+      "intent": "저렴한 유선 이어폰을 찾는 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 1년 사용 후기",
+      "type": "revenue",
+      "intent": "클라우드 서비스 장기 사용 후기를 통한 구매 결정",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 사용 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 모니터 실제 사용 후기를 통한 구매 결정",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 노트북 스탠드 추천",
+      "type": "revenue",
+      "intent": "재택근무 편의를 위한 노트북 스탠드 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3년 이상 사용한 노트북 배터리 교체 후기",
+      "type": "revenue",
+      "intent": "오래된 노트북 배터리 교체 후기를 통한 구매 결정",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "집에서 사용하는 최적의 트랙패드 추천",
+      "type": "revenue",
+      "intent": "집에서 사용하기 좋은 트랙패드를 찾는 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높이는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도에 따른 눈 피로 감소 방법",
+      "type": "info",
+      "intent": "모니터 해상도가 눈 피로에 미치는 영향을 알아보기 위한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이점",
+      "type": "info",
+      "intent": "기계식 키보드의 청축과 적축의 차이점을 알고자 하는 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 그래픽카드 업그레이드 방법",
+      "type": "info",
+      "intent": "노트북의 그래픽카드를 업그레이드하는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 충전시간 단축 방법",
+      "type": "info",
+      "intent": "블루투스 스피커의 충전시간을 단축하는 방법을 찾기 위한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "SSD 추가 설치로 컴퓨터 속도 올리는 법",
+      "type": "info",
+      "intent": "SSD 설치를 통한 컴퓨터 성능 향상 방법 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
