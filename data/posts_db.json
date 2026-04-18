@@ -2953,5 +2953,77 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 125,
+    "title": "갱년기 여성 칼슘 영양제 추천 3가지 효과 후기",
+    "keyword": "갱년기 여성 칼슘 영양제 추천 순위",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "갱년기",
+      "칼슘",
+      "영양제 추천",
+      "골다공증 예방",
+      "비타민D",
+      "여성 건강",
+      "제품후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-19 07:42",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 126,
+    "title": "면역력과 혈관 건강의 관계 5가지 중요한 이유",
+    "keyword": "면역력과 혈관 건강의 관계: 중요한 이유 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "혈관건강",
+      "염증",
+      "항산화",
+      "심혈관질환예방",
+      "영양관리",
+      "건강검진"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-19 07:43",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 127,
+    "title": "중년 여성 3개월 혈액순환 개선: 식습관 7가지 방법",
+    "keyword": "혈액순환을 개선하는 식습관 7가지 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈액순환",
+      "식습관",
+      "건강관리",
+      "오메가3",
+      "마그네슘",
+      "중년건강",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-19 07:44",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
