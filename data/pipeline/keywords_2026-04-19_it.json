@@ -1,0 +1,304 @@
+{
+  "date": "2026-04-19",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 블루투스 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 합리적 가격대의 제품 추천"
+    },
+    {
+      "keyword": "집에서 사용할 기계식 키보드 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 환경에 맞는 제품 추천"
+    },
+    {
+      "keyword": "최신 그래픽카드 3종 성능 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 제품 간 성능 비교"
+    },
+    {
+      "keyword": "2023년형 스마트폰 보조배터리 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 제품 추천"
+    },
+    {
+      "keyword": "3만원대 블루투스 스피커 음질 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 합리적 가격대의 제품 후기"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교해본 결과",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 간 배터리 수명 비교"
+    },
+    {
+      "keyword": "노트북용 외장 SSD 1TB 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 대용량 스토리지 제품 추천"
+    },
+    {
+      "keyword": "2023년형 모니터 블루라이트 차단 기능 있는 제품 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 건강을 고려한 제품 후기"
+    },
+    {
+      "keyword": "재택근무용 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 제품 추천"
+    },
+    {
+      "keyword": "30만원대 게이밍 노트북 성능 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 합리적 가격대의 제품 리뷰"
+    },
+    {
+      "keyword": "클라우드 저장 서비스 3개 가격 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 서비스 간 가격 비교"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "revenue",
+      "intent": "구매 의도 - AI 도구 구매 후 활용 방법"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "탐색 의도 - 발열 문제를 해결하는 방법"
+    },
+    {
+      "keyword": "SSD와 HDD 수명 차이 알아보기",
+      "type": "info",
+      "intent": "탐색 의도 - 저장 장치 간 수명 차이 이해"
+    },
+    {
+      "keyword": "블루투스 스피커 끊김 현상 해결 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 무선 연결 문제 해결 방법"
+    },
+    {
+      "keyword": "고해상도 모니터 장단점 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도가 높은 모니터의 특성 이해"
+    },
+    {
+      "keyword": "급속 충전기와 일반 충전기 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 충전기 간 성능 차이 이해"
+    },
+    {
+      "keyword": "무선이어폰 노이즈캔슬링 작동 원리",
+      "type": "info",
+      "intent": "탐색 의도 - 기술 작동 원리 이해"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점",
+      "type": "info",
+      "intent": "탐색 의도 - 입력 장치 간 차이점 이해"
+    },
+    {
+      "keyword": "RAM 업그레이드 시 성능 변화",
+      "type": "info",
+      "intent": "탐색 의도 - 업그레이드가 시스템에 미치는 영향"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "3만원대 블루투스 스피커 음질 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 합리적 가격대의 제품 후기"
+    },
+    {
+      "keyword": "최신 그래픽카드 3종 성능 비교 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 최신 제품 간 성능 비교"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교해본 결과",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 간 배터리 수명 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "3만원대 블루투스 스피커 음질 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 합리적 가격대의 제품 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "최신 그래픽카드 3종 성능 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 제품 간 성능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교해본 결과",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 간 배터리 수명 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장 서비스 3개 가격 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 서비스 간 가격 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 블루투스 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 합리적 가격대의 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "집에서 사용할 기계식 키보드 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 환경에 맞는 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년형 스마트폰 보조배터리 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북용 외장 SSD 1TB 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 대용량 스토리지 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년형 모니터 블루라이트 차단 기능 있는 제품 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 건강을 고려한 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "탐색 의도 - 발열 문제를 해결하는 방법",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "revenue",
+      "intent": "구매 의도 - AI 도구 구매 후 활용 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 수명 차이 알아보기",
+      "type": "info",
+      "intent": "탐색 의도 - 저장 장치 간 수명 차이 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 끊김 현상 해결 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 무선 연결 문제 해결 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "급속 충전기와 일반 충전기 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 충전기 간 성능 차이 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점",
+      "type": "info",
+      "intent": "탐색 의도 - 입력 장치 간 차이점 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "30만원대 게이밍 노트북 성능 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 합리적 가격대의 제품 리뷰",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "고해상도 모니터 장단점 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도가 높은 모니터의 특성 이해",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "무선이어폰 노이즈캔슬링 작동 원리",
+      "type": "info",
+      "intent": "탐색 의도 - 기술 작동 원리 이해",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "RAM 업그레이드 시 성능 변화",
+      "type": "info",
+      "intent": "탐색 의도 - 업그레이드가 시스템에 미치는 영향",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
