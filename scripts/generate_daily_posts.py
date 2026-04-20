@@ -101,7 +101,12 @@ _COMMON_RULES = """
 - ❌ 금지: "규칙적인 운동", "충분한 수면", "스트레스 관리" 같이 어디서나 볼 수 있는 뻔한 내용
 - ✅ 필수: 차별화된 관점 1개 이상 포함 (반직관적 사실 / 간과된 디테일 / 실패 경험 / 수치 근거 / 비교 관점)
 - H2 섹션 6~7개, H3 사용 안 함, 목차(TOC) 생성 금지
-- 태그 6~7개
+- H2 제목 앞에 관련 이모지 1개 필수 (예: 💊 원인 분석, 🩺 해결 방법, 📊 비교 분석, 💪 실천 루틴, 📝 개인 경험, ✅ 마무리)
+- 태그 8~10개
+- 핵심 키워드를 본문 전체에 자연스럽게 3~4회 반복 (SEO 검색 노출 강화)
+- 고CPC 연관 주제를 본문 흐름에 자연스럽게 1회 언급 (예: 건강보험 적용 여부, 의료비 절감, 건강검진 비용 등)
+- 글 전체 최소 1,500자 이상, 이미지·표·리스트 적절히 혼용하여 체류시간 확보
+- 마무리 섹션 끝에 "함께 읽으면 좋은 글" 내부링크 카드 필수 삽입 (체류시간·이탈률 개선)
 - 각 섹션 내용은 topic-content div로 감쌈
 - 내부링크 2개 본문 중간에 자연스럽게 삽입: {internal_links}
 - 이미지: 최대 3개, alt 텍스트 모두 다르게 (중복 금지), "[키워드] [구체적 상황]" 형식
@@ -767,16 +772,16 @@ def build_adsense_ad(slot_id: str, ad_format: str = "auto") -> str:
 
 _AD_CONTEXT = {
     "problem": (
-        "위와 같은 문제로 고민이라면, 실질적인 도움이 될 수 있는 제품을 확인해보세요.",
-        "지금 많은 분들이 찾고 있는 제품이에요. 잠깐 살펴보시면 도움이 될 거예요. 👇",
+        "이 내용과 관련된 정보가 아래에 더 자세히 나와 있어요.",
+        "많은 분들이 같은 고민으로 찾아보신 내용입니다. 한 번 살펴보세요. 👇",
     ),
     "solution": (
-        "앞서 소개한 방법을 실천할 때 함께 활용하면 더 효과적인 제품을 소개해 드릴게요.",
-        "직접 써보고 선별한 제품입니다. 가격 대비 만족도가 높아요. 👇",
+        "앞서 소개한 방법을 실천할 때 함께 참고하면 도움이 되는 정보가 아래에 있어요.",
+        "제가 직접 확인하고 정리한 내용입니다. 관련 정보를 아래에서 확인해보세요. 👇",
     ),
     "conclusion": (
-        "오늘 알아본 내용, 지금 바로 시작해보실 수 있어요.",
-        "바로 아래에서 관련 제품을 확인하고 시작해보세요. 배송도 빠릅니다. 👇",
+        "오늘 내용을 실천하실 때 참고가 되는 정보를 아래에 정리해뒀어요.",
+        "관련 정보는 아래에 더 자세히 나와 있으니 함께 확인해보세요. 👇",
     ),
 }
 
@@ -961,10 +966,10 @@ def build_full_html(data: dict, products: list, post_index: int, keyword: str = 
 {content}
 </div>""")
 
-        # 광고: 문제 인식 직후(2번째 섹션), 해결 방법 직후(4번째 섹션)
-        if i == 2:
+        # 광고: 도입부 직후(1번째 섹션), 3번째 섹션 이후
+        if i == 1:
             parts.append(build_ad_block(ad_top, p_problem, "problem"))
-        elif i == 4:
+        elif i == 3:
             parts.append(build_ad_block(ad_mid, p_solution, "solution"))
 
     # 핵심 요약 카드
@@ -1148,6 +1153,30 @@ function c(id,btn){{navigator.clipboard.writeText(document.getElementById(id).in
 function ch(btn){{navigator.clipboard.writeText(document.getElementById('blog-html').innerHTML).then(()=>{{document.getElementById('toast').classList.add('show');btn.style.background='linear-gradient(135deg,#27ae60,#2ecc71)';btn.innerText='복사 완료!';setTimeout(()=>{{document.getElementById('toast').classList.remove('show');btn.style.background='';btn.innerText='HTML 전체 복사 (티스토리 붙여넣기용)'}},2000)}})}}
 </script></body></html>"""
 
+def make_unique_title(base_title: str) -> str | None:
+    candidates = [
+        base_title,
+        f"{base_title} 정리",
+        f"{base_title} 가이드",
+        f"{base_title} 체크포인트",
+        f"{base_title} 핵심 정리",
+        f"{base_title} 쉽게 정리",
+        f"{base_title} (1)",
+        f"{base_title} (2)",
+    ]
+
+    seen = set()
+    for candidate in candidates:
+        candidate = candidate.strip()
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+
+        dup = check_title_duplicate(candidate)
+        if not dup:
+            return candidate
+
+    return None
 
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
@@ -1164,17 +1193,16 @@ def main():
         logger.info("기존 오늘 포스트 삭제: %s", output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # 수익형 키워드 1개 + 정보형 키워드 2개 생성
+    # 수익형 키워드 1개 + 정보형 키워드 1개 생성 (총 2개)
     kw_map = get_trending_keywords()
     revenue_kws = kw_map.get("revenue", [])
     info_kws = kw_map.get("info", [])
-    # 순서: 수익형 → 정보형 → 정보형
+    # 순서: 수익형 → 정보형
     keyword_plan = [
         (revenue_kws[0] if revenue_kws else "건강 영양제 추천", "revenue"),
-        (info_kws[0] if len(info_kws) > 0 else "건강 정보", "info"),
-        (info_kws[1] if len(info_kws) > 1 else info_kws[0] if info_kws else "건강 생활습관", "info"),
+        (info_kws[0] if info_kws else "건강 생활습관", "info"),
     ]
-    logger.info("=== %s 일일 포스트 생성 시작 ===", today)
+    logger.info("=== %s 일일 포스트 생성 시작 (건강 2개) ===", today)
     logger.info("  수익형: %s", revenue_kws)
     logger.info("  정보형: %s", info_kws)
 

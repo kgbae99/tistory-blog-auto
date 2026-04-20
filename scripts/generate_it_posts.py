@@ -669,9 +669,10 @@ def build_full_html(data: dict, keyword: str, products: list, post_date: str, po
     if _unique_imgs:
         header_img = _unique_imgs[0]
     else:
-        # 폴백: SECTION_IMAGES 첫 번째 이미지 강제 사용
-        header_img = SECTION_IMAGES[0]
-        logger.warning("이미지 없음 → 기본 이미지 사용: %s", keyword)
+        # 폴백: image_search 전체 풀에서 랜덤 선택 (항상 같은 이미지 방지)
+        from src.content.image_search import get_header_image as _get_header
+        header_img = _get_header(keyword)
+        logger.warning("이미지 없음 → get_header_image 폴백: %s", keyword)
 
     # 삽입 위치: 핵심설명(섹션 2) + 경험/사례 섹션 (최대 2개)
     _body_secs = [s for s in sections if s.get("heading", "") != "마무리"]
@@ -903,18 +904,29 @@ def main():
     kw_map = get_it_keywords()
     revenue_kws = kw_map.get("revenue", [])
     info_kws = kw_map.get("info", [])
-    keyword_plan = [
-        (revenue_kws[0] if revenue_kws else "무선이어폰 추천", "revenue"),
-        (info_kws[0] if len(info_kws) > 0 else "노트북 발열 원인", "info"),
-        (info_kws[1] if len(info_kws) > 1 else info_kws[0] if info_kws else "배터리 오래 쓰는 법", "info"),
+    # 사이트 승인 전: 모두 정보형으로 생성 (승인 후 revenue 타입으로 전환 예정)
+    # 중복으로 스킵될 경우를 대비해 후보 키워드를 넉넉히 준비
+    FALLBACK_KWS = [
+        "노트북 발열 심해지는 진짜 원인과 해결법",
+        "배터리 빨리 닳는 이유 놓치기 쉬운 원인",
+        "블루투스 연결 끊기는 원인 해결하는 법",
+        "스마트폰 저장공간 부족 해결 방법 실전",
+        "모니터 선택할 때 놓치기 쉬운 5가지 체크리스트",
     ]
-    logger.info("=== IT 포스트 생성 시작 ===")
-    logger.info("  수익형: %s", revenue_kws)
-    logger.info("  정보형: %s", info_kws)
+    all_candidates = revenue_kws + info_kws + FALLBACK_KWS
+    logger.info("=== IT 포스트 생성 시작 (정보형 2개 — 사이트 승인 전) ===")
+    logger.info("  후보 키워드: %s", all_candidates[:4])
 
     results = []
-    for i, (keyword, post_type) in enumerate(keyword_plan, 1):
-        logger.info("[%d/3] 키워드: %s (%s)", i, keyword, post_type)
+    target_count = 2  # 목표 포스트 수
+    post_num = 0
+
+    for keyword in all_candidates:
+        if len(results) >= target_count:
+            break
+        post_num += 1
+        post_type = "info"
+        logger.info("[%d/%d] 키워드: %s (%s)", len(results) + 1, target_count, keyword, post_type)
 
         # 중복 체크
         if check_title_duplicate(keyword):
@@ -934,7 +946,7 @@ def main():
         title = data.get("title", keyword)
 
         # HTML 생성
-        html = build_full_html(data, keyword, products, today, post_index=i, post_type=post_type)
+        html = build_full_html(data, keyword, products, today, post_index=len(results) + 1, post_type=post_type)
         safe_name = re.sub(r"[^\w가-힣]", "_", keyword)[:30]
 
         # 순수 HTML 저장 (발행 도구 UI 없음)
@@ -943,7 +955,7 @@ def main():
             tags = [w.strip() for w in keyword.split() if len(w.strip()) >= 2]
             tags.extend(["IT추천", "테크온도", "가성비"])
             logger.info("태그 자동 생성: %s", tags)
-        post_path = output_dir / f"post_{i}_{safe_name}.html"
+        post_path = output_dir / f"post_{len(results) + 1}_{safe_name}.html"
         post_path.write_text(html, encoding="utf-8")
         logger.info("저장: %s (%d자)", post_path.name, len(html))
 

@@ -21,9 +21,15 @@ def _load_used_images() -> set[str]:
         return set()
     try:
         raw = json.loads(_USED_FILE.read_text(encoding="utf-8"))
-        # 구버전 리스트 형식 처리
+        # 구버전 리스트 형식 처리 ([str] 또는 [{url, date, keyword}] 두 가지 모두 지원)
         if isinstance(raw, list):
-            return set(raw)
+            result: set[str] = set()
+            for item in raw:
+                if isinstance(item, str):
+                    result.add(item)
+                elif isinstance(item, dict) and "url" in item:
+                    result.add(item["url"].split("/")[-1])
+            return result
         data: dict[str, list[str]] = raw
         cutoff = (date.today() - timedelta(days=_USED_KEEP_DAYS)).isoformat()
         used: set[str] = set()

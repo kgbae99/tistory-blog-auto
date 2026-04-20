@@ -40,7 +40,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install openai google-genai requests python-dotenv pyyaml jinja2 google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+          pip install openai google-genai requests python-dotenv pyyaml jinja2 \
+                      google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client \
+                      feedparser Pillow
 
       - name: Create .env file
         run: |
@@ -65,15 +67,23 @@ jobs:
           echo '${{ secrets.GSC_TOKEN_JSON }}' > config/gsc_token.json
           echo '${{ secrets.GSC_CREDENTIALS_JSON }}' > config/credentials.json
 
-      - name: Generate 3 daily posts (건강 블로그)
+      - name: Generate 2 daily posts (건강 블로그)
         run: python scripts/generate_daily_posts.py
         env:
           TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
 
-      - name: Generate 3 daily posts (IT 블로그)
+      - name: Generate 1 health news post (뉴스 블로그)
+        run: python scripts/generate_health_news.py --count 7 --posts-dir output/posts
+        env:
+          TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
+
+      - name: Generate 2 daily posts (IT 블로그)
         run: python scripts/generate_it_posts.py
         env:
           TZ: Asia/Seoul
+          PYTHONIOENCODING: utf-8
 
       - name: Request indexing for unindexed pages
         if: ${{ github.event.inputs.run_indexing != 'false' }}
@@ -88,5 +98,5 @@ jobs:
           git config user.email "kgbae99@gmail.com"
           git add output/ data/
           DATE=$(date +%Y-%m-%d -d "+9 hours")
-          git commit -m "posts: ${DATE} 일일 블로그 포스트 3개 자동 생성" || echo "No changes"
+          git commit -m "posts: ${DATE} 일일 블로그 포스트 자동 생성 (건강2 + 뉴스1 + IT2)" || echo "No changes"
           git push
