@@ -3079,5 +3079,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 130,
+    "title": "당뇨 전단계 3개월 혈당 개선 영양제 추천 후기",
+    "keyword": "당뇨 전단계 혈당 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "당뇨 전단계",
+      "혈당 영양제 추천",
+      "혈당 관리",
+      "당뇨 예방",
+      "건강검진",
+      "영양 보충제",
+      "생활습관 개선",
+      "쿠팡 추천",
+      "피부보습",
+      "요가매트"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-21 07:53",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 131,
+    "title": "관절통 주요 원인 5가지와 3개월 예방 방법",
+    "keyword": "관절통의 주요 원인 5가지와 예방 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "관절통",
+      "무릎 통증",
+      "관절 통증 원인",
+      "관절 예방 방법",
+      "재활 치료",
+      "보행 분석",
+      "건강보험 적용 여부",
+      "통증 관리",
+      "만성 염증",
+      "대사성 관절통"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-21 07:54",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
