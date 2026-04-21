@@ -1,0 +1,320 @@
+{
+  "date": "2026-04-22",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 노이즈캔슬링 이어폰 제품 추천"
+    },
+    {
+      "keyword": "재택근무 세팅 가성비 좋은 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무용 노트북 추천"
+    },
+    {
+      "keyword": "실사용해본 블루투스 스피커 솔직 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 블루투스 스피커 리뷰"
+    },
+    {
+      "keyword": "기계식 키보드 10만원 이하 직접 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 기계식 키보드 비교"
+    },
+    {
+      "keyword": "3만원대 무선 마우스 괜찮은 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 마우스 추천 이유"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 스마트폰 배터리 성능 비교"
+    },
+    {
+      "keyword": "보조배터리 용량별 후기와 가격대",
+      "type": "revenue",
+      "intent": "구매 의도 - 보조배터리 용량 및 가격 비교"
+    },
+    {
+      "keyword": "1주일 사용해본 무선 이어폰 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 이어폰 사용 후기"
+    },
+    {
+      "keyword": "2만원대 블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 저가형 블루라이트 차단 모니터 추천"
+    },
+    {
+      "keyword": "게임용 그래픽카드 실제 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 그래픽카드 성능 비교"
+    },
+    {
+      "keyword": "최신 미니PC 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 미니PC 사용 후기 및 추천"
+    },
+    {
+      "keyword": "2023년 클라우드 서비스 가격 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 클라우드 서비스 가격 비교"
+    },
+    {
+      "keyword": "노트북 속도 개선을 위한 SSD 설치 방법",
+      "type": "info",
+      "intent": "탐색 의도 - SSD 설치 방법 안내"
+    },
+    {
+      "keyword": "무선 이어폰 연결 안 되는 이유와 해결법",
+      "type": "info",
+      "intent": "탐색 의도 - 무선 이어폰 연결 문제 해결 방법"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 갈축 차이점",
+      "type": "info",
+      "intent": "탐색 의도 - 기계식 키보드 스위치 차이점 탐색"
+    },
+    {
+      "keyword": "블루투스 스피커 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 배터리 수명 연장 방법"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 위한 냉각팬 추천",
+      "type": "info",
+      "intent": "탐색 의도 - 노트북 냉각팬 추천"
+    },
+    {
+      "keyword": "모니터 해상도에 따른 작업 효율 변화",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도와 작업 효율 관계 탐색"
+    },
+    {
+      "keyword": "재택근무 환경에서 생산성 높이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 재택근무 생산성 향상 방법"
+    },
+    {
+      "keyword": "AI 도구 활용해 업무 자동화하는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - AI 도구로 업무 자동화 방법"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 노이즈캔슬링 이어폰 제품 추천"
+    },
+    {
+      "keyword": "기계식 키보드 10만원 이하 직접 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 가격대별 기계식 키보드 비교"
+    },
+    {
+      "keyword": "1주일 사용해본 무선 이어폰 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 무선 이어폰 사용 후기"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 노이즈캔슬링 이어폰 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 10만원 이하 직접 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 기계식 키보드 비교",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "1주일 사용해본 무선 이어폰 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 이어폰 사용 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "2만원대 블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 저가형 블루라이트 차단 모니터 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "게임용 그래픽카드 실제 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 그래픽카드 성능 비교",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "실사용해본 블루투스 스피커 솔직 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 블루투스 스피커 리뷰",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 스마트폰 배터리 성능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 클라우드 서비스 가격 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 클라우드 서비스 가격 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 위한 냉각팬 추천",
+      "type": "info",
+      "intent": "탐색 의도 - 노트북 냉각팬 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 가성비 좋은 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무용 노트북 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3만원대 무선 마우스 괜찮은 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 마우스 추천 이유",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량별 후기와 가격대",
+      "type": "revenue",
+      "intent": "구매 의도 - 보조배터리 용량 및 가격 비교",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 미니PC 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 미니PC 사용 후기 및 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 속도 개선을 위한 SSD 설치 방법",
+      "type": "info",
+      "intent": "탐색 의도 - SSD 설치 방법 안내",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 이어폰 연결 안 되는 이유와 해결법",
+      "type": "info",
+      "intent": "탐색 의도 - 무선 이어폰 연결 문제 해결 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 갈축 차이점",
+      "type": "info",
+      "intent": "탐색 의도 - 기계식 키보드 스위치 차이점 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 배터리 수명 연장 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 환경에서 생산성 높이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 재택근무 생산성 향상 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용해 업무 자동화하는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - AI 도구로 업무 자동화 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "모니터 해상도에 따른 작업 효율 변화",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도와 작업 효율 관계 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
