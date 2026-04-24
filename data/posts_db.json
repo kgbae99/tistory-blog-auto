@@ -3294,5 +3294,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 138,
+    "title": "탈모 영양제 6개월 써본 솔직 후기와 3가지 변화",
+    "keyword": "탈모 영양제 6개월 써본 솔직 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "탈모",
+      "탈모영양제",
+      "탈모 후기",
+      "탈모 관리",
+      "헤어케어",
+      "건강검진 비용",
+      "체중계 추천",
+      "홈플래닛",
+      "노바리빙",
+      "앳플리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-25 07:45",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 139,
+    "title": "탈모의 주요 원인과 해결 방법 5가지로 3개월 개선",
+    "keyword": "탈모의 주요 원인과 해결 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "탈모",
+      "탈모원인",
+      "모발관리",
+      "두피케어",
+      "영양검사",
+      "탈모치료",
+      "건강보험",
+      "모발회복",
+      "탈모예방"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-25 07:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
