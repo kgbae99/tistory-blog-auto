@@ -1,0 +1,310 @@
+{
+  "date": "2026-04-27",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드폰 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드폰 구매 추천"
+    },
+    {
+      "keyword": "저렴한 블루투스 스피커 비교 후기",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 비교"
+    },
+    {
+      "keyword": "최고의 무선 마우스 2023 가격대별 추천",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 추천"
+    },
+    {
+      "keyword": "게이밍 노트북 직접 사용 후기 2023",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매 후기"
+    },
+    {
+      "keyword": "기계식 키보드 키감 비교 및 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 비교"
+    },
+    {
+      "keyword": "20만원 이하 미니PC 추천",
+      "type": "revenue",
+      "intent": "미니PC 구매 추천"
+    },
+    {
+      "keyword": "베스트 스마트폰 보조배터리 추천 2023",
+      "type": "revenue",
+      "intent": "스마트폰 보조배터리 구매 추천"
+    },
+    {
+      "keyword": "재택근무 모니터 추천 및 후기",
+      "type": "revenue",
+      "intent": "모니터 구매 추천"
+    },
+    {
+      "keyword": "가성비 클라우드 서비스 비교 후기",
+      "type": "revenue",
+      "intent": "클라우드 서비스 구매 비교"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "revenue",
+      "intent": "AI 도구 구매 및 활용"
+    },
+    {
+      "keyword": "노트북 RAM 확장 후기 및 추천",
+      "type": "revenue",
+      "intent": "RAM 확장 구매 및 후기"
+    },
+    {
+      "keyword": "40만원대 SSD 노트북 추천",
+      "type": "revenue",
+      "intent": "SSD 노트북 구매 추천"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 탐색"
+    },
+    {
+      "keyword": "2023년 최신 스마트폰 배터리 수명 연장법",
+      "type": "info",
+      "intent": "스마트폰 배터리 관리 방법 탐색"
+    },
+    {
+      "keyword": "해상도와 블루라이트 차이 및 영향",
+      "type": "info",
+      "intent": "해상도 별 차이 및 블루라이트 영향 탐색"
+    },
+    {
+      "keyword": "SSD와 HDD 진짜 속도 비교",
+      "type": "info",
+      "intent": "SSD와 HDD 차이 탐색"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드폰 작동 원리",
+      "type": "info",
+      "intent": "노이즈캔슬링 기술 탐색"
+    },
+    {
+      "keyword": "기계식 키보드 소음 줄이는 방법",
+      "type": "info",
+      "intent": "기계식 키보드 소음 문제 해결 탐색"
+    },
+    {
+      "keyword": "재택근무 최적 노트북 세팅 방법",
+      "type": "info",
+      "intent": "재택근무 환경 최적화 탐색"
+    },
+    {
+      "keyword": "블루투스 기술 발전 과정 및 변화",
+      "type": "info",
+      "intent": "블루투스 기술 이해 및 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드폰 추천",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 헤드폰 구매 추천"
+    },
+    {
+      "keyword": "SSD와 HDD 진짜 속도 비교",
+      "post_type": "info",
+      "intent": "SSD와 HDD 차이 탐색"
+    },
+    {
+      "keyword": "40만원대 SSD 노트북 추천",
+      "post_type": "revenue",
+      "intent": "SSD 노트북 구매 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드폰 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드폰 구매 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "40만원대 SSD 노트북 추천",
+      "type": "revenue",
+      "intent": "SSD 노트북 구매 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 진짜 속도 비교",
+      "type": "info",
+      "intent": "SSD와 HDD 차이 탐색",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "저렴한 블루투스 스피커 비교 후기",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "게이밍 노트북 직접 사용 후기 2023",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 키감 비교 및 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 클라우드 서비스 비교 후기",
+      "type": "revenue",
+      "intent": "클라우드 서비스 구매 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최고의 무선 마우스 2023 가격대별 추천",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "20만원 이하 미니PC 추천",
+      "type": "revenue",
+      "intent": "미니PC 구매 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "베스트 스마트폰 보조배터리 추천 2023",
+      "type": "revenue",
+      "intent": "스마트폰 보조배터리 구매 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 모니터 추천 및 후기",
+      "type": "revenue",
+      "intent": "모니터 구매 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 RAM 확장 후기 및 추천",
+      "type": "revenue",
+      "intent": "RAM 확장 구매 및 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "revenue",
+      "intent": "AI 도구 구매 및 활용",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "해상도와 블루라이트 차이 및 영향",
+      "type": "info",
+      "intent": "해상도 별 차이 및 블루라이트 영향 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 소음 줄이는 방법",
+      "type": "info",
+      "intent": "기계식 키보드 소음 문제 해결 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적 노트북 세팅 방법",
+      "type": "info",
+      "intent": "재택근무 환경 최적화 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "2023년 최신 스마트폰 배터리 수명 연장법",
+      "type": "info",
+      "intent": "스마트폰 배터리 관리 방법 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드폰 작동 원리",
+      "type": "info",
+      "intent": "노이즈캔슬링 기술 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "블루투스 기술 발전 과정 및 변화",
+      "type": "info",
+      "intent": "블루투스 기술 이해 및 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
