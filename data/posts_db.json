@@ -3401,5 +3401,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 142,
+    "title": "수면 영양제 추천 효과 있는 것만 3개월 후기 및 방법",
+    "keyword": "수면 영양제 추천 효과 있는 것만",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면영양제",
+      "수면보조제",
+      "수면개선",
+      "멜라토닌",
+      "마그네슘",
+      "수면기록",
+      "건강관리",
+      "체중계",
+      "요가매트"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-04-27 07:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 143,
+    "title": "3개월 시력 변화 사례: 루테인이 눈 건강에 미치는 영향과 필요성",
+    "keyword": "루테인이 눈 건강에 미치는 영향과 필요성",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "루테인",
+      "눈건강",
+      "황반색소",
+      "시력관리",
+      "눈피로",
+      "청색광",
+      "영양소",
+      "건강검진",
+      "대비감도",
+      "야간시력"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-04-27 07:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
