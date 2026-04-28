@@ -1,0 +1,324 @@
+{
+  "date": "2026-04-29",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 13,
+  "info_cnt": 7,
+  "all_keywords": [
+    {
+      "keyword": "20만원대 게이밍 노트북 추천 이유",
+      "type": "revenue",
+      "intent": "가성비 좋은 게이밍 노트북 구매 고려"
+    },
+    {
+      "keyword": "소음 차단 노이즈캔슬링 헤드셋 비교",
+      "type": "revenue",
+      "intent": "효과적인 소음 차단 헤드셋 구매 결정"
+    },
+    {
+      "keyword": "1TB SSD와 512GB SSD 성능 후기",
+      "type": "revenue",
+      "intent": "저장 용량과 속도 비교 후 구매"
+    },
+    {
+      "keyword": "혁신적인 AI 도구 활용 방법 5가지",
+      "type": "info",
+      "intent": "효율적인 AI 도구 사용법 탐색"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 솔직 후기",
+      "type": "revenue",
+      "intent": "적당한 가격대의 스피커 구매 결정"
+    },
+    {
+      "keyword": "최신 무선 마우스 3개 비교 추천",
+      "type": "revenue",
+      "intent": "최적의 무선 마우스 선택"
+    },
+    {
+      "keyword": "고해상도 모니터 눈 피로 방지 방법",
+      "type": "info",
+      "intent": "모니터 장시간 사용 시 눈 피로 해소법 탐색"
+    },
+    {
+      "keyword": "휴대용 보조배터리 충전 시간 비교",
+      "type": "revenue",
+      "intent": "빠른 충전 가능한 보조배터리 선택"
+    },
+    {
+      "keyword": "노트북 배터리 수명 연장하는 방법",
+      "type": "info",
+      "intent": "노트북 배터리 수명 관리 팁 탐색"
+    },
+    {
+      "keyword": "무선이어폰 지연시간 해결 방법",
+      "type": "info",
+      "intent": "무선이어폰 사용 시 지연시간 줄이는 팁 찾기"
+    },
+    {
+      "keyword": "무선 마우스 2만원대 추천 후기",
+      "type": "revenue",
+      "intent": "저렴한 무선 마우스에 대한 사용자 평가"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 액세서리 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 유용한 액세서리 구매 고려"
+    },
+    {
+      "keyword": "블루라이트 차단 필름 효과 후기",
+      "type": "revenue",
+      "intent": "시력 보호를 위한 필름 선택 평가"
+    },
+    {
+      "keyword": "미니PC와 노트북 성능 비교",
+      "type": "revenue",
+      "intent": "미니PC와 노트북 간 장단점 평가"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이",
+      "type": "info",
+      "intent": "기계식 키보드 스위치 선택 시 차이점 이해"
+    },
+    {
+      "keyword": "30만원대 그래픽카드 추천 이유",
+      "type": "revenue",
+      "intent": "가성비 좋은 그래픽카드 선택"
+    },
+    {
+      "keyword": "재택근무 세팅 위한 모니터 추천",
+      "type": "revenue",
+      "intent": "재택근무에 최적화된 모니터 선택"
+    },
+    {
+      "keyword": "클라우드 서비스 무료 이용 방법",
+      "type": "info",
+      "intent": "클라우드 스토리지 비용 절약 팁 탐색"
+    },
+    {
+      "keyword": "스마트폰 고속 충전기 추천 2023",
+      "type": "revenue",
+      "intent": "효율적인 고속 충전기 구매 결정"
+    },
+    {
+      "keyword": "RAM 8GB와 16GB 성능 차이 후기",
+      "type": "info",
+      "intent": "효율적인 RAM 용량 선택을 위한 참고"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "20만원대 게이밍 노트북 추천 이유",
+      "post_type": "revenue",
+      "intent": "가성비 좋은 게이밍 노트북 구매 고려"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 솔직 후기",
+      "post_type": "revenue",
+      "intent": "적당한 가격대의 스피커 구매 결정"
+    },
+    {
+      "keyword": "최신 무선 마우스 3개 비교 추천",
+      "post_type": "revenue",
+      "intent": "최적의 무선 마우스 선택"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "20만원대 게이밍 노트북 추천 이유",
+      "type": "revenue",
+      "intent": "가성비 좋은 게이밍 노트북 구매 고려",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 솔직 후기",
+      "type": "revenue",
+      "intent": "적당한 가격대의 스피커 구매 결정",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "최신 무선 마우스 3개 비교 추천",
+      "type": "revenue",
+      "intent": "최적의 무선 마우스 선택",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "30만원대 그래픽카드 추천 이유",
+      "type": "revenue",
+      "intent": "가성비 좋은 그래픽카드 선택",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 2만원대 추천 후기",
+      "type": "revenue",
+      "intent": "저렴한 무선 마우스에 대한 사용자 평가",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "소음 차단 노이즈캔슬링 헤드셋 비교",
+      "type": "revenue",
+      "intent": "효과적인 소음 차단 헤드셋 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "휴대용 보조배터리 충전 시간 비교",
+      "type": "revenue",
+      "intent": "빠른 충전 가능한 보조배터리 선택",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "미니PC와 노트북 성능 비교",
+      "type": "revenue",
+      "intent": "미니PC와 노트북 간 장단점 평가",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "RAM 8GB와 16GB 성능 차이 후기",
+      "type": "info",
+      "intent": "효율적인 RAM 용량 선택을 위한 참고",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "1TB SSD와 512GB SSD 성능 후기",
+      "type": "revenue",
+      "intent": "저장 용량과 속도 비교 후 구매",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "혁신적인 AI 도구 활용 방법 5가지",
+      "type": "info",
+      "intent": "효율적인 AI 도구 사용법 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 노트북 액세서리 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 유용한 액세서리 구매 고려",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 필름 효과 후기",
+      "type": "revenue",
+      "intent": "시력 보호를 위한 필름 선택 평가",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 위한 모니터 추천",
+      "type": "revenue",
+      "intent": "재택근무에 최적화된 모니터 선택",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스마트폰 고속 충전기 추천 2023",
+      "type": "revenue",
+      "intent": "효율적인 고속 충전기 구매 결정",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "고해상도 모니터 눈 피로 방지 방법",
+      "type": "info",
+      "intent": "모니터 장시간 사용 시 눈 피로 해소법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 배터리 수명 연장하는 방법",
+      "type": "info",
+      "intent": "노트북 배터리 수명 관리 팁 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 지연시간 해결 방법",
+      "type": "info",
+      "intent": "무선이어폰 사용 시 지연시간 줄이는 팁 찾기",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이",
+      "type": "info",
+      "intent": "기계식 키보드 스위치 선택 시 차이점 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 무료 이용 방법",
+      "type": "info",
+      "intent": "클라우드 스토리지 비용 절약 팁 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
