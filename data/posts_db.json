@@ -3616,5 +3616,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 150,
+    "title": "40대 직장인 3주 수면 질 개선 베개 추천 후기",
+    "keyword": "40대 직장인 수면 질 개선을 위한 베개 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면질개선",
+      "40대",
+      "직장인",
+      "베개추천",
+      "베개후기",
+      "건강",
+      "웰빙",
+      "쿠팡추천",
+      "수면용품",
+      "비교리뷰"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-01 07:58",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 151,
+    "title": "한 달 개선 후기: 생체리듬이 수면에 미치는 영향 5가지 분석",
+    "keyword": "생체리듬이 수면에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "생체리듬",
+      "수면",
+      "수면질개선",
+      "서캐디언리듬",
+      "수면잠복기",
+      "REM수면",
+      "카페인관리",
+      "빛치료",
+      "생활습관",
+      "건강검진"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-01 08:00",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
