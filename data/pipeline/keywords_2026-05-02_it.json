@@ -1,0 +1,324 @@
+{
+  "date": "2026-05-02",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 특정 가격대의 제품 추천"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 제품 간 차이"
+    },
+    {
+      "keyword": "무선 마우스 3개월 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 사용 후기 제공"
+    },
+    {
+      "keyword": "그래픽카드 성능 지표 실제 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 성능 차이"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 추천, 이유와 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 및 후기"
+    },
+    {
+      "keyword": "재택근무용 미니PC 설치 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 설치 방법"
+    },
+    {
+      "keyword": "20만원대 노트북 추천 3가지",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천"
+    },
+    {
+      "keyword": "SSD와 HDD 차이점, 실제 사용 후기",
+      "type": "info",
+      "intent": "탐색 의도 - 제품 차이 및 사용 후기"
+    },
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 사용 방법"
+    },
+    {
+      "keyword": "2023년 최신 무선이어폰 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 제품 비교"
+    },
+    {
+      "keyword": "클라우드 서비스 비교와 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 서비스 비교 및 추천"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 이유"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 증가 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 사용 방법"
+    },
+    {
+      "keyword": "해상도 높은 모니터 필요 이유",
+      "type": "info",
+      "intent": "탐색 의도 - 필요성 탐색"
+    },
+    {
+      "keyword": "초보자도 쉽게 쓸 수 있는 트랙패드 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "보조배터리 10000mAh 이상 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "RAM 업그레이드 방법과 후기",
+      "type": "info",
+      "intent": "탐색 의도 - 업그레이드 방법 및 후기"
+    },
+    {
+      "keyword": "3년간 써 본 무선 마우스 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 장기 사용 후기"
+    },
+    {
+      "keyword": "재택근무를 위한 효율적인 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 작업 환경 세팅"
+    },
+    {
+      "keyword": "가성비 좋은 무선이어폰 5개 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 가성비 제품 추천"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 블루투스 스피커 추천 이유",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 특정 가격대의 제품 추천"
+    },
+    {
+      "keyword": "그래픽카드 성능 지표 실제 비교",
+      "post_type": "info",
+      "intent": "탐색 의도 - 성능 차이"
+    },
+    {
+      "keyword": "무선 마우스 3개월 사용 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 사용 후기 제공"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 특정 가격대의 제품 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 3개월 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 사용 후기 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능 지표 실제 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 성능 차이",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "20만원대 노트북 추천 3가지",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 차이점, 실제 사용 후기",
+      "type": "info",
+      "intent": "탐색 의도 - 제품 차이 및 사용 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 제품 간 차이",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 추천, 이유와 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 및 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선이어폰 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 비교와 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 서비스 비교 및 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 이유",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 방법과 후기",
+      "type": "info",
+      "intent": "탐색 의도 - 업그레이드 방법 및 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "초보자도 쉽게 쓸 수 있는 트랙패드 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 10000mAh 이상 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3년간 써 본 무선 마우스 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 장기 사용 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 무선이어폰 5개 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 가성비 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 미니PC 설치 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 설치 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 사용 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 증가 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 사용 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "해상도 높은 모니터 필요 이유",
+      "type": "info",
+      "intent": "탐색 의도 - 필요성 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무를 위한 효율적인 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 작업 환경 세팅",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
