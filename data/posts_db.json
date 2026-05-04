@@ -3830,5 +3830,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 158,
+    "title": "3개월 5kg 감량 후기: 다이어트 보조제 추천",
+    "keyword": "다이어트 보조제 효과 있는 것 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "다이어트",
+      "다이어트보조제",
+      "체중감량후기",
+      "건강관리",
+      "다이어트추천",
+      "쿠팡추천",
+      "허브티",
+      "체중계",
+      "다이어트팁",
+      "식욕조절"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-05 08:01",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 159,
+    "title": "두통의 주요 원인 5가지와 대처 방법 3주 개선 후기",
+    "keyword": "두통의 주요 원인 5가지와 대처 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "두통",
+      "편두통",
+      "긴장형두통",
+      "두통대처법",
+      "두통원인",
+      "약물과용성두통",
+      "두통사례",
+      "건강검진",
+      "의료비",
+      "두통예방"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-05 08:01",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
