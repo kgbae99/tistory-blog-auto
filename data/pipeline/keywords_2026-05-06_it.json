@@ -1,0 +1,320 @@
+{
+  "date": "2026-05-06",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 의도"
+    },
+    {
+      "keyword": "기계식 키보드 저소음 모델 비교",
+      "type": "revenue",
+      "intent": "저소음 기계식 키보드 구매 의도"
+    },
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 사용법 탐색"
+    },
+    {
+      "keyword": "재택근무용 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 스피커 구매 의도"
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 후기",
+      "type": "revenue",
+      "intent": "최신 무선 마우스 구매 의도"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 진짜 효과 있을까",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터에 대한 정보 탐색"
+    },
+    {
+      "keyword": "SSD와 HDD 사용 후기 차이점",
+      "type": "revenue",
+      "intent": "SSD와 HDD의 차이점 파악 후 구매 의도"
+    },
+    {
+      "keyword": "클라우드 서비스 파일 백업 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 활용법 탐색"
+    },
+    {
+      "keyword": "2023년 재택근무 노트북 추천 리스트",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 구매 의도"
+    },
+    {
+      "keyword": "20만원대 고성능 그래픽카드 직접 써본 후기",
+      "type": "revenue",
+      "intent": "고성능 그래픽카드 구매 의도"
+    },
+    {
+      "keyword": "미니PC와 데스크탑 성능 비교",
+      "type": "info",
+      "intent": "미니PC와 데스크탑 비교를 통한 구매 결정"
+    },
+    {
+      "keyword": "충전 속도 빠른 보조배터리 추천",
+      "type": "revenue",
+      "intent": "빠른 충전 속도의 보조배터리 구매 의도"
+    },
+    {
+      "keyword": "RAM 업그레이드 방법과 효과",
+      "type": "info",
+      "intent": "컴퓨터 성능 향상을 위한 RAM 업그레이드 방법 탐색"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 통한 생산성 향상법 탐색"
+    },
+    {
+      "keyword": "30만원대 게이밍 노트북 비교 리뷰",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매 의도"
+    },
+    {
+      "keyword": "트랙패드로 드로잉 가능한 모델 추천",
+      "type": "revenue",
+      "intent": "드로잉 가능 트랙패드 구매 의도"
+    },
+    {
+      "keyword": "무선이어폰 연결 불안정 문제 해결법",
+      "type": "info",
+      "intent": "무선이어폰 연결 문제 탐색"
+    },
+    {
+      "keyword": "모니터 해상도 차이점과 선택 기준",
+      "type": "info",
+      "intent": "모니터 해상도 정보 탐색"
+    },
+    {
+      "keyword": "15만원대 최강 성능 라우터 비교",
+      "type": "revenue",
+      "intent": "고성능 라우터 구매 의도"
+    },
+    {
+      "keyword": "스마트폰 충전기 고속 충전 솔직 후기",
+      "type": "revenue",
+      "intent": "고속 충전 가능한 충전기 구매 의도"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "20만원대 고성능 그래픽카드 직접 써본 후기",
+      "post_type": "revenue",
+      "intent": "고성능 그래픽카드 구매 의도"
+    },
+    {
+      "keyword": "30만원대 게이밍 노트북 비교 리뷰",
+      "post_type": "revenue",
+      "intent": "게이밍 노트북 구매 의도"
+    },
+    {
+      "keyword": "15만원대 최강 성능 라우터 비교",
+      "post_type": "revenue",
+      "intent": "고성능 라우터 구매 의도"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "20만원대 고성능 그래픽카드 직접 써본 후기",
+      "type": "revenue",
+      "intent": "고성능 그래픽카드 구매 의도",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "30만원대 게이밍 노트북 비교 리뷰",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매 의도",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "15만원대 최강 성능 라우터 비교",
+      "type": "revenue",
+      "intent": "고성능 라우터 구매 의도",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 저소음 모델 비교",
+      "type": "revenue",
+      "intent": "저소음 기계식 키보드 구매 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 사용 후기 차이점",
+      "type": "revenue",
+      "intent": "SSD와 HDD의 차이점 파악 후 구매 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "미니PC와 데스크탑 성능 비교",
+      "type": "info",
+      "intent": "미니PC와 데스크탑 비교를 통한 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 충전기 고속 충전 솔직 후기",
+      "type": "revenue",
+      "intent": "고속 충전 가능한 충전기 구매 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 스피커 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 후기",
+      "type": "revenue",
+      "intent": "최신 무선 마우스 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 재택근무 노트북 추천 리스트",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "충전 속도 빠른 보조배터리 추천",
+      "type": "revenue",
+      "intent": "빠른 충전 속도의 보조배터리 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "트랙패드로 드로잉 가능한 모델 추천",
+      "type": "revenue",
+      "intent": "드로잉 가능 트랙패드 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 사용법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 진짜 효과 있을까",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 파일 백업 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 활용법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 방법과 효과",
+      "type": "info",
+      "intent": "컴퓨터 성능 향상을 위한 RAM 업그레이드 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 통한 생산성 향상법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 연결 불안정 문제 해결법",
+      "type": "info",
+      "intent": "무선이어폰 연결 문제 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 차이점과 선택 기준",
+      "type": "info",
+      "intent": "모니터 해상도 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
