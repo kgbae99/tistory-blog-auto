@@ -3938,5 +3938,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 162,
+    "title": "3개월 탄력 개선 후기 - 피부 콜라겐 영양제 추천 순위 7",
+    "keyword": "피부 콜라겐 영양제 추천 순위",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피부콜라겐",
+      "콜라겐영양제",
+      "피부탄력",
+      "영양제추천",
+      "숙면베개",
+      "덴프스",
+      "슬루나",
+      "제품비교",
+      "비타민C",
+      "건강검진비용"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-07 07:56",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 163,
+    "title": "30일에 3kg 감한 후기: 홈트레이닝을 통한 체중 감량 효과 5가지",
+    "keyword": "홈트레이닝을 통한 체중 감량 효과 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝",
+      "체중감량",
+      "체지방감소",
+      "기초대사량",
+      "HIIT",
+      "운동루틴",
+      "건강관리",
+      "체중측정",
+      "홈트 후기"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-07 07:57",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
