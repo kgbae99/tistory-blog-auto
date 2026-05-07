@@ -3991,5 +3991,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 164,
+    "title": "3개월 후기: 오메가3 고함량 추천 직접 비교해봤더니",
+    "keyword": "오메가3 고함량 추천 직접 비교해봤더니",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "오메가3",
+      "오메가3 고함량",
+      "오메가3 추천",
+      "건강보조제",
+      "중성지방",
+      "심혈관건강",
+      "영양제비교",
+      "쿠팡추천",
+      "복용후기",
+      "건강검진"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-08 08:05",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 165,
+    "title": "30일 개선: 디지털 디톡스가 수면의 질을 높이는 이유 5가지",
+    "keyword": "디지털 디톡스가 수면의 질을 높이는 이유",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면",
+      "디지털 디톡스",
+      "불면증",
+      "블루라이트",
+      "수면위생",
+      "건강정보",
+      "웰빙",
+      "수면개선",
+      "건강검진",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-08 08:06",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
