@@ -1,0 +1,306 @@
+{
+  "date": "2026-05-08",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 노이즈캔슬링 헤드셋 추천"
+    },
+    {
+      "keyword": "최고의 무선 마우스 2023년 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 마우스 구매 추천"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 좋은 제품 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 기계식 키보드 제품 후기"
+    },
+    {
+      "keyword": "실내 재택근무 최적화 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 노트북 추천"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원 이하 음악 감상용 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 음악 감상용 블루투스 스피커 추천"
+    },
+    {
+      "keyword": "대학교 수업용 미니PC 3개 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 대학생용 미니PC 비교 및 후기"
+    },
+    {
+      "keyword": "게이머용 그래픽카드 2023년 최신 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 그래픽카드 추천"
+    },
+    {
+      "keyword": "휴대용 보조배터리 추천 2023년",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 보조배터리 추천"
+    },
+    {
+      "keyword": "안락한 재택근무 세팅 방법과 장비 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 장비 추천"
+    },
+    {
+      "keyword": "2023년 인기 무선 이어폰 평가 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 인기 무선 이어폰 추천"
+    },
+    {
+      "keyword": "업무 효율 올리는 AI 도구 추천 리스트",
+      "type": "revenue",
+      "intent": "구매 의도 - 생산성용 AI 도구 추천"
+    },
+    {
+      "keyword": "2023년 노트북 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 노트북 배터리 성능 비교"
+    },
+    {
+      "keyword": "SSD와 HDD 차이와 장단점",
+      "type": "info",
+      "intent": "탐색 의도 - SSD와 HDD의 차이점과 장단점 이해"
+    },
+    {
+      "keyword": "2023년 노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 노트북 발열 줄이는 방법"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 효과",
+      "type": "info",
+      "intent": "탐색 의도 - 블루라이트 차단 모니터의 장점 이해"
+    },
+    {
+      "keyword": "클라우드 서비스 선택 시 고려할 사항",
+      "type": "info",
+      "intent": "탐색 의도 - 클라우드 서비스 선택 시 고려해야 할 점"
+    },
+    {
+      "keyword": "고해상도 모니터의 장단점 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 고해상도 모니터의 장단점 이해"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 효율 높이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 스마트폰 배터리 효율성 높이는 방법"
+    },
+    {
+      "keyword": "2023년 기계식 키보드 진화 과정",
+      "type": "info",
+      "intent": "탐색 의도 - 기계식 키보드의 발전 및 변화 이해"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 트랙패드와 무선 마우스의 사용 차이 이해"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "대학교 수업용 미니PC 3개 비교 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 대학생용 미니PC 비교 및 후기"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 노이즈캔슬링 헤드셋 추천"
+    },
+    {
+      "keyword": "안락한 재택근무 세팅 방법과 장비 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 재택근무 장비 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "대학교 수업용 미니PC 3개 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 대학생용 미니PC 비교 및 후기",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 노이즈캔슬링 헤드셋 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "안락한 재택근무 세팅 방법과 장비 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 장비 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "2023년 노트북 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 노트북 배터리 성능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최고의 무선 마우스 2023년 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 마우스 구매 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 타건감 좋은 제품 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 기계식 키보드 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "실내 재택근무 최적화 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 노트북 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 10만원 이하 음악 감상용 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 음악 감상용 블루투스 스피커 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "게이머용 그래픽카드 2023년 최신 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 그래픽카드 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "휴대용 보조배터리 추천 2023년",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 보조배터리 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 인기 무선 이어폰 평가 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 인기 무선 이어폰 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "업무 효율 올리는 AI 도구 추천 리스트",
+      "type": "revenue",
+      "intent": "구매 의도 - 생산성용 AI 도구 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 차이와 장단점",
+      "type": "info",
+      "intent": "탐색 의도 - SSD와 HDD의 차이점과 장단점 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 노트북 발열 줄이는 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 효율 높이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 스마트폰 배터리 효율성 높이는 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 트랙패드와 무선 마우스의 사용 차이 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 효과",
+      "type": "info",
+      "intent": "탐색 의도 - 블루라이트 차단 모니터의 장점 이해",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "클라우드 서비스 선택 시 고려할 사항",
+      "type": "info",
+      "intent": "탐색 의도 - 클라우드 서비스 선택 시 고려해야 할 점",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "고해상도 모니터의 장단점 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 고해상도 모니터의 장단점 이해",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "2023년 기계식 키보드 진화 과정",
+      "type": "info",
+      "intent": "탐색 의도 - 기계식 키보드의 발전 및 변화 이해",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
