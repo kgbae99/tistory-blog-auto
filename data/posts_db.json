@@ -4099,5 +4099,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 168,
+    "title": "3개월 변화로 검증한 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강",
+      "영양제",
+      "건강 영양제 추천",
+      "체중관리",
+      "홈트",
+      "요가매트",
+      "체중계",
+      "쿠팡추천",
+      "건강검진",
+      "비교후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-10 07:54",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 169,
+    "title": "면역력 저하의 주요 원인 5가지와 현실적 대처법",
+    "keyword": "면역력 저하의 주요 원인 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "면역력 저하의 주요 원인 5가지",
+      "면역력 개선",
+      "영양검사",
+      "항생제",
+      "만성염증",
+      "건강검진 비용",
+      "비타민D",
+      "자가진단",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-10 07:55",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
