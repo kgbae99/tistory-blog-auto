@@ -1,0 +1,314 @@
+{
+  "date": "2026-05-10",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 결정을 돕기 위해 특정 가격대 제품 추천"
+    },
+    {
+      "keyword": "재택근무 최적화 무선 마우스 3종 비교",
+      "type": "revenue",
+      "intent": "재택근무 환경에 맞는 무선 마우스를 비교하여 구매 결정을 돕는 정보 제공"
+    },
+    {
+      "keyword": "블루투스 스피커 추천 2023년 후기",
+      "type": "revenue",
+      "intent": "2023년 최신 블루투스 스피커 제품 구매를 위한 후기 제공"
+    },
+    {
+      "keyword": "기계식 키보드 소음 적은 제품 추천",
+      "type": "revenue",
+      "intent": "소음이 적은 기계식 키보드 구매 결정에 도움을 주기 위한 추천"
+    },
+    {
+      "keyword": "50만원 이하 게이밍 노트북 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 성능 좋은 게이밍 노트북을 비교하여 구매 결정을 돕기 위한 정보"
+    },
+    {
+      "keyword": "최고의 SSD 브랜드 2023년 추천",
+      "type": "revenue",
+      "intent": "2023년에 구매할 만한 최고의 SSD 브랜드를 추천하여 구매를 돕는 정보 제공"
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 모델 추천",
+      "type": "revenue",
+      "intent": "가성비가 좋은 미니PC 모델을 추천하여 구매 결정을 돕기 위한 정보"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리를 오래 사용할 수 있는 실질적인 방법 제공"
+    },
+    {
+      "keyword": "보조배터리 충전 속도 차이 이유",
+      "type": "info",
+      "intent": "보조배터리의 충전 속도 차이에 대한 원인 분석"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "노트북 발열 문제를 해결할 수 있는 구체적인 방법 제시"
+    },
+    {
+      "keyword": "모니터 해상도 선택 가이드",
+      "type": "info",
+      "intent": "모니터 해상도 선택 시 고려해야 할 요소 제공"
+    },
+    {
+      "keyword": "무선 이어폰 배터리 수명 늘리는 이유",
+      "type": "info",
+      "intent": "무선 이어폰의 배터리 수명을 늘릴 수 있는 이유 및 방법 제공"
+    },
+    {
+      "keyword": "클라우드 저장소 활용 방법",
+      "type": "info",
+      "intent": "클라우드 저장소를 효과적으로 활용할 수 있는 방법 제시"
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위한 필수 아이템 추천"
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 안경 사용 후기에 기반한 구매 결정 돕기"
+    },
+    {
+      "keyword": "AI 도구 활용 생산성 높이는 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높일 수 있는 구체적인 방법 제시"
+    },
+    {
+      "keyword": "최고의 그래픽카드 2023년 추천",
+      "type": "revenue",
+      "intent": "2023년에 구매할 최고의 그래픽카드 추천을 통한 구매 결정 돕기"
+    },
+    {
+      "keyword": "구형 노트북 업그레이드 방법",
+      "type": "info",
+      "intent": "구형 노트북의 성능을 향상시키기 위한 업그레이드 방법 제공"
+    },
+    {
+      "keyword": "가성비 좋은 충전기 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 충전기를 구매하려는 사용자에게 추천"
+    },
+    {
+      "keyword": "AI 기반 상용 도구 비교",
+      "type": "revenue",
+      "intent": "AI 기반으로 생산성을 높일 수 있는 상용 도구 비교를 통한 구매 결정 돕기"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 결정을 돕기 위해 특정 가격대 제품 추천"
+    },
+    {
+      "keyword": "재택근무 최적화 무선 마우스 3종 비교",
+      "post_type": "revenue",
+      "intent": "재택근무 환경에 맞는 무선 마우스를 비교하여 구매 결정을 돕는 정보 제공"
+    },
+    {
+      "keyword": "50만원 이하 게이밍 노트북 비교",
+      "post_type": "revenue",
+      "intent": "예산 내에서 성능 좋은 게이밍 노트북을 비교하여 구매 결정을 돕기 위한 정보"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 결정을 돕기 위해 특정 가격대 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적화 무선 마우스 3종 비교",
+      "type": "revenue",
+      "intent": "재택근무 환경에 맞는 무선 마우스를 비교하여 구매 결정을 돕는 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "50만원 이하 게이밍 노트북 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 성능 좋은 게이밍 노트북을 비교하여 구매 결정을 돕기 위한 정보",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 기반 상용 도구 비교",
+      "type": "revenue",
+      "intent": "AI 기반으로 생산성을 높일 수 있는 상용 도구 비교를 통한 구매 결정 돕기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 추천 2023년 후기",
+      "type": "revenue",
+      "intent": "2023년 최신 블루투스 스피커 제품 구매를 위한 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 소음 적은 제품 추천",
+      "type": "revenue",
+      "intent": "소음이 적은 기계식 키보드 구매 결정에 도움을 주기 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최고의 SSD 브랜드 2023년 추천",
+      "type": "revenue",
+      "intent": "2023년에 구매할 만한 최고의 SSD 브랜드를 추천하여 구매를 돕는 정보 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 모델 추천",
+      "type": "revenue",
+      "intent": "가성비가 좋은 미니PC 모델을 추천하여 구매 결정을 돕기 위한 정보",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법 5가지",
+      "type": "info",
+      "intent": "노트북 발열 문제를 해결할 수 있는 구체적인 방법 제시",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위한 필수 아이템 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 안경 사용 후기에 기반한 구매 결정 돕기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최고의 그래픽카드 2023년 추천",
+      "type": "revenue",
+      "intent": "2023년에 구매할 최고의 그래픽카드 추천을 통한 구매 결정 돕기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 충전기 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 충전기를 구매하려는 사용자에게 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 충전 속도 차이 이유",
+      "type": "info",
+      "intent": "보조배터리의 충전 속도 차이에 대한 원인 분석",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리를 오래 사용할 수 있는 실질적인 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 이어폰 배터리 수명 늘리는 이유",
+      "type": "info",
+      "intent": "무선 이어폰의 배터리 수명을 늘릴 수 있는 이유 및 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 활용 방법",
+      "type": "info",
+      "intent": "클라우드 저장소를 효과적으로 활용할 수 있는 방법 제시",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용 생산성 높이는 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높일 수 있는 구체적인 방법 제시",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "구형 노트북 업그레이드 방법",
+      "type": "info",
+      "intent": "구형 노트북의 성능을 향상시키기 위한 업그레이드 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 선택 가이드",
+      "type": "info",
+      "intent": "모니터 해상도 선택 시 고려해야 할 요소 제공",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
