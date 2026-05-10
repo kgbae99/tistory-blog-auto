@@ -4153,5 +4153,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 170,
+    "title": "40대 직장인 3개월 체력 회복 건강 영양제 추천",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "중년 건강",
+      "체중관리",
+      "피로회복",
+      "영양제 후기",
+      "홈 트래킹",
+      "요가매트 추천",
+      "체중계 추천",
+      "건강검진",
+      "영양관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-11 07:56",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 171,
+    "title": "3개월 장 건강 개선: 프로바이오틱스의 효과와 작용 원리",
+    "keyword": "장 건강을 위한 프로바이오틱스의 효과와 작용 원리",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "장건강",
+      "프로바이오틱스",
+      "장내미생물",
+      "소화기질환",
+      "생활건강",
+      "영양학",
+      "건강검진",
+      "헬스케어",
+      "변비",
+      "설사"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-11 07:58",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
