@@ -1,0 +1,322 @@
+{
+  "date": "2026-05-14",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 결정 지원"
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 솔직 후기",
+      "type": "revenue",
+      "intent": "구매 후 경험 공유"
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 추천 3가지",
+      "type": "revenue",
+      "intent": "가성비 좋은 제품 구매"
+    },
+    {
+      "keyword": "2TB SSD와 HDD 속도 차이 비교",
+      "type": "revenue",
+      "intent": "속도 비교 및 구매 결정"
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 리스트",
+      "type": "revenue",
+      "intent": "예산 내 제품 선택 지원"
+    },
+    {
+      "keyword": "재택근무 세팅 위한 필수 노트북 추천",
+      "type": "revenue",
+      "intent": "재택근무 효율성 증대"
+    },
+    {
+      "keyword": "충전기 종류별 실제 충전 속도 비교",
+      "type": "revenue",
+      "intent": "속도 비교를 통한 구매 결정"
+    },
+    {
+      "keyword": "4만원대 기계식 키보드 추천",
+      "type": "revenue",
+      "intent": "가격대비 성능 좋은 제품 구매"
+    },
+    {
+      "keyword": "10만원 이하 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 그래픽카드 선택"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "배터리 관리 방법에 대한 정보 탐색"
+    },
+    {
+      "keyword": "5G 보조배터리 실제 사용 후기",
+      "type": "revenue",
+      "intent": "사용 후 만족도 파악"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "눈 보호를 위한 모니터 선택"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법과 이유",
+      "type": "info",
+      "intent": "발열 문제의 원인 및 해결 방법 탐색"
+    },
+    {
+      "keyword": "클라우드 서비스 무료 사용 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 체험 및 활용법 탐색"
+    },
+    {
+      "keyword": "무선이어폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "이어폰 배터리 관리 방법 탐색"
+    },
+    {
+      "keyword": "재택근무 효율 높이는 AI 도구 추천",
+      "type": "info",
+      "intent": "생산성을 높이는 도구 정보 탐색"
+    },
+    {
+      "keyword": "SSD와 HDD의 수명 차이 이유",
+      "type": "info",
+      "intent": "두 저장 장치의 수명 비교"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점",
+      "type": "info",
+      "intent": "입력 장치 선택에 대한 정보 탐색"
+    },
+    {
+      "keyword": "모니터 해상도 4K와 QHD 실제 차이",
+      "type": "info",
+      "intent": "해상도 수준에 따른 차이 이해"
+    },
+    {
+      "keyword": "보조배터리 충전기능 비교와 추천",
+      "type": "revenue",
+      "intent": "기능 비교를 통한 최적의 제품 선택"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "가성비 좋은 미니PC 추천 3가지",
+      "post_type": "revenue",
+      "intent": "가성비 좋은 제품 구매"
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 리스트",
+      "post_type": "revenue",
+      "intent": "예산 내 제품 선택 지원"
+    },
+    {
+      "keyword": "충전기 종류별 실제 충전 속도 비교",
+      "post_type": "revenue",
+      "intent": "속도 비교를 통한 구매 결정"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "가성비 좋은 미니PC 추천 3가지",
+      "type": "revenue",
+      "intent": "가성비 좋은 제품 구매",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 리스트",
+      "type": "revenue",
+      "intent": "예산 내 제품 선택 지원",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "충전기 종류별 실제 충전 속도 비교",
+      "type": "revenue",
+      "intent": "속도 비교를 통한 구매 결정",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "4만원대 기계식 키보드 추천",
+      "type": "revenue",
+      "intent": "가격대비 성능 좋은 제품 구매",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 솔직 후기",
+      "type": "revenue",
+      "intent": "구매 후 경험 공유",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "2TB SSD와 HDD 속도 차이 비교",
+      "type": "revenue",
+      "intent": "속도 비교 및 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5G 보조배터리 실제 사용 후기",
+      "type": "revenue",
+      "intent": "사용 후 만족도 파악",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 높이는 AI 도구 추천",
+      "type": "info",
+      "intent": "생산성을 높이는 도구 정보 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "보조배터리 충전기능 비교와 추천",
+      "type": "revenue",
+      "intent": "기능 비교를 통한 최적의 제품 선택",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 결정 지원",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 위한 필수 노트북 추천",
+      "type": "revenue",
+      "intent": "재택근무 효율성 증대",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "10만원 이하 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 그래픽카드 선택",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "눈 보호를 위한 모니터 선택",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD의 수명 차이 이유",
+      "type": "info",
+      "intent": "두 저장 장치의 수명 비교",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 4K와 QHD 실제 차이",
+      "type": "info",
+      "intent": "해상도 수준에 따른 차이 이해",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "배터리 관리 방법에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 해결 방법과 이유",
+      "type": "info",
+      "intent": "발열 문제의 원인 및 해결 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 무료 사용 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 체험 및 활용법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "이어폰 배터리 관리 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점",
+      "type": "info",
+      "intent": "입력 장치 선택에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
