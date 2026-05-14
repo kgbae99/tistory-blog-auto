@@ -4368,5 +4368,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 178,
+    "title": "3개월 4kg 감량 후기: 다이어트 보조제 효과 있는 것 추천",
+    "keyword": "다이어트 보조제 효과 있는 것 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "다이어트",
+      "다이어트보조제",
+      "체중계추천",
+      "허니배차",
+      "트와이닝티",
+      "감량후기",
+      "체중관리",
+      "건강습관",
+      "식간관리",
+      "다이어트팁"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-15 08:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 179,
+    "title": "직장인 5주 수면의 질 개선 생체리듬 조절 5가지",
+    "keyword": "수면의 질에 영향을 주는 생체리듬 조절 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면",
+      "생체리듬",
+      "수면의 질에 영향을 주는 생체리듬 조절 방법 5가지",
+      "수면개선",
+      "직장인수면",
+      "멜라토닌",
+      "아침빛노출",
+      "카페인관리",
+      "체온관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-15 08:03",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
