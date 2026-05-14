@@ -1,0 +1,317 @@
+{
+  "date": "2026-05-15",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 베스트 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "제품 추천"
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 후기 2023",
+      "type": "revenue",
+      "intent": "제품 후기"
+    },
+    {
+      "keyword": "휴대용 블루투스 스피커 직접 비교 2023",
+      "type": "revenue",
+      "intent": "제품 비교"
+    },
+    {
+      "keyword": "3천원대 기계식 키보드 솔직 후기",
+      "type": "revenue",
+      "intent": "제품 후기"
+    },
+    {
+      "keyword": "10만원대 SSD 속도 비교 후기",
+      "type": "revenue",
+      "intent": "제품 비교"
+    },
+    {
+      "keyword": "최고의 노이즈캔슬링 헤드셋 추천 이유",
+      "type": "revenue",
+      "intent": "제품 추천"
+    },
+    {
+      "keyword": "재택근무용 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "제품 추천"
+    },
+    {
+      "keyword": "30만원대 미니PC 가성비 비교",
+      "type": "revenue",
+      "intent": "제품 비교"
+    },
+    {
+      "keyword": "스마트폰 보조배터리 추천과 후기",
+      "type": "revenue",
+      "intent": "제품 추천 및 후기"
+    },
+    {
+      "keyword": "휴대가 간편한 트랙패드 추천",
+      "type": "revenue",
+      "intent": "제품 추천"
+    },
+    {
+      "keyword": "50만원 이하 그래픽카드 비교 후기",
+      "type": "revenue",
+      "intent": "제품 비교"
+    },
+    {
+      "keyword": "프리미엄 모니터 해상도 비교",
+      "type": "revenue",
+      "intent": "제품 비교"
+    },
+    {
+      "keyword": "노트북 발열 심해지는 이유와 해결 방법",
+      "type": "info",
+      "intent": "문제 원인 및 해결책"
+    },
+    {
+      "keyword": "SSD vs HDD 속도 차이 체감 방법",
+      "type": "info",
+      "intent": "제품 성능 차이"
+    },
+    {
+      "keyword": "기계식 키보드 소음 줄이는 팁",
+      "type": "info",
+      "intent": "문제 해결 방법"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 선택 기준",
+      "type": "info",
+      "intent": "제품 선택 기준"
+    },
+    {
+      "keyword": "클라우드 저장소 안전하게 사용하는 방법",
+      "type": "info",
+      "intent": "안전 사용 방법"
+    },
+    {
+      "keyword": "AI 도구 활용해 업무 효율 높이는 방법",
+      "type": "info",
+      "intent": "생산성 향상 방법"
+    },
+    {
+      "keyword": "효율적인 재택근무 세팅 방법",
+      "type": "info",
+      "intent": "작업 환경 설정 방법"
+    },
+    {
+      "keyword": "보조배터리 고르는 기준과 사용법",
+      "type": "info",
+      "intent": "제품 선택 및 사용 방법"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "10만원대 SSD 속도 비교 후기",
+      "post_type": "revenue",
+      "intent": "제품 비교"
+    },
+    {
+      "keyword": "30만원대 미니PC 가성비 비교",
+      "post_type": "revenue",
+      "intent": "제품 비교"
+    },
+    {
+      "keyword": "휴대용 블루투스 스피커 직접 비교 2023",
+      "post_type": "revenue",
+      "intent": "제품 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "10만원대 SSD 속도 비교 후기",
+      "type": "revenue",
+      "intent": "제품 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "30만원대 미니PC 가성비 비교",
+      "type": "revenue",
+      "intent": "제품 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "휴대용 블루투스 스피커 직접 비교 2023",
+      "type": "revenue",
+      "intent": "제품 비교",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "3천원대 기계식 키보드 솔직 후기",
+      "type": "revenue",
+      "intent": "제품 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "최고의 노이즈캔슬링 헤드셋 추천 이유",
+      "type": "revenue",
+      "intent": "제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "50만원 이하 그래픽카드 비교 후기",
+      "type": "revenue",
+      "intent": "제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "프리미엄 모니터 해상도 비교",
+      "type": "revenue",
+      "intent": "제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 베스트 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 후기 2023",
+      "type": "revenue",
+      "intent": "제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스마트폰 보조배터리 추천과 후기",
+      "type": "revenue",
+      "intent": "제품 추천 및 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "휴대가 간편한 트랙패드 추천",
+      "type": "revenue",
+      "intent": "제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD vs HDD 속도 차이 체감 방법",
+      "type": "info",
+      "intent": "제품 성능 차이",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 심해지는 이유와 해결 방법",
+      "type": "info",
+      "intent": "문제 원인 및 해결책",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 소음 줄이는 팁",
+      "type": "info",
+      "intent": "문제 해결 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 안전하게 사용하는 방법",
+      "type": "info",
+      "intent": "안전 사용 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용해 업무 효율 높이는 방법",
+      "type": "info",
+      "intent": "생산성 향상 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "효율적인 재택근무 세팅 방법",
+      "type": "info",
+      "intent": "작업 환경 설정 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 선택 기준",
+      "type": "info",
+      "intent": "제품 선택 기준",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "보조배터리 고르는 기준과 사용법",
+      "type": "info",
+      "intent": "제품 선택 및 사용 방법",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
