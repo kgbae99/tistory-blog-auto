@@ -1,0 +1,309 @@
+{
+  "date": "2026-05-16",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 10,
+  "info_cnt": 10,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자에게 모델 추천"
+    },
+    {
+      "keyword": "최고의 블루투스 스피커 3개 비교",
+      "type": "revenue",
+      "intent": "다양한 블루투스 스피커의 장단점 비교"
+    },
+    {
+      "keyword": "재택근무 필수 기계식 키보드 후기",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 기계식 키보드의 실제 사용 후기"
+    },
+    {
+      "keyword": "2024년 최신 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "최신 무선 마우스 모델 추천"
+    },
+    {
+      "keyword": "인기 노트북 5종 비교와 선택 팁",
+      "type": "revenue",
+      "intent": "인기 노트북의 비교와 선택 가이드"
+    },
+    {
+      "keyword": "저렴한 미니PC 추천과 후기",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 미니PC 추천"
+    },
+    {
+      "keyword": "최고의 스마트폰 보조배터리 비교",
+      "type": "revenue",
+      "intent": "보조배터리의 효율성과 용량 비교"
+    },
+    {
+      "keyword": "가격 대비 좋은 게이밍 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "게임 성능이 우수한 그래픽카드 추천"
+    },
+    {
+      "keyword": "3만원대 무선이어폰 직접 써본 솔직 후기",
+      "type": "revenue",
+      "intent": "직접 사용해본 무선이어폰의 실제 후기"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제를 해결하기 위한 방법"
+    },
+    {
+      "keyword": "SSD vs HDD 실제 속도 차이 얼마나 날까",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 비교"
+    },
+    {
+      "keyword": "클라우드 서비스 선택 시 고려할 점",
+      "type": "info",
+      "intent": "클라우드 서비스를 선택할 때의 중요 고려 사항"
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법과 팁",
+      "type": "info",
+      "intent": "노트북 RAM 업그레이드 방법 설명"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점",
+      "type": "info",
+      "intent": "트랙패드와 무선 마우스의 사용 차이점"
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 업무 생산성을 높이는 방법"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 효과",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 효과 설명"
+    },
+    {
+      "keyword": "재택근무 세팅에서 중요한 요소",
+      "type": "info",
+      "intent": "효율적인 재택근무 환경을 위한 세팅 요소"
+    },
+    {
+      "keyword": "보조배터리 충전 속도 빠르게 하는 법",
+      "type": "info",
+      "intent": "보조배터리의 충전 속도를 빠르게 하는 방법"
+    },
+    {
+      "keyword": "기계식 키보드와 일반 키보드 차이",
+      "type": "info",
+      "intent": "기계식 키보드와 일반 키보드의 차이점"
+    },
+    {
+      "keyword": "50만원 이하 게이밍 노트북 추천",
+      "type": "revenue",
+      "intent": "경제적인 게이밍 노트북 추천"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "최고의 블루투스 스피커 3개 비교",
+      "post_type": "revenue",
+      "intent": "다양한 블루투스 스피커의 장단점 비교"
+    },
+    {
+      "keyword": "3만원대 무선이어폰 직접 써본 솔직 후기",
+      "post_type": "revenue",
+      "intent": "직접 사용해본 무선이어폰의 실제 후기"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 무선이어폰 추천",
+      "post_type": "revenue",
+      "intent": "구매를 고려하는 사용자에게 모델 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "최고의 블루투스 스피커 3개 비교",
+      "type": "revenue",
+      "intent": "다양한 블루투스 스피커의 장단점 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "3만원대 무선이어폰 직접 써본 솔직 후기",
+      "type": "revenue",
+      "intent": "직접 사용해본 무선이어폰의 실제 후기",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자에게 모델 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "인기 노트북 5종 비교와 선택 팁",
+      "type": "revenue",
+      "intent": "인기 노트북의 비교와 선택 가이드",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최고의 스마트폰 보조배터리 비교",
+      "type": "revenue",
+      "intent": "보조배터리의 효율성과 용량 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 기계식 키보드 후기",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 기계식 키보드의 실제 사용 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2024년 최신 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "최신 무선 마우스 모델 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "저렴한 미니PC 추천과 후기",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 미니PC 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가격 대비 좋은 게이밍 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "게임 성능이 우수한 그래픽카드 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "50만원 이하 게이밍 노트북 추천",
+      "type": "revenue",
+      "intent": "경제적인 게이밍 노트북 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD vs HDD 실제 속도 차이 얼마나 날까",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 비교",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제를 해결하기 위한 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법과 팁",
+      "type": "info",
+      "intent": "노트북 RAM 업그레이드 방법 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점",
+      "type": "info",
+      "intent": "트랙패드와 무선 마우스의 사용 차이점",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 업무 생산성을 높이는 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 일반 키보드 차이",
+      "type": "info",
+      "intent": "기계식 키보드와 일반 키보드의 차이점",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 선택 시 고려할 점",
+      "type": "info",
+      "intent": "클라우드 서비스를 선택할 때의 중요 고려 사항",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 효과",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 효과 설명",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "재택근무 세팅에서 중요한 요소",
+      "type": "info",
+      "intent": "효율적인 재택근무 환경을 위한 세팅 요소",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "보조배터리 충전 속도 빠르게 하는 법",
+      "type": "info",
+      "intent": "보조배터리의 충전 속도를 빠르게 하는 방법",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
