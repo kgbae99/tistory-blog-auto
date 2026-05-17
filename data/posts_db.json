@@ -4529,5 +4529,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 184,
+    "title": "30대 직장인 3개월 체력회복 건강 영양제 추천 5가지",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체력회복",
+      "체중계 추천",
+      "요가매트",
+      "홈플래닛 체중계",
+      "노바리빙",
+      "코멧 요가매트",
+      "건강관리",
+      "영양제 선택법"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-18 07:58",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 185,
+    "title": "3가지 근거로 본 오메가3가 체내 염증 감소에 미치는 영향과 이유",
+    "keyword": "오메가3가 체내 염증 감소에 미치는 영향과 이유",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "오메가3",
+      "염증감소",
+      "CRP",
+      "EPA",
+      "DHA",
+      "영양정보",
+      "건강검진",
+      "항염증",
+      "혈액검사",
+      "영양가이드"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-18 07:59",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
