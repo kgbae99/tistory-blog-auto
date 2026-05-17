@@ -1,0 +1,316 @@
+{
+  "date": "2026-05-18",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "40대 여성 맞춤형 오메가3 영양제 추천",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 오메가3 영양제 선택 고민 해결"
+    },
+    {
+      "keyword": "60대 남성 관절염 개선 보조제 비교",
+      "type": "revenue",
+      "intent": "관절염 개선을 위한 보조제 비교를 통해 구매 결정을 도와줌"
+    },
+    {
+      "keyword": "직장인 불면증 극복 수면 보조제 추천",
+      "type": "revenue",
+      "intent": "직장인의 불면증 해결을 위한 수면 보조제 선택 도움"
+    },
+    {
+      "keyword": "폐경기 여성 비타민D 영양제 후기",
+      "type": "revenue",
+      "intent": "폐경기 여성의 비타민D 영양제 구매 전 경험 공유"
+    },
+    {
+      "keyword": "50대 남성 루테인 영양제 2달 복용 후기",
+      "type": "revenue",
+      "intent": "50대 남성의 루테인 영양제 복용 후 변화 공유"
+    },
+    {
+      "keyword": "유산균 장 건강 효과적인 제품 추천",
+      "type": "revenue",
+      "intent": "장 건강을 위한 효과적인 유산균 제품 선택 도움"
+    },
+    {
+      "keyword": "다이어트에 좋은 단백질 보충제 3가지 추천",
+      "type": "revenue",
+      "intent": "다이어트에 도움이 되는 단백질 보충제 선택 정보"
+    },
+    {
+      "keyword": "무릎 통증 완화를 위한 보조제 추천",
+      "type": "revenue",
+      "intent": "무릎 통증 해소를 위한 보조제 선택 조언"
+    },
+    {
+      "keyword": "갱년기 여성 기미 개선 콜라겐 후기",
+      "type": "revenue",
+      "intent": "갱년기 여성의 기미 개선을 위한 콜라겐 경험담"
+    },
+    {
+      "keyword": "혈당 스파이크 방지를 위한 영양제 추천",
+      "type": "revenue",
+      "intent": "혈당 스파이크를 막기 위한 영양제 선택 정보"
+    },
+    {
+      "keyword": "철분 영양제 복용법과 추천 제품",
+      "type": "revenue",
+      "intent": "철분 영양제의 효과적인 복용법과 추천 제품 정보"
+    },
+    {
+      "keyword": "허리 통증 개선을 위한 코엔자임Q10 추천",
+      "type": "revenue",
+      "intent": "허리 통증 완화를 위한 코엔자임Q10 선택 도움"
+    },
+    {
+      "keyword": "간헐적 단식 체중 감량 성공 방법",
+      "type": "info",
+      "intent": "간헐적 단식을 통한 체중 감량 성공 전략 탐색"
+    },
+    {
+      "keyword": "저탄고지 식단의 효과적 구성 방법",
+      "type": "info",
+      "intent": "저탄고지 식단을 효과적으로 구성하는 방법 제공"
+    },
+    {
+      "keyword": "공복혈당 높을 때의 원인과 해결책",
+      "type": "info",
+      "intent": "공복혈당이 높을 때의 원인과 해결책 탐색"
+    },
+    {
+      "keyword": "근감소증 예방을 위한 운동과 영양",
+      "type": "info",
+      "intent": "근감소증 예방을 위한 운동과 영양 조언"
+    },
+    {
+      "keyword": "수면 장애 개선을 위한 생활 습관",
+      "type": "info",
+      "intent": "수면 장애 개선을 위한 실생활 적용 가능한 방법"
+    },
+    {
+      "keyword": "만성피로 극복을 위한 생활 변화",
+      "type": "info",
+      "intent": "만성피로를 극복하기 위한 생활 습관 변화 정보"
+    },
+    {
+      "keyword": "과민성 대장 증후군의 원인과 치료법",
+      "type": "info",
+      "intent": "과민성 대장 증후군의 원인과 대응책 탐색"
+    },
+    {
+      "keyword": "스트레스성 탈모 예방을 위한 방법",
+      "type": "info",
+      "intent": "스트레스성 탈모 예방과 관리를 위한 방법 제안"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "60대 남성 관절염 개선 보조제 비교",
+      "post_type": "revenue",
+      "intent": "관절염 개선을 위한 보조제 비교를 통해 구매 결정을 도와줌"
+    },
+    {
+      "keyword": "갱년기 여성 기미 개선 콜라겐 후기",
+      "post_type": "revenue",
+      "intent": "갱년기 여성의 기미 개선을 위한 콜라겐 경험담"
+    },
+    {
+      "keyword": "40대 여성 맞춤형 오메가3 영양제 추천",
+      "post_type": "revenue",
+      "intent": "40대 여성을 위한 오메가3 영양제 선택 고민 해결"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "60대 남성 관절염 개선 보조제 비교",
+      "type": "revenue",
+      "intent": "관절염 개선을 위한 보조제 비교를 통해 구매 결정을 도와줌",
+      "score": 7,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 기미 개선 콜라겐 후기",
+      "type": "revenue",
+      "intent": "갱년기 여성의 기미 개선을 위한 콜라겐 경험담",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "40대 여성 맞춤형 오메가3 영양제 추천",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 오메가3 영양제 선택 고민 해결",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "직장인 불면증 극복 수면 보조제 추천",
+      "type": "revenue",
+      "intent": "직장인의 불면증 해결을 위한 수면 보조제 선택 도움",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "폐경기 여성 비타민D 영양제 후기",
+      "type": "revenue",
+      "intent": "폐경기 여성의 비타민D 영양제 구매 전 경험 공유",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 남성 루테인 영양제 2달 복용 후기",
+      "type": "revenue",
+      "intent": "50대 남성의 루테인 영양제 복용 후 변화 공유",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "다이어트에 좋은 단백질 보충제 3가지 추천",
+      "type": "revenue",
+      "intent": "다이어트에 도움이 되는 단백질 보충제 선택 정보",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "허리 통증 개선을 위한 코엔자임Q10 추천",
+      "type": "revenue",
+      "intent": "허리 통증 완화를 위한 코엔자임Q10 선택 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "유산균 장 건강 효과적인 제품 추천",
+      "type": "revenue",
+      "intent": "장 건강을 위한 효과적인 유산균 제품 선택 도움",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "무릎 통증 완화를 위한 보조제 추천",
+      "type": "revenue",
+      "intent": "무릎 통증 해소를 위한 보조제 선택 조언",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "혈당 스파이크 방지를 위한 영양제 추천",
+      "type": "revenue",
+      "intent": "혈당 스파이크를 막기 위한 영양제 선택 정보",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "철분 영양제 복용법과 추천 제품",
+      "type": "revenue",
+      "intent": "철분 영양제의 효과적인 복용법과 추천 제품 정보",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "간헐적 단식 체중 감량 성공 방법",
+      "type": "info",
+      "intent": "간헐적 단식을 통한 체중 감량 성공 전략 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "저탄고지 식단의 효과적 구성 방법",
+      "type": "info",
+      "intent": "저탄고지 식단을 효과적으로 구성하는 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "공복혈당 높을 때의 원인과 해결책",
+      "type": "info",
+      "intent": "공복혈당이 높을 때의 원인과 해결책 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "수면 장애 개선을 위한 생활 습관",
+      "type": "info",
+      "intent": "수면 장애 개선을 위한 실생활 적용 가능한 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "과민성 대장 증후군의 원인과 치료법",
+      "type": "info",
+      "intent": "과민성 대장 증후군의 원인과 대응책 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스트레스성 탈모 예방을 위한 방법",
+      "type": "info",
+      "intent": "스트레스성 탈모 예방과 관리를 위한 방법 제안",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "근감소증 예방을 위한 운동과 영양",
+      "type": "info",
+      "intent": "근감소증 예방을 위한 운동과 영양 조언",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "만성피로 극복을 위한 생활 변화",
+      "type": "info",
+      "intent": "만성피로를 극복하기 위한 생활 습관 변화 정보",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
