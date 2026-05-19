@@ -1,0 +1,314 @@
+{
+  "date": "2026-05-20",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매를 고려하는 사용자에게 제품 추천"
+    },
+    {
+      "keyword": "재택근무 세팅 위한 모니터 3개 비교",
+      "type": "revenue",
+      "intent": "재택근무 시 적합한 모니터를 찾는 사용자에게 제품 비교 정보 제공"
+    },
+    {
+      "keyword": "기계식 키보드 vs 무선 키보드 차이점",
+      "type": "info",
+      "intent": "기계식과 무선 키보드의 차이를 알고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "고사양 게이밍 노트북 4개 후기",
+      "type": "revenue",
+      "intent": "고사양 게이밍 노트북 구매를 고려하는 사용자에게 실제 사용 후기 제공"
+    },
+    {
+      "keyword": "USB-C 충전기 vs 일반 충전기 차이",
+      "type": "info",
+      "intent": "USB-C와 일반 충전기의 차이를 알고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "SSD와 HDD 성능 비교 실제 사용기",
+      "type": "revenue",
+      "intent": "SSD와 HDD 중 선택을 고민하는 사용자에게 실제 사용 후기 비교 제공"
+    },
+    {
+      "keyword": "보조배터리 사용 시간이 긴 제품 추천",
+      "type": "revenue",
+      "intent": "오래 사용할 수 있는 보조배터리를 찾는 사용자에게 제품 추천"
+    },
+    {
+      "keyword": "3만원 이하 가성비 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "저렴한 가격대의 블루투스 스피커를 찾는 사용자에게 제품 추천"
+    },
+    {
+      "keyword": "트랙패드와 마우스 차이 및 장단점",
+      "type": "info",
+      "intent": "트랙패드와 마우스의 차이와 장단점을 알고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "신형 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "새로운 스마트폰의 배터리 성능을 비교하고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용해 업무 생산성을 높이고자 하는 사용자에게 방법 제안"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 사용기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터를 고려하는 사용자에게 사용 후기 제공"
+    },
+    {
+      "keyword": "저렴한 미니PC 성능 후기",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 미니PC를 찾는 사용자에게 사용 후기 제공"
+    },
+    {
+      "keyword": "노트북 RAM 증설 방법과 주의사항",
+      "type": "info",
+      "intent": "노트북 RAM 증설을 고려하는 사용자에게 방법과 주의사항 제공"
+    },
+    {
+      "keyword": "웜홀 클라우드 서비스 장단점",
+      "type": "info",
+      "intent": "웜홀 클라우드 서비스를 고려하는 사용자에게 장단점 정보 제공"
+    },
+    {
+      "keyword": "500GB SSD와 1TB HDD 사용 후기 비교",
+      "type": "revenue",
+      "intent": "용량 대비 성능을 비교하고자 하는 사용자에게 사용 후기 제공"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 긴 제품 추천",
+      "type": "revenue",
+      "intent": "오래 사용할 수 있는 무선 마우스를 찾는 사용자에게 제품 추천"
+    },
+    {
+      "keyword": "4K 해상도 모니터 필요성 이유",
+      "type": "info",
+      "intent": "4K 해상도 모니터의 필요성을 찾고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "고해상도 온라인 회의용 웹캠 추천",
+      "type": "revenue",
+      "intent": "온라인 회의에 적합한 고해상도 웹캠을 찾는 사용자에게 제품 추천"
+    },
+    {
+      "keyword": "그래픽카드 업그레이드 방법 비용 비교",
+      "type": "info",
+      "intent": "그래픽카드 업그레이드를 고려하는 사용자에게 방법과 비용 비교 정보 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "재택근무 세팅 위한 모니터 3개 비교",
+      "post_type": "revenue",
+      "intent": "재택근무 시 적합한 모니터를 찾는 사용자에게 제품 비교 정보 제공"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매를 고려하는 사용자에게 제품 추천"
+    },
+    {
+      "keyword": "SSD와 HDD 성능 비교 실제 사용기",
+      "post_type": "revenue",
+      "intent": "SSD와 HDD 중 선택을 고민하는 사용자에게 실제 사용 후기 비교 제공"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "재택근무 세팅 위한 모니터 3개 비교",
+      "type": "revenue",
+      "intent": "재택근무 시 적합한 모니터를 찾는 사용자에게 제품 비교 정보 제공",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매를 고려하는 사용자에게 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 성능 비교 실제 사용기",
+      "type": "revenue",
+      "intent": "SSD와 HDD 중 선택을 고민하는 사용자에게 실제 사용 후기 비교 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 업그레이드 방법 비용 비교",
+      "type": "info",
+      "intent": "그래픽카드 업그레이드를 고려하는 사용자에게 방법과 비용 비교 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "신형 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "새로운 스마트폰의 배터리 성능을 비교하고자 하는 사용자에게 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "500GB SSD와 1TB HDD 사용 후기 비교",
+      "type": "revenue",
+      "intent": "용량 대비 성능을 비교하고자 하는 사용자에게 사용 후기 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "고사양 게이밍 노트북 4개 후기",
+      "type": "revenue",
+      "intent": "고사양 게이밍 노트북 구매를 고려하는 사용자에게 실제 사용 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 사용 시간이 긴 제품 추천",
+      "type": "revenue",
+      "intent": "오래 사용할 수 있는 보조배터리를 찾는 사용자에게 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3만원 이하 가성비 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "저렴한 가격대의 블루투스 스피커를 찾는 사용자에게 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "저렴한 미니PC 성능 후기",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 미니PC를 찾는 사용자에게 사용 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 긴 제품 추천",
+      "type": "revenue",
+      "intent": "오래 사용할 수 있는 무선 마우스를 찾는 사용자에게 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "고해상도 온라인 회의용 웹캠 추천",
+      "type": "revenue",
+      "intent": "온라인 회의에 적합한 고해상도 웹캠을 찾는 사용자에게 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 vs 무선 키보드 차이점",
+      "type": "info",
+      "intent": "기계식과 무선 키보드의 차이를 알고자 하는 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "USB-C 충전기 vs 일반 충전기 차이",
+      "type": "info",
+      "intent": "USB-C와 일반 충전기의 차이를 알고자 하는 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 마우스 차이 및 장단점",
+      "type": "info",
+      "intent": "트랙패드와 마우스의 차이와 장단점을 알고자 하는 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용해 업무 생산성을 높이고자 하는 사용자에게 방법 제안",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 RAM 증설 방법과 주의사항",
+      "type": "info",
+      "intent": "노트북 RAM 증설을 고려하는 사용자에게 방법과 주의사항 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "4K 해상도 모니터 필요성 이유",
+      "type": "info",
+      "intent": "4K 해상도 모니터의 필요성을 찾고자 하는 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "블루라이트 차단 모니터 사용기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터를 고려하는 사용자에게 사용 후기 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "웜홀 클라우드 서비스 장단점",
+      "type": "info",
+      "intent": "웜홀 클라우드 서비스를 고려하는 사용자에게 장단점 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
