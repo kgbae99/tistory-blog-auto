@@ -4690,5 +4690,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 190,
+    "title": "30대 직장인 3개월 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체중계 추천",
+      "요가매트 추천",
+      "건강검진",
+      "영양소 결핍",
+      "홈트 장비",
+      "쿠팡 추천",
+      "비용 효율 건강",
+      "생활습관 개선"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-21 08:18",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 191,
+    "title": "30일 만에 통증↓ 홈트에 적합한 스트레칭 이유",
+    "keyword": "홈트레이닝에 적합한 스트레칭의 중요성",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝에 적합한 스트레칭의 중요성",
+      "홈트 스트레칭",
+      "스트레칭 루틴",
+      "통증 예방",
+      "유연성 개선",
+      "PNF 스트레칭",
+      "동적 스트레칭",
+      "정적 스트레칭",
+      "운동 회복",
+      "건강 관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-21 08:19",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
