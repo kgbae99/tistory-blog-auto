@@ -4744,5 +4744,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 192,
+    "title": "40대 여성 3주 만에 수분 개선한 보습 제품 추천 후기",
+    "keyword": "40대 여성 피부 보습 제품 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대피부",
+      "보습제품추천",
+      "피부보습후기",
+      "일리윤",
+      "오설록",
+      "트와이닝",
+      "히알루론",
+      "세라마이드",
+      "피부관리팁",
+      "건강검진비용"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-23 08:07",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 193,
+    "title": "40대 피부가 좋아진 5가지 주름 개선 성분과 사용법",
+    "keyword": "주름 개선에 효과적인 성분 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "주름개선",
+      "안티에이징",
+      "레티놀",
+      "비타민C",
+      "펩타이드",
+      "히알루론산",
+      "AHA",
+      "피부관리",
+      "스킨케어팁",
+      "40대피부"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-23 08:08",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
