@@ -4851,5 +4851,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 196,
+    "title": "30대 3개월 체력회복을 위한 건강 영양제 추천 5가지",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 조합",
+      "피로회복",
+      "체력증진",
+      "홈트도구",
+      "체중계 추천",
+      "요가매트",
+      "건강검진 비용",
+      "영양제 후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-25 08:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 197,
+    "title": "마그네슘 부족이 여성 수면 질에 미치는 영향 3가지 이유",
+    "keyword": "마그네슘 부족이 여성의 수면 질에 미치는 영향 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "마그네슘",
+      "수면장애",
+      "여성건강",
+      "불면증원인",
+      "영양과수면",
+      "수면질개선",
+      "건강검진",
+      "수면과영양",
+      "생활습관",
+      "호르몬"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-25 08:04",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
