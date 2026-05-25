@@ -4904,5 +4904,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 198,
+    "title": "3개월 5kg 감량 비법: 건강 영양제 추천 7가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중감량",
+      "영양제 후기",
+      "홈트",
+      "체중계 추천",
+      "요가매트",
+      "건강검진",
+      "건강관리",
+      "건강보험",
+      "영양성분"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-26 08:12",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 199,
+    "title": "직장인용 불면증의 주요 원인 5가지와 개선법",
+    "keyword": "불면증의 주요 원인 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "불면증",
+      "수면장애",
+      "수면일지",
+      "수면개선",
+      "카페인",
+      "시계리듬",
+      "건강검진",
+      "야간각성",
+      "불면증원인",
+      "수면효율"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-26 08:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
