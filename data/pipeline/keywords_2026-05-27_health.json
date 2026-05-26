@@ -1,0 +1,320 @@
+{
+  "date": "2026-05-27",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 10,
+  "info_cnt": 10,
+  "all_keywords": [
+    {
+      "keyword": "40대 여성 마그네슘 영양제 추천 비교",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 마그네슘 영양제 추천 및 상품 비교"
+    },
+    {
+      "keyword": "직장인 간헐적 단식 2주 체중 감량 방법",
+      "type": "info",
+      "intent": "직장인을 위한 간헐적 단식으로 2주간 체중 감량하는 방법"
+    },
+    {
+      "keyword": "50대 남성 오메가3 보충제 직접 후기",
+      "type": "revenue",
+      "intent": "50대 남성이 사용한 오메가3 보충제에 대한 직접적인 후기"
+    },
+    {
+      "keyword": "갱년기 여성 유산균 추천 5가지 비교",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 추천하는 유산균 5가지 상품 비교"
+    },
+    {
+      "keyword": "비타민D 부족 증상 및 보충 방법",
+      "type": "info",
+      "intent": "비타민D 부족 증상과 효과적인 보충 방법 설명"
+    },
+    {
+      "keyword": "공복혈당 낮추는 식단 3주 계획",
+      "type": "info",
+      "intent": "공복혈당을 낮추기 위한 3주 식단 계획"
+    },
+    {
+      "keyword": "무릎 통증 완화 보조제 추천 3선",
+      "type": "revenue",
+      "intent": "무릎 통증을 완화시켜주는 보조제 3가지 추천"
+    },
+    {
+      "keyword": "저탄고지 다이어트 4주 후기",
+      "type": "info",
+      "intent": "저탄고지 다이어트 4주 체험 후기"
+    },
+    {
+      "keyword": "수면 장애 개선 영양제 효과 비교",
+      "type": "revenue",
+      "intent": "수면 장애 개선에 효과적인 영양제의 효능 비교"
+    },
+    {
+      "keyword": "체지방 감소 효과적인 운동 방법",
+      "type": "info",
+      "intent": "체지방 감소에 효과적인 운동 방법 설명"
+    },
+    {
+      "keyword": "50대 갱년기 여성 콜라겐 보충제 후기",
+      "type": "revenue",
+      "intent": "50대 갱년기 여성이 사용한 콜라겐 보충제 후기"
+    },
+    {
+      "keyword": "철분 부족 3개월 복용 후기",
+      "type": "info",
+      "intent": "철분 보충제 3개월 복용 후 효과에 대한 후기"
+    },
+    {
+      "keyword": "만성피로 개선 보충제 추천",
+      "type": "revenue",
+      "intent": "만성피로를 개선하는데 도움이 되는 보충제 추천"
+    },
+    {
+      "keyword": "스트레스성 탈모 원인 및 대처법",
+      "type": "info",
+      "intent": "스트레스성 탈모의 원인과 효과적인 대처 방법"
+    },
+    {
+      "keyword": "고혈압 관리에 좋은 영양제 추천",
+      "type": "revenue",
+      "intent": "고혈압 관리를 위한 추천 영양제"
+    },
+    {
+      "keyword": "섬유근육통 환자 코엔자임Q10 효과",
+      "type": "info",
+      "intent": "섬유근육통 환자에게 있어서 코엔자임Q10의 효과 설명"
+    },
+    {
+      "keyword": "변비 개선 유산균 추천 4가지",
+      "type": "revenue",
+      "intent": "변비 개선에 도움이 되는 유산균 4가지 추천"
+    },
+    {
+      "keyword": "허리 통증 완화 운동법",
+      "type": "info",
+      "intent": "허리 통증을 완화시킬 수 있는 운동 방법 설명"
+    },
+    {
+      "keyword": "기미 개선 콜라겐 제품 효과 비교",
+      "type": "revenue",
+      "intent": "기미 개선에 효과적인 콜라겐 제품의 효과 비교"
+    },
+    {
+      "keyword": "장누수 증상과 예방법",
+      "type": "info",
+      "intent": "장누수의 증상과 예방 방법에 대한 상세한 설명"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "갱년기 여성 유산균 추천 5가지 비교",
+      "post_type": "revenue",
+      "intent": "갱년기 여성에게 추천하는 유산균 5가지 상품 비교"
+    },
+    {
+      "keyword": "40대 여성 마그네슘 영양제 추천 비교",
+      "post_type": "revenue",
+      "intent": "40대 여성을 위한 마그네슘 영양제 추천 및 상품 비교"
+    },
+    {
+      "keyword": "50대 남성 오메가3 보충제 직접 후기",
+      "post_type": "revenue",
+      "intent": "50대 남성이 사용한 오메가3 보충제에 대한 직접적인 후기"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "갱년기 여성 유산균 추천 5가지 비교",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 추천하는 유산균 5가지 상품 비교",
+      "score": 8,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "40대 여성 마그네슘 영양제 추천 비교",
+      "type": "revenue",
+      "intent": "40대 여성을 위한 마그네슘 영양제 추천 및 상품 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 남성 오메가3 보충제 직접 후기",
+      "type": "revenue",
+      "intent": "50대 남성이 사용한 오메가3 보충제에 대한 직접적인 후기",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "변비 개선 유산균 추천 4가지",
+      "type": "revenue",
+      "intent": "변비 개선에 도움이 되는 유산균 4가지 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "수면 장애 개선 영양제 효과 비교",
+      "type": "revenue",
+      "intent": "수면 장애 개선에 효과적인 영양제의 효능 비교",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "50대 갱년기 여성 콜라겐 보충제 후기",
+      "type": "revenue",
+      "intent": "50대 갱년기 여성이 사용한 콜라겐 보충제 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "철분 부족 3개월 복용 후기",
+      "type": "info",
+      "intent": "철분 보충제 3개월 복용 후 효과에 대한 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "기미 개선 콜라겐 제품 효과 비교",
+      "type": "revenue",
+      "intent": "기미 개선에 효과적인 콜라겐 제품의 효과 비교",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "만성피로 개선 보충제 추천",
+      "type": "revenue",
+      "intent": "만성피로를 개선하는데 도움이 되는 보충제 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "직장인 간헐적 단식 2주 체중 감량 방법",
+      "type": "info",
+      "intent": "직장인을 위한 간헐적 단식으로 2주간 체중 감량하는 방법",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "무릎 통증 완화 보조제 추천 3선",
+      "type": "revenue",
+      "intent": "무릎 통증을 완화시켜주는 보조제 3가지 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "저탄고지 다이어트 4주 후기",
+      "type": "info",
+      "intent": "저탄고지 다이어트 4주 체험 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "고혈압 관리에 좋은 영양제 추천",
+      "type": "revenue",
+      "intent": "고혈압 관리를 위한 추천 영양제",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "비타민D 부족 증상 및 보충 방법",
+      "type": "info",
+      "intent": "비타민D 부족 증상과 효과적인 보충 방법 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "공복혈당 낮추는 식단 3주 계획",
+      "type": "info",
+      "intent": "공복혈당을 낮추기 위한 3주 식단 계획",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "체지방 감소 효과적인 운동 방법",
+      "type": "info",
+      "intent": "체지방 감소에 효과적인 운동 방법 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스트레스성 탈모 원인 및 대처법",
+      "type": "info",
+      "intent": "스트레스성 탈모의 원인과 효과적인 대처 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "섬유근육통 환자 코엔자임Q10 효과",
+      "type": "info",
+      "intent": "섬유근육통 환자에게 있어서 코엔자임Q10의 효과 설명",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "허리 통증 완화 운동법",
+      "type": "info",
+      "intent": "허리 통증을 완화시킬 수 있는 운동 방법 설명",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "장누수 증상과 예방법",
+      "type": "info",
+      "intent": "장누수의 증상과 예방 방법에 대한 상세한 설명",
+      "reject_reason": "너무 짧음 (3단어 / 11자)"
+    }
+  ],
+  "filter_top_n": 3
+}

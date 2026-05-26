@@ -1,0 +1,306 @@
+{
+  "date": "2026-05-27",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "게이밍 기계식 키보드 3개 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "재택근무용 모니터 27인치 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "무선 마우스 배터리 사용시간 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "1TB SSD 직접 사용해본 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "최신 그래픽카드 출시 일정 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "2023년 인기 미니PC 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "스마트폰 보조배터리 용량 비교와 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "3만원 이하 무선충전기 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "노트북 발열문제 해결 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 사례",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "노트북 발열의 주요 원인과 해결 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 원인 및 방법"
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 성능 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "노이즈캔슬링 이어폰 작동 원리",
+      "type": "info",
+      "intent": "탐색 의도 - 원인"
+    },
+    {
+      "keyword": "RAM 업그레이드 방법과 주의점",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 원인 및 효과"
+    },
+    {
+      "keyword": "기계식 키보드 청축 vs 적축 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "클라우드 서비스 선택 시 고려사항",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "가성비 좋은 재택근무 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "게이밍 기계식 키보드 3개 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "무선 마우스 배터리 사용시간 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "게이밍 기계식 키보드 3개 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 배터리 사용시간 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "1TB SSD 직접 사용해본 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "스마트폰 보조배터리 용량 비교와 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열문제 해결 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무용 모니터 27인치 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 그래픽카드 출시 일정 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 인기 미니PC 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3만원 이하 무선충전기 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 성능 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "노트북 발열의 주요 원인과 해결 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 원인 및 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 방법과 주의점",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축 vs 적축 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 재택근무 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 원인 및 효과",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "클라우드 서비스 선택 시 고려사항",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "블루투스 스피커 10만원대 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 사례",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "노이즈캔슬링 이어폰 작동 원리",
+      "type": "info",
+      "intent": "탐색 의도 - 원인",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
