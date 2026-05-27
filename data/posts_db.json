@@ -5012,5 +5012,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 202,
+    "title": "3개월 해보니 집에서 하는 요가의 효과 후기 5가지",
+    "keyword": "3개월 해보니 집에서 하는 요가의 효과",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "집에서요가",
+      "3개월요가후기",
+      "홈요가효과",
+      "요가루틴",
+      "유연성개선",
+      "허리통증완화",
+      "요가제품추천",
+      "오설록",
+      "트와이닝",
+      "담터"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-28 08:21",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 203,
+    "title": "홈트레이닝 초보를 위한 필라테스 5가지로 허리 강화",
+    "keyword": "홈트레이닝 초보를 위한 필라테스 동작 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝",
+      "필라테스",
+      "초보운동",
+      "허리강화",
+      "코어운동",
+      "운동루틴",
+      "건강관리",
+      "재활운동",
+      "운동팁",
+      "체형교정"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-28 08:25",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
