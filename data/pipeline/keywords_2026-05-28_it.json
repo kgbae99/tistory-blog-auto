@@ -1,0 +1,312 @@
+{
+  "date": "2026-05-28",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자가 적절한 가격대의 제품을 찾고자 할 때"
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 후기",
+      "type": "revenue",
+      "intent": "최신 무선 마우스를 구매하려는 사용자가 실제 후기를 통해 제품 선택"
+    },
+    {
+      "keyword": "2주간 사용한 블루투스 스피커 성능 리뷰",
+      "type": "revenue",
+      "intent": "블루투스 스피커의 성능을 알고 싶어하는 사용자를 위한 솔직한 사용 후기"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 비교",
+      "type": "revenue",
+      "intent": "다양한 기계식 키보드의 타건감을 비교하여 최적의 선택을 하고자 하는 사용자"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 5종 비교",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북을 비교하고 선택하려는 사용자"
+    },
+    {
+      "keyword": "최고의 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "2023년 최신 미니PC를 구매하려는 사용자에게 추천"
+    },
+    {
+      "keyword": "가성비 좋은 스마트폰 배터리 추천",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 우수한 스마트폰 배터리를 찾고자 하는 사용자"
+    },
+    {
+      "keyword": "10만원 이하 SSD 후기",
+      "type": "revenue",
+      "intent": "저렴한 가격대의 SSD 제품에 대한 솔직한 후기를 찾는 사용자"
+    },
+    {
+      "keyword": "게이밍 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "게이밍에 적합한 그래픽카드를 비교하여 최적의 제품을 선택하려는 사용자"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터의 효과를 실제 사용 후기로 확인하고 싶어하는 사용자"
+    },
+    {
+      "keyword": "트랙패드 vs 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "트랙패드와 무선 마우스의 사용자를 비교하고 최적의 입력 장치를 선택하려는 사용자"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "revenue",
+      "intent": "AI 도구를 활용하여 생산성을 높이는 방법을 찾고자 하는 사용자"
+    },
+    {
+      "keyword": "랩탑 발열 심화 원인 분석",
+      "type": "info",
+      "intent": "노트북의 발열 문제의 원인을 파악하고 해결책을 찾고자 하는 사용자"
+    },
+    {
+      "keyword": "SSD와 HDD의 성능 차이",
+      "type": "info",
+      "intent": "SSD와 HDD 간의 실제 성능 차이를 이해하려는 정보 탐색 사용자"
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법",
+      "type": "info",
+      "intent": "노트북의 RAM 업그레이드 방법을 알아보고자 하는 사용자"
+    },
+    {
+      "keyword": "클라우드 저장소 비용 비교",
+      "type": "info",
+      "intent": "다양한 클라우드 저장소 서비스의 비용을 비교하려는 사용자"
+    },
+    {
+      "keyword": "무선 이어폰 연결 문제 해결법",
+      "type": "info",
+      "intent": "무선 이어폰의 연결 문제를 해결하고자 하는 사용자"
+    },
+    {
+      "keyword": "모니터 해상도 설정 방법",
+      "type": "info",
+      "intent": "최적의 해상도로 모니터를 설정하고자 하는 사용자"
+    },
+    {
+      "keyword": "보조배터리 용량 선택 기준",
+      "type": "info",
+      "intent": "필요한 용량의 보조배터리를 선택하기 위한 정보 탐색 사용자"
+    },
+    {
+      "keyword": "블루투스 스피커 연결 방법",
+      "type": "info",
+      "intent": "블루투스 스피커를 장치에 연결하는 방법을 알아보고자 하는 사용자"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "post_type": "revenue",
+      "intent": "구매를 고려하는 사용자가 적절한 가격대의 제품을 찾고자 할 때"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 비교",
+      "post_type": "revenue",
+      "intent": "다양한 기계식 키보드의 타건감을 비교하여 최적의 선택을 하고자 하는 사용자"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 5종 비교",
+      "post_type": "revenue",
+      "intent": "재택근무에 적합한 노트북을 비교하고 선택하려는 사용자"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자가 적절한 가격대의 제품을 찾고자 할 때",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 타건감 비교",
+      "type": "revenue",
+      "intent": "다양한 기계식 키보드의 타건감을 비교하여 최적의 선택을 하고자 하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 노트북 5종 비교",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북을 비교하고 선택하려는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "게이밍 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "게이밍에 적합한 그래픽카드를 비교하여 최적의 제품을 선택하려는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "트랙패드 vs 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "트랙패드와 무선 마우스의 사용자를 비교하고 최적의 입력 장치를 선택하려는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 비용 비교",
+      "type": "info",
+      "intent": "다양한 클라우드 저장소 서비스의 비용을 비교하려는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 후기",
+      "type": "revenue",
+      "intent": "최신 무선 마우스를 구매하려는 사용자가 실제 후기를 통해 제품 선택",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최고의 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "2023년 최신 미니PC를 구매하려는 사용자에게 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 스마트폰 배터리 추천",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 우수한 스마트폰 배터리를 찾고자 하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "10만원 이하 SSD 후기",
+      "type": "revenue",
+      "intent": "저렴한 가격대의 SSD 제품에 대한 솔직한 후기를 찾는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터의 효과를 실제 사용 후기로 확인하고 싶어하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "revenue",
+      "intent": "AI 도구를 활용하여 생산성을 높이는 방법을 찾고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "랩탑 발열 심화 원인 분석",
+      "type": "info",
+      "intent": "노트북의 발열 문제의 원인을 파악하고 해결책을 찾고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD의 성능 차이",
+      "type": "info",
+      "intent": "SSD와 HDD 간의 실제 성능 차이를 이해하려는 정보 탐색 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법",
+      "type": "info",
+      "intent": "노트북의 RAM 업그레이드 방법을 알아보고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 이어폰 연결 문제 해결법",
+      "type": "info",
+      "intent": "무선 이어폰의 연결 문제를 해결하고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 설정 방법",
+      "type": "info",
+      "intent": "최적의 해상도로 모니터를 설정하고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 연결 방법",
+      "type": "info",
+      "intent": "블루투스 스피커를 장치에 연결하는 방법을 알아보고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량 선택 기준",
+      "type": "info",
+      "intent": "필요한 용량의 보조배터리를 선택하기 위한 정보 탐색 사용자",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "2주간 사용한 블루투스 스피커 성능 리뷰",
+      "type": "revenue",
+      "intent": "블루투스 스피커의 성능을 알고 싶어하는 사용자를 위한 솔직한 사용 후기",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
