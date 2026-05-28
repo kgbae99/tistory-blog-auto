@@ -5066,5 +5066,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 204,
+    "title": "3개월 3kg 감량 후기: 건강 영양제 추천 5가지",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중관리",
+      "홈트",
+      "체중계 추천",
+      "요가매트",
+      "블로그후기",
+      "건강검진",
+      "영양제 후기",
+      "쿠팡추천",
+      "생활건강"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-29 08:22",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 205,
+    "title": "30일 실험: 디지털 디톡스를 적용해 본 결과와 효과 후기",
+    "keyword": "디지털 디톡스를 적용해 본 결과와 효과",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "디지털디톡스",
+      "디지털디톡스 후기",
+      "디지털디톡스 적용해 본 결과와 효과",
+      "집중력 향상",
+      "수면 개선",
+      "웰빙",
+      "생활습관 개선",
+      "업무효율",
+      "건강검진",
+      "의료비절감"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-29 08:23",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
