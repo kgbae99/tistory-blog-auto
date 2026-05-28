@@ -1,0 +1,319 @@
+{
+  "date": "2026-05-29",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매를 고려 중인 소비자에게 적합한 옵션을 제안"
+    },
+    {
+      "keyword": "신형 무선 마우스 비교와 장단점 정리",
+      "type": "revenue",
+      "intent": "최신 무선 마우스를 구매할 때 고려해야 할 점 제공"
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 정말 필요한 이유",
+      "type": "info",
+      "intent": "블루라이트 차단이 필요한 이유와 모니터 선택 시 고려 사항 설명"
+    },
+    {
+      "keyword": "최신 그래픽카드 3개 성능 비교",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 구매 시 성능 비교를 통한 선택 가이드"
+    },
+    {
+      "keyword": "2023년형 노트북 실제 발열 후기",
+      "type": "revenue",
+      "intent": "노트북 구매 전 발열 문제에 대한 실제 사용자 후기"
+    },
+    {
+      "keyword": "클라우드 저장소 선택하는 방법과 추천",
+      "type": "info",
+      "intent": "다양한 클라우드 저장소 서비스 선택 시 고려할 점과 추천"
+    },
+    {
+      "keyword": "재택근무 최적 키보드 추천 리스트",
+      "type": "revenue",
+      "intent": "재택근무 환경에 적합한 키보드 추천"
+    },
+    {
+      "keyword": "3천원 이하 스마트폰 충전기 추천",
+      "type": "revenue",
+      "intent": "가격대비 성능 좋은 충전기를 찾는 소비자를 위한 추천"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 차이점 분석",
+      "type": "info",
+      "intent": "기계식과 멤브레인 키보드의 차이점에 대한 탐색"
+    },
+    {
+      "keyword": "미니PC로 게이밍 가능한지 테스트 후기",
+      "type": "info",
+      "intent": "미니PC의 게이밍 성능에 대한 실제 테스트 결과"
+    },
+    {
+      "keyword": "20만원대 가성비 노트북 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 노트북을 찾고자 하는 소비자에게 추천"
+    },
+    {
+      "keyword": "8GB RAM과 16GB RAM 실제 성능 차이",
+      "type": "info",
+      "intent": "RAM 용량에 따른 실제 성능 차이를 탐색"
+    },
+    {
+      "keyword": "블루투스 스피커 2개 비교와 추천",
+      "type": "revenue",
+      "intent": "블루투스 스피커 선택 시 비교와 추천을 통해 결정 지원"
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 자동화 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 업무 효율성 향상 방법 탐색"
+    },
+    {
+      "keyword": "노트북 배터리 수명 늘리는 팁 5가지",
+      "type": "info",
+      "intent": "노트북 배터리 관리와 수명 연장을 위한 팁 제공"
+    },
+    {
+      "keyword": "500GB SSD와 1TB HDD 속도 비교",
+      "type": "info",
+      "intent": "SSD와 HDD 간의 실제 속도 차이 분석"
+    },
+    {
+      "keyword": "디지털 노마드용 필수 보조배터리 추천",
+      "type": "revenue",
+      "intent": "디지털 노마드 라이프에 필수적인 보조배터리 추천"
+    },
+    {
+      "keyword": "재택근무 환경 세팅 필수 장비 추천",
+      "type": "revenue",
+      "intent": "효율적인 재택근무를 위한 필수 장비 추천"
+    },
+    {
+      "keyword": "스마트폰 배터리 교체 시기와 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 교체가 필요한 시기와 교체 방법 안내"
+    },
+    {
+      "keyword": "최신 트랙패드 리뷰와 비교",
+      "type": "revenue",
+      "intent": "최신 트랙패드 구매 시 제품 리뷰와 비교를 통한 선택 가이드"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "블루투스 스피커 2개 비교와 추천",
+      "post_type": "revenue",
+      "intent": "블루투스 스피커 선택 시 비교와 추천을 통해 결정 지원"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 무선이어폰 추천",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매를 고려 중인 소비자에게 적합한 옵션을 제안"
+    },
+    {
+      "keyword": "20만원대 가성비 노트북 추천",
+      "post_type": "revenue",
+      "intent": "가성비 좋은 노트북을 찾고자 하는 소비자에게 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "블루투스 스피커 2개 비교와 추천",
+      "type": "revenue",
+      "intent": "블루투스 스피커 선택 시 비교와 추천을 통해 결정 지원",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 이어폰 구매를 고려 중인 소비자에게 적합한 옵션을 제안",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "20만원대 가성비 노트북 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 노트북을 찾고자 하는 소비자에게 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "신형 무선 마우스 비교와 장단점 정리",
+      "type": "revenue",
+      "intent": "최신 무선 마우스를 구매할 때 고려해야 할 점 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 그래픽카드 3개 성능 비교",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 구매 시 성능 비교를 통한 선택 가이드",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년형 노트북 실제 발열 후기",
+      "type": "revenue",
+      "intent": "노트북 구매 전 발열 문제에 대한 실제 사용자 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 선택하는 방법과 추천",
+      "type": "info",
+      "intent": "다양한 클라우드 저장소 서비스 선택 시 고려할 점과 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "500GB SSD와 1TB HDD 속도 비교",
+      "type": "info",
+      "intent": "SSD와 HDD 간의 실제 속도 차이 분석",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 트랙패드 리뷰와 비교",
+      "type": "revenue",
+      "intent": "최신 트랙패드 구매 시 제품 리뷰와 비교를 통한 선택 가이드",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적 키보드 추천 리스트",
+      "type": "revenue",
+      "intent": "재택근무 환경에 적합한 키보드 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3천원 이하 스마트폰 충전기 추천",
+      "type": "revenue",
+      "intent": "가격대비 성능 좋은 충전기를 찾는 소비자를 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "미니PC로 게이밍 가능한지 테스트 후기",
+      "type": "info",
+      "intent": "미니PC의 게이밍 성능에 대한 실제 테스트 결과",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "디지털 노마드용 필수 보조배터리 추천",
+      "type": "revenue",
+      "intent": "디지털 노마드 라이프에 필수적인 보조배터리 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 환경 세팅 필수 장비 추천",
+      "type": "revenue",
+      "intent": "효율적인 재택근무를 위한 필수 장비 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "8GB RAM과 16GB RAM 실제 성능 차이",
+      "type": "info",
+      "intent": "RAM 용량에 따른 실제 성능 차이를 탐색",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 정말 필요한 이유",
+      "type": "info",
+      "intent": "블루라이트 차단이 필요한 이유와 모니터 선택 시 고려 사항 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 차이점 분석",
+      "type": "info",
+      "intent": "기계식과 멤브레인 키보드의 차이점에 대한 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 자동화 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 업무 효율성 향상 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 교체 시기와 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 교체가 필요한 시기와 교체 방법 안내",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "노트북 배터리 수명 늘리는 팁 5가지",
+      "type": "info",
+      "intent": "노트북 배터리 관리와 수명 연장을 위한 팁 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
