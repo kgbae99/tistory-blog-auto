@@ -5174,5 +5174,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 208,
+    "title": "40대 여성 3개월 면역력 향상 후기와 영양제 추천 비교",
+    "keyword": "40대 여성 면역력 향상에 효과적인 영양제 추천 비교",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대면역력",
+      "면역력영양제추천",
+      "여성건강",
+      "오설록",
+      "트와이닝",
+      "담터",
+      "호두율무차",
+      "영양제비교",
+      "건강검진",
+      "면역력관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-05-31 08:04",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 209,
+    "title": "중년을 위한 혈관 건강을 지키기 위한 생활습관 7가지 실천법",
+    "keyword": "혈관 건강을 지키기 위한 생활습관 7가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈관건강",
+      "생활습관",
+      "심혈관질환예방",
+      "콜레스테롤관리",
+      "혈압관리",
+      "건강검진",
+      "중년건강",
+      "식단관리",
+      "운동루틴",
+      "자가관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-05-31 08:05",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
