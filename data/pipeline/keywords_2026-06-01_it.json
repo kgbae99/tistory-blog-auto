@@ -1,0 +1,315 @@
+{
+  "date": "2026-06-01",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 특정 가격대 제품 추천"
+    },
+    {
+      "keyword": "3만원대 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 사용 후기"
+    },
+    {
+      "keyword": "블루투스 스피커 음질 비교 2개",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교 후 결정"
+    },
+    {
+      "keyword": "재택근무 최적 노트북 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "10만원 이하 SSD 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 성능 비교 후 구매 결정"
+    },
+    {
+      "keyword": "휴대성 좋은 미니PC 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 이유 설명"
+    },
+    {
+      "keyword": "가성비 좋은 기계식 키보드 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "영화 감상용 모니터 3종 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교 후 결정"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 문제 해결 방법 리뷰"
+    },
+    {
+      "keyword": "출퇴근용 블루투스 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 사용 목적에 맞는 제품 추천"
+    },
+    {
+      "keyword": "무선 충전기 3개 실제 사용자 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 사용 후기"
+    },
+    {
+      "keyword": "4K 해상도 모니터 체감 차이 분석",
+      "type": "revenue",
+      "intent": "구매 의도 - 고해상도 제품 체감 차이 설명"
+    },
+    {
+      "keyword": "노트북 발열 심해지는 이유 및 해결 방법",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 문제 원인 및 해결 방법"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이 분석",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 제품 간 차이 설명"
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 속도 비교",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 기술적 차이 설명"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 사용 팁 제공"
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 있나요?",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 제품 효과 분석"
+    },
+    {
+      "keyword": "클라우드 스토리지 선택 기준 2023",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 선택 기준 제공"
+    },
+    {
+      "keyword": "AI 도구 사용해서 업무 효율 높이는 법",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 생산성 향상 방법"
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법과 필요성",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 업그레이드 방법 및 필요성 설명"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 특정 가격대 제품 추천"
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 속도 비교",
+      "post_type": "info",
+      "intent": "정보 탐색 의도 - 기술적 차이 설명"
+    },
+    {
+      "keyword": "3만원대 무선 마우스 사용 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 사용 후기"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 특정 가격대 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "3만원대 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 사용 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 속도 비교",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 기술적 차이 설명",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 음질 비교 2개",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교 후 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "10만원 이하 SSD 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 성능 비교 후 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "휴대성 좋은 미니PC 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 이유 설명",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "영화 감상용 모니터 3종 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교 후 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선 충전기 3개 실제 사용자 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 사용 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적 노트북 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 기계식 키보드 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "출퇴근용 블루투스 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 사용 목적에 맞는 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 해결 방법 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 문제 해결 방법 리뷰",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "4K 해상도 모니터 체감 차이 분석",
+      "type": "revenue",
+      "intent": "구매 의도 - 고해상도 제품 체감 차이 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 심해지는 이유 및 해결 방법",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 문제 원인 및 해결 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이 분석",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 제품 간 차이 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 사용 팁 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 사용해서 업무 효율 높이는 법",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 생산성 향상 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법과 필요성",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 업그레이드 방법 및 필요성 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 있나요?",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 제품 효과 분석",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "클라우드 스토리지 선택 기준 2023",
+      "type": "info",
+      "intent": "정보 탐색 의도 - 선택 기준 제공",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
