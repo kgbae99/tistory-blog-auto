@@ -5282,5 +5282,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 212,
+    "title": "40대 직장인 30일 피로 회복 영양제 추천 후기",
+    "keyword": "40대 직장인 피로 회복을 위한 영양제 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대",
+      "직장인",
+      "피로회복",
+      "영양제",
+      "후기",
+      "건강",
+      "웰빙",
+      "홈트",
+      "요가매트",
+      "영양제추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-02 08:38",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 213,
+    "title": "30대 직장인 5가지 불면증의 원인과 대처 방법",
+    "keyword": "불면증의 원인 5가지와 대처 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "불면증",
+      "수면장애",
+      "수면개선",
+      "불면증의 원인 5가지와 대처 방법",
+      "수면루틴",
+      "카페인",
+      "블루라이트",
+      "수면다원검사",
+      "건강보험",
+      "수면개선사례"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-02 08:39",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
