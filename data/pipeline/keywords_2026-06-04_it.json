@@ -1,0 +1,310 @@
+{
+  "date": "2026-06-04",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "4만원대 무선이어폰 추천 및 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 및 특장점 비교"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 사용 후기와 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기 및 추천"
+    },
+    {
+      "keyword": "블루투스 스피커 고르는 방법과 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 선택 방법 및 추천"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 사용 후기 및 타건감 비교"
+    },
+    {
+      "keyword": "무선 마우스 2만원대 추천 제품",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천 제품 정보"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 스펙 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 노트북 스펙 추천"
+    },
+    {
+      "keyword": "SSD 1TB 추천 및 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기 및 추천"
+    },
+    {
+      "keyword": "가성비 그래픽카드 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 성능 비교 및 추천"
+    },
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 방법",
+      "type": "revenue",
+      "intent": "구매 의도 - 배터리 사용 방법 및 구매 정보"
+    },
+    {
+      "keyword": "5만원대 스마트폰 충전기 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천 충전기"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 눈 건강을 위한 모니터 추천"
+    },
+    {
+      "keyword": "재택근무 최적화 마우스 키보드 세트",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 입력장치 세트 추천"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법 총정리",
+      "type": "info",
+      "intent": "탐색 의도 - 발열 문제 해결 방법"
+    },
+    {
+      "keyword": "SSD vs HDD 속도 차이 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 제품 간 성능 차이 분석"
+    },
+    {
+      "keyword": "기계식 키보드 청축 적축 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 키보드 축 차이 분석"
+    },
+    {
+      "keyword": "재택근무 효율 높이는 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 업무 생산성 증가를 위한 세팅 팁"
+    },
+    {
+      "keyword": "클라우드 서비스 활용 극대화 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 클라우드 서비스 활용법"
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "탐색 의도 - AI 도구 활용 팁"
+    },
+    {
+      "keyword": "모니터 해상도 선택 시 고려사항",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도 선택 시 고려해야 할 점"
+    },
+    {
+      "keyword": "보조배터리 수명 늘리는 사용법",
+      "type": "info",
+      "intent": "탐색 의도 - 배터리 수명 유지 팁"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "4만원대 무선이어폰 추천 및 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 추천 및 특장점 비교"
+    },
+    {
+      "keyword": "무선 마우스 2만원대 추천 제품",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천 제품 정보"
+    },
+    {
+      "keyword": "5만원대 스마트폰 충전기 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천 충전기"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "4만원대 무선이어폰 추천 및 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천 및 특장점 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 2만원대 추천 제품",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천 제품 정보",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 스마트폰 충전기 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 가격대별 추천 충전기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 고르는 방법과 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 선택 방법 및 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 타건감 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 사용 후기 및 타건감 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 그래픽카드 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 성능 비교 및 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 사용 후기와 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기 및 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 노트북 스펙 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 노트북 스펙 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD 1TB 추천 및 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기 및 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 눈 건강을 위한 모니터 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 오래 쓰는 방법",
+      "type": "revenue",
+      "intent": "구매 의도 - 배터리 사용 방법 및 구매 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 해결 방법 총정리",
+      "type": "info",
+      "intent": "탐색 의도 - 발열 문제 해결 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD vs HDD 속도 차이 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 제품 간 성능 차이 분석",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축 적축 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 키보드 축 차이 분석",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 높이는 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 업무 생산성 증가를 위한 세팅 팁",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 활용 극대화 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 클라우드 서비스 활용법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "탐색 의도 - AI 도구 활용 팁",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 선택 시 고려사항",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도 선택 시 고려해야 할 점",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "재택근무 최적화 마우스 키보드 세트",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무에 적합한 입력장치 세트 추천",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "보조배터리 수명 늘리는 사용법",
+      "type": "info",
+      "intent": "탐색 의도 - 배터리 수명 유지 팁",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
