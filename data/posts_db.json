@@ -5444,5 +5444,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 218,
+    "title": "3개월 4kg 감량한 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "다이어트 후기",
+      "홈트 추천",
+      "체중계 추천",
+      "요가매트 추천",
+      "건강검진",
+      "의료비 절감",
+      "영양제 비교",
+      "체지방 관리",
+      "쿠팡 추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-05 08:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 219,
+    "title": "스트레스가 수면의 질에 미치는 영향 5가지와 개선법",
+    "keyword": "스트레스가 수면의 질에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "스트레스",
+      "수면의질",
+      "불면증",
+      "수면개선",
+      "직장인건강",
+      "수면습관",
+      "인지행동치료",
+      "건강검진",
+      "불안관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-05 08:14",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
