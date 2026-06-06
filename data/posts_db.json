@@ -5551,5 +5551,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 222,
+    "title": "40대 남성 3개월 아연 영양제 복용 후기·면역력 향상",
+    "keyword": "40대 남성 면역력 증진을 위한 아연 영양제 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대남성",
+      "아연영양제",
+      "면역력증진",
+      "영양제추천",
+      "건강후기",
+      "수면개선",
+      "피부보습",
+      "건강검진",
+      "보건복지부앱",
+      "쿠팡추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-07 08:09",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 223,
+    "title": "30일면 변화! 면역력 강화에 도움이 되는 음식 5가지 방법",
+    "keyword": "면역력 강화에 도움이 되는 음식 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "건강식단",
+      "항산화",
+      "발효식품",
+      "베리류",
+      "견과류",
+      "면역식품추천",
+      "웰빙",
+      "건강관리",
+      "영양정보"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-07 08:10",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
