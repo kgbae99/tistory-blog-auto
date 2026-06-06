@@ -1,0 +1,319 @@
+{
+  "date": "2026-06-07",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 13,
+  "info_cnt": 7,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "무선이어폰 구매를 고민하는 소비자를 위해 가격대별 추천"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 가성비 비교 2024",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 제품 중 가성비를 중시하는 구매자 대상"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 후기",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 결정에 도움이 되는 실제 사용 후기"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 종류별 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드 타건감을 기준으로 제품 추천"
+    },
+    {
+      "keyword": "2만원대 무선 마우스 추천 이유",
+      "type": "revenue",
+      "intent": "저렴하고 성능 좋은 무선 마우스를 찾는 소비자 대상"
+    },
+    {
+      "keyword": "최신 노트북 3종 비교 2024",
+      "type": "revenue",
+      "intent": "다양한 최신 노트북의 성능 비교를 원하는 고객"
+    },
+    {
+      "keyword": "SSD 선택 방법 및 추천 제품",
+      "type": "revenue",
+      "intent": "SSD 구매 시 적합한 제품 선택 가이드"
+    },
+    {
+      "keyword": "그래픽카드 2024년 모델별 성능 후기",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 성능 평가를 통한 구매 도움"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리를 오래 사용하는 방법을 알고 싶은 사용자"
+    },
+    {
+      "keyword": "보조배터리 10000mAh 추천",
+      "type": "revenue",
+      "intent": "용량 대비 효율적인 보조배터리 제품 추천"
+    },
+    {
+      "keyword": "충전기 고장 원인 및 해결 방법",
+      "type": "info",
+      "intent": "충전기 문제 해결을 위한 원인 분석 정보 제공"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 2024",
+      "type": "revenue",
+      "intent": "눈 건강을 위해 블루라이트 차단 기능이 있는 모니터 추천"
+    },
+    {
+      "keyword": "해상도에 따른 모니터 성능 차이",
+      "type": "info",
+      "intent": "모니터 해상도가 성능에 미치는 영향 분석"
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "효율적인 재택근무 환경을 위한 필수 장비 추천"
+    },
+    {
+      "keyword": "클라우드 서비스 비교 및 추천 2024",
+      "type": "info",
+      "intent": "다양한 클라우드 서비스의 장단점 비교"
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "일상 업무에 AI 도구 활용 방법 제공"
+    },
+    {
+      "keyword": "트랙패드 사용 후기 및 추천 브랜드",
+      "type": "revenue",
+      "intent": "트랙패드 구매 전에 실제 사용 후기를 기반으로 한 추천"
+    },
+    {
+      "keyword": "미니PC 장단점 및 추천 제품",
+      "type": "revenue",
+      "intent": "미니PC를 선택할 때 고려해야 할 요소 및 추천 제품"
+    },
+    {
+      "keyword": "RAM 업그레이드 방법 및 비용",
+      "type": "info",
+      "intent": "컴퓨터 성능을 높이기 위한 RAM 업그레이드 정보 제공"
+    },
+    {
+      "keyword": "AI 기반 업무 도구 차이와 추천",
+      "type": "info",
+      "intent": "AI 도구 간의 기능 차이 분석 및 추천"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "2만원대 무선 마우스 추천 이유",
+      "post_type": "revenue",
+      "intent": "저렴하고 성능 좋은 무선 마우스를 찾는 소비자 대상"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 후기",
+      "post_type": "revenue",
+      "intent": "블루투스 스피커 구매 결정에 도움이 되는 실제 사용 후기"
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 이유",
+      "post_type": "revenue",
+      "intent": "무선이어폰 구매를 고민하는 소비자를 위해 가격대별 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "2만원대 무선 마우스 추천 이유",
+      "type": "revenue",
+      "intent": "저렴하고 성능 좋은 무선 마우스를 찾는 소비자 대상",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 후기",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 결정에 도움이 되는 실제 사용 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "무선이어폰 구매를 고민하는 소비자를 위해 가격대별 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 가성비 비교 2024",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 제품 중 가성비를 중시하는 구매자 대상",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 노트북 3종 비교 2024",
+      "type": "revenue",
+      "intent": "다양한 최신 노트북의 성능 비교를 원하는 고객",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "SSD 선택 방법 및 추천 제품",
+      "type": "revenue",
+      "intent": "SSD 구매 시 적합한 제품 선택 가이드",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 비교 및 추천 2024",
+      "type": "info",
+      "intent": "다양한 클라우드 서비스의 장단점 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 기반 업무 도구 차이와 추천",
+      "type": "info",
+      "intent": "AI 도구 간의 기능 차이 분석 및 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 타건감 종류별 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드 타건감을 기준으로 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 2024년 모델별 성능 후기",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 성능 평가를 통한 구매 도움",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 10000mAh 추천",
+      "type": "revenue",
+      "intent": "용량 대비 효율적인 보조배터리 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 2024",
+      "type": "revenue",
+      "intent": "눈 건강을 위해 블루라이트 차단 기능이 있는 모니터 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "효율적인 재택근무 환경을 위한 필수 장비 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "트랙패드 사용 후기 및 추천 브랜드",
+      "type": "revenue",
+      "intent": "트랙패드 구매 전에 실제 사용 후기를 기반으로 한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "미니PC 장단점 및 추천 제품",
+      "type": "revenue",
+      "intent": "미니PC를 선택할 때 고려해야 할 요소 및 추천 제품",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리를 오래 사용하는 방법을 알고 싶은 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "충전기 고장 원인 및 해결 방법",
+      "type": "info",
+      "intent": "충전기 문제 해결을 위한 원인 분석 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "해상도에 따른 모니터 성능 차이",
+      "type": "info",
+      "intent": "모니터 해상도가 성능에 미치는 영향 분석",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "일상 업무에 AI 도구 활용 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 방법 및 비용",
+      "type": "info",
+      "intent": "컴퓨터 성능을 높이기 위한 RAM 업그레이드 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
