@@ -5605,5 +5605,57 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 224,
+    "title": "40대 여성 3개월 루테인 영양제 효과 후기",
+    "keyword": "40대 여성 루테인 영양제 효과 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대건강",
+      "루테인",
+      "루테인영양제후기",
+      "눈건강",
+      "비타민C",
+      "황반",
+      "건강보조제",
+      "메가도스비타민C",
+      "KF94마스크"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-08 08:12",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 225,
+    "title": "비타민 B군 결핍이 초래하는 5가지 문제와 대처법",
+    "keyword": "비타민 B군 결핍이 초래하는 5가지 건강 문제",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민B군",
+      "비타민 결핍",
+      "신경병증",
+      "빈혈",
+      "영양검사",
+      "건강검진 비용",
+      "호모시스테인",
+      "임상사례",
+      "영양관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-08 08:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
