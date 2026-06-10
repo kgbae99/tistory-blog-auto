@@ -5657,5 +5657,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 226,
+    "title": "40대 여성 요가 매트 추천 5종 비교: 선택 기준과 후기 3개월 변화",
+    "keyword": "40대 여성 요가 매트 추천 5종 비교",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대여성",
+      "요가매트추천",
+      "요가매트비교",
+      "무릎보호",
+      "관절관리",
+      "홈요가",
+      "건강검진 비용",
+      "쿠팡추천",
+      "비타민C",
+      "KF94"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-11 08:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 227,
+    "title": "근력운동의 효과와 방법 5가지로 체력 회복하기",
+    "keyword": "근력운동의 효과와 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "근력운동",
+      "근성장",
+      "홈트루틴",
+      "중년체력회복",
+      "운동방법",
+      "운동효과",
+      "주기화",
+      "헬스루틴",
+      "가동성운동",
+      "건강검진"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-11 08:41",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
