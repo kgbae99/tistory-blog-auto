@@ -1,0 +1,320 @@
+{
+  "date": "2026-06-12",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자에게 특정 가격대의 제품을 추천"
+    },
+    {
+      "keyword": "재택근무용 무선 마우스 추천 이유",
+      "type": "revenue",
+      "intent": "재택근무 효율성을 높이기 위해 좋은 무선 마우스를 구매하려는 사용자"
+    },
+    {
+      "keyword": "블루투스 스피커 소리 비교 3만원 이하",
+      "type": "revenue",
+      "intent": "구매 전에 여러 제품의 음질을 비교하려는 사용자"
+    },
+    {
+      "keyword": "기계식 키보드 2023년 인기 제품 후기",
+      "type": "revenue",
+      "intent": "인기 있는 제품을 구매하려는 사용자에게 솔직한 후기 제공"
+    },
+    {
+      "keyword": "예산 100만원 노트북 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정 과정에서 예산에 맞는 노트북을 찾는 사용자"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 비교 직접 테스트",
+      "type": "revenue",
+      "intent": "구매 전에 두 저장 장치의 실제 성능을 비교하려는 사용자"
+    },
+    {
+      "keyword": "2023년 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매 시 배터리 성능을 중점적으로 보는 사용자"
+    },
+    {
+      "keyword": "모니터 해상도 차이 이유와 추천",
+      "type": "revenue",
+      "intent": "해상도에 따른 차이를 알고 적합한 모니터를 구매하려는 사용자"
+    },
+    {
+      "keyword": "최고의 클라우드 서비스 비교 2023",
+      "type": "revenue",
+      "intent": "클라우드 서비스를 선택하려는 사용자에게 맞춤형 정보 제공"
+    },
+    {
+      "keyword": "휴대용 보조배터리 용량 비교 2만원대",
+      "type": "revenue",
+      "intent": "가성비 좋은 보조배터리를 구매하려는 사용자"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 효능을 알고 구매하려는 사용자"
+    },
+    {
+      "keyword": "AI 도구로 생산성 높이는 방법",
+      "type": "revenue",
+      "intent": "AI 도구를 사용해 업무 효율을 높이려는 사용자"
+    },
+    {
+      "keyword": "SSD 발열 해결 방법과 효과",
+      "type": "info",
+      "intent": "SSD 사용 중 발열 문제를 해결하려는 사용자"
+    },
+    {
+      "keyword": "노트북 재부팅 이유와 해결 방법",
+      "type": "info",
+      "intent": "노트북의 잦은 재부팅 문제를 해결하려는 사용자"
+    },
+    {
+      "keyword": "무선이어폰 연결 끊김 문제 해결",
+      "type": "info",
+      "intent": "무선이어폰 사용 중 연결 문제가 있는 사용자"
+    },
+    {
+      "keyword": "블루투스 스피커 배터리 수명 늘리기",
+      "type": "info",
+      "intent": "블루투스 스피커의 배터리 수명을 늘리고자 하는 사용자"
+    },
+    {
+      "keyword": "기계식 키보드 청소 방법",
+      "type": "info",
+      "intent": "기계식 키보드를 올바르게 청소하려는 사용자"
+    },
+    {
+      "keyword": "RAM 부족 시 성능 영향과 해결책",
+      "type": "info",
+      "intent": "RAM 부족으로 인한 성능 저하를 해결하려는 사용자"
+    },
+    {
+      "keyword": "트랙패드 민감도 조절 방법",
+      "type": "info",
+      "intent": "트랙패드 사용 시 민감도 조절이 필요한 사용자"
+    },
+    {
+      "keyword": "미니PC로 홈서버 구축하는 방법",
+      "type": "info",
+      "intent": "미니PC를 활용해 홈서버를 구축하려는 사용자"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "휴대용 보조배터리 용량 비교 2만원대",
+      "post_type": "revenue",
+      "intent": "가성비 좋은 보조배터리를 구매하려는 사용자"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "post_type": "revenue",
+      "intent": "구매를 고려하는 사용자에게 특정 가격대의 제품을 추천"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 비교 직접 테스트",
+      "post_type": "revenue",
+      "intent": "구매 전에 두 저장 장치의 실제 성능을 비교하려는 사용자"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "휴대용 보조배터리 용량 비교 2만원대",
+      "type": "revenue",
+      "intent": "가성비 좋은 보조배터리를 구매하려는 사용자",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자에게 특정 가격대의 제품을 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 비교 직접 테스트",
+      "type": "revenue",
+      "intent": "구매 전에 두 저장 장치의 실제 성능을 비교하려는 사용자",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 차이 이유와 추천",
+      "type": "revenue",
+      "intent": "해상도에 따른 차이를 알고 적합한 모니터를 구매하려는 사용자",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무용 무선 마우스 추천 이유",
+      "type": "revenue",
+      "intent": "재택근무 효율성을 높이기 위해 좋은 무선 마우스를 구매하려는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 소리 비교 3만원 이하",
+      "type": "revenue",
+      "intent": "구매 전에 여러 제품의 음질을 비교하려는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "예산 100만원 노트북 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정 과정에서 예산에 맞는 노트북을 찾는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "2023년 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매 시 배터리 성능을 중점적으로 보는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최고의 클라우드 서비스 비교 2023",
+      "type": "revenue",
+      "intent": "클라우드 서비스를 선택하려는 사용자에게 맞춤형 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 2023년 인기 제품 후기",
+      "type": "revenue",
+      "intent": "인기 있는 제품을 구매하려는 사용자에게 솔직한 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 후기",
+      "type": "revenue",
+      "intent": "블루라이트 차단 효능을 알고 구매하려는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "AI 도구로 생산성 높이는 방법",
+      "type": "revenue",
+      "intent": "AI 도구를 사용해 업무 효율을 높이려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD 발열 해결 방법과 효과",
+      "type": "info",
+      "intent": "SSD 사용 중 발열 문제를 해결하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 재부팅 이유와 해결 방법",
+      "type": "info",
+      "intent": "노트북의 잦은 재부팅 문제를 해결하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 연결 끊김 문제 해결",
+      "type": "info",
+      "intent": "무선이어폰 사용 중 연결 문제가 있는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청소 방법",
+      "type": "info",
+      "intent": "기계식 키보드를 올바르게 청소하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 부족 시 성능 영향과 해결책",
+      "type": "info",
+      "intent": "RAM 부족으로 인한 성능 저하를 해결하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드 민감도 조절 방법",
+      "type": "info",
+      "intent": "트랙패드 사용 시 민감도 조절이 필요한 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "미니PC로 홈서버 구축하는 방법",
+      "type": "info",
+      "intent": "미니PC를 활용해 홈서버를 구축하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "블루투스 스피커 배터리 수명 늘리기",
+      "type": "info",
+      "intent": "블루투스 스피커의 배터리 수명을 늘리고자 하는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
