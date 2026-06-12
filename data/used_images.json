@@ -1606,11 +1606,18 @@
     "vitamin_03.jpg"
   ],
   "2026-06-13": [
+    "beauty_01.jpg",
     "diet_02.jpg",
     "diet_03.jpg",
     "diet_04.jpg",
+    "health_05.jpg",
+    "medical_01.jpg",
+    "medical_02.jpg",
+    "medical_03.jpg",
     "nature_01.jpg",
     "skin_01.jpg",
+    "skin_10.jpg",
+    "skin_11.jpg",
     "spring_01.jpg",
     "tech_01.jpg",
     "tech_02.jpg",
@@ -1620,6 +1627,7 @@
     "tech_09.jpg",
     "tech_19.jpg",
     "tech_20.jpg",
-    "tech_21.jpg"
+    "tech_21.jpg",
+    "tech_30.jpg"
   ]
 }
