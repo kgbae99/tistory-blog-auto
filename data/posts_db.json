@@ -5871,5 +5871,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 234,
+    "title": "30일 변화: 건강 영양제 추천으로 피로 회복한 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "비타민D",
+      "건강관리",
+      "체중계 추천",
+      "요가매트 추천",
+      "쿠팡 추천",
+      "피로회복",
+      "건강검진",
+      "영양제 선택법"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-15 08:14",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 235,
+    "title": "비타민 D 결핍으로 인한 면역력 저하 원인 5가지와 개선법",
+    "keyword": "비타민 D 결핍으로 인한 면역력 저하 원인 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민D",
+      "면역력저하",
+      "비타민 D 결핍으로 인한 면역력 저하 원인 5가지",
+      "비타민D검사",
+      "영양관리",
+      "건강검진 비용",
+      "면역력 개선",
+      "혈중25OH",
+      "비타민D섭취",
+      "건강&웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-15 08:15",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
