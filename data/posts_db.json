@@ -5925,5 +5925,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 236,
+    "title": "40대가 3개월에 체감한 건강 영양제 추천 5가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "중년 건강",
+      "건강 관리",
+      "체성분 측정",
+      "비타민 추천",
+      "영양제 선택법",
+      "홈트 보조",
+      "체중계 추천",
+      "요가매트 추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-16 08:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 237,
+    "title": "관절통의 주요 원인과 예방법 5가지: 6주 통증완화 후기",
+    "keyword": "관절통의 주요 원인과 예방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "관절통",
+      "관절통의 주요 원인과 예방법 5가지",
+      "무릎통증",
+      "관절 예방",
+      "관절 관리 루틴",
+      "근력 강화",
+      "정렬교정",
+      "관절 통증 사례",
+      "건강검진 비용",
+      "관절 영양"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-16 08:51",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
