@@ -1,0 +1,310 @@
+{
+  "date": "2026-06-20",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "4만원대 노이즈캔슬링 헤드셋 추천 이유",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사람들을 위한 추천"
+    },
+    {
+      "keyword": "무선 마우스 vs 트랙패드 6개월 사용 후기",
+      "type": "revenue",
+      "intent": "구매 결정에 도움이 되는 개인 사용 후기"
+    },
+    {
+      "keyword": "2023년 최신 미니PC 추천 목록",
+      "type": "revenue",
+      "intent": "최신 미니PC 구매를 고려하는 사람들을 위한 추천"
+    },
+    {
+      "keyword": "100만원 이하 노트북 추천 및 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 노트북을 찾고자 하는 고객을 위한 비교"
+    },
+    {
+      "keyword": "재택근무용 모니터 3종 비교",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 모니터 선택 가이드"
+    },
+    {
+      "keyword": "10만 원대 SSD 직접 사용 후기",
+      "type": "revenue",
+      "intent": "특정 예산 내 SSD 구매를 고민하는 사용자에게 실사용 후기 제공"
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 및 차이점",
+      "type": "revenue",
+      "intent": "가성비 좋은 블루투스 스피커 찾기"
+    },
+    {
+      "keyword": "2023년 인기 스마트폰 배터리 비교",
+      "type": "revenue",
+      "intent": "스마트폰 구매 시 배터리 성능 비교를 원하는 사람들"
+    },
+    {
+      "keyword": "재택근무 생산성 높이는 클라우드 도구 추천",
+      "type": "revenue",
+      "intent": "재택근무 중 생산성을 높이고자 하는 사람들을 위한 도구 추천"
+    },
+    {
+      "keyword": "가성비 좋은 무선이어폰 추천 후기",
+      "type": "revenue",
+      "intent": "무선이어폰 구매 시 가성비를 중시하는 소비자들"
+    },
+    {
+      "keyword": "2023년 최신 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 구매를 고려하는 고객을 위한 비교"
+    },
+    {
+      "keyword": "디스플레이 해상도 차이와 선택 가이드",
+      "type": "revenue",
+      "intent": "해상도 선택 시 고려사항을 알고자 하는 사용자"
+    },
+    {
+      "keyword": "노트북 발열 관리 방법과 효율성",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법을 찾는 사용자"
+    },
+    {
+      "keyword": "블루라이트 차단 효과와 필요성",
+      "type": "info",
+      "intent": "블루라이트 차단의 효과와 필요성을 이해하고자 하는 사용자"
+    },
+    {
+      "keyword": "기계식 키보드 소리 줄이는 방법",
+      "type": "info",
+      "intent": "기계식 키보드 사용 시 소음 줄이는 방법을 찾는 사용자"
+    },
+    {
+      "keyword": "보조배터리 사용 시 주의할 점",
+      "type": "info",
+      "intent": "보조배터리 사용 시 안전하게 사용하는 방법을 찾는 사용자"
+    },
+    {
+      "keyword": "RAM 용량 증가가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "RAM 업그레이드의 실제 효과를 알고 싶어하는 사용자"
+    },
+    {
+      "keyword": "스마트폰 충전기 선택 시 고려할 점",
+      "type": "info",
+      "intent": "충전기 구매 시 고려해야 할 점들을 알고자 하는 사용자"
+    },
+    {
+      "keyword": "2023년 AI 도구가 생산성에 미치는 영향",
+      "type": "info",
+      "intent": "AI 도구가 업무 효율성에 미치는 영향을 알고 싶어하는 사용자"
+    },
+    {
+      "keyword": "트랙패드 사용 촉감 개선 방법",
+      "type": "info",
+      "intent": "트랙패드 사용 시 촉감을 개선하고 싶은 사용자"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "4만원대 노이즈캔슬링 헤드셋 추천 이유",
+      "post_type": "revenue",
+      "intent": "구매를 고려하는 사람들을 위한 추천"
+    },
+    {
+      "keyword": "무선 마우스 vs 트랙패드 6개월 사용 후기",
+      "post_type": "revenue",
+      "intent": "구매 결정에 도움이 되는 개인 사용 후기"
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 및 차이점",
+      "post_type": "revenue",
+      "intent": "가성비 좋은 블루투스 스피커 찾기"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "4만원대 노이즈캔슬링 헤드셋 추천 이유",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사람들을 위한 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 vs 트랙패드 6개월 사용 후기",
+      "type": "revenue",
+      "intent": "구매 결정에 도움이 되는 개인 사용 후기",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 및 차이점",
+      "type": "revenue",
+      "intent": "가성비 좋은 블루투스 스피커 찾기",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "100만원 이하 노트북 추천 및 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 노트북을 찾고자 하는 고객을 위한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무용 모니터 3종 비교",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 모니터 선택 가이드",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "10만 원대 SSD 직접 사용 후기",
+      "type": "revenue",
+      "intent": "특정 예산 내 SSD 구매를 고민하는 사용자에게 실사용 후기 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "2023년 인기 스마트폰 배터리 비교",
+      "type": "revenue",
+      "intent": "스마트폰 구매 시 배터리 성능 비교를 원하는 사람들",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 생산성 높이는 클라우드 도구 추천",
+      "type": "revenue",
+      "intent": "재택근무 중 생산성을 높이고자 하는 사람들을 위한 도구 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 구매를 고려하는 고객을 위한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 미니PC 추천 목록",
+      "type": "revenue",
+      "intent": "최신 미니PC 구매를 고려하는 사람들을 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 무선이어폰 추천 후기",
+      "type": "revenue",
+      "intent": "무선이어폰 구매 시 가성비를 중시하는 소비자들",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "디스플레이 해상도 차이와 선택 가이드",
+      "type": "revenue",
+      "intent": "해상도 선택 시 고려사항을 알고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 관리 방법과 효율성",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법을 찾는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 소리 줄이는 방법",
+      "type": "info",
+      "intent": "기계식 키보드 사용 시 소음 줄이는 방법을 찾는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드 사용 촉감 개선 방법",
+      "type": "info",
+      "intent": "트랙패드 사용 시 촉감을 개선하고 싶은 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 효과와 필요성",
+      "type": "info",
+      "intent": "블루라이트 차단의 효과와 필요성을 이해하고자 하는 사용자",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "스마트폰 충전기 선택 시 고려할 점",
+      "type": "info",
+      "intent": "충전기 구매 시 고려해야 할 점들을 알고자 하는 사용자",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "보조배터리 사용 시 주의할 점",
+      "type": "info",
+      "intent": "보조배터리 사용 시 안전하게 사용하는 방법을 찾는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "RAM 용량 증가가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "RAM 업그레이드의 실제 효과를 알고 싶어하는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "2023년 AI 도구가 생산성에 미치는 영향",
+      "type": "info",
+      "intent": "AI 도구가 업무 효율성에 미치는 영향을 알고 싶어하는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
