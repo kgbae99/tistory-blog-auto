@@ -1,0 +1,321 @@
+{
+  "date": "2026-06-21",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 무선 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "2023년 최신 블루투스 스피커 인기 제품 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 장단점 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "10만원 이하 게이밍 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "재택근무 효율 올리는 모니터 설정 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "2023년 노트북 최고 가성비 모델 선정 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "외장 SSD와 내장 SSD 속도 차이 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "2023년 스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "20만원대 미니PC 가성비 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "무선 트랙패드 사용기, 실제 편리성 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "8K 해상도 모니터 설정 제대로 하는 법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "RAM 업그레이드 전후 속도 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "5만원대 블루투스 헤드셋 추천 제품 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "그래픽카드 성능과 가격비교 이유 있는 선택",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결을 위한 5가지 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "클라우드 스토리지 서비스 비용 비교 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 생산성 향상 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "2023년 보조배터리 고르는 기준과 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "충전기 과열 문제를 예방하는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 블루투스 헤드셋 추천 제품 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "5만원대 무선 노이즈캔슬링 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "20만원대 미니PC 가성비 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 블루투스 헤드셋 추천 제품 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 무선 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "20만원대 미니PC 가성비 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능과 가격비교 이유 있는 선택",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 블루투스 스피커 인기 제품 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 장단점 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "외장 SSD와 내장 SSD 속도 차이 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선 트랙패드 사용기, 실제 편리성 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 전후 속도 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 스토리지 서비스 비용 비교 분석",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "10만원 이하 게이밍 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결을 위한 5가지 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 생산성 향상 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 보조배터리 고르는 기준과 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 올리는 모니터 설정 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "2023년 노트북 최고 가성비 모델 선정 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "2023년 스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "충전기 과열 문제를 예방하는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "8K 해상도 모니터 설정 제대로 하는 법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
