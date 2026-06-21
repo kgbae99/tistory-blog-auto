@@ -6195,5 +6195,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 246,
+    "title": "3개월 먹어봤더니 비타민D 효과 후기: 변화 4가지",
+    "keyword": "3개월 먹어봤더니 비타민D 효과 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민D",
+      "비타민D후기",
+      "3개월후기",
+      "건강검진",
+      "영양제추천",
+      "체중계추천",
+      "홈헬스",
+      "혈중수치",
+      "건강관리",
+      "영양흡수"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-22 08:21",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 247,
+    "title": "여성의 생리주기 1달에 증상 30% 개선한 마그네슘 이유",
+    "keyword": "여성의 생리주기와 마그네슘의 관계",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "여성건강",
+      "생리주기",
+      "마그네슘",
+      "월경통",
+      "영양관리",
+      "생리통완화",
+      "건강검진",
+      "PMS",
+      "식단관리",
+      "수치분석"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-22 08:22",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
