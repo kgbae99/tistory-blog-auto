@@ -6303,5 +6303,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 250,
+    "title": "40대 여성 3개월 5kg 건강한 저탄고지 레시피 추천",
+    "keyword": "40대 여성 건강한 저탄고지 레시피 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대여성",
+      "저탄고지레시피",
+      "건강한다이어트",
+      "저탄고지추천",
+      "홈트",
+      "요가매트",
+      "비타민추천",
+      "체중감량후기",
+      "건강검진",
+      "대사개선"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-24 08:12",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 251,
+    "title": "3개월 5kg 감량: 저탄고지 식단 이유 분석",
+    "keyword": "저탄고지 식단으로 체중 감량 효과 나타나는 이유",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "저탄고지",
+      "체중감량",
+      "다이어트이유",
+      "케토",
+      "영양학",
+      "체지방감소",
+      "식단관리",
+      "건강검진",
+      "식이조절"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-24 08:14",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
