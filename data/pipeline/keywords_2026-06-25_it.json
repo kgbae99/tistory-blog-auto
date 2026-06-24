@@ -1,0 +1,317 @@
+{
+  "date": "2026-06-25",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 10,
+  "info_cnt": 10,
+  "all_keywords": [
+    {
+      "keyword": "10만원대 노이즈캔슬링 헤드셋 추천 리스트",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "무선 마우스 배터리 교체 간단한 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 방법"
+    },
+    {
+      "keyword": "블루투스 스피커 인기 모델 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 비교/후기"
+    },
+    {
+      "keyword": "2023년 모니터 해상도 선택 가이드",
+      "type": "info",
+      "intent": "정보 탐색 - 방법"
+    },
+    {
+      "keyword": "5만원대 기계식 키보드 구매 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "3개월 사용한 스마트폰 배터리 성능 저하 이유",
+      "type": "info",
+      "intent": "정보 탐색 - 원인"
+    },
+    {
+      "keyword": "직접 써본 무선이어폰 가장 좋은 제품 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 세팅 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 방법"
+    },
+    {
+      "keyword": "2023년 최신 SSD와 HDD 속도 비교",
+      "type": "info",
+      "intent": "정보 탐색 - 차이"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 위한 팁",
+      "type": "info",
+      "intent": "정보 탐색 - 방법"
+    },
+    {
+      "keyword": "30만원대 미니PC 성능후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "차세대 그래픽카드 출시 일정 및 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 비교"
+    },
+    {
+      "keyword": "RAM 업그레이드가 필요한 5가지 이유",
+      "type": "info",
+      "intent": "정보 탐색 - 이유"
+    },
+    {
+      "keyword": "클라우드 서비스 1년 사용 후 추천 순위",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 효율화 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 방법"
+    },
+    {
+      "keyword": "충전기 선택 시 고려할 점과 추천 제품",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "보조배터리 오래 사용하는 팁 5가지",
+      "type": "info",
+      "intent": "정보 탐색 - 방법"
+    },
+    {
+      "keyword": "5만원 이하 블루라이트 차단 모니터 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "노트북 선택 시 고려해야 할 해상도 차이",
+      "type": "info",
+      "intent": "정보 탐색 - 차이"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 직접 비교해봤어요",
+      "type": "revenue",
+      "intent": "구매 의도 - 비교"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "10만원대 노이즈캔슬링 헤드셋 추천 리스트",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "5만원대 기계식 키보드 구매 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    },
+    {
+      "keyword": "30만원대 미니PC 성능후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 후기"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "10만원대 노이즈캔슬링 헤드셋 추천 리스트",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 기계식 키보드 구매 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "30만원대 미니PC 성능후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 직접 비교해봤어요",
+      "type": "revenue",
+      "intent": "구매 의도 - 비교",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 인기 모델 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 비교/후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "직접 써본 무선이어폰 가장 좋은 제품 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 SSD와 HDD 속도 비교",
+      "type": "info",
+      "intent": "정보 탐색 - 차이",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "차세대 그래픽카드 출시 일정 및 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "3개월 사용한 스마트폰 배터리 성능 저하 이유",
+      "type": "info",
+      "intent": "정보 탐색 - 원인",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드가 필요한 5가지 이유",
+      "type": "info",
+      "intent": "정보 탐색 - 이유",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 1년 사용 후 추천 순위",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "충전기 선택 시 고려할 점과 추천 제품",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 블루라이트 차단 모니터 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 배터리 교체 간단한 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 세팅 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 위한 팁",
+      "type": "info",
+      "intent": "정보 탐색 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 업무 효율화 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 선택 시 고려해야 할 해상도 차이",
+      "type": "info",
+      "intent": "정보 탐색 - 차이",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 모니터 해상도 선택 가이드",
+      "type": "info",
+      "intent": "정보 탐색 - 방법",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "보조배터리 오래 사용하는 팁 5가지",
+      "type": "info",
+      "intent": "정보 탐색 - 방법",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
