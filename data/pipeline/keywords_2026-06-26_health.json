@@ -1,0 +1,310 @@
+{
+  "date": "2026-06-26",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 10,
+  "info_cnt": 10,
+  "all_keywords": [
+    {
+      "keyword": "40대 여성에게 추천하는 오메가3 영양제 비교",
+      "type": "revenue",
+      "intent": "오메가3 영양제 구매를 위한 비교 정보 제공"
+    },
+    {
+      "keyword": "2주 만에 체중 감량 가능 간헐적 단식 방법",
+      "type": "info",
+      "intent": "빠른 체중 감량을 위한 간헐적 단식 방법 분석"
+    },
+    {
+      "keyword": "갱년기 여성에게 필요한 비타민D 보충제 추천",
+      "type": "revenue",
+      "intent": "갱년기 여성의 건강을 위한 비타민D 구매 정보 제공"
+    },
+    {
+      "keyword": "저탄고지 다이어트로 5kg 감량 후기",
+      "type": "info",
+      "intent": "저탄고지 다이어트를 통한 체중 감량 경험 공유"
+    },
+    {
+      "keyword": "직장인 만성피로 해결 위한 유산균 추천",
+      "type": "revenue",
+      "intent": "직장인의 만성피로 완화를 위한 유산균 제품 추천"
+    },
+    {
+      "keyword": "50대 남성 무릎 통증 완화 영양제 추천",
+      "type": "revenue",
+      "intent": "무릎 통증 완화를 위한 영양제 제품 정보 제공"
+    },
+    {
+      "keyword": "스트레스성 탈모 예방 위한 방법",
+      "type": "info",
+      "intent": "탈모 예방을 위한 스트레스 관리 및 기타 방법 탐색"
+    },
+    {
+      "keyword": "3개월 동안 체지방 감소하는 운동법",
+      "type": "info",
+      "intent": "체지방 감소를 위한 효과적인 운동 방법 소개"
+    },
+    {
+      "keyword": "허리 통증 완화에 좋은 보조제 추천 비교",
+      "type": "revenue",
+      "intent": "허리 통증 완화 보조제의 성능 비교 및 추천"
+    },
+    {
+      "keyword": "공복혈당 수치 낮추는 4주 식단 계획",
+      "type": "info",
+      "intent": "공복혈당 관리에 효과적인 식단 계획 제공"
+    },
+    {
+      "keyword": "50대 여성 맞춤 철분 보충제 추천",
+      "type": "revenue",
+      "intent": "50대 여성 건강을 위한 철분 보충제 추천"
+    },
+    {
+      "keyword": "과민성 대장 증상 완화 유산균 3종 후기",
+      "type": "revenue",
+      "intent": "과민성 대장 증상 완화에 도움 되는 유산균 제품 후기"
+    },
+    {
+      "keyword": "갱년기 수면 장애 개선 위한 코엔자임Q10 추천",
+      "type": "revenue",
+      "intent": "갱년기 수면 장애 완화를 위한 코엔자임Q10 추천"
+    },
+    {
+      "keyword": "2주 만에 복부지방 감소하는 다이어트 식품",
+      "type": "revenue",
+      "intent": "복부지방 감소를 돕는 다이어트 식품 정보 제공"
+    },
+    {
+      "keyword": "장누수 증후군 생기는 이유와 치료 방법",
+      "type": "info",
+      "intent": "장누수 증후군의 원인과 치료 방법 설명"
+    },
+    {
+      "keyword": "콜라겐 보충으로 피부 건조 개선 가능한가?",
+      "type": "info",
+      "intent": "콜라겐 보충의 피부 건조 개선 효과에 대한 탐구"
+    },
+    {
+      "keyword": "혈당 스파이크 방지하는 50대 남성 식단",
+      "type": "info",
+      "intent": "혈당 스파이크 예방을 위한 식단 가이드 라인 제공"
+    },
+    {
+      "keyword": "갱년기 복부비만 잡는 3개월 운동 계획",
+      "type": "info",
+      "intent": "갱년기 복부비만 해소를 위한 운동 계획 제공"
+    },
+    {
+      "keyword": "관절염 완화에 좋은 비타민D 보충제 추천",
+      "type": "revenue",
+      "intent": "관절염 증상 완화를 위한 비타민D 보충제 정보 제공"
+    },
+    {
+      "keyword": "2주간 불면증 해결을 위한 생활 습관",
+      "type": "info",
+      "intent": "불면증 해소를 위한 생활 습관 변화 방법 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "40대 여성에게 추천하는 오메가3 영양제 비교",
+      "post_type": "revenue",
+      "intent": "오메가3 영양제 구매를 위한 비교 정보 제공"
+    },
+    {
+      "keyword": "직장인 만성피로 해결 위한 유산균 추천",
+      "post_type": "revenue",
+      "intent": "직장인의 만성피로 완화를 위한 유산균 제품 추천"
+    },
+    {
+      "keyword": "갱년기 수면 장애 개선 위한 코엔자임Q10 추천",
+      "post_type": "revenue",
+      "intent": "갱년기 수면 장애 완화를 위한 코엔자임Q10 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "40대 여성에게 추천하는 오메가3 영양제 비교",
+      "type": "revenue",
+      "intent": "오메가3 영양제 구매를 위한 비교 정보 제공",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "직장인 만성피로 해결 위한 유산균 추천",
+      "type": "revenue",
+      "intent": "직장인의 만성피로 완화를 위한 유산균 제품 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "갱년기 수면 장애 개선 위한 코엔자임Q10 추천",
+      "type": "revenue",
+      "intent": "갱년기 수면 장애 완화를 위한 코엔자임Q10 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성에게 필요한 비타민D 보충제 추천",
+      "type": "revenue",
+      "intent": "갱년기 여성의 건강을 위한 비타민D 구매 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "저탄고지 다이어트로 5kg 감량 후기",
+      "type": "info",
+      "intent": "저탄고지 다이어트를 통한 체중 감량 경험 공유",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50대 남성 무릎 통증 완화 영양제 추천",
+      "type": "revenue",
+      "intent": "무릎 통증 완화를 위한 영양제 제품 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 여성 맞춤 철분 보충제 추천",
+      "type": "revenue",
+      "intent": "50대 여성 건강을 위한 철분 보충제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "허리 통증 완화에 좋은 보조제 추천 비교",
+      "type": "revenue",
+      "intent": "허리 통증 완화 보조제의 성능 비교 및 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "과민성 대장 증상 완화 유산균 3종 후기",
+      "type": "revenue",
+      "intent": "과민성 대장 증상 완화에 도움 되는 유산균 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "관절염 완화에 좋은 비타민D 보충제 추천",
+      "type": "revenue",
+      "intent": "관절염 증상 완화를 위한 비타민D 보충제 정보 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2주 만에 체중 감량 가능 간헐적 단식 방법",
+      "type": "info",
+      "intent": "빠른 체중 감량을 위한 간헐적 단식 방법 분석",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스트레스성 탈모 예방 위한 방법",
+      "type": "info",
+      "intent": "탈모 예방을 위한 스트레스 관리 및 기타 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "공복혈당 수치 낮추는 4주 식단 계획",
+      "type": "info",
+      "intent": "공복혈당 관리에 효과적인 식단 계획 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "장누수 증후군 생기는 이유와 치료 방법",
+      "type": "info",
+      "intent": "장누수 증후군의 원인과 치료 방법 설명",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "콜라겐 보충으로 피부 건조 개선 가능한가?",
+      "type": "info",
+      "intent": "콜라겐 보충의 피부 건조 개선 효과에 대한 탐구",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "2주간 불면증 해결을 위한 생활 습관",
+      "type": "info",
+      "intent": "불면증 해소를 위한 생활 습관 변화 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "3개월 동안 체지방 감소하는 운동법",
+      "type": "info",
+      "intent": "체지방 감소를 위한 효과적인 운동 방법 소개",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "2주 만에 복부지방 감소하는 다이어트 식품",
+      "type": "revenue",
+      "intent": "복부지방 감소를 돕는 다이어트 식품 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "혈당 스파이크 방지하는 50대 남성 식단",
+      "type": "info",
+      "intent": "혈당 스파이크 예방을 위한 식단 가이드 라인 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "갱년기 복부비만 잡는 3개월 운동 계획",
+      "type": "info",
+      "intent": "갱년기 복부비만 해소를 위한 운동 계획 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
