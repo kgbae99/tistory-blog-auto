@@ -6410,5 +6410,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 254,
+    "title": "30일 3kg 감량 도운 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체중 감량",
+      "비타민D",
+      "영양제 선택법",
+      "홈트 도구",
+      "체중계 추천",
+      "요가매트 추천",
+      "건강검진 비용"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-27 08:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 255,
+    "title": "자외선 차단이 피부 노화에 미치는 영향 5가지와 실전 대처법",
+    "keyword": "자외선 차단이 피부 노화에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "자외선",
+      "피부노화",
+      "자외선차단",
+      "광노화",
+      "기미관리",
+      "항산화관리",
+      "피부관리팁",
+      "건강검진",
+      "피부톤개선",
+      "자외선예방"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-27 08:14",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
