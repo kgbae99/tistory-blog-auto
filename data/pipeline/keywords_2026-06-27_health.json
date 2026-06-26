@@ -1,0 +1,320 @@
+{
+  "date": "2026-06-27",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "40대 직장인 비타민D 영양제 추천 5가지",
+      "type": "revenue",
+      "intent": "비타민D 영양제를 구매하려는 40대 직장인을 위한 추천 목록"
+    },
+    {
+      "keyword": "갱년기 여성 오메가3 보충제 비교 및 리뷰",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 적합한 오메가3 보충제 비교"
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 5kg 감량 후기",
+      "type": "revenue",
+      "intent": "효과적인 체중 감량을 위한 단백질 보충제 후기"
+    },
+    {
+      "keyword": "50대 남성 마그네슘 영양제 추천 및 구매 가이드",
+      "type": "revenue",
+      "intent": "마그네슘 영양제를 찾는 50대 남성을 위한 구매 가이드"
+    },
+    {
+      "keyword": "비건 유산균 제품 비교 가격 및 성분",
+      "type": "revenue",
+      "intent": "비건 라이프스타일을 위한 유산균 제품 비교 및 구매 정보"
+    },
+    {
+      "keyword": "저렴한 콜라겐 보충제 3개월 효능 후기",
+      "type": "revenue",
+      "intent": "효과적인 콜라겐 보충제를 찾는 소비자를 위한 후기"
+    },
+    {
+      "keyword": "철분 영양제 복용 후기 및 추천 제품",
+      "type": "revenue",
+      "intent": "철분 결핍 문제 해결을 위한 영양제 추천 및 후기"
+    },
+    {
+      "keyword": "코엔자임Q10 효과 좋은 보조제 추천",
+      "type": "revenue",
+      "intent": "코엔자임Q10 보조제 구매를 고려하는 사람들을 위한 추천 정보"
+    },
+    {
+      "keyword": "아연 영양제 면역력 증가 후기",
+      "type": "revenue",
+      "intent": "면역력 향상을 목적으로 아연 영양제 후기를 찾는 사람들을 위한 정보"
+    },
+    {
+      "keyword": "직장인 필수 오메가3 영양제 추천",
+      "type": "revenue",
+      "intent": "바쁜 직장인을 위한 필수 오메가3 영양제 추천"
+    },
+    {
+      "keyword": "유산균 효과 장누수 증상 완화 후기",
+      "type": "revenue",
+      "intent": "장 건강 개선을 위한 유산균 효능 및 후기"
+    },
+    {
+      "keyword": "헬스용 체지방 감량 보충제 추천",
+      "type": "revenue",
+      "intent": "체지방 감량을 목표로 하는 헬스인을 위한 보충제 추천"
+    },
+    {
+      "keyword": "공복 혈당 높아지는 이유와 해결 방법",
+      "type": "info",
+      "intent": "공복 혈당이 높아지는 이유와 이를 해결하는 방법"
+    },
+    {
+      "keyword": "갱년기 여성 체중 증가 원인 및 대처법",
+      "type": "info",
+      "intent": "갱년기 여성의 체중 증가 원인과 대처 방법에 대한 정보"
+    },
+    {
+      "keyword": "수면 장애 개선을 위한 자연 요법 5가지",
+      "type": "info",
+      "intent": "수면 장애를 자연적으로 개선하기 위한 방법 설명"
+    },
+    {
+      "keyword": "고혈압 환자 저염 식단 관리 방법",
+      "type": "info",
+      "intent": "고혈압 환자를 위한 저염 식단 관리 방법"
+    },
+    {
+      "keyword": "장 건강에 좋은 식품과 나쁜 식품 비교",
+      "type": "info",
+      "intent": "장 건강에 유익한 식품과 해로운 식품의 비교"
+    },
+    {
+      "keyword": "허리 통증 완화 스트레칭 2주 프로그램",
+      "type": "info",
+      "intent": "허리 통증 완화를 위한 2주 스트레칭 프로그램"
+    },
+    {
+      "keyword": "저탄고지 다이어트 실패 원인과 극복법",
+      "type": "info",
+      "intent": "저탄고지 다이어트 실패의 원인과 극복 방법"
+    },
+    {
+      "keyword": "근감소증 예방을 위한 운동 방법",
+      "type": "info",
+      "intent": "근감소증 예방에 효과적인 운동 방법에 대한 정보"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "40대 직장인 비타민D 영양제 추천 5가지",
+      "post_type": "revenue",
+      "intent": "비타민D 영양제를 구매하려는 40대 직장인을 위한 추천 목록"
+    },
+    {
+      "keyword": "갱년기 여성 오메가3 보충제 비교 및 리뷰",
+      "post_type": "revenue",
+      "intent": "갱년기 여성에게 적합한 오메가3 보충제 비교"
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 5kg 감량 후기",
+      "post_type": "revenue",
+      "intent": "효과적인 체중 감량을 위한 단백질 보충제 후기"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "40대 직장인 비타민D 영양제 추천 5가지",
+      "type": "revenue",
+      "intent": "비타민D 영양제를 구매하려는 40대 직장인을 위한 추천 목록",
+      "score": 7,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 오메가3 보충제 비교 및 리뷰",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 적합한 오메가3 보충제 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 5kg 감량 후기",
+      "type": "revenue",
+      "intent": "효과적인 체중 감량을 위한 단백질 보충제 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50대 남성 마그네슘 영양제 추천 및 구매 가이드",
+      "type": "revenue",
+      "intent": "마그네슘 영양제를 찾는 50대 남성을 위한 구매 가이드",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "저렴한 콜라겐 보충제 3개월 효능 후기",
+      "type": "revenue",
+      "intent": "효과적인 콜라겐 보충제를 찾는 소비자를 위한 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "직장인 필수 오메가3 영양제 추천",
+      "type": "revenue",
+      "intent": "바쁜 직장인을 위한 필수 오메가3 영양제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "비건 유산균 제품 비교 가격 및 성분",
+      "type": "revenue",
+      "intent": "비건 라이프스타일을 위한 유산균 제품 비교 및 구매 정보",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "장 건강에 좋은 식품과 나쁜 식품 비교",
+      "type": "info",
+      "intent": "장 건강에 유익한 식품과 해로운 식품의 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "철분 영양제 복용 후기 및 추천 제품",
+      "type": "revenue",
+      "intent": "철분 결핍 문제 해결을 위한 영양제 추천 및 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "코엔자임Q10 효과 좋은 보조제 추천",
+      "type": "revenue",
+      "intent": "코엔자임Q10 보조제 구매를 고려하는 사람들을 위한 추천 정보",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "아연 영양제 면역력 증가 후기",
+      "type": "revenue",
+      "intent": "면역력 향상을 목적으로 아연 영양제 후기를 찾는 사람들을 위한 정보",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "유산균 효과 장누수 증상 완화 후기",
+      "type": "revenue",
+      "intent": "장 건강 개선을 위한 유산균 효능 및 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "헬스용 체지방 감량 보충제 추천",
+      "type": "revenue",
+      "intent": "체지방 감량을 목표로 하는 헬스인을 위한 보충제 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 체중 증가 원인 및 대처법",
+      "type": "info",
+      "intent": "갱년기 여성의 체중 증가 원인과 대처 방법에 대한 정보",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "수면 장애 개선을 위한 자연 요법 5가지",
+      "type": "info",
+      "intent": "수면 장애를 자연적으로 개선하기 위한 방법 설명",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "공복 혈당 높아지는 이유와 해결 방법",
+      "type": "info",
+      "intent": "공복 혈당이 높아지는 이유와 이를 해결하는 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "고혈압 환자 저염 식단 관리 방법",
+      "type": "info",
+      "intent": "고혈압 환자를 위한 저염 식단 관리 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "저탄고지 다이어트 실패 원인과 극복법",
+      "type": "info",
+      "intent": "저탄고지 다이어트 실패의 원인과 극복 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "근감소증 예방을 위한 운동 방법",
+      "type": "info",
+      "intent": "근감소증 예방에 효과적인 운동 방법에 대한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "허리 통증 완화 스트레칭 2주 프로그램",
+      "type": "info",
+      "intent": "허리 통증 완화를 위한 2주 스트레칭 프로그램",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
