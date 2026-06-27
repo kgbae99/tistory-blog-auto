@@ -6463,5 +6463,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 256,
+    "title": "3개월 5kg 감량을 위한 건강 영양제 추천",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중관리",
+      "체중계 추천",
+      "요가매트",
+      "다이어트 후기",
+      "홈트",
+      "건강도구",
+      "영양보충",
+      "건강검진",
+      "의료비절감"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-28 08:08",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 257,
+    "title": "3개월 혈관 개선 후기: 꼭 알아야 할 5가지 음식",
+    "keyword": "혈관 건강을 위해 꼭 알아야 할 음식 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈관건강",
+      "심혈관",
+      "콜레스테롤관리",
+      "오메가3",
+      "항산화식품",
+      "건강식단",
+      "고혈압예방",
+      "건강검진",
+      "생활습관개선"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-28 08:10",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
