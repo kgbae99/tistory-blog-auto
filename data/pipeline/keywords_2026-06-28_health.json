@@ -1,0 +1,317 @@
+{
+  "date": "2026-06-28",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "50대 여성 비타민D 영양제 추천 비교",
+      "type": "revenue",
+      "intent": "50대 여성에게 적합한 비타민D 영양제를 추천하기 위한 정보"
+    },
+    {
+      "keyword": "갱년기 여성 오메가3 복용 후기 3개월",
+      "type": "revenue",
+      "intent": "갱년기 여성이 3개월간 오메가3를 복용한 후기에 대한 정보"
+    },
+    {
+      "keyword": "직장인 피로 회복제 추천 5가지",
+      "type": "revenue",
+      "intent": "피로가 많은 직장인을 위한 피로 회복제 추천"
+    },
+    {
+      "keyword": "40대 남성 무릎 통증 보조제 비교",
+      "type": "revenue",
+      "intent": "40대 남성을 위한 무릎 통증 완화 보조제 비교"
+    },
+    {
+      "keyword": "저탄고지 다이어트 단백질 보충제 추천",
+      "type": "revenue",
+      "intent": "저탄고지 다이어트에 적합한 단백질 보충제를 추천"
+    },
+    {
+      "keyword": "50대 갱년기 여성 철분 영양제 후기",
+      "type": "revenue",
+      "intent": "50대 여성의 철분 영양제 복용 후기에 대한 정보"
+    },
+    {
+      "keyword": "공복혈당 조절 오메가3 제품 추천",
+      "type": "revenue",
+      "intent": "공복혈당 조절에 도움을 주는 오메가3 제품 추천"
+    },
+    {
+      "keyword": "고혈압에 좋은 유산균 추천 3가지",
+      "type": "revenue",
+      "intent": "고혈압에 효과적인 유산균 제품 추천"
+    },
+    {
+      "keyword": "피부 건조에 좋은 콜라겐 영양제 후기",
+      "type": "revenue",
+      "intent": "피부 건조를 개선하기 위한 콜라겐 영양제 후기"
+    },
+    {
+      "keyword": "스트레스성 탈모 치료제 2개월 후기",
+      "type": "revenue",
+      "intent": "스트레스성 탈모를 위한 치료제 2개월 사용 후기"
+    },
+    {
+      "keyword": "50대 남성 근감소증 보조제 추천",
+      "type": "revenue",
+      "intent": "50대 남성을 위한 근감소증 보조제 추천"
+    },
+    {
+      "keyword": "다이어트 체지방 감소 보충제 효과",
+      "type": "revenue",
+      "intent": "체지방 감소에 효과적인 다이어트 보충제 정보"
+    },
+    {
+      "keyword": "간헐적 단식 체중 감량 방법 2주",
+      "type": "info",
+      "intent": "간헐적 단식으로 2주간 체중 감량 방법에 대한 정보"
+    },
+    {
+      "keyword": "과민성 대장 증후군 원인과 해결 방법",
+      "type": "info",
+      "intent": "과민성 대장 증후군의 원인과 해결 방법에 대한 정보"
+    },
+    {
+      "keyword": "고혈압에 영향 미치는 식습관 변화",
+      "type": "info",
+      "intent": "고혈압 관리에 도움을 줄 수 있는 식습관 변화 방법"
+    },
+    {
+      "keyword": "갱년기 여성 수면 장애 원인과 해결책",
+      "type": "info",
+      "intent": "갱년기 여성의 수면 장애 원인과 해결책에 대한 정보"
+    },
+    {
+      "keyword": "체중 감량에 효과적인 운동 방법 30분",
+      "type": "info",
+      "intent": "하루 30분 체중 감량에 효과적인 운동 방법"
+    },
+    {
+      "keyword": "혈당 스파이크 낮추는 음식 5가지",
+      "type": "info",
+      "intent": "혈당 스파이크를 낮추는 데 도움이 되는 음식 정보"
+    },
+    {
+      "keyword": "변비 해소 위한 식습관 및 운동 방법",
+      "type": "info",
+      "intent": "변비 해소를 위한 식습관 및 운동 방법에 대한 정보"
+    },
+    {
+      "keyword": "수면 장애 극복을 위한 생활습관 변화",
+      "type": "info",
+      "intent": "수면 장애 극복을 위한 생활습관 변화 방법"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "갱년기 여성 오메가3 복용 후기 3개월",
+      "post_type": "revenue",
+      "intent": "갱년기 여성이 3개월간 오메가3를 복용한 후기에 대한 정보"
+    },
+    {
+      "keyword": "직장인 피로 회복제 추천 5가지",
+      "post_type": "revenue",
+      "intent": "피로가 많은 직장인을 위한 피로 회복제 추천"
+    },
+    {
+      "keyword": "50대 여성 비타민D 영양제 추천 비교",
+      "post_type": "revenue",
+      "intent": "50대 여성에게 적합한 비타민D 영양제를 추천하기 위한 정보"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "갱년기 여성 오메가3 복용 후기 3개월",
+      "type": "revenue",
+      "intent": "갱년기 여성이 3개월간 오메가3를 복용한 후기에 대한 정보",
+      "score": 7,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "직장인 피로 회복제 추천 5가지",
+      "type": "revenue",
+      "intent": "피로가 많은 직장인을 위한 피로 회복제 추천",
+      "score": 7,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50대 여성 비타민D 영양제 추천 비교",
+      "type": "revenue",
+      "intent": "50대 여성에게 적합한 비타민D 영양제를 추천하기 위한 정보",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "40대 남성 무릎 통증 보조제 비교",
+      "type": "revenue",
+      "intent": "40대 남성을 위한 무릎 통증 완화 보조제 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "50대 갱년기 여성 철분 영양제 후기",
+      "type": "revenue",
+      "intent": "50대 여성의 철분 영양제 복용 후기에 대한 정보",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "고혈압에 좋은 유산균 추천 3가지",
+      "type": "revenue",
+      "intent": "고혈압에 효과적인 유산균 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "스트레스성 탈모 치료제 2개월 후기",
+      "type": "revenue",
+      "intent": "스트레스성 탈모를 위한 치료제 2개월 사용 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50대 남성 근감소증 보조제 추천",
+      "type": "revenue",
+      "intent": "50대 남성을 위한 근감소증 보조제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "저탄고지 다이어트 단백질 보충제 추천",
+      "type": "revenue",
+      "intent": "저탄고지 다이어트에 적합한 단백질 보충제를 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "공복혈당 조절 오메가3 제품 추천",
+      "type": "revenue",
+      "intent": "공복혈당 조절에 도움을 주는 오메가3 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "피부 건조에 좋은 콜라겐 영양제 후기",
+      "type": "revenue",
+      "intent": "피부 건조를 개선하기 위한 콜라겐 영양제 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 수면 장애 원인과 해결책",
+      "type": "info",
+      "intent": "갱년기 여성의 수면 장애 원인과 해결책에 대한 정보",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "혈당 스파이크 낮추는 음식 5가지",
+      "type": "info",
+      "intent": "혈당 스파이크를 낮추는 데 도움이 되는 음식 정보",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "간헐적 단식 체중 감량 방법 2주",
+      "type": "info",
+      "intent": "간헐적 단식으로 2주간 체중 감량 방법에 대한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "과민성 대장 증후군 원인과 해결 방법",
+      "type": "info",
+      "intent": "과민성 대장 증후군의 원인과 해결 방법에 대한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "체중 감량에 효과적인 운동 방법 30분",
+      "type": "info",
+      "intent": "하루 30분 체중 감량에 효과적인 운동 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "변비 해소 위한 식습관 및 운동 방법",
+      "type": "info",
+      "intent": "변비 해소를 위한 식습관 및 운동 방법에 대한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "다이어트 체지방 감소 보충제 효과",
+      "type": "revenue",
+      "intent": "체지방 감소에 효과적인 다이어트 보충제 정보",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "고혈압에 영향 미치는 식습관 변화",
+      "type": "info",
+      "intent": "고혈압 관리에 도움을 줄 수 있는 식습관 변화 방법",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "수면 장애 극복을 위한 생활습관 변화",
+      "type": "info",
+      "intent": "수면 장애 극복을 위한 생활습관 변화 방법",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
