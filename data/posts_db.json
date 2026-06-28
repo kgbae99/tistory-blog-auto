@@ -6516,5 +6516,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 258,
+    "title": "3개월 5kg 감량을 위한 건강 영양제 추천 5가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중관리",
+      "홈트",
+      "체중계 추천",
+      "요가매트",
+      "영양제 후기",
+      "건강검진",
+      "비타민",
+      "홈트장비",
+      "다이어트후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-06-29 08:09",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 259,
+    "title": "성인 5가지 증상으로 본 비타민 D 결핍 영향과 대처법",
+    "keyword": "비타민 D 결핍이 건강에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민D",
+      "비타민 D 결핍",
+      "건강",
+      "면역력",
+      "골다공증",
+      "피로회복",
+      "건강검진",
+      "영양",
+      "일광욕",
+      "인지건강"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-06-29 08:11",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
