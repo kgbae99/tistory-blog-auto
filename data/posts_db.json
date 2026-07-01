@@ -6675,5 +6675,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 264,
+    "title": "3개월 변화: 건강 영양제 추천과 실천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제",
+      "체중관리",
+      "체중계",
+      "요가매트",
+      "홈트",
+      "건강검진",
+      "영양관리",
+      "건강제품",
+      "생활습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-02 08:20",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 265,
+    "title": "2개월 만에 상체 근력 20% 올린 5가지 운동 방법",
+    "keyword": "상체 근력을 키우는 5가지 효과적인 운동 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "상체근력",
+      "운동방법",
+      "근력운동",
+      "푸시업",
+      "덤벨로우",
+      "홈트레이닝",
+      "운동루틴",
+      "건강검진",
+      "관절관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-02 08:21",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
