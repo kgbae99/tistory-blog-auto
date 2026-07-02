@@ -6728,5 +6728,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 266,
+    "title": "30일 3kg 감량에 도움된 건강 영양제 추천 5가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중감량 후기",
+      "영양제 선택법",
+      "홈트용품 추천",
+      "체중계 추천",
+      "요가매트 추천",
+      "건강검진 비용",
+      "피로회복 보충제",
+      "쿠팡 추천",
+      "건강 루틴"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-03 08:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 267,
+    "title": "2주 만에 수면 좋아진 디지털 디톡스 방법과 효과",
+    "keyword": "디지털 디톡스가 수면에 미치는 긍정적인 효과",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "디지털 디톡스",
+      "수면 개선",
+      "수면 질",
+      "취침 루틴",
+      "블루라이트",
+      "수면 잠복기",
+      "웰빙",
+      "행동수정",
+      "건강검진 비용",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-03 08:14",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
