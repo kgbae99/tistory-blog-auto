@@ -6836,5 +6836,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 270,
+    "title": "30일 변화: 현실적인 건강 영양제 추천과 사용법",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 사용법",
+      "체중계 추천",
+      "요가매트 추천",
+      "비타민D",
+      "오메가3",
+      "자가진단",
+      "의료비 절감",
+      "홈플래닛",
+      "코멧 요가매트"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-05 08:03",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 271,
+    "title": "혈액순환 개선을 위한 식습관 7가지, 4주 변화 후기",
+    "keyword": "혈액순환 개선을 위한 식습관 7가지 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈액순환",
+      "식습관",
+      "오메가-3",
+      "폴리페놀",
+      "저염식",
+      "통곡물",
+      "건강검진",
+      "심혈관예방",
+      "노인건강",
+      "생활습관개선"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-05 08:04",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
