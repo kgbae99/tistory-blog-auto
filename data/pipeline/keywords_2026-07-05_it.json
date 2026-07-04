@@ -1,0 +1,314 @@
+{
+  "date": "2026-07-05",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 13,
+  "info_cnt": 7,
+  "all_keywords": [
+    {
+      "keyword": "10만원대 게이밍 무선 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 추천"
+    },
+    {
+      "keyword": "재택근무에 최적화된 노트북 5대 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 비교"
+    },
+    {
+      "keyword": "최신 노이즈캔슬링 헤드셋 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 후기 탐색"
+    },
+    {
+      "keyword": "가성비 좋은 블루투스 스피커 3만 이하 추천",
+      "type": "revenue",
+      "intent": "구매를 위한 저렴한 제품 추천"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 배터리 성능 비교"
+    },
+    {
+      "keyword": "기계식 키보드 청축 vs 적축 차이",
+      "type": "info",
+      "intent": "제품 차이에 대한 정보 탐색"
+    },
+    {
+      "keyword": "보조배터리 10000mAh 추천 이유",
+      "type": "info",
+      "intent": "제품 추천 이유 탐색"
+    },
+    {
+      "keyword": "2024년 최신 그래픽카드 성능 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 성능 후기"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "발열 문제 해결 방법 탐색"
+    },
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "업그레이드의 성능 효과 탐색"
+    },
+    {
+      "keyword": "SSD와 HDD 차이와 비용 비교",
+      "type": "info",
+      "intent": "제품 차이와 비용 비교 탐색"
+    },
+    {
+      "keyword": "모니터 블루라이트 필터 추천",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 추천"
+    },
+    {
+      "keyword": "AI 도구를 이용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "생산성 향상 방법 탐색"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 배터리 수명 비교"
+    },
+    {
+      "keyword": "클라우드 저장소 서비스 비교 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 서비스 비교 후기"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 사용 후기"
+    },
+    {
+      "keyword": "미니PC 사용 후 장단점",
+      "type": "revenue",
+      "intent": "구매를 위한 사용 후기"
+    },
+    {
+      "keyword": "해상도 높은 모니터 추천 이유",
+      "type": "info",
+      "intent": "해상도 높은 제품의 추천 이유 탐색"
+    },
+    {
+      "keyword": "저가형 충전기 5종 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 비교"
+    },
+    {
+      "keyword": "온라인 강의용 노트북 추천 모델",
+      "type": "revenue",
+      "intent": "구매를 위한 추천 모델 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "10만원대 게이밍 무선 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "구매를 위한 제품 추천"
+    },
+    {
+      "keyword": "재택근무에 최적화된 노트북 5대 비교",
+      "post_type": "revenue",
+      "intent": "구매를 위한 제품 비교"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교",
+      "post_type": "revenue",
+      "intent": "구매를 위한 배터리 성능 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "10만원대 게이밍 무선 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "재택근무에 최적화된 노트북 5대 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 배터리 성능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "보조배터리 10000mAh 추천 이유",
+      "type": "info",
+      "intent": "제품 추천 이유 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 차이와 비용 비교",
+      "type": "info",
+      "intent": "제품 차이와 비용 비교 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 배터리 수명 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 서비스 비교 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 서비스 비교 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "해상도 높은 모니터 추천 이유",
+      "type": "info",
+      "intent": "해상도 높은 제품의 추천 이유 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "저가형 충전기 5종 비교",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 노이즈캔슬링 헤드셋 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 후기 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 블루투스 스피커 3만 이하 추천",
+      "type": "revenue",
+      "intent": "구매를 위한 저렴한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2024년 최신 그래픽카드 성능 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 성능 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "모니터 블루라이트 필터 추천",
+      "type": "revenue",
+      "intent": "구매를 위한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "구매를 위한 사용 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "온라인 강의용 노트북 추천 모델",
+      "type": "revenue",
+      "intent": "구매를 위한 추천 모델 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축 vs 적축 차이",
+      "type": "info",
+      "intent": "제품 차이에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "발열 문제 해결 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 이용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "생산성 향상 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "업그레이드의 성능 효과 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "미니PC 사용 후 장단점",
+      "type": "revenue",
+      "intent": "구매를 위한 사용 후기",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
