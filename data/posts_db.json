@@ -6944,5 +6944,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 274,
+    "title": "40대 3개월 체력 회복 성공한 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체력 회복",
+      "40대 건강",
+      "영양제 후기",
+      "오메가3",
+      "비타민D",
+      "마그네슘",
+      "체중계 추천",
+      "요가매트",
+      "건강검진 비용"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-07 08:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 275,
+    "title": "소화불량의 원인 5가지와 대처 방법: 2주 내 증상 완화 경험",
+    "keyword": "소화불량의 원인 5가지와 대처 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "소화불량",
+      "원인분석",
+      "대처방법",
+      "위장건강",
+      "식사습관",
+      "FODMAP",
+      "생활습관개선",
+      "건강검진",
+      "소화효소",
+      "복통관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-07 08:14",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
