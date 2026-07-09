@@ -1,0 +1,311 @@
+{
+  "date": "2026-07-10",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 의사 결정에 도움을 주기 위해"
+    },
+    {
+      "keyword": "20만원 이하 노트북 추천 목록",
+      "type": "revenue",
+      "intent": "저렴한 노트북 구매를 위한 추천 정보를 찾기 위해"
+    },
+    {
+      "keyword": "최고의 무선 마우스 후기 및 비교",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 전 다양한 제품의 후기를 확인하기 위해"
+    },
+    {
+      "keyword": "가성비 좋은 트랙패드 추천 이유",
+      "type": "revenue",
+      "intent": "트랙패드 구매 의사 결정을 도울 수 있는 추천 이유 제공"
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 비교 2023",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 성능 비교를 통해 구매 결정을 돕기 위해"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 추천 2023",
+      "type": "revenue",
+      "intent": "재택근무 시 적합한 노트북 구매를 위한 추천 정보를 제공하기 위해"
+    },
+    {
+      "keyword": "이번 달 인기 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "현재 인기 있는 블루투스 스피커 구매를 위해"
+    },
+    {
+      "keyword": "5가지 무선이어폰 비교 및 후기",
+      "type": "revenue",
+      "intent": "다양한 무선이어폰의 비교와 후기를 통해 구매 결정을 돕기 위해"
+    },
+    {
+      "keyword": "3만원대 충전기 추천 및 사용 후기",
+      "type": "revenue",
+      "intent": "저렴한 가격의 충전기를 구매하려는 사용자를 위한 추천"
+    },
+    {
+      "keyword": "효율적인 클라우드 서비스 추천 목록",
+      "type": "revenue",
+      "intent": "클라우드 서비스 구매 의사를 가진 사용자를 위한 추천"
+    },
+    {
+      "keyword": "인기 있는 AI 도구 추천 이유",
+      "type": "revenue",
+      "intent": "AI 도구 구매를 고려하는 사용자를 위한 추천 이유 제공"
+    },
+    {
+      "keyword": "2023년 SSD 추천 및 후기",
+      "type": "revenue",
+      "intent": "최신 SSD 제품의 후기와 추천을 통해 구매 결정에 도움"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 해결 방법을 찾기 위해"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드폰 작동 원리",
+      "type": "info",
+      "intent": "노이즈캔슬링 헤드폰의 작동 원리에 대해 알아보기 위해"
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 있는 이유",
+      "type": "info",
+      "intent": "블루라이트 차단 안경이 효과가 있는 이유를 탐색하기 위해"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 알아보기",
+      "type": "info",
+      "intent": "SSD와 HDD 사이의 실제 속도 차이를 알아보기 위해"
+    },
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "RAM 업그레이드가 컴퓨터 성능에 어떤 영향을 미치는지 알아보기 위해"
+    },
+    {
+      "keyword": "효율적인 재택근무 세팅 방법",
+      "type": "info",
+      "intent": "재택근무 시 효율적인 작업 환경을 만들기 위한 방법을 찾기 위해"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드의 차이점",
+      "type": "info",
+      "intent": "기계식 키보드와 멤브레인 키보드의 차이점을 알아보기 위해"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리기 위한 방법을 찾기 위해"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5가지 무선이어폰 비교 및 후기",
+      "post_type": "revenue",
+      "intent": "다양한 무선이어폰의 비교와 후기를 통해 구매 결정을 돕기 위해"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 의사 결정에 도움을 주기 위해"
+    },
+    {
+      "keyword": "이번 달 인기 블루투스 스피커 추천",
+      "post_type": "revenue",
+      "intent": "현재 인기 있는 블루투스 스피커 구매를 위해"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5가지 무선이어폰 비교 및 후기",
+      "type": "revenue",
+      "intent": "다양한 무선이어폰의 비교와 후기를 통해 구매 결정을 돕기 위해",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매 의사 결정에 도움을 주기 위해",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "이번 달 인기 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "현재 인기 있는 블루투스 스피커 구매를 위해",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "3만원대 충전기 추천 및 사용 후기",
+      "type": "revenue",
+      "intent": "저렴한 가격의 충전기를 구매하려는 사용자를 위한 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "최고의 무선 마우스 후기 및 비교",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 전 다양한 제품의 후기를 확인하기 위해",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 트랙패드 추천 이유",
+      "type": "revenue",
+      "intent": "트랙패드 구매 의사 결정을 도울 수 있는 추천 이유 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 비교 2023",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 성능 비교를 통해 구매 결정을 돕기 위해",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "인기 있는 AI 도구 추천 이유",
+      "type": "revenue",
+      "intent": "AI 도구 구매를 고려하는 사용자를 위한 추천 이유 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "20만원 이하 노트북 추천 목록",
+      "type": "revenue",
+      "intent": "저렴한 노트북 구매를 위한 추천 정보를 찾기 위해",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 노트북 추천 2023",
+      "type": "revenue",
+      "intent": "재택근무 시 적합한 노트북 구매를 위한 추천 정보를 제공하기 위해",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "효율적인 클라우드 서비스 추천 목록",
+      "type": "revenue",
+      "intent": "클라우드 서비스 구매 의사를 가진 사용자를 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 SSD 추천 및 후기",
+      "type": "revenue",
+      "intent": "최신 SSD 제품의 후기와 추천을 통해 구매 결정에 도움",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 있는 이유",
+      "type": "info",
+      "intent": "블루라이트 차단 안경이 효과가 있는 이유를 탐색하기 위해",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 알아보기",
+      "type": "info",
+      "intent": "SSD와 HDD 사이의 실제 속도 차이를 알아보기 위해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "효율적인 재택근무 세팅 방법",
+      "type": "info",
+      "intent": "재택근무 시 효율적인 작업 환경을 만들기 위한 방법을 찾기 위해",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드의 차이점",
+      "type": "info",
+      "intent": "기계식 키보드와 멤브레인 키보드의 차이점을 알아보기 위해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리기 위한 방법을 찾기 위해",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "노트북 발열 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 해결 방법을 찾기 위해",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드폰 작동 원리",
+      "type": "info",
+      "intent": "노이즈캔슬링 헤드폰의 작동 원리에 대해 알아보기 위해",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "RAM 업그레이드가 컴퓨터 성능에 어떤 영향을 미치는지 알아보기 위해",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
