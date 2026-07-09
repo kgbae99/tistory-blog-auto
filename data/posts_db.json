@@ -7105,5 +7105,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 280,
+    "title": "40대 직장인 3개월 수면질 개선 매트리스 후기",
+    "keyword": "40대 직장인을 위한 수면 질 개선을 위한 침대 매트리스 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대수면",
+      "직장인수면개선",
+      "매트리스추천",
+      "숙면후기",
+      "베개추천",
+      "수면루틴",
+      "오설록",
+      "트와이닝",
+      "슬루나",
+      "건강검진"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-10 08:17",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 281,
+    "title": "직장인 4주에 생체리듬을 맞춘 생활 습관 7가지",
+    "keyword": "생체리듬을 맞추기 위한 생활 습관 7가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "생체리듬",
+      "생활습관",
+      "수면리듬",
+      "직장인건강",
+      "웰빙",
+      "아침습관",
+      "심신건강",
+      "생활개선",
+      "자가관리",
+      "수면개선"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-10 08:18",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
