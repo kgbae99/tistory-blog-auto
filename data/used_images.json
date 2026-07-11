@@ -1581,6 +1581,9 @@
     "food_01.jpg",
     "food_06.jpg",
     "food_10.jpg",
+    "health_15.jpg",
+    "health_16.jpg",
+    "health_17.jpg",
     "rest_01.jpg",
     "skin_09.jpg",
     "skin_10.jpg",
@@ -1590,11 +1593,14 @@
     "tech_01.jpg",
     "tech_02.jpg",
     "tech_03.jpg",
+    "tech_04.jpg",
+    "tech_05.jpg",
     "tech_12.jpg",
     "tech_13.jpg",
     "tech_15.jpg",
     "tech_23.jpg",
     "tech_24.jpg",
-    "tech_25.jpg"
+    "tech_25.jpg",
+    "tech_30.jpg"
   ]
 }
