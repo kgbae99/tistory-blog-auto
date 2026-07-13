@@ -1,0 +1,314 @@
+{
+  "date": "2026-07-14",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 저렴한 노이즈캔슬링 헤드셋을 찾기 위한 추천"
+    },
+    {
+      "keyword": "가성비 좋은 무선 마우스 비교해봤습니다",
+      "type": "revenue",
+      "intent": "구매 결정 - 가성비 무선 마우스에 대한 비교"
+    },
+    {
+      "keyword": "재택근무용 모니터 TOP 3 후기",
+      "type": "revenue",
+      "intent": "구매 결정 - 재택근무에 적합한 모니터 후기를 통한 구매"
+    },
+    {
+      "keyword": "1TB SSD 직접 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 1TB SSD 사용 후기를 통해 제품 추천"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원 이하 추천 리스트",
+      "type": "revenue",
+      "intent": "구매 결정 - 10만원 이하 블루투스 스피커 추천"
+    },
+    {
+      "keyword": "최신 기계식 키보드 비교 및 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 기계식 키보드 비교 및 구매 추천"
+    },
+    {
+      "keyword": "여행용 보조배터리 3종 비교",
+      "type": "revenue",
+      "intent": "구매 결정 - 여행 시 사용할 보조배터리 선택을 위한 비교"
+    },
+    {
+      "keyword": "2023년 인기 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매 결정 - 스마트폰 배터리 수명 비교를 통한 선택"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 직접 사용 후기",
+      "type": "revenue",
+      "intent": "구매 결정 - 블루라이트 차단 모니터 후기"
+    },
+    {
+      "keyword": "리모트워크 생산성 높이는 AI 도구 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 리모트워크 생산성 향상을 위한 AI 도구 추천"
+    },
+    {
+      "keyword": "무선이어폰 노이즈캔슬링 비교와 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 노이즈캔슬링 무선이어폰 비교"
+    },
+    {
+      "keyword": "최신 그래픽카드 발열 문제 후기",
+      "type": "revenue",
+      "intent": "구매 결정 - 최신 그래픽카드 발열 문제에 대한 실제 후기"
+    },
+    {
+      "keyword": "게임용 노트북 발열 관리 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 게임용 노트북의 발열 관리 방법"
+    },
+    {
+      "keyword": "SSD와 HDD 차이점과 속도 비교",
+      "type": "info",
+      "intent": "정보 탐색 - SSD와 HDD의 차이점 및 속도 비교"
+    },
+    {
+      "keyword": "무선 마우스 연결 불량 원인과 해결 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 무선 마우스 연결 불량 원인 및 해결책"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이",
+      "type": "info",
+      "intent": "정보 탐색 - 기계식과 멤브레인 키보드의 차이점"
+    },
+    {
+      "keyword": "노트북 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 노트북 배터리 수명을 늘리기 위한 방법"
+    },
+    {
+      "keyword": "모니터 해상도 선택 기준과 추천",
+      "type": "info",
+      "intent": "정보 탐색 - 모니터 해상도 선택 기준"
+    },
+    {
+      "keyword": "클라우드 컴퓨팅의 장점과 단점",
+      "type": "info",
+      "intent": "정보 탐색 - 클라우드 컴퓨팅 사용할 때의 장단점"
+    },
+    {
+      "keyword": "재택근무 세팅 필수 장비 리스트",
+      "type": "info",
+      "intent": "정보 탐색 - 재택근무 세팅을 위한 필수 장비 목록"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "가성비 좋은 무선 마우스 비교해봤습니다",
+      "post_type": "revenue",
+      "intent": "구매 결정 - 가성비 무선 마우스에 대한 비교"
+    },
+    {
+      "keyword": "1TB SSD 직접 사용 후기 및 추천",
+      "post_type": "revenue",
+      "intent": "구매 결정 - 1TB SSD 사용 후기를 통해 제품 추천"
+    },
+    {
+      "keyword": "최신 기계식 키보드 비교 및 추천",
+      "post_type": "revenue",
+      "intent": "구매 결정 - 기계식 키보드 비교 및 구매 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "가성비 좋은 무선 마우스 비교해봤습니다",
+      "type": "revenue",
+      "intent": "구매 결정 - 가성비 무선 마우스에 대한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "1TB SSD 직접 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 1TB SSD 사용 후기를 통해 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "최신 기계식 키보드 비교 및 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 기계식 키보드 비교 및 구매 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "여행용 보조배터리 3종 비교",
+      "type": "revenue",
+      "intent": "구매 결정 - 여행 시 사용할 보조배터리 선택을 위한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 인기 스마트폰 배터리 수명 비교",
+      "type": "revenue",
+      "intent": "구매 결정 - 스마트폰 배터리 수명 비교를 통한 선택",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 직접 사용 후기",
+      "type": "revenue",
+      "intent": "구매 결정 - 블루라이트 차단 모니터 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "리모트워크 생산성 높이는 AI 도구 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 리모트워크 생산성 향상을 위한 AI 도구 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 노이즈캔슬링 비교와 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 노이즈캔슬링 무선이어폰 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 차이점과 속도 비교",
+      "type": "info",
+      "intent": "정보 탐색 - SSD와 HDD의 차이점 및 속도 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 결정 - 저렴한 노이즈캔슬링 헤드셋을 찾기 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 모니터 TOP 3 후기",
+      "type": "revenue",
+      "intent": "구매 결정 - 재택근무에 적합한 모니터 후기를 통한 구매",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 10만원 이하 추천 리스트",
+      "type": "revenue",
+      "intent": "구매 결정 - 10만원 이하 블루투스 스피커 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 그래픽카드 발열 문제 후기",
+      "type": "revenue",
+      "intent": "구매 결정 - 최신 그래픽카드 발열 문제에 대한 실제 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 선택 기준과 추천",
+      "type": "info",
+      "intent": "정보 탐색 - 모니터 해상도 선택 기준",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "게임용 노트북 발열 관리 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 게임용 노트북의 발열 관리 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 연결 불량 원인과 해결 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 무선 마우스 연결 불량 원인 및 해결책",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이",
+      "type": "info",
+      "intent": "정보 탐색 - 기계식과 멤브레인 키보드의 차이점",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "정보 탐색 - 노트북 배터리 수명을 늘리기 위한 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "클라우드 컴퓨팅의 장점과 단점",
+      "type": "info",
+      "intent": "정보 탐색 - 클라우드 컴퓨팅 사용할 때의 장단점",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "재택근무 세팅 필수 장비 리스트",
+      "type": "info",
+      "intent": "정보 탐색 - 재택근무 세팅을 위한 필수 장비 목록",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
