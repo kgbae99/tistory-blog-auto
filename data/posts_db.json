@@ -7319,5 +7319,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 288,
+    "title": "40대 직장인 2주간 간편 고단백 스낵 추천 후기",
+    "keyword": "40대 직장인을 위한 간편 고단백 스낵 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대건강",
+      "직장인간편식",
+      "고단백스낵",
+      "간편식후기",
+      "업무생산성",
+      "건강검진",
+      "사무실생활",
+      "프로틴스낵",
+      "피로회복",
+      "스낵추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-15 08:01",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 289,
+    "title": "6개월 후기: 저탄고지 식단의 장기적 효과·부작용 5가지",
+    "keyword": "저탄고지 식단의 장기적 효과와 부작용 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "저탄고지",
+      "저탄수화물",
+      "케토제닉",
+      "장기효과",
+      "부작용",
+      "지질검사",
+      "건강검진",
+      "식단관리",
+      "체중감량",
+      "영양검사"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-15 08:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
