@@ -7373,5 +7373,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 290,
+    "title": "40대 여성 3주 자세개선 필라테스 기구 추천 후기",
+    "keyword": "40대 여성 필라테스 기구 추천 후기 3종",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대필라테스",
+      "필라테스기구추천",
+      "필라테스후기",
+      "중년건강",
+      "홈트기구",
+      "비타민C",
+      "KF94마스크",
+      "운동재활",
+      "건강검진비용"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-16 08:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 291,
+    "title": "중년 홈트로 8주 만에 근력운동 효과 5가지 방법",
+    "keyword": "홈트레이닝으로 얻을 수 있는 근력운동 효과 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝",
+      "근력운동",
+      "근비대",
+      "중년운동",
+      "운동루틴",
+      "기초대사량",
+      "운동팁",
+      "건강관리",
+      "운동사례",
+      "근력향상"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-16 08:03",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
