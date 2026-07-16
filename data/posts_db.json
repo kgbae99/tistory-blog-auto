@@ -7426,5 +7426,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 292,
+    "title": "40대 직장인 4주만에 스트레스 줄인 수면보조제 후기",
+    "keyword": "40대 직장인 스트레스 해소에 효과적인 수면 보조제 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대수면",
+      "직장인스트레스",
+      "수면보조제추천",
+      "수면개선후기",
+      "쿠팡추천",
+      "건강웰빙",
+      "수면루틴",
+      "비타민추천",
+      "피로회복",
+      "수면질향상"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-17 08:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 293,
+    "title": "디지털 디톡스가 수면의 질에 미치는 영향 5가지와 방법",
+    "keyword": "디지털 디톡스가 수면의 질에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "디지털디톡스",
+      "수면의질",
+      "수면개선",
+      "수면습관",
+      "청색광",
+      "수면팁",
+      "웰빙",
+      "생활습관개선",
+      "건강검진비용"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-17 08:03",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
