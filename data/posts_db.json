@@ -7586,5 +7586,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 298,
+    "title": "3개월 사용기: 건강 영양제 추천 5가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체중계 추천",
+      "요가매트 추천",
+      "홈플래닛 체중계",
+      "노바리빙 체중계",
+      "코멧 요가매트",
+      "건강 루틴",
+      "건강검진 비용",
+      "피로 개선"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-20 07:57",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 299,
+    "title": "3개월 만에 신경 증상 40% 줄인 오메가3 필요성과 효과",
+    "keyword": "여성의 신경 건강을 위한 오메가3의 필요성과 효과",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "여성의 신경 건강을 위한 오메가3의 필요성과 효과",
+      "오메가3",
+      "여성건강",
+      "신경건강",
+      "DHA",
+      "EPA",
+      "영양검사",
+      "건강검진",
+      "건강보험",
+      "영양관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-20 07:58",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
