@@ -1,0 +1,316 @@
+{
+  "date": "2026-07-23",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 원하는 사람이 최적의 제품을 찾기 위해 추천을 탐색하는 경우"
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 비교 및 추천",
+      "type": "revenue",
+      "intent": "최신 상품 중 가장 적합한 무선 마우스를 비교하고 구매하려는 의도"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원 이하 추천 제품",
+      "type": "revenue",
+      "intent": "예산 내에서 가장 좋은 블루투스 스피커를 찾기 위한 의도"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 후기 및 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드의 타건감을 확인하고 구매 결정하려는 경우"
+    },
+    {
+      "keyword": "가성비 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "저렴하면서도 성능이 좋은 미니PC를 찾고 있는 사람을 위한 추천"
+    },
+    {
+      "keyword": "30만원대 재택근무 노트북 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북을 가격대별로 추천받고자 하는 경우"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 용량 비교",
+      "type": "revenue",
+      "intent": "스마트폰의 배터리 성능을 비교하여 구매를 고려하는 사람"
+    },
+    {
+      "keyword": "2030세대 클라우드 저장소 추천",
+      "type": "revenue",
+      "intent": "특정 연령대에 맞는 클라우드 서비스 추천을 찾는 경우"
+    },
+    {
+      "keyword": "50만원대 게이밍 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "게이머가 가성비 좋은 그래픽카드를 찾기 위한 추천"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 해결책을 찾고자 하는 기술적인 탐색"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 사용 후기",
+      "type": "revenue",
+      "intent": "구매 전에 다른 사용자의 실제 사용 후기를 참고하려는 의도"
+    },
+    {
+      "keyword": "겨울철 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "추운 날씨에도 스마트폰 배터리 수명을 늘리려는 정보 탐색"
+    },
+    {
+      "keyword": "무선 이어폰 페어링 문제 해결 이유",
+      "type": "info",
+      "intent": "무선 이어폰 페어링 문제에 대한 원인 및 해결책을 찾으려는 탐색"
+    },
+    {
+      "keyword": "재택근무 최적의 컴퓨터 세팅 방법",
+      "type": "info",
+      "intent": "효율적인 재택근무를 위한 컴퓨터 세팅 정보를 탐색"
+    },
+    {
+      "keyword": "SSD 속도가 HDD보다 빠른 이유",
+      "type": "info",
+      "intent": "SSD가 HDD보다 성능이 좋은 이유를 알아보려는 탐험"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "눈 건강을 고려하여 블루라이트 차단 기능이 있는 모니터를 찾으려는 구매 의도"
+    },
+    {
+      "keyword": "AI 도구로 생산성 높이는 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용해 업무 효율을 높이는 방법을 찾으려는 정보 탐색"
+    },
+    {
+      "keyword": "2023년 인기 그래픽카드 트렌드 비교",
+      "type": "info",
+      "intent": "최신 그래픽카드의 기술적 트렌드를 비교하고 알아보려는 경우"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점 설명",
+      "type": "info",
+      "intent": "트랙패드와 무선 마우스의 차이점을 이해하고자 하는 탐색"
+    },
+    {
+      "keyword": "최신 재택근무용 모니터 추천",
+      "type": "revenue",
+      "intent": "재택근무에 가장 적합한 여러 모니터를 비교하고 구매하려는 의도"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "구매를 원하는 사람이 최적의 제품을 찾기 위해 추천을 탐색하는 경우"
+    },
+    {
+      "keyword": "30만원대 재택근무 노트북 추천",
+      "post_type": "revenue",
+      "intent": "재택근무에 적합한 노트북을 가격대별로 추천받고자 하는 경우"
+    },
+    {
+      "keyword": "50만원대 게이밍 그래픽카드 추천",
+      "post_type": "revenue",
+      "intent": "게이머가 가성비 좋은 그래픽카드를 찾기 위한 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 원하는 사람이 최적의 제품을 찾기 위해 추천을 탐색하는 경우",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "30만원대 재택근무 노트북 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북을 가격대별로 추천받고자 하는 경우",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50만원대 게이밍 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "게이머가 가성비 좋은 그래픽카드를 찾기 위한 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 비교 및 추천",
+      "type": "revenue",
+      "intent": "최신 상품 중 가장 적합한 무선 마우스를 비교하고 구매하려는 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 용량 비교",
+      "type": "revenue",
+      "intent": "스마트폰의 배터리 성능을 비교하여 구매를 고려하는 사람",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 인기 그래픽카드 트렌드 비교",
+      "type": "info",
+      "intent": "최신 그래픽카드의 기술적 트렌드를 비교하고 알아보려는 경우",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 10만원 이하 추천 제품",
+      "type": "revenue",
+      "intent": "예산 내에서 가장 좋은 블루투스 스피커를 찾기 위한 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 타건감 후기 및 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드의 타건감을 확인하고 구매 결정하려는 경우",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "저렴하면서도 성능이 좋은 미니PC를 찾고 있는 사람을 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2030세대 클라우드 저장소 추천",
+      "type": "revenue",
+      "intent": "특정 연령대에 맞는 클라우드 서비스 추천을 찾는 경우",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 사용 후기",
+      "type": "revenue",
+      "intent": "구매 전에 다른 사용자의 실제 사용 후기를 참고하려는 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "눈 건강을 고려하여 블루라이트 차단 기능이 있는 모니터를 찾으려는 구매 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 재택근무용 모니터 추천",
+      "type": "revenue",
+      "intent": "재택근무에 가장 적합한 여러 모니터를 비교하고 구매하려는 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 해결책을 찾고자 하는 기술적인 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "겨울철 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "추운 날씨에도 스마트폰 배터리 수명을 늘리려는 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 이어폰 페어링 문제 해결 이유",
+      "type": "info",
+      "intent": "무선 이어폰 페어링 문제에 대한 원인 및 해결책을 찾으려는 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적의 컴퓨터 세팅 방법",
+      "type": "info",
+      "intent": "효율적인 재택근무를 위한 컴퓨터 세팅 정보를 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD 속도가 HDD보다 빠른 이유",
+      "type": "info",
+      "intent": "SSD가 HDD보다 성능이 좋은 이유를 알아보려는 탐험",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구로 생산성 높이는 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용해 업무 효율을 높이는 방법을 찾으려는 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 차이점 설명",
+      "type": "info",
+      "intent": "트랙패드와 무선 마우스의 차이점을 이해하고자 하는 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
