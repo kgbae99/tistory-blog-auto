@@ -7747,5 +7747,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 304,
+    "title": "건강 영양제 추천으로 3개월 변화 만든 방법 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중계 추천",
+      "요가매트",
+      "홈헬스",
+      "영양제 후기",
+      "체성분 측정",
+      "건강관리",
+      "가정용 체중계",
+      "웰빙",
+      "제품비교"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-23 08:09",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 305,
+    "title": "홈트 30일 효과 3배로 올리는 스트레칭 5가지 방법",
+    "keyword": "홈트레이닝 효과를 극대화하는 스트레칭 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝 효과를 극대화하는 스트레칭 방법 5가지",
+      "홈트 스트레칭",
+      "가동성 운동",
+      "근막 이완",
+      "관절 가동성",
+      "홈트 루틴",
+      "유연성 향상",
+      "운동 통증 관리",
+      "운동 루틴 15분"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-23 08:11",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
