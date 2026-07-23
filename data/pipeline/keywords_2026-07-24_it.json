@@ -1,0 +1,321 @@
+{
+  "date": "2026-07-24",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 비교",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 제품 추천"
+    },
+    {
+      "keyword": "1시간 이상 지속되는 노이즈캔슬링 성능 후기",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 제품 성능 후기"
+    },
+    {
+      "keyword": "20만원대 게이밍 노트북 성능 비교",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 성능 비교"
+    },
+    {
+      "keyword": "최고의 무선 마우스 추천 2024",
+      "type": "revenue",
+      "intent": "최신 제품 구매 조언"
+    },
+    {
+      "keyword": "가격대비 좋은 블루투스 스피커 후기는",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 리뷰"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "발열 문제 해결을 위한 정보 제공"
+    },
+    {
+      "keyword": "3만원대 기계식 키보드 추천",
+      "type": "revenue",
+      "intent": "경제적인 제품 추천"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "배터리 관리 팁 제공"
+    },
+    {
+      "keyword": "고성능 8GB RAM 노트북 비교",
+      "type": "revenue",
+      "intent": "고성능 노트북 구매 비교"
+    },
+    {
+      "keyword": "재택근무 효율 높이는 10가지 방법",
+      "type": "info",
+      "intent": "재택근무 생산성 향상 정보 제공"
+    },
+    {
+      "keyword": "중소기업용 미니PC 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 추천 이유"
+    },
+    {
+      "keyword": "정말 필요한 4K 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 제품 추천"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 비교",
+      "type": "info",
+      "intent": "제품 선택을 위한 정보 제공"
+    },
+    {
+      "keyword": "AI 도구 활용 재택근무 효율 증가 방법",
+      "type": "info",
+      "intent": "AI 도구 활용 팁 제공"
+    },
+    {
+      "keyword": "무선 충전기와 유선 충전기 차이점",
+      "type": "info",
+      "intent": "장비 선택을 돕기 위한 정보"
+    },
+    {
+      "keyword": "10만원 이하 추천 블루라이트 차단 모니터",
+      "type": "revenue",
+      "intent": "경제적인 옵션 추천"
+    },
+    {
+      "keyword": "재택근무 세팅 시 필수품 비교",
+      "type": "revenue",
+      "intent": "필수 장비 선택을 위한 비교"
+    },
+    {
+      "keyword": "보조배터리 용량 선택 방법",
+      "type": "info",
+      "intent": "적합한 제품 선택을 돕기 위한 정보"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋과 이어폰 비교",
+      "type": "info",
+      "intent": "제품 선택을 돕기 위한 비교 정보"
+    },
+    {
+      "keyword": "클라우드 스토리지 비용 비교 2024",
+      "type": "info",
+      "intent": "최신 비용 정보를 통한 선택 안내"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "20만원대 게이밍 노트북 성능 비교",
+      "post_type": "revenue",
+      "intent": "구매 결정을 돕기 위한 성능 비교"
+    },
+    {
+      "keyword": "3만원대 기계식 키보드 추천",
+      "post_type": "revenue",
+      "intent": "경제적인 제품 추천"
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 비교",
+      "post_type": "revenue",
+      "intent": "구매 결정을 돕기 위한 제품 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "20만원대 게이밍 노트북 성능 비교",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 성능 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "3만원대 기계식 키보드 추천",
+      "type": "revenue",
+      "intent": "경제적인 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 비교",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "고성능 8GB RAM 노트북 비교",
+      "type": "revenue",
+      "intent": "고성능 노트북 구매 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "중소기업용 미니PC 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 추천 이유",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 비교",
+      "type": "info",
+      "intent": "제품 선택을 위한 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 시 필수품 비교",
+      "type": "revenue",
+      "intent": "필수 장비 선택을 위한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋과 이어폰 비교",
+      "type": "info",
+      "intent": "제품 선택을 돕기 위한 비교 정보",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 스토리지 비용 비교 2024",
+      "type": "info",
+      "intent": "최신 비용 정보를 통한 선택 안내",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "1시간 이상 지속되는 노이즈캔슬링 성능 후기",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 제품 성능 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최고의 무선 마우스 추천 2024",
+      "type": "revenue",
+      "intent": "최신 제품 구매 조언",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가격대비 좋은 블루투스 스피커 후기는",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 리뷰",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 높이는 10가지 방법",
+      "type": "info",
+      "intent": "재택근무 생산성 향상 정보 제공",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "정말 필요한 4K 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "10만원 이하 추천 블루라이트 차단 모니터",
+      "type": "revenue",
+      "intent": "경제적인 옵션 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "발열 문제 해결을 위한 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "배터리 관리 팁 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용 재택근무 효율 증가 방법",
+      "type": "info",
+      "intent": "AI 도구 활용 팁 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 충전기와 유선 충전기 차이점",
+      "type": "info",
+      "intent": "장비 선택을 돕기 위한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량 선택 방법",
+      "type": "info",
+      "intent": "적합한 제품 선택을 돕기 위한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
