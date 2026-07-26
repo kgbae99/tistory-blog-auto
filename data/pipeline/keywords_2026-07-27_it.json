@@ -1,0 +1,316 @@
+{
+  "date": "2026-07-27",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도를 가진 사용자가 다양한 제품을 비교하고 싶어함"
+    },
+    {
+      "keyword": "2023년 최신 블루투스 스피커 추천 및 가격 비교",
+      "type": "revenue",
+      "intent": "새로운 블루투스 스피커 구매를 고려하는 사용자가 정보를 찾고 있음"
+    },
+    {
+      "keyword": "기계식 키보드 청축 갈축 차이와 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드 선택에 어려움을 겪는 사용자를 돕기 위한 추천"
+    },
+    {
+      "keyword": "가성비 무선 마우스 3종 비교",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 무선 마우스를 찾고자 하는 사용자의 의도"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법과 추천 쿨링패드",
+      "type": "revenue",
+      "intent": "노트북 발열 문제를 해결하고자 하는 사용자를 위한 제품 추천"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 교체 후기와 가격대",
+      "type": "revenue",
+      "intent": "스마트폰 배터리 교체를 고려하는 사용자가 실제 후기를 찾음"
+    },
+    {
+      "keyword": "4K 해상도 모니터 사용 후기와 추천",
+      "type": "revenue",
+      "intent": "고해상도 모니터 구매를 고려하는 사용자를 위한 후기 및 추천"
+    },
+    {
+      "keyword": "20만원대 게이밍 노트북 비교 분석",
+      "type": "revenue",
+      "intent": "게이밍 노트북을 구매하려는 사용자가 다양한 옵션을 비교하고 싶어함"
+    },
+    {
+      "keyword": "2023년 클라우드 저장 서비스 추천",
+      "type": "revenue",
+      "intent": "최신 클라우드 서비스에 대한 정보를 찾고자 하는 사용자의 의도"
+    },
+    {
+      "keyword": "인기 미니PC 3종 사용 후기 및 성능 비교",
+      "type": "revenue",
+      "intent": "컴팩트한 미니PC를 고려하는 사용자가 옵션을 비교하려고 함"
+    },
+    {
+      "keyword": "보조배터리 용량별 추천과 가격대",
+      "type": "revenue",
+      "intent": "용량에 따라 적합한 보조배터리를 찾고자 하는 사용자"
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 세팅 방법",
+      "type": "revenue",
+      "intent": "효율적인 재택근무를 위한 노트북 세팅에 관심 있는 사용자"
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법과 주의점",
+      "type": "info",
+      "intent": "노트북 성능 향상을 위해 RAM 업그레이드를 고려하는 사용자를 위한 정보"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 비교 및 실제 차이 분석",
+      "type": "info",
+      "intent": "SSD와 HDD의 성능 차이에 대한 정보 탐색"
+    },
+    {
+      "keyword": "기계식 키보드 청축이 소음에 미치는 영향",
+      "type": "info",
+      "intent": "기계식 키보드의 소음 문제를 해결하고자 하는 사용자"
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "생산성을 높이기 위해 AI 도구를 사용하고자 하는 사용자"
+    },
+    {
+      "keyword": "노이즈캔슬링 이어폰 작동 원리와 장단점",
+      "type": "info",
+      "intent": "노이즈캔슬링 기능에 대한 이해를 돕기 위한 정보"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 실제 효과",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 효능에 대한 정보를 탐색"
+    },
+    {
+      "keyword": "무선 마우스 연결 문제 해결 방법",
+      "type": "info",
+      "intent": "무선 마우스 사용 중 연결 문제를 해결하려는 사용자"
+    },
+    {
+      "keyword": "그래픽카드 업그레이드 필요성과 방법",
+      "type": "info",
+      "intent": "그래픽카드 성능 향상에 관심이 있는 사용자"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 비교 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도를 가진 사용자가 다양한 제품을 비교하고 싶어함"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 비교 및 실제 차이 분석",
+      "post_type": "info",
+      "intent": "SSD와 HDD의 성능 차이에 대한 정보 탐색"
+    },
+    {
+      "keyword": "20만원대 게이밍 노트북 비교 분석",
+      "post_type": "revenue",
+      "intent": "게이밍 노트북을 구매하려는 사용자가 다양한 옵션을 비교하고 싶어함"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 헤드셋 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도를 가진 사용자가 다양한 제품을 비교하고 싶어함",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "20만원대 게이밍 노트북 비교 분석",
+      "type": "revenue",
+      "intent": "게이밍 노트북을 구매하려는 사용자가 다양한 옵션을 비교하고 싶어함",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 비교 및 실제 차이 분석",
+      "type": "info",
+      "intent": "SSD와 HDD의 성능 차이에 대한 정보 탐색",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 블루투스 스피커 추천 및 가격 비교",
+      "type": "revenue",
+      "intent": "새로운 블루투스 스피커 구매를 고려하는 사용자가 정보를 찾고 있음",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축 갈축 차이와 추천",
+      "type": "revenue",
+      "intent": "기계식 키보드 선택에 어려움을 겪는 사용자를 돕기 위한 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 무선 마우스 3종 비교",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 무선 마우스를 찾고자 하는 사용자의 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 해결 방법과 추천 쿨링패드",
+      "type": "revenue",
+      "intent": "노트북 발열 문제를 해결하고자 하는 사용자를 위한 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "인기 미니PC 3종 사용 후기 및 성능 비교",
+      "type": "revenue",
+      "intent": "컴팩트한 미니PC를 고려하는 사용자가 옵션을 비교하려고 함",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 교체 후기와 가격대",
+      "type": "revenue",
+      "intent": "스마트폰 배터리 교체를 고려하는 사용자가 실제 후기를 찾음",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "4K 해상도 모니터 사용 후기와 추천",
+      "type": "revenue",
+      "intent": "고해상도 모니터 구매를 고려하는 사용자를 위한 후기 및 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 클라우드 저장 서비스 추천",
+      "type": "revenue",
+      "intent": "최신 클라우드 서비스에 대한 정보를 찾고자 하는 사용자의 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량별 추천과 가격대",
+      "type": "revenue",
+      "intent": "용량에 따라 적합한 보조배터리를 찾고자 하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적화 노트북 세팅 방법",
+      "type": "revenue",
+      "intent": "효율적인 재택근무를 위한 노트북 세팅에 관심 있는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법과 주의점",
+      "type": "info",
+      "intent": "노트북 성능 향상을 위해 RAM 업그레이드를 고려하는 사용자를 위한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구를 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "생산성을 높이기 위해 AI 도구를 사용하고자 하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터의 실제 효과",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 효능에 대한 정보를 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 연결 문제 해결 방법",
+      "type": "info",
+      "intent": "무선 마우스 사용 중 연결 문제를 해결하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 업그레이드 필요성과 방법",
+      "type": "info",
+      "intent": "그래픽카드 성능 향상에 관심이 있는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "기계식 키보드 청축이 소음에 미치는 영향",
+      "type": "info",
+      "intent": "기계식 키보드의 소음 문제를 해결하고자 하는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "노이즈캔슬링 이어폰 작동 원리와 장단점",
+      "type": "info",
+      "intent": "노이즈캔슬링 기능에 대한 이해를 돕기 위한 정보",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
