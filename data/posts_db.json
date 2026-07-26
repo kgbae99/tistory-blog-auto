@@ -7907,5 +7907,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 310,
+    "title": "40대 여성 8주 변화: 비타민B 복합체 효과 후기",
+    "keyword": "40대 여성 비타민B 복합체 효과 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대여성",
+      "비타민B",
+      "비타민B복합체",
+      "피로회복",
+      "피부탄력",
+      "영양제후기",
+      "숙면",
+      "보습크림",
+      "제품추천",
+      "건강관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-27 08:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 311,
+    "title": "마그네슘 부족 증상 5가지와 회복 방법 3단계",
+    "keyword": "마그네슘 부족으로 인한 증상 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "마그네슘",
+      "영양결핍",
+      "근육경련",
+      "수면장애",
+      "피로회복",
+      "전해질",
+      "건강검진",
+      "식단관리",
+      "생활습관",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-27 08:03",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
