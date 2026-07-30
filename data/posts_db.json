@@ -8122,5 +8122,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 318,
+    "title": "3개월 건강 영양제 추천: 체력 30% 올린 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중계 추천",
+      "요가매트 추천",
+      "건강 후기",
+      "체력 회복",
+      "홈트 용품",
+      "영양제 후기",
+      "건강 관리",
+      "의료비 절감",
+      "체중 감량 팁"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-07-31 08:12",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 319,
+    "title": "3가지 혈당 스파이크 식후 증상 놓치는 이유와 대처법",
+    "keyword": "혈당 스파이크 식후 증상 놓치는 이유",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈당",
+      "혈당스파이크",
+      "식후증상",
+      "자가측정",
+      "당뇨예방",
+      "건강검진",
+      "식사패턴",
+      "건강습관",
+      "식후관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-07-31 08:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
