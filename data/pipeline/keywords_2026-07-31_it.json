@@ -1,0 +1,313 @@
+{
+  "date": "2026-07-31",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "10만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 저렴한 가격대의 노이즈캔슬링 헤드셋 추천"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 기계식 키보드 종류별 비교 및 사용 후기"
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 적당한 가격대의 블루투스 스피커 추천 이유"
+    },
+    {
+      "keyword": "무선 마우스 배터리 수명 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 마우스 배터리 수명에 대한 리뷰"
+    },
+    {
+      "keyword": "2023년 상반기 인기 노트북 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 인기 노트북 비교"
+    },
+    {
+      "keyword": "SSD 1TB 가성비 추천 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 가성비 좋은 SSD 1TB 제품 후기"
+    },
+    {
+      "keyword": "재택근무 효율적인 세팅 추천 아이템",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 시 효율성을 높이는 아이템 추천"
+    },
+    {
+      "keyword": "그래픽카드 가격대별 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 그래픽카드 성능을 가격대별로 비교"
+    },
+    {
+      "keyword": "최신 미니PC 구매 후기 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 미니PC에 대한 구매 후기 및 추천"
+    },
+    {
+      "keyword": "보조배터리 20000mAh 실제 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 대용량 보조배터리 사용 후기"
+    },
+    {
+      "keyword": "충전기 고속 충전 및 일반 충전 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 고속 충전과 일반 충전 기능 비교"
+    },
+    {
+      "keyword": "재택근무를 위한 AI 도구 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 시 유용한 AI 도구 추천"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 노트북 과열 문제를 해결하는 방법 찾기"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 얼마나 날까",
+      "type": "info",
+      "intent": "탐색 의도 - SSD와 HDD의 속도 차이에 대한 정보 탐색"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 두 키보드 사이의 차이에 대한 이해"
+    },
+    {
+      "keyword": "그래픽카드가 게임 성능에 미치는 영향",
+      "type": "info",
+      "intent": "탐색 의도 - 그래픽카드가 게임 성능에 미치는 영향 설명"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 스마트폰 배터리 수명을 늘리는 구체적인 방법 찾기"
+    },
+    {
+      "keyword": "모니터 해상도와 블루라이트 차이점",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도와 블루라이트의 차이점 이해"
+    },
+    {
+      "keyword": "클라우드 저장소와 로컬 저장소 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 클라우드 저장소와 로컬 저장소의 차이점 분석"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 장단점 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 두 입력 장치의 장단점 비교"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 이유",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 적당한 가격대의 블루투스 스피커 추천 이유"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 비교 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 기계식 키보드 종류별 비교 및 사용 후기"
+    },
+    {
+      "keyword": "2023년 상반기 인기 노트북 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 최신 인기 노트북 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 적당한 가격대의 블루투스 스피커 추천 이유",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 기계식 키보드 종류별 비교 및 사용 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 상반기 인기 노트북 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 인기 노트북 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 가격대별 성능 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 그래픽카드 성능을 가격대별로 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "보조배터리 20000mAh 실제 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 대용량 보조배터리 사용 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "충전기 고속 충전 및 일반 충전 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 고속 충전과 일반 충전 기능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 장단점 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 두 입력 장치의 장단점 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "10만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 저렴한 가격대의 노이즈캔슬링 헤드셋 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD 1TB 가성비 추천 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 가성비 좋은 SSD 1TB 제품 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율적인 세팅 추천 아이템",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 시 효율성을 높이는 아이템 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 미니PC 구매 후기 및 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 최신 미니PC에 대한 구매 후기 및 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무를 위한 AI 도구 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 재택근무 시 유용한 AI 도구 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 노트북 과열 문제를 해결하는 방법 찾기",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 얼마나 날까",
+      "type": "info",
+      "intent": "탐색 의도 - SSD와 HDD의 속도 차이에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 두 키보드 사이의 차이에 대한 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 스마트폰 배터리 수명을 늘리는 구체적인 방법 찾기",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도와 블루라이트 차이점",
+      "type": "info",
+      "intent": "탐색 의도 - 해상도와 블루라이트의 차이점 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소와 로컬 저장소 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 클라우드 저장소와 로컬 저장소의 차이점 분석",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "무선 마우스 배터리 수명 리뷰",
+      "type": "revenue",
+      "intent": "구매 의도 - 무선 마우스 배터리 수명에 대한 리뷰",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "그래픽카드가 게임 성능에 미치는 영향",
+      "type": "info",
+      "intent": "탐색 의도 - 그래픽카드가 게임 성능에 미치는 영향 설명",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
