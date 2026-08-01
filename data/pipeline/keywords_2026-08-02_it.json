@@ -1,0 +1,320 @@
+{
+  "date": "2026-08-02",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "2023년 무선이어폰 추천 5가지",
+      "type": "revenue",
+      "intent": "무선이어폰 구매 결정을 위한 추천"
+    },
+    {
+      "keyword": "50만원 이하 노트북 추천 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 노트북 선택"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 장단점 비교",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 기능이 있는 헤드셋 구매 전 비교"
+    },
+    {
+      "keyword": "기계식 키보드 3개월 사용 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 결정을 위한 사용자 후기"
+    },
+    {
+      "keyword": "최고의 블루투스 스피커 2023 비교",
+      "type": "revenue",
+      "intent": "최신 블루투스 스피커 선택을 위한 비교"
+    },
+    {
+      "keyword": "2023년 인기 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 결정을 돕기 위한 추천"
+    },
+    {
+      "keyword": "보조배터리 용량별 추천 및 후기",
+      "type": "revenue",
+      "intent": "보조배터리 구매 결정을 위한 후기"
+    },
+    {
+      "keyword": "4K 모니터 해상도 차이와 추천",
+      "type": "revenue",
+      "intent": "고해상도 모니터 구매 결정을 위한 비교"
+    },
+    {
+      "keyword": "SSD 브랜드별 성능 비교 추천",
+      "type": "revenue",
+      "intent": "SSD 구매 결정을 위한 성능 비교"
+    },
+    {
+      "keyword": "신형 스마트폰 배터리 후기와 추천",
+      "type": "revenue",
+      "intent": "스마트폰 배터리 선택을 위한 후기"
+    },
+    {
+      "keyword": "AI 도구 생산성 향상 실제 후기",
+      "type": "revenue",
+      "intent": "AI 도구 사용 후 생산성 향상 후기"
+    },
+    {
+      "keyword": "재택근무 환경 최적 세팅 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 제품 추천"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 탐색"
+    },
+    {
+      "keyword": "트랙패드와 마우스 장단점 비교",
+      "type": "info",
+      "intent": "두 입력장치 간의 특성 차이 탐색"
+    },
+    {
+      "keyword": "그래픽카드 성능 향상 방법",
+      "type": "info",
+      "intent": "그래픽카드 성능을 높이는 방법 탐색"
+    },
+    {
+      "keyword": "모니터 블루라이트 줄이는 방법",
+      "type": "info",
+      "intent": "블루라이트 감소를 위한 모니터 설정 방법"
+    },
+    {
+      "keyword": "RAM 업그레이드 전후 성능 차이",
+      "type": "info",
+      "intent": "업그레이드 후 성능 향상 탐색"
+    },
+    {
+      "keyword": "클라우드 스토리지 서비스 비교",
+      "type": "info",
+      "intent": "각 클라우드 서비스 간의 차이 탐색"
+    },
+    {
+      "keyword": "스마트폰 충전기 고르는 방법",
+      "type": "info",
+      "intent": "효율적인 충전기 선택을 위한 방법"
+    },
+    {
+      "keyword": "미니PC 사용 후기 및 장단점",
+      "type": "info",
+      "intent": "미니PC 사용 후 실제 후기 및 특성 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "2023년 무선이어폰 추천 5가지",
+      "post_type": "revenue",
+      "intent": "무선이어폰 구매 결정을 위한 추천"
+    },
+    {
+      "keyword": "기계식 키보드 3개월 사용 후기",
+      "post_type": "revenue",
+      "intent": "기계식 키보드 구매 결정을 위한 사용자 후기"
+    },
+    {
+      "keyword": "50만원 이하 노트북 추천 비교",
+      "post_type": "revenue",
+      "intent": "예산 내에서 최적의 노트북 선택"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "2023년 무선이어폰 추천 5가지",
+      "type": "revenue",
+      "intent": "무선이어폰 구매 결정을 위한 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 3개월 사용 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 결정을 위한 사용자 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50만원 이하 노트북 추천 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 노트북 선택",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 장단점 비교",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 기능이 있는 헤드셋 구매 전 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최고의 블루투스 스피커 2023 비교",
+      "type": "revenue",
+      "intent": "최신 블루투스 스피커 선택을 위한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "4K 모니터 해상도 차이와 추천",
+      "type": "revenue",
+      "intent": "고해상도 모니터 구매 결정을 위한 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "SSD 브랜드별 성능 비교 추천",
+      "type": "revenue",
+      "intent": "SSD 구매 결정을 위한 성능 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구 생산성 향상 실제 후기",
+      "type": "revenue",
+      "intent": "AI 도구 사용 후 생산성 향상 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 마우스 장단점 비교",
+      "type": "info",
+      "intent": "두 입력장치 간의 특성 차이 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 스토리지 서비스 비교",
+      "type": "info",
+      "intent": "각 클라우드 서비스 간의 차이 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 인기 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 결정을 돕기 위한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량별 추천 및 후기",
+      "type": "revenue",
+      "intent": "보조배터리 구매 결정을 위한 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "신형 스마트폰 배터리 후기와 추천",
+      "type": "revenue",
+      "intent": "스마트폰 배터리 선택을 위한 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 환경 최적 세팅 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "미니PC 사용 후기 및 장단점",
+      "type": "info",
+      "intent": "미니PC 사용 후 실제 후기 및 특성 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능 향상 방법",
+      "type": "info",
+      "intent": "그래픽카드 성능을 높이는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 블루라이트 줄이는 방법",
+      "type": "info",
+      "intent": "블루라이트 감소를 위한 모니터 설정 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 전후 성능 차이",
+      "type": "info",
+      "intent": "업그레이드 후 성능 향상 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 충전기 고르는 방법",
+      "type": "info",
+      "intent": "효율적인 충전기 선택을 위한 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
