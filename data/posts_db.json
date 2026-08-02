@@ -8281,5 +8281,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 324,
+    "title": "3개월에 4kg 감량 성공한 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제",
+      "체중계 추천",
+      "요가매트",
+      "쿠팡 추천",
+      "체중감량 후기",
+      "건강검진 비용",
+      "홈트 기기",
+      "실사용 후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-03 08:00",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 325,
+    "title": "40대 직장인도 주의해야 할 마그네슘 부족이 초래하는 건강 문제 5가지 이유",
+    "keyword": "마그네슘 부족이 초래하는 건강 문제 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "마그네슘",
+      "영양결핍",
+      "건강문제",
+      "근육경련",
+      "수면장애",
+      "심혈관",
+      "건강검진",
+      "영양학",
+      "중년건강",
+      "자가진단"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-03 08:01",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
