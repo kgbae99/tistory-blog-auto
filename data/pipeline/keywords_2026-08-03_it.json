@@ -1,0 +1,312 @@
+{
+  "date": "2026-08-03",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "가격대에 맞는 무선이어폰 추천을 통해 구매 결정을 돕기"
+    },
+    {
+      "keyword": "10시간 이상 재생 가능한 블루투스 스피커 후기",
+      "type": "revenue",
+      "intent": "장시간 사용 가능한 스피커 구매를 위한 실제 사용자 후기 제공"
+    },
+    {
+      "keyword": "노이즈캔슬링 기능 좋은 헤드셋 3가지 비교",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 능력이 뛰어난 헤드셋 선택에 도움"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 갈축 차이 비교",
+      "type": "revenue",
+      "intent": "기계식 키보드 각 스위치의 특성 비교로 구매 결정에 도움"
+    },
+    {
+      "keyword": "2만원대 무선 마우스 추천 리스트",
+      "type": "revenue",
+      "intent": "저렴한 무선 마우스 추천으로 구매 유도"
+    },
+    {
+      "keyword": "휴대성 좋은 미니PC 솔직 후기",
+      "type": "revenue",
+      "intent": "이동에 편리한 미니PC의 실제 사용 후기 제공"
+    },
+    {
+      "keyword": "배터리 오래 가는 스마트폰 추천 2023",
+      "type": "revenue",
+      "intent": "배터리 수명이 긴 스마트폰 구매를 위한 추천 리스트"
+    },
+    {
+      "keyword": "20만원 이하 게이밍 노트북 비교",
+      "type": "revenue",
+      "intent": "가성비 좋은 게이밍 노트북 선택 도움"
+    },
+    {
+      "keyword": "가성비 좋은 SSD 브랜드 추천 2023",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 SSD 브랜드 추천"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 5가지",
+      "type": "revenue",
+      "intent": "눈 건강을 고려한 모니터 구매 유도"
+    },
+    {
+      "keyword": "재택근무에 적합한 클라우드 서비스 비교",
+      "type": "revenue",
+      "intent": "재택근무 효율성을 높이기 위한 클라우드 서비스 선택 도움"
+    },
+    {
+      "keyword": "학생에게 추천하는 10만원 이하 노트북",
+      "type": "revenue",
+      "intent": "경제적인 학생용 노트북 선택에 도움"
+    },
+    {
+      "keyword": "노트북 발열 잡는 방법 5가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 제공"
+    },
+    {
+      "keyword": "SSD vs HDD 실제 속도 차이 및 이유",
+      "type": "info",
+      "intent": "SSD와 HDD의 성능 차이를 이해하는 데 도움"
+    },
+    {
+      "keyword": "헤드셋 노이즈캔슬링 작동 원리",
+      "type": "info",
+      "intent": "노이즈캔슬링의 원리 이해를 도와 구매결정에 도움"
+    },
+    {
+      "keyword": "무선이어폰 연결 문제 해결방법",
+      "type": "info",
+      "intent": "무선이어폰 사용 중 발생할 수 있는 연결 문제 해결 지원"
+    },
+    {
+      "keyword": "기계식 키보드 관리법 및 팁",
+      "type": "info",
+      "intent": "기계식 키보드의 유지 관리법 제공"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 팁",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명 연장을 위한 방법 제공"
+    },
+    {
+      "keyword": "블루투스 스피커 음질 향상 방법",
+      "type": "info",
+      "intent": "스피커 음질 개선 방법 공유"
+    },
+    {
+      "keyword": "모니터 해상도와 작업 효율의 관계",
+      "type": "info",
+      "intent": "해상도가 작업 효율에 미치는 영향 이해"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 무선이어폰 추천 이유",
+      "post_type": "revenue",
+      "intent": "가격대에 맞는 무선이어폰 추천을 통해 구매 결정을 돕기"
+    },
+    {
+      "keyword": "노이즈캔슬링 기능 좋은 헤드셋 3가지 비교",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 능력이 뛰어난 헤드셋 선택에 도움"
+    },
+    {
+      "keyword": "2만원대 무선 마우스 추천 리스트",
+      "post_type": "revenue",
+      "intent": "저렴한 무선 마우스 추천으로 구매 유도"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "가격대에 맞는 무선이어폰 추천을 통해 구매 결정을 돕기",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 기능 좋은 헤드셋 3가지 비교",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 능력이 뛰어난 헤드셋 선택에 도움",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "2만원대 무선 마우스 추천 리스트",
+      "type": "revenue",
+      "intent": "저렴한 무선 마우스 추천으로 구매 유도",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 5가지",
+      "type": "revenue",
+      "intent": "눈 건강을 고려한 모니터 구매 유도",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 갈축 차이 비교",
+      "type": "revenue",
+      "intent": "기계식 키보드 각 스위치의 특성 비교로 구매 결정에 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "휴대성 좋은 미니PC 솔직 후기",
+      "type": "revenue",
+      "intent": "이동에 편리한 미니PC의 실제 사용 후기 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "20만원 이하 게이밍 노트북 비교",
+      "type": "revenue",
+      "intent": "가성비 좋은 게이밍 노트북 선택 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무에 적합한 클라우드 서비스 비교",
+      "type": "revenue",
+      "intent": "재택근무 효율성을 높이기 위한 클라우드 서비스 선택 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "10시간 이상 재생 가능한 블루투스 스피커 후기",
+      "type": "revenue",
+      "intent": "장시간 사용 가능한 스피커 구매를 위한 실제 사용자 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "배터리 오래 가는 스마트폰 추천 2023",
+      "type": "revenue",
+      "intent": "배터리 수명이 긴 스마트폰 구매를 위한 추천 리스트",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 SSD 브랜드 추천 2023",
+      "type": "revenue",
+      "intent": "가격 대비 성능이 좋은 SSD 브랜드 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "학생에게 추천하는 10만원 이하 노트북",
+      "type": "revenue",
+      "intent": "경제적인 학생용 노트북 선택에 도움",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 잡는 방법 5가지",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 제공",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "SSD vs HDD 실제 속도 차이 및 이유",
+      "type": "info",
+      "intent": "SSD와 HDD의 성능 차이를 이해하는 데 도움",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 연결 문제 해결방법",
+      "type": "info",
+      "intent": "무선이어폰 사용 중 발생할 수 있는 연결 문제 해결 지원",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 음질 향상 방법",
+      "type": "info",
+      "intent": "스피커 음질 개선 방법 공유",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "헤드셋 노이즈캔슬링 작동 원리",
+      "type": "info",
+      "intent": "노이즈캔슬링의 원리 이해를 도와 구매결정에 도움",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "기계식 키보드 관리법 및 팁",
+      "type": "info",
+      "intent": "기계식 키보드의 유지 관리법 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 연장 팁",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명 연장을 위한 방법 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "모니터 해상도와 작업 효율의 관계",
+      "type": "info",
+      "intent": "해상도가 작업 효율에 미치는 영향 이해",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
