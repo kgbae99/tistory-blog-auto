@@ -8334,5 +8334,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 326,
+    "title": "3개월에 수면 2시간 늘린 불면증 영양제 후기",
+    "keyword": "3개월 먹어봤더니 불면증 개선 영양제 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "불면증 후기",
+      "영양제 후기",
+      "수면개선",
+      "숙면 팁",
+      "수면보조제품",
+      "슬루나 호텔베개",
+      "KF94 마스크",
+      "건강관리",
+      "영양제 추천",
+      "수면환경"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-04 08:07",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 327,
+    "title": "50대가 알아야 할 관절통의 주요 원인 5가지와 대처법",
+    "keyword": "관절통의 주요 원인 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "관절통",
+      "무릎통증",
+      "골관절증",
+      "류마티스",
+      "통풍",
+      "연부조직손상",
+      "의료비",
+      "건강검진",
+      "물리치료",
+      "관절진단"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-04 08:08",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
