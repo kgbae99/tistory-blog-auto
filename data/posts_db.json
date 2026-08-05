@@ -8442,5 +8442,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 330,
+    "title": "40대 직장인 3개월 체력회복 홈트 필라테스 후기 추천",
+    "keyword": "40대 직장인 홈트레이닝 필라테스 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대",
+      "직장인",
+      "홈트레이닝",
+      "필라테스",
+      "요가매트",
+      "복근운동기구",
+      "비타민C",
+      "쿠팡추천",
+      "건강관리",
+      "체력회복"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-06 08:05",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 331,
+    "title": "근력 운동 효과 30% 올리는 스트레칭 5가지",
+    "keyword": "근력 운동의 효과를 높이는 스트레칭 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "스트레칭",
+      "근력운동",
+      "가동성",
+      "운동루틴",
+      "회복",
+      "허리통증",
+      "운동과학",
+      "헬스팁",
+      "운동효율",
+      "근력향상"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-06 08:07",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
