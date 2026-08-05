@@ -1,0 +1,325 @@
+{
+  "date": "2026-08-06",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "4만원대 노이즈캔슬링 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위해 다양한 무선이어폰 옵션 추천"
+    },
+    {
+      "keyword": "블루투스 스피커 5개 직접 비교해본 후기",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 제품 직접 비교 후기"
+    },
+    {
+      "keyword": "재택근무 효율 올려주는 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 사용하기 좋은 무선 마우스 추천"
+    },
+    {
+      "keyword": "기계식 키보드 소음 줄이는 방법 3가지",
+      "type": "info",
+      "intent": "기계식 키보드의 소음을 줄이는 방법 탐색"
+    },
+    {
+      "keyword": "2023년 최신 그래픽카드 비교와 추천",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 비교를 통한 구매 추천"
+    },
+    {
+      "keyword": "노트북 발열 관리 방법과 추천 쿨링패드",
+      "type": "info",
+      "intent": "노트북의 발열 문제 해결을 위한 방법 탐색"
+    },
+    {
+      "keyword": "20만원대 미니PC 후기와 장단점 비교",
+      "type": "revenue",
+      "intent": "미니PC 구매에 앞서 후기를 통한 장단점 파악"
+    },
+    {
+      "keyword": "레노버 노트북 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "노트북 배터리의 수명 증가 방법 탐색"
+    },
+    {
+      "keyword": "5만원대 블루투스 스피커 실제 사용 후기",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매에 앞서 후기 확인"
+    },
+    {
+      "keyword": "저장공간 늘리는 SSD vs HDD 장단점 비교",
+      "type": "info",
+      "intent": "SSD와 HDD의 장단점 비교를 통한 탐색"
+    },
+    {
+      "keyword": "재택근무 필수 장비 클라우드 서비스 비교",
+      "type": "revenue",
+      "intent": "재택근무에 필요한 클라우드 서비스 비교"
+    },
+    {
+      "keyword": "무선 이어폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "무선 이어폰의 배터리 수명을 늘리는 방법 탐색"
+    },
+    {
+      "keyword": "자기 전에 블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터 추천"
+    },
+    {
+      "keyword": "보조배터리 고르는 방법과 주의사항",
+      "type": "info",
+      "intent": "보조배터리 선택 시 고려해야 할 요소 탐색"
+    },
+    {
+      "keyword": "30만원대 게이밍 노트북 솔직 후기",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매에 앞서 후기 확인"
+    },
+    {
+      "keyword": "5만원 이하 기계식 키보드 추천 목록",
+      "type": "revenue",
+      "intent": "예산 내에서 고를 수 있는 기계식 키보드 추천"
+    },
+    {
+      "keyword": "노트북 메모리 업그레이드 효과와 방법",
+      "type": "info",
+      "intent": "노트북 메모리 업그레이드의 효과와 방법 탐색"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 절약 방법 5가지",
+      "type": "info",
+      "intent": "스마트폰 배터리 절약을 위한 다양한 방법 탐색"
+    },
+    {
+      "keyword": "AI 도구를 활용한 재택근무 생산성 향상법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 재택근무 시 생산성 향상 방법 탐색"
+    },
+    {
+      "keyword": "2023년 최고의 충전기 추천과 비교",
+      "type": "revenue",
+      "intent": "최고의 충전기 구매에 앞서 제품 추천 및 비교"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "4만원대 노이즈캔슬링 무선이어폰 추천 이유",
+      "post_type": "revenue",
+      "intent": "구매 결정을 돕기 위해 다양한 무선이어폰 옵션 추천"
+    },
+    {
+      "keyword": "20만원대 미니PC 후기와 장단점 비교",
+      "post_type": "revenue",
+      "intent": "미니PC 구매에 앞서 후기를 통한 장단점 파악"
+    },
+    {
+      "keyword": "5만원대 블루투스 스피커 실제 사용 후기",
+      "post_type": "revenue",
+      "intent": "블루투스 스피커 구매에 앞서 후기 확인"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "4만원대 노이즈캔슬링 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위해 다양한 무선이어폰 옵션 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "20만원대 미니PC 후기와 장단점 비교",
+      "type": "revenue",
+      "intent": "미니PC 구매에 앞서 후기를 통한 장단점 파악",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 블루투스 스피커 실제 사용 후기",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매에 앞서 후기 확인",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "30만원대 게이밍 노트북 솔직 후기",
+      "type": "revenue",
+      "intent": "게이밍 노트북 구매에 앞서 후기 확인",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 5개 직접 비교해본 후기",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 제품 직접 비교 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 그래픽카드 비교와 추천",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 비교를 통한 구매 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 관리 방법과 추천 쿨링패드",
+      "type": "info",
+      "intent": "노트북의 발열 문제 해결을 위한 방법 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "저장공간 늘리는 SSD vs HDD 장단점 비교",
+      "type": "info",
+      "intent": "SSD와 HDD의 장단점 비교를 통한 탐색",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 장비 클라우드 서비스 비교",
+      "type": "revenue",
+      "intent": "재택근무에 필요한 클라우드 서비스 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최고의 충전기 추천과 비교",
+      "type": "revenue",
+      "intent": "최고의 충전기 구매에 앞서 제품 추천 및 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 올려주는 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 사용하기 좋은 무선 마우스 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 소음 줄이는 방법 3가지",
+      "type": "info",
+      "intent": "기계식 키보드의 소음을 줄이는 방법 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "자기 전에 블루라이트 차단 모니터 추천",
+      "type": "revenue",
+      "intent": "블루라이트 차단 기능이 있는 모니터 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 기계식 키보드 추천 목록",
+      "type": "revenue",
+      "intent": "예산 내에서 고를 수 있는 기계식 키보드 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 절약 방법 5가지",
+      "type": "info",
+      "intent": "스마트폰 배터리 절약을 위한 다양한 방법 탐색",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "레노버 노트북 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "노트북 배터리의 수명 증가 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 이어폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "무선 이어폰의 배터리 수명을 늘리는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "보조배터리 고르는 방법과 주의사항",
+      "type": "info",
+      "intent": "보조배터리 선택 시 고려해야 할 요소 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 메모리 업그레이드 효과와 방법",
+      "type": "info",
+      "intent": "노트북 메모리 업그레이드의 효과와 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "AI 도구를 활용한 재택근무 생산성 향상법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 재택근무 시 생산성 향상 방법 탐색",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
