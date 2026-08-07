@@ -8496,5 +8496,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 332,
+    "title": "30일 변화 확인한 건강 영양제 추천 5가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체중계 추천",
+      "요가매트",
+      "홈트용품",
+      "비타민D",
+      "헬스케어",
+      "건강검진",
+      "건강검진 비용",
+      "수치 기반 건강관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-07 10:32",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 333,
+    "title": "3주 실험: 디지털 디톡스가 수면 질에 미치는 긍정적인 효과 3가지",
+    "keyword": "디지털 디톡스가 수면 질에 미치는 긍정적인 효과 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "디지털디톡스",
+      "수면질",
+      "수면개선",
+      "휴대폰중독",
+      "웰빙",
+      "건강습관",
+      "수면연구",
+      "건강검진 비용",
+      "직장인수면",
+      "생활개선"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-07 10:33",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
