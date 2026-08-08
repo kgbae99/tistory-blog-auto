@@ -1,0 +1,311 @@
+{
+  "date": "2026-08-09",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "2023년 최신 무선이어폰 추천 5만원 이하",
+      "type": "revenue",
+      "intent": "경제적인 무선이어폰 구매를 원하는 사용자"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드폰 직접 써본 후기",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드폰 구매를 고민 중인 사용자"
+    },
+    {
+      "keyword": "블루투스 스피커 가성비 추천 목록",
+      "type": "revenue",
+      "intent": "블루투스 스피커를 좋은 가격에 찾는 사용자"
+    },
+    {
+      "keyword": "기계식 키보드 10만원대 비교 리뷰",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매를 위한 비교 리뷰를 찾는 사용자"
+    },
+    {
+      "keyword": "50만원 이하 노트북 재택근무용 추천",
+      "type": "revenue",
+      "intent": "재택근무용 노트북을 저렴하게 구매하려는 사용자"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 비교 후기",
+      "type": "revenue",
+      "intent": "SSD와 HDD 선택을 고민하는 사용자"
+    },
+    {
+      "keyword": "무선 마우스 배터리 사용 시간 비교",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 전 배터리 수명 비교를 원하는 사용자"
+    },
+    {
+      "keyword": "스마트폰 충전기 5개 브랜드 비교 후기",
+      "type": "revenue",
+      "intent": "충전기 브랜드별 후기를 찾는 사용자"
+    },
+    {
+      "keyword": "500GB SSD 직접 설치 후기",
+      "type": "revenue",
+      "intent": "SSD 설치 방법과 후기를 원하는 사용자"
+    },
+    {
+      "keyword": "5만원 이하 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "저렴한 스피커 구매를 원하는 사용자"
+    },
+    {
+      "keyword": "재택근무 필수 아이템 비교 리뷰",
+      "type": "revenue",
+      "intent": "재택근무 세팅을 준비 중인 사용자"
+    },
+    {
+      "keyword": "아이폰 보조배터리 용량별 추천",
+      "type": "revenue",
+      "intent": "아이폰용 보조배터리 구매를 고민하는 사용자"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결을 원하는 사용자"
+    },
+    {
+      "keyword": "클라우드 저장소 선택 방법과 이유",
+      "type": "info",
+      "intent": "클라우드 저장소 사용을 고려하는 사용자"
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 기능 필요성",
+      "type": "info",
+      "intent": "블루라이트 차단 기능의 필요성을 이해하려는 사용자"
+    },
+    {
+      "keyword": "AI 도구 활용한 효율적인 업무 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 생산성 향상을 원하는 사용자"
+    },
+    {
+      "keyword": "재택근무 세팅 시 고려해야 할 점",
+      "type": "info",
+      "intent": "재택근무 환경을 개선하려는 사용자"
+    },
+    {
+      "keyword": "무선 마우스 연결 불안정 문제 해결",
+      "type": "info",
+      "intent": "무선 마우스 사용 중 연결 문제를 해결하려는 사용자"
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 필요 여부",
+      "type": "info",
+      "intent": "노트북 성능 향상을 위한 RAM 업그레이드 여부를 고민하는 사용자"
+    },
+    {
+      "keyword": "그래픽카드 성능 차이 이해하기",
+      "type": "info",
+      "intent": "그래픽카드 성능 차이를 알고 싶은 사용자"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "기계식 키보드 10만원대 비교 리뷰",
+      "post_type": "revenue",
+      "intent": "기계식 키보드 구매를 위한 비교 리뷰를 찾는 사용자"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드폰 직접 써본 후기",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 헤드폰 구매를 고민 중인 사용자"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 비교 후기",
+      "post_type": "revenue",
+      "intent": "SSD와 HDD 선택을 고민하는 사용자"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "기계식 키보드 10만원대 비교 리뷰",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매를 위한 비교 리뷰를 찾는 사용자",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드폰 직접 써본 후기",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드폰 구매를 고민 중인 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 비교 후기",
+      "type": "revenue",
+      "intent": "SSD와 HDD 선택을 고민하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 배터리 사용 시간 비교",
+      "type": "revenue",
+      "intent": "무선 마우스 구매 전 배터리 수명 비교를 원하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "스마트폰 충전기 5개 브랜드 비교 후기",
+      "type": "revenue",
+      "intent": "충전기 브랜드별 후기를 찾는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "500GB SSD 직접 설치 후기",
+      "type": "revenue",
+      "intent": "SSD 설치 방법과 후기를 원하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "저렴한 스피커 구매를 원하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 아이템 비교 리뷰",
+      "type": "revenue",
+      "intent": "재택근무 세팅을 준비 중인 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선이어폰 추천 5만원 이하",
+      "type": "revenue",
+      "intent": "경제적인 무선이어폰 구매를 원하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 가성비 추천 목록",
+      "type": "revenue",
+      "intent": "블루투스 스피커를 좋은 가격에 찾는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "50만원 이하 노트북 재택근무용 추천",
+      "type": "revenue",
+      "intent": "재택근무용 노트북을 저렴하게 구매하려는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "아이폰 보조배터리 용량별 추천",
+      "type": "revenue",
+      "intent": "아이폰용 보조배터리 구매를 고민하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결을 원하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 선택 방법과 이유",
+      "type": "info",
+      "intent": "클라우드 저장소 사용을 고려하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 효율적인 업무 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 생산성 향상을 원하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 연결 불안정 문제 해결",
+      "type": "info",
+      "intent": "무선 마우스 사용 중 연결 문제를 해결하려는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능 차이 이해하기",
+      "type": "info",
+      "intent": "그래픽카드 성능 차이를 알고 싶은 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "모니터 블루라이트 차단 기능 필요성",
+      "type": "info",
+      "intent": "블루라이트 차단 기능의 필요성을 이해하려는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "재택근무 세팅 시 고려해야 할 점",
+      "type": "info",
+      "intent": "재택근무 환경을 개선하려는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 필요 여부",
+      "type": "info",
+      "intent": "노트북 성능 향상을 위한 RAM 업그레이드 여부를 고민하는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
