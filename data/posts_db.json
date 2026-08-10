@@ -8710,5 +8710,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 340,
+    "title": "40대 여성 3주 만에 불면증 개선 영양제 추천 후기",
+    "keyword": "40대 여성 불면증 해소를 위한 영양제 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대불면증",
+      "불면증영양제후기",
+      "수면개선제품추천",
+      "오메가3수면",
+      "숙면차추천",
+      "중년여성건강",
+      "쿠팡추천",
+      "건강비용절감",
+      "수면질향상",
+      "영양제선택팁"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-11 07:43",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 341,
+    "title": "중년 무릎 통증 4주 개선법: 관절통의 주요 원인과 완화 방법 5가지",
+    "keyword": "관절통의 주요 원인과 완화 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "관절통",
+      "무릎통증",
+      "골관절염",
+      "류마티스",
+      "통증완화",
+      "물리치료",
+      "주사치료",
+      "건강관리",
+      "관절염예방",
+      "재활"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-11 07:44",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
