@@ -8764,5 +8764,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 342,
+    "title": "30대 3개월 변화로 본 건강 영양제 추천 5선",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 비교",
+      "비타민D",
+      "철분 보충",
+      "체중계 추천",
+      "요가매트",
+      "건강 루틴",
+      "영양제 후기",
+      "건강검진 비용",
+      "체크리스트"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-12 07:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 343,
+    "title": "지중해식 식단의 장점과 적용 방법 5가지로 체중·혈당 개선",
+    "keyword": "지중해식 식단의 장점과 적용 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "지중해식",
+      "식단",
+      "건강식",
+      "혈당관리",
+      "체중감량",
+      "영양",
+      "웰빙",
+      "식습관개선",
+      "의료비절감"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-12 07:51",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
