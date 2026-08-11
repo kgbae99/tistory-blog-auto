@@ -1,0 +1,297 @@
+{
+  "date": "2026-08-12",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 2023",
+      "type": "revenue",
+      "intent": "무선이어폰 구매를 고려하는 소비자들을 위한 추천 리스트"
+    },
+    {
+      "keyword": "게임용 무선 마우스 3종 비교 및 후기",
+      "type": "revenue",
+      "intent": "게이밍 관련 무선 마우스 구매를 고려하는 소비자들을 위한 비교 및 사용자 후기"
+    },
+    {
+      "keyword": "2023년 노트북 추천 사무용 TOP 5",
+      "type": "revenue",
+      "intent": "사무용 노트북 구매를 고려하는 소비자들에게 최고의 선택을 제공하기 위한 추천 목록"
+    },
+    {
+      "keyword": "가성비 좋은 블루투스 스피커 비교",
+      "type": "revenue",
+      "intent": "블루투스 스피커를 구매하려는 소비자들에게 가성비 제품 비교 소개"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 직접 사용 후기",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋에 관심있는 소비자들에게 실제 사용 후기를 제공"
+    },
+    {
+      "keyword": "4K 모니터 vs QHD 모니터 차이점 비교",
+      "type": "revenue",
+      "intent": "고해상도 모니터 구매 결정 시 도움이 될 수 있는 차이점 비교"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 개선 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리기 위한 방법에 관심 있는 사용자"
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이점",
+      "type": "info",
+      "intent": "기계식 키보드 구매 시 청축과 적축의 차이를 알고 싶어하는 사용자"
+    },
+    {
+      "keyword": "2023년 미니PC 추천 및 리뷰",
+      "type": "revenue",
+      "intent": "미니PC 구매를 고민 중인 사용자를 위한 추천 및 리뷰"
+    },
+    {
+      "keyword": "SSD 설치 방법 및 주의사항",
+      "type": "info",
+      "intent": "SSD를 처음 설치하는 사용자에게 설치 방법과 주의사항을 제공"
+    },
+    {
+      "keyword": "RAM 업그레이드가 컴퓨터 성능에 미치는 영향",
+      "type": "info",
+      "intent": "컴퓨터 성능 개선을 위한 RAM 업그레이드의 효과를 알고 싶어하는 사용자"
+    },
+    {
+      "keyword": "재택근무 효율 높이는 가성비 장비 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 생산성을 높이고자 하는 사용자를 위한 장비 추천"
+    },
+    {
+      "keyword": "3D 그래픽 작업용 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "3D 그래픽 작업에 적합한 그래픽카드 구매를 고민하는 사용자"
+    },
+    {
+      "keyword": "AI 도구 활용해 업무 자동화 하는 법",
+      "type": "info",
+      "intent": "업무 생산성을 높이기 위해 AI 도구를 활용하고자 하는 사용자"
+    },
+    {
+      "keyword": "USB-C 충전기 선택 시 고려할 점",
+      "type": "info",
+      "intent": "USB-C 충전기 구매 시 중요 고려사항을 알고 싶어하는 사용자"
+    },
+    {
+      "keyword": "클라우드 서비스 무료 체험 가능한 곳",
+      "type": "info",
+      "intent": "클라우드 서비스를 체험해보고자 하는 사용자에게 무료 서비스 정보를 제공"
+    },
+    {
+      "keyword": "재택근무용 노트북 스탠드 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위한 노트북 스탠드 추천"
+    },
+    {
+      "keyword": "노트북 액세서리 필수품 리스트",
+      "type": "revenue",
+      "intent": "노트북 사용자에게 유용한 액세서리 정보를 제공"
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 있을까?",
+      "type": "info",
+      "intent": "블루라이트 차단 안경의 효과에 대해 알고 싶어하는 사용자"
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 순위 2023",
+      "type": "info",
+      "intent": "최신 그래픽카드의 성능에 대해 알고 싶어하는 사용자에게 순위 정보 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "게임용 무선 마우스 3종 비교 및 후기",
+      "post_type": "revenue",
+      "intent": "게이밍 관련 무선 마우스 구매를 고려하는 소비자들을 위한 비교 및 사용자 후기"
+    },
+    {
+      "keyword": "가성비 좋은 블루투스 스피커 비교",
+      "post_type": "revenue",
+      "intent": "블루투스 스피커를 구매하려는 소비자들에게 가성비 제품 비교 소개"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 직접 사용 후기",
+      "post_type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋에 관심있는 소비자들에게 실제 사용 후기를 제공"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "게임용 무선 마우스 3종 비교 및 후기",
+      "type": "revenue",
+      "intent": "게이밍 관련 무선 마우스 구매를 고려하는 소비자들을 위한 비교 및 사용자 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 블루투스 스피커 비교",
+      "type": "revenue",
+      "intent": "블루투스 스피커를 구매하려는 소비자들에게 가성비 제품 비교 소개",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 직접 사용 후기",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋에 관심있는 소비자들에게 실제 사용 후기를 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "4K 모니터 vs QHD 모니터 차이점 비교",
+      "type": "revenue",
+      "intent": "고해상도 모니터 구매 결정 시 도움이 될 수 있는 차이점 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 높이는 가성비 장비 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 생산성을 높이고자 하는 사용자를 위한 장비 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 2023",
+      "type": "revenue",
+      "intent": "무선이어폰 구매를 고려하는 소비자들을 위한 추천 리스트",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 노트북 추천 사무용 TOP 5",
+      "type": "revenue",
+      "intent": "사무용 노트북 구매를 고려하는 소비자들에게 최고의 선택을 제공하기 위한 추천 목록",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 미니PC 추천 및 리뷰",
+      "type": "revenue",
+      "intent": "미니PC 구매를 고민 중인 사용자를 위한 추천 및 리뷰",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3D 그래픽 작업용 그래픽카드 추천",
+      "type": "revenue",
+      "intent": "3D 그래픽 작업에 적합한 그래픽카드 구매를 고민하는 사용자",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 노트북 스탠드 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위한 노트북 스탠드 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 개선 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리기 위한 방법에 관심 있는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축과 적축 차이점",
+      "type": "info",
+      "intent": "기계식 키보드 구매 시 청축과 적축의 차이를 알고 싶어하는 사용자",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "SSD 설치 방법 및 주의사항",
+      "type": "info",
+      "intent": "SSD를 처음 설치하는 사용자에게 설치 방법과 주의사항을 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "USB-C 충전기 선택 시 고려할 점",
+      "type": "info",
+      "intent": "USB-C 충전기 구매 시 중요 고려사항을 알고 싶어하는 사용자",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "블루라이트 차단 안경 효과 있을까?",
+      "type": "info",
+      "intent": "블루라이트 차단 안경의 효과에 대해 알고 싶어하는 사용자",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "RAM 업그레이드가 컴퓨터 성능에 미치는 영향",
+      "type": "info",
+      "intent": "컴퓨터 성능 개선을 위한 RAM 업그레이드의 효과를 알고 싶어하는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "AI 도구 활용해 업무 자동화 하는 법",
+      "type": "info",
+      "intent": "업무 생산성을 높이기 위해 AI 도구를 활용하고자 하는 사용자",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "클라우드 서비스 무료 체험 가능한 곳",
+      "type": "info",
+      "intent": "클라우드 서비스를 체험해보고자 하는 사용자에게 무료 서비스 정보를 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "노트북 액세서리 필수품 리스트",
+      "type": "revenue",
+      "intent": "노트북 사용자에게 유용한 액세서리 정보를 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 순위 2023",
+      "type": "info",
+      "intent": "최신 그래픽카드의 성능에 대해 알고 싶어하는 사용자에게 순위 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
