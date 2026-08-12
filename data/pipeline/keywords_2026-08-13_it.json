@@ -1,0 +1,311 @@
+{
+  "date": "2026-08-13",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 10,
+  "info_cnt": 10,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매를 고민하는 사용자에게 추천 제품을 제공"
+    },
+    {
+      "keyword": "10만원대 기계식 키보드 솔직 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 예정자의 후기를 통한 구매 결정 도움"
+    },
+    {
+      "keyword": "블루투스 스피커 구매 전 비교 필수 체크포인트",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 시 고려사항을 비교해 정보를 제공"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 3종 비교",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 선택을 위한 비교 정보 제공"
+    },
+    {
+      "keyword": "2023년 최신 그래픽카드 성능 비교",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 구매 결정에 필요한 성능 비교 정보 제공"
+    },
+    {
+      "keyword": "20만원 이하 미니PC 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 미니PC 구매에 필요한 추천 정보 제공"
+    },
+    {
+      "keyword": "기계식 키보드 직접 사용 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매자에게 직접 사용 후기를 통한 정보 제공"
+    },
+    {
+      "keyword": "무선 마우스 다양한 브랜드 비교",
+      "type": "revenue",
+      "intent": "무선 마우스 브랜드 비교를 통한 구매 결정 도움"
+    },
+    {
+      "keyword": "재택근무 세팅을 위한 AI 도구 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 AI 도구 추천"
+    },
+    {
+      "keyword": "스마트폰 배터리 교체가 필요한 진짜 이유",
+      "type": "info",
+      "intent": "스마트폰 배터리 교체의 필수 이유와 정보 제공"
+    },
+    {
+      "keyword": "SSD와 HDD 선택 시 차이점",
+      "type": "info",
+      "intent": "SSD와 HDD의 차이를 알고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "노트북 발열 감소 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 및 정보 제공"
+    },
+    {
+      "keyword": "보조배터리 구매 시 고려해야 할 3가지",
+      "type": "info",
+      "intent": "보조배터리 구매 시 필수 고려사항 정보 제공"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 있나",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 효과에 대한 정보 제공"
+    },
+    {
+      "keyword": "충전기와 케이블 차이점 및 선택 방법",
+      "type": "info",
+      "intent": "충전기 및 케이블 선택 시 고려해야 할 정보 제공"
+    },
+    {
+      "keyword": "모니터 해상도 선택 시 고려할 점",
+      "type": "info",
+      "intent": "모니터 해상도 선택에 필요한 고려사항 정보 제공"
+    },
+    {
+      "keyword": "클라우드 서비스 종류와 사용 이유",
+      "type": "info",
+      "intent": "다양한 클라우드 서비스 종류와 사용 이유에 대한 정보 제공"
+    },
+    {
+      "keyword": "재택근무 최적 환경 설정 방법",
+      "type": "info",
+      "intent": "재택근무 환경 최적화 위한 설정 방법 정보 제공"
+    },
+    {
+      "keyword": "AI 도구로 생산성 향상 가능한 이유",
+      "type": "info",
+      "intent": "AI 도구 사용으로 생산성 향상이 가능한 이유 정보 제공"
+    },
+    {
+      "keyword": "3만원대 무선이어폰 사용 후기",
+      "type": "revenue",
+      "intent": "3만원대 무선이어폰 구매 결정을 위한 직접 사용 후기 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "10만원대 기계식 키보드 솔직 후기",
+      "post_type": "revenue",
+      "intent": "기계식 키보드 구매 예정자의 후기를 통한 구매 결정 도움"
+    },
+    {
+      "keyword": "3만원대 무선이어폰 사용 후기",
+      "post_type": "revenue",
+      "intent": "3만원대 무선이어폰 구매 결정을 위한 직접 사용 후기 제공"
+    },
+    {
+      "keyword": "블루투스 스피커 구매 전 비교 필수 체크포인트",
+      "post_type": "revenue",
+      "intent": "블루투스 스피커 구매 시 고려사항을 비교해 정보를 제공"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "10만원대 기계식 키보드 솔직 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매 예정자의 후기를 통한 구매 결정 도움",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "3만원대 무선이어폰 사용 후기",
+      "type": "revenue",
+      "intent": "3만원대 무선이어폰 구매 결정을 위한 직접 사용 후기 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 구매 전 비교 필수 체크포인트",
+      "type": "revenue",
+      "intent": "블루투스 스피커 구매 시 고려사항을 비교해 정보를 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 노트북 3종 비교",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 선택을 위한 비교 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 그래픽카드 성능 비교",
+      "type": "revenue",
+      "intent": "최신 그래픽카드 구매 결정에 필요한 성능 비교 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 직접 사용 후기",
+      "type": "revenue",
+      "intent": "기계식 키보드 구매자에게 직접 사용 후기를 통한 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 다양한 브랜드 비교",
+      "type": "revenue",
+      "intent": "무선 마우스 브랜드 비교를 통한 구매 결정 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "노이즈캔슬링 헤드셋 구매를 고민하는 사용자에게 추천 제품을 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "20만원 이하 미니PC 추천",
+      "type": "revenue",
+      "intent": "가성비 좋은 미니PC 구매에 필요한 추천 정보 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅을 위한 AI 도구 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 AI 도구 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 교체가 필요한 진짜 이유",
+      "type": "info",
+      "intent": "스마트폰 배터리 교체의 필수 이유와 정보 제공",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "충전기와 케이블 차이점 및 선택 방법",
+      "type": "info",
+      "intent": "충전기 및 케이블 선택 시 고려해야 할 정보 제공",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 선택 시 차이점",
+      "type": "info",
+      "intent": "SSD와 HDD의 차이를 알고자 하는 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 종류와 사용 이유",
+      "type": "info",
+      "intent": "다양한 클라우드 서비스 종류와 사용 이유에 대한 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적 환경 설정 방법",
+      "type": "info",
+      "intent": "재택근무 환경 최적화 위한 설정 방법 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구로 생산성 향상 가능한 이유",
+      "type": "info",
+      "intent": "AI 도구 사용으로 생산성 향상이 가능한 이유 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 있나",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 효과에 대한 정보 제공",
+      "score": 0,
+      "score_reasons": []
+    },
+    {
+      "keyword": "모니터 해상도 선택 시 고려할 점",
+      "type": "info",
+      "intent": "모니터 해상도 선택에 필요한 고려사항 정보 제공",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "노트북 발열 감소 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방법 및 정보 제공",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "보조배터리 구매 시 고려해야 할 3가지",
+      "type": "info",
+      "intent": "보조배터리 구매 시 필수 고려사항 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
