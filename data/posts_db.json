@@ -8871,5 +8871,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 346,
+    "title": "40대 직장인 3주 만에 스트레스↓ 명상법 후기",
+    "keyword": "40대 직장인 스트레스 해소를 위한 명상법 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대",
+      "직장인",
+      "스트레스",
+      "명상법",
+      "명상 후기",
+      "웰빙",
+      "건강관리",
+      "체중계",
+      "생산성",
+      "마음건강"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-14 07:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 347,
+    "title": "한 달 만에 수면의 질 개선한 생체리듬 조절 5가지",
+    "keyword": "수면의 질 향상을 위한 생체리듬 조절 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면",
+      "생체리듬",
+      "수면의 질",
+      "수면개선",
+      "광노출",
+      "카페인조절",
+      "취침루틴",
+      "건강검진",
+      "생활습관",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-14 07:51",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
