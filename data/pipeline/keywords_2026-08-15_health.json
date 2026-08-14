@@ -1,0 +1,316 @@
+{
+  "date": "2026-08-15",
+  "blog": "health",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "50대 여성 비타민D 보충제 추천 비교",
+      "type": "revenue",
+      "intent": "50대 여성을 위한 비타민D 보충제 다양한 제품 추천 및 비교"
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 5가지 장단점 후기",
+      "type": "revenue",
+      "intent": "다이어트를 위한 단백질 보충제 5가지의 장단점에 대한 실제 후기"
+    },
+    {
+      "keyword": "갱년기 여성 오메가3 추천 및 효과",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 도움이 되는 오메가3 추천 및 효과 설명"
+    },
+    {
+      "keyword": "유산균 영양제 3개월 복용 후기",
+      "type": "revenue",
+      "intent": "3개월간 유산균 영양제를 복용한 후기 및 효과 분석"
+    },
+    {
+      "keyword": "40대 직장인 마그네슘 영양제 추천",
+      "type": "revenue",
+      "intent": "40대 직장인을 위한 마그네슘 영양제 추천"
+    },
+    {
+      "keyword": "무릎 통증 완화 보조제 3가지 비교",
+      "type": "revenue",
+      "intent": "무릎 통증 완화에 도움을 주는 보조제 3가지 비교 설명"
+    },
+    {
+      "keyword": "콜라겐 보충제 피부 개선 효과 후기",
+      "type": "revenue",
+      "intent": "콜라겐 보충제의 피부 개선 효과에 대한 후기"
+    },
+    {
+      "keyword": "직장인 스트레스성 탈모 샴푸 추천",
+      "type": "revenue",
+      "intent": "직장인에게 적합한 스트레스성 탈모 완화 샴푸 추천"
+    },
+    {
+      "keyword": "장 건강 유산균 제품 5개 비교",
+      "type": "revenue",
+      "intent": "장 건강에 좋은 유산균 제품 5개의 비교"
+    },
+    {
+      "keyword": "피부 건조 개선 보조제 리뷰",
+      "type": "revenue",
+      "intent": "피부 건조를 개선하는 보조제에 대한 실제 리뷰"
+    },
+    {
+      "keyword": "허리 통증 완화 영양제 추천",
+      "type": "revenue",
+      "intent": "허리 통증 완화에 효과적인 영양제 추천"
+    },
+    {
+      "keyword": "직장인 수면 보조제 2주 사용 후기",
+      "type": "revenue",
+      "intent": "직장인 수면 보조제를 2주간 사용한 후기"
+    },
+    {
+      "keyword": "간헐적 단식 체중 감량 성공 방법",
+      "type": "info",
+      "intent": "간헐적 단식으로 체중을 성공적으로 감량하는 방법에 대한 정보"
+    },
+    {
+      "keyword": "저탄고지 다이어트 부작용 및 대처법",
+      "type": "info",
+      "intent": "저탄고지 다이어트 시 나타날 수 있는 부작용과 대처법 설명"
+    },
+    {
+      "keyword": "혈당 스파이크 예방 3가지 방법",
+      "type": "info",
+      "intent": "혈당 스파이크를 예방하기 위한 3가지 방법 설명"
+    },
+    {
+      "keyword": "관절염 증상 완화 생활 습관 5가지",
+      "type": "info",
+      "intent": "관절염 증상을 완화하는 데 도움이 되는 생활 습관 5가지 소개"
+    },
+    {
+      "keyword": "만성피로 원인과 해결책",
+      "type": "info",
+      "intent": "만성피로가 생기는 원인과 이를 해결하는 방법에 대한 정보"
+    },
+    {
+      "keyword": "불면증 개선을 위한 수면 습관",
+      "type": "info",
+      "intent": "불면증 개선을 위한 건강한 수면 습관 정보 제공"
+    },
+    {
+      "keyword": "50대 여성 체지방 감소 비결",
+      "type": "info",
+      "intent": "50대 여성을 위한 효과적인 체지방 감소 비결 설명"
+    },
+    {
+      "keyword": "장 건강 식단 구성하는 방법",
+      "type": "info",
+      "intent": "장 건강에 도움이 되는 식단을 구성하는 방법에 대한 정보"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "50대 여성 비타민D 보충제 추천 비교",
+      "post_type": "revenue",
+      "intent": "50대 여성을 위한 비타민D 보충제 다양한 제품 추천 및 비교"
+    },
+    {
+      "keyword": "무릎 통증 완화 보조제 3가지 비교",
+      "post_type": "revenue",
+      "intent": "무릎 통증 완화에 도움을 주는 보조제 3가지 비교 설명"
+    },
+    {
+      "keyword": "장 건강 유산균 제품 5개 비교",
+      "post_type": "revenue",
+      "intent": "장 건강에 좋은 유산균 제품 5개의 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "50대 여성 비타민D 보충제 추천 비교",
+      "type": "revenue",
+      "intent": "50대 여성을 위한 비타민D 보충제 다양한 제품 추천 및 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "무릎 통증 완화 보조제 3가지 비교",
+      "type": "revenue",
+      "intent": "무릎 통증 완화에 도움을 주는 보조제 3가지 비교 설명",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "장 건강 유산균 제품 5개 비교",
+      "type": "revenue",
+      "intent": "장 건강에 좋은 유산균 제품 5개의 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "다이어트 단백질 보충제 5가지 장단점 후기",
+      "type": "revenue",
+      "intent": "다이어트를 위한 단백질 보충제 5가지의 장단점에 대한 실제 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "갱년기 여성 오메가3 추천 및 효과",
+      "type": "revenue",
+      "intent": "갱년기 여성에게 도움이 되는 오메가3 추천 및 효과 설명",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "유산균 영양제 3개월 복용 후기",
+      "type": "revenue",
+      "intent": "3개월간 유산균 영양제를 복용한 후기 및 효과 분석",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "40대 직장인 마그네슘 영양제 추천",
+      "type": "revenue",
+      "intent": "40대 직장인을 위한 마그네슘 영양제 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "직장인 스트레스성 탈모 샴푸 추천",
+      "type": "revenue",
+      "intent": "직장인에게 적합한 스트레스성 탈모 완화 샴푸 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "직장인 수면 보조제 2주 사용 후기",
+      "type": "revenue",
+      "intent": "직장인 수면 보조제를 2주간 사용한 후기",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 타겟 대상"
+      ]
+    },
+    {
+      "keyword": "콜라겐 보충제 피부 개선 효과 후기",
+      "type": "revenue",
+      "intent": "콜라겐 보충제의 피부 개선 효과에 대한 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "허리 통증 완화 영양제 추천",
+      "type": "revenue",
+      "intent": "허리 통증 완화에 효과적인 영양제 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "혈당 스파이크 예방 3가지 방법",
+      "type": "info",
+      "intent": "혈당 스파이크를 예방하기 위한 3가지 방법 설명",
+      "score": 3,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "피부 건조 개선 보조제 리뷰",
+      "type": "revenue",
+      "intent": "피부 건조를 개선하는 보조제에 대한 실제 리뷰",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "간헐적 단식 체중 감량 성공 방법",
+      "type": "info",
+      "intent": "간헐적 단식으로 체중을 성공적으로 감량하는 방법에 대한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "만성피로 원인과 해결책",
+      "type": "info",
+      "intent": "만성피로가 생기는 원인과 이를 해결하는 방법에 대한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "불면증 개선을 위한 수면 습관",
+      "type": "info",
+      "intent": "불면증 개선을 위한 건강한 수면 습관 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "장 건강 식단 구성하는 방법",
+      "type": "info",
+      "intent": "장 건강에 도움이 되는 식단을 구성하는 방법에 대한 정보",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "저탄고지 다이어트 부작용 및 대처법",
+      "type": "info",
+      "intent": "저탄고지 다이어트 시 나타날 수 있는 부작용과 대처법 설명",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "관절염 증상 완화 생활 습관 5가지",
+      "type": "info",
+      "intent": "관절염 증상을 완화하는 데 도움이 되는 생활 습관 5가지 소개",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "50대 여성 체지방 감소 비결",
+      "type": "info",
+      "intent": "50대 여성을 위한 효과적인 체지방 감소 비결 설명",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
