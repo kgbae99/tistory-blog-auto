@@ -1,0 +1,315 @@
+{
+  "date": "2026-08-16",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 10,
+  "info_cnt": 10,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도: 노이즈캔슬링 이어폰 추천을 통해 구매 결정 도움"
+    },
+    {
+      "keyword": "2023년 무선 마우스 TOP 3 비교",
+      "type": "revenue",
+      "intent": "구매 의도: 무선 마우스 비교를 통해 구매 선택 도움"
+    },
+    {
+      "keyword": "게이밍 노트북 4종 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 게이밍 노트북 4종에 대한 사용자 후기를 통해 결정 도움"
+    },
+    {
+      "keyword": "블루투스 스피커 소리 좋은 이유",
+      "type": "info",
+      "intent": "탐색 의도: 블루투스 스피커의 음질 향상 이유 탐색"
+    },
+    {
+      "keyword": "2023년 최신 기계식 키보드 추천",
+      "type": "revenue",
+      "intent": "구매 의도: 최신 기계식 키보드 구매를 위한 추천 제공"
+    },
+    {
+      "keyword": "재택근무 효율적인 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도: 재택근무 시 효율성을 높이는 세팅 방법 탐색"
+    },
+    {
+      "keyword": "고해상도 모니터의 필요성 이유",
+      "type": "info",
+      "intent": "탐색 의도: 고해상도 모니터가 필요한 이유 탐색"
+    },
+    {
+      "keyword": "가성비 좋은 무선 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도: 가성비를 고려한 무선 이어폰 추천"
+    },
+    {
+      "keyword": "보조배터리 안전하게 사용하는 방법",
+      "type": "info",
+      "intent": "탐색 의도: 보조배터리를 안전하게 사용하는 방법 탐색"
+    },
+    {
+      "keyword": "2023 최신 스마트폰 배터리 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 최신 스마트폰 배터리 성능 비교를 통한 구매 결정 도움"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 이유",
+      "type": "info",
+      "intent": "탐색 의도: SSD와 HDD의 속도 차이를 이해하기 위한 정보 탐색"
+    },
+    {
+      "keyword": "무선 충전기 추천 및 비교",
+      "type": "revenue",
+      "intent": "구매 의도: 무선 충전기의 추천 및 비교를 통한 구매 결정 도움"
+    },
+    {
+      "keyword": "미니PC 활용 방법과 장점",
+      "type": "info",
+      "intent": "탐색 의도: 미니PC의 활용 방법과 장점에 대한 정보 탐색"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 블루라이트 차단 모니터에 대한 추천 및 후기"
+    },
+    {
+      "keyword": "2023년 AI 도구 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 최신 AI 도구들의 사용 후기를 통한 구매 결정 도움"
+    },
+    {
+      "keyword": "그래픽카드 성능 검증 방법",
+      "type": "info",
+      "intent": "탐색 의도: 그래픽카드의 성능을 검증하는 방법 탐색"
+    },
+    {
+      "keyword": "클라우드 서비스 선택 가이드",
+      "type": "info",
+      "intent": "탐색 의도: 클라우드 서비스 선택을 위한 가이드 제공"
+    },
+    {
+      "keyword": "저렴한 가격대의 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도: 저렴한 가격대에서 성능이 좋은 노트북 추천"
+    },
+    {
+      "keyword": "모니터 해상도 설정 방법",
+      "type": "info",
+      "intent": "탐색 의도: 모니터 해상도를 적절히 설정하는 방법 탐색"
+    },
+    {
+      "keyword": "RAM 업그레이드 필요성 이유",
+      "type": "info",
+      "intent": "탐색 의도: RAM 업그레이드의 필요성과 이유 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천 이유",
+      "post_type": "revenue",
+      "intent": "구매 의도: 노이즈캔슬링 이어폰 추천을 통해 구매 결정 도움"
+    },
+    {
+      "keyword": "2023년 무선 마우스 TOP 3 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도: 무선 마우스 비교를 통해 구매 선택 도움"
+    },
+    {
+      "keyword": "게이밍 노트북 4종 비교 후기",
+      "post_type": "revenue",
+      "intent": "구매 의도: 게이밍 노트북 4종에 대한 사용자 후기를 통해 결정 도움"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "구매 의도: 노이즈캔슬링 이어폰 추천을 통해 구매 결정 도움",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "2023년 무선 마우스 TOP 3 비교",
+      "type": "revenue",
+      "intent": "구매 의도: 무선 마우스 비교를 통해 구매 선택 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "게이밍 노트북 4종 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 게이밍 노트북 4종에 대한 사용자 후기를 통해 결정 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023 최신 스마트폰 배터리 비교 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 최신 스마트폰 배터리 성능 비교를 통한 구매 결정 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "무선 충전기 추천 및 비교",
+      "type": "revenue",
+      "intent": "구매 의도: 무선 충전기의 추천 및 비교를 통한 구매 결정 도움",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 기계식 키보드 추천",
+      "type": "revenue",
+      "intent": "구매 의도: 최신 기계식 키보드 구매를 위한 추천 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 무선 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도: 가성비를 고려한 무선 이어폰 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 블루라이트 차단 모니터에 대한 추천 및 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 AI 도구 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도: 최신 AI 도구들의 사용 후기를 통한 구매 결정 도움",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "저렴한 가격대의 노트북 추천",
+      "type": "revenue",
+      "intent": "구매 의도: 저렴한 가격대에서 성능이 좋은 노트북 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 이유",
+      "type": "info",
+      "intent": "탐색 의도: SSD와 HDD의 속도 차이를 이해하기 위한 정보 탐색",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 소리 좋은 이유",
+      "type": "info",
+      "intent": "탐색 의도: 블루투스 스피커의 음질 향상 이유 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율적인 세팅 방법",
+      "type": "info",
+      "intent": "탐색 의도: 재택근무 시 효율성을 높이는 세팅 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "고해상도 모니터의 필요성 이유",
+      "type": "info",
+      "intent": "탐색 의도: 고해상도 모니터가 필요한 이유 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "보조배터리 안전하게 사용하는 방법",
+      "type": "info",
+      "intent": "탐색 의도: 보조배터리를 안전하게 사용하는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "미니PC 활용 방법과 장점",
+      "type": "info",
+      "intent": "탐색 의도: 미니PC의 활용 방법과 장점에 대한 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능 검증 방법",
+      "type": "info",
+      "intent": "탐색 의도: 그래픽카드의 성능을 검증하는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도 설정 방법",
+      "type": "info",
+      "intent": "탐색 의도: 모니터 해상도를 적절히 설정하는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 필요성 이유",
+      "type": "info",
+      "intent": "탐색 의도: RAM 업그레이드의 필요성과 이유 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 선택 가이드",
+      "type": "info",
+      "intent": "탐색 의도: 클라우드 서비스 선택을 위한 가이드 제공",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
