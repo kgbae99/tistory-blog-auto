@@ -1595,7 +1595,14 @@
     "health_05.jpg",
     "health_08.jpg",
     "health_16.jpg",
+    "medical_03.jpg",
+    "skin_01.jpg",
+    "skin_05.jpg",
+    "tech_01.jpg",
+    "tech_02.jpg",
     "tech_04.jpg",
+    "tech_13.jpg",
+    "tech_15.jpg",
     "tech_17.jpg",
     "tech_18.jpg",
     "tech_19.jpg",
@@ -1603,6 +1610,7 @@
     "tech_26.jpg",
     "tech_28.jpg",
     "tech_29.jpg",
-    "tech_30.jpg"
+    "tech_30.jpg",
+    "tired_01.jpg"
   ]
 }
