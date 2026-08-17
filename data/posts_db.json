@@ -9087,5 +9087,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 354,
+    "title": "30대 여성 3개월 건강 영양제 추천 후기와 선택법",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 추천",
+      "비타민D",
+      "마그네슘",
+      "홈 헬스",
+      "체중계 추천",
+      "요가매트",
+      "건강검진",
+      "영양제 후기",
+      "건강관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-18 07:29",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 355,
+    "title": "무릎 관절통 완화에 효과적인 스트레칭 방법 3가지",
+    "keyword": "관절통 완화에 효과적인 스트레칭 방법 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "무릎통증",
+      "관절통",
+      "스트레칭",
+      "관절통완화",
+      "햄스트링",
+      "가동술",
+      "재활운동",
+      "건강관리",
+      "물리치료",
+      "운동처방"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-18 07:31",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
