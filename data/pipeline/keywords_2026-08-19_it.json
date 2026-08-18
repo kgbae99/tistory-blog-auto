@@ -1,0 +1,316 @@
+{
+  "date": "2026-08-19",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "가격대별 음향 제품 추천"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 어떤 모델이 최고일까?",
+      "type": "revenue",
+      "intent": "구매하려는 사용자에게 비교 정보 제공"
+    },
+    {
+      "keyword": "무선 마우스 1년 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "제품의 장단점과 사용자 경험 제공"
+    },
+    {
+      "keyword": "기계식 키보드 3종 비교 후 추천",
+      "type": "revenue",
+      "intent": "여러 제품 비교 후 최적의 선택지 제안"
+    },
+    {
+      "keyword": "최고의 그래픽카드 5개 직접 비교",
+      "type": "revenue",
+      "intent": "그래픽카드 선택에 참고할 정보 제공"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 4가지 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 추천"
+    },
+    {
+      "keyword": "3년간 써본 스마트폰 배터리 후기",
+      "type": "revenue",
+      "intent": "장기 사용 후기 제공"
+    },
+    {
+      "keyword": "미니PC vs 노트북 어떤 것이 더 좋을까",
+      "type": "revenue",
+      "intent": "컴퓨터 구매를 앞둔 소비자 비교 정보 제공"
+    },
+    {
+      "keyword": "30만원대 SSD 실 사용 후기",
+      "type": "revenue",
+      "intent": "저렴한 SSD의 성능과 품질 평가"
+    },
+    {
+      "keyword": "해상도 높은 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "최신 모니터 선택 가이드"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 이유",
+      "type": "revenue",
+      "intent": "안구 건강에 좋은 모니터 추천"
+    },
+    {
+      "keyword": "AI 도구 10종 비교 및 추천 이유",
+      "type": "revenue",
+      "intent": "생산성 향상을 위한 AI 도구 정보 제공"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방안 제공"
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 실제 측정 결과",
+      "type": "info",
+      "intent": "스토리지 장치 속도 비교"
+    },
+    {
+      "keyword": "RAM 용량 부족 해결하는 방법",
+      "type": "info",
+      "intent": "컴퓨터 성능 개선 방법 제공"
+    },
+    {
+      "keyword": "무선이어폰 연결 끊김 이유와 해결책",
+      "type": "info",
+      "intent": "무선이어폰 사용 문제 해결책 제공"
+    },
+    {
+      "keyword": "클라우드 스토리지 사용 방법과 장점",
+      "type": "info",
+      "intent": "클라우드 스토리지의 활용법 제공"
+    },
+    {
+      "keyword": "스마트폰 충전기 선택 방법과 팁",
+      "type": "info",
+      "intent": "효율적인 충전기 선택을 위한 정보 제공"
+    },
+    {
+      "keyword": "가성비 좋은 무선 키보드 추천 이유",
+      "type": "info",
+      "intent": "경제적인 무선 키보드 정보 제공"
+    },
+    {
+      "keyword": "디스플레이 해상도 설정 방법",
+      "type": "info",
+      "intent": "최적의 해상도 설정 가이드 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "최고의 그래픽카드 5개 직접 비교",
+      "post_type": "revenue",
+      "intent": "그래픽카드 선택에 참고할 정보 제공"
+    },
+    {
+      "keyword": "재택근무 필수 노트북 4가지 추천",
+      "post_type": "revenue",
+      "intent": "재택근무에 적합한 노트북 추천"
+    },
+    {
+      "keyword": "30만원대 SSD 실 사용 후기",
+      "post_type": "revenue",
+      "intent": "저렴한 SSD의 성능과 품질 평가"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "최고의 그래픽카드 5개 직접 비교",
+      "type": "revenue",
+      "intent": "그래픽카드 선택에 참고할 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "재택근무 필수 노트북 4가지 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "30만원대 SSD 실 사용 후기",
+      "type": "revenue",
+      "intent": "저렴한 SSD의 성능과 품질 평가",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "AI 도구 10종 비교 및 추천 이유",
+      "type": "revenue",
+      "intent": "생산성 향상을 위한 AI 도구 정보 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 블루투스 스피커 추천 이유",
+      "type": "revenue",
+      "intent": "가격대별 음향 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 3종 비교 후 추천",
+      "type": "revenue",
+      "intent": "여러 제품 비교 후 최적의 선택지 제안",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 이유",
+      "type": "revenue",
+      "intent": "안구 건강에 좋은 모니터 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 무선 키보드 추천 이유",
+      "type": "info",
+      "intent": "경제적인 무선 키보드 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 1년 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "제품의 장단점과 사용자 경험 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "3년간 써본 스마트폰 배터리 후기",
+      "type": "revenue",
+      "intent": "장기 사용 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "해상도 높은 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "최신 모니터 선택 가이드",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 속도 차이 실제 측정 결과",
+      "type": "info",
+      "intent": "스토리지 장치 속도 비교",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제 해결 방안 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 용량 부족 해결하는 방법",
+      "type": "info",
+      "intent": "컴퓨터 성능 개선 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 연결 끊김 이유와 해결책",
+      "type": "info",
+      "intent": "무선이어폰 사용 문제 해결책 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 스토리지 사용 방법과 장점",
+      "type": "info",
+      "intent": "클라우드 스토리지의 활용법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스마트폰 충전기 선택 방법과 팁",
+      "type": "info",
+      "intent": "효율적인 충전기 선택을 위한 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "디스플레이 해상도 설정 방법",
+      "type": "info",
+      "intent": "최적의 해상도 설정 가이드 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "노이즈캔슬링 헤드셋 어떤 모델이 최고일까?",
+      "type": "revenue",
+      "intent": "구매하려는 사용자에게 비교 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "미니PC vs 노트북 어떤 것이 더 좋을까",
+      "type": "revenue",
+      "intent": "컴퓨터 구매를 앞둔 소비자 비교 정보 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
