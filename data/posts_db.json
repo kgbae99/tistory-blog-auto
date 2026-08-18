@@ -9141,5 +9141,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 356,
+    "title": "30대 직장인 3개월 건강 영양제 추천 후기와 방법",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "건강관리",
+      "영양제 선택법",
+      "체중관리",
+      "측정법",
+      "비타민D",
+      "체중계 추천",
+      "요가매트 추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-19 07:28",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 357,
+    "title": "3개월 4kg 감량: 지중해식 식단 영향 5가지",
+    "keyword": "지중해식 식단이 체중 감량에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "지중해식",
+      "체중감량",
+      "다이어트후기",
+      "식단관리",
+      "건강식",
+      "장내미생물",
+      "대사증후군",
+      "식이섬유",
+      "단백질",
+      "영양정보"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-19 07:29",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
