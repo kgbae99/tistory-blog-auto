@@ -1,0 +1,318 @@
+{
+  "date": "2026-08-21",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "가성비 무선 마우스 4종 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    },
+    {
+      "keyword": "직접 써본 블루투스 스피커 후기 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기"
+    },
+    {
+      "keyword": "재택근무 세팅에 좋은 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "SSD 교체 후 속도 변화 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법 톱3",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "보조배터리 용량별 추천 모델",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "3만원대 게이밍 키보드 추천하는 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 추천"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "기계식 키보드와 무접점 키보드 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법 쉽게 설명",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "헤드셋과 이어폰 차이 이유",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 후기 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기"
+    },
+    {
+      "keyword": "가성비 휴대용 충전기 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 추천"
+    },
+    {
+      "keyword": "클라우드 기반 협업 도구 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    },
+    {
+      "keyword": "저렴한 해상도 높은 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 추천"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기"
+    },
+    {
+      "keyword": "노트북과 미니PC 차이점 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "3만원대 게이밍 키보드 추천하는 이유",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 추천"
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 추천"
+    },
+    {
+      "keyword": "가성비 무선 마우스 4종 비교",
+      "post_type": "revenue",
+      "intent": "구매 의도 - 제품 비교"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "3만원대 게이밍 키보드 추천하는 이유",
+      "type": "revenue",
+      "intent": "구매 의도 - 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원대 노이즈캔슬링 이어폰 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "가성비 무선 마우스 4종 비교",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "직접 써본 블루투스 스피커 후기 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "클라우드 기반 협업 도구 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북과 미니PC 차이점 비교",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅에 좋은 미니PC 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD 교체 후 속도 변화 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량별 추천 모델",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "최신 그래픽카드 성능 후기 2023",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "가성비 휴대용 충전기 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "저렴한 해상도 높은 모니터 추천",
+      "type": "revenue",
+      "intent": "구매 의도 - 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 후기",
+      "type": "revenue",
+      "intent": "구매 의도 - 후기",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "헤드셋과 이어폰 차이 이유",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 해결 방법 톱3",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 무접점 키보드 차이",
+      "type": "info",
+      "intent": "탐색 의도 - 차이",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 RAM 업그레이드 방법 쉽게 설명",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "탐색 의도 - 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
