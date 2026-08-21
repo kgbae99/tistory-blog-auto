@@ -1602,9 +1602,16 @@
     "vitamin_03.jpg"
   ],
   "2026-08-22": [
+    "beauty_02.jpg",
     "food_01.jpg",
     "food_06.jpg",
+    "health_14.jpg",
+    "health_15.jpg",
+    "health_16.jpg",
     "health_23.jpg",
+    "nature_01.jpg",
+    "skin_01.jpg",
+    "skin_02.jpg",
     "skin_05.jpg",
     "skin_08.jpg",
     "skin_09.jpg",
@@ -1618,6 +1625,9 @@
     "tech_22.jpg",
     "tech_23.jpg",
     "tech_24.jpg",
+    "tech_26.jpg",
+    "tech_27.jpg",
+    "tech_28.jpg",
     "tired_01.jpg"
   ]
 }
