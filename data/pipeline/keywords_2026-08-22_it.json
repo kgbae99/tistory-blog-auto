@@ -1,0 +1,313 @@
+{
+  "date": "2026-08-22",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 11,
+  "info_cnt": 9,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 소비자에게 적합한 제품 추천"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 비교 2024",
+      "type": "revenue",
+      "intent": "최신 노이즈캔슬링 헤드셋 비교를 통한 구매 결정"
+    },
+    {
+      "keyword": "블루투스 스피커 6개월 사용 후기",
+      "type": "revenue",
+      "intent": "장기간 사용 후 제품 리뷰를 통한 구매 결정"
+    },
+    {
+      "keyword": "기계식 키보드 직접 써본 추천",
+      "type": "revenue",
+      "intent": "개인 사용 경험 기반의 제품 추천"
+    },
+    {
+      "keyword": "무선 마우스 3종류 비교",
+      "type": "revenue",
+      "intent": "다양한 제품 속성 비교를 통해 최적의 선택"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 해결책을 찾는 정보 탐색"
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 속도 차이",
+      "type": "info",
+      "intent": "저장 장치 선택 시 성능 차이를 이해하기 위한 정보 탐색"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "기기를 오래 사용하기 위한 배터리 관리 방법"
+    },
+    {
+      "keyword": "보조배터리 용량에 따른 추천",
+      "type": "revenue",
+      "intent": "사용 용량에 맞는 보조배터리 제품 추천"
+    },
+    {
+      "keyword": "충전기 종류에 따른 충전 속도 비교",
+      "type": "info",
+      "intent": "다양한 충전기 옵션의 효율성 비교"
+    },
+    {
+      "keyword": "모니터 블루라이트 효과와 해결 방법",
+      "type": "info",
+      "intent": "블루라이트로 인한 문제 해결책을 찾는 정보 탐색"
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "효율적인 업무 환경을 위한 제품 추천"
+    },
+    {
+      "keyword": "클라우드 서비스 종류와 차이점",
+      "type": "info",
+      "intent": "다양한 클라우드 옵션의 특성 이해"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 업무 효율 증대 방법 찾기"
+    },
+    {
+      "keyword": "그래픽카드 평균 수명과 교체 시기",
+      "type": "info",
+      "intent": "사용 주기에 맞는 교체 시기를 파악하기 위한 정보"
+    },
+    {
+      "keyword": "미니PC 소음 문제 해결 후기",
+      "type": "revenue",
+      "intent": "소음 문제 해결을 위한 제품 사용 후기"
+    },
+    {
+      "keyword": "RAM 업그레이드가 정말 효과적인 이유",
+      "type": "info",
+      "intent": "성능 향상을 위한 RAM 업그레이드의 필요성 탐색"
+    },
+    {
+      "keyword": "해상도별 모니터 추천 및 비교",
+      "type": "revenue",
+      "intent": "다양한 해상도 옵션의 모니터 비교를 통한 구매 결정"
+    },
+    {
+      "keyword": "트랙패드 사용자 경험 후기",
+      "type": "revenue",
+      "intent": "트랙패드 사용의 장단점을 파악하기 위한 사용자 리뷰"
+    },
+    {
+      "keyword": "재택근무 시 필요한 방음 헤드셋 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 방음 헤드셋 제품 추천"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "블루투스 스피커 6개월 사용 후기",
+      "post_type": "revenue",
+      "intent": "장기간 사용 후 제품 리뷰를 통한 구매 결정"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 비교 2024",
+      "post_type": "revenue",
+      "intent": "최신 노이즈캔슬링 헤드셋 비교를 통한 구매 결정"
+    },
+    {
+      "keyword": "기계식 키보드 직접 써본 추천",
+      "post_type": "revenue",
+      "intent": "개인 사용 경험 기반의 제품 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "블루투스 스피커 6개월 사용 후기",
+      "type": "revenue",
+      "intent": "장기간 사용 후 제품 리뷰를 통한 구매 결정",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 비교 2024",
+      "type": "revenue",
+      "intent": "최신 노이즈캔슬링 헤드셋 비교를 통한 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 직접 써본 추천",
+      "type": "revenue",
+      "intent": "개인 사용 경험 기반의 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "무선 마우스 3종류 비교",
+      "type": "revenue",
+      "intent": "다양한 제품 속성 비교를 통해 최적의 선택",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "충전기 종류에 따른 충전 속도 비교",
+      "type": "info",
+      "intent": "다양한 충전기 옵션의 효율성 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "미니PC 소음 문제 해결 후기",
+      "type": "revenue",
+      "intent": "소음 문제 해결을 위한 제품 사용 후기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "해상도별 모니터 추천 및 비교",
+      "type": "revenue",
+      "intent": "다양한 해상도 옵션의 모니터 비교를 통한 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 소비자에게 적합한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 용량에 따른 추천",
+      "type": "revenue",
+      "intent": "사용 용량에 맞는 보조배터리 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "효율적인 업무 환경을 위한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "트랙패드 사용자 경험 후기",
+      "type": "revenue",
+      "intent": "트랙패드 사용의 장단점을 파악하기 위한 사용자 리뷰",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 시 필요한 방음 헤드셋 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 방음 헤드셋 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 속도 차이",
+      "type": "info",
+      "intent": "저장 장치 선택 시 성능 차이를 이해하기 위한 정보 탐색",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "기기를 오래 사용하기 위한 배터리 관리 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모니터 블루라이트 효과와 해결 방법",
+      "type": "info",
+      "intent": "블루라이트로 인한 문제 해결책을 찾는 정보 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 종류와 차이점",
+      "type": "info",
+      "intent": "다양한 클라우드 옵션의 특성 이해",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 업무 효율 증대 방법 찾기",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드가 정말 효과적인 이유",
+      "type": "info",
+      "intent": "성능 향상을 위한 RAM 업그레이드의 필요성 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "노트북 발열 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 해결책을 찾는 정보 탐색",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "그래픽카드 평균 수명과 교체 시기",
+      "type": "info",
+      "intent": "사용 주기에 맞는 교체 시기를 파악하기 위한 정보",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
