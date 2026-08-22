@@ -1,0 +1,314 @@
+{
+  "date": "2026-08-23",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 및 비교",
+      "type": "revenue",
+      "intent": "구매 결정을 도와주는 추천 및 비교"
+    },
+    {
+      "keyword": "블루투스 스피커 음질 비교 2023",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 음질 비교 정보 제공"
+    },
+    {
+      "keyword": "기계식 키보드 입문자 추천 모델 TOP 5",
+      "type": "revenue",
+      "intent": "입문자를 위한 추천 제품 정보"
+    },
+    {
+      "keyword": "2023년형 노이즈캔슬링 헤드셋 후기",
+      "type": "revenue",
+      "intent": "최신 제품에 대한 사용자 후기 제공"
+    },
+    {
+      "keyword": "가성비 무선 마우스 추천 5개 비교",
+      "type": "revenue",
+      "intent": "가성비 좋은 제품 추천 및 비교"
+    },
+    {
+      "keyword": "재택근무용 모니터 해상도 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 모니터 추천 정보"
+    },
+    {
+      "keyword": "노트북 SSD 교체 후기",
+      "type": "revenue",
+      "intent": "SSD 교체 후의 성능 변화를 사용자 경험을 통해 전달"
+    },
+    {
+      "keyword": "고성능 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "고성능 그래픽카드를 비교하여 구매 결정 지원"
+    },
+    {
+      "keyword": "보조배터리 10000mAh vs 20000mAh 비교",
+      "type": "revenue",
+      "intent": "용량에 따른 보조배터리 성능 및 필요성 비교"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 성능 비교 2023",
+      "type": "revenue",
+      "intent": "최신 스마트폰의 배터리 성능을 비교하여 구매 결정을 돕기"
+    },
+    {
+      "keyword": "최고의 블루라이트 차단 모니터 2023",
+      "type": "revenue",
+      "intent": "눈 건강을 위한 모니터 추천 및 비교"
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "재택근무에 필요한 제품 추천을 통해 구매 유도"
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제를 해결할 수 있는 방법 제공"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이점",
+      "type": "info",
+      "intent": "기계식과 멤브레인 키보드의 차이점을 탐색"
+    },
+    {
+      "keyword": "클라우드 저장소 선택 방법 가이드",
+      "type": "info",
+      "intent": "클라우드 저장소 선택 시 고려해야 할 사항 제공"
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 속도 차이",
+      "type": "info",
+      "intent": "SSD와 HDD의 속도 차이 이해를 위한 정보 제공"
+    },
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "RAM 업그레이드가 컴퓨터 성능에 미치는 영향을 설명"
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 업무 생산성 향상 방안 제공"
+    },
+    {
+      "keyword": "노트북과 미니PC 비교 및 장단점",
+      "type": "info",
+      "intent": "노트북과 미니PC의 비교를 통해 장단점 제공"
+    },
+    {
+      "keyword": "5G 스마트폰과 4G 스마트폰 차이",
+      "type": "info",
+      "intent": "5G와 4G 스마트폰의 차이 이해를 위한 정보 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "가성비 무선 마우스 추천 5개 비교",
+      "post_type": "revenue",
+      "intent": "가성비 좋은 제품 추천 및 비교"
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 및 비교",
+      "post_type": "revenue",
+      "intent": "구매 결정을 도와주는 추천 및 비교"
+    },
+    {
+      "keyword": "블루투스 스피커 음질 비교 2023",
+      "post_type": "revenue",
+      "intent": "구매 결정을 위한 음질 비교 정보 제공"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "가성비 무선 마우스 추천 5개 비교",
+      "type": "revenue",
+      "intent": "가성비 좋은 제품 추천 및 비교",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 및 비교",
+      "type": "revenue",
+      "intent": "구매 결정을 도와주는 추천 및 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 음질 비교 2023",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 음질 비교 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "고성능 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "고성능 그래픽카드를 비교하여 구매 결정 지원",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "보조배터리 10000mAh vs 20000mAh 비교",
+      "type": "revenue",
+      "intent": "용량에 따른 보조배터리 성능 및 필요성 비교",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 성능 비교 2023",
+      "type": "revenue",
+      "intent": "최신 스마트폰의 배터리 성능을 비교하여 구매 결정을 돕기",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북과 미니PC 비교 및 장단점",
+      "type": "info",
+      "intent": "노트북과 미니PC의 비교를 통해 장단점 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 입문자 추천 모델 TOP 5",
+      "type": "revenue",
+      "intent": "입문자를 위한 추천 제품 정보",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년형 노이즈캔슬링 헤드셋 후기",
+      "type": "revenue",
+      "intent": "최신 제품에 대한 사용자 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무용 모니터 해상도 추천",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 모니터 추천 정보",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 SSD 교체 후기",
+      "type": "revenue",
+      "intent": "SSD 교체 후의 성능 변화를 사용자 경험을 통해 전달",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "재택근무에 필요한 제품 추천을 통해 구매 유도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD의 실제 속도 차이",
+      "type": "info",
+      "intent": "SSD와 HDD의 속도 차이 이해를 위한 정보 제공",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 줄이는 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제를 해결할 수 있는 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이점",
+      "type": "info",
+      "intent": "기계식과 멤브레인 키보드의 차이점을 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "클라우드 저장소 선택 방법 가이드",
+      "type": "info",
+      "intent": "클라우드 저장소 선택 시 고려해야 할 사항 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용한 업무 생산성 향상 방안 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "5G 스마트폰과 4G 스마트폰 차이",
+      "type": "info",
+      "intent": "5G와 4G 스마트폰의 차이 이해를 위한 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "최고의 블루라이트 차단 모니터 2023",
+      "type": "revenue",
+      "intent": "눈 건강을 위한 모니터 추천 및 비교",
+      "reject_reason": "검색 의도 신호 없음"
+    },
+    {
+      "keyword": "RAM 업그레이드가 성능에 미치는 영향",
+      "type": "info",
+      "intent": "RAM 업그레이드가 컴퓨터 성능에 미치는 영향을 설명",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
