@@ -9355,5 +9355,57 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 364,
+    "title": "30일 3kg 감량 성공? 건강 영양제 추천과 실천법",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 선택법",
+      "비타민D",
+      "오메가3",
+      "체중 감량",
+      "홈트",
+      "체중계 추천",
+      "요가매트",
+      "건강검진 비용",
+      "영양제 후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-23 07:27",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 365,
+    "title": "면역력 저하를 초래하는 5가지 생활습관과 회복 방법",
+    "keyword": "면역력 저하를 초래하는 5가지 생활습관",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "면역력",
+      "면역력 저하",
+      "면역력 저하를 초래하는 5가지 생활습관",
+      "생활습관",
+      "건강관리",
+      "면역력 회복",
+      "면역 강화",
+      "건강검진 비용"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-23 07:28",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
