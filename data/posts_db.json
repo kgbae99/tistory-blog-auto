@@ -9461,5 +9461,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 368,
+    "title": "30대가 3개월에 체력회복한 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "비타민D",
+      "오메가3",
+      "마그네슘",
+      "체중계 추천",
+      "요가매트 추천",
+      "홈트",
+      "건강검진",
+      "의료비 절감"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-08-25 07:32",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 369,
+    "title": "두통의 다양한 원인과 증상, 놓치기 쉬운 5가지 이유와 대처법",
+    "keyword": "두통의 다양한 원인과 증상, 놓치기 쉬운 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "두통",
+      "두통원인",
+      "두통증상",
+      "편두통",
+      "약물과다복용",
+      "경추통증",
+      "부비동염",
+      "치과와두통",
+      "건강검진비용",
+      "의료비절감"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-08-25 07:33",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
