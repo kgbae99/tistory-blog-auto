@@ -1,0 +1,312 @@
+{
+  "date": "2026-08-30",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자를 위한 제품 추천"
+    },
+    {
+      "keyword": "재택근무용 기계식 키보드 비교 후기",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 키보드 비교 및 후기를 원하는 사용자"
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 추천 및 이유",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 최신 무선 마우스 추천 및 그 이유 설명"
+    },
+    {
+      "keyword": "충전기 효율 비교: 20W vs 30W 어떤게 좋을까?",
+      "type": "revenue",
+      "intent": "충전기 구매 시 효율 비교를 통한 구매 결정"
+    },
+    {
+      "keyword": "블루투스 스피커 10만원대 가성비 추천",
+      "type": "revenue",
+      "intent": "예산 내에서 좋은 스피커를 찾기 위한 추천"
+    },
+    {
+      "keyword": "저렴한 미니PC 추천: 사무용 최적",
+      "type": "revenue",
+      "intent": "사무용 활용을 위한 저렴한 미니PC 추천"
+    },
+    {
+      "keyword": "80만원대 노트북 실사용 후기",
+      "type": "revenue",
+      "intent": "실제로 사용해 본 후기를 통해 구매 결정에 도움 제공"
+    },
+    {
+      "keyword": "디자인용 모니터 추천해 주세요",
+      "type": "revenue",
+      "intent": "디자인 작업에 적합한 모니터 추천 요청"
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 필요한 아이템 추천"
+    },
+    {
+      "keyword": "100시간 이상 사용한 보조배터리 솔직 후기",
+      "type": "revenue",
+      "intent": "장기간 사용 후기를 통해 제품 신뢰성 판단"
+    },
+    {
+      "keyword": "모바일 게임용 스마트폰 추천 2023",
+      "type": "revenue",
+      "intent": "게임 성능을 고려한 스마트폰 추천"
+    },
+    {
+      "keyword": "울트라와이드 모니터 장단점 및 추천",
+      "type": "revenue",
+      "intent": "구매 전 제품의 장단점과 추천"
+    },
+    {
+      "keyword": "노트북 발열 원인과 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 원인 파악 및 해결법 탐색"
+    },
+    {
+      "keyword": "기계식 키보드 청축 vs 적축 차이점",
+      "type": "info",
+      "intent": "청축과 적축 키보드의 차이점 탐구"
+    },
+    {
+      "keyword": "SSD 업그레이드 시 성능 변화 분석",
+      "type": "info",
+      "intent": "SSD 업그레이드가 성능에 미치는 영향 분석"
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 효율성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 사용해 업무 효율성을 높이는 방법 탐색"
+    },
+    {
+      "keyword": "안드로이드폰 배터리 효율 극대화 방법",
+      "type": "info",
+      "intent": "배터리 효율을 높이기 위한 방법 탐색"
+    },
+    {
+      "keyword": "그래픽카드 성능 저하 원인과 해결법",
+      "type": "info",
+      "intent": "그래픽카드 성능 저하의 원인 및 해결 방법"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 분석",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 실제 효과 분석"
+    },
+    {
+      "keyword": "클라우드 서비스 비용 절감 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 사용 시 비용 절감 방법 탐색"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "블루투스 스피커 10만원대 가성비 추천",
+      "post_type": "revenue",
+      "intent": "예산 내에서 좋은 스피커를 찾기 위한 추천"
+    },
+    {
+      "keyword": "80만원대 노트북 실사용 후기",
+      "post_type": "revenue",
+      "intent": "실제로 사용해 본 후기를 통해 구매 결정에 도움 제공"
+    },
+    {
+      "keyword": "재택근무용 기계식 키보드 비교 후기",
+      "post_type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 키보드 비교 및 후기를 원하는 사용자"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "블루투스 스피커 10만원대 가성비 추천",
+      "type": "revenue",
+      "intent": "예산 내에서 좋은 스피커를 찾기 위한 추천",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "80만원대 노트북 실사용 후기",
+      "type": "revenue",
+      "intent": "실제로 사용해 본 후기를 통해 구매 결정에 도움 제공",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "재택근무용 기계식 키보드 비교 후기",
+      "type": "revenue",
+      "intent": "재택근무 환경 개선을 위한 키보드 비교 및 후기를 원하는 사용자",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 추천 및 이유",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 최신 무선 마우스 추천 및 그 이유 설명",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "충전기 효율 비교: 20W vs 30W 어떤게 좋을까?",
+      "type": "revenue",
+      "intent": "충전기 구매 시 효율 비교를 통한 구매 결정",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "100시간 이상 사용한 보조배터리 솔직 후기",
+      "type": "revenue",
+      "intent": "장기간 사용 후기를 통해 제품 신뢰성 판단",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 헤드셋 추천",
+      "type": "revenue",
+      "intent": "구매를 고려하는 사용자를 위한 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "저렴한 미니PC 추천: 사무용 최적",
+      "type": "revenue",
+      "intent": "사무용 활용을 위한 저렴한 미니PC 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "디자인용 모니터 추천해 주세요",
+      "type": "revenue",
+      "intent": "디자인 작업에 적합한 모니터 추천 요청",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 세팅 필수 아이템 추천",
+      "type": "revenue",
+      "intent": "재택근무 시 필요한 아이템 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "모바일 게임용 스마트폰 추천 2023",
+      "type": "revenue",
+      "intent": "게임 성능을 고려한 스마트폰 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "울트라와이드 모니터 장단점 및 추천",
+      "type": "revenue",
+      "intent": "구매 전 제품의 장단점과 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 원인과 해결 방법",
+      "type": "info",
+      "intent": "노트북 발열 문제의 원인 파악 및 해결법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 청축 vs 적축 차이점",
+      "type": "info",
+      "intent": "청축과 적축 키보드의 차이점 탐구",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 효율성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 사용해 업무 효율성을 높이는 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "안드로이드폰 배터리 효율 극대화 방법",
+      "type": "info",
+      "intent": "배터리 효율을 높이기 위한 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능 저하 원인과 해결법",
+      "type": "info",
+      "intent": "그래픽카드 성능 저하의 원인 및 해결 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 비용 절감 방법",
+      "type": "info",
+      "intent": "클라우드 서비스 사용 시 비용 절감 방법 탐색",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 효과 분석",
+      "type": "info",
+      "intent": "블루라이트 차단 모니터의 실제 효과 분석",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "SSD 업그레이드 시 성능 변화 분석",
+      "type": "info",
+      "intent": "SSD 업그레이드가 성능에 미치는 영향 분석",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
