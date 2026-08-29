@@ -1,0 +1,313 @@
+{
+  "date": "2026-08-29",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "50만원대 노트북 가성비 추천",
+      "type": "revenue",
+      "intent": "구매를 결정하기 위한 추천 정보를 찾는 의도"
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 오래 써본 후기",
+      "type": "revenue",
+      "intent": "구매 전 실제 사용자 경험을 확인하려는 의도"
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 비교",
+      "type": "revenue",
+      "intent": "다양한 제품을 비교하여 최적의 구매 결정을 내리려는 의도"
+    },
+    {
+      "keyword": "재택근무 책상 꾸미기 추천템",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위해 제품 추천을 찾는 의도"
+    },
+    {
+      "keyword": "강력한 게이밍 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "게이밍 성능을 높이기 위한 그래픽카드를 비교하려는 의도"
+    },
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 이유",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 제품을 추천받기 위한 의도"
+    },
+    {
+      "keyword": "보조배터리 10000mAh 이상 추천",
+      "type": "revenue",
+      "intent": "휴대성을 위한 고용량 보조배터리 추천을 찾는 의도"
+    },
+    {
+      "keyword": "기계식 키보드 타건감 후기",
+      "type": "revenue",
+      "intent": "구매 전 타건감에 대한 실제 사용 후기 탐색 의도"
+    },
+    {
+      "keyword": "10만원대 모니터 해상도 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 해상도를 가진 모니터를 비교하려는 의도"
+    },
+    {
+      "keyword": "아이폰 충전기 효율성 후기",
+      "type": "revenue",
+      "intent": "아이폰용 충전기의 실제 사용 효율성을 확인하려는 의도"
+    },
+    {
+      "keyword": "미니PC 게임 성능 후기",
+      "type": "revenue",
+      "intent": "미니PC의 실제 게임 성능을 구매 전 확인하려는 의도"
+    },
+    {
+      "keyword": "가성비 스마트폰 3종 비교",
+      "type": "revenue",
+      "intent": "다양한 가성비 스마트폰을 비교하여 최적의 선택을 위한 의도"
+    },
+    {
+      "keyword": "노트북 발열 해결 방법",
+      "type": "info",
+      "intent": "노트북 사용 시 발열 문제를 해결하기 위한 방법을 찾는 의도"
+    },
+    {
+      "keyword": "SSD 용량 부족한 이유",
+      "type": "info",
+      "intent": "SSD 용량이 부족한 원인을 이해하고 해결책을 찾으려는 의도"
+    },
+    {
+      "keyword": "RAM 업그레이드 방법",
+      "type": "info",
+      "intent": "컴퓨터 성능 향상을 위해 RAM 업그레이드 방법을 찾는 의도"
+    },
+    {
+      "keyword": "트랙패드 vs 무선 마우스 차이점",
+      "type": "info",
+      "intent": "입력 장치의 차이점을 이해하고 선택을 위한 정보 탐색 의도"
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 이유",
+      "type": "info",
+      "intent": "블루라이트가 눈 건강에 미치는 영향을 이해하려는 의도"
+    },
+    {
+      "keyword": "클라우드 서비스 선택 방법",
+      "type": "info",
+      "intent": "다양한 클라우드 서비스를 비교하고 선택하기 위한 방법 탐색 의도"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높이는 방법을 찾는 의도"
+    },
+    {
+      "keyword": "모바일 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리기 위한 방법을 찾는 의도"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 이유",
+      "post_type": "revenue",
+      "intent": "예산 내에서 최적의 제품을 추천받기 위한 의도"
+    },
+    {
+      "keyword": "10만원대 모니터 해상도 비교",
+      "post_type": "revenue",
+      "intent": "예산 내에서 최적의 해상도를 가진 모니터를 비교하려는 의도"
+    },
+    {
+      "keyword": "50만원대 노트북 가성비 추천",
+      "post_type": "revenue",
+      "intent": "구매를 결정하기 위한 추천 정보를 찾는 의도"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "블루투스 스피커 5만원대 추천 이유",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 제품을 추천받기 위한 의도",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "10만원대 모니터 해상도 비교",
+      "type": "revenue",
+      "intent": "예산 내에서 최적의 해상도를 가진 모니터를 비교하려는 의도",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "50만원대 노트북 가성비 추천",
+      "type": "revenue",
+      "intent": "구매를 결정하기 위한 추천 정보를 찾는 의도",
+      "score": 5,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 비교",
+      "type": "revenue",
+      "intent": "다양한 제품을 비교하여 최적의 구매 결정을 내리려는 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "강력한 게이밍 그래픽카드 3종 비교",
+      "type": "revenue",
+      "intent": "게이밍 성능을 높이기 위한 그래픽카드를 비교하려는 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 스마트폰 3종 비교",
+      "type": "revenue",
+      "intent": "다양한 가성비 스마트폰을 비교하여 최적의 선택을 위한 의도",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노이즈캔슬링 헤드셋 오래 써본 후기",
+      "type": "revenue",
+      "intent": "구매 전 실제 사용자 경험을 확인하려는 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 책상 꾸미기 추천템",
+      "type": "revenue",
+      "intent": "재택근무 환경을 개선하기 위해 제품 추천을 찾는 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "보조배터리 10000mAh 이상 추천",
+      "type": "revenue",
+      "intent": "휴대성을 위한 고용량 보조배터리 추천을 찾는 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 타건감 후기",
+      "type": "revenue",
+      "intent": "구매 전 타건감에 대한 실제 사용 후기 탐색 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "아이폰 충전기 효율성 후기",
+      "type": "revenue",
+      "intent": "아이폰용 충전기의 실제 사용 효율성을 확인하려는 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "미니PC 게임 성능 후기",
+      "type": "revenue",
+      "intent": "미니PC의 실제 게임 성능을 구매 전 확인하려는 의도",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD 용량 부족한 이유",
+      "type": "info",
+      "intent": "SSD 용량이 부족한 원인을 이해하고 해결책을 찾으려는 의도",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "RAM 업그레이드 방법",
+      "type": "info",
+      "intent": "컴퓨터 성능 향상을 위해 RAM 업그레이드 방법을 찾는 의도",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드 vs 무선 마우스 차이점",
+      "type": "info",
+      "intent": "입력 장치의 차이점을 이해하고 선택을 위한 정보 탐색 의도",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 이유",
+      "type": "info",
+      "intent": "블루라이트가 눈 건강에 미치는 영향을 이해하려는 의도",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 선택 방법",
+      "type": "info",
+      "intent": "다양한 클라우드 서비스를 비교하고 선택하기 위한 방법 탐색 의도",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "모바일 배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리기 위한 방법을 찾는 의도",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "노트북 발열 해결 방법",
+      "type": "info",
+      "intent": "노트북 사용 시 발열 문제를 해결하기 위한 방법을 찾는 의도",
+      "reject_reason": "너무 짧음 (4단어 / 12자)"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높이는 방법을 찾는 의도",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
