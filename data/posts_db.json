@@ -9889,5 +9889,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 384,
+    "title": "3개월 혈당 안정화, 당뇨 전단계 혈당 영양제 추천 후기",
+    "keyword": "당뇨 전단계 혈당 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "당뇨 전단계",
+      "혈당 관리",
+      "혈당 영양제",
+      "건강&웰빙",
+      "크롬",
+      "알파리포산",
+      "베르베린",
+      "쿠팡 추천",
+      "건강검진",
+      "생활관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-02 08:54",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 385,
+    "title": "중년을 위한 건강한 간헐적 단식의 원리와 효과 5가지",
+    "keyword": "건강한 간헐적 단식의 원리와 효과 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "간헐적단식",
+      "건강한단식",
+      "단식효과",
+      "체지방감소",
+      "인슐린개선",
+      "간헐적단식방법",
+      "실천팁",
+      "건강검진",
+      "중년건강",
+      "영양관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-02 08:56",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
