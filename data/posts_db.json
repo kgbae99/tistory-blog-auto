@@ -9835,5 +9835,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 382,
+    "title": "3개월 먹어봤더니 불면증 60% 개선된 영양제 후기",
+    "keyword": "3개월 먹어봤더니 불면증 개선에 효과적인 영양제 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "불면증",
+      "수면영양제",
+      "수면개선후기",
+      "수면차추천",
+      "쿠팡추천",
+      "마그네슘",
+      "건강관리",
+      "수면기록",
+      "영양제후기",
+      "생활습관"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-01 10:08",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 383,
+    "title": "두통의 주요 원인과 증상 5가지와 개선 방법 3단계",
+    "keyword": "두통의 주요 원인과 증상 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "두통",
+      "편두통",
+      "긴장성두통",
+      "약물과용성두통",
+      "두통원인",
+      "두통증상",
+      "건강검진비용",
+      "두통치료",
+      "부비동염",
+      "두통일지"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-01 10:09",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
