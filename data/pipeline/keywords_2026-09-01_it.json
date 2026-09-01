@@ -1,0 +1,311 @@
+{
+  "date": "2026-09-01",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 이어폰 후기",
+      "type": "revenue",
+      "intent": "구매 의도를 가진 사용자에게 특정 가격대의 노이즈캔슬링 이어폰에 대한 사용 후기 제공"
+    },
+    {
+      "keyword": "비교해본 기계식 키보드 3개 추천",
+      "type": "revenue",
+      "intent": "구매 의도가 있는 사용자에게 여러 기계식 키보드를 비교하여 추천"
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "최근 무선 마우스를 찾는 사용자에게 새로운 모델 추천"
+    },
+    {
+      "keyword": "재택근무 노트북 선택 가이드",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 구매를 고려하는 사용자에게 가이드 제공"
+    },
+    {
+      "keyword": "2023년 3월 기준 베스트 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "현재 시점에서 구입하기 좋은 블루투스 스피커를 추천"
+    },
+    {
+      "keyword": "100시간 이상 사용한 모니터 후기",
+      "type": "revenue",
+      "intent": "장시간 사용 후 모니터에 대한 솔직한 사용 후기 제공"
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 비교",
+      "type": "revenue",
+      "intent": "경제적인 미니PC 구매를 고려하는 사용자에게 비교 정보 제공"
+    },
+    {
+      "keyword": "재택근무 최적화 헤드셋 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경에 적합한 헤드셋을 추천"
+    },
+    {
+      "keyword": "고성능 그래픽카드 추천 및 비교",
+      "type": "revenue",
+      "intent": "게임 및 그래픽 작업을 위한 고성능 그래픽카드를 비교하여 추천"
+    },
+    {
+      "keyword": "장시간 사용해본 보조배터리 리뷰",
+      "type": "revenue",
+      "intent": "장시간 사용해본 보조배터리에 대한 실사용 후기 제공"
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "최신 스마트폰의 배터리 성능을 비교하여 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "재택근무에 추천하는 클라우드 서비스",
+      "type": "revenue",
+      "intent": "재택근무 효율성을 높이기 위한 클라우드 서비스 추천"
+    },
+    {
+      "keyword": "무선이어폰 소리 끊김 문제 해결 방법",
+      "type": "info",
+      "intent": "무선이어폰 사용 중 발생하는 소리 끊김 문제를 해결하고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 분석",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 차이를 궁금해하는 사용자에게 데이터 분석 제공"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "발열 문제로 고민하는 노트북 사용자에게 해결 방법 제공"
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이점",
+      "type": "info",
+      "intent": "기계식과 멤브레인 키보드의 차이를 알고 싶은 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 설정 방법",
+      "type": "info",
+      "intent": "모니터 블루라이트 차단을 원하는 사용자에게 설정 방법 제공"
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높이고자 하는 사용자에게 방법 제공"
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리고자 하는 사용자에게 정보 제공"
+    },
+    {
+      "keyword": "트랙패드로 노트북 생산성 높이는 방법",
+      "type": "info",
+      "intent": "트랙패드를 활용하여 노트북 생산성을 높이고자 하는 사용자에게 팁 제공"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "비교해본 기계식 키보드 3개 추천",
+      "post_type": "revenue",
+      "intent": "구매 의도가 있는 사용자에게 여러 기계식 키보드를 비교하여 추천"
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 비교",
+      "post_type": "revenue",
+      "intent": "경제적인 미니PC 구매를 고려하는 사용자에게 비교 정보 제공"
+    },
+    {
+      "keyword": "고성능 그래픽카드 추천 및 비교",
+      "post_type": "revenue",
+      "intent": "게임 및 그래픽 작업을 위한 고성능 그래픽카드를 비교하여 추천"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "비교해본 기계식 키보드 3개 추천",
+      "type": "revenue",
+      "intent": "구매 의도가 있는 사용자에게 여러 기계식 키보드를 비교하여 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "가성비 좋은 미니PC 비교",
+      "type": "revenue",
+      "intent": "경제적인 미니PC 구매를 고려하는 사용자에게 비교 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "고성능 그래픽카드 추천 및 비교",
+      "type": "revenue",
+      "intent": "게임 및 그래픽 작업을 위한 고성능 그래픽카드를 비교하여 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "최신 스마트폰 배터리 성능 비교",
+      "type": "revenue",
+      "intent": "최신 스마트폰의 배터리 성능을 비교하여 사용자에게 정보 제공",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 노이즈캔슬링 이어폰 후기",
+      "type": "revenue",
+      "intent": "구매 의도를 가진 사용자에게 특정 가격대의 노이즈캔슬링 이어폰에 대한 사용 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 최신 무선 마우스 추천",
+      "type": "revenue",
+      "intent": "최근 무선 마우스를 찾는 사용자에게 새로운 모델 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "2023년 3월 기준 베스트 블루투스 스피커 추천",
+      "type": "revenue",
+      "intent": "현재 시점에서 구입하기 좋은 블루투스 스피커를 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "100시간 이상 사용한 모니터 후기",
+      "type": "revenue",
+      "intent": "장시간 사용 후 모니터에 대한 솔직한 사용 후기 제공",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무 최적화 헤드셋 추천",
+      "type": "revenue",
+      "intent": "재택근무 환경에 적합한 헤드셋을 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "재택근무에 추천하는 클라우드 서비스",
+      "type": "revenue",
+      "intent": "재택근무 효율성을 높이기 위한 클라우드 서비스 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 분석",
+      "type": "info",
+      "intent": "SSD와 HDD의 실제 속도 차이를 궁금해하는 사용자에게 데이터 분석 제공",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "무선이어폰 소리 끊김 문제 해결 방법",
+      "type": "info",
+      "intent": "무선이어폰 사용 중 발생하는 소리 끊김 문제를 해결하고자 하는 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "발열 문제로 고민하는 노트북 사용자에게 해결 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드와 멤브레인 키보드 차이점",
+      "type": "info",
+      "intent": "기계식과 멤브레인 키보드의 차이를 알고 싶은 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "모니터 블루라이트 차단 설정 방법",
+      "type": "info",
+      "intent": "모니터 블루라이트 차단을 원하는 사용자에게 설정 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 생산성 향상 방법",
+      "type": "info",
+      "intent": "AI 도구를 활용하여 생산성을 높이고자 하는 사용자에게 방법 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 수명 늘리는 방법",
+      "type": "info",
+      "intent": "스마트폰 배터리 수명을 늘리고자 하는 사용자에게 정보 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "트랙패드로 노트북 생산성 높이는 방법",
+      "type": "info",
+      "intent": "트랙패드를 활용하여 노트북 생산성을 높이고자 하는 사용자에게 팁 제공",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 노트북 선택 가이드",
+      "type": "revenue",
+      "intent": "재택근무에 적합한 노트북 구매를 고려하는 사용자에게 가이드 제공",
+      "score": 0,
+      "score_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "keyword": "장시간 사용해본 보조배터리 리뷰",
+      "type": "revenue",
+      "intent": "장시간 사용해본 보조배터리에 대한 실사용 후기 제공",
+      "reject_reason": "검색 의도 신호 없음"
+    }
+  ],
+  "filter_top_n": 3
+}
