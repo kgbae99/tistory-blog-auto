@@ -9943,5 +9943,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 386,
+    "title": "30대 3개월 체력 회복을 위한 건강 영양제 추천 5",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "피로 회복",
+      "비타민",
+      "마그네슘",
+      "오메가3",
+      "체중계",
+      "홈트",
+      "건강관리",
+      "영양제 후기",
+      "쿠팡 추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-03 08:56",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 387,
+    "title": "40대 직장인 12주, 근력운동이 체중 감소에 미치는 영향 5가지와 이유",
+    "keyword": "근력운동이 체중 감소에 미치는 영향 5가지와 이유",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "근력운동",
+      "체중감소",
+      "체지방",
+      "홈트레이닝",
+      "체성분",
+      "운동루틴",
+      "건강검진",
+      "운동과학",
+      "다이어트팁",
+      "근육량증가"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-03 08:58",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
