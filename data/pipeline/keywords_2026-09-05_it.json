@@ -1,0 +1,325 @@
+{
+  "date": "2026-09-05",
+  "blog": "it",
+  "total": 20,
+  "revenue_cnt": 12,
+  "info_cnt": 8,
+  "all_keywords": [
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정 지원"
+    },
+    {
+      "keyword": "재택근무용 노트북 10만원대 솔직 후기",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 정보 제공"
+    },
+    {
+      "keyword": "블루투스 스피커 3개 기능 비교 및 추천",
+      "type": "revenue",
+      "intent": "제품 비교 및 추천"
+    },
+    {
+      "keyword": "1시간 충전 가능한 보조배터리 후기",
+      "type": "revenue",
+      "intent": "제품 사용 경험 공유"
+    },
+    {
+      "keyword": "30만원대 노트북 구매 이유와 추천",
+      "type": "revenue",
+      "intent": "가격대별 구매 추천"
+    },
+    {
+      "keyword": "기계식 키보드 직접 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "제품 후기를 기반으로 한 추천"
+    },
+    {
+      "keyword": "7만원 이하 무선 마우스 비교 및 추천",
+      "type": "revenue",
+      "intent": "가격대비 제품 추천"
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 방법",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 추천"
+    },
+    {
+      "keyword": "최신 노이즈캔슬링 헤드셋 3개 비교",
+      "type": "revenue",
+      "intent": "제품 비교 분석"
+    },
+    {
+      "keyword": "SSD 성능 좋은 제품 추천과 후기",
+      "type": "revenue",
+      "intent": "성능 기반 제품 추천"
+    },
+    {
+      "keyword": "그래픽카드 성능 비교 및 추천 리스트",
+      "type": "revenue",
+      "intent": "제품 비교 및 추천"
+    },
+    {
+      "keyword": "스마트폰 배터리 오래가는 모델 추천",
+      "type": "revenue",
+      "intent": "제품 장점을 기반으로 한 추천"
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "기술적 문제 해결 방법 제시"
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 분석",
+      "type": "info",
+      "intent": "기술적 차이 이해 지원"
+    },
+    {
+      "keyword": "클라우드 서비스 활용 방법과 이유",
+      "type": "info",
+      "intent": "서비스 활용성 향상"
+    },
+    {
+      "keyword": "재택근무 효율 높이는 세팅 방법",
+      "type": "info",
+      "intent": "생산성 향상 위한 세팅 가이드"
+    },
+    {
+      "keyword": "모니터 해상도에 따른 화질 차이 이유",
+      "type": "info",
+      "intent": "기술적 이해 증진"
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 자동화 방법",
+      "type": "info",
+      "intent": "업무 효율성 향상 방법"
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 차이 이유",
+      "type": "info",
+      "intent": "입력장치 선택 도움"
+    },
+    {
+      "keyword": "보조배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "제품 수명 관리 방법"
+    }
+  ],
+  "plan": [
+    {
+      "keyword": "재택근무용 노트북 10만원대 솔직 후기",
+      "post_type": "revenue",
+      "intent": "구매 결정을 위한 정보 제공"
+    },
+    {
+      "keyword": "30만원대 노트북 구매 이유와 추천",
+      "post_type": "revenue",
+      "intent": "가격대별 구매 추천"
+    },
+    {
+      "keyword": "최신 노이즈캔슬링 헤드셋 3개 비교",
+      "post_type": "revenue",
+      "intent": "제품 비교 분석"
+    }
+  ],
+  "filtered": [
+    {
+      "keyword": "재택근무용 노트북 10만원대 솔직 후기",
+      "type": "revenue",
+      "intent": "구매 결정을 위한 정보 제공",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+2 숫자·수치",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "30만원대 노트북 구매 이유와 추천",
+      "type": "revenue",
+      "intent": "가격대별 구매 추천",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "최신 노이즈캔슬링 헤드셋 3개 비교",
+      "type": "revenue",
+      "intent": "제품 비교 분석",
+      "score": 6,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색",
+        "+2 숫자·수치"
+      ]
+    },
+    {
+      "keyword": "5만원 이하 무선이어폰 추천 이유",
+      "type": "revenue",
+      "intent": "구매 결정 지원",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "블루투스 스피커 3개 기능 비교 및 추천",
+      "type": "revenue",
+      "intent": "제품 비교 및 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "기계식 키보드 직접 사용 후기 및 추천",
+      "type": "revenue",
+      "intent": "제품 후기를 기반으로 한 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "7만원 이하 무선 마우스 비교 및 추천",
+      "type": "revenue",
+      "intent": "가격대비 제품 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "블루라이트 차단 모니터 추천 방법",
+      "type": "revenue",
+      "intent": "구매 결정을 돕기 위한 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "그래픽카드 성능 비교 및 추천 리스트",
+      "type": "revenue",
+      "intent": "제품 비교 및 추천",
+      "score": 4,
+      "score_reasons": [
+        "+3 구매 의도",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "1시간 충전 가능한 보조배터리 후기",
+      "type": "revenue",
+      "intent": "제품 사용 경험 공유",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD 성능 좋은 제품 추천과 후기",
+      "type": "revenue",
+      "intent": "성능 기반 제품 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "스마트폰 배터리 오래가는 모델 추천",
+      "type": "revenue",
+      "intent": "제품 장점을 기반으로 한 추천",
+      "score": 3,
+      "score_reasons": [
+        "+3 구매 의도"
+      ]
+    },
+    {
+      "keyword": "SSD와 HDD 실제 속도 차이 분석",
+      "type": "info",
+      "intent": "기술적 차이 이해 지원",
+      "score": 2,
+      "score_reasons": [
+        "+1 비교 탐색",
+        "+1 신뢰 신호"
+      ]
+    },
+    {
+      "keyword": "모니터 해상도에 따른 화질 차이 이유",
+      "type": "info",
+      "intent": "기술적 이해 증진",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "트랙패드와 무선 마우스 사용 차이 이유",
+      "type": "info",
+      "intent": "입력장치 선택 도움",
+      "score": 2,
+      "score_reasons": [
+        "+1 문제 해결",
+        "+1 비교 탐색"
+      ]
+    },
+    {
+      "keyword": "노트북 발열 문제 해결 방법",
+      "type": "info",
+      "intent": "기술적 문제 해결 방법 제시",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "클라우드 서비스 활용 방법과 이유",
+      "type": "info",
+      "intent": "서비스 활용성 향상",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "재택근무 효율 높이는 세팅 방법",
+      "type": "info",
+      "intent": "생산성 향상 위한 세팅 가이드",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "AI 도구 활용한 업무 자동화 방법",
+      "type": "info",
+      "intent": "업무 효율성 향상 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    },
+    {
+      "keyword": "보조배터리 수명 연장 방법",
+      "type": "info",
+      "intent": "제품 수명 관리 방법",
+      "score": 1,
+      "score_reasons": [
+        "+1 문제 해결"
+      ]
+    }
+  ],
+  "rejected": [],
+  "filter_top_n": 3
+}
