@@ -10157,5 +10157,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 394,
+    "title": "30일 수면 영양제 추천, 효과 있는 것만 후기",
+    "keyword": "수면 영양제 추천 효과 있는 것만",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면영양제",
+      "수면보조제추천",
+      "수면영양제 추천 효과 있는 것만",
+      "불면증대처",
+      "멜라토닌",
+      "마그네슘",
+      "수면개선후기",
+      "수면루틴",
+      "건강검진",
+      "생활건강"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-07 08:39",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 395,
+    "title": "비타민 D 결핍이 면역력에 미치는 영향 5가지와 대응방법",
+    "keyword": "비타민 D 결핍이 면역력에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민D",
+      "비타민 D 결핍",
+      "면역력",
+      "25(OH)D 검사",
+      "건강검진 비용",
+      "면역기전",
+      "영양상호작용",
+      "아연",
+      "오메가3",
+      "임상사례"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-07 08:39",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
