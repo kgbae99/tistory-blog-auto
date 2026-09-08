@@ -10211,5 +10211,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 396,
+    "title": "3개월 먹어봤더니 피로 회복에 효과 있는 영양제 후기",
+    "keyword": "3개월 먹어봤더니 피로 회복에 효과 있는 영양제 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피로회복",
+      "영양제후기",
+      "3개월챌린지",
+      "비타민추천",
+      "직장인건강",
+      "피로영양제",
+      "쿠팡추천",
+      "스킨케어",
+      "덴프스",
+      "라운드랩"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-08 09:06",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 397,
+    "title": "30일 만에 두통 빈도 40% 줄인 생활 습관 5가지",
+    "keyword": "두통 완화에 도움이 되는 생활 습관 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "두통",
+      "생활습관",
+      "두통완화에도움되는생활습관5가지",
+      "편두통",
+      "카페인조절",
+      "수분섭취",
+      "목스트레칭",
+      "건강검진",
+      "두통예방",
+      "호흡요법"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-08 09:07",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
