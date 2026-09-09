@@ -10265,5 +10265,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 398,
+    "title": "30대 직장인 3개월 5kg 간헐적 단식 후기",
+    "keyword": "30대 직장인 간헐적 단식 효과 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "30대",
+      "직장인",
+      "간헐적단식",
+      "간헐적 단식 후기",
+      "체중감량",
+      "다이어트후기",
+      "숙면",
+      "피부보습",
+      "건강검진",
+      "보조제품추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-09 08:58",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 399,
+    "title": "지중해식 식단의 건강 이점 5가지와 실천법",
+    "keyword": "지중해식 식단의 건강 이점 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "지중해식",
+      "지중해식 식단의 건강 이점 5가지",
+      "심혈관건강",
+      "뇌건강",
+      "영양",
+      "다이어트",
+      "식단관리",
+      "건강검진",
+      "식이요법"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-09 08:59",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
