@@ -10318,5 +10318,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 400,
+    "title": "장 건강 유산균 추천 비교 2가지 — 어떤 게 효과적일까?",
+    "keyword": "장 건강 유산균 추천 비교 2가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "장건강",
+      "유산균추천",
+      "유산균비교",
+      "프로바이오틱스",
+      "변비개선",
+      "장내미생물",
+      "건강보조식품",
+      "오설록",
+      "트와이닝",
+      "담터"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-10 08:57",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 401,
+    "title": "직장인 맞춤 3개월 스트레칭으로 체형 교정 효과 5가지 이유",
+    "keyword": "스트레칭을 통한 체형 교정의 효과 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "스트레칭",
+      "체형교정",
+      "근막",
+      "자세교정",
+      "건강습관",
+      "직장인건강",
+      "운동루틴",
+      "통증완화",
+      "신경근육",
+      "유연성"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-10 08:57",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
