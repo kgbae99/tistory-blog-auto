@@ -40,6 +40,8 @@ Thumbs.db
 .claude/settings.local.json
 config/credentials.json
 config/gsc_token.json
+config/auth_blog.json
+config/auth_blog_it.json
 .playwright-session/
 
 # Downloaded images (Unsplash 캐시, 저장소 용량 절약)
