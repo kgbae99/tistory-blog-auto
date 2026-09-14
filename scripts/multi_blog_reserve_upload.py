@@ -29,13 +29,16 @@ BLOG_MAP = {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\posts",
         "auth": r"C:\Users\CleanAdmin\Desktop\claude\blog\config\auth_blog.json",
         "url": "https://kgbae2369.tistory.com/manage/newpost/",
-        "category": "생활 건강"
+        "category": "생활 건강",
+        # health-news 파일(YYYYMMDD_health_news.html)은 이 키가 다루지 않음
+        "file_match": lambda name: not name.lower().endswith("_health_news.html"),
     },
     "health-news": {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\posts",
         "auth": r"C:\Users\CleanAdmin\Desktop\claude\blog\config\auth_blog.json",
         "url": "https://kgbae2369.tistory.com/manage/newpost/",
-        "category": "오늘의 건강뉴스"
+        "category": "오늘의 건강뉴스",
+        "file_match": lambda name: name.lower().endswith("_health_news.html"),
     },
     "it-posts": {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\it-posts",
@@ -664,9 +667,10 @@ def process_blog(folder_name: str, config: dict, instant: bool = False):
         print("auth 없음")
         return
 
+    file_match = config.get("file_match", lambda name: True)
     files = []
     for f in target_dir.iterdir():
-        if f.is_file() and f.name.strip().lower().endswith(".html"):
+        if f.is_file() and f.name.strip().lower().endswith(".html") and file_match(f.name):
             files.append(f)
 
     files = sorted(files)
@@ -785,10 +789,11 @@ def run():
     else:
         # 인수 없이 직접 실행 시 대화형 선택
         print("\n업로드할 블로그를 선택하세요:")
-        print("  1. posts (건강 & 웰빙)")
-        print("  2. it-posts (IT/가젯)")
-        print("  3. 전체 (posts + it-posts)")
-        choice = input("\n선택 (1/2/3): ").strip()
+        print("  1. posts (생활 건강)")
+        print("  2. health-news (오늘의 건강뉴스)")
+        print("  3. it-posts (IT/가젯)")
+        print("  4. 전체 (posts + it-posts)")
+        choice = input("\n선택 (1/2/3/4): ").strip()
         if choice == "1":
             selected = ["posts"]
         elif choice == "2":
