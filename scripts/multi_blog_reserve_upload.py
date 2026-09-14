@@ -35,7 +35,7 @@ BLOG_MAP = {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\posts",
         "auth": r"C:\Users\CleanAdmin\Desktop\claude\blog\config\auth_blog.json",
         "url": "https://kgbae2369.tistory.com/manage/newpost/",
-        "category": "생활 건강"
+        "category": "오늘의 건강뉴스"
     },
     "it-posts": {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\it-posts",
