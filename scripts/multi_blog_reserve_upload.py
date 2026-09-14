@@ -44,7 +44,7 @@ BLOG_MAP = {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\it-posts",
         "auth": r"C:\Users\CleanAdmin\Desktop\claude\blog\config\auth_blog_it.json",
         "url": "https://uyoblog.tistory.com/manage/newpost/",
-        "category": "IT/가젯"
+        "category": "IT, 가젯"
     }
 }
 
@@ -791,7 +791,7 @@ def run():
         print("\n업로드할 블로그를 선택하세요:")
         print("  1. posts (생활 건강)")
         print("  2. health-news (오늘의 건강뉴스)")
-        print("  3. it-posts (IT/가젯)")
+        print("  3. it-posts (IT, 가젯)")
         print("  4. 전체 (posts + it-posts)")
         choice = input("\n선택 (1/2/3/4): ").strip()
         if choice == "1":
