@@ -29,13 +29,13 @@ BLOG_MAP = {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\posts",
         "auth": r"C:\Users\CleanAdmin\Desktop\claude\blog\config\auth_blog.json",
         "url": "https://kgbae2369.tistory.com/manage/newpost/",
-        "category": "건강 & 웰빙"
+        "category": "생활 건강"
     },
     "health-news": {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\posts",
         "auth": r"C:\Users\CleanAdmin\Desktop\claude\blog\config\auth_blog.json",
         "url": "https://kgbae2369.tistory.com/manage/newpost/",
-        "category": "오늘의 건강뉴스"
+        "category": "생활 건강"
     },
     "it-posts": {
         "base_dir": r"C:\Users\CleanAdmin\Desktop\claude\blog\output\it-posts",
