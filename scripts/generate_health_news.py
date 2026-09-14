@@ -22,6 +22,14 @@ RSS_SOURCES = [
     ("kormedi", "https://kormedi.com/feed/"),
 ]
 
+SOURCE_NAMES = {
+    "yna_health": "연합뉴스",
+    "docdoc": "청년의사",
+    "hkn24": "헬스코리아뉴스",
+    "newsis": "뉴시스",
+    "kormedi": "코메디닷컴",
+}
+
 DAY_KO = {"Mon":"\uc6d4","Tue":"\ud654","Wed":"\uc218","Thu":"\ubaa9","Fri":"\uae08","Sat":"\ud1a0","Sun":"\uc77c"}
 
 def get_date_str(dt):
@@ -102,7 +110,7 @@ def build_html(news_list, date_str):
         h.append(f'<a href="{l}" target="_blank" style="color:#1e293b;text-decoration:none">{t}</a>' if l else t)
         h.append("</p>")
         if c: h.append(f'<p style="margin:4px 0 0 20px;font-size:13px;color:#64748b">💬 {c}</p>')
-        if s: h.append(f'<p style="margin:4px 0 0 20px;font-size:11px;color:#94a3b8">\ucd9c\ucc98: {s}</p>')
+        if s: h.append(f'<p style="margin:4px 0 0 20px;font-size:11px;color:#94a3b8">\ucd9c\ucc98: {SOURCE_NAMES.get(s, s)}</p>')
         h.append("</div>")
     h.append('<p style="margin-top:32px;padding:14px;background:#f8fafc;border-radius:8px;font-size:13px;color:#64748b;text-align:center">📌 \uac74\uac15\uc628\ub3c4\uc0ac\ub294 \ub9e4\uc77c \uc544\uce68 \uac74\uac15\ub274\uc2a4\ub97c \ubaa8\uc544 \uc804\ub2ec\ud569\ub2c8\ub2e4.<br>\uc815\ud655\ud55c \ub0b4\uc6a9\uc740 \uac01 \uae30\uc0ac \uc6d0\ubb38\uc744 \ud655\uc778\ud574 \uc8fc\uc138\uc694.</p>')
     return "\n".join(h)
