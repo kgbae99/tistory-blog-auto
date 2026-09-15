@@ -10588,5 +10588,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 410,
+    "title": "50대도 가능한 3개월 체력 개선·건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중계 추천",
+      "요가매트",
+      "중년 건강",
+      "영양제 후기",
+      "가정용 체중계",
+      "건강 측정 루틴",
+      "건강비용 절감",
+      "건강검진",
+      "체지방 관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-15 09:25",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 411,
+    "title": "피로를 유발하는 생활 습관 5가지와 회복 방법 3단계",
+    "keyword": "피로를 유발하는 생활 습관 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "피로",
+      "생활습관",
+      "건강",
+      "웰빙",
+      "피로를 유발하는 생활 습관 5가지",
+      "카페인",
+      "수면습관",
+      "수분섭취",
+      "건강검진",
+      "생활관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-15 09:27",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
