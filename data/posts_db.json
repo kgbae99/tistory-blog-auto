@@ -10642,5 +10642,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 412,
+    "title": "3개월 컨디션 개선한 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체중계 추천",
+      "홈플래닛 체중계",
+      "코멧 요가매트",
+      "노바리빙 체중계",
+      "건강관리",
+      "실천루틴",
+      "영양제 선택법",
+      "측정 기반 건강"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-16 09:05",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 413,
+    "title": "40대 직장인 3개월 4kg 감량: 지중해식 다이어트 영향 5가지",
+    "keyword": "지중해식 다이어트가 체중 감량에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "지중해식 다이어트",
+      "체중감량",
+      "다이어트 후기",
+      "건강식단",
+      "체질개선",
+      "식단비교",
+      "대사개선",
+      "생활습관",
+      "건강검진",
+      "다이어트 사례"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-16 09:07",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
