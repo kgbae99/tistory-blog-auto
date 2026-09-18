@@ -1,16 +1,4 @@
 {
-  "2026-07-19": [
-    "health_15.jpg",
-    "health_16.jpg",
-    "health_17.jpg",
-    "nature_01.jpg",
-    "skin_01.jpg",
-    "skin_05.jpg",
-    "tech_04.jpg",
-    "tech_05.jpg",
-    "tech_06.jpg",
-    "tech_15.jpg"
-  ],
   "2026-07-20": [
     "diet_01.jpg",
     "diet_04.jpg",
@@ -1568,5 +1556,18 @@
     "tech_14.jpg",
     "tech_19.jpg",
     "tech_24.jpg"
+  ],
+  "2026-09-18": [
+    "rest_01.jpg",
+    "sleep_01.jpg",
+    "sleep_02.jpg",
+    "sleep_04.jpg",
+    "sleep_05.jpg",
+    "sleep_06.jpg",
+    "tech_08.jpg",
+    "tech_11.jpg",
+    "tech_23.jpg",
+    "tech_25.jpg",
+    "tech_28.jpg"
   ]
 }
