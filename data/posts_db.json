@@ -10910,5 +10910,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 422,
+    "title": "오메가3 고함량 추천 직접 비교해봤더니 3개월 변화 후기",
+    "keyword": "오메가3 고함량 추천 직접 비교해봤더니",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "오메가3",
+      "오메가3추천",
+      "고함량오메가3",
+      "영양제비교",
+      "건강보조식품",
+      "피부건강",
+      "숙면",
+      "쿠팡추천",
+      "영양섭취",
+      "혈중지질"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-21 09:00",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 423,
+    "title": "성인 대상 마그네슘 결핍이 건강에 미치는 영향 5가지와 대처법",
+    "keyword": "마그네슘 결핍이 건강에 미치는 영향 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "마그네슘",
+      "마그네슘결핍",
+      "영양",
+      "건강검진",
+      "피로회복",
+      "근경련",
+      "심혈관건강",
+      "영양상식",
+      "생활습관",
+      "임상영양"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-21 09:01",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
