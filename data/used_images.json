@@ -1,30 +1,4 @@
 {
-  "2026-07-26": [
-    "exercise_09.jpg",
-    "food_01.jpg",
-    "food_06.jpg",
-    "health_05.jpg",
-    "health_17.jpg",
-    "health_18.jpg",
-    "health_19.jpg",
-    "health_23.jpg",
-    "medical_02.jpg",
-    "medical_03.jpg",
-    "nature_01.jpg",
-    "spring_01.jpg",
-    "tech_01.jpg",
-    "tech_02.jpg",
-    "tech_04.jpg",
-    "tech_05.jpg",
-    "tech_06.jpg",
-    "tech_12.jpg",
-    "tech_13.jpg",
-    "tech_15.jpg",
-    "tech_24.jpg",
-    "tech_26.jpg",
-    "tech_27.jpg",
-    "tech_30.jpg"
-  ],
   "2026-07-27": [
     "food_01.jpg",
     "food_06.jpg",
@@ -1488,5 +1462,18 @@
     "tech_10.jpg",
     "tech_14.jpg",
     "tech_24.jpg"
+  ],
+  "2026-09-25": [
+    "exercise_03.jpg",
+    "exercise_04.jpg",
+    "exercise_06.jpg",
+    "sleep_01.jpg",
+    "sleep_02.jpg",
+    "sleep_03.jpg",
+    "tech_08.jpg",
+    "tech_09.jpg",
+    "tech_23.jpg",
+    "tech_27.jpg",
+    "tech_28.jpg"
   ]
 }
