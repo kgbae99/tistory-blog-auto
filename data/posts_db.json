@@ -11234,5 +11234,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 434,
+    "title": "30일간 체감! 건강 영양제 추천 3가지 사용후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "헬스케어",
+      "체중관리",
+      "수면개선",
+      "비타민",
+      "영양제 비교",
+      "홈플래닛",
+      "노바리빙",
+      "코멧"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-27 09:23",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 435,
+    "title": "중년이 3개월 혈관 건강 개선한 식단 5가지 방법",
+    "keyword": "혈관 건강을 위한 최적의 식단 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈관건강",
+      "식단추천",
+      "지중해식",
+      "오메가3",
+      "콜레스테롤관리",
+      "중성지방",
+      "건강검진",
+      "영양관리",
+      "심혈관예방",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-27 09:23",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
