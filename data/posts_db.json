@@ -11288,5 +11288,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 436,
+    "title": "30일 변화: 건강 영양제 추천으로 에너지 회복한 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "피로 개선",
+      "비타민 추천",
+      "오메가3",
+      "체성분 측정",
+      "홈 헬스케어",
+      "건강관리",
+      "제품비교",
+      "건강검진"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-28 09:27",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 437,
+    "title": "30일 내 변화 확인 영양제 효과를 극대화하는 섭취 방법 5가지",
+    "keyword": "영양제 효과를 극대화하는 섭취 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "영양제",
+      "섭취방법",
+      "비타민",
+      "영양제효과",
+      "건강검진",
+      "흡수율",
+      "영양상식",
+      "섭취타이밍",
+      "건강보험",
+      "건강관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-28 09:28",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
