@@ -11342,5 +11342,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 438,
+    "title": "30일 변화 본 건강 영양제 추천 3가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "비타민 추천",
+      "건강관리",
+      "체험기",
+      "체중계 추천",
+      "요가매트",
+      "영양제 선택법",
+      "혈액검사"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-09-29 10:39",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 439,
+    "title": "2달 만에 통증↓ 관절통을 유발하는 식습관 3가지와 대처법",
+    "keyword": "관절통을 유발하는 식습관 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "관절통",
+      "식습관",
+      "염증",
+      "정제탄수화물",
+      "고염식",
+      "관절케어",
+      "건강검진",
+      "뼈건강",
+      "생활습관",
+      "무릎통증"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-09-29 10:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
