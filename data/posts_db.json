@@ -11448,5 +11448,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 442,
+    "title": "30일 체감↑ 건강 영양제 추천과 실전 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 추천",
+      "체중관리",
+      "홈트",
+      "면역력",
+      "체중계 추천",
+      "요가매트",
+      "건강검진",
+      "의료비절감"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-01 10:10",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 443,
+    "title": "4주 만에 변화: 요가로 스트레스 줄이는 5가지 방법",
+    "keyword": "요가로 스트레스를 줄이는 5가지 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "요가로 스트레스를 줄이는 5가지 방법",
+      "요가",
+      "스트레스",
+      "호흡법",
+      "직장인 스트레스",
+      "웰빙",
+      "명상",
+      "심신안정",
+      "요가루틴",
+      "스트레스완화"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-01 10:11",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
