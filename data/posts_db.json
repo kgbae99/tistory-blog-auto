@@ -11501,5 +11501,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 444,
+    "title": "40대 직장인 4주 만에 수면 질 개선 후기·추천",
+    "keyword": "40대 직장인 수면 질 향상을 위한 수면 보조제 추천 후기",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대 수면",
+      "직장인 수면",
+      "수면 보조제 후기",
+      "수면 질 향상",
+      "체중계 추천",
+      "홈플래닛 체중계",
+      "노바리빙 체중계",
+      "앳플리 체중계",
+      "건강검진",
+      "근육 감소 예방"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-02 10:28",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 445,
+    "title": "수면의 질에 영향을 미치는 스트레스 관리 방법 5가지, 2주 1.2h 개선",
+    "keyword": "수면의 질에 영향을 미치는 스트레스 관리 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면",
+      "스트레스관리",
+      "수면질개선",
+      "불면해소",
+      "호흡법",
+      "인지행동",
+      "생활습관",
+      "웰빙",
+      "수면루틴"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-02 10:29",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
