@@ -11554,5 +11554,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 446,
+    "title": "3개월 5kg 감량한 건강 영양제 추천 5가지",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중감량 후기",
+      "홈체크 도구",
+      "체중계 추천",
+      "요가매트 추천",
+      "건강 관리",
+      "영양 보충",
+      "비용 효율",
+      "건강검진 비용",
+      "실제 후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-03 10:01",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 447,
+    "title": "50대도 3개월에 주름 개선한 피부 관리 방법 5가지",
+    "keyword": "주름 개선을 위한 피부 관리 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "주름개선",
+      "피부관리",
+      "안티에이징",
+      "레티놀",
+      "피부장벽",
+      "자외선차단",
+      "홈케어루틴",
+      "피부탄력",
+      "스킨케어팁",
+      "건강과웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-03 10:01",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
