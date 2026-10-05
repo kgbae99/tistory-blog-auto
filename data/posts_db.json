@@ -11661,5 +11661,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 450,
+    "title": "3개월에 체감한 건강 영양제 추천 5선",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "건강관리",
+      "홈트",
+      "체중계 추천",
+      "요가매트 추천",
+      "생활습관",
+      "건강검진",
+      "의료비절감",
+      "수치관리"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-05 09:36",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 451,
+    "title": "비타민C 결핍이 초래하는 건강 문제 5가지와 대처법",
+    "keyword": "비타민C 결핍이 초래하는 건강 문제 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민C",
+      "비타민C 결핍",
+      "영양결핍",
+      "잇몸 출혈",
+      "빈혈",
+      "만성피로",
+      "건강검진 비용",
+      "식단 팁",
+      "면역력",
+      "영양관리"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-05 09:37",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
