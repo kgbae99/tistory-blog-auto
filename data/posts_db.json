@@ -11822,5 +11822,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 456,
+    "title": "30일 만에 피로·체중 변화 본 건강 영양제 추천 3가지 비교",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중관리",
+      "가정용 체중계",
+      "요가매트 추천",
+      "건강관리 팁",
+      "영양제 후기",
+      "홈플래닛 체중계",
+      "노바리빙 체중계",
+      "코멧 요가매트",
+      "건강검진 비용"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-08 10:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 457,
+    "title": "스트레칭의 효과를 극대화하는 5가지 방법",
+    "keyword": "스트레칭의 효과를 극대화하는 5가지 방법",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "스트레칭",
+      "유연성",
+      "통증관리",
+      "PNF",
+      "동적워밍업",
+      "건강습관",
+      "셀프케어",
+      "운동처방",
+      "건강검진",
+      "통증완화"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-08 10:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
