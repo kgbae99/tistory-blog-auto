@@ -11982,5 +11982,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 462,
+    "title": "3개월 5kg 감량 성공과 건강 영양제 추천 5",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중 감량 후기",
+      "홈트 장비",
+      "체중계 추천",
+      "요가매트",
+      "영양제 복용법",
+      "건강관리",
+      "건강검진 비용",
+      "에너지 개선",
+      "쿠팡 추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-11 09:45",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 463,
+    "title": "면역력과 장 건강 관계: 5가지 사실과 개선방법",
+    "keyword": "면역력과 장 건강의 관계: 알아야 할 5가지 사실",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "장건강",
+      "면역력",
+      "미생물",
+      "장투과성",
+      "프로바이오틱스",
+      "건강검진 비용",
+      "폴리페놀",
+      "식이섬유",
+      "염증관리",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-11 09:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
