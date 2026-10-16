@@ -12251,5 +12251,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 472,
+    "title": "40대 직장인 6주 수면 개선 스트레스 관리법 추천",
+    "keyword": "40대 직장인 수면 개선을 위한 효과적인 스트레스 관리법 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대수면",
+      "직장인스트레스",
+      "수면개선법",
+      "스트레스관리",
+      "수면루틴",
+      "요가매트추천",
+      "체중계추천",
+      "건강검진",
+      "웰빙",
+      "수면후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-16 09:10",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 473,
+    "title": "직장인 4주 수면 회복: 스트레스가 수면에 미치는 영향과 해결책 4가지",
+    "keyword": "스트레스가 수면에 미치는 영향과 그 해결책 4가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면",
+      "스트레스",
+      "불면증",
+      "직장인건강",
+      "수면개선",
+      "심리기법",
+      "생체리듬",
+      "건강검진",
+      "웰빙",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-16 09:11",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
