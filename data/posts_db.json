@@ -12412,5 +12412,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 478,
+    "title": "3개월 5kg 감량 도운 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중 감량 후기",
+      "영양제 선택법",
+      "홈트 보조 도구",
+      "체중계 추천",
+      "요가매트 추천",
+      "쿠팡 추천",
+      "건강검진 비용",
+      "체지방 관리",
+      "영양제 후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-19 09:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 479,
+    "title": "30대·40대가 알아야 할 비타민B군 결핍 증상 5가지와 원인",
+    "keyword": "비타민B군 결핍으로 인한 증상 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "비타민B군",
+      "비타민 결핍",
+      "손저림",
+      "만성피로",
+      "영양검사",
+      "건강검진 비용",
+      "영양섭취",
+      "비타민B증상",
+      "영양상담"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-19 09:03",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
