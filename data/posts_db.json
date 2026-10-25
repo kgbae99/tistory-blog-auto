@@ -12734,5 +12734,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 490,
+    "title": "30일에 체력 20% 회복한 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체중계 추천",
+      "요가매트 추천",
+      "홈케어 건강",
+      "건강 루틴",
+      "식이보충제",
+      "건강검진 비용",
+      "체력 개선",
+      "쿠팡 추천"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-25 09:08",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 491,
+    "title": "40대 직장인용 항산화제의 면역력 증진 효과 3가지와 이유",
+    "keyword": "항산화제의 면역력 증진 효과 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "항산화제",
+      "면역력",
+      "항산화제의 면역력 증진 효과 3가지",
+      "건강식단",
+      "면역영양",
+      "중년건강",
+      "비타민",
+      "염증관리",
+      "건강검진",
+      "면역개선"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-25 09:09",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
