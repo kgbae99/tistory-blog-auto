@@ -12896,5 +12896,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 496,
+    "title": "3개월 체력↑ 5종 건강 영양제 추천 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체력 개선",
+      "홈트 도구",
+      "체중계 추천",
+      "요가매트 추천",
+      "건강 루틴",
+      "영양제 비교",
+      "건강검진 비용",
+      "실전 루틴"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-28 10:04",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 497,
+    "title": "3개월 4kg 감량, 지중해식 식단 5가지 방법",
+    "keyword": "지중해식 식단으로 체중 감량하는 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "지중해식",
+      "체중감량",
+      "다이어트방법",
+      "건강식단",
+      "체지방감소",
+      "영양관리",
+      "식단루틴",
+      "건강검진",
+      "식사준비",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-28 10:05",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
