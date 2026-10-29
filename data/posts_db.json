@@ -12950,5 +12950,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 498,
+    "title": "40대 여성 3가지 요가 매트 추천 비교 후기",
+    "keyword": "40대 여성 요가 매트 추천 비교",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대여성",
+      "요가매트추천",
+      "요가매트비교",
+      "중가매트",
+      "TPE매트",
+      "무릎통증완화",
+      "숙면",
+      "피부보습",
+      "건강검진비용",
+      "홈트"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-29 10:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 499,
+    "title": "직장인 5일 만에 근육통 줄인 스트레칭 방법 5가지",
+    "keyword": "스트레칭으로 근육통 완화하는 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "스트레칭",
+      "근육통완화",
+      "통증관리",
+      "직장인건강",
+      "허리통증",
+      "어깨통증",
+      "운동루틴",
+      "재활스트레칭",
+      "건강정보",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-29 10:41",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
