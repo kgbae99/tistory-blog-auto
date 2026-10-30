@@ -13004,5 +13004,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 500,
+    "title": "40대 직장인 30일 수면개선법 5가지 추천",
+    "keyword": "40대 직장인 수면 개선을 위한 스트레스 해소법 5가지 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대수면",
+      "직장인스트레스",
+      "수면개선",
+      "스트레스해소법",
+      "요가매트추천",
+      "홈트보조기구",
+      "비타민추천",
+      "직장인건강",
+      "수면루틴",
+      "건강검진"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-10-30 10:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 501,
+    "title": "직장인 2주 수면의 질 개선: 디지털 디톡스 3가지 방법",
+    "keyword": "수면의 질을 높이는 디지털 디톡스 방법 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "수면",
+      "디지털디톡스",
+      "수면의질",
+      "생활습관개선",
+      "직장인건강",
+      "수면개선방법",
+      "웰빙",
+      "수면루틴",
+      "건강검진",
+      "수면생활"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-10-30 10:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
