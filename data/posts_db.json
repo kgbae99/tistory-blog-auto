@@ -13220,5 +13220,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 508,
+    "title": "30일 3kg 감량과 체형 개선을 위한 건강 영양제 추천 5가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체중계 추천",
+      "홈트 도구",
+      "요가매트 추천",
+      "체중 감량 후기",
+      "측정 표준화",
+      "건강비용 절감",
+      "영양제 복용법",
+      "홈헬스",
+      "체지방 측정"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-03 12:23",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 509,
+    "title": "4주 만에 두통 60% 완화 스트레칭 5가지 방법",
+    "keyword": "두통 완화를 위한 스트레칭 방법 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "두통",
+      "스트레칭",
+      "두통 완화를 위한 스트레칭 방법 5가지",
+      "긴장성 두통",
+      "목 스트레칭",
+      "사무실 건강",
+      "통증관리",
+      "자가관리",
+      "건강팁"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-03 12:24",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
