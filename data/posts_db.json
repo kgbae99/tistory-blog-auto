@@ -13327,5 +13327,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 512,
+    "title": "40대 직장인 스트레칭 도구 추천 후기 5가지",
+    "keyword": "40대 직장인 스트레칭 도구 추천 후기 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대직장인",
+      "스트레칭도구",
+      "스트레칭후기",
+      "폼롤러",
+      "마사지볼",
+      "오메가3",
+      "오설록꿀배티",
+      "트와이닝티",
+      "직장인건강",
+      "근무중스트레칭"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-05 11:05",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 513,
+    "title": "홈트레이닝 효과를 극대화하는 필라테스 자세 3가지",
+    "keyword": "홈트레이닝 효과를 극대화하는 필라테스 자세 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝",
+      "필라테스",
+      "코어운동",
+      "자세교정",
+      "통증완화",
+      "운동루틴",
+      "체형관리",
+      "호흡연습",
+      "운동초보",
+      "근력강화"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-05 11:06",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
