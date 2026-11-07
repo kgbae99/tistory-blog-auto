@@ -13434,5 +13434,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 516,
+    "title": "50대 여성 주름 개선에 효과적인 보습제 추천 5가지 후기",
+    "keyword": "50대 여성 주름 개선에 효과적인 보습제 추천 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "50대주름",
+      "주름개선",
+      "보습제추천",
+      "세라마이드",
+      "히알루론산",
+      "펩타이드",
+      "오메가3",
+      "덴프스",
+      "종근당건강",
+      "스포츠리서치"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-07 10:45",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 517,
+    "title": "민감피부를 위한 5가지 자외선 차단제 선택 방법",
+    "keyword": "자외선 차단제 선택 시 주의해야 할 5가지 요소",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "자외선차단제",
+      "스킨케어",
+      "피부관리",
+      "민감성피부",
+      "SPF",
+      "PA",
+      "자외선차단제선택",
+      "피부트러블",
+      "건강검진",
+      "자외선"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-07 10:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
