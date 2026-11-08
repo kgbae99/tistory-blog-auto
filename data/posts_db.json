@@ -13488,5 +13488,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 518,
+    "title": "30일 3kg 감량 도운 건강 영양제 추천 팁",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 선택법",
+      "비타민D",
+      "마그네슘",
+      "셀프검사",
+      "건강관리 루틴",
+      "쿠팡 추천",
+      "체중관리",
+      "건강검진 비용",
+      "피로회복"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-08 10:12",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 519,
+    "title": "3개월 변화: 혈관 영양소의 역할과 필요성",
+    "keyword": "혈관 건강을 위한 영양소의 역할 및 필요성",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈관건강",
+      "영양소",
+      "오메가3",
+      "마그네슘",
+      "비타민K2",
+      "중성지방관리",
+      "건강검진",
+      "예방의학",
+      "영양상호작용"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-08 10:13",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
