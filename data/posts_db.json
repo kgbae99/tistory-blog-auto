@@ -13541,5 +13541,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 520,
+    "title": "30일 3kg 감량 성공한 건강 영양제 추천 이유",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "다이어트 후기",
+      "체중계 추천",
+      "요가매트 추천",
+      "홈트 루틴",
+      "체지방 감소",
+      "건강검진 비용",
+      "영양 보충",
+      "쿠팡 추천",
+      "실전 후기"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-09 10:32",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 521,
+    "title": "중년을 위한 칼슘 부족이 초래하는 건강 문제 5가지와 해결법",
+    "keyword": "칼슘 부족이 초래하는 건강 문제 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "칼슘부족",
+      "골다공증",
+      "영양상식",
+      "비타민D",
+      "중년건강",
+      "건강검진",
+      "근육경련",
+      "치아건강",
+      "생활습관",
+      "의학정보"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-09 10:33",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
