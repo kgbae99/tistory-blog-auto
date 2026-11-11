@@ -13649,5 +13649,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 524,
+    "title": "40대 직장인 5가지 건강식단 추천 후기",
+    "keyword": "40대 직장인을 위한 건강식단 추천 후기 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "40대건강",
+      "직장인식단",
+      "건강식단추천",
+      "식단후기",
+      "비타민C",
+      "KF94마스크",
+      "건강검진비용",
+      "중장년웰빙",
+      "실천팁",
+      "식단비교"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-11 10:46",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 525,
+    "title": "저탄고지 식단의 효과: 체중 외 숨은 장점 3가지",
+    "keyword": "저탄고지 식단의 효과: 체중 감량 이외의 숨은 장점 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "저탄고지",
+      "저탄고지 식단의 효과",
+      "저탄고지 후기",
+      "저탄수고지방",
+      "식단 팁",
+      "대사 개선",
+      "혈당 관리",
+      "체중 감량 외 효과",
+      "건강검진",
+      "식욕 조절"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-11 10:47",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
