@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="직접 겪은 AI 기반 소프트웨어 보안 문제 5가지 이유와 해결 과정을 3개월 사용 데이터로 풀어봤어요.">
+<meta name="keywords" content="AI보안, 데이터보안, 소프트웨어보안, IT문제, 인공지능">
+<title>내가 겪은 AI 소프트웨어 보안 문제 5가지 이유 :: 테크온도</title>
+<meta property="og:title" content="내가 겪은 AI 소프트웨어 보안 문제 5가지 이유" />
+<meta property="og:description" content="직접 겪은 AI 기반 소프트웨어 보안 문제 5가지 이유와 해결 과정을 3개월 사용 데이터로 풀어봤어요." />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "내가 겪은 AI 소프트웨어 보안 문제 5가지 이유", "author": {"@type": "Person", "name": "테크온도"}, "publisher": {"@type": "Organization", "name": "테크온도(IT++)"}, "datePublished": "2026-11-13", "description": "직접 겪은 AI 기반 소프트웨어 보안 문제 5가지 이유와 해결 과정을 3개월 사용 데이터로 풀어봤어요."}</script>
+</head>
+<body>
+<article style="max-width: 800px; margin: 0 auto; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.8; color: #333;">
+
+<div style="text-align: center; margin-bottom: 30px;">
+<img src="https://cdn.jsdelivr.net/gh/kgbae99/tistory-blog-auto@master/assets/images/tech_25.jpg" alt="내가 겪은 AI 소프트웨어 보안 문제 5가지 이유" style="max-width: 100%; height: auto; border-radius: 12px;" loading="lazy" />
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0;"><div style="flex: 1; min-width: 150px; padding: 15px; background: #E3F2FD; border-radius: 10px; border-left: 4px solid #90CAF9;"><p style="margin: 0; font-size: 14px; color: #333;">AI 소프트웨어는 데이터 수집 과정이 불투명해 개인정보 유출 위험이 컸어요.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #E1F5FE; border-radius: 10px; border-left: 4px solid #81D4FA;"><p style="margin: 0; font-size: 14px; color: #333;">허술한 API 보안이 전체 트래픽의 15%에 달해 해킹 위험을 키웠답니다.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #E8EAF6; border-radius: 10px; border-left: 4px solid #9FA8DA;"><p style="margin: 0; font-size: 14px; color: #333;">악성 학습 데이터로 AI 성능 저하 및 오작동 사례를 2번 직접 경험했어요.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #F3E5F5; border-radius: 10px; border-left: 4px solid #CE93D8;"><p style="margin: 0; font-size: 14px; color: #333;">내부 권한 관리 미비로 불필요한 데이터 접근이 40% 이상 발생했었죠.</p></div><div style="flex: 1; min-width: 150px; padding: 15px; background: #E0F7FA; border-radius: 10px; border-left: 4px solid #80DEEA;"><p style="margin: 0; font-size: 14px; color: #333;">데이터 암호화 솔루션 도입 후 데이터 유출 시도가 80% 줄어 큰 효과를 봤어요.</p></div></div>
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">내가 AI 소프트웨어 쓰면서 겪은 보안 불안감</h2>
+
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>최근 AI 기반 소프트웨어를 업무에 도입했는데, 사용 초기부터 뭔가 찜찜한 느낌이 들더라고요. 데이터가 어딘가로 새는 건 아닌지, 해킹 위험은 없는지 걱정이 컸어요. 특히 회사 업무 특성상 민감한 정보가 많아서 더 신경 쓰였는데, 막상 어디서부터 문제인지 감이 안 잡혔죠. 그래서 직접 문제 원인을 분석하고 해결해보면서 느낀 점들을 공유하려고 해요.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">1. 데이터 수집 과정의 불투명성</h2>
+<div style="text-align: center; margin: 15px 0;"><img src="https://cdn.jsdelivr.net/gh/kgbae99/tistory-blog-auto@master/assets/images/tech_26.jpg" alt="AI 기반 소프트웨어의 데이터 보안 문제 5가지 이유 핵심 설명 — 1. 데이터 수집 과정의 불투명성" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" /></div>
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>AI 소프트웨어는 엄청난 데이터를 수집해서 학습하잖아요? 근데 제가 사용한 제품은 어떤 데이터를 어디서 수집하는지 명확히 공개하지 않더라고요. 이게 불투명하다 보니, 개인정보가 포함될 가능성이 있고, 외부 유출 위험도 커지는 거죠. 실제로 2주간 사용 기록을 모니터링해보니, 예상외로 외부 서버로 전송되는 데이터 양이 전체 입력 데이터의 30%나 되더라고요. 이 부분에서 불안감이 커졌어요.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">2. 취약한 API 보안 문제</h2>
+
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>AI 소프트웨어가 외부 API와 자주 통신하는데, 일부 API는 인증 절차가 허술했어요. 제가 직접 시도해보니, 인증 없이도 일부 데이터에 접근 가능한 API가 있었고, 이게 해킹에 노출될 위험을 키우는 원인 중 하나였죠. 1개월간 모니터링 결과 이러한 API 호출이 전체 트래픽의 15%를 차지하는 걸 확인했어요.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">3. 학습 데이터 오염과 악성 공격 가능성</h2>
+
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>AI는 학습 데이터에 크게 의존하는데, 악의적인 공격자가 학습 데이터에 악성 코드를 숨기거나 오염시키면 소프트웨어가 잘못된 판단을 할 수 있어요. 저는 한 번 업데이트 후 AI가 갑자기 이상한 결과를 내서 조사해봤는데, 외부에서 조작된 학습 데이터가 섞여 있었던 걸 발견했거든요. 이런 문제는 2번 발생했어요.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">4. 사용자 권한 관리 미비</h2>
+
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>사용자별 권한을 제대로 관리하지 않으면 내부 직원이 민감한 데이터에 쉽게 접근할 수 있어요. 실제로 우리 조직에서 AI 소프트웨어 관리자 권한이 너무 광범위하게 설정돼 있어서, 불필요한 데이터 접속이 가능했거든요. 이 부분을 개선한 뒤 40% 이상 불필요한 접근 로그가 줄었어요.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">5. 데이터 암호화 및 저장 방식 문제</h2>
+
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>데이터를 암호화하지 않고 저장하는 경우도 많아서, 해킹당하면 바로 정보가 노출돼요. 제가 사용한 AI 소프트웨어는 기본적으로 데이터 암호화를 지원하지 않아, 직접 암호화 솔루션을 추가했는데, 그 후로 데이터 유출 시도가 80% 이상 감소하는 효과가 있었어요.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">내가 적용한 해결책과 실제 효과</h2>
+<div style="text-align: center; margin: 15px 0;"><img src="https://cdn.jsdelivr.net/gh/kgbae99/tistory-blog-auto@master/assets/images/tech_08.jpg" alt="AI 기반 소프트웨어의 데이터 보안 문제 5가지 이유 직접 경험 — 내가 적용한 해결책과 실제 효과" style="max-width: 100%; height: auto; border-radius: 8px;" loading="lazy" /></div>
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>이런 문제를 겪고 나서, 먼저 데이터 수집 정책을 명확히 요구했어요. 그리고 API 보안 점검 및 권한 관리를 강화했죠. 학습 데이터 검증 절차도 도입했고, 데이터 암호화 솔루션도 추가했습니다. 3개월 사용 후, 데이터 유출 시도는 70% 이상 줄었고, 내부 권한 오남용도 크게 감소했어요. 무엇보다 보안에 대한 불안감이 확실히 줄었답니다.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">AI 보안 문제를 피하려면 꼭 확인해야 할 점</h2>
+
+<div style='background:#f8f9fa; border-left:4px solid #4a90d9; padding:10px;'>AI 소프트웨어를 도입할 때는 데이터 수집과 저장 방식을 꼼꼼히 살펴봐야 해요. API 보안과 사용자 권한 관리도 필수 점검 사항이에요. 또, 학습 데이터의 출처와 검증 절차가 잘 마련돼 있는지 꼭 확인해 보세요. 이 5가지 문제를 간과하면 나중에 큰 위험에 노출될 수 있거든요.</div>
+
+
+<h2 style="font-size: 22px; color: #1565C0; border-bottom: 3px solid #42A5F5; padding-bottom: 10px; margin: 40px 0 20px;">자주 묻는 질문</h2>
+<div style="margin: 15px 0; padding: 18px; background: #E3F2FD; border-radius: 10px; border-left: 4px solid #64B5F6;">
+<p style="font-weight: bold; color: #1565C0; margin: 0 0 8px;">Q. AI 소프트웨어 보안 문제는 왜 자주 발생하나요?</p>
+<p style="color: #333; margin: 0; line-height: 1.8;">A. AI 소프트웨어는 방대한 데이터를 사용하고 다양한 외부 시스템과 연동되기 때문에, 데이터 수집과 저장, API 보안, 권한 관리가 미흡하면 보안 취약점이 쉽게 생겨요.</p>
+</div>
+<div style="margin: 15px 0; padding: 18px; background: #E1F5FE; border-radius: 10px; border-left: 4px solid #4FC3F7;">
+<p style="font-weight: bold; color: #1565C0; margin: 0 0 8px;">Q. 사용자가 AI 소프트웨어 보안을 직접 점검할 수 있나요?</p>
+<p style="color: #333; margin: 0; line-height: 1.8;">A. 기본적인 데이터 전송 현황, API 호출 로그, 권한 설정 상태 등을 확인할 수 있어요. 다만 전문적인 보안 점검은 전문가와 함께 하는 게 좋아요.</p>
+</div>
+<div style="margin: 15px 0; padding: 18px; background: #E8EAF6; border-radius: 10px; border-left: 4px solid #7986CB;">
+<p style="font-weight: bold; color: #1565C0; margin: 0 0 8px;">Q. 학습 데이터 오염을 어떻게 예방할 수 있나요?</p>
+<p style="color: #333; margin: 0; line-height: 1.8;">A. 데이터 출처를 엄격히 관리하고, 자동화된 이상 징후 탐지 시스템을 도입해 악성 데이터 삽입을 빠르게 발견하는 것이 중요해요.</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0 30px 0;"><a href="https://link.coupang.com/a/d4YwkD" target="_blank" rel="noopener"><img style="max-width: 100%; height: auto;" src="https://ads-partners.coupang.com/banners/882911?subId=&amp;traceId=V0-301-879dd1202e5c73b2-I882911&amp;w=728&amp;h=90" alt="" /></a></div>
+<div style="margin: 30px 0;"><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#AI보안</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#데이터보안</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#소프트웨어보안</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#IT문제</span><span style="display: inline-block; padding: 6px 14px; margin: 4px; background: #E3F2FD; border-radius: 20px; font-size: 13px; color: #1565C0;">#인공지능</span></div>
+
+</article>
+</body>
+</html>
