@@ -13862,5 +13862,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 532,
+    "title": "3개월 체력복구를 위한 건강 영양제 추천 5가지",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "체력 회복",
+      "직장인 건강",
+      "비타민 추천",
+      "프로바이오틱스",
+      "체중계 추천",
+      "요가매트 추천",
+      "영양제 후기",
+      "건강검진",
+      "의료비 절감"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-15 10:39",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 533,
+    "title": "40대가 알아야 할 혈관 항산화제 3가지 역할",
+    "keyword": "혈관 건강을 위한 항산화제의 역할 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "혈관건강",
+      "항산화제",
+      "노화예방",
+      "심혈관질환예방",
+      "LDL관리",
+      "내피기능",
+      "건강검진",
+      "영양관리",
+      "폴리페놀",
+      "생활습관"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-15 10:40",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
