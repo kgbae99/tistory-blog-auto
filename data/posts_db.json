@@ -14185,5 +14185,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 544,
+    "title": "30대 남성 3개월 체력회복 건강 영양제 추천 5가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제",
+      "영양제후기",
+      "체중계",
+      "요가매트",
+      "홈트",
+      "중년건강",
+      "영양관리",
+      "쿠팡추천",
+      "건강검진"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-21 12:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 545,
+    "title": "30대 피부 탄력 저하의 주요 원인 3가지와 해결 방법",
+    "keyword": "30대 피부 탄력 저하의 주요 원인 3가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "30대피부",
+      "피부탄력",
+      "콜라겐",
+      "호르몬",
+      "피부장벽",
+      "피부관리",
+      "피부과검진",
+      "건강검진",
+      "피부과학",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-21 12:04",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
