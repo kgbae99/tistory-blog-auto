@@ -14293,5 +14293,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 548,
+    "title": "30일간 변화 확인한 건강 영양제 추천 3가지 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "체중계 추천",
+      "요가매트 추천",
+      "홈플래닛 체중계",
+      "노바리빙 체중계",
+      "코멧 요가매트",
+      "건강 측정 방법",
+      "영양제 선택법"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-23 11:25",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 549,
+    "title": "루테인이 눈 건강에 미치는 효과 5가지와 후기",
+    "keyword": "루테인이 눈 건강에 미치는 효과 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "루테인",
+      "눈건강",
+      "황반",
+      "시력개선",
+      "눈피로",
+      "영양정보",
+      "건강검진 비용",
+      "안과",
+      "항산화",
+      "웰빙"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-23 11:26",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
