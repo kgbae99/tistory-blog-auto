@@ -14400,5 +14400,59 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 552,
+    "title": "건강 영양제 추천 3개월 체력 회복 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "비타민 추천",
+      "체력 회복",
+      "홈트 용품",
+      "체중계 추천",
+      "요가매트 추천",
+      "영양제 비교",
+      "건강검진",
+      "건강비용 절감"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-25 13:50",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 553,
+    "title": "3개월 5kg 감량: 저탄고지 식단의 효과와 주의사항 5가지",
+    "keyword": "저탄고지 식단의 효과와 주의사항 5가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "저탄고지",
+      "저탄고지 식단의 효과와 주의사항 5가지",
+      "저탄수화물",
+      "케토제닉",
+      "체중감량 후기",
+      "식단관리",
+      "영양주의사항",
+      "건강검진 비용",
+      "식이섬유",
+      "전해질"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-25 13:51",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
