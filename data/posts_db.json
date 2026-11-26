@@ -14454,5 +14454,58 @@
     "coupang_clicks": 0,
     "adsense_impressions": 0,
     "estimated_revenue": 0.0
+  },
+  {
+    "id": 554,
+    "title": "30일 체류형 건강 영양제 추천 3가지 실전 후기",
+    "keyword": "건강 영양제 추천",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "건강 영양제 추천",
+      "영양제 후기",
+      "건강관리",
+      "체중관리",
+      "면역",
+      "영양보충",
+      "제품비교",
+      "쿠팡추천",
+      "추적도구",
+      "혈액검사"
+    ],
+    "coupang_products": 3,
+    "adsense_slots": 3,
+    "created_at": "2026-11-26 13:02",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
+  },
+  {
+    "id": 555,
+    "title": "홈트레이닝 효과를 높이는 스트레칭 방법 4가지",
+    "keyword": "홈트레이닝 효과를 높이는 스트레칭 방법 4가지",
+    "url": "",
+    "category": "건강정보",
+    "tags": [
+      "홈트레이닝",
+      "스트레칭",
+      "유연성",
+      "운동효과",
+      "부상예방",
+      "피트니스루틴",
+      "건강검진",
+      "재활운동",
+      "생활건강"
+    ],
+    "coupang_products": 0,
+    "adsense_slots": 3,
+    "created_at": "2026-11-26 13:03",
+    "published": false,
+    "views": 0,
+    "coupang_clicks": 0,
+    "adsense_impressions": 0,
+    "estimated_revenue": 0.0
   }
 ]
